@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="description" content="Deepak PK Portfolio">
+        <meta name="author" content="Deepak PK">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <link rel="shortcut icon" type="image/png" href="images/fav_icon.png"/>
+
+        <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>  
+
+        <title>Deepak PK - Freelance Java Android Developer</title>
+
+        <style>
+            .canvasFullWindow{
+                position: absolute;
+                background-color: #000000;
+                top: 0px;
+                left: 0px;
+            }
+        </style>
+
+        <!--[if lt IE 9]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+        <script src="js/tagcanvas.min.js" type="text/javascript"></script>
+        <script>
+            var canvas;
+
+            function init() {
+                canvas = document.getElementById("myCanvas");
+                // Canvas goes full screen
+                canvas.className = "canvasFullWindow";
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                try {
+                    TagCanvas.Start('myCanvas', 'tags', {
+                        outlineMethod: "none",
+                        reverse: true,
+                        dragControl: true,
+                        depth: 0.8,
+                        maxSpeed: 0.05,
+                        imageScale: 1
+                    });
+                } catch (e) {
+                    // something went wrong, hide the canvas container
+                    document.getElementById('myCanvasContainer').style.display = 'none';
+                }
+            }
+
+            window.onload = init;
+
+        </script>
+
+    </head>
+    <body style="background: #000">
+        <div id="myCanvasContainer">
+            <canvas id="myCanvas">
+                <p>Anything in here will be replaced on browsers that support the canvas element</p>
+            </canvas>
+        </div>
+        <div id="tags">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/deepak.pk.9" target="_blank">
+                        <img src="images/fb.png" alt="Facebook" height="64" width="64">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/deepak_pk_009" target="_blank">
+                        <img src="images/tw.png" alt="Twitter" height="64" width="64">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/pub/deepak-pk/60/5a1/652" target="_blank">
+                        <img src="images/link.png" alt="Linkedin" height="64" width="64">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://sourceforge.net/u/deepakpk/profile/" target="_blank">
+                        <img src="images/sf.png" alt="SourceForge" height="64" width="64">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/developer?id=Deepak+PK&hl=en" target="_blank">
+                        <img src="images/play.png" alt="Google Play" height="64" width="64">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@deepakpk" target="_blank">
+                        <img src="images/medium.png" alt="Medium" height="64" width="64">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:deepakpk009@yahoo.in?Subject=Hello" target="_top">
+                        <img src="images/yahoo.png" alt="Mail" height="64" width="64">
+                    </a>
+                </li>
+                <li>                    
+                    <div id="SkypeButton_Call_deepakpk009_1">
+                        <script type="text/javascript">
+                            Skype.ui({
+                                "name": "chat",
+                                "element": "SkypeButton_Call_deepakpk009_1",
+                                "participants": ["deepakpk009"],
+                                "imageSize": 32
+                            });
+                        </script>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

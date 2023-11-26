@@ -1,0 +1,84 @@
+{
+	"faq":[
+            {
+                "id":"1",
+                "title":"Why upgrade to Pro User?",
+                "description":"There has been considerable amount of time spent in developing this application by the developer, If you would like to support the developer in providing quality apps please buy the pro user option."
+	        },
+	        {
+	            "id":"2",
+		        "title":"Shows 'Unable to connect' on scannign the QR code / entering the IP",
+		        "description":"check whether the TV and the device(mobile/pc) are connected in the same wifi network. "
+	        },
+	        {
+	            "id":"3",
+		        "title":"How many devices can I connect to Wifi Share?",
+		        "description":"There is no restriction on the number of devices that can connect to the Wifi Share server."
+	        },
+	        {
+	            "id":"4",
+		        "title":"Can I upload multiple files from multiple devices?",
+		        "description":"Yes you can. You can open multiple upload forms and upload multiple files simultaneously. Just make sure you don't run out of TV external storage space."
+	        },
+	        {
+	            "id":"5",
+		        "title":"Is there any restiction on the file size that I can upload?",
+		        "description":"If you are a DEMO user then there is a file size restiction of 5MB. If you are a PRO user then there is no such restiction."
+	        },
+	        {
+	            "id":"6",
+		        "title":"Is there any restiction on the file size that I can download?",
+		        "description":"There is no restiction on file download size."
+	        },
+	        {
+	            "id":"7",
+		        "title":"Can multiple users from multiple devices download files using Wifi Share?",
+		        "description":"Yes you can. You can download multiple files simultaniously. Just right click on the file in the Wifi Share File browser and select save as and save it to a location to initiate the download."
+	        },
+	        {
+	            "id":"8",
+		        "title":"When opening Wifi Share it requests User Accounts permission, Why?",
+		        "description":"The Wifi Share needs Network state permission for Wifi network related operations and User Accounts permission to check if the user is logged in on the Android TV, to enable Google InApp purchase of PRO User option."
+	        },
+	        {
+	            "id":"9",
+		        "title":"Do I need to be logged in on my Amazon Fire device using Amazon account to be able to purchase PRO User?",
+		        "description":"Yes, the PRO User option is purchased using the Amazon InAppPurchase method which requires you to be logged in on the device using Amazon account."
+	        },
+	        {
+	            "id":"10",
+		        "title":"Where does the uploaded files gets saved/stored?",
+		        "description":"All files uploaded via Wifi Share gets stored in the Downloads folder in the External Storage."
+	        },
+	        {
+	            "id":"11",
+		        "title":"Disk space util shows I have 2GB free space in my External storage, but the upload form shows maximum file upload size is 1GB. Why?",
+		        "description":"When ever a files is uploaded there is a copy of the file created to check for upload errors. This copy file has the same size as that of the uploaded file. since if we allow files with size more than half of the available storage space the system will not be able to create the copy file as there will not be enough storage space left. This is the reason the maximum uploadable file size is half the size of the available storage space."
+	        },
+	        {
+	            "id":"12",
+		        "title":"How to contact for support?",
+		        "description":"For more support go to TvExplorer support menu."
+	        },
+	        {
+	            "id":"13",
+		        "title":"Clicking 'BUY PRO' shows 'Purchase Failed!' message?",
+		        "description":"This may happen if you are not logged in on the device using your amazon id, or if there is no Internet connection."
+	        },
+	        {
+	            "id":"14",
+		        "title":"Clicking 'BUY PRO' shows 'PRO User isn't available now!' message?",
+		        "description":"This message is shown if the PRO User is not available for your country."
+	        },
+	        {
+	            "id":"15",
+		        "title":"Clicking 'BUY PRO' shows 'PRO User Product Unavailable!' message?",
+		        "description":"This message is shown if there is no Internet connection or if the user is not logged in on the Amazon Device."
+	        },
+	        {
+	            "id":"16",
+		        "title":"Showing Demo mode even after Pro User purchase",
+		        "description":"In order to debug the problem we would need to see the application's logs. Please do the following:\n\n1. Reinstall the app.\n2. Launch the app, verify that purchase still not detected.\n3. Go to \"Settings > Privacy > Email device logs\", send them to your email address and then forward the mail with the log files to 'deepakpk009@yahoo.in'\n\nIf you are using a regular Android device in which you've installed the Amazon Appstore app, then maybe reinstalling the Amazon Appstore App could fix things."
+	        }
+    ]
+}

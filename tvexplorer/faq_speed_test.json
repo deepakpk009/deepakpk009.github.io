@@ -1,0 +1,9 @@
+{
+	"faq":[
+            {
+                "id":"1",
+                "title":"Why am I getting only 256KBps internet when I am on a 2Mbps plan? Is my Internet Serive Provider(ISP) cheating?",
+                "description":"This question was added to FAQ after receiving many comments regarding this problem. In reality, you are getting the internet speed your ISP promised. You are just confused between 'Mbps' and 'MBps'. Internet Service Providers advertise their speeds in Mbps(Mega bit per second) while speed test apps, download managers and torrent clients show the speeds in MBps(Mega Byte per second.)\n\n\t\t1 Byte = 8 bits\n\n\t\t1 Mega Byte = 8 Mega bits\n\nSo, if you are on a 2Mbps plan,\n\n\t2Mbps=2048Kbps\n\t2048Kbps= 256KBps(2048/8)\n\nWhich is exactly what you are getting. For example, you are on a 10Mbps plan and getting 1.2MBps download speed which is exactly what my ISP promised."
+	        }
+    ]
+}

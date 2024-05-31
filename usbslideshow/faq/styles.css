@@ -8,8 +8,14 @@ body {
     cursor: pointer;
 }
 
-.faq-item:hover {
+.faq-item:hover,
+.faq-item:focus {
     background-color: #f9f9f9;
+}
+
+.faq-item:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px #007bff; /* Add custom focus outline */
 }
 
 .faq-title {

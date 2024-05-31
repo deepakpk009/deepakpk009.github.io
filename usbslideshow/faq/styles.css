@@ -6,16 +6,10 @@ body {
     border-bottom: 1px solid #ddd;
     padding: 10px;
     cursor: pointer;
-    outline: none; /* Remove default outline */
 }
 
-.faq-item:hover,
-.faq-item:focus {
+.faq-item:hover {
     background-color: #f9f9f9;
-}
-
-.faq-item:focus {
-    box-shadow: 0 0 0 2px #007bff; /* Add custom focus outline */
 }
 
 .faq-title {

@@ -1,0 +1,14 @@
+[
+    {
+        "title": "What is your return policy?",
+        "content": "Our return policy is 30 days with a full refund."
+    },
+    {
+        "title": "How do I track my order?",
+        "content": "You can track your order using the tracking number provided in your shipment confirmation email."
+    },
+    {
+        "title": "Do you ship internationally?",
+        "content": "Yes, we ship to over 50 countries worldwide."
+    }
+]

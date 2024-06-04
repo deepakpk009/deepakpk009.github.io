@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        .support-container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .qr-code {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="support-container">
+        <h1>Support Page</h1>
+        <p>Scan the QR code below to get support:</p>
+        <div class="qr-code">
+            <img id="qrCode" src="" alt="QR Code">
+        </div>
+    </div>
+    <script>
+        function generateQRCode(url) {
+            const qrCode = document.getElementById('qrCode');
+            qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(url)}&size=150x150`;
+        }
+
+        // URL for support
+        const supportURL = 'https://www.supportpage.com';
+        generateQRCode(supportURL);
+    </script>
+</body>
+</html>

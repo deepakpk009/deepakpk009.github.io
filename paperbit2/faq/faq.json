@@ -1,66 +1,58 @@
 [
   {
-    "title": "What photo file formats does the app support?",
-    "content": "The app supports JPEG, PNG, GIF, BMP, and WEBP file formats for photos."
+    "title": "How do I reset my password if I forget it?",
+    "content": "If you forget your password, you will need to reinstall the app. Please note that reinstalling the app will result in the loss of all saved notes."
   },
   {
-    "title": "What video file formats does the app support?",
-    "content": "The app supports MP4, 3GP, AVI, and MPEG file formats for videos."
+    "title": "How does PaperBit encrypt my notes?",
+    "content": "PaperBit uses AES-256 encryption to securely store your notes on your device. This ensures that your notes are only accessible by you."
   },
   {
-    "title": "What audio file formats does the app support?",
-    "content": "The app supports WAV, OGG, MP4, and AAC file formats for audio."
+    "title": "Can I backup my notes?",
+    "content": "Currently, PaperBit does not support automatic backups. However, you can manually export your notes to a secure location."
   },
   {
-    "title": "Can I add music to my slideshow?",
-    "content": "Yes, you can add audio files to your USB drive and select the background music from the app menu. The app also offers an option to override the video sound with the selected music."
+    "title": "Is there a limit to the number of notes I can create?",
+    "content": "There is no limit to the number of notes you can create in PaperBit. The only limitation is the available storage space on your device."
   },
   {
-    "title": "Is there a limit to the number of photos or videos I can add?",
-    "content": "There is no limit to the number of photos or videos you can add, but in demo mode, only 10 slides will be shown. To unlock full access, you need to purchase the pro mode."
+    "title": "How can I export my notes?",
+    "content": "You can export your notes by going to the settings menu and selecting the export option. This will allow you to save your notes to a secure location of your choice."
   },
   {
-    "title": "Can I adjust the display time for each photo?",
-    "content": "Yes, you can adjust the display time for each photo in the slideshow interval settings."
+    "title": "How do I delete a note?",
+    "content": "To delete a note, long-press on the note you want to delete and select the delete option from the menu."
   },
   {
-    "title": "How can I randomize the order of photo videos in my slideshow?",
-    "content": "You can choose the option to shuffle the slides from the main menu."
+    "title": "Can I categorize my notes?",
+    "content": "Yes, PaperBit allows you to categorize your notes. You can create custom categories and assign notes to them for better organization."
   },
   {
-    "title": "If I want the slideshow in order, do I need to name the files in a specific way?",
-    "content": "Yes, if you want the slideshow to play in a specific order, you need to name the files in alphabetical order to ensure sequential playback."
+    "title": "Is there a dark mode available?",
+    "content": "Yes, PaperBit includes a dark mode option that you can enable from the settings menu."
   },
   {
-    "title": "What features are available in the demo mode of the app?",
-    "content": "In demo mode, only 10 slides will be shown, and some advanced features may be restricted. To unlock full access, you need to purchase the pro mode."
+    "title": "How secure is PaperBit?",
+    "content": "PaperBit is highly secure. It uses AES-256 encryption to store notes, and access is protected by a numeric password. Ensure your password is strong and not shared with others."
   },
   {
-    "title": "How can I unlock the full version of the app?",
-    "content": "To unlock the full version of the app, you need to purchase the pro mode."
+    "title": "What happens if I lose my phone?",
+    "content": "If you lose your phone, your notes remain encrypted and secure. However, if you don't have a backup, the notes will be irretrievable without your password."
   },
   {
-    "title": "Can I override the sound of videos with background music?",
-    "content": "Yes, you can override the sound of videos with background music by selecting the appropriate option in the app settings."
+    "title": "How do I change my password?",
+    "content": "To change your password, go to the settings menu and select the change password option. You will need to enter your current password to set a new one."
   },
   {
-    "title": "What types of transition effects can I customize?",
-    "content": "You can customize various transition effects such as fade, slide, and dissolve from the 'Settings' menu within the app."
+    "title": "Can I sync my notes across multiple devices?",
+    "content": "Currently, PaperBit does not support syncing notes across multiple devices. All notes are stored locally on your device."
   },
   {
-    "title": "Does the app offer technical support?",
-    "content": "Yes, the app offers technical support to assist you with any issues or questions you may have via its Facebook page. Scan the QR code in the support page to visit the Facebook page."
+    "title": "What should I do if the app crashes?",
+    "content": "If the app crashes, try restarting your device and opening the app again. If the issue persists, please contact our support team for assistance."
   },
   {
-    "title": "Will my slideshow settings be saved if I exit the app?",
-    "content": "Yes, your slideshow settings will be saved automatically when you exit the app, ensuring that you can resume from where you left off."
-  },
-  {
-    "title": "Will the slideshow loop continuously?",
-    "content": "Yes, the slideshow is looped by default."
-  },
-  {
-    "title": "Can I pause or stop the slideshow midway?",
-    "content": "Yes, you can stop the slideshow at any time by using the back button on the remote."
+    "title": "How can I contact support?",
+    "content": "You can contact our support team by emailing support@paperbit.com. We aim to respond to all queries within 24 hours."
   }
 ]

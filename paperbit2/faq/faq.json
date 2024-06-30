@@ -1,15 +1,15 @@
 [
   {
     "title": "How do I reset my password if I forget it?",
-    "content": "If you forget your password, you will need to reinstall the app. Please note that reinstalling the app will result in the loss of all saved notes."
+    "content": "If you forget the password for a note, you will not be able to access the note. It's important to remember your passwords as they are used to encrypt and decrypt individual notes."
   },
   {
     "title": "How does PaperBit encrypt my notes?",
-    "content": "PaperBit uses AES-256 encryption to securely store your notes on your device. This ensures that your notes are only accessible by you."
+    "content": "PaperBit uses AES-256 encryption to securely store your notes. Each note is encrypted with a unique numeric password provided by the user."
   },
   {
     "title": "Can I backup my notes?",
-    "content": "Currently, PaperBit does not support automatic backups. However, you can manually export your notes to a secure location."
+    "content": "Currently, PaperBit does not support any backup functionalities. Please ensure you remember the content and passwords for your notes, as there is no way to backup the data at this time."
   },
   {
     "title": "Is there a limit to the number of notes I can create?",
@@ -17,31 +17,15 @@
   },
   {
     "title": "How can I export my notes?",
-    "content": "You can export your notes by going to the settings menu and selecting the export option. This will allow you to save your notes to a secure location of your choice."
-  },
-  {
-    "title": "How do I delete a note?",
-    "content": "To delete a note, long-press on the note you want to delete and select the delete option from the menu."
-  },
-  {
-    "title": "Can I categorize my notes?",
-    "content": "Yes, PaperBit allows you to categorize your notes. You can create custom categories and assign notes to them for better organization."
-  },
-  {
-    "title": "Is there a dark mode available?",
-    "content": "Yes, PaperBit includes a dark mode option that you can enable from the settings menu."
+    "content": "Currently, PaperBit does not support exporting notes. All notes are stored locally on your device without any export functionality."
   },
   {
     "title": "How secure is PaperBit?",
-    "content": "PaperBit is highly secure. It uses AES-256 encryption to store notes, and access is protected by a numeric password. Ensure your password is strong and not shared with others."
+    "content": "PaperBit is highly secure. It uses AES-256 encryption to store notes, and each note is protected by a numeric password provided by the user. Ensure your passwords are strong and not shared with others."
   },
   {
-    "title": "What happens if I lose my phone?",
-    "content": "If you lose your phone, your notes remain encrypted and secure. However, if you don't have a backup, the notes will be irretrievable without your password."
-  },
-  {
-    "title": "How do I change my password?",
-    "content": "To change your password, go to the settings menu and select the change password option. You will need to enter your current password to set a new one."
+    "title": "How do I change the password for a note?",
+    "content": "To change the password for a note, you will need to create a new note with the new password and manually transfer the content from the old note."
   },
   {
     "title": "Can I sync my notes across multiple devices?",
@@ -53,6 +37,14 @@
   },
   {
     "title": "How can I contact support?",
-    "content": "You can contact our support team by emailing support@paperbit.com. We aim to respond to all queries within 24 hours."
+    "content": "You can contact our support team by emailing deepakpk009@yahoo.in. We aim to respond to all queries within 24 hours."
+  },
+  {
+    "title": "What should I do if I enter the wrong password?",
+    "content": "If you enter the wrong password, the app will not be able to find the corresponding note file. Make sure you enter the correct numeric password associated with your note."
+  },
+  {
+    "title": "How can I create a new note?",
+    "content": "To create a new note, simply enter a new numeric password when prompted. If no file exists with that password, a new note will be created for you to write in."
   }
 ]

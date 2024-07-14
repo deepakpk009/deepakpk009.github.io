@@ -1,0 +1,50 @@
+[
+  {
+    "title": "How do I reset my password if I forget it?",
+    "content": "If you forget the password for a note, you will not be able to access the note. It's important to remember your passwords as they are used to encrypt and decrypt individual notes."
+  },
+  {
+    "title": "How does PaperBit encrypt my notes?",
+    "content": "PaperBit uses AES-256 encryption to securely store your notes. Each note is encrypted with a unique numeric password provided by the user."
+  },
+  {
+    "title": "Can I backup my notes?",
+    "content": "Currently, PaperBit does not support any backup functionalities. Please ensure you remember the content and passwords for your notes, as there is no way to backup the data at this time."
+  },
+  {
+    "title": "Is there a limit to the number of notes I can create?",
+    "content": "There is no limit to the number of notes you can create in PaperBit. The only limitation is the available storage space on your device."
+  },
+  {
+    "title": "How can I export my notes?",
+    "content": "Currently, PaperBit does not support exporting notes. All notes are stored locally on your device without any export functionality."
+  },
+  {
+    "title": "How secure is PaperBit?",
+    "content": "PaperBit is highly secure. It uses AES-256 encryption to store notes, and each note is protected by a numeric password provided by the user. Ensure your passwords are strong and not shared with others."
+  },
+  {
+    "title": "How do I change the password for a note?",
+    "content": "To change the password for a note, you will need to create a new note with the new password and manually transfer the content from the old note."
+  },
+  {
+    "title": "Can I sync my notes across multiple devices?",
+    "content": "Currently, PaperBit does not support syncing notes across multiple devices. All notes are stored locally on your device."
+  },
+  {
+    "title": "What should I do if the app crashes?",
+    "content": "If the app crashes, try restarting your device and opening the app again. If the issue persists, please contact our support team for assistance."
+  },
+  {
+    "title": "How can I contact support?",
+    "content": "You can contact our support team by emailing deepakpk009@yahoo.in. We aim to respond to all queries within 24 hours."
+  },
+  {
+    "title": "What should I do if I enter the wrong password?",
+    "content": "If you enter the wrong password, the app will not be able to find the corresponding note file. Make sure you enter the correct numeric password associated with your note."
+  },
+  {
+    "title": "How can I create a new note?",
+    "content": "To create a new note, simply enter a new numeric password when prompted. If no file exists with that password, a new note will be created for you to write in."
+  }
+]

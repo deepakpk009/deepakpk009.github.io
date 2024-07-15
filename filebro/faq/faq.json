@@ -1,50 +1,82 @@
 [
-  {
-    "title": "How do I reset my password if I forget it?",
-    "content": "If you forget the password for a note, you will not be able to access the note. It's important to remember your passwords as they are used to encrypt and decrypt individual notes."
-  },
-  {
-    "title": "How does PaperBit encrypt my notes?",
-    "content": "PaperBit uses AES-256 encryption to securely store your notes. Each note is encrypted with a unique numeric password provided by the user."
-  },
-  {
-    "title": "Can I backup my notes?",
-    "content": "Currently, PaperBit does not support any backup functionalities. Please ensure you remember the content and passwords for your notes, as there is no way to backup the data at this time."
-  },
-  {
-    "title": "Is there a limit to the number of notes I can create?",
-    "content": "There is no limit to the number of notes you can create in PaperBit. The only limitation is the available storage space on your device."
-  },
-  {
-    "title": "How can I export my notes?",
-    "content": "Currently, PaperBit does not support exporting notes. All notes are stored locally on your device without any export functionality."
-  },
-  {
-    "title": "How secure is PaperBit?",
-    "content": "PaperBit is highly secure. It uses AES-256 encryption to store notes, and each note is protected by a numeric password provided by the user. Ensure your passwords are strong and not shared with others."
-  },
-  {
-    "title": "How do I change the password for a note?",
-    "content": "To change the password for a note, you will need to create a new note with the new password and manually transfer the content from the old note."
-  },
-  {
-    "title": "Can I sync my notes across multiple devices?",
-    "content": "Currently, PaperBit does not support syncing notes across multiple devices. All notes are stored locally on your device."
-  },
-  {
-    "title": "What should I do if the app crashes?",
-    "content": "If the app crashes, try restarting your device and opening the app again. If the issue persists, please contact our support team for assistance."
-  },
-  {
-    "title": "How can I contact support?",
-    "content": "You can contact our support team by emailing deepakpk009@yahoo.in. We aim to respond to all queries within 24 hours."
-  },
-  {
-    "title": "What should I do if I enter the wrong password?",
-    "content": "If you enter the wrong password, the app will not be able to find the corresponding note file. Make sure you enter the correct numeric password associated with your note."
-  },
-  {
-    "title": "How can I create a new note?",
-    "content": "To create a new note, simply enter a new numeric password when prompted. If no file exists with that password, a new note will be created for you to write in."
-  }
+    {
+        "title": "What is File Bro?",
+        "content": "File Bro is an Android app that allows users to share files with other devices on the same Wi-Fi network using a web browser."
+    },
+    {
+        "title": "How do I start sharing files with File Bro?",
+        "content": "Open the File Bro app, select a folder on your device to share, and the app will serve the folder as a web page. Enter the IP address shown in the app into a web browser on any device connected to the same Wi-Fi network."
+    },
+    {
+        "title": "Can other users upload files to my device?",
+        "content": "Yes, other users can upload files to your Android device using the web page served by File Bro."
+    },
+    {
+        "title": "How do other users upload files?",
+        "content": "Users can upload multiple files using the upload button on the web page or simply by dragging and dropping them onto the page."
+    },
+    {
+        "title": "Can I view thumbnails for images on the web page?",
+        "content": "Yes, the web page provides thumbnails for images stored on your Android device."
+    },
+    {
+        "title": "Can I navigate through folders using the web page?",
+        "content": "Yes, clicking on folders in the web page will take you into the folder to view the files within."
+    },
+    {
+        "title": "Is File Bro secure?",
+        "content": "File Bro allows sharing within a local Wi-Fi network. Ensure you are connected to a trusted network to maintain security."
+    },
+    {
+        "title": "Do I need an internet connection to use File Bro?",
+        "content": "No, File Bro works over a local Wi-Fi network and does not require an internet connection."
+    },
+    {
+        "title": "Can I share any type of file with File Bro?",
+        "content": "Yes, you can share any type of file stored in the selected folder on your Android device."
+    },
+    {
+        "title": "Is there a limit to the number of files I can upload?",
+        "content": "There is no specific limit to the number of files you can upload, but it may be constrained by your device's storage capacity."
+    },
+    {
+        "title": "How do I stop sharing files?",
+        "content": "To stop sharing files, simply clicking the stop share button."
+    },
+    {
+        "title": "Can I share files with devices running different operating systems?",
+        "content": "Yes, as long as the device has a web browser and is connected to the same Wi-Fi network, it can access the files."
+    },
+    {
+        "title": "What should I do if the IP address doesn't work?",
+        "content": "Ensure both devices are connected to the same Wi-Fi network. Restart the File Bro app and re-enter the IP address shown in the app."
+    },
+    {
+        "title": "How can I change the folder I'm sharing?",
+        "content": "Click stop sharing button, then select a different folder to share."
+    },
+    {
+        "title": "Can I share subfolders within the selected folder?",
+        "content": "Yes, subfolders will also be accessible through the web page."
+    },
+    {
+        "title": "Does File Bro support password protection for shared folders?",
+        "content": "Currently, File Bro does not support password protection for shared folders. Ensure you are sharing within a trusted network."
+    },
+    {
+        "title": "What file formats are supported for upload?",
+        "content": "File Bro supports all file formats for upload as long as they are compatible with your Android device."
+    },
+    {
+        "title": "Can multiple users access the shared folder simultaneously?",
+        "content": "Yes, multiple users can access the shared folder at the same time."
+    },
+    {
+        "title": "What happens if I lose Wi-Fi connection?",
+        "content": "If the Wi-Fi connection is lost, the file sharing will be interrupted. Reconnect to the Wi-Fi network and restart the app to resume sharing."
+    },
+    {
+        "title": "Does File Bro keep a log of shared files?",
+        "content": "File Bro does not maintain a log of shared files. For security and privacy, manage your shared files carefully."
+    }
 ]

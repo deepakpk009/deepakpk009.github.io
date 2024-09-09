@@ -1,23 +1,101 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta
-        name='viewport'
-        content='width=device-width'
-    >
-    <title>Second Login</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            padding: 1em;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Login - Multi-Profile Browser for Android</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2196F3',
+                    }
+                }
+            }
         }
-    </style>
+    </script>
 </head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-primary text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">Second Login</h1>
+            <p class="text-xl">Multi-Profile Browser for Android</p>
+        </div>
+    </header>
 
-<body>
-Hello world
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Manage Multiple Accounts with Ease</h2>
+            <p class="text-lg mb-4">Second Login is a powerful multi-profile browser designed for Android users who need to manage multiple accounts across various websites. Create and maintain separate profiles for each of your online identities, making it easy to switch between accounts without the hassle of logging in and out repeatedly.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.secondlogin" target="_blank" class="inline-block bg-primary text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                Download on Google Play
+            </a>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Multiple Profile Management</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Create unlimited profiles for each website</li>
+                        <li>Easily switch between profiles with a single tap</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Homescreen Shortcuts</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Add website profiles directly to your device's homescreen</li>
+                        <li>Access your favorite profiles instantly without opening the main app</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Profile Customization</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Edit website URLs and titles at any time</li>
+                        <li>Modify profile names to keep your accounts organized</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Use Cases</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Social Media Management</h3>
+                    <p>Quickly switch between different client profiles on platforms like Facebook, Twitter, and Instagram.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">E-commerce</h3>
+                    <p>Maintain separate accounts for personal, business, and gift-shopping on sites like Amazon, eBay, or Etsy.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Email Management</h3>
+                    <p>Access multiple email accounts (personal, work, project-specific) without constant logging in and out.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Content Creation</h3>
+                    <p>Manage multiple blogs or content platforms with ease, switching between different accounts effortlessly.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Development & Testing</h3>
+                    <p>Create multiple profiles to test websites or applications under different user accounts or conditions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">And More!</h3>
+                    <p>From freelancing to gaming, travel booking to job hunting, Second Login adapts to your needs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Second Login. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>

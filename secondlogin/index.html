@@ -30,13 +30,19 @@
             margin: 0 auto;
         }
         .carousel-slide {
-            height: 550px;
-            margin: 0 10px;
+            margin: 0 5px;  /* Reduced margin */
         }
         .carousel-slide img {
             height: 100%;
-            width: auto;
+            width: 100%;  /* Changed to 100% */
             object-fit: cover;
+        }
+        /* Adjust arrow positions */
+        .slick-prev {
+            left: -25px;
+        }
+        .slick-next {
+            right: -25px;
         }
     </style>
 </head>
@@ -148,7 +154,7 @@
     <script>
         $(document).ready(function(){
             $('.carousel').slick({
-                slidesToShow: 3,
+                slidesToShow: 4,  // Increased from 3 to 4
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
@@ -156,6 +162,12 @@
                 dots: true,
                 infinite: true,
                 responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
                     {
                         breakpoint: 768,
                         settings: {

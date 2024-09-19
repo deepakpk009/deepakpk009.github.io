@@ -24,10 +24,43 @@
                 height: 50px;
             }
         }
+        .gradient-bg {
+            background-image: linear-gradient(to right, var(--tw-gradient-stops));
+            --tw-gradient-from: #9333ea;
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(147, 51, 234, 0));
+            --tw-gradient-to: #4f46e5;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        .btn-blue {
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+        .btn-blue:hover {
+            background-color: #1d4ed8;
+        }
+        .btn-orange {
+            background-color: #f97316;
+            color: #ffffff;
+        }
+        .btn-orange:hover {
+            background-color: #ea580c;
+        }
     </style>
 </head>
 <body class="font-sans">
-    <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4">
+    <header class="gradient-bg text-white py-4">
         <div class="container mx-auto px-4 flex items-center">
             <img src="/api/placeholder/50/50" alt="USB Slideshow Icon" class="app-icon">
             <div>
@@ -45,11 +78,11 @@
                 Effortlessly create stunning slideshows from your USB drive or via FTP upload.
             </p>
             <div class="flex flex-wrap gap-4 justify-center">
-                <a href="https://play.google.com/store/apps/details?id=com.deepakpk.usbslideshow" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-6 py-2 rounded-full flex items-center hover:bg-blue-700 transition">
+                <a href="https://play.google.com/store/apps/details?id=com.deepakpk.usbslideshow" target="_blank" rel="noopener noreferrer" class="btn btn-blue">
                     <i class="fas fa-arrow-right mr-2"></i>
                     Get it on Google Play
                 </a>
-                <a href="https://www.amazon.com/deepakpk-USB-Slideshow/dp/B0D7MSZ1DB/" target="_blank" rel="noopener noreferrer" class="bg-orange-500 text-white px-6 py-2 rounded-full flex items-center hover:bg-orange-600 transition">
+                <a href="https://www.amazon.com/deepakpk-USB-Slideshow/dp/B0D7MSZ1DB/" target="_blank" rel="noopener noreferrer" class="btn btn-orange">
                     <i class="fas fa-arrow-right mr-2"></i>
                     Available on Amazon Appstore
                 </a>

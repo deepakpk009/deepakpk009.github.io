@@ -61,12 +61,19 @@
             position: relative;
             max-width: 100%;
             margin: auto;
+            overflow: hidden;
         }
         .ss {
             display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
         }
         .ss.active {
             display: block;
+            opacity: 1;
         }
         .prev, .next {
             cursor: pointer;
@@ -82,6 +89,7 @@
             border-radius: 0 3px 3px 0;
             user-select: none;
             background-color: rgba(0,0,0,0.8);
+            z-index: 2;
         }
         .next {
             right: 0;
@@ -206,22 +214,33 @@
 
     <script>
         let slideIndex = 0;
-        showSlides();
-
-        function changeSlide(n) {
-            showSlides(slideIndex += n);
-        }
+        let slideInterval;
+        const slides = document.getElementsByClassName("ss");
 
         function showSlides() {
-            let slides = document.getElementsByClassName("ss");
             for (let i = 0; i < slides.length; i++) {
                 slides[i].classList.remove("active");
             }
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}
             slides[slideIndex-1].classList.add("active");
-            setTimeout(showSlides, 5000); // Change image every 5 seconds
         }
+
+        function changeSlide(n) {
+            clearInterval(slideInterval);
+            slideIndex += n - 1;
+            if (slideIndex < 0) {slideIndex = slides.length - 1}
+            if (slideIndex >= slides.length) {slideIndex = 0}
+            showSlides();
+            startSlideshow();
+        }
+
+        function startSlideshow() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(showSlides, 3000);
+        }
+
+        startSlideshow();
     </script>
 </body>
 </html>

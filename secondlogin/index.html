@@ -9,6 +9,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -21,90 +25,18 @@
         }
     </script>
     <style>
-        .app-icon {
-            width: 60px;
-            height: 43px;
-            margin-right: 10px;
-        }
-        @media (min-width: 768px) {
-            .app-icon {
-                width: 70px;
-                height: 50px;
-            }
-        }
-        .gradient-bg {
-            background-image: linear-gradient(to right, var(--tw-gradient-stops));
-            --tw-gradient-from: #9333ea;
-            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(147, 51, 234, 0));
-            --tw-gradient-to: #4f46e5;
-        }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            border-radius: 9999px;
-            font-weight: 500;
-            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 150ms;
-        }
-        .btn-blue {
-            background-color: #2563eb;
-            color: #ffffff;
-        }
-        .btn-blue:hover {
-            background-color: #1d4ed8;
-        }
-        .btn-orange {
-            background-color: #f97316;
-            color: #ffffff;
-        }
-        .btn-orange:hover {
-            background-color: #ea580c;
-        }
-        .slideshow-container {
-            position: relative;
+        .carousel-container {
             max-width: 100%;
-            margin: auto;
-            overflow: hidden;
+            margin: 0 auto;
         }
-        .ss {
-            display: none;
-            top: 0;
-            left: 0;
-            width: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
+        .carousel-slide {
+            height: 550px;
+            margin: 0 10px;
         }
-        .ss.active {
-            display: block;
-            opacity: 1;
-        }
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
+        .carousel-slide img {
+            height: 100%;
             width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            background-color: rgba(0,0,0,0.8);
-            z-index: 2;
-        }
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.9);
+            object-fit: cover;
         }
     </style>
 </head>
@@ -159,20 +91,20 @@
 
         <section class="mb-12">
             <h2 class="text-2xl md:text-3xl font-semibold mb-4">See It in Action</h2>
-            <div class="slideshow-container">
-                <img src="images/screenshots/ss1.jpg" class="ss active w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss2.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss3.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss4.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss5.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss6.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss7.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss8.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss9.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss10.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <img src="images/screenshots/ss11.jpg" class="ss w-full h-auto rounded-lg shadow-md">
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide"><img src="images/screenshots/ss1.jpg" alt="Screenshot 1"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss2.jpg" alt="Screenshot 2"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss3.jpg" alt="Screenshot 3"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss4.jpg" alt="Screenshot 4"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss5.jpg" alt="Screenshot 5"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss6.jpg" alt="Screenshot 6"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss7.jpg" alt="Screenshot 7"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss8.jpg" alt="Screenshot 8"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss9.jpg" alt="Screenshot 9"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss10.jpg" alt="Screenshot 10"></div>
+                    <div class="carousel-slide"><img src="images/screenshots/ss11.jpg" alt="Screenshot 11"></div>
+                </div>
             </div>
         </section>
 
@@ -214,34 +146,31 @@
     </footer>
 
     <script>
-        let slideIndex = 0;
-        let slideInterval;
-        const slides = document.getElementsByClassName("ss");
-
-        function showSlides() {
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].classList.remove("active");
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].classList.add("active");
-        }
-
-        function changeSlide(n) {
-            clearInterval(slideInterval);
-            slideIndex += n - 1;
-            if (slideIndex < 0) {slideIndex = slides.length - 1}
-            if (slideIndex >= slides.length) {slideIndex = 0}
-            showSlides();
-            startSlideshow();
-        }
-
-        function startSlideshow() {
-            clearInterval(slideInterval);
-            slideInterval = setInterval(showSlides, 3000);
-        }
-
-        startSlideshow();
+        $(document).ready(function(){
+            $('.carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots: true,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
     </script>
 </body>
 </html>

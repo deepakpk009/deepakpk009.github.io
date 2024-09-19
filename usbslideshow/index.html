@@ -1,28 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horizontal Layout</title>
-    <link rel="stylesheet" href="about/styles.css" />
-  </head>
-  <body>
-    <div class="page-container">
-      <div class="container">
-        <img src="about/app_icon.png" alt="Image">
-        <h1>USB Slideshow</h1>
-        <h2>App to slideshow your photos and videos in you USB</h2>
-        <h3>Developed By: Deepak PK (https://deepakpk.com)</h3>
-        <p><span class="semi-bold">App Icon Designed By:</span> Deepak PK</p>
-        <p><span class="semi-bold">Menu Icons:</span> https://boxicons.com/</p>
-        <p>
-          <span class="semi-bold">Background:</span>
-          https://pixabay.com/illustrations/texture-matte-orange-brightness-1444488/
-        </p>
-        <h4>Please submit feedback or suggestion to deepakpk009@yahoo.in</h4>
-      </div>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USB Slideshow - Transform Your TV into a Dynamic Photo Gallery</title>
+    <meta name="description" content="USB Slideshow brings your photos and videos to life on Android TV and Amazon Fire TV. Create stunning slideshows from USB or FTP upload.">
+    <meta name="keywords" content="USB Slideshow, Android TV, Amazon Fire TV, photo gallery, video slideshow, TV app">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="font-sans">
+    <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold">USB Slideshow</h1>
+            <p class="mt-2 text-xl">Transform Your TV into a Dynamic Photo Gallery</p>
+        </div>
+    </header>
 
-    <script src="about/script.js"></script>
-  </body>
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Experience Your Memories Like Never Before</h2>
+            <p class="text-lg mb-4">
+                USB Slideshow brings your photos and videos to life on your Android TV and Amazon Fire TV devices. 
+                Effortlessly create stunning slideshows from your USB drive or via FTP upload.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="https://play.google.com/store/apps/details?id=com.deepakpk.usbslideshow" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-6 py-2 rounded-full flex items-center hover:bg-blue-700 transition">
+                    <i class="fas fa-arrow-right mr-2"></i>
+                    Get it on Google Play
+                </a>
+                <a href="https://www.amazon.com/deepakpk-USB-Slideshow/dp/B0D7MSZ1DB/" target="_blank" rel="noopener noreferrer" class="bg-orange-600 text-white px-6 py-2 rounded-full flex items-center hover:bg-orange-700 transition">
+                    <i class="fas fa-arrow-right mr-2"></i>
+                    Available on Amazon Appstore
+                </a>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-tv text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Auto-Scan USB</h3>
+                    <p>Automatically detects and displays media from your USB drive.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-music text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Custom Background Music</h3>
+                    <p>Set the mood with your favorite tracks playing in the background.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-random text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Shuffle or Order</h3>
+                    <p>Choose between random playback or display in a specific order.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-arrows-alt text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Easy Navigation</h3>
+                    <p>Navigate between slides using your TV remote control.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-cogs text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Customizable Settings</h3>
+                    <p>Adjust slide duration, music overlay, and more to your preference.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-upload text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">FTP Upload</h3>
+                    <p>Easily transfer media files to your device using FTP.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">See It in Action</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <img src="/api/placeholder/640/360" alt="USB Slideshow screenshot 1" class="w-full h-auto rounded-lg shadow-md">
+                <img src="/api/placeholder/640/360" alt="USB Slideshow screenshot 2" class="w-full h-auto rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Why Choose USB Slideshow?</h2>
+            <ul class="list-disc list-inside text-lg space-y-2">
+                <li>Transform your TV into a captivating photo and video showcase</li>
+                <li>Perfect for parties, family gatherings, or relaxing evenings</li>
+                <li>Easy to use with intuitive controls and automatic USB detection</li>
+                <li>Customize your experience with various settings and options</li>
+                <li>Compatible with both Android TV and Amazon Fire TV devices</li>
+            </ul>
+        </section>
+
+        <section class="text-center">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Ready to Bring Your Memories to Life?</h2>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="https://play.google.com/store/apps/details?id=com.deepakpk.usbslideshow" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-6 py-2 rounded-full flex items-center hover:bg-blue-700 transition">
+                    <i class="fas fa-arrow-right mr-2"></i>
+                    Download on Google Play
+                </a>
+                <a href="https://www.amazon.com/deepakpk-USB-Slideshow/dp/B0D7MSZ1DB/" target="_blank" rel="noopener noreferrer" class="bg-orange-600 text-white px-6 py-2 rounded-full flex items-center hover:bg-orange-700 transition">
+                    <i class="fas fa-arrow-right mr-2"></i>
+                    Get it on Amazon Appstore
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 USB Slideshow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // You can add any necessary JavaScript here
+        // For example, to implement a simple image slider:
+        const images = document.querySelectorAll('img');
+        let currentIndex = 0;
+
+        function changeImage() {
+            images[currentIndex].style.opacity = 0;
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.opacity = 1;
+        }
+
+        setInterval(changeImage, 5000); // Change image every 5 seconds
+    </script>
+</body>
 </html>

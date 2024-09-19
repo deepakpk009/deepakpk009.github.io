@@ -3,17 +3,7 @@
 	<url>
 		<loc>https://www.deepakpk.com</loc>
 		<priority>1.00</priority>
-		<lastmod>2024-08-07</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/usbslideshow</loc>
-		<priority>0.67</priority>
 		<lastmod>2024-09-19</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/secondlogin</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-09-18</lastmod>
 	</url>
 	<url>
 		<loc>https://www.deepakpk.com/graduateapp</loc>
@@ -21,262 +11,42 @@
 		<lastmod>2024-08-03</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/xylophone/terms.html</loc>
+		<loc>https://www.deepakpk.com/secondlogin</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-09-18</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/usbslideshow</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-09-19</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/citytimes/privacy.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-03-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/xylophone/privacy.html</loc>
+		<loc>https://www.deepakpk.com/citytimes/terms.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-03-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/usbslideshow/terms.html</loc>
+		<loc>https://www.deepakpk.com/discodisco/about.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-05-27</lastmod>
+		<lastmod>2024-07-18</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/usbslideshow/support</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-06-13</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/usbslideshow/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-05-27</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/usbslideshow/faq</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-06-04</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/usbslideshow/about</loc>
+		<loc>https://www.deepakpk.com/discodisco/privacy.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-07-17</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/usbmediaplayer/terms.html</loc>
+		<loc>https://www.deepakpk.com/discodisco/terms.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-06-17</lastmod>
+		<lastmod>2024-07-17</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/usbmediaplayer/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-06-17</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/tvexplorer/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-08-26</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/tvexplorer/privacy_amazon.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-16</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/tvexplorer/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-08-26</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/thebulb/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/thebulb/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/secondlogin/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-08-30</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/secondlogin/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-08-30</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/secondlogin/faq</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-09-11</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/quicksplit/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/quicksplit/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/paperbit2/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-06-24</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/paperbit2/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-06-24</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/paperbit2/faq</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-06-24</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/paperbit/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/paperbit/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/medical/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/medical/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justviolin/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justviolin/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justtabala2/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-07-18</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justtabala2/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-07-18</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justpiano/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justpiano/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justkalimba/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justkalimba/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justguitar/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justguitar/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justduff/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justduff/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justbrowse/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/justbrowse/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/j3dmaker/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/j3dmaker/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/funnymakeup/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/funnymakeup/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/filebro/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-07-14</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/filebro/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-07-14</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/filebro/faq</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-07-14</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/filebro/about</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-07-15</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/fcalc/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/fcalc/privacy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/esas/terms.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-03-06</lastmod>
-	</url>
-	<url>
-		<loc>https://www.deepakpk.com/esas/privacy.html</loc>
+		<loc>https://www.deepakpk.com/eazysudoku/privacy.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-03-06</lastmod>
 	</url>
@@ -286,32 +56,262 @@
 		<lastmod>2024-03-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/eazysudoku/privacy.html</loc>
+		<loc>https://www.deepakpk.com/esas/privacy.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-03-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/discodisco/terms.html</loc>
+		<loc>https://www.deepakpk.com/esas/terms.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-07-17</lastmod>
+		<lastmod>2024-03-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/discodisco/privacy.html</loc>
+		<loc>https://www.deepakpk.com/fcalc/privacy.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-07-17</lastmod>
+		<lastmod>2024-03-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/discodisco/about.html</loc>
+		<loc>https://www.deepakpk.com/fcalc/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/filebro/about</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-07-15</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/filebro/faq</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-07-14</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/filebro/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-07-14</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/filebro/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-07-14</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/funnymakeup/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/funnymakeup/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/j3dmaker/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/j3dmaker/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justbrowse/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justbrowse/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justduff/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justduff/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justguitar/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justguitar/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justkalimba/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justkalimba/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justpiano/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justpiano/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justtabala2/privacy.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-07-18</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/citytimes/terms.html</loc>
+		<loc>https://www.deepakpk.com/justtabala2/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-07-18</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/justviolin/privacy.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-03-06</lastmod>
 	</url>
 	<url>
-		<loc>https://www.deepakpk.com/citytimes/privacy.html</loc>
+		<loc>https://www.deepakpk.com/justviolin/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/medical/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/medical/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/paperbit/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/paperbit/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/paperbit2/faq</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-06-24</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/paperbit2/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-06-24</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/paperbit2/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-06-24</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/quicksplit/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/quicksplit/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/secondlogin/faq</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-09-11</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/secondlogin/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-08-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/secondlogin/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-08-30</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/thebulb/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/thebulb/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/tvexplorer/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-08-26</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/tvexplorer/privacy_amazon.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/tvexplorer/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-08-26</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/usbmediaplayer/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-06-17</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/usbmediaplayer/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-06-17</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/usbslideshow/about</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-07-17</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/usbslideshow/faq</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-06-04</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/usbslideshow/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-05-27</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/usbslideshow/support</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-06-13</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/usbslideshow/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-05-27</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/xylophone/privacy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-03-06</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/xylophone/terms.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-03-06</lastmod>
 	</url>

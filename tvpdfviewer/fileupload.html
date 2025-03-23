@@ -334,7 +334,7 @@
                 
                 // Create and configure XHR
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', 'api.php?action=upload', true);
+                xhr.open('POST', 'http://dapi.iceiy.com/fileapi.php?action=upload', true);
                 
                 // Upload progress event
                 xhr.upload.addEventListener('progress', function(e) {

@@ -169,7 +169,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // API endpoint
+            // API endpoint - make sure this matches your server configuration
             const API_ENDPOINT = "https://api.deepakpk.com/fileshare/api.php";
             
             // Elements
@@ -282,12 +282,23 @@
                 }, 5000);
             }
             
+            // Clear existing alerts
+            function clearAlerts() {
+                successAlert.style.display = 'none';
+                errorAlert.style.display = 'none';
+            }
+            
             // Upload file function
             function uploadFile() {
+                // Clear any existing alerts
+                clearAlerts();
+                
                 if (!selectedFile || !tokenInput.value.trim()) {
                     showAlert(errorAlert, 'Please select a file and enter a token.');
                     return;
                 }
+                
+                const token = tokenInput.value.trim();
                 
                 // Disable button during upload
                 uploadBtn.disabled = true;
@@ -298,11 +309,12 @@
                 // Create FormData
                 const formData = new FormData();
                 formData.append('file', selectedFile);
-                formData.append('token', tokenInput.value.trim());
+                formData.append('token', token);
                 
                 // Create and configure XHR
                 const xhr = new XMLHttpRequest();
-                xhr.open('POST', `${API_ENDPOINT}?action=upload`, true);
+                // Include token in the URL as well to ensure it's properly received
+                xhr.open('POST', `${API_ENDPOINT}?action=upload&token=${token}`, true);
                 
                 // Upload progress event
                 xhr.upload.addEventListener('progress', function(e) {
@@ -362,6 +374,9 @@
                     uploadBtn.disabled = false;
                     progressContainer.style.display = 'none';
                 });
+                
+                // Log what we're about to send
+                console.log('Uploading file for token:', token);
                 
                 // Send the request
                 xhr.send(formData);

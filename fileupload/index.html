@@ -378,6 +378,15 @@
                     uploadBtn.disabled = false;
                     progressContainer.style.display = 'none';
                 });
+
+                // Add timeout handling to the XHR request
+                xhr.timeout = 120000; // 2 minutes timeout
+
+                xhr.addEventListener('timeout', function() {
+                    showAlert(errorAlert, 'Upload timed out. The server might still be processing your file.');
+                    uploadBtn.disabled = false;
+                    progressContainer.style.display = 'none';
+                });
                 
                 // Log what we're about to send
                 console.log('Uploading file for token:', token);

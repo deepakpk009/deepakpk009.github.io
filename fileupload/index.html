@@ -322,6 +322,10 @@
                         const percentComplete = Math.round((e.loaded / e.total) * 100);
                         progressBar.style.width = percentComplete + '%';
                         progressText.textContent = percentComplete + '%';
+                        // When upload reaches 100%, show processing message
+                        if (percentComplete === 100) {
+                            progressText.textContent = '100% - Processing file...';
+                        }
                     }
                 });
                 

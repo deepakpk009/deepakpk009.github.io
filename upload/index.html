@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android TV File Uploader</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        
+        .file-drop-area {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            border: 2px dashed #3498db;
+            border-radius: 8px;
+            background-color: #f0f8ff;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .file-drop-area:hover {
+            background-color: #e1f0fe;
+        }
+        
+        .file-drop-area.highlight {
+            background-color: #e1f0fe;
+            border-color: #2980b9;
+        }
+        
+        .file-input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .drop-icon {
+            font-size: 48px;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .drop-message {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .file-list {
+            margin-top: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .file-item:last-child {
+            border-bottom: none;
+        }
+        
+        .file-name {
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 10px;
+        }
+        
+        .file-size {
+            color: #777;
+            white-space: nowrap;
+        }
+        
+        .remove-file {
+            background: none;
+            border: none;
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 0 5px;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: #2980b9;
+        }
+        
+        .button:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+        
+        .progress-container {
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .progress-bar {
+            height: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .progress-bar-fill {
+            height: 100%;
+            background-color: #2ecc71;
+            width: 0;
+            transition: width 0.3s;
+            border-radius: 10px;
+        }
+        
+        .current-file {
+            margin-top: 10px;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .status-message {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+        }
+        
+        .status-success {
+            background-color: #d5f5e3;
+            color: #27ae60;
+        }
+        
+        .status-error {
+            background-color: #fadbd8;
+            color: #e74c3c;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .drop-message {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+                border-radius: 8px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .drop-icon {
+                font-size: 36px;
+            }
+            
+            .drop-message {
+                font-size: 14px;
+            }
+            
+            .file-drop-area {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Android TV File Uploader</h1>
+        
+        <div class="form-group">
+            <label for="token">Enter 6-digit Token:</label>
+            <input type="text" id="token" maxlength="6" placeholder="Enter the 6-digit token from your TV">
+        </div>
+        
+        <div class="form-group">
+            <div class="file-drop-area" id="dropArea">
+                <div class="drop-icon">📁</div>
+                <div class="drop-message">Drag & drop files here or click to browse</div>
+                <input type="file" class="file-input" id="fileInput" multiple>
+            </div>
+            
+            <div class="file-list" id="fileList"></div>
+        </div>
+        
+        <button id="uploadButton" class="button" disabled>Upload Files</button>
+        
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-info">
+                <span>Upload Progress</span>
+                <span id="progressPercentage">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progressBarFill"></div>
+            </div>
+            <div class="current-file" id="currentFile">Preparing to upload...</div>
+        </div>
+        
+        <div class="status-message" id="statusMessage"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Base API URL
+            const API_BASE_URL = 'https://api.deepakpk.com/upload';
+            
+            // DOM Elements
+            const tokenInput = document.getElementById('token');
+            const dropArea = document.getElementById('dropArea');
+            const fileInput = document.getElementById('fileInput');
+            const fileList = document.getElementById('fileList');
+            const uploadButton = document.getElementById('uploadButton');
+            const progressContainer = document.getElementById('progressContainer');
+            const progressBarFill = document.getElementById('progressBarFill');
+            const progressPercentage = document.getElementById('progressPercentage');
+            const currentFile = document.getElementById('currentFile');
+            const statusMessage = document.getElementById('statusMessage');
+            
+            // Files array to store selected files
+            let selectedFiles = [];
+            
+            // Check URL for token parameter
+            function parseUrlParams() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const tokenParam = urlParams.get('token');
+                
+                if (tokenParam && tokenParam.length === 6 && /^\d+$/.test(tokenParam)) {
+                    tokenInput.value = tokenParam;
+                    validateForm();
+                }
+            }
+            
+            // Initialize drag and drop
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false);
+            });
+            
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropArea.addEventListener(eventName, highlight, false);
+            });
+            
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, unhighlight, false);
+            });
+            
+            function highlight() {
+                dropArea.classList.add('highlight');
+            }
+            
+            function unhighlight() {
+                dropArea.classList.remove('highlight');
+            }
+            
+            // Handle file drop
+            dropArea.addEventListener('drop', handleDrop, false);
+            
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                handleFiles(files);
+            }
+            
+            // Handle file selection via input
+            fileInput.addEventListener('change', function() {
+                handleFiles(this.files);
+            });
+            
+            // Process selected files
+            function handleFiles(files) {
+                if (files.length > 0) {
+                    for (let i = 0; i < files.length; i++) {
+                        addFileToList(files[i]);
+                    }
+                    validateForm();
+                }
+            }
+            
+            // Add file to the list
+            function addFileToList(file) {
+                // Check if file already exists in the list
+                for (let i = 0; i < selectedFiles.length; i++) {
+                    if (selectedFiles[i].name === file.name && 
+                        selectedFiles[i].size === file.size && 
+                        selectedFiles[i].lastModified === file.lastModified) {
+                        return; // Skip duplicate files
+                    }
+                }
+                
+                selectedFiles.push(file);
+                
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item';
+                fileItem.innerHTML = `
+                    <div class="file-name">${file.name}</div>
+                    <div class="file-size">${formatFileSize(file.size)}</div>
+                    <button class="remove-file" data-index="${selectedFiles.length - 1}">×</button>
+                `;
+                fileList.appendChild(fileItem);
+                
+                // Add remove button handler
+                const removeButton = fileItem.querySelector('.remove-file');
+                removeButton.addEventListener('click', function() {
+                    const index = parseInt(this.getAttribute('data-index'));
+                    removeFile(index, fileItem);
+                });
+            }
+            
+            // Remove file from the list
+            function removeFile(index, element) {
+                selectedFiles.splice(index, 1);
+                element.remove();
+                
+                // Update indices for remaining elements
+                const removeButtons = document.querySelectorAll('.remove-file');
+                for (let i = index; i < removeButtons.length; i++) {
+                    removeButtons[i].setAttribute('data-index', i);
+                }
+                
+                validateForm();
+            }
+            
+            // Format file size for display
+            function formatFileSize(bytes) {
+                if (bytes === 0) return '0 Bytes';
+                
+                const k = 1024;
+                const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+                const i = Math.floor(Math.log(bytes) / Math.log(k));
+                
+                return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+            }
+            
+            // Check if form is valid for submission
+            function validateForm() {
+                const token = tokenInput.value.trim();
+                const isValid = token.length === 6 && /^\d+$/.test(token) && selectedFiles.length > 0;
+                uploadButton.disabled = !isValid;
+            }
+            
+            // Listen for token input changes
+            tokenInput.addEventListener('input', validateForm);
+            
+            // Handle form submission
+            uploadButton.addEventListener('click', uploadFiles);
+            
+            // Upload files to the server
+            function uploadFiles() {
+                const token = tokenInput.value.trim();
+                
+                if (!token || selectedFiles.length === 0) {
+                    return;
+                }
+                
+                // Show progress container
+                progressContainer.style.display = 'block';
+                uploadButton.disabled = true;
+                
+                // Reset progress indicators
+                progressBarFill.style.width = '0%';
+                progressPercentage.textContent = '0%';
+                currentFile.textContent = 'Preparing to upload...';
+                
+                // Hide any previous status messages
+                statusMessage.style.display = 'none';
+                
+                // Create FormData for the request
+                const formData = new FormData();
+                formData.append('token', token);
+                
+                // Add all files to the FormData
+                for (let i = 0; i < selectedFiles.length; i++) {
+                    formData.append('files[]', selectedFiles[i]);
+                }
+                
+                // Create and configure the XMLHttpRequest
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', `${API_BASE_URL}?endpoint=upload`, true);
+                
+                // Track upload progress
+                xhr.upload.onprogress = function(e) {
+                    if (e.lengthComputable) {
+                        const percentComplete = Math.round((e.loaded / e.total) * 100);
+                        progressBarFill.style.width = percentComplete + '%';
+                        progressPercentage.textContent = percentComplete + '%';
+                    }
+                };
+                
+                // Set current file being uploaded (simplified simulation)
+                let fileIndex = 0;
+                const uploadProgressInterval = setInterval(function() {
+                    if (fileIndex < selectedFiles.length) {
+                        currentFile.textContent = `Uploading: ${selectedFiles[fileIndex].name}`;
+                        fileIndex++;
+                    } else {
+                        clearInterval(uploadProgressInterval);
+                    }
+                }, (selectedFiles.length > 1) ? 2000 : 500);
+                
+                // Handle request completion
+                xhr.onload = function() {
+                    clearInterval(uploadProgressInterval);
+                    
+                    if (xhr.status === 200) {
+                        try {
+                            const response = JSON.parse(xhr.responseText);
+                            
+                            if (response.success) {
+                                // Show success message
+                                showStatus(`Successfully uploaded ${response.uploaded.length} files!`, 'success');
+                                
+                                // Clear file list
+                                fileList.innerHTML = '';
+                                selectedFiles = [];
+                                validateForm();
+                            } else {
+                                showStatus('Upload failed. Please try again.', 'error');
+                            }
+                        } catch (e) {
+                            showStatus('Error processing server response.', 'error');
+                        }
+                    } else {
+                        showStatus(`Server error: ${xhr.status}`, 'error');
+                    }
+                    
+                    // Reset progress indicators
+                    currentFile.textContent = 'Upload complete';
+                };
+                
+                // Handle network errors
+                xhr.onerror = function() {
+                    clearInterval(uploadProgressInterval);
+                    showStatus('Network error. Please check your connection and try again.', 'error');
+                };
+                
+                // Send the request
+                xhr.send(formData);
+            }
+            
+            // Show status message
+            function showStatus(message, type) {
+                statusMessage.textContent = message;
+                statusMessage.className = 'status-message';
+                
+                if (type === 'success') {
+                    statusMessage.classList.add('status-success');
+                } else {
+                    statusMessage.classList.add('status-error');
+                }
+                
+                statusMessage.style.display = 'block';
+                uploadButton.disabled = false;
+            }
+            
+            // Parse URL params on page load
+            parseUrlParams();
+        });
+    </script>
+</body>
+</html>

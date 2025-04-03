@@ -296,7 +296,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Base API URL
+            // Base API URL - Updated to match the API endpoint in api2.php
             const API_BASE_URL = 'https://api.deepakpk.com/upload';
             
             // DOM Elements
@@ -313,6 +313,9 @@
             
             // Files array to store selected files
             let selectedFiles = [];
+            
+            // Set chunk size (1MB) to match server expectations
+            const CHUNK_SIZE = 1024 * 1024;
             
             // Check URL for token parameter
             function parseUrlParams() {
@@ -440,163 +443,159 @@
             // Listen for token input changes
             tokenInput.addEventListener('input', validateForm);
             
-            // Handle form submission
+            // Handle form submission - initiate file upload
             uploadButton.addEventListener('click', uploadFiles);
             
-            // Add these variables and functions to your script
-
-// Set chunk size (1MB)
-const CHUNK_SIZE = 1024 * 1024;
-
-function uploadFiles() {
-    const token = tokenInput.value.trim();
-    
-    if (!token || selectedFiles.length === 0) {
-        return;
-    }
-    
-    // Show progress container
-    progressContainer.style.display = 'block';
-    uploadButton.disabled = true;
-    
-    // Reset progress indicators
-    progressBarFill.style.width = '0%';
-    progressPercentage.textContent = '0%';
-    currentFile.textContent = 'Preparing to upload...';
-    
-    // Hide any previous status messages
-    statusMessage.style.display = 'none';
-    
-    // Process files sequentially
-    let currentFileIndex = 0;
-    let uploadedFiles = [];
-    let failedFiles = [];
-    
-    // Function to upload a single file
-    function uploadNextFile() {
-        if (currentFileIndex >= selectedFiles.length) {
-            // All files uploaded
-            showStatus(`Successfully uploaded ${uploadedFiles.length} files!`, 'success');
-            
-            // Clear file list
-            fileList.innerHTML = '';
-            selectedFiles = [];
-            validateForm();
-            currentFile.textContent = 'Upload complete';
-            return;
-        }
-        
-        const file = selectedFiles[currentFileIndex];
-        currentFile.textContent = `Uploading: ${file.name}`;
-        
-        // Upload the file in chunks
-        uploadFileInChunks(file, token)
-            .then(success => {
-                if (success) {
-                    uploadedFiles.push(file.name);
-                } else {
-                    failedFiles.push({name: file.name, error: "Upload failed"});
+            // Upload files function
+            function uploadFiles() {
+                const token = tokenInput.value.trim();
+                
+                if (!token || selectedFiles.length === 0) {
+                    return;
                 }
-                currentFileIndex++;
+                
+                // Show progress container
+                progressContainer.style.display = 'block';
+                uploadButton.disabled = true;
+                
+                // Reset progress indicators
+                progressBarFill.style.width = '0%';
+                progressPercentage.textContent = '0%';
+                currentFile.textContent = 'Preparing to upload...';
+                
+                // Hide any previous status messages
+                statusMessage.style.display = 'none';
+                
+                // Process files sequentially
+                let currentFileIndex = 0;
+                let uploadedFiles = [];
+                let failedFiles = [];
+                
+                // Function to upload a single file
+                function uploadNextFile() {
+                    if (currentFileIndex >= selectedFiles.length) {
+                        // All files uploaded
+                        showStatus(`Successfully uploaded ${uploadedFiles.length} files!`, 'success');
+                        
+                        // Clear file list
+                        fileList.innerHTML = '';
+                        selectedFiles = [];
+                        validateForm();
+                        currentFile.textContent = 'Upload complete';
+                        return;
+                    }
+                    
+                    const file = selectedFiles[currentFileIndex];
+                    currentFile.textContent = `Uploading: ${file.name}`;
+                    
+                    // Upload the file in chunks
+                    uploadFileInChunks(file, token)
+                        .then(success => {
+                            if (success) {
+                                uploadedFiles.push(file.name);
+                            } else {
+                                failedFiles.push({name: file.name, error: "Upload failed"});
+                            }
+                            currentFileIndex++;
+                            uploadNextFile();
+                        })
+                        .catch(error => {
+                            failedFiles.push({name: file.name, error: error.message || "Unknown error"});
+                            currentFileIndex++;
+                            uploadNextFile();
+                        });
+                }
+                
+                // Start uploading files
                 uploadNextFile();
-            })
-            .catch(error => {
-                failedFiles.push({name: file.name, error: error.message || "Unknown error"});
-                currentFileIndex++;
-                uploadNextFile();
-            });
-    }
-    
-    // Start uploading files
-    uploadNextFile();
-}
-
-// Function to upload a file in chunks
-function uploadFileInChunks(file, token) {
-    return new Promise((resolve, reject) => {
-        // Calculate total chunks
-        const totalChunks = Math.ceil(file.size / CHUNK_SIZE);
-        let currentChunk = 0;
-        let totalLoaded = 0;
-        
-        // Function to upload a single chunk
-        function uploadChunk() {
-            if (currentChunk >= totalChunks) {
-                // All chunks uploaded
-                resolve(true);
-                return;
             }
             
-            // Calculate start and end bytes for current chunk
-            const start = currentChunk * CHUNK_SIZE;
-            const end = Math.min(start + CHUNK_SIZE, file.size);
-            const chunk = file.slice(start, end);
-            
-            // Create FormData for the chunk
-            const formData = new FormData();
-            formData.append('token', token);
-            formData.append('fileName', file.name);
-            formData.append('chunkIndex', currentChunk);
-            formData.append('totalChunks', totalChunks);
-            formData.append('fileSize', file.size);
-            formData.append('fileChunk', chunk);
-            
-            // Create and configure XHR
-            const xhr = new XMLHttpRequest();
-            xhr.open('POST', `${API_BASE_URL}?endpoint=upload-chunk`, true);
-            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-            
-            // Track progress
-            xhr.upload.onprogress = function(e) {
-                if (e.lengthComputable) {
-                    const chunkProgress = e.loaded / e.total;
-                    const chunkSize = end - start;
-                    const chunkLoaded = chunkProgress * chunkSize;
+            // Function to upload a file in chunks
+            function uploadFileInChunks(file, token) {
+                return new Promise((resolve, reject) => {
+                    // Calculate total chunks
+                    const totalChunks = Math.ceil(file.size / CHUNK_SIZE);
+                    let currentChunk = 0;
+                    let totalLoaded = 0;
                     
-                    const overallProgress = (totalLoaded + chunkLoaded) / file.size;
-                    const percentComplete = Math.round(overallProgress * 100);
-                    
-                    progressBarFill.style.width = percentComplete + '%';
-                    progressPercentage.textContent = percentComplete + '%';
-                }
-            };
-            
-            // Handle completion
-            xhr.onload = function() {
-                if (xhr.status === 200) {
-                    try {
-                        const response = JSON.parse(xhr.responseText);
-                        
-                        if (response.success) {
-                            // Chunk uploaded successfully
-                            totalLoaded += (end - start);
-                            currentChunk++;
-                            uploadChunk();
-                        } else {
-                            reject(new Error(response.error || "Failed to upload chunk"));
+                    // Function to upload a single chunk
+                    function uploadChunk() {
+                        if (currentChunk >= totalChunks) {
+                            // All chunks uploaded
+                            resolve(true);
+                            return;
                         }
-                    } catch (e) {
-                        reject(new Error("Error processing server response"));
+                        
+                        // Calculate start and end bytes for current chunk
+                        const start = currentChunk * CHUNK_SIZE;
+                        const end = Math.min(start + CHUNK_SIZE, file.size);
+                        const chunk = file.slice(start, end);
+                        
+                        // Create FormData for the chunk
+                        const formData = new FormData();
+                        formData.append('token', token);
+                        formData.append('fileName', file.name);
+                        formData.append('chunkIndex', currentChunk);
+                        formData.append('totalChunks', totalChunks);
+                        formData.append('fileSize', file.size);
+                        formData.append('fileChunk', chunk);
+                        
+                        // Create and configure XHR
+                        const xhr = new XMLHttpRequest();
+                        xhr.open('POST', `${API_BASE_URL}?endpoint=upload-chunk`, true);
+                        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                        
+                        // Track progress
+                        xhr.upload.onprogress = function(e) {
+                            if (e.lengthComputable) {
+                                const chunkProgress = e.loaded / e.total;
+                                const chunkSize = end - start;
+                                const chunkLoaded = chunkProgress * chunkSize;
+                                
+                                const overallProgress = (totalLoaded + chunkLoaded) / file.size;
+                                const percentComplete = Math.round(overallProgress * 100);
+                                
+                                progressBarFill.style.width = percentComplete + '%';
+                                progressPercentage.textContent = percentComplete + '%';
+                            }
+                        };
+                        
+                        // Handle completion
+                        xhr.onload = function() {
+                            if (xhr.status === 200) {
+                                try {
+                                    const response = JSON.parse(xhr.responseText);
+                                    
+                                    if (response.success) {
+                                        // Chunk uploaded successfully
+                                        totalLoaded += (end - start);
+                                        currentChunk++;
+                                        uploadChunk();
+                                    } else {
+                                        reject(new Error(response.error || "Failed to upload chunk"));
+                                    }
+                                } catch (e) {
+                                    reject(new Error("Error processing server response"));
+                                }
+                            } else {
+                                reject(new Error(`Server error: ${xhr.status}`));
+                            }
+                        };
+                        
+                        // Handle errors
+                        xhr.onerror = function() {
+                            reject(new Error("Network error"));
+                        };
+                        
+                        // Send the chunk
+                        xhr.send(formData);
                     }
-                } else {
-                    reject(new Error(`Server error: ${xhr.status}`));
-                }
-            };
+                    
+                    // Start uploading chunks
+                    uploadChunk();
+                });
+            }
             
-            // Handle errors
-            xhr.onerror = function() {
-                reject(new Error("Network error"));
-            };
-            
-            // Send the chunk
-            xhr.send(formData);
-        }
-        
-        // Start uploading chunks
-        uploadChunk();
-    });
-}
-
             // Show status message
             function showStatus(message, type) {
                 statusMessage.textContent = message;

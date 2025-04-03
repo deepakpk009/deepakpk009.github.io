@@ -261,7 +261,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>File Uploader 2</h1>
+        <h1>File Uploader</h1>
         
         <div class="form-group">
             <label for="token">Enter 6-digit Token:</label>
@@ -443,7 +443,11 @@
             // Handle form submission
             uploadButton.addEventListener('click', uploadFiles);
             
-            // Replace your XMLHttpRequest code with this Fetch approach
+            // Add these variables and functions to your script
+
+// Set chunk size (1MB)
+const CHUNK_SIZE = 1024 * 1024;
+
 function uploadFiles() {
     const token = tokenInput.value.trim();
     
@@ -463,37 +467,133 @@ function uploadFiles() {
     // Hide any previous status messages
     statusMessage.style.display = 'none';
     
-    // Create FormData for the request
-    const formData = new FormData();
-    formData.append('token', token);
+    // Process files sequentially
+    let currentFileIndex = 0;
+    let uploadedFiles = [];
+    let failedFiles = [];
     
-    // Add all files to the FormData
-    for (let i = 0; i < selectedFiles.length; i++) {
-        formData.append('files[]', selectedFiles[i]);
-    }
-
-    // Using Fetch with no-cors mode
-    fetch(`${API_BASE_URL}?endpoint=upload`, {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors' // This prevents CORS errors but also prevents reading response
-    })
-    .then(() => {
-        // Note: With no-cors, you can't read the actual response
-        // So we just assume success
-        progressBarFill.style.width = '100%';
-        progressPercentage.textContent = '100%';
-        currentFile.textContent = 'Upload complete';
-        showStatus('Files sent successfully! Check your TV for confirmation.', 'success');
+    // Function to upload a single file
+    function uploadNextFile() {
+        if (currentFileIndex >= selectedFiles.length) {
+            // All files uploaded
+            showStatus(`Successfully uploaded ${uploadedFiles.length} files!`, 'success');
+            
+            // Clear file list
+            fileList.innerHTML = '';
+            selectedFiles = [];
+            validateForm();
+            currentFile.textContent = 'Upload complete';
+            return;
+        }
         
-        // Clear file list
-        fileList.innerHTML = '';
-        selectedFiles = [];
-        validateForm();
-    })
-    .catch(error => {
-        showStatus('Network error. Please try again.', 'error');
-        console.error('Upload error:', error);
+        const file = selectedFiles[currentFileIndex];
+        currentFile.textContent = `Uploading: ${file.name}`;
+        
+        // Upload the file in chunks
+        uploadFileInChunks(file, token)
+            .then(success => {
+                if (success) {
+                    uploadedFiles.push(file.name);
+                } else {
+                    failedFiles.push({name: file.name, error: "Upload failed"});
+                }
+                currentFileIndex++;
+                uploadNextFile();
+            })
+            .catch(error => {
+                failedFiles.push({name: file.name, error: error.message || "Unknown error"});
+                currentFileIndex++;
+                uploadNextFile();
+            });
+    }
+    
+    // Start uploading files
+    uploadNextFile();
+}
+
+// Function to upload a file in chunks
+function uploadFileInChunks(file, token) {
+    return new Promise((resolve, reject) => {
+        // Calculate total chunks
+        const totalChunks = Math.ceil(file.size / CHUNK_SIZE);
+        let currentChunk = 0;
+        let totalLoaded = 0;
+        
+        // Function to upload a single chunk
+        function uploadChunk() {
+            if (currentChunk >= totalChunks) {
+                // All chunks uploaded
+                resolve(true);
+                return;
+            }
+            
+            // Calculate start and end bytes for current chunk
+            const start = currentChunk * CHUNK_SIZE;
+            const end = Math.min(start + CHUNK_SIZE, file.size);
+            const chunk = file.slice(start, end);
+            
+            // Create FormData for the chunk
+            const formData = new FormData();
+            formData.append('token', token);
+            formData.append('fileName', file.name);
+            formData.append('chunkIndex', currentChunk);
+            formData.append('totalChunks', totalChunks);
+            formData.append('fileSize', file.size);
+            formData.append('fileChunk', chunk);
+            
+            // Create and configure XHR
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', `${API_BASE_URL}?endpoint=upload-chunk`, true);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            
+            // Track progress
+            xhr.upload.onprogress = function(e) {
+                if (e.lengthComputable) {
+                    const chunkProgress = e.loaded / e.total;
+                    const chunkSize = end - start;
+                    const chunkLoaded = chunkProgress * chunkSize;
+                    
+                    const overallProgress = (totalLoaded + chunkLoaded) / file.size;
+                    const percentComplete = Math.round(overallProgress * 100);
+                    
+                    progressBarFill.style.width = percentComplete + '%';
+                    progressPercentage.textContent = percentComplete + '%';
+                }
+            };
+            
+            // Handle completion
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    try {
+                        const response = JSON.parse(xhr.responseText);
+                        
+                        if (response.success) {
+                            // Chunk uploaded successfully
+                            totalLoaded += (end - start);
+                            currentChunk++;
+                            uploadChunk();
+                        } else {
+                            reject(new Error(response.error || "Failed to upload chunk"));
+                        }
+                    } catch (e) {
+                        reject(new Error("Error processing server response"));
+                    }
+                } else {
+                    reject(new Error(`Server error: ${xhr.status}`));
+                }
+            };
+            
+            // Handle errors
+            xhr.onerror = function() {
+                reject(new Error("Network error"));
+            };
+            
+            // Send the chunk
+            xhr.send(formData);
+        }
+        
+        // Start uploading chunks
+        uploadChunk();
     });
 }
 

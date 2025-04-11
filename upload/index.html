@@ -90,6 +90,16 @@
             margin-bottom: 30px;
         }
 
+        .filter-info {
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 8px;
+            background-color: rgba(66, 133, 244, 0.1);
+            border-radius: 5px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
         .dropzone {
             border: 2px dashed var(--border-color);
             border-radius: 10px;
@@ -200,6 +210,10 @@
         </div>
         
         <div class="upload-section" style="display: none;">
+            <div id="filter-info" class="filter-info" style="display: none;">
+                Filtering files by: <span id="filter-text"></span>
+            </div>
+            
             <div class="dropzone" id="dropzone">
                 <p>Drag & drop files here or</p>
                 <button id="file-select">Select Files</button>
@@ -224,6 +238,8 @@
         const validateTokenBtn = document.getElementById('validate-token');
         const tokenStatus = document.getElementById('token-status');
         const uploadSection = document.querySelector('.upload-section');
+        const filterInfo = document.getElementById('filter-info');
+        const filterText = document.getElementById('filter-text');
         const dropzone = document.getElementById('dropzone');
         const fileSelect = document.getElementById('file-select');
         const fileInput = document.getElementById('file-input');
@@ -235,16 +251,39 @@
         let files = [];
         let validToken = '';
         let uploadingFile = null;
+        let fileFilter = '';
         
-        // Check if token is in URL parameters
+        // Check if token and file filter are in URL parameters
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const tokenParam = urlParams.get('token');
+            const extensionParam = urlParams.get('extension');
             
             if (tokenParam && tokenParam.match(/^\d{6}$/)) {
                 tokenInput.value = tokenParam;
             }
+            
+            if (extensionParam) {
+                setFileFilter(extensionParam);
+            }
         });
+        
+        // Set file filter
+        function setFileFilter(extension) {
+            let extensionList = extension.split(',').map(ext => {
+                // Ensure each extension starts with a dot
+                ext = ext.trim();
+                return ext.startsWith('.') ? ext : '.' + ext;
+            });
+            
+            // Build accept attribute
+            fileFilter = extensionList.join(',');
+            fileInput.setAttribute('accept', fileFilter);
+            
+            // Show filter info
+            filterInfo.style.display = 'block';
+            filterText.textContent = extensionList.join(', ');
+        }
         
         // Event listeners
         validateTokenBtn.addEventListener('click', validateToken);
@@ -329,7 +368,22 @@
             const dt = e.dataTransfer;
             const newFiles = dt.files;
             
-            addFiles(newFiles);
+            // If we have a file filter, filter the dropped files
+            if (fileFilter) {
+                const allowedExtensions = fileFilter.split(',').map(ext => ext.toLowerCase());
+                const filteredFiles = Array.from(newFiles).filter(file => {
+                    const fileName = file.name.toLowerCase();
+                    return allowedExtensions.some(ext => fileName.endsWith(ext));
+                });
+                
+                if (filteredFiles.length < newFiles.length) {
+                    alert(`Some files were skipped because they don't match the allowed types: ${fileFilter}`);
+                }
+                
+                addFiles(filteredFiles);
+            } else {
+                addFiles(newFiles);
+            }
         }
         
         function addFiles(newFiles) {

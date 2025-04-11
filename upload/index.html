@@ -431,6 +431,8 @@
             
             let completedFiles = 0;
             let totalFiles = files.length;
+            let successfulUploads = [];
+            let failedUploads = [];
             
             for (let i = 0; i < files.length; i++) {
                 const file = files[i];
@@ -447,17 +449,42 @@
                     fileStatus.textContent = 'Completed';
                     fileStatus.className = 'file-status completed';
                     completedFiles++;
+                    successfulUploads.push(i);
                     updateOverallProgress(completedFiles, totalFiles);
+                    
+                    // Add fade-out animation
+                    fileItem.style.transition = 'opacity 0.5s ease';
+                    fileItem.style.opacity = '0.5';
                 } catch (error) {
                     fileStatus.textContent = 'Failed';
                     fileStatus.className = 'file-status error';
+                    failedUploads.push(i);
                     console.error(`Error uploading ${file.name}:`, error);
                 }
             }
             
-            uploadButton.disabled = false;
+            // Remove successfully uploaded files from the array
+            // We need to remove from highest index to lowest to avoid index shifting issues
+            successfulUploads.sort((a, b) => b - a).forEach(index => {
+                files.splice(index, 1);
+            });
+            
+            // Show notification and re-render file list
+            if (successfulUploads.length > 0) {
+                // Wait a moment to allow the user to see the "Completed" status before removing
+                setTimeout(() => {
+                    renderFileList();
+                    overallProgress.textContent = `${successfulUploads.length} files uploaded successfully!`;
+                    if (failedUploads.length > 0) {
+                        overallProgress.textContent += ` ${failedUploads.length} files failed.`;
+                    }
+                }, 1000);
+            } else {
+                overallProgress.textContent = `Upload failed for all files.`;
+            }
+            
+            uploadButton.disabled = files.length === 0;
             uploadingFile = null;
-            overallProgress.textContent = 'All uploads completed!';
         }
         
         async function uploadFileInChunks(file, progressBar, fileStatus) {

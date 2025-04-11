@@ -252,6 +252,7 @@
         let validToken = '';
         let uploadingFile = null;
         let fileFilter = '';
+        let allowedExtensions = [];
         
         // Check if token and file filter are in URL parameters
         document.addEventListener('DOMContentLoaded', function() {
@@ -270,19 +271,29 @@
         
         // Set file filter
         function setFileFilter(extension) {
-            let extensionList = extension.split(',').map(ext => {
+            allowedExtensions = extension.split(',').map(ext => {
                 // Ensure each extension starts with a dot
-                ext = ext.trim();
+                ext = ext.trim().toLowerCase();
                 return ext.startsWith('.') ? ext : '.' + ext;
             });
             
             // Build accept attribute
-            fileFilter = extensionList.join(',');
+            fileFilter = allowedExtensions.join(',');
             fileInput.setAttribute('accept', fileFilter);
             
             // Show filter info
             filterInfo.style.display = 'block';
-            filterText.textContent = extensionList.join(', ');
+            filterText.textContent = allowedExtensions.join(', ');
+        }
+        
+        // Check if file matches allowed extensions
+        function isFileAllowed(file) {
+            if (!fileFilter || allowedExtensions.length === 0) {
+                return true; // No filter specified, all files allowed
+            }
+            
+            const fileName = file.name.toLowerCase();
+            return allowedExtensions.some(ext => fileName.endsWith(ext));
         }
         
         // Event listeners
@@ -361,33 +372,35 @@
         
         // File handling
         function handleFileSelect(e) {
-            addFiles(e.target.files);
+            filterAndAddFiles(Array.from(e.target.files));
         }
         
         function handleDrop(e) {
             const dt = e.dataTransfer;
-            const newFiles = dt.files;
+            const droppedFiles = Array.from(dt.files);
+            filterAndAddFiles(droppedFiles);
+        }
+        
+        function filterAndAddFiles(newFiles) {
+            let filteredFiles = newFiles;
+            let skippedCount = 0;
             
-            // If we have a file filter, filter the dropped files
-            if (fileFilter) {
-                const allowedExtensions = fileFilter.split(',').map(ext => ext.toLowerCase());
-                const filteredFiles = Array.from(newFiles).filter(file => {
-                    const fileName = file.name.toLowerCase();
-                    return allowedExtensions.some(ext => fileName.endsWith(ext));
-                });
+            // Apply file extension filter if set
+            if (fileFilter && allowedExtensions.length > 0) {
+                const originalCount = filteredFiles.length;
+                filteredFiles = filteredFiles.filter(file => isFileAllowed(file));
+                skippedCount = originalCount - filteredFiles.length;
                 
-                if (filteredFiles.length < newFiles.length) {
-                    alert(`Some files were skipped because they don't match the allowed types: ${fileFilter}`);
+                if (skippedCount > 0) {
+                    alert(`${skippedCount} ${skippedCount === 1 ? 'file was' : 'files were'} skipped because ${skippedCount === 1 ? 'it doesn\'t' : 'they don\'t'} match the allowed types: ${allowedExtensions.join(', ')}`);
                 }
-                
-                addFiles(filteredFiles);
-            } else {
-                addFiles(newFiles);
             }
+            
+            addFiles(filteredFiles);
         }
         
         function addFiles(newFiles) {
-            // Convert FileList to array and add to files array
+            // Check for duplicates before adding to files array
             for (let i = 0; i < newFiles.length; i++) {
                 // Check if file already exists in the list
                 const exists = files.some(file => 

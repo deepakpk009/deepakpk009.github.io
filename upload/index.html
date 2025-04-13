@@ -254,6 +254,10 @@
         let fileFilter = '';
         let allowedExtensions = [];
         
+        // Constants
+        const MAX_RETRIES = 3;
+        const REQUEST_TIMEOUT = 120000; // 2 minutes
+        
         // Check if token and file filter are in URL parameters
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
@@ -268,6 +272,22 @@
                 setFileFilter(extensionParam);
             }
         });
+        
+        // Calculate optimal chunk size based on file size
+        function calculateOptimalChunkSize(fileSize) {
+            // For small files, use smaller chunks
+            if (fileSize < 5 * 1024 * 1024) { // Less than 5MB
+                return 1 * 1024 * 1024; // 1MB chunks
+            } 
+            // For medium files
+            else if (fileSize < 50 * 1024 * 1024) { // Less than 50MB
+                return 5 * 1024 * 1024; // 5MB chunks
+            }
+            // For large files
+            else {
+                return 10 * 1024 * 1024; // 10MB chunks
+            }
+        }
         
         // Set file filter
         function setFileFilter(extension) {
@@ -351,8 +371,16 @@
                 tokenStatus.textContent = 'Validating token...';
                 tokenStatus.className = 'info-text';
                 
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+                
                 // We'll just make a check_status call to verify if the token is valid
-                const response = await fetch(`${API_URL}?action=check_status&token=${token}`);
+                const response = await fetch(`${API_URL}?action=check_status&token=${token}`, {
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+                
                 const data = await response.json();
                 
                 if (data.success) {
@@ -365,7 +393,14 @@
                     tokenStatus.className = 'info-text error';
                 }
             } catch (error) {
-                tokenStatus.textContent = 'Error validating token: ' + error.message;
+                let errorMessage = 'Error validating token';
+                if (error.name === 'AbortError') {
+                    errorMessage = 'Connection timeout. Please try again.';
+                } else if (error.message) {
+                    errorMessage += ': ' + error.message;
+                }
+                
+                tokenStatus.textContent = errorMessage;
                 tokenStatus.className = 'info-text error';
             }
         }
@@ -494,6 +529,35 @@
         async function startUpload() {
             if (files.length === 0 || !validToken) return;
             
+            // Check connection first
+            try {
+                overallProgress.textContent = "Checking connection...";
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+                
+                const response = await fetch(`${API_URL}?action=check_status&token=${validToken}`, {
+                    method: 'GET',
+                    cache: 'no-store',
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+                
+                if (!response.ok) {
+                    throw new Error("Server connection check failed");
+                }
+            } catch (error) {
+                let errorMessage = "Connection problem";
+                if (error.name === 'AbortError') {
+                    errorMessage = "Connection timed out";
+                } else if (error.message) {
+                    errorMessage += ": " + error.message;
+                }
+                
+                overallProgress.textContent = `${errorMessage}. Please try again.`;
+                return;
+            }
+            
             uploadButton.disabled = true;
             
             let completedFiles = 0;
@@ -523,7 +587,7 @@
                     fileItem.style.transition = 'opacity 0.5s ease';
                     fileItem.style.opacity = '0.5';
                 } catch (error) {
-                    fileStatus.textContent = 'Failed';
+                    fileStatus.textContent = 'Failed: ' + error.message;
                     fileStatus.className = 'file-status error';
                     failedUploads.push(i);
                     console.error(`Error uploading ${file.name}:`, error);
@@ -555,7 +619,7 @@
         }
         
         async function uploadFileInChunks(file, progressBar, fileStatus) {
-            const CHUNK_SIZE = 1024 * 1024; // 1MB chunks
+            const CHUNK_SIZE = calculateOptimalChunkSize(file.size);
             const totalChunks = Math.ceil(file.size / CHUNK_SIZE);
             
             for (let chunkIndex = 0; chunkIndex < totalChunks; chunkIndex++) {
@@ -563,31 +627,64 @@
                 const end = Math.min(start + CHUNK_SIZE, file.size);
                 const chunk = file.slice(start, end);
                 
-                const formData = new FormData();
-                formData.append('token', validToken);
-                formData.append('file', chunk);
-                formData.append('filename', file.name);
-                formData.append('chunkIndex', chunkIndex);
-                formData.append('totalChunks', totalChunks);
+                let retries = 0;
+                let uploadSuccess = false;
                 
-                try {
-                    const response = await fetch(`${API_URL}?action=upload`, {
-                        method: 'POST',
-                        body: formData
-                    });
-                    
-                    const data = await response.json();
-                    
-                    if (!data.success) {
-                        throw new Error(data.message);
+                while (!uploadSuccess && retries < MAX_RETRIES) {
+                    try {
+                        const formData = new FormData();
+                        formData.append('token', validToken);
+                        formData.append('file', chunk);
+                        formData.append('filename', file.name);
+                        formData.append('chunkIndex', chunkIndex);
+                        formData.append('totalChunks', totalChunks);
+                        
+                        const controller = new AbortController();
+                        const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT);
+                        
+                        fileStatus.textContent = retries > 0 ? 
+                            `Retry ${retries}/${MAX_RETRIES} - Chunk ${chunkIndex + 1}/${totalChunks}` : 
+                            `Chunk ${chunkIndex + 1}/${totalChunks}`;
+                            
+                        const response = await fetch(`${API_URL}?action=upload`, {
+                            method: 'POST',
+                            body: formData,
+                            signal: controller.signal
+                        });
+                        
+                        clearTimeout(timeoutId);
+                        
+                        const data = await response.json();
+                        
+                        if (!data.success) {
+                            throw new Error(data.message);
+                        }
+                        
+                        // Update progress
+                        const progress = ((chunkIndex + 1) / totalChunks) * 100;
+                        progressBar.style.width = `${progress}%`;
+                        fileStatus.textContent = `${Math.round(progress)}%`;
+                        uploadSuccess = true;
+                    } catch (error) {
+                        retries++;
+                        console.error(`Chunk ${chunkIndex + 1}/${totalChunks} attempt ${retries} failed:`, error);
+                        
+                        let errorMessage = "Unknown error";
+                        if (error.name === 'AbortError') {
+                            errorMessage = "Connection timed out";
+                        } else if (error.message) {
+                            errorMessage = error.message;
+                        }
+                        
+                        if (retries >= MAX_RETRIES) {
+                            throw new Error(`Failed after ${MAX_RETRIES} attempts: ${errorMessage}`);
+                        }
+                        
+                        // Wait before retrying (exponential backoff)
+                        const delayMs = 1000 * Math.pow(2, retries);
+                        fileStatus.textContent = `Waiting to retry... (${delayMs/1000}s)`;
+                        await new Promise(resolve => setTimeout(resolve, delayMs));
                     }
-                    
-                    // Update progress
-                    const progress = ((chunkIndex + 1) / totalChunks) * 100;
-                    progressBar.style.width = `${progress}%`;
-                    fileStatus.textContent = `${Math.round(progress)}%`;
-                } catch (error) {
-                    throw new Error(`Chunk ${chunkIndex + 1}/${totalChunks} failed: ${error.message}`);
                 }
             }
         }

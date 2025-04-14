@@ -134,7 +134,6 @@
 
         .file-name {
             font-weight: 500;
-            word-break: break-all;
         }
 
         .file-size {
@@ -145,7 +144,6 @@
         .file-status {
             flex-basis: 100px;
             text-align: right;
-            white-space: nowrap;
         }
 
         .progress-container {
@@ -181,17 +179,6 @@
             .container {
                 padding: 20px;
             }
-            
-            .file-item {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .file-status {
-                text-align: left;
-                margin-top: 5px;
-            }
-            
         }
 
         @media (max-width: 480px) {
@@ -334,13 +321,6 @@
         tokenInput.addEventListener('input', function() {
             // Only allow digits and limit to 6 characters
             this.value = this.value.replace(/\D/g, '').substring(0, 6);
-        });
-
-        // Enter key for token validation
-        tokenInput.addEventListener('keyup', function(event) {
-            if (event.key === 'Enter') {
-                validateToken();
-            }
         });
         
         fileSelect.addEventListener('click', () => fileInput.click());

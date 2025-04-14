@@ -205,6 +205,12 @@
             font-size: 14px;
         }
 
+        .cancel-button {
+            background-color: #f4a742;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -300,10 +306,22 @@
         let fileFilter = '';
         let allowedExtensions = [];
         let abortControllers = new Map(); // Store abort controllers for each upload
+        let isUploading = false; // Global state to track if upload is in progress
+        let uploadQueue = []; // Track the queue of files being uploaded
+        let currentUploadIndex = -1; // Track the current file upload index
         
         // Constants
         const MAX_RETRIES = 3;
         const REQUEST_TIMEOUT = 120000; // 2 minutes
+        
+        // File status constants
+        const FILE_STATUS = {
+            WAITING: 'waiting',
+            UPLOADING: 'uploading',
+            COMPLETED: 'completed',
+            FAILED: 'failed',
+            CANCELLED: 'cancelled'
+        };
         
         // Check if token and file filter are in URL parameters
         document.addEventListener('DOMContentLoaded', function() {
@@ -498,7 +516,10 @@
                 );
                 
                 if (!exists) {
-                    files.push(newFiles[i]);
+                    // Add status property to each file
+                    const fileWithStatus = newFiles[i];
+                    fileWithStatus.status = FILE_STATUS.WAITING;
+                    files.push(fileWithStatus);
                 }
             }
             
@@ -535,17 +556,44 @@
                 
                 const fileStatus = document.createElement('div');
                 fileStatus.className = 'file-status';
-                fileStatus.textContent = 'Waiting';
+                
+                switch(file.status) {
+                    case FILE_STATUS.UPLOADING:
+                        fileStatus.textContent = 'Uploading...';
+                        break;
+                    case FILE_STATUS.COMPLETED:
+                        fileStatus.textContent = 'Completed';
+                        fileStatus.classList.add('completed');
+                        break;
+                    case FILE_STATUS.FAILED:
+                        fileStatus.textContent = file.errorMessage || 'Failed';
+                        fileStatus.classList.add('error');
+                        break;
+                    case FILE_STATUS.CANCELLED:
+                        fileStatus.textContent = 'Cancelled';
+                        fileStatus.classList.add('error');
+                        break;
+                    default:
+                        fileStatus.textContent = 'Waiting';
+                }
                 
                 const fileControls = document.createElement('div');
                 fileControls.className = 'file-controls';
                 
-                const removeButton = document.createElement('button');
-                removeButton.textContent = 'Remove';
-                removeButton.className = 'remove-button';
-                removeButton.addEventListener('click', () => removeFile(index));
-                
-                fileControls.appendChild(removeButton);
+                // Create either remove or cancel button based on file status
+                if (file.status === FILE_STATUS.UPLOADING) {
+                    const cancelButton = document.createElement('button');
+                    cancelButton.textContent = 'Cancel';
+                    cancelButton.className = 'cancel-button';
+                    cancelButton.addEventListener('click', () => cancelFileUpload(index));
+                    fileControls.appendChild(cancelButton);
+                } else if (file.status === FILE_STATUS.WAITING) {
+                    const removeButton = document.createElement('button');
+                    removeButton.textContent = 'Remove';
+                    removeButton.className = 'remove-button';
+                    removeButton.addEventListener('click', () => removeFile(index));
+                    fileControls.appendChild(removeButton);
+                }
                 
                 const progressContainer = document.createElement('div');
                 progressContainer.className = 'progress-container';
@@ -553,15 +601,23 @@
                 const progressBar = document.createElement('div');
                 progressBar.className = 'progress-bar';
                 
+                if (file.progress) {
+                    progressBar.style.width = `${file.progress}%`;
+                }
+                
                 progressContainer.appendChild(progressBar);
                 
                 // Add chunk progress container and bar
                 const chunkProgressContainer = document.createElement('div');
                 chunkProgressContainer.className = 'chunk-progress-container';
-                chunkProgressContainer.style.display = 'none'; // Hidden initially
+                chunkProgressContainer.style.display = file.status === FILE_STATUS.UPLOADING ? 'block' : 'none';
                 
                 const chunkProgressBar = document.createElement('div');
                 chunkProgressBar.className = 'chunk-progress-bar';
+                
+                if (file.chunkProgress) {
+                    chunkProgressBar.style.width = `${file.chunkProgress}%`;
+                }
                 
                 chunkProgressContainer.appendChild(chunkProgressBar);
                 
@@ -571,24 +627,41 @@
                 fileItem.appendChild(progressContainer);
                 fileItem.appendChild(chunkProgressContainer);
                 
+                // Add fade-out for completed files
+                if (file.status === FILE_STATUS.COMPLETED) {
+                    fileItem.style.transition = 'opacity 0.5s ease';
+                    fileItem.style.opacity = '0.5';
+                }
+                
                 fileList.appendChild(fileItem);
             });
         }
         
         function removeFile(index) {
-            // If this file is currently uploading, abort it
-            if (abortControllers.has(index)) {
+            // Only remove if the file is not currently uploading
+            if (files[index].status !== FILE_STATUS.UPLOADING) {
+                files.splice(index, 1);
+                renderFileList();
+                updateUploadButton();
+            }
+        }
+        
+        function cancelFileUpload(index) {
+            // Cancel the upload if it's in progress
+            if (files[index].status === FILE_STATUS.UPLOADING && abortControllers.has(index)) {
                 abortControllers.get(index).abort();
                 abortControllers.delete(index);
+                
+                // Update file status
+                files[index].status = FILE_STATUS.CANCELLED;
+                renderFileList();
             }
-            
-            files.splice(index, 1);
-            renderFileList();
-            updateUploadButton();
         }
         
         function updateUploadButton() {
-            uploadButton.disabled = files.length === 0 || !validToken;
+            // Enable upload button if there are files waiting to be uploaded
+            const hasWaitingFiles = files.some(file => file.status === FILE_STATUS.WAITING);
+            uploadButton.disabled = !hasWaitingFiles || !validToken || isUploading;
         }
         
         function formatFileSize(bytes) {
@@ -603,7 +676,11 @@
         
         // File upload
         async function startUpload() {
-            if (files.length === 0 || !validToken) return;
+            if (!validToken) return;
+            
+            // Check if there are files waiting to be uploaded
+            const filesToUpload = files.filter(file => file.status === FILE_STATUS.WAITING);
+            if (filesToUpload.length === 0) return;
             
             // Check connection first
             try {
@@ -634,91 +711,154 @@
                 return;
             }
             
+            isUploading = true;
             uploadButton.disabled = true;
             abortControllers.clear(); // Clear any previous abort controllers
             
             let completedFiles = 0;
-            let totalFiles = files.length;
+            let totalUploadingFiles = filesToUpload.length;
             let successfulUploads = [];
             let failedUploads = [];
             
-            for (let i = 0; i < files.length; i++) {
-                const file = files[i];
-                const fileItem = fileList.querySelector(`[data-index="${i}"]`);
-                const fileStatus = fileItem.querySelector('.file-status');
-                const progressBar = fileItem.querySelector('.progress-bar');
-                const chunkProgressContainer = fileItem.querySelector('.chunk-progress-container');
-                const chunkProgressBar = fileItem.querySelector('.chunk-progress-bar');
+            // Update UI to show which files are in the upload queue
+            uploadQueue = filesToUpload.map((_, index) => {
+                // Get the actual index in the files array
+                const fileIndex = files.findIndex((file, idx) => 
+                    file.status === FILE_STATUS.WAITING && 
+                    !uploadQueue.includes(idx)
+                );
+                return fileIndex;
+            });
+            
+            // Process files sequentially
+            for (let i = 0; i < uploadQueue.length; i++) {
+                const fileIndex = uploadQueue[i];
+                currentUploadIndex = fileIndex;
                 
-                // Show chunk progress container when upload starts
-                chunkProgressContainer.style.display = 'block';
+                if (fileIndex === -1 || files[fileIndex].status !== FILE_STATUS.WAITING) {
+                    continue; // Skip if file has been removed or status changed
+                }
                 
-                fileStatus.textContent = 'Preparing...';
+                const file = files[fileIndex];
+                file.status = FILE_STATUS.UPLOADING;
+                file.progress = 0;
+                
+                renderFileList(); // Update UI to show current status
+                
+                const fileItem = fileList.querySelector(`[data-index="${fileIndex}"]`);
+                let fileStatus, progressBar, chunkProgressContainer, chunkProgressBar;
+                
+                if (fileItem) {
+                    fileStatus = fileItem.querySelector('.file-status');
+                    progressBar = fileItem.querySelector('.progress-bar');
+                    chunkProgressContainer = fileItem.querySelector('.chunk-progress-container');
+                    chunkProgressBar = fileItem.querySelector('.chunk-progress-bar');
+                    
+                    // Show chunk progress container
+                    if (chunkProgressContainer) {
+                        chunkProgressContainer.style.display = 'block';
+                    }
+                }
+                
                 uploadingFile = file.name;
-                updateOverallProgress(completedFiles, totalFiles);
+                updateOverallProgress(completedFiles, totalUploadingFiles);
                 
                 // Create an abort controller for this file
                 const controller = new AbortController();
-                abortControllers.set(i, controller);
+                abortControllers.set(fileIndex, controller);
                 
                 try {
-                    await uploadFileInChunks(file, progressBar, chunkProgressBar, fileStatus, controller.signal);
-                    fileStatus.textContent = 'Completed';
-                    fileStatus.className = 'file-status completed';
-                    completedFiles++;
-                    successfulUploads.push(i);
-                    updateOverallProgress(completedFiles, totalFiles);
+                    await uploadFileInChunks(
+                        file, 
+                        fileIndex,
+                        progressBar, 
+                        chunkProgressBar, 
+                        fileStatus, 
+                        controller.signal
+                    );
                     
-                    // Add fade-out animation
-                    fileItem.style.transition = 'opacity 0.5s ease';
-                    fileItem.style.opacity = '0.5';
+                    file.status = FILE_STATUS.COMPLETED;
+                    if (fileStatus) {
+                        fileStatus.textContent = 'Completed';
+                        fileStatus.className = 'file-status completed';
+                    }
+                    
+                    completedFiles++;
+                    successfulUploads.push(fileIndex);
+                    updateOverallProgress(completedFiles, totalUploadingFiles);
+                    
+                    renderFileList(); // Update UI after file completes
                 } catch (error) {
                     // Check if this was an abort
                     if (error.name === 'AbortError') {
-                        fileStatus.textContent = 'Cancelled';
+                        file.status = FILE_STATUS.CANCELLED;
+                        if (fileStatus) {
+                            fileStatus.textContent = 'Cancelled';
+                        }
                     } else {
-                        fileStatus.textContent = 'Failed: ' + error.message;
-                        failedUploads.push(i);
+                        file.status = FILE_STATUS.FAILED;
+                        file.errorMessage = error.message || 'Unknown error';
+                        
+                        if (fileStatus) {
+                            fileStatus.textContent = 'Failed: ' + file.errorMessage;
+                        }
+                        failedUploads.push(fileIndex);
                     }
-                    fileStatus.className = 'file-status error';
+                    
+                    if (fileStatus) {
+                        fileStatus.className = 'file-status error';
+                    }
                     console.error(`Error uploading ${file.name}:`, error);
+                    
+                    renderFileList(); // Update UI after file fails
                 } finally {
                     // Clean up the abort controller
-                    abortControllers.delete(i);
+                    abortControllers.delete(fileIndex);
                 }
             }
             
-            // Remove successfully uploaded files from the array
-            // We need to remove from highest index to lowest to avoid index shifting issues
-            successfulUploads.sort((a, b) => b - a).forEach(index => {
-                files.splice(index, 1);
-            });
-            
-            // Show notification and re-render file list
-            if (successfulUploads.length > 0) {
-                // Wait a moment to allow the user to see the "Completed" status before removing
-                setTimeout(() => {
-                    renderFileList();
+            // Wait a moment for UI updates to show completion status
+            setTimeout(() => {
+                // Remove successfully uploaded files from the array
+                // We need to sort in descending order to avoid index shifting issues
+                successfulUploads.sort((a, b) => b - a).forEach(index => {
+                    files.splice(index, 1);
+                });
+                
+                renderFileList();
+                
+                if (successfulUploads.length > 0) {
                     overallProgress.textContent = `${successfulUploads.length} files uploaded successfully!`;
                     if (failedUploads.length > 0) {
                         overallProgress.textContent += ` ${failedUploads.length} files failed.`;
                     }
-                }, 1000);
-            } else if (failedUploads.length > 0) {
-                overallProgress.textContent = `Upload failed for all files.`;
-            } else {
-                overallProgress.textContent = `No files were uploaded.`;
-            }
-            
-            uploadButton.disabled = files.length === 0;
-            uploadingFile = null;
+                } else if (failedUploads.length > 0) {
+                    overallProgress.textContent = `Upload failed for all files.`;
+                } else {
+                    overallProgress.textContent = `No files were uploaded.`;
+                }
+                
+                // Reset upload state
+                isUploading = false;
+                uploadingFile = null;
+                currentUploadIndex = -1;
+                uploadQueue = [];
+                
+                // Update upload button state
+                updateUploadButton();
+            }, 1000);
         }
         
-        async function uploadFileInChunks(file, progressBar, chunkProgressBar, fileStatus, abortSignal) {
+        async function uploadFileInChunks(file, fileIndex, progressBar, chunkProgressBar, fileStatus, abortSignal) {
             const CHUNK_SIZE = calculateOptimalChunkSize(file.size);
             const totalChunks = Math.ceil(file.size / CHUNK_SIZE);
             
             for (let chunkIndex = 0; chunkIndex < totalChunks; chunkIndex++) {
+                // Check if file status has changed during upload
+                if (files[fileIndex].status !== FILE_STATUS.UPLOADING) {
+                    throw new DOMException('Upload cancelled', 'AbortError');
+                }
+                
                 const start = chunkIndex * CHUNK_SIZE;
                 const end = Math.min(start + CHUNK_SIZE, file.size);
                 const chunk = file.slice(start, end);
@@ -728,12 +868,20 @@
                 
                 // Update file progress
                 const fileProgress = ((chunkIndex) / totalChunks) * 100;
-                progressBar.style.width = `${fileProgress}%`;
+                if (progressBar) {
+                    progressBar.style.width = `${fileProgress}%`;
+                }
+                
+                // Update the file object's progress property
+                files[fileIndex].progress = fileProgress;
                 
                 while (!uploadSuccess && retries < MAX_RETRIES) {
                     try {
                         // Reset chunk progress for each attempt
-                        chunkProgressBar.style.width = '0%';
+                        if (chunkProgressBar) {
+                            chunkProgressBar.style.width = '0%';
+                        }
+                        files[fileIndex].chunkProgress = 0;
                         
                         const formData = new FormData();
                         formData.append('token', validToken);
@@ -743,9 +891,11 @@
                         
                         // Don't append the file yet - we'll do that with upload progress tracking
                         
-                        fileStatus.textContent = retries > 0 ? 
-                            `Retry ${retries}/${MAX_RETRIES} - Chunk ${chunkIndex + 1}/${totalChunks} (0%)` : 
-                            `Chunk ${chunkIndex + 1}/${totalChunks} (0%)`;
+                        if (fileStatus) {
+                            fileStatus.textContent = retries > 0 ? 
+                                `Retry ${retries}/${MAX_RETRIES} - Chunk ${chunkIndex + 1}/${totalChunks} (0%)` : 
+                                `Chunk ${chunkIndex + 1}/${totalChunks} (0%)`;
+                        }
                         
                         // Create a new XMLHttpRequest for upload progress tracking
                         const xhr = new XMLHttpRequest();
@@ -754,9 +904,15 @@
                         xhr.upload.addEventListener('progress', (event) => {
                             if (event.lengthComputable) {
                                 const chunkProgress = (event.loaded / event.total) * 100;
-                                chunkProgressBar.style.width = `${chunkProgress}%`;
                                 
-                                fileStatus.textContent = `Chunk ${chunkIndex + 1}/${totalChunks} (${Math.round(chunkProgress)}%)`;
+                                if (chunkProgressBar) {
+                                    chunkProgressBar.style.width = `${chunkProgress}%`;
+                                }
+                                files[fileIndex].chunkProgress = chunkProgress;
+                                
+                                if (fileStatus) {
+                                    fileStatus.textContent = `Chunk ${chunkIndex + 1}/${totalChunks} (${Math.round(chunkProgress)}%)`;
+                                }
                             }
                         });
                         
@@ -818,15 +974,29 @@
                         const data = await Promise.race([uploadPromise, timeoutPromise, abortPromise]);
                         
                         // Set chunk progress to 100% on success
-                        chunkProgressBar.style.width = '100%';
+                        if (chunkProgressBar) {
+                            chunkProgressBar.style.width = '100%';
+                        }
+                        files[fileIndex].chunkProgress = 100;
                         
                         // Update file progress
                         const progress = ((chunkIndex + 1) / totalChunks) * 100;
-                        progressBar.style.width = `${progress}%`;
-                        fileStatus.textContent = `${Math.round(progress)}%`;
+                        if (progressBar) {
+                            progressBar.style.width = `${progress}%`;
+                        }
+                        files[fileIndex].progress = progress;
+                        
+                        if (fileStatus) {
+                            fileStatus.textContent = `${Math.round(progress)}%`;
+                        }
                         uploadSuccess = true;
                     } catch (error) {
-                        // Check if operation was aborted
+                        // First, check if the file status has been changed externally
+                        if (files[fileIndex].status !== FILE_STATUS.UPLOADING) {
+                            throw new DOMException('Upload cancelled', 'AbortError');
+                        }
+                        
+                        // Then check if operation was aborted
                         if (error.name === 'AbortError') {
                             throw error; // Propagate the abort error
                         }
@@ -849,7 +1019,9 @@
                         
                         // Wait before retrying (exponential backoff)
                         const delayMs = 1000 * Math.pow(2, retries);
-                        fileStatus.textContent = `Waiting to retry... (${delayMs/1000}s)`;
+                        if (fileStatus) {
+                            fileStatus.textContent = `Waiting to retry... (${delayMs/1000}s)`;
+                        }
                         await new Promise(resolve => setTimeout(resolve, delayMs));
                     }
                 }

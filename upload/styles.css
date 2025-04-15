@@ -135,9 +135,23 @@ button:disabled {
 }
 
 .file-status {
-    flex-basis: 100px;
+    flex-basis: 120px;
     text-align: right;
-}
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+.chunk-progress {
+    font-size: 11px;
+    margin-top: 3px;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 
 .progress-container {
     height: 10px;
@@ -187,3 +201,20 @@ button:disabled {
         width: 100%;
     }
 }
+
+@media (max-width: 600px) {
+    .file-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .file-status {
+      text-align: left;
+      margin-top: 10px;
+      width: 100%;
+    }
+    
+    .file-item button {
+      margin-top: 10px;
+    }
+  }

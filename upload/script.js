@@ -322,47 +322,53 @@ const CONFIG = {
   }
   
   /**
-   * Create a file list item element
-   * @param {File} file - File to create item for
-   * @param {number} index - Index of the file in the files array
-   * @returns {HTMLElement} - The file list item element
-   */
-  function createFileListItem(file, index) {
-    const fileItem = document.createElement('div');
-    fileItem.className = 'file-item';
-    fileItem.dataset.index = index;
-    
-    // Create file info section (name and size)
-    const fileInfo = document.createElement('div');
-    fileInfo.className = 'file-info';
-    
-    const fileName = document.createElement('div');
-    fileName.className = 'file-name';
-    fileName.textContent = file.name;
-    
-    const fileSize = document.createElement('div');
-    fileSize.className = 'file-size';
-    fileSize.textContent = formatFileSize(file.size);
-    
-    fileInfo.appendChild(fileName);
-    fileInfo.appendChild(fileSize);
-    
-    // Create status, remove button, and progress elements
-    const fileStatus = document.createElement('div');
-    fileStatus.className = 'file-status';
-    fileStatus.textContent = 'Waiting';
-    
-    const removeButton = createRemoveButton(index);
-    const progressContainer = createProgressBar();
-    
-    // Assemble the file item
-    fileItem.appendChild(fileInfo);
-    fileItem.appendChild(fileStatus);
-    fileItem.appendChild(removeButton);
-    fileItem.appendChild(progressContainer);
-    
-    return fileItem;
-  }
+ * Create a file list item element
+ * @param {File} file - File to create item for
+ * @param {number} index - Index of the file in the files array
+ * @returns {HTMLElement} - The file list item element
+ */
+ function createFileListItem(file, index) {
+  const fileItem = document.createElement('div');
+  fileItem.className = 'file-item';
+  fileItem.dataset.index = index;
+  
+  // Create file info section (name and size)
+  const fileInfo = document.createElement('div');
+  fileInfo.className = 'file-info';
+  
+  const fileName = document.createElement('div');
+  fileName.className = 'file-name';
+  fileName.textContent = file.name;
+  
+  const fileSize = document.createElement('div');
+  fileSize.className = 'file-size';
+  fileSize.textContent = formatFileSize(file.size);
+  
+  fileInfo.appendChild(fileName);
+  fileInfo.appendChild(fileSize);
+  
+  // Create status, remove button, and progress elements
+  const fileStatus = document.createElement('div');
+  fileStatus.className = 'file-status';
+  fileStatus.textContent = 'Waiting';
+  
+  const progressContainer = createProgressBar();
+  
+  // Create a container for actions (remove button)
+  const actionContainer = document.createElement('div');
+  actionContainer.className = 'file-actions';
+  
+  const removeButton = createRemoveButton(index);
+  actionContainer.appendChild(removeButton);
+  
+  // Assemble the file item
+  fileItem.appendChild(fileInfo);
+  fileItem.appendChild(fileStatus);
+  fileItem.appendChild(actionContainer);
+  fileItem.appendChild(progressContainer);
+  
+  return fileItem;
+}
   
   /**
    * Create a remove button for a file
@@ -487,6 +493,9 @@ const CONFIG = {
       
       DOM.uploadButton.disabled = true;
       
+      // Disable all remove buttons during upload
+      disableRemoveButtons();
+      
       let completedFiles = 0;
       let totalFiles = STATE.files.length;
       let successfulUploads = [];
@@ -509,10 +518,35 @@ const CONFIG = {
       // Cleanup and show final status
       finishUploadProcess(successfulUploads, failedUploads);
       
+      // Re-enable remove buttons for remaining files
+      enableRemoveButtons();
+      
     } catch (error) {
       DOM.overallProgress.textContent = `${error.message}. Please try again.`;
+      enableRemoveButtons();
     }
   }
+    /**
+ * Disable all remove buttons during upload
+ */
+function disableRemoveButtons() {
+  const removeButtons = document.querySelectorAll('.file-item button');
+  removeButtons.forEach(button => {
+    button.disabled = true;
+    button.classList.add('disabled');
+  });
+}
+
+/**
+ * Enable all remove buttons after upload
+ */
+function enableRemoveButtons() {
+  const removeButtons = document.querySelectorAll('.file-item button');
+  removeButtons.forEach(button => {
+    button.disabled = false;
+    button.classList.remove('disabled');
+  });
+}
   
   /**
    * Check server connection before starting upload
@@ -651,19 +685,20 @@ const CONFIG = {
         // Create form data
         const formData = createChunkFormData(file, chunk, chunkIndex, totalChunks);
         
-        // Upload chunk
-        const response = await makeApiRequest(`${CONFIG.API_URL}?action=upload`, {
-          method: 'POST',
-          body: formData
-        });
-        
-        const data = await response.json();
+        // Use XHR instead of fetch to track upload progress
+        const data = await uploadWithProgress(
+          `${CONFIG.API_URL}?action=upload`, 
+          formData, 
+          (chunkProgress) => {
+            updateChunkProgressWithPercentage(progressBar, fileStatus, chunkIndex, totalChunks, chunkProgress);
+          }
+        );
         
         if (!data.success) {
           throw new Error(data.message);
         }
         
-        // Update progress
+        // Update to show chunk completed
         updateChunkProgress(progressBar, fileStatus, chunkIndex, totalChunks);
         uploadSuccess = true;
       } catch (error) {
@@ -680,6 +715,81 @@ const CONFIG = {
       }
     }
   }
+
+/**
+ * Update progress display with chunk upload percentage
+ * @param {HTMLElement} progressBar - Progress bar element
+ * @param {HTMLElement} fileStatus - File status element
+ * @param {number} chunkIndex - Index of the current chunk
+ * @param {number} totalChunks - Total number of chunks
+ * @param {number} chunkProgress - Progress percentage of the current chunk
+ */
+function updateChunkProgressWithPercentage(progressBar, fileStatus, chunkIndex, totalChunks, chunkProgress) {
+  // Calculate overall progress considering both completed chunks and current chunk progress
+  const completedChunksProgress = (chunkIndex / totalChunks) * 100;
+  const currentChunkContribution = (1 / totalChunks) * (chunkProgress / 100) * 100;
+  const overallProgress = completedChunksProgress + currentChunkContribution;
+  
+  // Update progress bar
+  progressBar.style.width = `${overallProgress}%`;
+  
+  // Update status text to show both overall and chunk progress
+  fileStatus.innerHTML = `<span>Chunk ${chunkIndex + 1}/${totalChunks}</span>
+    <div class="chunk-progress">Chunk: ${Math.round(chunkProgress)}%</div>
+    <div>Overall: ${Math.round(overallProgress)}%</div>`;
+}
+
+  /**
+ * Upload with progress tracking using XMLHttpRequest
+ * @param {string} url - The URL to upload to
+ * @param {FormData} formData - Form data to upload
+ * @param {Function} progressCallback - Callback for progress updates
+ * @returns {Promise<Object>} - Response data
+ */
+function uploadWithProgress(url, formData, progressCallback) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    
+    // Set up upload progress event
+    xhr.upload.addEventListener('progress', (event) => {
+      if (event.lengthComputable) {
+        const percentComplete = (event.loaded / event.total) * 100;
+        progressCallback(percentComplete);
+      }
+    });
+    
+    // Handle load completion
+    xhr.addEventListener('load', () => {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        try {
+          const response = JSON.parse(xhr.responseText);
+          resolve(response);
+        } catch (error) {
+          reject(new Error('Invalid response format'));
+        }
+      } else {
+        reject(new Error(`HTTP error ${xhr.status}`));
+      }
+    });
+    
+    // Handle errors
+    xhr.addEventListener('error', () => {
+      reject(new Error('Network error occurred'));
+    });
+    
+    // Handle timeout
+    xhr.addEventListener('timeout', () => {
+      reject(new Error('Request timed out'));
+    });
+    
+    // Set timeout
+    xhr.timeout = CONFIG.REQUEST_TIMEOUT;
+    
+    // Open and send the request
+    xhr.open('POST', url);
+    xhr.send(formData);
+  });
+}
   
   /**
    * Create form data for chunk upload

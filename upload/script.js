@@ -568,6 +568,12 @@ const CONFIG = {
     const fileItem = DOM.fileList.querySelector(`[data-index="${fileIndex}"]`);
     const fileStatus = fileItem.querySelector('.file-status');
     const progressBar = fileItem.querySelector('.progress-bar');
+    const removeButton = fileItem.querySelector('button');
+  
+    // Hide/remove the Remove button when upload starts
+    if (removeButton) {
+      removeButton.style.display = 'none';
+    }
     
     fileStatus.textContent = 'Uploading...';
     STATE.uploadingFile = file.name;
@@ -586,6 +592,12 @@ const CONFIG = {
     } catch (error) {
       fileStatus.textContent = 'Failed: ' + error.message;
       fileStatus.className = 'file-status error';
+      
+      // Show the Remove button again if upload fails
+      if (removeButton) {
+          removeButton.style.display = '';
+      }
+      
       console.error(`Error uploading ${file.name}:`, error);
       return { success: false, error };
     }

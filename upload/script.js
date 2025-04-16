@@ -80,6 +80,12 @@ const CONFIG = {
     // Token validation
     DOM.validateTokenBtn.addEventListener('click', validateToken);
     DOM.tokenInput.addEventListener('input', handleTokenInput);
+    DOM.tokenInput.addEventListener('keyup', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        validateToken();
+      }
+    });
     
     // File selection
     DOM.fileSelect.addEventListener('click', () => DOM.fileInput.click());

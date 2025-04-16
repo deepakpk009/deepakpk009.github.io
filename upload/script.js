@@ -53,6 +53,7 @@ const CONFIG = {
   function initApp() {
     setupEventListeners();
     checkUrlParameters();
+    adjustForViewport();
   }
   
   /**
@@ -85,6 +86,8 @@ const CONFIG = {
     DOM.fileInput.addEventListener('change', handleFileSelect);
     DOM.uploadButton.addEventListener('click', startUpload);
     
+    window.addEventListener('resize', adjustForViewport);
+
     // Drag and drop functionality
     setupDragAndDrop();
   }
@@ -347,22 +350,32 @@ const CONFIG = {
     fileInfo.appendChild(fileName);
     fileInfo.appendChild(fileSize);
     
-    // Create status, remove button, and progress elements
+    // Create status wrapper to group status and remove button
+    const statusWrapper = document.createElement('div');
+    statusWrapper.className = 'file-status-wrapper';
+    
+    // Create status element
     const fileStatus = document.createElement('div');
     fileStatus.className = 'file-status';
     fileStatus.textContent = 'Waiting';
     
+    // Create remove button
     const removeButton = createRemoveButton(index);
+    
+    // Add elements to status wrapper
+    statusWrapper.appendChild(fileStatus);
+    statusWrapper.appendChild(removeButton);
+    
+    // Create progress container
     const progressContainer = createProgressBar();
     
     // Assemble the file item
     fileItem.appendChild(fileInfo);
-    fileItem.appendChild(fileStatus);
-    fileItem.appendChild(removeButton);
+    fileItem.appendChild(statusWrapper);
     fileItem.appendChild(progressContainer);
     
     return fileItem;
-  }
+}
   
   /**
    * Create a remove button for a file
@@ -763,6 +776,24 @@ const CONFIG = {
       DOM.overallProgress.textContent = `Uploading ${completed}/${total} files (${percentage}%) - Current file: ${STATE.uploadingFile}`;
     } else {
       DOM.overallProgress.textContent = `${completed}/${total} files uploaded (${percentage}%)`;
+    }
+  }
+
+  /**
+    * Adjust UI elements based on viewport size
+  */
+  function adjustForViewport() {
+    const isMobile = window.innerWidth <= 600;
+    
+    // Adjust text content for mobile
+    if (isMobile) {
+      DOM.fileSelect.textContent = "Select";
+      DOM.validateTokenBtn.textContent = "Validate";
+      DOM.uploadButton.textContent = "Upload";
+    } else {
+      DOM.fileSelect.textContent = "Select Files";
+      DOM.validateTokenBtn.textContent = "Validate Token";
+      DOM.uploadButton.textContent = "Upload Files";
     }
   }
   

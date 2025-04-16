@@ -168,22 +168,87 @@ button:disabled {
     color: #555;
 }
 
+.file-status-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 20px;
+        max-width: 95%;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .file-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    
+    .file-info {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .file-status-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .upload-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    #upload-button {
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .container {
         padding: 15px;
+        border-radius: 8px;
     }
     
     .token-input {
         flex-direction: column;
+        gap: 15px;
     }
     
     input[type="text"] {
         width: 100%;
+        max-width: 200px;
+    }
+    
+    .dropzone {
+        padding: 25px 15px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    #validate-token {
+        width: 100%;
+        max-width: 200px;
     }
 }

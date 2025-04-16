@@ -574,13 +574,22 @@ const CONFIG = {
     if (removeButton) {
       removeButton.style.display = 'none';
     }
-    
-    fileStatus.textContent = 'Uploading...';
+  
+  // Initialize with circular progress
+  updateChunkStatus(fileStatus, 0, 1, 0);
+  const statusText = fileStatus.querySelector('.status-text');
+  if (statusText) {
+      statusText.textContent = 'Uploading...';
+  }
+  
     STATE.uploadingFile = file.name;
     updateOverallProgress(completedFiles, totalFiles);
     
     try {
       await uploadFileInChunks(file, progressBar, fileStatus);
+      
+      // Remove spinner and update completed status
+      fileStatus.innerHTML = '';
       fileStatus.textContent = 'Completed';
       fileStatus.className = 'file-status completed';
       
@@ -590,6 +599,8 @@ const CONFIG = {
       
       return { success: true };
     } catch (error) {
+      // Remove spinner and update error status
+      fileStatus.innerHTML = '';
       fileStatus.textContent = 'Failed: ' + error.message;
       fileStatus.className = 'file-status error';
       
@@ -738,9 +749,23 @@ const CONFIG = {
    * @param {number} retries - Number of retries for this chunk
    */
   function updateChunkStatus(fileStatus, chunkIndex, totalChunks, retries) {
-    fileStatus.textContent = retries > 0 ? 
+    // Clear previous contents
+    fileStatus.innerHTML = '';
+
+    // Create circular progress indicator
+    const circularProgress = document.createElement('div');
+    circularProgress.className = 'circular-progress';
+  
+    // Create status text element
+    const statusText = document.createElement('span');
+    statusText.className = 'status-text';
+    statusText.textContent = retries > 0 ? 
       `Retry ${retries}/${CONFIG.MAX_RETRIES} - Chunk ${chunkIndex + 1}/${totalChunks}` : 
       `Chunk ${chunkIndex + 1}/${totalChunks}`;
+
+    // Add elements to fileStatus
+    fileStatus.appendChild(circularProgress);
+    fileStatus.appendChild(statusText);
   }
   
   /**
@@ -753,7 +778,12 @@ const CONFIG = {
   function updateChunkProgress(progressBar, fileStatus, chunkIndex, totalChunks) {
     const progress = ((chunkIndex + 1) / totalChunks) * 100;
     progressBar.style.width = `${progress}%`;
-    fileStatus.textContent = `${Math.round(progress)}%`;
+  
+    // Update only the text part, keeping the spinner
+    const statusText = fileStatus.querySelector('.status-text');
+    if (statusText) {
+      statusText.textContent = `${Math.round(progress)}%`;
+    }
   }
   
   /**
@@ -763,7 +793,13 @@ const CONFIG = {
    */
   async function handleRetryBackoff(fileStatus, retries) {
     const delayMs = 1000 * Math.pow(2, retries);
-    fileStatus.textContent = `Waiting to retry... (${delayMs/1000}s)`;
+  
+    // Keep the spinner but update the status text
+    const statusText = fileStatus.querySelector('.status-text');
+    if (statusText) {
+      statusText.textContent = `Waiting to retry... (${delayMs/1000}s)`;
+    }
+  
     await new Promise(resolve => setTimeout(resolve, delayMs));
   }
   

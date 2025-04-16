@@ -15,14 +15,18 @@ const CONFIG = {
     }
   };
   
-  // State management
-  const STATE = {
-    files: [],
-    validToken: '',
-    uploadingFile: null,
-    fileFilter: '',
-    allowedExtensions: []
-  };
+/**
+ * State management with additional tracking
+ */
+const STATE = {
+  files: [],
+  validToken: '',
+  uploadingFile: null,
+  uploadingFileIndex: null,  // Track the index of the file being uploaded
+  uploadInProgress: false,   // Flag to indicate an upload is in progress
+  fileFilter: '',
+  allowedExtensions: []
+};
   
   // DOM element references
   const DOM = {
@@ -321,13 +325,14 @@ const CONFIG = {
     });
   }
   
-  /**
+  
+/**
  * Create a file list item element with circular progress
  * @param {File} file - File to create item for
  * @param {number} index - Index of the file in the files array
  * @returns {HTMLElement} - The file list item element
  */
- function createFileListItem(file, index) {
+function createFileListItem(file, index) {
   const fileItem = document.createElement('div');
   fileItem.className = 'file-item';
   fileItem.dataset.index = index;
@@ -352,6 +357,11 @@ const CONFIG = {
   fileStatus.className = 'file-status';
   fileStatus.textContent = 'Waiting';
   
+  // Create status wrapper to hold file status and chunk info
+  const statusWrapper = document.createElement('div');
+  statusWrapper.className = 'status-wrapper';
+  statusWrapper.appendChild(fileStatus);
+  
   // Create actions section (circular progress and remove button)
   const fileActions = document.createElement('div');
   fileActions.className = 'file-actions';
@@ -367,6 +377,7 @@ const CONFIG = {
   // Add event listener that doesn't interfere with uploads
   removeButton.addEventListener('click', (e) => {
     e.stopPropagation();
+    e.preventDefault();
     removeFile(index);
   });
   
@@ -376,12 +387,78 @@ const CONFIG = {
   
   // Assemble the file item
   fileItem.appendChild(fileInfo);
-  fileItem.appendChild(fileStatus);
+  fileItem.appendChild(statusWrapper);
   fileItem.appendChild(fileActions);
   
   return fileItem;
 }
-  
+
+/**
+ * Make an API request with timeout, abort capability, and progress tracking
+ * @param {string} url - The URL to fetch
+ * @param {Object} options - Fetch options
+ * @param {Function} progressCallback - Optional callback for progress updates
+ * @returns {Promise<Response>} - Fetch response
+ */
+async function makeApiRequestWithProgress(url, options = {}, progressCallback) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    const timeout = options.timeout || CONFIG.REQUEST_TIMEOUT;
+    
+    // Set up timeout
+    const timeoutId = setTimeout(() => {
+      xhr.abort();
+      reject(new Error('Request timed out'));
+    }, timeout);
+    
+    // Set up progress event
+    if (progressCallback && typeof progressCallback === 'function') {
+      xhr.upload.addEventListener('progress', (event) => {
+        if (event.lengthComputable) {
+          const percentComplete = (event.loaded / event.total) * 100;
+          progressCallback(percentComplete);
+        }
+      });
+    }
+    
+    // Handle load event
+    xhr.addEventListener('load', () => {
+      clearTimeout(timeoutId);
+      if (xhr.status >= 200 && xhr.status < 300) {
+        resolve({
+          ok: true,
+          status: xhr.status,
+          json: () => JSON.parse(xhr.responseText)
+        });
+      } else {
+        reject(new Error(`HTTP error ${xhr.status}`));
+      }
+    });
+    
+    // Handle error and abort events
+    xhr.addEventListener('error', () => {
+      clearTimeout(timeoutId);
+      reject(new Error('Network error'));
+    });
+    
+    xhr.addEventListener('abort', () => {
+      clearTimeout(timeoutId);
+      reject(new Error('Request aborted'));
+    });
+    
+    // Open and send the request
+    xhr.open(options.method || 'GET', url);
+    
+    // Send the request
+    if (options.body instanceof FormData) {
+      xhr.send(options.body);
+    } else {
+      xhr.send();
+    }
+  });
+}
+
+
 /**
  * Create a circular progress indicator
  * @returns {HTMLElement} - The circular progress element
@@ -482,13 +559,27 @@ function updateCircularProgress(fileItem, percentage) {
  */
 function removeFile(index) {
   // Check if this file is currently uploading
-  const isUploading = STATE.uploadingFile === STATE.files[index].name;
+  const isUploading = STATE.uploadingFileIndex === index;
   
   // If this file is not the one being uploaded, remove it safely
   if (!isUploading) {
-    STATE.files.splice(index, 1);
-    renderFileList();
-    updateUploadButton();
+    // Check if any files are being uploaded
+    if (STATE.uploadInProgress) {
+      // We need to adjust indices if the file being removed is before the current upload
+      if (index < STATE.uploadingFileIndex) {
+        STATE.uploadingFileIndex--;
+      }
+      
+      // Remove the file from array
+      STATE.files.splice(index, 1);
+      renderFileList();
+      updateUploadButton();
+    } else {
+      // No uploads in progress, safe to remove
+      STATE.files.splice(index, 1);
+      renderFileList();
+      updateUploadButton();
+    }
   } else {
     // If this is the file being uploaded, show an alert
     alert("Cannot remove a file while it's being uploaded. Please wait for the upload to complete or refresh the page.");
@@ -568,45 +659,53 @@ function removeFile(index) {
     }
   }
   
-  /**
-   * Start the upload process for all files
-   */
-  async function startUpload() {
-    if (STATE.files.length === 0 || !STATE.validToken) return;
+/**
+ * Start the upload process for all files
+ */
+async function startUpload() {
+  if (STATE.files.length === 0 || !STATE.validToken) return;
+  
+  try {
+    // Check connection first
+    await checkServerConnection();
     
-    try {
-      // Check connection first
-      await checkServerConnection();
+    DOM.uploadButton.disabled = true;
+    STATE.uploadInProgress = true;  // Set flag that uploads are in progress
+    
+    let completedFiles = 0;
+    let totalFiles = STATE.files.length;
+    let successfulUploads = [];
+    let failedUploads = [];
+    
+    // Process each file
+    for (let i = 0; i < STATE.files.length; i++) {
+      STATE.uploadingFileIndex = i;  // Track current upload index
+      const result = await processFileUpload(i, completedFiles, totalFiles);
       
-      DOM.uploadButton.disabled = true;
-      
-      let completedFiles = 0;
-      let totalFiles = STATE.files.length;
-      let successfulUploads = [];
-      let failedUploads = [];
-      
-      // Process each file
-      for (let i = 0; i < STATE.files.length; i++) {
-        const result = await processFileUpload(i, completedFiles, totalFiles);
-        
-        if (result.success) {
-          completedFiles++;
-          successfulUploads.push(i);
-        } else {
-          failedUploads.push(i);
-        }
-        
-        updateOverallProgress(completedFiles, totalFiles);
+      if (result.success) {
+        completedFiles++;
+        successfulUploads.push(i);
+      } else {
+        failedUploads.push(i);
       }
       
-      // Cleanup and show final status
-      finishUploadProcess(successfulUploads, failedUploads);
-      
-    } catch (error) {
-      DOM.overallProgress.textContent = `${error.message}. Please try again.`;
+      updateOverallProgress(completedFiles, totalFiles);
     }
+    
+    // Reset upload progress state
+    STATE.uploadingFileIndex = null;
+    STATE.uploadInProgress = false;
+    
+    // Cleanup and show final status
+    finishUploadProcess(successfulUploads, failedUploads);
+    
+  } catch (error) {
+    STATE.uploadInProgress = false;
+    STATE.uploadingFileIndex = null;
+    DOM.overallProgress.textContent = `${error.message}. Please try again.`;
   }
-  
+}
+
   /**
    * Check server connection before starting upload
    */
@@ -727,7 +826,7 @@ async function uploadFileInChunks(file, fileItem, fileStatus) {
   
 
 /**
- * Upload a single chunk of a file
+ * Upload a single chunk of a file with continuous progress updates
  * @param {File} file - The file being uploaded
  * @param {number} chunkIndex - Index of the current chunk
  * @param {number} totalChunks - Total number of chunks
@@ -751,11 +850,24 @@ async function uploadChunk(file, chunkIndex, totalChunks, chunkSize, fileItem, f
       // Create form data
       const formData = createChunkFormData(file, chunk, chunkIndex, totalChunks);
       
-      // Upload chunk
-      const response = await makeApiRequest(`${CONFIG.API_URL}?action=upload`, {
-        method: 'POST',
-        body: formData
-      });
+      // Calculate base progress for this chunk
+      const baseProgress = (chunkIndex / totalChunks) * 100;
+      const progressPerChunk = 100 / totalChunks;
+      
+      // Upload chunk with progress tracking
+      const response = await makeApiRequestWithProgress(
+        `${CONFIG.API_URL}?action=upload`,
+        {
+          method: 'POST',
+          body: formData
+        },
+        // Progress callback for this chunk
+        (chunkProgress) => {
+          // Calculate overall progress = completed chunks + current chunk progress
+          const overallProgress = baseProgress + (chunkProgress * progressPerChunk / 100);
+          updateChunkProgress(fileItem, fileStatus, overallProgress);
+        }
+      );
       
       const data = await response.json();
       
@@ -763,8 +875,9 @@ async function uploadChunk(file, chunkIndex, totalChunks, chunkSize, fileItem, f
         throw new Error(data.message);
       }
       
-      // Update progress
-      updateChunkProgress(fileItem, fileStatus, chunkIndex, totalChunks);
+      // Update progress to show completion of this chunk
+      const completeProgress = ((chunkIndex + 1) / totalChunks) * 100;
+      updateChunkProgress(fileItem, fileStatus, completeProgress);
       uploadSuccess = true;
     } catch (error) {
       retries++;
@@ -799,30 +912,46 @@ async function uploadChunk(file, chunkIndex, totalChunks, chunkSize, fileItem, f
     return formData;
   }
   
-  /**
-   * Update the chunk status display
-   * @param {HTMLElement} fileStatus - File status element
-   * @param {number} chunkIndex - Index of the current chunk
-   * @param {number} totalChunks - Total number of chunks
-   * @param {number} retries - Number of retries for this chunk
-   */
-  function updateChunkStatus(fileStatus, chunkIndex, totalChunks, retries) {
-    fileStatus.textContent = retries > 0 ? 
-      `Retry ${retries}/${CONFIG.MAX_RETRIES} - Chunk ${chunkIndex + 1}/${totalChunks}` : 
-      `Chunk ${chunkIndex + 1}/${totalChunks}`;
-  }
-  
-  /**
- * Update progress display after successful chunk upload
- * @param {HTMLElement} fileItem - File item element
+
+/**
+ * Update the chunk status display
  * @param {HTMLElement} fileStatus - File status element
  * @param {number} chunkIndex - Index of the current chunk
  * @param {number} totalChunks - Total number of chunks
+ * @param {number} retries - Number of retries for this chunk
  */
-function updateChunkProgress(fileItem, fileStatus, chunkIndex, totalChunks) {
-  const progress = ((chunkIndex + 1) / totalChunks) * 100;
+function updateChunkStatus(fileStatus, chunkIndex, totalChunks, retries) {
+  const displayText = retries > 0 ? 
+    `Retry ${retries}/${CONFIG.MAX_RETRIES} - Chunk ${chunkIndex + 1}/${totalChunks}` : 
+    `Chunk ${chunkIndex + 1}/${totalChunks}`;
+  
+  // We don't want to overwrite the percentage, so we'll add the chunk info
+  const statusElement = fileStatus.parentNode.querySelector('.chunk-info') || 
+                          document.createElement('div');
+  
+  statusElement.className = 'chunk-info';
+  statusElement.textContent = displayText;
+  statusElement.style.fontSize = '11px';
+  statusElement.style.color = '#777';
+  
+  if (!fileStatus.parentNode.querySelector('.chunk-info')) {
+    fileStatus.parentNode.insertBefore(statusElement, fileStatus.nextSibling);
+  }
+}
+  
+/**
+ * Update progress display 
+ * @param {HTMLElement} fileItem - File item element
+ * @param {HTMLElement} fileStatus - File status element
+ * @param {number} progress - Progress percentage (0-100)
+ */
+function updateChunkProgress(fileItem, fileStatus, progress) {
+  // Update circular progress
   updateCircularProgress(fileItem, progress);
-  fileStatus.textContent = `${Math.round(progress)}%`;
+  
+  // Update status text with more detailed information
+  const formattedProgress = Math.round(progress * 10) / 10; // One decimal place
+  fileStatus.textContent = `${formattedProgress}%`;
 }
   
   /**

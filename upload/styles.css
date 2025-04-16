@@ -219,6 +219,18 @@ button:disabled {
   font-weight: 500;
 }
 
+.status-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  min-width: 80px;
+}
+
+.chunk-info {
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;
@@ -240,15 +252,35 @@ button:disabled {
 }
 
 @media (max-width: 600px) {
+  
   .file-item {
     flex-direction: column;
     align-items: flex-start;
+    padding: 15px;
+  }
+
+  .file-info {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .status-wrapper {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
   }
 
   .file-actions {
-    margin-top: 10px;
     width: 100%;
     justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .chunk-info {
+    margin-left: 10px;
+    margin-top: 0;
   }
 
   .progress-circular {

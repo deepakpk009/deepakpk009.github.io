@@ -308,7 +308,8 @@
     </main>
 
     <footer class="container mx-auto px-4 py-8 text-center">
-        <p>© 2024 USB Slideshow. All rights reserved.</p>
+        <p>© 2025 USB Slideshow. All rights reserved.</p>
+        <p class="mt-2 text-sm"><a href="privacy.html">Policy</a> | <a href="terms.html">Terms of Use</a></p>
     </footer>
 
     <script>
@@ -339,7 +340,9 @@
             slideInterval = setInterval(showSlides, 3000);
         }
 
-        startSlideshow();
+        document.addEventListener('DOMContentLoaded', function() {
+            startSlideshow();
+        });
     </script>
 </body>
 

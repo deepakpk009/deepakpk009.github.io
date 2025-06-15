@@ -19,15 +19,18 @@
       color: #fff;
       text-shadow: 2px 2px #000;
       margin: 10px 0;
+      font-size: 2.8em;
     }
     #bingoHeader {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 10px;
       margin-bottom: 10px;
+      width: 100%;
+      max-width: 500px;
     }
     .headerCell {
-      font-size: 2em;
+      font-size: 2.6em;
       color: #ffffff;
       text-align: center;
       text-decoration: none;
@@ -48,7 +51,7 @@
       background-color: #ffe066;
       border: 3px solid #ff6f61;
       border-radius: 12px;
-      font-size: 1.8em;
+      font-size: 2.4em;
       text-align: center;
       padding: 20px;
       transition: transform 0.2s ease, background-color 0.2s;
@@ -69,7 +72,7 @@
     }
     #newGameBtn {
       padding: 10px 20px;
-      font-size: 1.2em;
+      font-size: 1.4em;
       background-color: #6a0572;
       color: #fff;
       border: none;
@@ -82,11 +85,11 @@
     }
     @media (max-width: 600px) {
       .cell {
-        font-size: 1.4em;
+        font-size: 1.8em;
         padding: 15px;
       }
       .headerCell {
-        font-size: 1.5em;
+        font-size: 2em;
       }
     }
   </style>
@@ -103,7 +106,7 @@
     const newGameBtn = document.getElementById('newGameBtn');
 
     const headerLetters = ['B', 'I', 'N', 'G', 'O'];
-    let strikes = { row: [false, false, false, false, false], col: [false, false, false, false, false] };
+    let strikes;
 
     function createHeader() {
       header.innerHTML = '';
@@ -151,25 +154,22 @@
         grid.push(cells.slice(i * 5, i * 5 + 5));
       }
 
-      let completed = 0;
-
       for (let i = 0; i < 5; i++) {
         if (!strikes.row[i] && grid[i].every(cell => cell.classList.contains('selected'))) {
-          document.getElementById(`header-${i}`).classList.add('striked');
           strikes.row[i] = true;
-        }
-        if (!strikes.col[i] && grid.map(row => row[i]).every(cell => cell.classList.contains('selected'))) {
           document.getElementById(`header-${i}`).classList.add('striked');
+        }
+
+        const colCells = [grid[0][i], grid[1][i], grid[2][i], grid[3][i], grid[4][i]];
+        if (!strikes.col[i] && colCells.every(cell => cell.classList.contains('selected'))) {
           strikes.col[i] = true;
+          document.getElementById(`header-${i}`).classList.add('striked');
         }
       }
 
-      let totalStrikes = [...strikes.row, ...strikes.col].filter(Boolean).length;
-      if (totalStrikes >= 5) {
-        const allStriked = headerLetters.every((_, i) => document.getElementById(`header-${i}`).classList.contains('striked'));
-        if (allStriked) {
-          setTimeout(() => alert('🎉 BINGO! You won the game! 🎉'), 100);
-        }
+      const allStriked = headerLetters.every((_, i) => document.getElementById(`header-${i}`).classList.contains('striked'));
+      if (allStriked) {
+        setTimeout(() => alert('🎉 BINGO! You won the game! 🎉'), 100);
       }
     }
 

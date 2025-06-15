@@ -21,6 +21,8 @@
             flex-direction: column;
             align-items: center;
             padding: 10px;
+            overscroll-behavior: none;
+            -webkit-overflow-scrolling: touch;
         }
 
         @keyframes gradientShift {
@@ -479,6 +481,26 @@
 
         function newGame() {
             initGame();
+        }
+
+        // Prevent pull-to-refresh on mobile browsers
+        document.addEventListener('touchstart', handleTouchStart, { passive: true });
+        document.addEventListener('touchmove', handleTouchMove, { passive: false });
+        
+        let touchStartY = 0;
+        
+        function handleTouchStart(e) {
+            touchStartY = e.touches[0].clientY;
+        }
+        
+        function handleTouchMove(e) {
+            const touchY = e.touches[0].clientY;
+            const touchDelta = touchY - touchStartY;
+            
+            // If scrolling down at the top of the page, prevent default
+            if (touchDelta > 0 && window.scrollY === 0) {
+                e.preventDefault();
+            }
         }
 
         // Initialize game on load

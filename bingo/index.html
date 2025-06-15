@@ -18,7 +18,24 @@
     h1 {
       color: #fff;
       text-shadow: 2px 2px #000;
+      margin: 10px 0;
+    }
+    #bingoHeader {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
       margin-bottom: 10px;
+    }
+    .headerCell {
+      font-size: 2em;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      transition: text-decoration 0.3s;
+    }
+    .headerCell.striked {
+      text-decoration: line-through;
+      color: #dcdcdc;
     }
     #bingoBoard {
       display: grid;
@@ -68,17 +85,36 @@
         font-size: 1.4em;
         padding: 15px;
       }
+      .headerCell {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
   <h1>🎈 Fun Bingo 🎈</h1>
+  <div id="bingoHeader"></div>
   <div id="bingoBoard"></div>
   <button id="newGameBtn">🔁 New Game</button>
 
   <script>
     const board = document.getElementById('bingoBoard');
+    const header = document.getElementById('bingoHeader');
     const newGameBtn = document.getElementById('newGameBtn');
+
+    const headerLetters = ['B', 'I', 'N', 'G', 'O'];
+    let strikes = { row: [false, false, false, false, false], col: [false, false, false, false, false] };
+
+    function createHeader() {
+      header.innerHTML = '';
+      headerLetters.forEach((letter, idx) => {
+        const cell = document.createElement('div');
+        cell.className = 'headerCell';
+        cell.id = `header-${idx}`;
+        cell.textContent = letter;
+        header.appendChild(cell);
+      });
+    }
 
     function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -90,12 +126,16 @@
 
     function createBoard() {
       board.innerHTML = '';
+      createHeader();
+      strikes = { row: [false, false, false, false, false], col: [false, false, false, false, false] };
+
       let numbers = shuffle([...Array(25).keys()].map(i => i + 1));
 
       numbers.forEach((num, idx) => {
         const cell = document.createElement('div');
         cell.className = 'cell';
         cell.textContent = num;
+        cell.dataset.index = idx;
         cell.addEventListener('click', () => {
           cell.classList.toggle('selected');
           checkWin();
@@ -111,28 +151,29 @@
         grid.push(cells.slice(i * 5, i * 5 + 5));
       }
 
-      let winPatterns = [];
-      for (let i = 0; i < 5; i++) {
-        winPatterns.push(grid[i]); // rows
-        winPatterns.push(grid.map(row => row[i])); // columns
-      }
-      winPatterns.push(grid.map((row, i) => row[i])); // diagonal
-      winPatterns.push(grid.map((row, i) => row[4 - i])); // anti-diagonal
+      let completed = 0;
 
-      for (const pattern of winPatterns) {
-        if (pattern.every(cell => cell.classList.contains('selected'))) {
-          pattern.forEach(cell => {
-            cell.style.backgroundColor = '#ff69b4';
-            cell.innerHTML += ' 🎊';
-          });
-          setTimeout(() => alert('🎉 BINGO! You got a line! 🎉'), 100);
-          break;
+      for (let i = 0; i < 5; i++) {
+        if (!strikes.row[i] && grid[i].every(cell => cell.classList.contains('selected'))) {
+          document.getElementById(`header-${i}`).classList.add('striked');
+          strikes.row[i] = true;
+        }
+        if (!strikes.col[i] && grid.map(row => row[i]).every(cell => cell.classList.contains('selected'))) {
+          document.getElementById(`header-${i}`).classList.add('striked');
+          strikes.col[i] = true;
+        }
+      }
+
+      let totalStrikes = [...strikes.row, ...strikes.col].filter(Boolean).length;
+      if (totalStrikes >= 5) {
+        const allStriked = headerLetters.every((_, i) => document.getElementById(`header-${i}`).classList.contains('striked'));
+        if (allStriked) {
+          setTimeout(() => alert('🎉 BINGO! You won the game! 🎉'), 100);
         }
       }
     }
 
     newGameBtn.addEventListener('click', createBoard);
-
     createBoard();
   </script>
 </body>

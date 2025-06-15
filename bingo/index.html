@@ -138,9 +138,9 @@
         }
 
         .bingo-cell.marked::after {
-            content: '🎉';
+            content: var(--strike-emoji);
             position: absolute;
-            font-size: 1.5rem;
+            font-size: 5rem;
         }
 
         .controls {
@@ -281,15 +281,20 @@
             grid: [],
             markedCells: new Set(),
             completedLines: 0,
-            strikedLetters: new Set()
+            strikedLetters: new Set(),
+            strikeEmoji: '🎉'
         };
 
         const bingoLetters = ['B', 'I', 'N', 'G', 'O'];
+        const strikeEmojis = ['🎉', '🎈', '⭐', '🌟', '🥇', '🔥', '💥', '💎', '🍀'];
 
         function initGame() {
             // Generate numbers 1-25 and shuffle
             const numbers = Array.from({length: 25}, (_, i) => i + 1);
             shuffleArray(numbers);
+            
+            // Pick a random strike emoji for this game
+            gameState.strikeEmoji = strikeEmojis[Math.floor(Math.random() * strikeEmojis.length)];
             
             gameState.grid = numbers;
             gameState.markedCells.clear();
@@ -300,6 +305,9 @@
             bingoLetters.forEach(letter => {
                 document.getElementById(`letter-${letter}`).classList.remove('striked');
             });
+            
+            // Set the CSS variable for the strike emoji
+            document.documentElement.style.setProperty('--strike-emoji', `"${gameState.strikeEmoji}"`);
             
             renderGrid();
             updateScore();

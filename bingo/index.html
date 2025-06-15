@@ -1,189 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fun Bingo 5x5</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-      min-height: 100vh;
-    }
-    h1 {
-      color: #fff;
-      text-shadow: 2px 2px #000;
-      margin: 10px 0;
-      font-size: 2.8em;
-    }
-    #bingoHeader {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      margin-bottom: 10px;
-      width: 100%;
-      max-width: 500px;
-    }
-    .headerCell {
-      font-size: 2.6em;
-      color: #ffffff;
-      text-align: center;
-      text-decoration: none;
-      transition: text-decoration 0.3s;
-    }
-    .headerCell.striked {
-      text-decoration: line-through;
-      color: #dcdcdc;
-    }
-    #bingoBoard {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      max-width: 90vw;
-      margin-bottom: 20px;
-    }
-    .cell {
-      background-color: #ffe066;
-      border: 3px solid #ff6f61;
-      border-radius: 12px;
-      font-size: 2.4em;
-      text-align: center;
-      padding: 20px;
-      transition: transform 0.2s ease, background-color 0.2s;
-      cursor: pointer;
-      position: relative;
-      user-select: none;
-    }
-    .cell.selected {
-      background-color: #76eec6;
-      transform: scale(1.1) rotate(-2deg);
-    }
-    .cell.selected::after {
-      content: '🎉';
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      font-size: 1.2em;
-    }
-    #newGameBtn {
-      padding: 10px 20px;
-      font-size: 1.4em;
-      background-color: #6a0572;
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    #newGameBtn:hover {
-      background-color: #9400d3;
-    }
-    @media (max-width: 600px) {
-      .cell {
-        font-size: 1.8em;
-        padding: 15px;
-      }
-      .headerCell {
-        font-size: 2em;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Bingo Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        .title-letter {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff6b6b;
+            text-shadow: 3px 3px 0px #fff, 6px 6px 0px rgba(0, 0, 0, 0.1);
+            animation: bounce 2s infinite;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .title-letter:nth-child(1) { animation-delay: 0s; color: #ff6b6b; }
+        .title-letter:nth-child(2) { animation-delay: 0.2s; color: #4ecdc4; }
+        .title-letter:nth-child(3) { animation-delay: 0.4s; color: #45b7d1; }
+        .title-letter:nth-child(4) { animation-delay: 0.6s; color: #96ceb4; }
+        .title-letter:nth-child(5) { animation-delay: 0.8s; color: #ffeaa7; }
+
+        .title-letter.striked {
+            text-decoration: line-through;
+            text-decoration-color: #e74c3c;
+            text-decoration-thickness: 8px;
+            opacity: 0.6;
+            transform: scale(0.9);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .game-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .score {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .mascot {
+            font-size: 2rem;
+            animation: wiggle 3s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+
+        .bingo-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+        }
+
+        .bingo-cell {
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bingo-cell:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .bingo-cell.marked {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            transform: scale(0.95);
+        }
+
+        .bingo-cell.marked::after {
+            content: '🎉';
+            position: absolute;
+            font-size: 1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            color: #2c3e50;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .win-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .win-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            animation: winPop 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes winPop {
+            0% { transform: scale(0.3) rotate(-10deg); }
+            50% { transform: scale(1.1) rotate(5deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ff6b6b;
+            animation: confettiFall 3s linear infinite;
+        }
+
+        @keyframes confettiFall {
+            0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .title-letter {
+                font-size: 2.5rem;
+            }
+            
+            .bingo-cell {
+                font-size: 1.2rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .title-letter {
+                font-size: 2rem;
+            }
+            
+            .bingo-cell {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>🎈 Fun Bingo 🎈</h1>
-  <div id="bingoHeader"></div>
-  <div id="bingoBoard"></div>
-  <button id="newGameBtn">🔁 New Game</button>
+    <div class="container">
+        <div class="game-info">
+            <div class="mascot">🎲 Good Luck! 🍀</div>
+            <div class="score">Lines Completed: <span id="score">0</span>/12</div>
+        </div>
 
-  <script>
-    const board = document.getElementById('bingoBoard');
-    const header = document.getElementById('bingoHeader');
-    const newGameBtn = document.getElementById('newGameBtn');
+        <div class="title">
+            <span class="title-letter" id="letter-B">B</span>
+            <span class="title-letter" id="letter-I">I</span>
+            <span class="title-letter" id="letter-N">N</span>
+            <span class="title-letter" id="letter-G">G</span>
+            <span class="title-letter" id="letter-O">O</span>
+        </div>
 
-    const headerLetters = ['B', 'I', 'N', 'G', 'O'];
+        <div class="bingo-grid" id="bingoGrid"></div>
 
-    function createHeader() {
-      header.innerHTML = '';
-      headerLetters.forEach((letter, idx) => {
-        const cell = document.createElement('div');
-        cell.className = 'headerCell';
-        cell.id = `header-${idx}`;
-        cell.textContent = letter;
-        header.appendChild(cell);
-      });
-    }
+        <div class="controls">
+            <button class="btn btn-primary" onclick="newGame()">🎮 New Game</button>
+        </div>
+    </div>
 
-    function shuffle(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
-    }
+    <script>
+        let gameState = {
+            grid: [],
+            markedCells: new Set(),
+            completedLines: 0,
+            strikedLetters: new Set()
+        };
 
-    function createBoard() {
-      board.innerHTML = '';
-      createHeader();
+        const bingoLetters = ['B', 'I', 'N', 'G', 'O'];
 
-      let numbers = shuffle([...Array(25).keys()].map(i => i + 1));
-
-      numbers.forEach((num, idx) => {
-        const cell = document.createElement('div');
-        cell.className = 'cell';
-        cell.textContent = num;
-        cell.dataset.index = idx;
-        cell.addEventListener('click', () => {
-          cell.classList.toggle('selected');
-          checkWin();
-        });
-        board.appendChild(cell);
-      });
-    }
-
-    function checkWin() {
-      const cells = Array.from(board.children);
-      let grid = [];
-      for (let i = 0; i < 5; i++) {
-        grid.push(cells.slice(i * 5, i * 5 + 5));
-      }
-
-      let struck = [false, false, false, false, false];
-
-      // Check rows
-      for (let i = 0; i < 5; i++) {
-        if (grid[i].every(cell => cell.classList.contains('selected'))) {
-          struck[i] = true;
+        function initGame() {
+            // Generate numbers 1-25 and shuffle
+            const numbers = Array.from({length: 25}, (_, i) => i + 1);
+            shuffleArray(numbers);
+            
+            gameState.grid = numbers;
+            gameState.markedCells.clear();
+            gameState.completedLines = 0;
+            gameState.strikedLetters.clear();
+            
+            // Reset title letters
+            bingoLetters.forEach(letter => {
+                document.getElementById(`letter-${letter}`).classList.remove('striked');
+            });
+            
+            renderGrid();
+            updateScore();
         }
-      }
 
-      // Check columns
-      for (let i = 0; i < 5; i++) {
-        let colCells = [grid[0][i], grid[1][i], grid[2][i], grid[3][i], grid[4][i]];
-        if (colCells.every(cell => cell.classList.contains('selected'))) {
-          struck[i] = true;
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
         }
-      }
 
-      // Update header strikes
-      for (let i = 0; i < 5; i++) {
-        if (struck[i]) {
-          document.getElementById(`header-${i}`).classList.add('striked');
+        function renderGrid() {
+            const grid = document.getElementById('bingoGrid');
+            grid.innerHTML = '';
+            
+            gameState.grid.forEach((number, index) => {
+                const cell = document.createElement('button');
+                cell.className = 'bingo-cell';
+                cell.textContent = number;
+                cell.onclick = () => toggleCell(index);
+                
+                if (gameState.markedCells.has(index)) {
+                    cell.classList.add('marked');
+                }
+                
+                grid.appendChild(cell);
+            });
         }
-      }
 
-      const allStriked = headerLetters.every((_, i) => document.getElementById(`header-${i}`).classList.contains('striked'));
-      if (allStriked) {
-        setTimeout(() => alert('🎉 BINGO! You won the game! 🎉'), 100);
-      }
-    }
+        function toggleCell(index) {
+            if (gameState.markedCells.has(index)) {
+                gameState.markedCells.delete(index);
+            } else {
+                gameState.markedCells.add(index);
+                createCelebration(index);
+            }
+            
+            renderGrid();
+            checkWin();
+        }
 
-    newGameBtn.addEventListener('click', createBoard);
-    createBoard();
-  </script>
+        function createCelebration(index) {
+            // Add confetti effect
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = Math.random() * 100 + '%';
+                    confetti.style.background = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7'][Math.floor(Math.random() * 5)];
+                    confetti.style.animationDelay = Math.random() * 2 + 's';
+                    document.body.appendChild(confetti);
+                    
+                    setTimeout(() => confetti.remove(), 3000);
+                }, i * 100);
+            }
+        }
+
+        function checkWin() {
+            const completedLines = [];
+            
+            // Check rows
+            for (let row = 0; row < 5; row++) {
+                const rowCells = [];
+                for (let col = 0; col < 5; col++) {
+                    rowCells.push(row * 5 + col);
+                }
+                if (rowCells.every(cell => gameState.markedCells.has(cell))) {
+                    completedLines.push(`row-${row}`);
+                }
+            }
+            
+            // Check columns
+            for (let col = 0; col < 5; col++) {
+                const colCells = [];
+                for (let row = 0; row < 5; row++) {
+                    colCells.push(row * 5 + col);
+                }
+                if (colCells.every(cell => gameState.markedCells.has(cell))) {
+                    completedLines.push(`col-${col}`);
+                }
+            }
+            
+            // Check diagonals
+            const diag1 = [0, 6, 12, 18, 24];
+            const diag2 = [4, 8, 12, 16, 20];
+            
+            if (diag1.every(cell => gameState.markedCells.has(cell))) {
+                completedLines.push('diag1');
+            }
+            if (diag2.every(cell => gameState.markedCells.has(cell))) {
+                completedLines.push('diag2');
+            }
+            
+            // Update strikes
+            const newCompletedCount = completedLines.length;
+            if (newCompletedCount > gameState.completedLines) {
+                const newStrikes = newCompletedCount - gameState.completedLines;
+                for (let i = 0; i < newStrikes; i++) {
+                    if (gameState.strikedLetters.size < 5) {
+                        const letterToStrike = bingoLetters[gameState.strikedLetters.size];
+                        gameState.strikedLetters.add(letterToStrike);
+                        document.getElementById(`letter-${letterToStrike}`).classList.add('striked');
+                    }
+                }
+                gameState.completedLines = newCompletedCount;
+                updateScore();
+            }
+            
+            // Check for complete win (all 5 letters striked)
+            if (gameState.strikedLetters.size >= 5) {
+                setTimeout(showWinAnimation, 500);
+            }
+        }
+
+        function updateScore() {
+            document.getElementById('score').textContent = gameState.completedLines;
+        }
+
+        function showWinAnimation() {
+            const winDiv = document.createElement('div');
+            winDiv.className = 'win-animation';
+            winDiv.innerHTML = `
+                <div class="win-content">
+                    <h1 style="color: #ff6b6b; font-size: 3rem; margin-bottom: 20px;">🎉 BINGO! 🎉</h1>
+                    <p style="font-size: 1.5rem; color: #2c3e50; margin-bottom: 20px;">Congratulations! You Won!</p>
+                    <button class="btn btn-primary" onclick="this.parentElement.parentElement.remove(); newGame();">🎮 Play Again</button>
+                </div>
+            `;
+            document.body.appendChild(winDiv);
+            
+            // Add extra confetti for win
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = Math.random() * 100 + '%';
+                    confetti.style.background = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7'][Math.floor(Math.random() * 5)];
+                    confetti.style.animationDelay = Math.random() * 2 + 's';
+                    document.body.appendChild(confetti);
+                    
+                    setTimeout(() => confetti.remove(), 3000);
+                }, i * 100);
+            }
+        }
+
+        function newGame() {
+            initGame();
+        }
+
+        // Initialize game on load
+        window.onload = initGame;
+    </script>
 </body>
 </html>

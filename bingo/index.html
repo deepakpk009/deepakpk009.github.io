@@ -140,7 +140,7 @@
         .bingo-cell.marked::after {
             content: '🎉';
             position: absolute;
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
 
         .controls {
@@ -420,13 +420,26 @@
         }
 
         function showWinAnimation() {
+            // Get remaining unmarked numbers for confirmation
+            const remainingNumbers = [];
+            for (let i = 0; i < 25; i++) {
+                if (!gameState.markedCells.has(i)) {
+                    remainingNumbers.push(gameState.grid[i]);
+                }
+            }
+            
+            const remainingText = remainingNumbers.length > 0 
+                ? `<p style="font-size: 1rem; color: #666; margin-top: 15px; line-height: 1.5;">Remaining unmarked numbers:<br><strong style="color: #2c3e50;">${remainingNumbers.sort((a, b) => a - b).join(', ')}</strong></p>`
+                : `<p style="font-size: 1rem; color: #666; margin-top: 15px;">All numbers were marked! Perfect game!</p>`;
+            
             const winDiv = document.createElement('div');
             winDiv.className = 'win-animation';
             winDiv.innerHTML = `
                 <div class="win-content">
                     <h1 style="color: #ff6b6b; font-size: 3rem; margin-bottom: 20px;">🎉 BINGO! 🎉</h1>
                     <p style="font-size: 1.5rem; color: #2c3e50; margin-bottom: 20px;">Congratulations! You Won!</p>
-                    <button class="btn btn-primary" onclick="this.parentElement.parentElement.remove(); newGame();">🎮 Play Again</button>
+                    ${remainingText}
+                    <button class="btn btn-primary" onclick="this.parentElement.parentElement.remove(); newGame();" style="margin-top: 20px;">🎮 Play Again</button>
                 </div>
             `;
             document.body.appendChild(winDiv);

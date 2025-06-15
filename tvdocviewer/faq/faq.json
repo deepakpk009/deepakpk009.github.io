@@ -1,0 +1,114 @@
+[
+  {
+    "title": "How does the app find Doc files on my TV?",
+    "content": "The app automatically scans any connected USB drives for Doc files. Once detected, these files are displayed in a list with the first page shown as a thumbnail alongside the file name for easy identification."
+  },
+  {
+    "title": "How can I view information about a Doc file?",
+    "content": "Long press the OK button on your remote when focused on a Doc file in the list. This will display the file information including name, location, size, and last modified date. You'll also see options to open or delete the file."
+  },
+  {
+    "title": "What are the ways to import Doc files to the app?",
+    "content": "There are three methods to import Doc files: 1) Connect a USB drive containing Docs which will be automatically detected, 2) Use the web import feature with a token (no need for both devices to be on the same network), or 3) Use FTP import with an anonymous FTP connection (requires both devices to be on the same network). The web and FTP import pages provide QR codes for easy connection."
+  },
+  {
+    "title": "How do I use the web import feature?",
+    "content": "Navigate to the web import option in the app. You'll be shown a token and QR code. Scan the QR code with your sending device or manually enter the URL in a browser and enter the token to verify before selecting files for uploading. The advantage of web import is that your sending device doesn't need to be on the same network as your TV."
+  },
+  {
+    "title": "How do I use the FTP import feature?",
+    "content": "Navigate to the FTP import option in the app. The app will display connection information and a QR code. Scan the QR code or manually enter the connection details in your FTP client. Note that FTP import requires both your TV and sending device to be on the same network. The app uses anonymous FTP connection for simplicity."
+  },
+  {
+    "title": "How do I bookmark pages in a Doc?",
+    "content": "While viewing a Doc, press the OK button on your remote to display the Doc options menu. Select the 'bookmark' option to toggle a bookmark for the current page. You can use this feature to easily return to important pages later."
+  },
+  {
+    "title": "How do I view and manage all my bookmarks?",
+    "content": "From the main menu, select the bookmarks page to view all bookmarks across all your Docs. Each bookmark entry displays the bookmarked page thumbnail, page number, and the Doc file title. You can also delete bookmarks directly from this listing page."
+  },
+  {
+    "title": "How do I view bookmarks for just the Doc I'm currently reading?",
+    "content": "While viewing a Doc, press the OK button to show the Doc options menu, then select 'bookmarks' option. This will display all bookmarked pages specific to the current Doc file. You can select any bookmark to navigate directly to that page."
+  },
+  {
+    "title": "My USB drive has new Docs, but they don't appear in the app. What should I do?",
+    "content": "Select the 'reload files' menu option. This will initiate a new scan of your USB drive and imports folder, making any new Docs available in the app."
+  },
+  {
+    "title": "How do I open and view a Doc file?",
+    "content": "Simply navigate to the Doc file in the main list and press the OK button on your remote. The Doc will open in the viewer with the page fitted to height by default."
+  },
+  {
+    "title": "How do I navigate through pages in a Doc?",
+    "content": "When viewing a Doc that is zoomed out or fit to height, use the left/right remote keys to change pages. If the page is zoomed in, the left/right keys will scroll the page horizontally instead."
+  },
+  {
+    "title": "How can I zoom in and out of a Doc page?",
+    "content": "While viewing a Doc, press the OK button to display the options menu. Select 'zoom in' to enlarge the page or 'zoom out' to reduce it. When zoomed in, you can use left/right remote keys to scroll horizontally."
+  },
+  {
+    "title": "Can I change how the Doc fits on the screen?",
+    "content": "Yes. While viewing a Doc, press the OK button for the options menu, then select 'fit mode'. This toggles between fitting the page to width or height, allowing you to choose the view that works best for your content."
+  },
+  {
+    "title": "How do I jump to a specific page in a Doc?",
+    "content": "While viewing a Doc, press the OK button to show the options menu, then select 'go to page'. You can then enter the specific page number you want to navigate to."
+  },
+  {
+    "title": "Can I search for text within a Doc?",
+    "content": "Yes. While viewing a Doc, press the OK button for the options menu, then select 'search'. Enter your search text and the app will locate it within the document. Note that some searches might take time on larger documents. You can cancel an ongoing search by pressing the cancel button."
+  },
+  {
+    "title": "How do I rotate Doc pages?",
+    "content": "While viewing a Doc, press the OK button to show the options menu, then select 'rotate'. Each click rotates the page 90 degrees, allowing you to view content in the orientation that works best."
+  },
+  {
+    "title": "Does the app have a night mode for reading?",
+    "content": "Yes. While viewing a Doc, press the OK button for the options menu, then select 'night mode'. This toggles a color scheme that's easier on the eyes in low-light conditions."
+  },
+  {
+    "title": "How do I close the Doc options menu?",
+    "content": "You can either select the 'close' option in the menu or simply press the back key on your remote. The Doc options view is shown as an overlay so you can see live changes to the page when using zoom, fit mode, rotate, and night mode options."
+  },
+  {
+    "title": "How do I subscribe to the app?",
+    "content": "Navigate to the subscribe page from the main menu to make a subscription. This will give you access to all premium features of the app."
+  },
+  {
+    "title": "How do I manage my subscription?",
+    "content": "Go to the manage subscription page, which provides detailed information on how to manage your current subscription, including how to cancel or renew it."
+  },
+  {
+    "title": "How can I check the app's storage usage?",
+    "content": "Visit the app settings page to view information including device screen resolution, screen ratio, available storage, total Doc file count and memory size taken, number of bookmarks, and number of thumbnails files with their total size."
+  },
+  {
+    "title": "How do I clear imported Docs from the app?",
+    "content": "In the settings page, use the option to clear all Docs in the imports folder. Note that this will not delete Doc files stored on connected USB drives."
+  },
+  {
+    "title": "Can I clear all thumbnails and bookmarks?",
+    "content": "Yes. In the settings page, there are options to clear all thumbnails and bookmarks. This can help free up storage space if needed."
+  },
+  {
+    "title": "How do I contact support or provide feedback?",
+    "content": "Access the support and feedback page from the main menu. It displays QR codes linking to the support Facebook page and feedback form URLs for easy access."
+  },
+  {
+    "title": "How can I check which version of the app I'm using?",
+    "content": "Select the version info menu item from the main menu to see the current app version number."
+  },
+  {
+    "title": "Where can I find the privacy policy and terms of use?",
+    "content": "The app includes dedicated pages for both the privacy policy and terms of use, accessible from the main menu."
+  },
+  {
+    "title": "How do I exit the Doc viewer?",
+    "content": "While viewing a Doc, press the back key on your remote to return to the main app interface."
+  },
+  {
+    "title": "Can I delete a Doc file from within the app?",
+    "content": "Yes. Long press the OK button when focused on a Doc file in the main list. This will show file information along with options to open or delete the file."
+  }
+]

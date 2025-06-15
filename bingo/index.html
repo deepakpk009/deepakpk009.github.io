@@ -106,7 +106,6 @@
     const newGameBtn = document.getElementById('newGameBtn');
 
     const headerLetters = ['B', 'I', 'N', 'G', 'O'];
-    let strikes;
 
     function createHeader() {
       header.innerHTML = '';
@@ -130,7 +129,6 @@
     function createBoard() {
       board.innerHTML = '';
       createHeader();
-      strikes = { row: [false, false, false, false, false], col: [false, false, false, false, false] };
 
       let numbers = shuffle([...Array(25).keys()].map(i => i + 1));
 
@@ -154,15 +152,26 @@
         grid.push(cells.slice(i * 5, i * 5 + 5));
       }
 
-      for (let i = 0; i < 5; i++) {
-        if (!strikes.row[i] && grid[i].every(cell => cell.classList.contains('selected'))) {
-          strikes.row[i] = true;
-          document.getElementById(`header-${i}`).classList.add('striked');
-        }
+      let struck = [false, false, false, false, false];
 
-        const colCells = [grid[0][i], grid[1][i], grid[2][i], grid[3][i], grid[4][i]];
-        if (!strikes.col[i] && colCells.every(cell => cell.classList.contains('selected'))) {
-          strikes.col[i] = true;
+      // Check rows
+      for (let i = 0; i < 5; i++) {
+        if (grid[i].every(cell => cell.classList.contains('selected'))) {
+          struck[i] = true;
+        }
+      }
+
+      // Check columns
+      for (let i = 0; i < 5; i++) {
+        let colCells = [grid[0][i], grid[1][i], grid[2][i], grid[3][i], grid[4][i]];
+        if (colCells.every(cell => cell.classList.contains('selected'))) {
+          struck[i] = true;
+        }
+      }
+
+      // Update header strikes
+      for (let i = 0; i < 5; i++) {
+        if (struck[i]) {
           document.getElementById(`header-${i}`).classList.add('striked');
         }
       }

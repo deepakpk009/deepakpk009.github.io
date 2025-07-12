@@ -1,120 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TvExplorer - Android TV File Browser and Media Viewer</title>
-    <meta name="description" content="TvExplorer is a powerful file explorer for Android TV. Browse USB, view media, open documents, analyze storage, and share files wirelessly with ease.">
-    <meta name="keywords" content="TvExplorer, Android TV file manager, TV file explorer, TV USB browser, TV PDF viewer, TV video player">
-    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="3eb85710-2b57-4c5b-a822-ddf9990351ee"></script>
+    <title>Redirecting to File Uploader</title>
     <style>
-        .gradient-bg {
-            background: linear-gradient(to right, #1976d2, #4caf50);
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            box-sizing: border-box;
         }
-
-        .btn {
-            @apply inline-flex items-center px-6 py-2 rounded-full font-medium transition;
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
         }
-
-        .btn-blue {
-            background-color: #2563eb;
-            color: white;
+        h1 {
+            color: #4285f4;
+            margin-top: 0;
+            font-size: 24px;
         }
-
-        .btn-orange {
-            background-color: #f97316;
-            color: white;
+        p {
+            margin: 10px 0;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4285f4;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .manual-link {
+            margin-top: 20px;
+            display: none;
+        }
+        .manual-link a {
+            color: #4285f4;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .manual-link a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-
-<body class="font-sans text-gray-800">
-    <header class="gradient-bg text-white py-6">
-        <div class="container mx-auto px-4 flex items-center">
-            <img src="images/app_icon.png" alt="TvExplorer Icon" class="w-16 h-16 mr-4">
-            <div>
-                <h1 class="text-3xl md:text-4xl font-bold">TvExplorer</h1>
-                <p class="text-xl mt-2">Smart File Browser & Media Manager for Android TV</p>
-            </div>
+<body>
+    <div class="container">
+        <h1>TvExplorer Web Uploader</h1>
+        <p>Redirecting to the file upload page...</p>
+        <div class="loader"></div>
+        <div class="manual-link" id="manualLink">
+            <p>If you are not redirected automatically, please click below:</p>
+            <a href="#" id="redirectLink">Continue to File Uploader</a>
         </div>
-    </header>
+    </div>
 
-    <main class="container mx-auto px-4 py-10">
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Explore Everything on Your TV</h2>
-            <p class="mb-4">TvExplorer makes it effortless to browse, manage, and enjoy your files directly on your Android TV using your remote control.</p>
-            <ul class="list-disc pl-6 space-y-1">
-                <li>Browse and manage USB and internal storage</li>
-                <li>Search videos, audio, images, and all files easily</li>
-                <li>Analyze disk usage and clean storage</li>
-                <li>View and play all major file types including PDF, EPUB, ZIP, TXT, images, and videos</li>
-                <li>Share files wirelessly over Wi-Fi</li>
-                <li>Perform cut, copy, paste, rename, delete operations with ease</li>
-            </ul>
-        </section>
+    <script>
+        // Function to safely get URL parameters
+        function getParameterByName(name) {
+            const url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+            const results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Key Features</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <i class="fas fa-usb text-2xl text-indigo-600 mb-2"></i>
-                    <h3 class="text-xl font-bold mb-1">USB File Browsing</h3>
-                    <p>List and view contents of connected USB drives directly from your TV.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <i class="fas fa-search text-2xl text-indigo-600 mb-2"></i>
-                    <h3 class="text-xl font-bold mb-1">Powerful File Search</h3>
-                    <p>Find videos, images, audio, or any file in seconds—across all storage.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <i class="fas fa-chart-pie text-2xl text-indigo-600 mb-2"></i>
-                    <h3 class="text-xl font-bold mb-1">Disk Analyzer</h3>
-                    <p>See used/available space and storage breakdowns visually.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <i class="fas fa-wifi text-2xl text-indigo-600 mb-2"></i>
-                    <h3 class="text-xl font-bold mb-1">Wi-Fi File Share</h3>
-                    <p>Share files wirelessly from your TV with QR-code based access.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <i class="fas fa-broom text-2xl text-indigo-600 mb-2"></i>
-                    <h3 class="text-xl font-bold mb-1">Storage Cleaner</h3>
-                    <p>Free up space by identifying and deleting large files quickly.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <i class="fas fa-tools text-2xl text-indigo-600 mb-2"></i>
-                    <h3 class="text-xl font-bold mb-1">Full File Operations</h3>
-                    <p>Cut, copy, paste, rename, and delete files with remote-friendly menus.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <i class="fas fa-file-code text-2xl text-indigo-600 mb-2"></i>
-                    <h3 class="text-xl font-bold mb-1">Multiple File Viewers</h3>
-                    <p>View code, PDF, EPUB, TXT, ZIP, images and play videos—built-in!</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <i class="fas fa-infinity text-2xl text-indigo-600 mb-2"></i>
-                    <h3 class="text-xl font-bold mb-1">Signage Video Loop</h3>
-                    <p>Loop videos continuously for signage use—perfect for clubs or presentations.</p>
-                </div>
-            </div>
-        </section>
+        // Function to handle the redirect
+        function handleRedirect() {
+            // Get token parameter from current URL, if any
+            const token = getParameterByName('token');
+            
+            // Build the redirect URL
+            let redirectUrl = 'https://deepakpk.com/upload?';
+            
+            // Add token parameter if present
+            if (token) {
+                redirectUrl += '&token=' + encodeURIComponent(token);
+            }
+            
+            // Set the manual link href
+            const redirectLink = document.getElementById('redirectLink');
+            if (redirectLink) {
+                redirectLink.href = redirectUrl;
+            }
+            
+            // Show manual link after a delay
+            setTimeout(function() {
+                const manualLink = document.getElementById('manualLink');
+                if (manualLink) {
+                    manualLink.style.display = 'block';
+                }
+            }, 2000);
+            
+            // Attempt to redirect
+            try {
+                setTimeout(function() {
+                    window.location.href = redirectUrl;
+                }, 1500);
+            } catch (e) {
+                console.error("Redirect failed:", e);
+                // The manual link will be displayed as fallback
+            }
+        }
 
-        <section class="text-center mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Get TvExplorer on Your Android TV</h2>
-            <div class="flex justify-center gap-4 flex-wrap">
-                <a href="https://play.google.com/store/apps/details?id=com.deepakpk.tvexplorer" class="btn btn-blue" target="_blank"><i class="fab fa-google-play mr-2"></i>Google Play</a>
-                <a href="https://www.amazon.com/dp/B0F6M25GDH/" class="btn btn-orange" target="_blank"><i class="fab fa-amazon mr-2"></i>Amazon Appstore</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-100 py-6 text-center text-sm text-gray-600">
-        <p>© 2025 TvExplorer. All rights reserved.</p>
-        <p class="mt-2"><a href="privacy.html" class="underline">Privacy Policy</a> | <a href="terms.html" class="underline">Terms of Use</a></p>
-    </footer>
+        // Run immediately and also attach to DOMContentLoaded as backup
+        handleRedirect();
+        
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', handleRedirect);
+        }
+        
+        // Add another attempt on window load for extremely slow devices
+        window.addEventListener('load', function() {
+            const manualLink = document.getElementById('manualLink');
+            if (manualLink) {
+                manualLink.style.display = 'block';
+            }
+        });
+    </script>
+    
+    <!-- No JavaScript fallback -->
+    <noscript>
+        <div style="text-align: center; margin-top: 20px;">
+            <p>JavaScript is required to redirect automatically.</p>
+            <p>Please <a href="https://deepakpk.com/upload?extension=pdf">click here</a> to go to the file uploader.</p>
+        </div>
+    </noscript>
 </body>
-
 </html>

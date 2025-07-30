@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    background-color: #f9f9f9;
+}
+
+.faq-title {
+    font-weight: bold;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+    font-weight: normal;
+}

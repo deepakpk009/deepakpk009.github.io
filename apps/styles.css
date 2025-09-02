@@ -188,3 +188,8 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+.custom-link {
+    text-decoration: none;  /* Removes underline */
+    color: inherit;         /* Uses parent element's color */
+}

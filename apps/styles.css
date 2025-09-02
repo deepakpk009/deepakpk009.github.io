@@ -94,8 +94,10 @@ body {
 .project-thumbnail {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain; /* Changed from 'cover' to 'contain' */
+    object-position: center;
     display: block;
+    background-color: #f8f9fa; /* Optional: adds background color for letterboxing */
 }
 
 /* Project Content */

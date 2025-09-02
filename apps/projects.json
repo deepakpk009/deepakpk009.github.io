@@ -11,6 +11,24 @@
             "description": "Read comics better on TV screens, check out TV ePUB Viewer, an easy way to view ePUB files on Android TV. ",
             "thumbnail": "https://deepakpk.com/tvepubviewer/images/app_icon.png",
             "url": "https://deepakpk.com/tvepubviewer/"
+        },
+        {
+            "title": "Second Login",
+            "description": "Simplify account management on your mobile device with the Second Login app for Android. Offering website management, profile management, and desktop mode view, managing multiple accounts is a breeze.",
+            "thumbnail": "https://deepakpk.com/secondlogin/images/app_icon.png",
+            "url": "https://deepakpk.com/secondlogin/"
+        },
+        {
+            "title": "USB Slideshow & Signage",
+            "description": "An easy way to set up Signage or photo montages for your shops, halls, auditoriums, reception areas, schools, classrooms, parties, and more.",
+            "thumbnail": "https://deepakpk.com/usbslideshow/images/app_icon.png",
+            "url": "https://deepakpk.com/usbslideshow/"
+        },
+        {
+            "title": "TvExplorer",
+            "description": "Smart File Browser & Media Manager for Android TV",
+            "thumbnail": "https://deepakpk.com/tvexplorer/images/app_icon.png",
+            "url": "https://deepakpk.com/tvexplorer/"
         }
     ]
 }

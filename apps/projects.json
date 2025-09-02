@@ -1,10 +1,10 @@
 {
     "projects": [
         {
-            "title": "Roku Weather App",
-            "description": "A comprehensive weather application for Roku devices with 7-day forecasts, interactive maps, and personalized weather alerts.",
-            "thumbnail": "https://via.placeholder.com/400x200?text=Roku+Weather+App",
-            "url": "https://github.com/deepakpk/roku-weather-app"
+            "title": "TV PDF Viewer",
+            "description": "Transform your TV into a giant eBook!, you can read and display any PDF in stunning clarity—right on your Android TV. Perfect for presentations, study, and cozy reading nights.  ",
+            "thumbnail": "https://deepakpk.com/tvpdfviewer/images/app_icon.png",
+            "url": "https://deepakpk.com/tvpdfviewer/"
         },
         {
             "title": "Android Task Manager",

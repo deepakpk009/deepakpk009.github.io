@@ -3,31 +3,36 @@
 	<url>
 		<loc>https://www.deepakpk.com</loc>
 		<priority>1.00</priority>
-		<lastmod>2024-09-19</lastmod>
+		<lastmod>2025-09-2</lastmod>
 	</url>
 	<url>
 		<loc>https://www.deepakpk.com/secondlogin</loc>
 		<priority>0.67</priority>
-		<lastmod>2024-09-18</lastmod>
+		<lastmod>2025-09-2</lastmod>
 	</url>
 	<url>
 		<loc>https://www.deepakpk.com/usbslideshow</loc>
 		<priority>0.67</priority>
-		<lastmod>2024-09-27</lastmod>
+		<lastmod>2025-09-2</lastmod>
 	</url>
 	<url>
 		<loc>https://www.deepakpk.com/tvpdfviewer</loc>
 		<priority>0.67</priority>
-		<lastmod>2024-09-27</lastmod>
+		<lastmod>2025-09-2</lastmod>
 	</url>
 	<url>
 		<loc>https://www.deepakpk.com/tvepubviewer</loc>
 		<priority>0.67</priority>
-		<lastmod>2024-09-27</lastmod>
+		<lastmod>2025-09-2</lastmod>
 	</url>
 	<url>
 		<loc>https://www.deepakpk.com/tvexplorer</loc>
 		<priority>0.67</priority>
-		<lastmod>2024-08-26</lastmod>
+		<lastmod>2025-09-2</lastmod>
+	</url>
+	<url>
+		<loc>https://www.deepakpk.com/apps</loc>
+		<priority>0.67</priority>
+		<lastmod>2025-09-2</lastmod>
 	</url>
 </urlset>

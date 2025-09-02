@@ -93,13 +93,20 @@ body {
 /* Project Thumbnail */
 .project-thumbnail {
     width: 100%;
-    height: 200px;
+    max-height: 200px;
+    height: auto; /* Let height adjust to image ratio */
     object-fit: contain;
     object-position: center;
     display: block;
-    background-color: #f8f9fa;
+    background: linear-gradient(45deg, #f8f9fa 25%, transparent 25%), 
+                linear-gradient(-45deg, #f8f9fa 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #f8f9fa 75%), 
+                linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
     padding: 10px; /* Adds space around the image */
 }
+
 
 
 /* Project Content */

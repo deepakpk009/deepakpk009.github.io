@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "title": "Roku Weather App",
+            "description": "A comprehensive weather application for Roku devices with 7-day forecasts, interactive maps, and personalized weather alerts.",
+            "thumbnail": "https://via.placeholder.com/400x200?text=Roku+Weather+App",
+            "url": "https://github.com/deepakpk/roku-weather-app"
+        },
+        {
+            "title": "Android Task Manager",
+            "description": "Feature-rich task management app for Android with offline sync, collaborative features, and intuitive material design interface.",
+            "thumbnail": "https://via.placeholder.com/400x200?text=Android+Task+Manager",
+            "url": "https://github.com/deepakpk/android-task-manager"
+        },
+        {
+            "title": "Roku Streaming Platform",
+            "description": "Custom streaming platform for Roku with content management, user authentication, and analytics dashboard.",
+            "thumbnail": "https://via.placeholder.com/400x200?text=Roku+Streaming+Platform",
+            "url": "https://github.com/deepakpk/roku-streaming-platform"
+        },
+        {
+            "title": "Android Fitness Tracker",
+            "description": "Health and fitness tracking application with workout plans, nutrition tracking, and progress visualization.",
+            "thumbnail": "https://via.placeholder.com/400x200?text=Android+Fitness+Tracker",
+            "url": "https://github.com/deepakpk/android-fitness-tracker"
+        },
+        {
+            "title": "Roku Gaming Channel",
+            "description": "Interactive gaming channel for Roku devices featuring casual games with leaderboards and achievements.",
+            "thumbnail": "https://via.placeholder.com/400x200?text=Roku+Gaming+Channel",
+            "url": "https://github.com/deepakpk/roku-gaming-channel"
+        },
+        {
+            "title": "Android E-commerce App",
+            "description": "Full-featured e-commerce application with secure payments, product recommendations, and order tracking.",
+            "thumbnail": "https://via.placeholder.com/400x200?text=Android+E-commerce+App",
+            "url": "https://github.com/deepakpk/android-ecommerce-app"
+        }
+    ]
+}

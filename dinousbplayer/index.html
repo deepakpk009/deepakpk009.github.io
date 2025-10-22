@@ -29,14 +29,14 @@
         rel="manifest"
         href="images/favicons/site.webmanifest"
     >
-    <title>Dino USB Player - Transform Your TV into a Complete PDF Reader</title>
+    <title>Dino USB Player - The Ultimate Video Player for Your Android TV</title>
     <meta
         name="description"
-        content="Dino USB Player brings your documents to life on Android TV. Easily view, navigate, and manage PDFs with our intuitive interface designed for TV remotes."
+        content="Dino USB Player brings your videos to life on Android TV. Easily play, navigate, and manage video files from USB drives with our intuitive interface designed for TV remotes."
     >
     <meta
         name="keywords"
-        content="Dino USB Player, Android TV, PDF reader, document viewer, TV app"
+        content="Dino USB Player, Android TV, video player, media player, USB player, TV app"
     >
     <link
         href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -67,57 +67,34 @@
             --tw-gradient-to: #0ed335;
         }
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            border-radius: 9999px;
-            font-weight: 500;
-            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 150ms;
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .btn-blue {
-            background-color: #2563eb;
-            color: #ffffff;
-        }
-
-        .btn-blue:hover {
-            background-color: #1d4ed8;
-        }
-
-        .btn-orange {
-            background-color: #f97316;
-            color: #ffffff;
-        }
-
-        .btn-orange:hover {
-            background-color: #ea580c;
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         .slideshow-container {
             position: relative;
-            max-width: 100%;
+            max-width: 800px;
             margin: auto;
-            overflow: hidden;
         }
 
         .ss {
             display: none;
-            top: 0;
-            left: 0;
-            width: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
+            text-align: center;
         }
 
         .ss.active {
             display: block;
-            opacity: 1;
+        }
+
+        .ss img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
         .prev,
@@ -126,16 +103,15 @@
             position: absolute;
             top: 50%;
             width: auto;
-            padding: 16px;
             margin-top: -22px;
+            padding: 16px;
             color: white;
             font-weight: bold;
             font-size: 18px;
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
         .next {
@@ -145,222 +121,357 @@
 
         .prev:hover,
         .next:hover {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.8);
         }
     </style>
 </head>
 
-<body class="font-sans">
-    <header class="gradient-bg text-white py-4">
-        <div class="container mx-auto px-4 flex items-center">
-            <img
-                src="images/app_icon.png"
-                alt="Dino USB Player Icon"
-                class="app-icon"
-            >
-            <div>
-                <h1 class="text-3xl md:text-4xl font-bold">Dino USB Player</h1>
-                <p class="mt-2 text-xl">Transform Your TV into a Complete PDF Reader</p>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-6 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img
+                        src="images/app_icon.png"
+                        alt="Dino USB Player Icon"
+                        class="app-icon"
+                    >
+                    <div>
+                        <h1 class="text-2xl md:text-4xl font-bold">Dino USB Player</h1>
+                        <p class="text-sm md:text-base">Your Ultimate Android TV Video Player</p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-4">The Perfect PDF Viewer for Your TV</h2>
-            <p class="mb-4">Whether you're a business professional, educator, student, or just someone who wants to view documents on a larger screen, Dino USB Player is the perfect solution for you.</p>
-            <ul class="list-disc pl-6 mb-4">
-                <li>Business professionals: Display presentations and reports on a large screen</li>
-                <li>Educators: Share learning materials with students</li>
-                <li>Students: Study comfortably from your couch</li>
-                <li>Individuals: Read e-books, manuals, and documents on your TV</li>
-            </ul>
-            <p class="mb-4">Dino USB Player is versatile and designed specifically for Android TV with an intuitive interface!</p>
-            <div class="flex flex-wrap gap-4 justify-center"></div>
-            <a
-                href="https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-blue"
-            >
-                <i class="fas fa-arrow-right mr-2"></i>
-                Get it on Google Play
-            </a>
-            <a
-                href="https://www.amazon.com/dp/B0F6M25GDH/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-orange"
-            >
-                <i class="fas fa-arrow-right mr-2"></i>
-                Available on Amazon Appstore
-            </a>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-green-600 to-green-400 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Experience Videos Like Never Before on Your TV</h2>
+            <p class="text-lg md:text-xl mb-8">
+                Play all your favorite video formats directly from USB drives with powerful playback controls and subtitle support
+            </p>
+            <div class="flex justify-center space-x-4 flex-wrap gap-4">
+                <a
+                    href="https://play.google.com/store/apps/details?id=YOUR_APP_ID"
+                    target="_blank"
+                    class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition inline-flex items-center"
+                >
+                    <i class="fab fa-google-play mr-2"></i> Get it on Google Play
+                </a>
+                <a
+                    href="https://www.amazon.com/dp/YOUR_APP_ID"
+                    target="_blank"
+                    class="bg-yellow-500 text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition inline-flex items-center"
+                >
+                    <i class="fab fa-amazon mr-2"></i> Available on Amazon Appstore
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Simple and Easy to Use</h2>
-            <ol class="list-decimal pl-6 mb-4">
-                <li>Install the app on your Android TV</li>
-                <li>Connect a USB drive with your PDF files or upload via web/FTP</li>
-                <li>Browse through thumbnails and open any PDF file with a click</li>
-            </ol>
-            <p class="mb-4">Designed with TV remote navigation in mind, it's incredibly user-friendly!</p>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Key Features</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-search text-3xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Auto-Scan USB</h3>
-                    <p>Automatically detects and lists PDF files from your USB drive with thumbnail previews.</p>
+    <!-- Who It's For -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
+                The Perfect Video Player for Your TV
+            </h2>
+            <p class="text-lg text-center mb-8 max-w-3xl mx-auto">
+                Whether you're a movie enthusiast, content creator, educator, or just someone who wants to enjoy videos on a larger screen, Dino USB Player is the perfect solution for you.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6">
+                    <i class="fas fa-film text-5xl text-green-600 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Movie Lovers</h3>
+                    <p class="text-gray-600">Watch your personal video collection on the big screen with full subtitle support</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-bookmark text-3xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Smart Bookmarking</h3>
-                    <p>Bookmark important pages across multiple PDFs and easily navigate to them later.</p>
+                <div class="text-center p-6">
+                    <i class="fas fa-video text-5xl text-green-600 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Content Creators</h3>
+                    <p class="text-gray-600">Review and playback your video projects directly from USB storage</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-search-plus text-3xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Advanced Viewing Options</h3>
-                    <p>Zoom in/out, rotate pages, toggle night mode, and switch between fit-to-width or height.</p>
+                <div class="text-center p-6">
+                    <i class="fas fa-chalkboard-teacher text-5xl text-green-600 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Educators</h3>
+                    <p class="text-gray-600">Share educational videos and tutorials with students on a large display</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-upload text-3xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Easy File Transfer</h3>
-                    <p>Import PDFs via web token (no same-network requirement) or FTP with convenient QR codes.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-search text-3xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">PDF Search</h3>
-                    <p>Search for text within PDF documents to quickly find the information you need.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-moon text-3xl text-indigo-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Night Mode</h3>
-                    <p>Toggle night mode colors for comfortable reading in low-light environments.</p>
+                <div class="text-center p-6">
+                    <i class="fas fa-home text-5xl text-green-600 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Home Users</h3>
+                    <p class="text-gray-600">Enjoy family videos, movies, and recordings comfortably from your couch</p>
                 </div>
             </div>
-        </section>
+            <p class="text-center text-lg mt-8 text-gray-700">
+                Dino USB Player is versatile and designed specifically for Android TV with an intuitive interface!
+            </p>
+        </div>
+    </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-4">TV-Optimized Interface</h2>
-            <p class="mb-4">Designed specifically for Android TV with intuitive remote control navigation:</p>
-            <ul class="list-disc pl-6 mb-4">
-                <li>Long-press OK button on a PDF to view file info and options</li>
-                <li>Navigate pages with left/right remote keys</li>
-                <li>Simple overlay menu for all viewing options</li>
-                <li>Quick access to bookmarks across all your PDFs</li>
-                <li>Dedicated settings page to manage storage and preferences</li>
-            </ul>
-        </section>
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
+                Simple and Easy to Use
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        1
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Install the App</h3>
+                    <p class="text-gray-600">Download and install Dino USB Player on your Android TV</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        2
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Connect USB Drive</h3>
+                    <p class="text-gray-600">Plug in a USB drive with your video files</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                        3
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Start Watching</h3>
+                    <p class="text-gray-600">Browse through thumbnails and play any video with a click</p>
+                </div>
+            </div>
+            <p class="text-center text-lg mt-8 text-gray-700">
+                Designed with TV remote navigation in mind, it's incredibly user-friendly!
+            </p>
+        </div>
+    </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Comprehensive PDF Management</h2>
-            <p class="mb-4">Our viewer provides all the functionality you need:</p>
-            <ul class="list-disc pl-6 mb-4">
-                <li>Go to specific page numbers instantly</li>
-                <li>View and manage bookmarks across all documents</li>
-                <li>Monitor storage usage with detailed breakdowns</li>
-                <li>Clear thumbnails and bookmarks when needed</li>
-                <li>Access help/FAQ, support, and feedback options</li>
-            </ul>
-        </section>
+    <!-- Key Features -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
+                Key Features
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <i class="fas fa-usb text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Auto-Scan USB Drives</h3>
+                    <p class="text-gray-600">
+                        Automatically detects and lists all media/video files from your USB drive with thumbnail previews, file names, progress, duration, and file size.
+                    </p>
+                </div>
 
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Flexible Subscription Options</h2>
-            <p class="mb-4">Choose from cost-effective subscription levels to meet your specific needs with easy management through our subscription page.</p>
-        </section>
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <i class="fas fa-play-circle text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Smart Playback Resume</h3>
+                    <p class="text-gray-600">
+                        Pick up right where you left off! Get prompted to resume or start over for previously watched videos.
+                    </p>
+                </div>
 
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-4">See It in Action</h2>
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <i class="fas fa-closed-captioning text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Subtitle Support</h3>
+                    <p class="text-gray-600">
+                        Select from multiple subtitle formats including SRT, VTT, ASS, SSA, TTML, DFXP, and XML for enhanced viewing.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <i class="fas fa-sliders-h text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Advanced Player Controls</h3>
+                    <p class="text-gray-600">
+                        Clean player interface with rewind/forward (5 seconds), subtitle selection, progress bar with timestamps, and playback controls.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <i class="fas fa-file-video text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Wide Format Support</h3>
+                    <p class="text-gray-600">
+                        Supports MP4, AVI, MKV, MOV, FLV, WMV, WebM, M4V, 3GP, TS, MTS, M2TS, VOB, and OGV formats.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
+                    <i class="fas fa-sync-alt text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Reload Files</h3>
+                    <p class="text-gray-600">
+                        Quickly reload and rescan your USB drive to detect newly added files without restarting the app.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TV-Optimized Interface -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
+                TV-Optimized Interface
+            </h2>
+            <p class="text-lg text-center mb-8 max-w-3xl mx-auto">
+                Designed specifically for Android TV following Android TV development principles with intuitive remote control navigation:
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-600 text-2xl mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">One-Click Playback</h3>
+                        <p class="text-gray-600">Press OK button on any video file to start playing instantly</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-600 text-2xl mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Progress Tracking</h3>
+                        <p class="text-gray-600">Automatic progress saving - your position is saved when you close the player</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-600 text-2xl mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Thumbnail Previews</h3>
+                        <p class="text-gray-600">Visual thumbnails for easy browsing and file identification</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-600 text-2xl mr-4 mt-1"></i>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Clean Navigation</h3>
+                        <p class="text-gray-600">Intuitive menu system optimized for TV remote control</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Management -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
+                Comprehensive App Management
+            </h2>
+            <p class="text-lg text-center mb-8 max-w-3xl mx-auto">
+                Our player provides all the functionality you need to manage your viewing experience:
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <i class="fas fa-cog text-3xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Device Info & Settings</h3>
+                    <p class="text-gray-600">View screen resolution, aspect ratio, storage info, thumbnail count and total size</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <i class="fas fa-trash-alt text-3xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Storage Management</h3>
+                    <p class="text-gray-600">Clear all thumbnails and playback progress when needed to free up space</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <i class="fas fa-crown text-3xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Subscription Management</h3>
+                    <p class="text-gray-600">Easy subscription page and detailed info on managing your subscription</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <i class="fas fa-question-circle text-3xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Help & FAQ</h3>
+                    <p class="text-gray-600">Comprehensive help page with detailed answers to all common queries</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <i class="fas fa-life-ring text-3xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Support & Feedback</h3>
+                    <p class="text-gray-600">QR codes for easy access to support Facebook page and feedback form</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <i class="fas fa-info-circle text-3xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">App Information</h3>
+                    <p class="text-gray-600">Version info, about us page with developer details, privacy policy, and terms of use</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
+                App Screenshots
+            </h2>
             <div class="slideshow-container">
-                <img
-                    src="images/screenshots/ss01.jpg"
-                    class="ss active w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss02.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss03.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss04.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss05.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss06.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss07.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss08.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss09.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss10.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss11.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss12.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <img
-                    src="images/screenshots/ss13.jpg"
-                    class="ss w-full h-auto rounded-lg shadow-md"
-                >
-                <a
-                    class="prev"
-                    onclick="changeSlide(-1)"
-                >&#10094;</a>
-                <a
-                    class="next"
-                    onclick="changeSlide(1)"
-                >&#10095;</a>
+                <div class="ss active">
+                    <img src="images/screenshots/ss01.jpg" alt="Screenshot 1">
+                </div>
+                <div class="ss">
+                    <img src="images/screenshots/ss02.jpg" alt="Screenshot 2">
+                </div>
+                <div class="ss">
+                    <img src="images/screenshots/ss03.jpg" alt="Screenshot 3">
+                </div>
+                <div class="ss">
+                    <img src="images/screenshots/ss04.jpg" alt="Screenshot 4">
+                </div>
+                <div class="ss">
+                    <img src="images/screenshots/ss05.jpg" alt="Screenshot 5">
+                </div>
+                <div class="ss">
+                    <img src="images/screenshots/ss06.jpg" alt="Screenshot 5">
+                </div>
+                <div class="ss">
+                    <img src="images/screenshots/ss07.jpg" alt="Screenshot 5">
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="text-center">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Ready to Transform Your PDF Experience?</h2>
-            <div class="flex flex-wrap gap-4 justify-center">
-                <a
-                    href="https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer"
-                    class="btn btn-blue"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >Get it on Google Play</a>
-                <a
-                    href="https://www.amazon.com/dp/B0F6M25GDH/"
-                    class="btn btn-orange"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >Available on Amazon Appstore</a>
+    <!-- Subscription -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-green-600">
+                Flexible Subscription Options
+            </h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">
+                Choose from cost-effective subscription levels to meet your specific needs with easy management through our subscription page.
+            </p>
+            <a
+                href="https://play.google.com/store/apps/details?id=YOUR_APP_ID"
+                target="_blank"
+                class="bg-green-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition inline-flex items-center text-lg"
+            >
+                <i class="fas fa-download mr-2"></i> Download Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <img
+                    src="images/app_icon.png"
+                    alt="Dino USB Player Icon"
+                    class="w-16 h-16 mx-auto mb-2"
+                >
+                <h3 class="text-xl font-bold">Dino USB Player</h3>
             </div>
-        </section>
-    </main>
-
-    <footer class="container mx-auto px-4 py-8 text-center">
-        <p>© 2025 Dino USB Player. All rights reserved.</p>
-        <p class="mt-2 text-sm"><a href="privacy.html">Policy</a> | <a href="terms.html">Terms of Use</a></p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.facebook.com/dinousbplayer" class="hover:text-gray-300"><i class="fab fa-facebook-f text-2xl"></i></a>
+                <!-- <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter text-2xl"></i></a> -->
+                <a href="mailto:deepakpk009@yahoo.in" class="hover:text-gray-300"><i class="fas fa-envelope text-2xl"></i></a>
+            </div>
+            <div class="text-sm">
+                <a href="privacy.html" class="hover:underline mx-2">Privacy Policy</a>
+                <span>|</span>
+                <a href="terms.html" class="hover:underline mx-2">Terms of Use</a>
+                <span>|</span>
+                <a href="mailto:deepakpk009@yahoo.in" class="hover:underline mx-2">Contact Us</a>
+            </div>
+            <p class="mt-4 text-sm">&copy; 2025 Dino USB Player. All rights reserved.</p>
+        </div>
     </footer>
 
     <script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="3eb85710-2b57-4c5b-a822-ddf9990351ee"></script>
+    <title>Support Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .qr-code {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support Page</h1>
+        <p>Scan the QR code below to get support:</p>
+        <div class="qr-code">
+            <img id="supportQR" src="" alt="QR Code">
+        </div>
+    </div>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <p>Scan the QR code below to send feedback:</p>
+        <div class="qr-code">
+            <img id="feedbackQR" src="" alt="QR Code">
+        </div>
+    </div>
+    <script>
+        function generateQRCode(view, url) {
+            const qrCode = document.getElementById(view);
+            qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(url)}&size=150x150`;
+        }
+
+        // URL for support
+        const supportURL = 'https://www.facebook.com/dinousbplayer';
+        generateQRCode("supportQR", supportURL);
+        // URL for feedback form
+        const feedbackURL = 'https://forms.gle/XcKTFz1hpoBooquC7';
+        generateQRCode("feedbackQR", feedbackURL);
+    </script>
+</body>
+</html>

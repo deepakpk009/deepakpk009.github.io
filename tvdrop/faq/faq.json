@@ -1,82 +1,62 @@
 [
   {
-    "title": "Why is my USB drive not detected or recognized?",
-    "content": "Ensure your USB drive is properly connected to your Android TV's USB port. The app supports FAT32, NTFS, and exFAT file systems. If your drive is still not detected, try disconnecting and reconnecting it, or restart your Android TV. Some Android TV devices may require specific USB permissions which will be requested when you first connect the drive."
+    "title": "What is TV Drop?",
+    "content": "TV Drop is a file transfer application designed specifically for Android TV that allows you to easily send files from your phone, tablet, or computer to your TV. It supports multiple transfer methods including web token uploads, Wi-Fi transfers, and FTP connections."
   },
   {
-    "title": "What video file formats are supported?",
-    "content": "Dino USB Player supports the following video formats: MP4, AVI, MKV, MOV, FLV, WMV, WebM, M4V, 3GP, TS, MTS, M2TS, VOB, and OGV. If a video doesn't play, ensure it's in one of these supported formats."
+    "title": "How do I transfer files to my TV?",
+    "content": "TV Drop offers three convenient ways to transfer files: 1) Web Import - uses a unique token and works even if your device isn't on the same network, 2) Wi-Fi Import - provides faster uploads when your device is connected to the same network as your TV, and 3) FTP Import - uses anonymous FTP connection for devices on the same network. Each method provides a QR code for easy connection."
   },
   {
-    "title": "What subtitle formats are supported?",
-    "content": "The app supports SRT, VTT, ASS, SSA, TTML, DFXP, and XML subtitle formats. Subtitles can be selected from the player controls during video playback by clicking the closed caption button."
+    "title": "Do I need to be on the same Wi-Fi network as my TV?",
+    "content": "Not necessarily. The Web Import feature works with a token-based system that doesn't require your sending device to be on the same network as your TV. However, Wi-Fi Import and FTP Import do require both devices to be connected to the same network for faster local transfers."
   },
   {
-    "title": "How do I add or select subtitles for my video?",
-    "content": "During video playback, use the player controls to access the closed caption/subtitle button. If your subtitle file is in the same folder as your video file with the same name, it will be automatically detected. You can then select from available subtitle tracks."
+    "title": "Where are my transferred files stored?",
+    "content": "All transferred files are automatically stored in the Downloads folder on your Android TV. The app automatically scans and lists all files and folders, organizing them with folders first, followed by files in alphabetical order."
   },
   {
-    "title": "Why are my videos not showing in the list?",
-    "content": "If your videos are not appearing, try using the 'Reload Files' option from the menu to rescan your USB drive. Ensure your video files are in supported formats and that the USB drive is properly connected. The initial scan may take a few moments depending on the number of files."
+    "title": "How do I open or delete a file?",
+    "content": "Long press the OK button on your TV remote when a file is highlighted to view detailed file information and access options to open or delete the file. The file info displays the file name, location, size, and last modified date. Clicking on a file will open it using the appropriate viewer app if installed on your TV."
   },
   {
-    "title": "My video is buffering or lagging. What should I do?",
-    "content": "Video performance depends on your USB drive speed, file size, and video resolution. Try using a USB 3.0 drive for better performance with high-resolution videos. Also, ensure your USB drive is not corrupted and has sufficient read speed for the video bitrate."
+    "title": "What file types can I transfer?",
+    "content": "You can transfer any file type to your TV using TV Drop. When you open a file, the app will launch the appropriate viewer application if it's installed on your Android TV. This includes videos, images, documents, and other file formats."
   },
   {
-    "title": "How do I resume watching a video from where I left off?",
-    "content": "Dino USB Player automatically saves your playback progress. When you click on a previously watched video, you'll see a dialog asking whether you want to start over or resume from where you left off. Simply select 'Resume' to continue watching."
+    "title": "How do I scan for new files?",
+    "content": "Use the 'Reload Files' menu option to manually scan and refresh the files in your Downloads folder. This ensures that any newly transferred files appear in your file list immediately."
   },
   {
-    "title": "How do I clear thumbnails and saved progress?",
-    "content": "Go to the Settings page in the app. There you'll find an option to 'Clear all thumbnails and progress'. This will free up storage space and reset all playback progress for your videos."
+    "title": "Can I delete multiple files at once?",
+    "content": "Yes, you can clear all files at once by going to the App Settings page, where you'll find a button to clear all files in the Downloads folder. Individual files can be deleted by long-pressing OK on a file and selecting the delete option."
   },
   {
-    "title": "Why are thumbnails not showing for some videos?",
-    "content": "Thumbnail generation happens during the initial scan of your USB drive. Some video files may not generate thumbnails if they're corrupted or in certain codec formats. You can try reloading files using the 'Reload Files' menu option to regenerate thumbnails."
+    "title": "How do I connect using the QR code?",
+    "content": "When you select any transfer method (Web, Wi-Fi, or FTP), TV Drop displays a QR code on your TV screen. Simply scan this QR code with your phone's camera or QR code scanner app, and it will take you directly to the upload page where you can select and send files."
   },
   {
-    "title": "How much storage does the app use for thumbnails?",
-    "content": "You can check the total size of thumbnails and their count in the Settings page. The app displays information about available storage, total thumbnail files, and their combined size. If storage becomes an issue, use the clear thumbnails option in settings."
+    "title": "What information can I view in the Settings page?",
+    "content": "The App Settings page displays useful device information including your TV's screen resolution, screen ratio, available storage space, total number of files and folders, and the total memory size used by your files. You can also clear all files from the Downloads folder from this page."
   },
   {
-    "title": "Can I play videos from multiple USB drives?",
-    "content": "Yes, if your Android TV supports multiple USB ports and drives, the app will scan and list videos from all connected USB drives. Use the reload files option after connecting a new USB drive."
-  },
-  {
-    "title": "My USB drive disconnects after the TV sleeps. What can I do?",
-    "content": "Some Android TV devices power down USB ports during sleep mode. This may cause the app to lose the drive connection. After waking your TV, use the 'Reload Files' option to rescan the USB drive. Consider keeping your TV on or adjusting power settings if available."
-  },
-  {
-    "title": "How do I use the video player controls?",
-    "content": "During playback, use the remote control to access player controls. You can rewind or forward by 5 seconds, view the progress bar with current time and total duration, select subtitle tracks, and monitor playback progress. Progress is automatically saved when you close the video."
-  },
-  {
-    "title": "What does the subscription include?",
-    "content": "Visit the Subscribe page within the app to see subscription details and features. To manage your active subscription, including renewal and cancellation options, go to the 'Manage Subscription' page which provides complete information on subscription management through the Google Play Store."
-  },
-  {
-    "title": "How do I check my device specifications?",
-    "content": "Navigate to the Settings page to view important device information including screen resolution, screen ratio, available storage, total number of thumbnail files, and their total size. This helps you understand your device capabilities and app storage usage."
-  },
-  {
-    "title": "Why can't my video play even though it's a supported format?",
-    "content": "While the format may be supported, the specific codec used within that format might not be compatible with your Android TV device. Try playing the file on another device to verify it's not corrupted. High bitrate 4K videos may also struggle on devices with limited hardware capabilities."
-  },
-  {
-    "title": "How do I reload or rescan files from my USB drive?",
-    "content": "Access the 'Reload Files' option from the menu on the home screen. This will rescan your connected USB drive(s) and refresh the video list with any newly added files or changes. This is useful after adding new videos or connecting a different USB drive."
-  },
-  {
-    "title": "Where can I find the privacy policy and terms of use?",
-    "content": "The app includes dedicated pages for Privacy Policy and Terms of Use which you can access from the app menu. These documents outline how your data is handled and the terms for using Dino USB Player."
-  },
-  {
-    "title": "How do I contact support or provide feedback?",
-    "content": "Visit the 'Support and Feedback' page in the app which displays QR codes linking to the support Facebook page and feedback form. You can also check the 'About Us' page for developer details and contact information."
+    "title": "Is there a subscription required?",
+    "content": "TV Drop offers subscription options for enhanced features. You can subscribe through the Subscribe page within the app, and manage your subscription details through the Manage Subscription page, which provides information on how to handle your subscription."
   },
   {
     "title": "How do I check which version of the app I'm using?",
-    "content": "You can easily view the current app version number by selecting the 'Version Info' option from the app menu. This is helpful when reporting issues or checking for updates."
+    "content": "You can easily check your app version by selecting the 'Version Info' menu item from the app's menu. This displays the current version number of TV Drop installed on your TV."
+  },
+  {
+    "title": "How can I get help or provide feedback?",
+    "content": "TV Drop includes a Help/FAQ page within the app for common queries with detailed answers. For additional support or to provide feedback, visit the Support and Feedback page, which displays QR codes linking to the support Facebook page and feedback form."
+  },
+  {
+    "title": "Is my data secure when using TV Drop?",
+    "content": "TV Drop takes your privacy seriously. The app includes dedicated Privacy Policy and Terms of Use pages that outline how your data is handled. For Web Import, a unique token system is used to ensure secure file transfers."
+  },
+  {
+    "title": "Why won't my file open?",
+    "content": "Files open using your TV's installed viewer applications. If a file doesn't open, you may need to install the appropriate app for that file type from the Google Play Store. For example, videos need a video player, PDFs need a document viewer, etc."
   }
 ]

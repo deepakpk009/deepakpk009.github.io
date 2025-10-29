@@ -12,7 +12,8 @@ const CONFIG = {
       SMALL: 1 * 1024 * 1024,  // 1MB for files < 5MB
       MEDIUM: 5 * 1024 * 1024, // 5MB for files < 50MB
       LARGE: 10 * 1024 * 1024  // 10MB for files >= 50MB
-    }
+    },
+    MAX_FILE_SIZE_FREE: 5 * 1024 * 1024 // 5MB max for non-subscribed users
   };
   
   // State management
@@ -21,7 +22,8 @@ const CONFIG = {
     validToken: '',
     uploadingFile: null,
     fileFilter: '',
-    allowedExtensions: []
+    allowedExtensions: [],
+    isSubscribed: false
   };
   
   // DOM element references
@@ -173,7 +175,15 @@ const CONFIG = {
       const data = await response.json();
       
       if (data.success) {
-        updateTokenStatus('Token validated successfully!', 'completed');
+        // Store subscription status from API response
+        STATE.isSubscribed = data.data && data.data.subscribed ? true : false;
+        
+        // Update token status message based on subscription
+        let statusMessage = 'Token validated successfully!';
+        if (!STATE.isSubscribed) {
+          statusMessage += ' (Free account - 5MB file size limit)';
+        }
+        updateTokenStatus(statusMessage, 'completed');
         STATE.validToken = token;
         DOM.uploadSection.style.display = 'block';
       } else {
@@ -268,6 +278,7 @@ const CONFIG = {
   function filterAndAddFiles(newFiles) {
     let filteredFiles = newFiles;
     let skippedCount = 0;
+    let oversizedCount = 0;
     
     // Apply file extension filter if set
     if (STATE.fileFilter && STATE.allowedExtensions.length > 0) {
@@ -280,6 +291,17 @@ const CONFIG = {
       }
     }
     
+    // Apply file size filter for non-subscribed users
+    if (!STATE.isSubscribed) {
+      const originalCount = filteredFiles.length;
+      filteredFiles = filteredFiles.filter(file => file.size <= CONFIG.MAX_FILE_SIZE_FREE);
+      oversizedCount = originalCount - filteredFiles.length;
+      
+      if (oversizedCount > 0) {
+        showSizeLimitNotification(oversizedCount);
+      }
+    }
+    
     addFiles(filteredFiles);
   }
   
@@ -289,6 +311,15 @@ const CONFIG = {
    */
   function showFilterNotification(skippedCount) {
     alert(`${skippedCount} ${skippedCount === 1 ? 'file was' : 'files were'} skipped because ${skippedCount === 1 ? 'it doesn\'t' : 'they don\'t'} match the allowed types: ${STATE.allowedExtensions.join(', ')}`);
+  }
+  
+  /**
+   * Show notification about files exceeding size limit
+   * @param {number} oversizedCount - Number of files exceeding size limit
+   */
+  function showSizeLimitNotification(oversizedCount) {
+    const maxSizeMB = CONFIG.MAX_FILE_SIZE_FREE / (1024 * 1024);
+    alert(`${oversizedCount} ${oversizedCount === 1 ? 'file was' : 'files were'} skipped because ${oversizedCount === 1 ? 'it exceeds' : 'they exceed'} the ${maxSizeMB}MB size limit for free accounts. Please subscribe to upload larger files.`);
   }
   
   /**

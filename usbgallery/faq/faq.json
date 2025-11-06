@@ -1,0 +1,62 @@
+[
+  {
+    "title": "What is USB Gallery?",
+    "content": "USB Gallery is a file transfer application designed specifically for Android TV that allows you to easily send files from your phone, tablet, or computer to your TV. It supports multiple transfer methods including web token uploads, Wi-Fi transfers, and FTP connections."
+  },
+  {
+    "title": "How do I transfer files to my TV?",
+    "content": "USB Gallery offers three convenient ways to transfer files: 1) Web Import - uses a unique token and works even if your device isn't on the same network, 2) Wi-Fi Import - provides faster uploads when your device is connected to the same network as your TV, and 3) FTP Import - uses anonymous FTP connection for devices on the same network. Each method provides a QR code for easy connection."
+  },
+  {
+    "title": "Do I need to be on the same Wi-Fi network as my TV?",
+    "content": "Not necessarily. The Web Import feature works with a token-based system that doesn't require your sending device to be on the same network as your TV. However, Wi-Fi Import and FTP Import do require both devices to be connected to the same network for faster local transfers."
+  },
+  {
+    "title": "Where are my transferred files stored?",
+    "content": "All transferred files are automatically stored in the Downloads folder on your Android TV. The app automatically scans and lists all files and folders, organizing them with folders first, followed by files in alphabetical order."
+  },
+  {
+    "title": "How do I open or delete a file?",
+    "content": "Long press the OK button on your TV remote when a file is highlighted to view detailed file information and access options to open or delete the file. The file info displays the file name, location, size, and last modified date. Clicking on a file will open it using the appropriate viewer app if installed on your TV."
+  },
+  {
+    "title": "What file types can I transfer?",
+    "content": "You can transfer any file type to your TV using USB Gallery. When you open a file, the app will launch the appropriate viewer application if it's installed on your Android TV. This includes videos, images, documents, and other file formats."
+  },
+  {
+    "title": "How do I scan for new files?",
+    "content": "Use the 'Reload Files' menu option to manually scan and refresh the files in your Downloads folder. This ensures that any newly transferred files appear in your file list immediately."
+  },
+  {
+    "title": "Can I delete multiple files at once?",
+    "content": "Yes, you can clear all files at once by going to the App Settings page, where you'll find a button to clear all files in the Downloads folder. Individual files can be deleted by long-pressing OK on a file and selecting the delete option."
+  },
+  {
+    "title": "How do I connect using the QR code?",
+    "content": "When you select any transfer method (Web, Wi-Fi, or FTP), USB Gallery displays a QR code on your TV screen. Simply scan this QR code with your phone's camera or QR code scanner app, and it will take you directly to the upload page where you can select and send files."
+  },
+  {
+    "title": "What information can I view in the Settings page?",
+    "content": "The App Settings page displays useful device information including your TV's screen resolution, screen ratio, available storage space, total number of files and folders, and the total memory size used by your files. You can also clear all files from the Downloads folder from this page."
+  },
+  {
+    "title": "Is there a subscription required?",
+    "content": "USB Gallery offers subscription options for enhanced features. You can subscribe through the Subscribe page within the app, and manage your subscription details through the Manage Subscription page, which provides information on how to handle your subscription."
+  },
+  {
+    "title": "How do I check which version of the app I'm using?",
+    "content": "You can easily check your app version by selecting the 'Version Info' menu item from the app's menu. This displays the current version number of USB Gallery installed on your TV."
+  },
+  {
+    "title": "How can I get help or provide feedback?",
+    "content": "USB Gallery includes a Help/FAQ page within the app for common queries with detailed answers. For additional support or to provide feedback, visit the Support and Feedback page, which displays QR codes linking to the support Facebook page and feedback form."
+  },
+  {
+    "title": "Is my data secure when using USB Gallery?",
+    "content": "USB Gallery takes your privacy seriously. The app includes dedicated Privacy Policy and Terms of Use pages that outline how your data is handled. For Web Import, a unique token system is used to ensure secure file transfers."
+  },
+  {
+    "title": "Why won't my file open?",
+    "content": "Files open using your TV's installed viewer applications. If a file doesn't open, you may need to install the appropriate app for that file type from the Google Play Store. For example, videos need a video player, PDFs need a document viewer, etc."
+  }
+]

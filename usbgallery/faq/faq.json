@@ -1,62 +1,82 @@
 [
   {
-    "title": "What is USB Gallery?",
-    "content": "USB Gallery is a file transfer application designed specifically for Android TV that allows you to easily send files from your phone, tablet, or computer to your TV. It supports multiple transfer methods including web token uploads, Wi-Fi transfers, and FTP connections."
+    "title": "How does USB Gallery detect and list files?",
+    "content": "USB Gallery automatically scans connected USB drives for folders and media files on Android TV devices, displaying them with thumbnails and file names for easy access."
   },
   {
-    "title": "How do I transfer files to my TV?",
-    "content": "USB Gallery offers three convenient ways to transfer files: 1) Web Import - uses a unique token and works even if your device isn't on the same network, 2) Wi-Fi Import - provides faster uploads when your device is connected to the same network as your TV, and 3) FTP Import - uses anonymous FTP connection for devices on the same network. Each method provides a QR code for easy connection."
+    "title": "Which media file types does the app support?",
+    "content": "The app supports a wide range of video (MP4, AVI, MKV, MOV, FLV, WMV, WEBM, M4V, 3GP, TS, MTS, M2TS, VOB, OGV), audio (MP3, M4A, AAC, OGG, OGA, OPUS, FLAC, WAV, MKV, MKA, TS, 3GP, AMR), and photo formats for versatile playback."
   },
   {
-    "title": "Do I need to be on the same Wi-Fi network as my TV?",
-    "content": "Not necessarily. The Web Import feature works with a token-based system that doesn't require your sending device to be on the same network as your TV. However, Wi-Fi Import and FTP Import do require both devices to be connected to the same network for faster local transfers."
+    "title": "Can I reload files after inserting a USB drive?",
+    "content": "Yes, the 'Reload files' menu allows rescanning of the USB drive for any newly added or changed media files, updating the media list instantly."
   },
   {
-    "title": "Where are my transferred files stored?",
-    "content": "All transferred files are automatically stored in the Downloads folder on your Android TV. The app automatically scans and lists all files and folders, organizing them with folders first, followed by files in alphabetical order."
+    "title": "Does the app offer subscription features?",
+    "content": "USB Gallery provides a subscription page for users to subscribe, offering potential premium features or enhanced access within the app."
   },
   {
-    "title": "How do I open or delete a file?",
-    "content": "Long press the OK button on your TV remote when a file is highlighted to view detailed file information and access options to open or delete the file. The file info displays the file name, location, size, and last modified date. Clicking on a file will open it using the appropriate viewer app if installed on your TV."
+    "title": "How do I manage my subscription?",
+    "content": "There's a dedicated manage subscription page that guides users on how to handle their subscription, update details, or cancel as needed."
   },
   {
-    "title": "What file types can I transfer?",
-    "content": "You can transfer any file type to your TV using USB Gallery. When you open a file, the app will launch the appropriate viewer application if it's installed on your Android TV. This includes videos, images, documents, and other file formats."
+    "title": "What device information can I view in the app?",
+    "content": "The settings page displays device screen resolution, screen ratio, available storage, total thumbnails count, and their cumulative size, helping users understand system usage."
   },
   {
-    "title": "How do I scan for new files?",
-    "content": "Use the 'Reload Files' menu option to manually scan and refresh the files in your Downloads folder. This ensures that any newly transferred files appear in your file list immediately."
+    "title": "Is there an option to clear saved data?",
+    "content": "Users can clear all generated thumbnails and reset video progress from the settings page for privacy or to free up storage space."
   },
   {
-    "title": "Can I delete multiple files at once?",
-    "content": "Yes, you can clear all files at once by going to the App Settings page, where you'll find a button to clear all files in the Downloads folder. Individual files can be deleted by long-pressing OK on a file and selecting the delete option."
+    "title": "Where can I find help or FAQ?",
+    "content": "The app includes a help/FAQ page with detailed answers to common questions, helping users quickly resolve issues."
   },
   {
-    "title": "How do I connect using the QR code?",
-    "content": "When you select any transfer method (Web, Wi-Fi, or FTP), USB Gallery displays a QR code on your TV screen. Simply scan this QR code with your phone's camera or QR code scanner app, and it will take you directly to the upload page where you can select and send files."
+    "title": "How is developer and version info provided?",
+    "content": "An 'About Us' page lists developer details, and a separate menu item shows the current app version for transparency and support."
   },
   {
-    "title": "What information can I view in the Settings page?",
-    "content": "The App Settings page displays useful device information including your TV's screen resolution, screen ratio, available storage space, total number of files and folders, and the total memory size used by your files. You can also clear all files from the Downloads folder from this page."
+    "title": "How do I send feedback or get support?",
+    "content": "A support and feedback page displays a QR code with links to the developer's Facebook page and feedback forms for easy communication."
   },
   {
-    "title": "Is there a subscription required?",
-    "content": "USB Gallery offers subscription options for enhanced features. You can subscribe through the Subscribe page within the app, and manage your subscription details through the Manage Subscription page, which provides information on how to handle your subscription."
+    "title": "Are privacy and terms documents available?",
+    "content": "The app offers dedicated pages for its privacy policy and terms of use for regulatory compliance and user awareness."
   },
   {
-    "title": "How do I check which version of the app I'm using?",
-    "content": "You can easily check your app version by selecting the 'Version Info' menu item from the app's menu. This displays the current version number of USB Gallery installed on your TV."
+    "title": "Can video playback resume from last position?",
+    "content": "When opening a previously played video, the app prompts whether to resume or start over, saving and updating progress in home screen listings."
   },
   {
-    "title": "How can I get help or provide feedback?",
-    "content": "USB Gallery includes a Help/FAQ page within the app for common queries with detailed answers. For additional support or to provide feedback, visit the Support and Feedback page, which displays QR codes linking to the support Facebook page and feedback form."
+    "title": "What video controls exist in the player?",
+    "content": "The built-in video player offers controls for rewinding/forwarding by 5 seconds, selecting subtitle tracks, and viewing a progress bar with time and duration."
   },
   {
-    "title": "Is my data secure when using USB Gallery?",
-    "content": "USB Gallery takes your privacy seriously. The app includes dedicated Privacy Policy and Terms of Use pages that outline how your data is handled. For Web Import, a unique token system is used to ensure secure file transfers."
+    "title": "What subtitle formats are supported?",
+    "content": "Subtitle support includes SRT, VTT, ASS, SSA, TTML, DFXP, and XML file formats for better accessibility."
   },
   {
-    "title": "Why won't my file open?",
-    "content": "Files open using your TV's installed viewer applications. If a file doesn't open, you may need to install the appropriate app for that file type from the Google Play Store. For example, videos need a video player, PDFs need a document viewer, etc."
+    "title": "How does the audio player function?",
+    "content": "The audio player always starts playback from the beginning, provides rewind/forward, subtitle selection, and displays playback progress."
+  },
+  {
+    "title": "What audio formats are compatible?",
+    "content": "Supported audio formats include MP3, M4A, AAC, OGG, OGA, OPUS, FLAC, WAV, WEBM, MKV, MKA, TS, 3GP, and AMR."
+  },
+  {
+    "title": "What photo viewing features are available?",
+    "content": "The image viewer allows users to zoom in/out, fit to height/width, rotate images in 90-degree increments, start slideshows, and close viewer easily."
+  },
+  {
+    "title": "Can I run slideshow presentations?",
+    "content": "Yes, select 'Slideshow' to view all images from the current folder, with options to adjust slide interval and control playback with the remote."
+  },
+  {
+    "title": "How does the slideshow indicator work?",
+    "content": "During a slideshow, a slide index on the top right shows the user's position within the photo set, so you know which image is displayed."
+  },
+  {
+    "title": "Are there keyboard controls for slideshows?",
+    "content": "Users can pause/play slideshows with the OK button, increase slide duration using the down button, or decrease with the up button for customized viewing speed."
   }
 ]

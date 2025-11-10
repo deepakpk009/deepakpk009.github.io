@@ -7,7 +7,13 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="3eb85710-2b57-4c5b-a822-ddf9990351ee"></script>
+    <script
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id="3eb85710-2b57-4c5b-a822-ddf9990351ee"
+    ></script>
+
+    <!-- Favicon Links -->
     <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -29,15 +35,19 @@
         rel="manifest"
         href="images/favicons/site.webmanifest"
     >
-    <title>USB Gallery - Easy File Transfer for Android TV</title>
+
+    <!-- Page Title and SEO Meta Tags -->
+    <title>USB Gallery - View Photos, Videos & Music on Android TV</title>
     <meta
         name="description"
-        content="USB Gallery makes file transfer to Android TV effortless. Send files via web, Wi-Fi, or FTP with QR code connections and manage them with a remote-friendly interface."
+        content="Transform your Android TV into a powerful media center! USB Gallery lets you instantly access and enjoy all your photos, videos, and music files directly from your USB drive."
     >
     <meta
         name="keywords"
-        content="USB Gallery, Android TV, file transfer, FTP, WiFi transfer, web upload, Android TV app"
+        content="USB Gallery, Android TV, USB media player, photo viewer, video player, music player, Android TV app, USB drive, media gallery"
     >
+
+    <!-- External Stylesheets -->
     <link
         href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
         rel="stylesheet"
@@ -46,11 +56,36 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         rel="stylesheet"
     >
+
     <style>
+        /* Root Variables - Theme Colors from Logo */
+        :root {
+            --primary-dark: #000000;
+            --primary-purple: #230046;
+            --primary-purple-light: #3b075e;
+            --accent-yellow: #F5A623;
+            --accent-orange: #E67E22;
+            --accent-green: #27AE60;
+            --accent-blue: #2E86AB;
+            --text-light: #ffffff;
+            --text-muted: #b8b8b8;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary-purple) 50%, var(--primary-purple-light) 100%);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* App Icon Styling */
         .app-icon {
             width: 77px;
             height: 60px;
             margin-right: 10px;
+            border-radius: 8px;
         }
 
         @media (min-width: 768px) {
@@ -60,26 +95,67 @@
             }
         }
 
+        /* Gradient Background for Hero Section */
         .gradient-bg {
-            background-image: linear-gradient(to right, var(--tw-gradient-stops));
-            --tw-gradient-from: #379d2c;
-            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(147, 51, 234, 0));
-            --tw-gradient-to: #0ed335;
+            background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-purple-light) 100%);
         }
 
+        /* Feature Card Hover Effects */
         .feature-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: rgba(59, 7, 94, 0.3);
+            border: 1px solid rgba(245, 166, 35, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            backdrop-filter: blur(10px);
         }
 
         .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(245, 166, 35, 0.3);
+            border-color: var(--accent-yellow);
         }
 
+        /* Icon Colors Based on Logo Palette */
+        .icon-yellow {
+            color: var(--accent-yellow);
+        }
+
+        .icon-orange {
+            color: var(--accent-orange);
+        }
+
+        .icon-green {
+            color: var(--accent-green);
+        }
+
+        .icon-blue {
+            color: var(--accent-blue);
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-yellow) 0%, var(--accent-orange) 100%);
+            color: var(--primary-dark);
+            font-weight: bold;
+            padding: 12px 32px;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(245, 166, 35, 0.4);
+        }
+
+        /* Screenshot Slideshow Styling */
         .slideshow-container {
             position: relative;
             max-width: 800px;
             margin: auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
         }
 
         .ss {
@@ -89,6 +165,17 @@
 
         .ss.active {
             display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .ss img {
@@ -97,6 +184,7 @@
             border-radius: 8px;
         }
 
+        /* Navigation Arrows for Slideshow */
         .prev,
         .next {
             cursor: pointer;
@@ -105,24 +193,26 @@
             width: auto;
             margin-top: -22px;
             padding: 16px;
-            color: white;
+            color: var(--text-light);
+            background-color: rgba(0, 0, 0, 0.5);
             font-weight: bold;
             font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 3px;
+            transition: 0.3s ease;
+            border-radius: 0 3px 3px 0;
             user-select: none;
-            background-color: rgba(0, 0, 0, 0.5);
         }
 
         .next {
             right: 0;
+            border-radius: 3px 0 0 3px;
         }
 
         .prev:hover,
         .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(245, 166, 35, 0.8);
         }
 
+        /* Dot Indicators */
         .dot-container {
             text-align: center;
             padding: 20px;
@@ -130,328 +220,705 @@
 
         .dot {
             cursor: pointer;
-            height: 15px;
-            width: 15px;
+            height: 12px;
+            width: 12px;
             margin: 0 5px;
-            background-color: #bbb;
+            background-color: rgba(255, 255, 255, 0.3);
             border-radius: 50%;
             display: inline-block;
-            transition: background-color 0.6s ease;
+            transition: background-color 0.3s ease;
         }
 
         .dot.active,
         .dot:hover {
-            background-color: #717171;
+            background-color: var(--accent-yellow);
+        }
+
+        /* Section Headers */
+        .section-header {
+            color: var(--accent-yellow);
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .section-subheader {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* Format Support Grid */
+        .format-badge {
+            background: rgba(245, 166, 35, 0.15);
+            border: 1px solid var(--accent-yellow);
+            color: var(--accent-yellow);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 4px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary-purple) 100%);
+            border-top: 2px solid var(--accent-yellow);
+        }
+
+        /* Link Styling */
+        a {
+            color: var(--accent-yellow);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-orange);
+        }
+
+        /* Responsive Typography */
+        @media (max-width: 768px) {
+            .section-header {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
-    <!-- Header -->
-    <header class="gradient-bg text-white py-6 shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                        <img
-                            src="images/app_icon.png"
-                            alt="USB Gallery Icon"
-                            class="app-icon"
-                        >
-                    <div>
-                        <h1 class="text-2xl md:text-4xl font-bold">USB Gallery</h1>
-                        <p class="text-sm md:text-base">Easy File Transfer for Android TV</p>
-                    </div>
-                </div>
+<body>
+    <!-- Navigation Header -->
+    <header class="gradient-bg shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo and App Name -->
+            <div class="flex items-center">
+                <img
+                    src="images/app_icon.png"
+                    alt="USB Gallery Logo"
+                    class="app-icon"
+                >
+                <span class="text-2xl font-bold">USB Gallery</span>
             </div>
-        </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-6">
+                <a
+                    href="#features"
+                    class="hover:text-yellow-400 transition"
+                >Features</a>
+                <a
+                    href="#screenshots"
+                    class="hover:text-yellow-400 transition"
+                >Screenshots</a>
+                <a
+                    href="#download"
+                    class="hover:text-yellow-400 transition"
+                >Download</a>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="downloads-section" class="bg-gradient-to-r from-green-600 to-green-400 text-white py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Transfer Files to Your Android TV Effortlessly</h2>
-            <p class="text-lg md:text-xl mb-8">
-                Send files via web, Wi-Fi, or FTP with QR code connections and manage them with a remote-friendly interface
-            </p>
-            <div class="flex justify-center space-x-4 flex-wrap gap-4">
-                <a
-                    href="https://play.google.com/store/apps/details?id=com.deepakpk.usbgallery"
-                    target="_blank"
-                    class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition inline-flex items-center"
-                >
-                    <i class="fab fa-google-play mr-2"></i> Get it on Google Play
-                </a>
-                <a
-                    href="https://www.amazon.com/dp/B0FY7NFNMR"
-                    target="_blank"
-                    class="bg-yellow-500 text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition inline-flex items-center"
-                >
-                    <i class="fab fa-amazon mr-2"></i> Available on Amazon Appstore
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Who It's For -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
-                Perfect for Every Android TV User
-            </h2>
-            <p class="text-lg text-center mb-8 max-w-3xl mx-auto">
-                Whether you need to transfer documents, photos, videos, or any files to your Android TV, USB Gallery makes it simple and fast.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <i class="fas fa-file-alt text-green-600 text-5xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Content Viewers</h3>
-                    <p>Transfer documents, PDFs, and presentations to view on your TV screen</p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-photo-video text-green-600 text-5xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Media Enthusiasts</h3>
-                    <p>Move photos and videos from your phone to enjoy on the big screen</p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-chalkboard-teacher text-green-600 text-5xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Educators</h3>
-                    <p>Share educational materials and resources with students on a large display</p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-home text-green-600 text-5xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Home Users</h3>
-                    <p>Quick file transfers for family photos, movies, and more</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
-                Simple and Easy to Use
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                        1
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Install USB Gallery</h3>
-                    <p>Download and install USB Gallery on your Android TV from the app store</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                        2
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Choose Transfer Method</h3>
-                    <p>Pick Web (token), Wi-Fi, or FTP transfer and scan the QR code</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                        3
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Send and Open Files</h3>
-                    <p>Transfer files from any device and open them with your installed viewer apps</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
-                Key Features
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
-                    <i class="fas fa-tv text-green-600 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">TV-Optimized Interface</h3>
-                    <p>Built with Android TV development principles for smooth remote navigation and focus management</p>
-                </div>
-                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
-                    <i class="fas fa-cloud-upload-alt text-green-600 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Multiple Transfer Methods</h3>
-                    <p>Web transfer with token (any network), Wi-Fi transfer (same network), and FTP (anonymous connection)</p>
-                </div>
-                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
-                    <i class="fas fa-qrcode text-green-600 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">QR Code Connections</h3>
-                    <p>Easy connection setup with QR codes for web, Wi-Fi, and FTP transfer pages</p>
-                </div>
-                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
-                    <i class="fas fa-folder-open text-green-600 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Smart File Organization</h3>
-                    <p>Auto-scans Downloads folder and lists folders first, then files alphabetically for quick access</p>
-                </div>
-                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
-                    <i class="fas fa-info-circle text-green-600 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">File Details & Actions</h3>
-                    <p>Long-press OK on any file to view name, location, size, last modified date, with options to open or delete</p>
-                </div>
-                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
-                    <i class="fas fa-external-link-alt text-green-600 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Open with Installed Apps</h3>
-                    <p>Clicking a file launches the open intent for compatible viewer apps installed on your TV</p>
-                </div>
-                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
-                    <i class="fas fa-sync-alt text-green-600 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Reload Files Anytime</h3>
-                    <p>Use the Reload Files menu to rescan the Downloads folder after new transfers</p>
-                </div>
-                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
-                    <i class="fas fa-cog text-green-600 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">System Info & Maintenance</h3>
-                    <p>View screen resolution, aspect ratio, storage info, file counts, and clear all files from Settings</p>
-                </div>
-                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md">
-                    <i class="fas fa-question-circle text-green-600 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Help & Support</h3>
-                    <p>Detailed FAQ page, Support & Feedback with QR codes to Facebook page and feedback forms</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Additional Features -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
-                Comprehensive App Management
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-crown text-green-600 text-3xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Subscription Management</h3>
-                    <p>Subscribe in-app and view clear instructions on how to manage your subscription</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-shield-alt text-green-600 text-3xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Privacy & Terms</h3>
-                    <p>Complete Privacy Policy and Terms of Use pages for transparency</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-info text-green-600 text-3xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">About & Version Info</h3>
-                    <p>About Us page with developer details and version info for easy reference</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <i class="fas fa-comments text-green-600 text-3xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">User Support</h3>
-                    <p>Dedicated support page with direct links to community and feedback channels</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Screenshots -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-600">
-                App Screenshots
-            </h2>
-            <div class="slideshow-container">
-                <div class="ss active">
-                    <img src="images/screenshots/ss01.jpg" alt="Screenshot 1">
-                </div>
-                <div class="ss">
-                    <img src="images/screenshots/ss02.jpg" alt="Screenshot 2">
-                </div>
-                <div class="ss">
-                    <img src="images/screenshots/ss03.jpg" alt="Screenshot 3">
-                </div>
-                <div class="ss">
-                    <img src="images/screenshots/ss04.jpg" alt="Screenshot 4">
-                </div>
-                <div class="ss">
-                    <img src="images/screenshots/ss05.jpg" alt="Screenshot 5">
-                </div>
-                <div class="ss">
-                    <img src="images/screenshots/ss06.jpg" alt="Screenshot 5">
-                </div>
-                <div class="ss">
-                    <img src="images/screenshots/ss07.jpg" alt="Screenshot 5">
-                </div>
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
-            </div>
-            <div class="dot-container">
-                <span class="dot active" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-                <span class="dot" onclick="currentSlide(7)"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Subscription -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-green-600">
-                Flexible Subscription Options
-            </h2>
-            <p class="text-lg mb-8 max-w-3xl mx-auto">
-                Choose from cost-effective subscription levels to meet your specific needs with easy management through our subscription page.
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                View Photos, Videos & Music on Your TV 📺
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                Transform your Android TV into a powerful media center! Access all your USB media instantly on the big
+                screen.
             </p>
             <a
-                href="#downloads-section"
-                class="bg-green-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition inline-flex items-center text-lg"
+                href="#download"
+                class="btn-primary inline-block"
             >
-                <i class="fas fa-download mr-2"></i> Download Now
+                <i class="fas fa-download mr-2"></i>Download Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="section-header">Why Choose USB Gallery?</h2>
+            <p class="section-subheader">Simply plug in your USB drive and start browsing your entire media collection
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- Benefit 1 -->
+                <div class="feature-card p-6 rounded-lg text-center">
+                    <i class="fas fa-plug fa-3x icon-yellow mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Plug & Play</h3>
+                    <p class="text-gray-300">No complicated setup. Just connect your USB drive and instantly access all
+                        your media files.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="feature-card p-6 rounded-lg text-center">
+                    <i class="fas fa-tv fa-3x icon-green mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">TV-Optimized Interface</h3>
+                    <p class="text-gray-300">Built following Android TV principles for seamless remote control
+                        navigation and focus management.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="feature-card p-6 rounded-lg text-center">
+                    <i class="fas fa-file-alt fa-3x icon-blue mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Wide Format Support</h3>
+                    <p class="text-gray-300">Play virtually any video, audio, or photo format directly from your USB
+                        storage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Player Features Section -->
+    <section class="py-16 px-6 bg-black bg-opacity-30">
+        <div class="container mx-auto">
+            <h2 class="section-header">🎬 Complete Video Player Experience</h2>
+            <p class="section-subheader">Watch your favorite videos with powerful playback controls</p>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <!-- Video Features -->
+                <div class="feature-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 icon-orange">
+                        <i class="fas fa-play-circle mr-2"></i>Smart Playback Controls
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><i class="fas fa-check icon-green mr-2"></i>Resume exactly where you left off with automatic
+                            progress tracking</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>"Resume or Start Over" prompt for convenient
+                            viewing</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>5-second rewind/forward controls for precise
+                            navigation</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Clean timeline showing current time and total
+                            duration</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Closed caption subtitle support with easy
+                            browsing</li>
+                    </ul>
+                </div>
+
+                <!-- Video Formats -->
+                <div class="feature-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 icon-yellow">
+                        <i class="fas fa-film mr-2"></i>Supported Video Formats
+                    </h3>
+                    <div class="mb-4">
+                        <span class="format-badge">MP4</span>
+                        <span class="format-badge">AVI</span>
+                        <span class="format-badge">MKV</span>
+                        <span class="format-badge">MOV</span>
+                        <span class="format-badge">FLV</span>
+                        <span class="format-badge">WMV</span>
+                        <span class="format-badge">WebM</span>
+                        <span class="format-badge">M4V</span>
+                        <span class="format-badge">3GP</span>
+                        <span class="format-badge">TS</span>
+                        <span class="format-badge">MTS</span>
+                        <span class="format-badge">M2TS</span>
+                        <span class="format-badge">VOB</span>
+                        <span class="format-badge">OGV</span>
+                    </div>
+                    <h4 class="text-xl font-bold mt-6 mb-3 icon-blue">Subtitle Formats</h4>
+                    <div>
+                        <span class="format-badge">SRT</span>
+                        <span class="format-badge">VTT</span>
+                        <span class="format-badge">ASS</span>
+                        <span class="format-badge">SSA</span>
+                        <span class="format-badge">TTML</span>
+                        <span class="format-badge">DFXP</span>
+                        <span class="format-badge">XML</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Use Cases -->
+            <div class="mt-8 p-6 bg-purple-900 bg-opacity-40 rounded-lg">
+                <h4 class="text-xl font-bold mb-3 icon-yellow">
+                    <i class="fas fa-lightbulb mr-2"></i>Perfect For
+                </h4>
+                <p class="text-gray-300">
+                    Watch home videos • Enjoy movies from USB drives • Play vacation footage • View recorded content •
+                    Watch downloaded series
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Features Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="section-header">🎵 High-Quality Audio Player</h2>
+            <p class="section-subheader">Play your music library through your TV's sound system</p>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <!-- Audio Features -->
+                <div class="feature-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 icon-green">
+                        <i class="fas fa-music mr-2"></i>Full Playback Controls
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><i class="fas fa-check icon-green mr-2"></i>5-second skip forward/backward controls</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Real-time playback progress tracking</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Crystal-clear audio playback from USB drives
+                        </li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Clean, easy-to-use audio player interface</li>
+                    </ul>
+
+                    <div class="mt-6 p-4 bg-purple-900 bg-opacity-40 rounded-lg">
+                        <h4 class="text-lg font-bold mb-2 icon-yellow">Use Cases</h4>
+                        <p class="text-gray-300 text-sm">
+                            Play music collections • Enjoy audiobooks • Listen to podcasts • Host parties with your
+                            playlist • Background music for gatherings
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Audio Formats -->
+                <div class="feature-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 icon-yellow">
+                        <i class="fas fa-headphones mr-2"></i>Supported Audio Formats
+                    </h3>
+                    <div>
+                        <span class="format-badge">MP3</span>
+                        <span class="format-badge">M4A</span>
+                        <span class="format-badge">AAC</span>
+                        <span class="format-badge">OGG</span>
+                        <span class="format-badge">OGA</span>
+                        <span class="format-badge">OPUS</span>
+                        <span class="format-badge">FLAC</span>
+                        <span class="format-badge">WAV</span>
+                        <span class="format-badge">WebM</span>
+                        <span class="format-badge">MKV</span>
+                        <span class="format-badge">MKA</span>
+                        <span class="format-badge">TS</span>
+                        <span class="format-badge">3GP</span>
+                        <span class="format-badge">AMR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Viewer Features Section -->
+    <section class="py-16 px-6 bg-black bg-opacity-30">
+        <div class="container mx-auto">
+            <h2 class="section-header">📸 Advanced Photo Viewer & Slideshow</h2>
+            <p class="section-subheader">View your photo albums with powerful image controls</p>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <!-- Photo Features -->
+                <div class="feature-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 icon-blue">
+                        <i class="fas fa-images mr-2"></i>Image Controls
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><i class="fas fa-check icon-green mr-2"></i>Zoom in/out to see every detail</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Rotate images 90 degrees for proper viewing</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Switch between fit-to-height and fit-to-width
+                            modes</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Photo index indicator to track your position
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Slideshow Features -->
+                <div class="feature-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 icon-orange">
+                        <i class="fas fa-play-circle mr-2"></i>Slideshow Mode
+                    </h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><i class="fas fa-check icon-green mr-2"></i>Create stunning slideshows from any folder</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Adjustable slide interval speed controls</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Pause/play slideshow with OK button</li>
+                        <li><i class="fas fa-check icon-green mr-2"></i>Perfect for displaying memories on the big
+                            screen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Photo Use Cases -->
+            <div class="mt-8 p-6 bg-purple-900 bg-opacity-40 rounded-lg">
+                <h4 class="text-xl font-bold mb-3 icon-yellow">
+                    <i class="fas fa-lightbulb mr-2"></i>Perfect For
+                </h4>
+                <p class="text-gray-300">
+                    Display family photo albums • Showcase professional photography • Create digital photo frames •
+                    Relive vacation memories • View event photos
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Features Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="section-header">⚡ Smart Features for Seamless Experience</h2>
+            <p class="section-subheader">Designed to make your media viewing effortless</p>
+
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+                <!-- Auto Scanning -->
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-sync fa-2x icon-yellow mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Auto USB Scanning</h3>
+                    <p class="text-gray-300 text-sm">Automatically detects and organizes all media files from connected
+                        USB drives into easy-to-navigate folders.</p>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-th fa-2x icon-green mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Thumbnail Previews</h3>
+                    <p class="text-gray-300 text-sm">Browse files quickly with thumbnail images and clear file names for
+                        faster navigation.</p>
+                </div>
+
+                <!-- Reload Function -->
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-redo fa-2x icon-blue mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Reload Function</h3>
+                    <p class="text-gray-300 text-sm">Refresh and rescan USB content anytime to detect newly added files
+                        instantly.</p>
+                </div>
+
+                <!-- Progress Tracking -->
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-bookmark fa-2x icon-orange mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Progress Tracking</h3>
+                    <p class="text-gray-300 text-sm">Video playback positions are saved and displayed on home listings
+                        for easy resuming.</p>
+                </div>
+
+                <!-- Device Info -->
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-info-circle fa-2x icon-yellow mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Device Information</h3>
+                    <p class="text-gray-300 text-sm">View screen resolution, aspect ratio, storage info, and thumbnail
+                        cache details in settings.</p>
+                </div>
+
+                <!-- Cache Management -->
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-broom fa-2x icon-green mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Cache Management</h3>
+                    <p class="text-gray-300 text-sm">Clear thumbnail cache and video progress data to free up storage
+                        space when needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User-Friendly Design Section -->
+    <section class="py-16 px-6 bg-black bg-opacity-30">
+        <div class="container mx-auto">
+            <h2 class="section-header">📱 User-Friendly Design</h2>
+            <p class="section-subheader">Everything you need for a complete media viewing experience</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                <!-- Help & FAQ -->
+                <div class="feature-card p-6 rounded-lg text-center">
+                    <i class="fas fa-question-circle fa-3x icon-yellow mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Help & FAQ</h3>
+                    <p class="text-gray-300 text-sm">Detailed answers to all common queries</p>
+                </div>
+
+                <!-- Subscription Management -->
+                <div class="feature-card p-6 rounded-lg text-center">
+                    <i class="fas fa-crown fa-3x icon-orange mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Easy Subscriptions</h3>
+                    <p class="text-gray-300 text-sm">Simple subscription management page</p>
+                </div>
+
+                <!-- Support & Feedback -->
+                <div class="feature-card p-6 rounded-lg text-center">
+                    <i class="fas fa-headset fa-3x icon-blue mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Support & Feedback</h3>
+                    <p class="text-gray-300 text-sm">QR codes for Facebook page and feedback forms</p>
+                </div>
+
+                <!-- Version Info -->
+                <div class="feature-card p-6 rounded-lg text-center">
+                    <i class="fas fa-code-branch fa-3x icon-green mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Version Info</h3>
+                    <p class="text-gray-300 text-sm">Easy access to app version and developer details</p>
+                </div>
+            </div>
+
+            <!-- Additional Features -->
+            <div class="mt-12 grid md:grid-cols-2 gap-6">
+                <div class="feature-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-3 icon-yellow">
+                        <i class="fas fa-cog mr-2"></i>App Settings
+                    </h3>
+                    <p class="text-gray-300">View device screen resolution, screen ratio, available storage, total
+                        thumbnail files, and their size. Clear all thumbnails and video progress with one tap.</p>
+                </div>
+
+                <div class="feature-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-3 icon-blue">
+                        <i class="fas fa-shield-alt mr-2"></i>Privacy & Terms
+                    </h3>
+                    <p class="text-gray-300">Complete privacy policy and terms of use pages available within the app for
+                        full transparency and user confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is It For Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="section-header">🎯 Perfect For</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                <!-- Target Audience Cards -->
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-users fa-2x icon-yellow mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Families</h3>
+                    <p class="text-gray-300 text-sm">View photos and videos together on TV, reliving precious memories
+                        on the big screen.</p>
+                </div>
+
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-video fa-2x icon-orange mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Content Creators</h3>
+                    <p class="text-gray-300 text-sm">Review footage on large screens before editing and publishing your
+                        content.</p>
+                </div>
+
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-camera fa-2x icon-blue mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Photographers</h3>
+                    <p class="text-gray-300 text-sm">Showcase portfolios to clients on TV with stunning clarity and
+                        detail.</p>
+                </div>
+
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-music fa-2x icon-green mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Music Enthusiasts</h3>
+                    <p class="text-gray-300 text-sm">Play audio collections through TV speakers for superior sound
+                        quality.</p>
+                </div>
+
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-usb fa-2x icon-yellow mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">USB Storage Users</h3>
+                    <p class="text-gray-300 text-sm">Anyone with USB media storage seeking easy Android TV access.</p>
+                </div>
+
+                <div class="feature-card p-6 rounded-lg">
+                    <i class="fas fa-tv fa-2x icon-orange mb-4"></i>
+                    <h3 class="text-lg font-bold mb-3">Home Entertainment</h3>
+                    <p class="text-gray-300 text-sm">Transform your television into the ultimate media viewing station.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section
+        id="screenshots"
+        class="py-16 px-6 bg-black bg-opacity-30"
+    >
+        <div class="container mx-auto">
+            <h2 class="section-header">📱 App Screenshots</h2>
+            <p class="section-subheader">See USB Gallery in action</p>
+
+            <!-- Slideshow Container -->
+            <div class="slideshow-container mt-12">
+                <div class="ss active">
+                    <img
+                        src="images/screenshots/screenshot1.png"
+                        alt="USB Gallery Home Screen"
+                    >
+                </div>
+                <div class="ss">
+                    <img
+                        src="images/screenshots/screenshot2.png"
+                        alt="Video Player Interface"
+                    >
+                </div>
+                <div class="ss">
+                    <img
+                        src="images/screenshots/screenshot3.png"
+                        alt="Photo Viewer"
+                    >
+                </div>
+                <div class="ss">
+                    <img
+                        src="images/screenshots/screenshot4.png"
+                        alt="Audio Player"
+                    >
+                </div>
+
+                <!-- Navigation Arrows -->
+                <a
+                    class="prev"
+                    onclick="changeSlide(-1)"
+                >&#10094;</a>
+                <a
+                    class="next"
+                    onclick="changeSlide(1)"
+                >&#10095;</a>
+            </div>
+
+            <!-- Dot Indicators -->
+            <div class="dot-container">
+                <span
+                    class="dot active"
+                    onclick="currentSlide(1)"
+                ></span>
+                <span
+                    class="dot"
+                    onclick="currentSlide(2)"
+                ></span>
+                <span
+                    class="dot"
+                    onclick="currentSlide(3)"
+                ></span>
+                <span
+                    class="dot"
+                    onclick="currentSlide(4)"
+                ></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section
+        id="download"
+        class="py-20 px-6 gradient-bg"
+    >
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Ready to Transform Your TV Experience? 🚀
+            </h2>
+            <p class="text-xl mb-8 text-gray-300">
+                Download USB Gallery now and unlock your USB drive's media library on Android TV!
+            </p>
+            <p class="text-lg mb-8 text-gray-400">
+                No internet required - all your content plays directly from your USB storage device
+            </p>
+
+            <!-- Download Button -->
+            <a
+                href="https://play.google.com/store/apps/details?id=YOUR_APP_ID"
+                target="_blank"
+                class="btn-primary inline-block text-lg"
+            >
+                <i class="fab fa-google-play mr-2"></i>Get It On Google Play
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p class="mb-4">&copy; 2025 USB Gallery. All rights reserved.</p>
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="https://www.facebook.com/usbgallery" class="hover:text-gray-300"><i class="fab fa-facebook-f text-2xl"></i></a>
-                <!-- <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter text-2xl"></i></a> -->
-                <a href="mailto:deepakpk009@yahoo.in" class="hover:text-gray-300"><i class="fas fa-envelope text-2xl"></i></a>
+    <footer class="py-8 px-6">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a
+                    href="#"
+                    class="hover:text-yellow-400 transition"
+                >
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a
+                    href="#"
+                    class="hover:text-yellow-400 transition"
+                >
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a
+                    href="#"
+                    class="hover:text-yellow-400 transition"
+                >
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
             </div>
-            <div class="flex justify-center space-x-6">
-                <a href="privacy.html" class="hover:text-green-400 transition">Privacy Policy</a>
-                <a href="terms.html" class="hover:text-green-400 transition">Terms of Service</a>
-                <a href="mailto:deepakpk009@yahoo.in" class="hover:text-green-400 transition">Contact Us</a>
+
+            <div class="mb-4 space-x-6">
+                <a
+                    href="#"
+                    class="hover:text-yellow-400 transition"
+                >Privacy Policy</a>
+                <a
+                    href="#"
+                    class="hover:text-yellow-400 transition"
+                >Terms of Use</a>
+                <a
+                    href="#"
+                    class="hover:text-yellow-transition"
+                >Contact Support</a>
             </div>
+
+            <p class="text-gray-400 text-sm">
+                &copy; 2025 USB Gallery. All rights reserved. Made with ❤️ for Android TV users.
+            </p>
         </div>
     </footer>
 
+    <!-- JavaScript for Slideshow -->
     <script>
+        // Slideshow functionality
         let slideIndex = 1;
-        showSlide(slideIndex);
+        showSlides(slideIndex);
 
+        // Next/previous controls
         function changeSlide(n) {
-            showSlide(slideIndex += n);
+            showSlides(slideIndex += n);
         }
 
+        // Thumbnail image controls
         function currentSlide(n) {
-            showSlide(slideIndex = n);
+            showSlides(slideIndex = n);
         }
 
-        function showSlide(n) {
+        // Main slideshow function
+        function showSlides(n) {
+            let i;
             let slides = document.getElementsByClassName("ss");
             let dots = document.getElementsByClassName("dot");
-            
-            if (n > slides.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = slides.length; }
-            
-            for (let i = 0; i < slides.length; i++) {
+
+            // Wrap around if out of bounds
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
                 slides[i].classList.remove("active");
             }
-            for (let i = 0; i < dots.length; i++) {
+
+            // Remove active class from all dots
+            for (i = 0; i < dots.length; i++) {
                 dots[i].classList.remove("active");
             }
-            
+
+            // Show current slide and activate corresponding dot
             slides[slideIndex - 1].classList.add("active");
             dots[slideIndex - 1].classList.add("active");
         }
+
+        // Auto-advance slideshow every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 

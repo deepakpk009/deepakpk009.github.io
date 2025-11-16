@@ -41,6 +41,12 @@
             "description": "TV File Transfer Made Simple",
             "thumbnail": "https://deepakpk.com/tvdrop/images/app_icon.png",
             "url": "https://deepakpk.com/tvdrop/"
+        },
+        {
+            "title": "USB Gallery",
+            "description": "USB Photos, Videos & Music on Android TV",
+            "thumbnail": "https://deepakpk.com/usbgallery/images/app_icon.png",
+            "url": "https://deepakpk.com/usbgallery/"
         }
     ]
 }

@@ -562,7 +562,7 @@
             font-size: 3rem;
             margin-bottom: 20px;
             display: block;
-            filter: grayscale(100%) brightness(0) invert(1);
+            filter: grayscale(100%);
             opacity: 0.9;
         }
         
@@ -626,7 +626,7 @@
         .use-case-icon {
             font-size: 3rem;
             margin-bottom: 15px;
-            filter: grayscale(100%) brightness(0) invert(1);
+            filter: grayscale(100%);
             opacity: 0.9;
         }
         
@@ -985,16 +985,16 @@
                     
                     <div class="app-stats">
                         <div class="stat">
-                            <span class="stat-value">📥 50K+</span>
+                            <span class="stat-value" id="rating">⭐ <span>4.5+</span></span>
+                            <span class="stat-label">User Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="downloads">📥 <span>50K+</span></span>
                             <span class="stat-label">Downloads</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-value">🌐 3</span>
-                            <span class="stat-label">Transfer Methods</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value">📱 2</span>
-                            <span class="stat-label">App Stores</span>
+                            <span class="stat-value" id="version">📦 <span>1.1.2</span></span>
+                            <span class="stat-label">Latest Version</span>
                         </div>
                     </div>
                 </div>
@@ -1002,22 +1002,43 @@
                 <div class="hero-right">
                     <div class="screenshots-container">
                         <div class="screenshot-slide active">
-                            <img src="images/screenshot1.png" alt="TV PDF Viewer Screenshot - Main Interface" loading="lazy">
+                            <img src="images/screenshots/ss01.jpg" alt="TV PDF Viewer Screenshot - Main Home Interface" loading="lazy">
                         </div>
                         <div class="screenshot-slide">
-                            <img src="images/screenshot2.png" alt="TV PDF Viewer Screenshot - PDF Reading" loading="lazy">
+                            <img src="images/screenshots/ss02.jpg" alt="TV PDF Viewer Screenshot - Bookmark Interface" loading="lazy">
                         </div>
                         <div class="screenshot-slide">
-                            <img src="images/screenshot3.png" alt="TV PDF Viewer Screenshot - File Browser" loading="lazy">
+                            <img src="images/screenshots/ss03.jpg" alt="TV PDF Viewer Screenshot - Web Import Interface" loading="lazy">
                         </div>
                         <div class="screenshot-slide">
-                            <img src="images/screenshot4.png" alt="TV PDF Viewer Screenshot - Night Mode" loading="lazy">
+                            <img src="images/screenshots/ss04.jpg" alt="TV PDF Viewer Screenshot - FTP Import Interface" loading="lazy">
                         </div>
                         <div class="screenshot-slide">
-                            <img src="images/screenshot5.png" alt="TV PDF Viewer Screenshot - Bookmarks" loading="lazy">
+                            <img src="images/screenshots/ss05.jpg" alt="TV PDF Viewer Screenshot - PDF Options Interface" loading="lazy">
                         </div>
                         <div class="screenshot-slide">
-                            <img src="images/screenshot6.png" alt="TV PDF Viewer Screenshot - Settings" loading="lazy">
+                            <img src="images/screenshots/ss06.jpg" alt="TV PDF Viewer Screenshot - Night Mode Interface" loading="lazy">
+                        </div>
+                        <div class="screenshot-slide">
+                            <img src="images/screenshots/ss07.jpg" alt="TV PDF Viewer Screenshot - Page Rotate Interface" loading="lazy">
+                        </div>
+                        <div class="screenshot-slide">
+                            <img src="images/screenshots/ss08.jpg" alt="TV PDF Viewer Screenshot - Search PDF Interface" loading="lazy">
+                        </div>
+                        <div class="screenshot-slide">
+                            <img src="images/screenshots/ss09.jpg" alt="TV PDF Viewer Screenshot - Search Result Interface" loading="lazy">
+                        </div>
+                        <div class="screenshot-slide">
+                            <img src="images/screenshots/ss10.jpg" alt="TV PDF Viewer Screenshot - Go To Page Interface" loading="lazy">
+                        </div>
+                        <div class="screenshot-slide">
+                            <img src="images/screenshots/ss11.jpg" alt="TV PDF Viewer Screenshot - In-PDF Bookmarks Listing Interface" loading="lazy">
+                        </div>
+                        <div class="screenshot-slide">
+                            <img src="images/screenshots/ss12.jpg" alt="TV PDF Viewer Screenshot - Settings Interface" loading="lazy">
+                        </div>
+                        <div class="screenshot-slide">
+                            <img src="images/screenshots/ss13.jpg" alt="TV PDF Viewer Screenshot - Empty Home Interface" loading="lazy">
                         </div>
                         
                         <button class="screenshot-nav prev" aria-label="Previous screenshot">‹</button>
@@ -1030,6 +1051,14 @@
                             <span class="dot" data-slide="3"></span>
                             <span class="dot" data-slide="4"></span>
                             <span class="dot" data-slide="5"></span>
+                            <span class="dot" data-slide="6"></span>
+                            <span class="dot" data-slide="7"></span>
+                            <span class="dot" data-slide="8"></span>
+                            <span class="dot" data-slide="9"></span>
+                            <span class="dot" data-slide="10"></span>
+                            <span class="dot" data-slide="11"></span>
+                            <span class="dot" data-slide="12"></span>
+                            <span class="dot" data-slide="13"></span>
                         </div>
                     </div>
                 </div>

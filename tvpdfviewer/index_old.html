@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="3eb85710-2b57-4c5b-a822-ddf9990351ee"></script>
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="images/favicons/apple-touch-icon.png"
+    >
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="images/favicons/favicon-32x32.png"
+    >
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="images/favicons/favicon-16x16.png"
+    >
+    <link
+        rel="manifest"
+        href="images/favicons/site.webmanifest"
+    >
+    <title>TV PDF Viewer - Transform Your TV into a Complete PDF Reader</title>
+    <meta
+        name="description"
+        content="TV PDF Viewer brings your documents to life on Android TV. Easily view, navigate, and manage PDFs with our intuitive interface designed for TV remotes."
+    >
+    <meta
+        name="keywords"
+        content="TV PDF Viewer, Android TV, PDF reader, document viewer, TV app"
+    >
+    <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        rel="stylesheet"
+    >
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        rel="stylesheet"
+    >
+    <style>
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .app-icon {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        .gradient-bg {
+            background-image: linear-gradient(to right, var(--tw-gradient-stops));
+            --tw-gradient-from: #379d2c;
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(147, 51, 234, 0));
+            --tw-gradient-to: #0ed335;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .btn-blue {
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+
+        .btn-blue:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-orange {
+            background-color: #f97316;
+            color: #ffffff;
+        }
+
+        .btn-orange:hover {
+            background-color: #ea580c;
+        }
+
+        .btn-purple {
+            background-color: #8300da;
+            color: #ffffff;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .ss {
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .ss.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <header class="gradient-bg text-white py-4">
+        <div class="container mx-auto px-4 flex items-center">
+            <img
+                src="images/app_icon.png"
+                alt="TV PDF Viewer Icon"
+                class="app-icon"
+            >
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold">TV PDF Viewer</h1>
+                <p class="mt-2 text-xl">Transform Your TV into a Complete PDF Reader</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">The Perfect PDF Viewer for Your TV</h2>
+            <p class="mb-4">Whether you're a business professional, educator, student, or just someone who wants to view documents on a larger screen, TV PDF Viewer is the perfect solution for you.</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Business professionals: Display presentations and reports on a large screen</li>
+                <li>Educators: Share learning materials with students</li>
+                <li>Students: Study comfortably from your couch</li>
+                <li>Individuals: Read e-books, manuals, and documents on your TV</li>
+            </ul>
+            <p class="mb-4">TV PDF Viewer is versatile and designed specifically for Android TV with an intuitive interface!</p>
+            <div class="flex flex-wrap gap-4 justify-center"></div>
+            <a
+                href="https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-blue"
+            >
+                <i class="fas fa-arrow-right mr-2"></i>
+                Get it on Google Play
+            </a>
+            <a
+                href="https://www.amazon.com/dp/B0F6M25GDH/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-orange"
+            >
+                <i class="fas fa-arrow-right mr-2"></i>
+                Available on Amazon Appstore
+            </a>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Simple and Easy to Use</h2>
+            <ol class="list-decimal pl-6 mb-4">
+                <li>Install the app on your Android TV</li>
+                <li>Connect a USB drive with your PDF files or upload via web/FTP</li>
+                <li>Browse through thumbnails and open any PDF file with a click</li>
+            </ol>
+            <p class="mb-4">Designed with TV remote navigation in mind, it's incredibly user-friendly!</p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-search text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Auto-Scan USB</h3>
+                    <p>Automatically detects and lists PDF files from your USB drive with thumbnail previews.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-bookmark text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Smart Bookmarking</h3>
+                    <p>Bookmark important pages across multiple PDFs and easily navigate to them later.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-search-plus text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Advanced Viewing Options</h3>
+                    <p>Zoom in/out, rotate pages, toggle night mode, and switch between fit-to-width or height.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-upload text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Easy File Transfer</h3>
+                    <p>Import PDFs via web token (no same-network requirement) or FTP with convenient QR codes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-search text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">PDF Search</h3>
+                    <p>Search for text within PDF documents to quickly find the information you need.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-moon text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Night Mode</h3>
+                    <p>Toggle night mode colors for comfortable reading in low-light environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">TV-Optimized Interface</h2>
+            <p class="mb-4">Designed specifically for Android TV with intuitive remote control navigation:</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Long-press OK button on a PDF to view file info and options</li>
+                <li>Navigate pages with left/right remote keys</li>
+                <li>Simple overlay menu for all viewing options</li>
+                <li>Quick access to bookmarks across all your PDFs</li>
+                <li>Dedicated settings page to manage storage and preferences</li>
+            </ul>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Comprehensive PDF Management</h2>
+            <p class="mb-4">Our viewer provides all the functionality you need:</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Go to specific page numbers instantly</li>
+                <li>View and manage bookmarks across all documents</li>
+                <li>Monitor storage usage with detailed breakdowns</li>
+                <li>Clear thumbnails and bookmarks when needed</li>
+                <li>Access help/FAQ, support, and feedback options</li>
+            </ul>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Flexible Subscription Options</h2>
+            <p class="mb-4">Choose from cost-effective subscription levels to meet your specific needs with easy management through our subscription page.</p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">See It in Action</h2>
+            <div class="slideshow-container">
+                <img
+                    src="images/screenshots/ss01.jpg"
+                    class="ss active w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss02.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss03.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss04.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss05.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss06.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss07.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss08.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss09.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss10.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss11.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss12.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <img
+                    src="images/screenshots/ss13.jpg"
+                    class="ss w-full h-auto rounded-lg shadow-md"
+                >
+                <a
+                    class="prev"
+                    onclick="changeSlide(-1)"
+                >&#10094;</a>
+                <a
+                    class="next"
+                    onclick="changeSlide(1)"
+                >&#10095;</a>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Ready to Transform Your PDF Experience?</h2>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a
+                    href="https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer"
+                    class="btn btn-blue"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Get it on Google Play</a>
+                <a
+                    href="https://www.amazon.com/dp/B0F6M25GDH/"
+                    class="btn btn-orange"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Available on Amazon Appstore</a>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4"> </h2>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a
+                    href="https://deepakpk.com/apps"
+                    class="btn btn-purple"
+                >More apps by Deepak PK</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container mx-auto px-4 py-8 text-center">
+        <p>© 2025 TV PDF Viewer. All rights reserved.</p>
+        <p class="mt-2 text-sm"><a href="privacy.html">Policy</a> | <a href="terms.html">Terms of Use</a></p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        let slideInterval;
+        const slides = document.getElementsByClassName("ss");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].classList.add("active");
+        }
+
+        function changeSlide(n) {
+            clearInterval(slideInterval);
+            slideIndex += n - 1;
+            if (slideIndex < 0) { slideIndex = slides.length - 1 }
+            if (slideIndex >= slides.length) { slideIndex = 0 }
+            showSlides();
+            startSlideshow();
+        }
+
+        function startSlideshow() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(showSlides, 3000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            startSlideshow();
+        });
+    </script>
+</body>
+
+</html>

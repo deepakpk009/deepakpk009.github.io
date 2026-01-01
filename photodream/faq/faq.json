@@ -1,114 +1,66 @@
 [
   {
-    "title": "How does the app find PDF files on my TV?",
-    "content": "The app automatically scans any connected USB drives for PDF files. Once detected, these files are displayed in a list with the first page shown as a thumbnail alongside the file name for easy identification."
+    "title": "What is Photo Dream Screensaver?",
+    "content": "Photo Dream Screensaver allows you to display your personal photos as a beautiful slideshow screensaver on your Android TV. Your selected photos are shown automatically when the screensaver starts, turning your TV into a personal photo frame."
   },
   {
-    "title": "How can I view information about a PDF file?",
-    "content": "Long press the OK button on your remote when focused on a PDF file in the list. This will display the file information including name, location, size, and last modified date. You'll also see options to open or delete the file."
+    "title": "Which devices are supported?",
+    "content": "Photo Dream Screensaver is designed exclusively for TV devices. It supports Android TV, Google TV, and Fire TV. This app is not available for mobile phones or tablets."
   },
   {
-    "title": "What are the ways to import PDF files to the app?",
-    "content": "There are three methods to import PDF files: 1) Connect a USB drive containing PDFs which will be automatically detected, 2) Use the web import feature with a token (no need for both devices to be on the same network), or 3) Use FTP import with an anonymous FTP connection (requires both devices to be on the same network). The web and FTP import pages provide QR codes for easy connection."
+    "title": "Do I need a keyboard or mouse to use this app?",
+    "content": "No. The app is fully optimized for Android TV and can be completely controlled using your TV remote. A mouse can be used if connected, but it is not required."
   },
   {
-    "title": "How do I use the web import feature?",
-    "content": "Navigate to the web import option in the app. You'll be shown a token and QR code. Scan the QR code with your sending device or manually enter the URL in a browser and enter the token to verify before selecting files for uploading. The advantage of web import is that your sending device doesn't need to be on the same network as your TV."
+    "title": "How can I add photos to the screensaver?",
+    "content": "You can upload photos to your TV using multiple methods: Web upload, through Wi-Fi, or FTP connection. All upload options are available directly from the app menu."
   },
   {
-    "title": "How do I use the FTP import feature?",
-    "content": "Navigate to the FTP import option in the app. The app will display connection information and a QR code. Scan the QR code or manually enter the connection details in your FTP client. Note that FTP import requires both your TV and sending device to be on the same network. The app uses anonymous FTP connection for simplicity."
+    "title": "Where are my photos stored?",
+    "content": "All your photos are stored locally on your TV device only. Photo Dream Screensaver does not upload or store your photos on any external servers or cloud services."
   },
   {
-    "title": "How do I bookmark pages in a PDF?",
-    "content": "While viewing a PDF, press the OK button on your remote to display the PDF options menu. Select the 'bookmark' option to toggle a bookmark for the current page. You can use this feature to easily return to important pages later."
+    "title": "Is my data safe and private?",
+    "content": "Yes. Your personal photos never leave your TV. The app does not require login, does not collect personal data, and does not access external storage or USB devices."
   },
   {
-    "title": "How do I view and manage all my bookmarks?",
-    "content": "From the main menu, select the bookmarks page to view all bookmarks across all your PDFs. Each bookmark entry displays the bookmarked page thumbnail, page number, and the PDF file title. You can also delete bookmarks directly from this listing page."
+    "title": "What happens to photos uploaded via the web?",
+    "content": "Photos uploaded through the web interface are automatically deleted from the server once they are downloaded to your TV. If a download fails or a token expires, the uploaded files are automatically deleted within one hour."
   },
   {
-    "title": "How do I view bookmarks for just the PDF I'm currently reading?",
-    "content": "While viewing a PDF, press the OK button to show the PDF options menu, then select 'bookmarks' option. This will display all bookmarked pages specific to the current PDF file. You can select any bookmark to navigate directly to that page."
+    "title": "How many photos can I use in the free version?",
+    "content": "The free version allows you to use up to 5 photos as a screensaver. To add more photos, you need to subscribe to a premium plan."
   },
   {
-    "title": "My USB drive has new PDFs, but they don't appear in the app. What should I do?",
-    "content": "Select the 'reload files' menu option. This will initiate a new scan of your USB drive and imports folder, making any new PDFs available in the app."
+    "title": "What subscription plans are available?",
+    "content": "Photo Dream Screensaver offers multiple subscription options including monthly, quarterly, half-yearly, and yearly plans. Subscribing removes the photo limit and unlocks full functionality."
   },
   {
-    "title": "How do I open and view a PDF file?",
-    "content": "Simply navigate to the PDF file in the main list and press the OK button on your remote. The PDF will open in the viewer with the page fitted to height by default."
+    "title": "What happens when my subscription expires?",
+    "content": "When your subscription expires, the app continues to work in free mode. Only up to 5 photos will be used for the screensaver, but your existing photos remain safely stored on your device."
   },
   {
-    "title": "How do I navigate through pages in a PDF?",
-    "content": "When viewing a PDF that is zoomed out or fit to height, use the left/right remote keys to change pages. If the page is zoomed in, the left/right keys will scroll the page horizontally instead."
+    "title": "How do I activate the screensaver?",
+    "content": "The app provides an Activate option that takes you directly to your TV’s screensaver settings, making it easy to select and enable Photo Dream Screensaver."
   },
   {
-    "title": "How can I zoom in and out of a PDF page?",
-    "content": "While viewing a PDF, press the OK button to display the options menu. Select 'zoom in' to enlarge the page or 'zoom out' to reduce it. When zoomed in, you can use left/right remote keys to scroll horizontally."
+    "title": "Does the app work without an internet connection?",
+    "content": "Yes. Once your photos are added to the TV, the screensaver works completely offline. An internet connection is only needed for uploading photos or displaying limited informational content."
   },
   {
-    "title": "Can I change how the PDF fits on the screen?",
-    "content": "Yes. While viewing a PDF, press the OK button for the options menu, then select 'fit mode'. This toggles between fitting the page to width or height, allowing you to choose the view that works best for your content."
+    "title": "Does this app collect any user data?",
+    "content": "The app does not collect personal or identifiable user data. Only anonymous performance analytics and crash reports are collected to improve app stability and user experience."
   },
   {
-    "title": "How do I jump to a specific page in a PDF?",
-    "content": "While viewing a PDF, press the OK button to show the options menu, then select 'go to page'. You can then enter the specific page number you want to navigate to."
+    "title": "Can this app be used for business or signage purposes?",
+    "content": "While Photo Dream Screensaver is designed mainly for personal use, it can also be used for simple business displays or signage where photo slideshows are required."
   },
   {
-    "title": "Can I search for text within a PDF?",
-    "content": "Yes. While viewing a PDF, press the OK button for the options menu, then select 'search'. Enter your search text and the app will locate it within the document. Note that some searches might take time on larger documents. You can cancel an ongoing search by pressing the cancel button."
+    "title": "What should I do if the screensaver is not starting?",
+    "content": "Make sure Photo Dream Screensaver is selected as the active screensaver in your TV settings and that at least one photo is added. Some TVs may require disabling battery or power optimizations."
   },
   {
-    "title": "How do I rotate PDF pages?",
-    "content": "While viewing a PDF, press the OK button to show the options menu, then select 'rotate'. Each click rotates the page 90 degrees, allowing you to view content in the orientation that works best."
-  },
-  {
-    "title": "Does the app have a night mode for reading?",
-    "content": "Yes. While viewing a PDF, press the OK button for the options menu, then select 'night mode'. This toggles a color scheme that's easier on the eyes in low-light conditions."
-  },
-  {
-    "title": "How do I close the PDF options menu?",
-    "content": "You can either select the 'close' option in the menu or simply press the back key on your remote. The PDF options view is shown as an overlay so you can see live changes to the page when using zoom, fit mode, rotate, and night mode options."
-  },
-  {
-    "title": "How do I subscribe to the app?",
-    "content": "Navigate to the subscribe page from the main menu to make a subscription. This will give you access to all premium features of the app."
-  },
-  {
-    "title": "How do I manage my subscription?",
-    "content": "Go to the manage subscription page, which provides detailed information on how to manage your current subscription, including how to cancel or renew it."
-  },
-  {
-    "title": "How can I check the app's storage usage?",
-    "content": "Visit the app settings page to view information including device screen resolution, screen ratio, available storage, total PDF file count and memory size taken, number of bookmarks, and number of thumbnails files with their total size."
-  },
-  {
-    "title": "How do I clear imported PDFs from the app?",
-    "content": "In the settings page, use the option to clear all PDFs in the imports folder. Note that this will not delete PDF files stored on connected USB drives."
-  },
-  {
-    "title": "Can I clear all thumbnails and bookmarks?",
-    "content": "Yes. In the settings page, there are options to clear all thumbnails and bookmarks. This can help free up storage space if needed."
-  },
-  {
-    "title": "How do I contact support or provide feedback?",
-    "content": "Access the support and feedback page from the main menu. It displays QR codes linking to the support Facebook page and feedback form URLs for easy access."
-  },
-  {
-    "title": "How can I check which version of the app I'm using?",
-    "content": "Select the version info menu item from the main menu to see the current app version number."
-  },
-  {
-    "title": "Where can I find the privacy policy and terms of use?",
-    "content": "The app includes dedicated pages for both the privacy policy and terms of use, accessible from the main menu."
-  },
-  {
-    "title": "How do I exit the PDF viewer?",
-    "content": "While viewing a PDF, press the back key on your remote to return to the main app interface."
-  },
-  {
-    "title": "Can I delete a PDF file from within the app?",
-    "content": "Yes. Long press the OK button when focused on a PDF file in the main list. This will show file information along with options to open or delete the file."
+    "title": "How can I contact support?",
+    "content": "If you need help or have questions, you can contact support at deepakpk009@yahoo.in or visit https://deepakpk.com/Photo Dream."
   }
 ]

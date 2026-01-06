@@ -502,11 +502,13 @@
 
         .video-container {
             max-width: 800px;
-            margin: 40px auto;
             position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 16px;
             overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+            border: 3px solid var(--border-green);
         }
 
         .video-container iframe {

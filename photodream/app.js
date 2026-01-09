@@ -5,6 +5,44 @@ async function loadContent() {
   return res.json();
 }
 
+/* -----------------------------
+   Small DOM / validation helpers
+------------------------------ */
+function $(id) {
+  return document.getElementById(id);
+}
+
+function removeMount(id) {
+  const el = $(id);
+  if (el) el.remove();
+}
+
+function hasText(s) {
+  return typeof s === "string" && s.trim().length > 0;
+}
+
+function hasArray(a) {
+  return Array.isArray(a) && a.length > 0;
+}
+
+function isHttpUrl(u) {
+  return typeof u === "string" && (u.startsWith("http://") || u.startsWith("https://"));
+}
+
+function mountHtml(id, html) {
+  const el = $(id);
+  if (!el) return;
+
+  if (!hasText(html)) {
+    el.remove();
+    return;
+  }
+  el.innerHTML = html;
+}
+
+/* -----------------------------
+   Meta / head helpers
+------------------------------ */
 function setFavicon(href, rel, sizes) {
   let link = document.querySelector(`link[rel="${rel}"]${sizes ? `[sizes="${sizes}"]` : ""}`);
   if (!link) {
@@ -17,6 +55,7 @@ function setFavicon(href, rel, sizes) {
 }
 
 function upsertMeta(nameOrProp, value, isProperty = false) {
+  if (!hasText(value)) return;
   const selector = isProperty ? `meta[property="${nameOrProp}"]` : `meta[name="${nameOrProp}"]`;
   let meta = document.querySelector(selector);
   if (!meta) {
@@ -29,53 +68,45 @@ function upsertMeta(nameOrProp, value, isProperty = false) {
 }
 
 function applyMeta(data) {
-  document.documentElement.lang = data.meta?.lang || "en";
-  document.title = data.meta?.title || document.title;
+  const meta = data.meta || {};
+  document.documentElement.lang = meta.lang || "en";
+  if (hasText(meta.title)) document.title = meta.title;
 
-  if (data.meta?.description) upsertMeta("description", data.meta.description);
-  if (data.meta?.keywords) upsertMeta("keywords", data.meta.keywords);
-  if (data.meta?.author) upsertMeta("author", data.meta.author);
+  upsertMeta("description", meta.description);
+  upsertMeta("keywords", meta.keywords);
+  upsertMeta("author", meta.author);
 
-  if (data.meta?.canonical) {
+  if (hasText(meta.canonical)) {
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement("link");
       canonical.rel = "canonical";
       document.head.appendChild(canonical);
     }
-    canonical.href = data.meta.canonical;
+    canonical.href = meta.canonical;
   }
 
-  // OG
-  const og = data.meta?.og;
-  if (og) {
-    if (og.type) upsertMeta("og:type", og.type, true);
-    if (og.url) upsertMeta("og:url", og.url, true);
-    if (og.title) upsertMeta("og:title", og.title, true);
-    if (og.description) upsertMeta("og:description", og.description, true);
-    if (og.image) upsertMeta("og:image", og.image, true);
-    if (og.siteName) upsertMeta("og:site_name", og.siteName, true);
-  }
+  const og = meta.og || {};
+  upsertMeta("og:type", og.type, true);
+  upsertMeta("og:url", og.url, true);
+  upsertMeta("og:title", og.title, true);
+  upsertMeta("og:description", og.description, true);
+  upsertMeta("og:image", og.image, true);
+  upsertMeta("og:site_name", og.siteName, true);
 
-  // Twitter
-  const tw = data.meta?.twitter;
-  if (tw) {
-    if (tw.card) upsertMeta("twitter:card", tw.card, true);
-    if (tw.url) upsertMeta("twitter:url", tw.url, true);
-    if (tw.title) upsertMeta("twitter:title", tw.title, true);
-    if (tw.description) upsertMeta("twitter:description", tw.description, true);
-    if (tw.image) upsertMeta("twitter:image", tw.image, true);
-  }
+  const tw = meta.twitter || {};
+  upsertMeta("twitter:card", tw.card, true);
+  upsertMeta("twitter:url", tw.url, true);
+  upsertMeta("twitter:title", tw.title, true);
+  upsertMeta("twitter:description", tw.description, true);
+  upsertMeta("twitter:image", tw.image, true);
 
-  // Favicons
-  const fav = data.meta?.favicons;
-  if (fav) {
-    if (fav.png192) setFavicon(fav.png192, "icon", "192x192");
-    if (fav.png32) setFavicon(fav.png32, "icon", "32x32");
-    if (fav.png16) setFavicon(fav.png16, "icon", "16x16");
-    if (fav.appleTouch) setFavicon(fav.appleTouch, "apple-touch-icon");
-    if (fav.shortcut) setFavicon(fav.shortcut, "shortcut icon");
-  }
+  const fav = meta.favicons || {};
+  if (hasText(fav.png192)) setFavicon(fav.png192, "icon", "192x192");
+  if (hasText(fav.png32)) setFavicon(fav.png32, "icon", "32x32");
+  if (hasText(fav.png16)) setFavicon(fav.png16, "icon", "16x16");
+  if (hasText(fav.appleTouch)) setFavicon(fav.appleTouch, "apple-touch-icon");
+  if (hasText(fav.shortcut)) setFavicon(fav.shortcut, "shortcut icon");
 }
 
 function applyTheme(data) {
@@ -96,7 +127,7 @@ function applyTheme(data) {
   };
 
   Object.entries(map).forEach(([k, v]) => {
-    if (v) root.setProperty(k, v);
+    if (hasText(v)) root.setProperty(k, v);
   });
 
   if (typeof t.heroWatermarkOpacity === "number") {
@@ -107,12 +138,15 @@ function applyTheme(data) {
   }
 
   const icon = data.product?.icon;
-  if (icon) {
+  if (hasText(icon)) {
     root.setProperty("--hero-watermark", `url("${icon}")`);
     root.setProperty("--cta-watermark", `url("${icon}")`);
   }
 }
 
+/* -----------------------------
+   Small SVG helpers
+------------------------------ */
 function svgGooglePlay() {
   return `
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -129,82 +163,127 @@ function svgAmazon() {
   `;
 }
 
+function svgFacebook() {
+  return `
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+    </svg>
+  `;
+}
+
 function iconFor(type) {
   if (type === "googlePlay") return svgGooglePlay();
   if (type === "amazon") return svgAmazon();
   return "";
 }
 
+function socialIconFor(type) {
+  if (type === "facebook") return svgFacebook();
+  return "";
+}
+
+/* -----------------------------
+   Reusable render bits
+------------------------------ */
 function renderButtons(buttons = []) {
+  if (!hasArray(buttons)) return "";
   return `
     <div class="download-buttons">
       ${buttons
-        .map(
-          (b) => `
-          <a href="${b.url}" class="download-btn ${b.style || "primary"}" target="_blank" rel="noopener">
-            ${iconFor(b.type)}
-            ${b.label}
-          </a>
-        `
-        )
+        .map((b) => {
+          if (!b || !hasText(b.url) || !hasText(b.label)) return "";
+          return `
+            <a href="${b.url}" class="download-btn ${b.style || "primary"}" target="_blank" rel="noopener">
+              ${iconFor(b.type)}
+              ${b.label}
+            </a>
+          `;
+        })
         .join("")}
     </div>
   `;
 }
 
-function renderHero(data) {
-  const el = document.getElementById("hero");
+/* -----------------------------
+   OPTIONAL section builders
+------------------------------ */
+function buildHeroHtml(data) {
   const p = data.product || {};
-  el.innerHTML = `
+  const screenshots = data.media?.screenshots || [];
+  const hasScreens = hasArray(screenshots);
+
+  const hasHero =
+    hasText(p.heroTitle) ||
+    hasText(p.heroDescription) ||
+    hasText(p.icon) ||
+    hasArray(p.storeButtons) ||
+    hasArray(p.stats) ||
+    hasScreens;
+
+  if (!hasHero) return "";
+
+  const heroGridStyle = hasScreens ? "" : 'style="grid-template-columns: 1fr;"';
+
+  return `
     <section class="hero">
       <div class="container">
-        <div class="hero-content">
+        <div class="hero-content" ${heroGridStyle}>
           <div class="hero-left">
-            <img src="${p.icon || ""}" alt="${p.name || "App"} App Icon" class="app-icon-hero">
-            <h1>${p.heroTitle || ""}</h1>
-            <p>${p.heroDescription || ""}</p>
-            ${renderButtons(p.storeButtons || [])}
-            <div class="app-stats">
-              ${(p.stats || [])
-                .map(
-                  (s) => `
-                  <div class="stat">
-                    <span class="stat-value">${s.value}</span>
-                    <span class="stat-label">${s.label}</span>
+            ${hasText(p.icon) ? `<img src="${p.icon}" alt="${p.name || "App"} App Icon" class="app-icon-hero">` : ""}
+            ${hasText(p.heroTitle) ? `<h1>${p.heroTitle}</h1>` : ""}
+            ${hasText(p.heroDescription) ? `<p>${p.heroDescription}</p>` : ""}
+            ${hasArray(p.storeButtons) ? renderButtons(p.storeButtons) : ""}
+
+            ${
+              hasArray(p.stats)
+                ? `<div class="app-stats">
+                    ${p.stats
+                      .map(
+                        (s) => `
+                        <div class="stat">
+                          <span class="stat-value">${s?.value || ""}</span>
+                          <span class="stat-label">${s?.label || ""}</span>
+                        </div>
+                      `
+                      )
+                      .join("")}
+                  </div>`
+                : ""
+            }
+          </div>
+
+          ${
+            hasScreens
+              ? `<div class="hero-right">
+                  <div class="screenshots-container" id="screenshotsContainer">
+                    <div id="slidesRoot"></div>
+
+                    <button class="screenshot-nav prev" id="prevBtn" aria-label="Previous screenshot">‹</button>
+                    <button class="screenshot-nav next" id="nextBtn" aria-label="Next screenshot">›</button>
+
+                    <div class="screenshot-dots" id="dotsRoot"></div>
                   </div>
-                `
-                )
-                .join("")}
-            </div>
-          </div>
-
-          <div class="hero-right">
-            <div class="screenshots-container" id="screenshotsContainer">
-              <div id="slidesRoot"></div>
-
-              <button class="screenshot-nav prev" id="prevBtn" aria-label="Previous screenshot">‹</button>
-              <button class="screenshot-nav next" id="nextBtn" aria-label="Next screenshot">›</button>
-
-              <div class="screenshot-dots" id="dotsRoot"></div>
-            </div>
-          </div>
+                </div>`
+              : ""
+          }
         </div>
       </div>
     </section>
   `;
 }
 
-function renderVideo(data) {
-  const el = document.getElementById("video");
+function buildVideoHtml(data) {
   const v = data.media?.video || {};
-  el.innerHTML = `
+  if (!hasText(v.youtubeEmbedUrl) || !hasText(v.title)) return "";
+
+  return `
     <section id="${v.sectionId || "demo"}" class="video-section">
       <div class="container">
-        <h2>${v.title || ""}</h2>
+        <h2>${v.title}</h2>
         <div class="video-wrapper">
           <div class="video-container">
             <iframe
-              src="${v.youtubeEmbedUrl || ""}"
+              src="${v.youtubeEmbedUrl}"
               title="${v.iframeTitle || ""}"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -218,21 +297,22 @@ function renderVideo(data) {
   `;
 }
 
-function renderHowItWorks(data) {
-  const el = document.getElementById("howItWorks");
+function buildHowItWorksHtml(data) {
   const hw = data.sections?.howItWorks || {};
-  el.innerHTML = `
+  if (!hasText(hw.title) || !hasArray(hw.steps)) return "";
+
+  return `
     <section class="how-it-works">
       <div class="container">
-        <h2 class="section-title">${hw.title || ""}</h2>
+        <h2 class="section-title">${hw.title}</h2>
         <div class="steps">
-          ${(hw.steps || [])
+          ${hw.steps
             .map(
               (s) => `
               <div class="step">
-                <div class="step-number">${s.number || ""}</div>
-                <h3>${s.title || ""}</h3>
-                <p>${s.text || ""}</p>
+                ${hasText(s?.number) ? `<div class="step-number">${s.number}</div>` : ""}
+                ${hasText(s?.title) ? `<h3>${s.title}</h3>` : ""}
+                ${hasText(s?.text) ? `<p>${s.text}</p>` : ""}
               </div>
             `
             )
@@ -243,26 +323,31 @@ function renderHowItWorks(data) {
   `;
 }
 
-function renderFeatures(data) {
-  const el = document.getElementById("features");
+function buildFeaturesHtml(data) {
   const f = data.sections?.features || {};
-  el.innerHTML = `
+  if (!hasText(f.title) || !hasArray(f.cards)) return "";
+
+  return `
     <section class="features">
       <div class="container">
-        <h2 class="section-title">${f.title || ""}</h2>
+        <h2 class="section-title">${f.title}</h2>
         <div class="feature-grid">
-          ${(f.cards || [])
-            .map(
-              (c) => `
-              <div class="feature-card">
-                <span class="feature-icon">${c.icon || ""}</span>
-                <h3>${c.title || ""}</h3>
-                <ul>
-                  ${(c.bullets || []).map((b) => `<li>${b}</li>`).join("")}
-                </ul>
-              </div>
-            `
-            )
+          ${f.cards
+            .map((c) => {
+              const bullets = c?.bullets || [];
+              if (!hasText(c?.title) && !hasArray(bullets)) return "";
+              return `
+                <div class="feature-card">
+                  ${hasText(c?.icon) ? `<span class="feature-icon">${c.icon}</span>` : ""}
+                  ${hasText(c?.title) ? `<h3>${c.title}</h3>` : ""}
+                  ${
+                    hasArray(bullets)
+                      ? `<ul>${bullets.map((b) => `<li>${b}</li>`).join("")}</ul>`
+                      : ""
+                  }
+                </div>
+              `;
+            })
             .join("")}
         </div>
       </div>
@@ -270,21 +355,22 @@ function renderFeatures(data) {
   `;
 }
 
-function renderPerfectFor(data) {
-  const el = document.getElementById("perfectFor");
+function buildPerfectForHtml(data) {
   const p = data.sections?.perfectFor || {};
-  el.innerHTML = `
+  if (!hasText(p.title) || !hasArray(p.items)) return "";
+
+  return `
     <section class="perfect-for">
       <div class="container">
-        <h2 class="section-title">${p.title || ""}</h2>
+        <h2 class="section-title">${p.title}</h2>
         <div class="use-cases">
-          ${(p.items || [])
+          ${p.items
             .map(
               (u) => `
               <div class="use-case">
-                <div class="use-case-icon">${u.icon || ""}</div>
-                <h3>${u.title || ""}</h3>
-                <p>${u.text || ""}</p>
+                ${hasText(u?.icon) ? `<div class="use-case-icon">${u.icon}</div>` : ""}
+                ${hasText(u?.title) ? `<h3>${u.title}</h3>` : ""}
+                ${hasText(u?.text) ? `<p>${u.text}</p>` : ""}
               </div>
             `
             )
@@ -295,24 +381,27 @@ function renderPerfectFor(data) {
   `;
 }
 
-function renderFaq(data) {
-  const el = document.getElementById("faq");
+function buildFaqHtml(data) {
   const f = data.sections?.faq || {};
-  el.innerHTML = `
+  if (!hasText(f.title) || !hasArray(f.items)) return "";
+
+  // NOTE: We intentionally DO NOT set id="faq" here, because the mount div itself is already #faq.
+  // Footer links should point to "#faq" (the mount) and will still work.
+  return `
     <section class="faq-section">
       <div class="container">
-        <h2 class="section-title">${f.title || ""}</h2>
+        <h2 class="section-title">${f.title}</h2>
         <div class="faq-container" id="faqContainer">
-          ${(f.items || [])
+          ${f.items
             .map(
               (it) => `
               <div class="faq-item">
                 <div class="faq-question">
-                  <span>${it.q || ""}</span>
+                  <span>${it?.q || ""}</span>
                   <span class="faq-toggle">+</span>
                 </div>
                 <div class="faq-answer">
-                  <p>${it.a || ""}</p>
+                  <p>${it?.a || ""}</p>
                 </div>
               </div>
             `
@@ -324,108 +413,181 @@ function renderFaq(data) {
   `;
 }
 
-function renderCta(data) {
-  const el = document.getElementById("cta");
+function buildCtaHtml(data) {
   const c = data.sections?.cta || {};
-  el.innerHTML = `
+  const hasCta = hasText(c.title) || hasText(c.text) || hasArray(c.buttons);
+  if (!hasCta) return "";
+
+  return `
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2>${c.title || ""}</h2>
-          <p>${c.text || ""}</p>
-          ${renderButtons(c.buttons || [])}
+          ${hasText(c.title) ? `<h2>${c.title}</h2>` : ""}
+          ${hasText(c.text) ? `<p>${c.text}</p>` : ""}
+          ${hasArray(c.buttons) ? renderButtons(c.buttons) : ""}
         </div>
       </div>
     </section>
   `;
 }
 
-function renderFooter(data) {
-  const el = document.getElementById("footer");
+function buildFooterHtml(data) {
   const f = data.footer || {};
-  el.innerHTML = `
+  const hasFooter =
+    hasText(f.brand?.name) ||
+    hasText(f.brand?.about) ||
+    hasText(f.brand?.logo) ||
+    hasArray(f.columns) ||
+    hasArray(f.social) ||
+    hasText(f.copyright);
+
+  if (!hasFooter) return "";
+
+  // Filter hash links that point to missing mounts (ex: "#faq" when FAQ removed)
+  const existingIds = new Set(Array.from(document.querySelectorAll("[id]")).map((el) => el.id));
+  const filterLinks = (links = []) =>
+    links.filter((l) => {
+      if (!l || !hasText(l.url) || !hasText(l.label)) return false;
+      if (l.url.startsWith("#")) {
+        const id = l.url.slice(1);
+        return existingIds.has(id);
+      }
+      return true;
+    });
+
+  const socialHtml = hasArray(f.social)
+    ? `
+      <div class="social-links">
+        ${f.social
+          .map((s) => {
+            if (!s || !hasText(s.url)) return "";
+            const icon = socialIconFor(s.type);
+            return `
+              <a href="${s.url}" target="_blank" rel="noopener" aria-label="${s.label || s.type || "Social"}">
+                ${icon || ""}
+              </a>
+            `;
+          })
+          .join("")}
+      </div>
+    `
+    : "";
+
+  const columnsHtml = hasArray(f.columns)
+    ? f.columns
+        .map((col) => {
+          const links = filterLinks(col?.links || []);
+          const extraHtml = hasText(col?.extraHtml) ? col.extraHtml : "";
+          const hasCol = hasText(col?.title) || hasArray(links) || hasText(extraHtml);
+          if (!hasCol) return "";
+
+          const linksHtml = hasArray(links)
+            ? links
+                .map((l) => {
+                  const target = isHttpUrl(l.url) ? "_blank" : "_self";
+                  const rel = isHttpUrl(l.url) ? ' rel="noopener"' : "";
+                  return `<a href="${l.url}" target="${target}"${rel}>${l.label}</a>`;
+                })
+                .join("")
+            : "";
+
+          return `
+            <div class="footer-section">
+              ${hasText(col?.title) ? `<h3>${col.title}</h3>` : ""}
+              ${linksHtml}
+              ${extraHtml}
+            </div>
+          `;
+        })
+        .join("")
+    : "";
+
+  return `
     <footer>
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <div class="footer-logo">
-              <img src="${f.brand?.logo || ""}" alt="${f.brand?.name || "Logo"} Logo">
-              <span class="footer-logo-text">${f.brand?.name || ""}</span>
-            </div>
-            <p>${f.brand?.about || ""}</p>
+            ${
+              hasText(f.brand?.logo) || hasText(f.brand?.name)
+                ? `<div class="footer-logo">
+                    ${hasText(f.brand?.logo) ? `<img src="${f.brand.logo}" alt="${f.brand?.name || "Logo"} Logo">` : ""}
+                    ${hasText(f.brand?.name) ? `<span class="footer-logo-text">${f.brand.name}</span>` : ""}
+                  </div>`
+                : ""
+            }
 
-            <div class="social-links">
-              ${(f.social || [])
-                .map(
-                  (s) => `
-                  <a href="${s.url}" target="_blank" rel="noopener" aria-label="${s.label}">
-                    f
-                  </a>
-                `
-                )
-                .join("")}
-            </div>
+            ${hasText(f.brand?.about) ? `<p>${f.brand.about}</p>` : ""}
+            ${socialHtml}
           </div>
 
-          ${(f.columns || [])
-            .map(
-              (col) => `
-              <div class="footer-section">
-                <h3>${col.title || ""}</h3>
-                ${(col.links || []).map((l) => `<a href="${l.url}" target="${l.url.startsWith("http") ? "_blank" : "_self"}" rel="noopener">${l.label}</a>`).join("")}
-                ${col.extraHtml || ""}
-              </div>
-            `
-            )
-            .join("")}
+          ${columnsHtml}
         </div>
 
-        <div class="footer-bottom">
-          <p>${f.copyright || ""}</p>
-        </div>
+        ${
+          hasText(f.copyright)
+            ? `<div class="footer-bottom"><p>${f.copyright}</p></div>`
+            : ""
+        }
       </div>
     </footer>
   `;
 }
 
+/* -----------------------------
+   Schema (optional)
+------------------------------ */
 function applySchemas(data) {
-  // Software schema
-  const s1 = document.getElementById("schema-software");
+  const s1 = $("schema-software");
+  const s2 = $("schema-faq");
+  const s3 = $("schema-org");
+
+  // Software schema (optional)
   if (s1 && data.schema?.softwareApplication) {
     const sw = structuredClone(data.schema.softwareApplication);
-    // Optionally enrich screenshots/video dynamically from JSON:
-    if (data.media?.screenshots?.length) sw.screenshot = data.media.screenshots.map((x) => x.src);
+    if (hasArray(data.media?.screenshots)) sw.screenshot = data.media.screenshots.map((x) => x.src);
     s1.textContent = JSON.stringify(sw, null, 2);
+  } else if (s1) {
+    s1.remove();
   }
 
-  // FAQ schema
-  const s2 = document.getElementById("schema-faq");
-  const faq = data.sections?.faq?.items || [];
-  if (s2 && faq.length) {
+  // FAQ schema (optional)
+  const faqItems = data.sections?.faq?.items || [];
+  if (s2 && hasArray(faqItems)) {
     s2.textContent = JSON.stringify(
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": faq.map((x) => ({
-          "@type": "Question",
-          "name": x.q,
-          "acceptedAnswer": { "@type": "Answer", "text": x.a }
-        }))
+        mainEntity: faqItems
+          .filter((x) => hasText(x?.q) && hasText(x?.a))
+          .map((x) => ({
+            "@type": "Question",
+            name: x.q,
+            acceptedAnswer: { "@type": "Answer", text: x.a }
+          }))
       },
       null,
       2
     );
+  } else if (s2) {
+    s2.remove();
   }
 
-  // Org schema
-  const s3 = document.getElementById("schema-org");
+  // Organization schema (optional)
   if (s3 && data.schema?.organization) {
     s3.textContent = JSON.stringify(data.schema.organization, null, 2);
+  } else if (s3) {
+    s3.remove();
   }
 }
 
+/* -----------------------------
+   Behaviors (only if relevant)
+------------------------------ */
 function initFaq() {
-  document.querySelectorAll(".faq-question").forEach((q) => {
+  const questions = document.querySelectorAll(".faq-question");
+  if (!questions.length) return;
+
+  questions.forEach((q) => {
     q.addEventListener("click", () => {
       const item = q.parentElement;
       const wasActive = item.classList.contains("active");
@@ -436,6 +598,9 @@ function initFaq() {
 }
 
 function initAnimations() {
+  const targets = document.querySelectorAll(".feature-card, .step, .use-case, .faq-item");
+  if (!targets.length) return;
+
   const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -445,7 +610,7 @@ function initAnimations() {
     });
   }, observerOptions);
 
-  document.querySelectorAll(".feature-card, .step, .use-case, .faq-item").forEach((el) => {
+  targets.forEach((el) => {
     el.style.opacity = "0";
     el.style.transform = "translateY(30px)";
     el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
@@ -454,11 +619,17 @@ function initAnimations() {
 }
 
 function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  const anchors = document.querySelectorAll('a[href^="#"]');
+  if (!anchors.length) return;
+
+  anchors.forEach((a) => {
     a.addEventListener("click", (e) => {
       const href = a.getAttribute("href");
-      const target = href ? document.querySelector(href) : null;
+      if (!href || href === "#") return;
+
+      const target = document.querySelector(href);
       if (!target) return;
+
       e.preventDefault();
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -466,11 +637,13 @@ function initSmoothScroll() {
 }
 
 function initSlideshow(screenshots = []) {
-  const slidesRoot = document.getElementById("slidesRoot");
-  const dotsRoot = document.getElementById("dotsRoot");
-  const container = document.getElementById("screenshotsContainer");
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
+  if (!hasArray(screenshots)) return;
+
+  const slidesRoot = $("slidesRoot");
+  const dotsRoot = $("dotsRoot");
+  const container = $("screenshotsContainer");
+  const prevBtn = $("prevBtn");
+  const nextBtn = $("nextBtn");
 
   if (!slidesRoot || !dotsRoot || !container) return;
 
@@ -492,6 +665,8 @@ function initSlideshow(screenshots = []) {
   const slides = Array.from(container.querySelectorAll(".screenshot-slide"));
   const dots = Array.from(container.querySelectorAll(".dot"));
   const totalSlides = slides.length;
+
+  if (!totalSlides) return;
 
   let intervalId = null;
 
@@ -528,8 +703,17 @@ function initSlideshow(screenshots = []) {
     intervalId = null;
   };
 
-  nextBtn?.addEventListener("click", () => { next(); stop(); start(); });
-  prevBtn?.addEventListener("click", () => { prev(); stop(); start(); });
+  nextBtn?.addEventListener("click", () => {
+    next();
+    stop();
+    start();
+  });
+
+  prevBtn?.addEventListener("click", () => {
+    prev();
+    stop();
+    start();
+  });
 
   dots.forEach((d, i) => {
     d.addEventListener("click", () => {
@@ -544,11 +728,17 @@ function initSlideshow(screenshots = []) {
   container.addEventListener("mouseleave", start);
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowLeft") { prev(); stop(); start(); }
-    else if (e.key === "ArrowRight") { next(); stop(); start(); }
+    if (e.key === "ArrowLeft") {
+      prev();
+      stop();
+      start();
+    } else if (e.key === "ArrowRight") {
+      next();
+      stop();
+      start();
+    }
   });
 
-  // Touch swipe support
   let touchStartX = 0;
   let touchEndX = 0;
   container.addEventListener("touchstart", (e) => {
@@ -556,30 +746,46 @@ function initSlideshow(screenshots = []) {
   });
   container.addEventListener("touchend", (e) => {
     touchEndX = e.changedTouches[0].screenX;
-    if (touchEndX < touchStartX - 50) { next(); stop(); start(); }
-    if (touchEndX > touchStartX + 50) { prev(); stop(); start(); }
+    if (touchEndX < touchStartX - 50) {
+      next();
+      stop();
+      start();
+    }
+    if (touchEndX > touchStartX + 50) {
+      prev();
+      stop();
+      start();
+    }
   });
 
   start();
 }
 
+/* -----------------------------
+   Main
+------------------------------ */
 async function main() {
   const data = await loadContent();
 
   applyMeta(data);
   applyTheme(data);
 
-  renderHero(data);
-  renderVideo(data);
-  renderHowItWorks(data);
-  renderFeatures(data);
-  renderPerfectFor(data);
-  renderFaq(data);
-  renderCta(data);
-  renderFooter(data);
+  // Render (optional mounts)
+  mountHtml("hero", buildHeroHtml(data));
+  mountHtml("video", buildVideoHtml(data));
+  mountHtml("howItWorks", buildHowItWorksHtml(data));
+  mountHtml("features", buildFeaturesHtml(data));
+  mountHtml("perfectFor", buildPerfectForHtml(data));
+  mountHtml("faq", buildFaqHtml(data));
+  mountHtml("cta", buildCtaHtml(data));
 
+  // Schemas may depend on sections
   applySchemas(data);
 
+  // Footer should be last so it can filter hash links based on what got rendered/removed
+  mountHtml("footer", buildFooterHtml(data));
+
+  // Init behaviors only if their elements exist
   initSlideshow(data.media?.screenshots || []);
   initFaq();
   initSmoothScroll();

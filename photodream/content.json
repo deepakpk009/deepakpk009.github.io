@@ -11,7 +11,7 @@
       "url": "https://deepakpk.com/tvpdfviewer",
       "title": "TV PDF Viewer - Professional PDF Reader for Android TV",
       "description": "Transform your Android TV into a powerful PDF viewing station. View, navigate, and manage PDF documents with web import, WiFi transfer, and FTP support.",
-      "image": "images/appicon.png",
+      "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
     "twitter": {
@@ -19,14 +19,14 @@
       "url": "https://deepakpk.com/tvpdfviewer",
       "title": "TV PDF Viewer - Professional PDF Reader for Android TV",
       "description": "Transform your Android TV into a powerful PDF viewing station. View, navigate, and manage PDF documents with web import, WiFi transfer, and FTP support.",
-      "image": "images/appicon.png"
+      "image": "images/app_icon.png"
     },
     "favicons": {
-      "png192": "images/appicon.png",
-      "png32": "images/appicon.png",
-      "png16": "images/appicon.png",
-      "appleTouch": "images/appicon.png",
-      "shortcut": "images/appicon.png"
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
     }
   },
   "theme": {
@@ -47,7 +47,7 @@
     "name": "TV PDF Viewer",
     "heroTitle": "TV PDF Viewer - Professional PDF Reader for Android TV",
     "heroDescription": "Transform your Android TV into a powerful PDF viewing station. Transfer files wirelessly via web, WiFi, or FTP - perfect for presentations, classrooms, and document viewing on the big screen.",
-    "icon": "images/appicon.png",
+    "icon": "images/app_icon.png",
     "storeButtons": [
       {
         "type": "googlePlay",
@@ -230,7 +230,7 @@
   },
   "footer": {
     "brand": {
-      "logo": "images/appicon.png",
+      "logo": "images/app_icon.png",
       "name": "TV PDF Viewer",
       "about": "Professional PDF viewing solution for Android TV. Transform your television into a powerful document viewer with wireless transfer capabilities."
     },
@@ -288,7 +288,7 @@
       "@type": "Organization",
       "name": "Deepak PK",
       "url": "https://deepakpk.com",
-      "logo": "images/appicon.png",
+      "logo": "images/app_icon.png",
       "sameAs": ["https://www.facebook.com/tvpdfviewer"],
       "contactPoint": [{ "@type": "ContactPoint", "email": "deepakpk009@yahoo.in", "contactType": "Customer Support" }]
     }

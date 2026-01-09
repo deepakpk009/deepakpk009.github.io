@@ -123,7 +123,8 @@ function applyTheme(data) {
     "--card-bg": t.cardBg,
     "--text-white": t.textWhite,
     "--text-gray": t.textGray,
-    "--border-green": t.borderGreen
+    "--border-green": t.borderGreen,
+    "--box-shadow-color": t.boxShadowColor
   };
 
   Object.entries(map).forEach(([k, v]) => {

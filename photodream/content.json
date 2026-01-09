@@ -40,6 +40,7 @@
     "textWhite": "#FFFFFF",
     "textGray": "#B0B0B0",
     "borderGreen": "#693d8b",
+    "boxShadowColor": "rgba(76,175,80,.3)",
     "heroWatermarkOpacity": 0.03,
     "ctaWatermarkOpacity": 0.05
   },

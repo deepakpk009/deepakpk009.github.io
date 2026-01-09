@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "TV PDF Viewer - Professional PDF Reader for Android TV",
+    "description": "Transform your Android TV into a powerful PDF viewing station. View, navigate, and manage PDF documents with web import, WiFi transfer, FTP support, and remote-optimized controls.",
+    "keywords": "Android TV PDF viewer, PDF reader for TV, view PDF on smart TV, Android TV document viewer, WiFi PDF viewer, PDF presentation on TV, classroom PDF display, web PDF transfer",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/tvpdfviewer",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/tvpdfviewer",
+      "title": "TV PDF Viewer - Professional PDF Reader for Android TV",
+      "description": "Transform your Android TV into a powerful PDF viewing station. View, navigate, and manage PDF documents with web import, WiFi transfer, and FTP support.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/tvpdfviewer",
+      "title": "TV PDF Viewer - Professional PDF Reader for Android TV",
+      "description": "Transform your Android TV into a powerful PDF viewing station. View, navigate, and manage PDF documents with web import, WiFi transfer, and FTP support.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+  "theme": {
+    "primaryGreen": "#4CAF50",
+    "darkGreen": "#2E7D32",
+    "lightGreen": "#66BB6A",
+    "darkerGreen": "#1B5E20",
+    "black": "#0D0D0D",
+    "darkBg": "#121212",
+    "cardBg": "#1E1E1E",
+    "textWhite": "#FFFFFF",
+    "textGray": "#B0B0B0",
+    "borderGreen": "#3D8B40",
+    "heroWatermarkOpacity": 0.03,
+    "ctaWatermarkOpacity": 0.05
+  },
+  "product": {
+    "name": "TV PDF Viewer",
+    "heroTitle": "TV PDF Viewer - Professional PDF Reader for Android TV",
+    "heroDescription": "Transform your Android TV into a powerful PDF viewing station. Transfer files wirelessly via web, WiFi, or FTP - perfect for presentations, classrooms, and document viewing on the big screen.",
+    "icon": "images/app_icon.png",
+    "storeButtons": [
+      {
+        "type": "googlePlay",
+        "label": "Get it on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer",
+        "style": "primary"
+      },
+      {
+        "type": "amazon",
+        "label": "Available on Amazon",
+        "url": "https://www.amazon.com/gp/product/B0DJNCDDDK",
+        "style": "secondary"
+      }
+    ],
+    "stats": [
+      { "value": "50K+", "label": "Downloads" },
+      { "value": "1.1.2", "label": "Latest Version" }
+    ]
+  },
+  "media": {
+    "screenshots": [
+      { "src": "images/screenshots/ss01.jpg", "alt": "TV PDF Viewer Screenshot - Main Home Interface" },
+      { "src": "images/screenshots/ss02.jpg", "alt": "TV PDF Viewer Screenshot - Bookmark Interface" },
+      { "src": "images/screenshots/ss03.jpg", "alt": "TV PDF Viewer Screenshot - Web Import Interface" },
+      { "src": "images/screenshots/ss04.jpg", "alt": "TV PDF Viewer Screenshot - FTP Import Interface" },
+      { "src": "images/screenshots/ss05.jpg", "alt": "TV PDF Viewer Screenshot - PDF Options Interface" },
+      { "src": "images/screenshots/ss06.jpg", "alt": "TV PDF Viewer Screenshot - Night Mode Interface" },
+      { "src": "images/screenshots/ss07.jpg", "alt": "TV PDF Viewer Screenshot - Page Rotate Interface" },
+      { "src": "images/screenshots/ss08.jpg", "alt": "TV PDF Viewer Screenshot - Search PDF Interface" },
+      { "src": "images/screenshots/ss09.jpg", "alt": "TV PDF Viewer Screenshot - Search Result Interface" },
+      { "src": "images/screenshots/ss10.jpg", "alt": "TV PDF Viewer Screenshot - Go To Page Interface" },
+      { "src": "images/screenshots/ss11.jpg", "alt": "TV PDF Viewer Screenshot - In-PDF Bookmarks Listing Interface" },
+      { "src": "images/screenshots/ss12.jpg", "alt": "TV PDF Viewer Screenshot - Settings Interface" },
+      { "src": "images/screenshots/ss13.jpg", "alt": "TV PDF Viewer Screenshot - Empty Home Interface" }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See TV PDF Viewer in Action",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/P4igRkeLCRo?autoplay=0&mute=1&rel=0&modestbranding=1",
+      "iframeTitle": "TV PDF Viewer Demo - Android TV PDF Reader"
+    }
+  },
+  "sections": {
+    "howItWorks": {
+      "title": "Simple and Easy to Use",
+      "steps": [
+        { "number": "1", "title": "Install the App", "text": "Download TV PDF Viewer from Google Play Store or Amazon Appstore on your Android TV device" },
+        { "number": "2", "title": "Transfer Your PDFs", "text": "Use web token, WiFi upload, or FTP menu to wirelessly transfer files to your TV" },
+        { "number": "3", "title": "Start Viewing", "text": "Browse thumbnails and open any PDF with your TV remote" }
+      ]
+    },
+    "features": {
+      "title": "Powerful Features Built for Android TV",
+      "cards": [
+        {
+          "icon": "🔐",
+          "title": "Web Token Import",
+          "bullets": [
+            "Secure token-based authentication",
+            "No shared network required",
+            "QR code for quick connection",
+            "Upload from any device with browser"
+          ]
+        },
+        {
+          "icon": "📶",
+          "title": "WiFi File Upload",
+          "bullets": [
+            "Wireless file transfer over WiFi",
+            "Easy connection via QR code",
+            "Fast upload speeds",
+            "No cables needed"
+          ]
+        },
+        {
+          "icon": "🗂️",
+          "title": "FTP Import Support",
+          "bullets": [
+            "Anonymous FTP connection",
+            "Works on shared networks",
+            "Bulk file transfers",
+            "Professional workflow integration"
+          ]
+        },
+        {
+          "icon": "📺",
+          "title": "TV-Optimized Interface",
+          "bullets": [
+            "Intuitive remote control navigation",
+            "Long-press OK for file options",
+            "Left/right keys for page navigation",
+            "Simple overlay menu system"
+          ]
+        },
+        {
+          "icon": "🔎",
+          "title": "Advanced PDF Navigation",
+          "bullets": [
+            "Jump to specific page numbers",
+            "In-document text search",
+            "Bookmark management across documents",
+            "Zoom and pan controls",
+            "Quick access to recent files"
+          ]
+        },
+        {
+          "icon": "🌙",
+          "title": "Night Mode Display Options",
+          "bullets": [
+            "Comfortable night mode for low-light viewing",
+            "Multiple fit modes (width/height)",
+            "Page rotation in 90-degree increments",
+            "Optimized for various document sizes"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        { "icon": "💼", "title": "Business Professionals", "text": "Display presentations and reports on large screens during meetings" },
+        { "icon": "👩‍🏫", "title": "Educators", "text": "Share learning materials, lecture notes, and textbooks with students" },
+        { "icon": "🎓", "title": "Students", "text": "Study comfortably from your couch on a larger screen" },
+        { "icon": "🏠", "title": "Home Users", "text": "Read e-books, manuals, and documents on your TV" },
+        { "icon": "🏢", "title": "Corporate Training", "text": "Share training materials and employee handbooks on office TVs" },
+        { "icon": "🏋️", "title": "Fitness Trainers", "text": "Display workout plans, exercise guides, and nutrition charts during sessions" }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I transfer PDF files to my Android TV?",
+          "a": "TV PDF Viewer offers multiple easy transfer methods: 1) Web import with secure token - scan QR code and upload from any device without network restrictions, 2) WiFi upload for wireless file transfer, 3) FTP import when devices are on the same network. No USB drive required!"
+        },
+        {
+          "q": "What is the web token import method?",
+          "a": "Web token import is a secure, convenient way to upload PDFs from any device. Simply scan the QR code displayed on your TV, enter the token on your phone or computer, and upload files - no shared network needed! This is the most flexible method and works from anywhere."
+        },
+        {
+          "q": "Can I use WiFi to transfer files?",
+          "a": "Yes! The WiFi file upload feature allows you to wirelessly transfer PDFs from your phone, tablet, or computer to your Android TV. Just scan the QR code, connect via your browser, and upload files instantly over your WiFi network."
+        },
+        {
+          "q": "Is TV PDF Viewer optimized for TV remote controls?",
+          "a": "Absolutely. TV PDF Viewer is designed specifically for Android TV remote navigation. Use left/right keys to navigate pages, long-press OK for file options, and access all features through an intuitive overlay menu. Everything is optimized for 10-foot UI experience."
+        },
+        {
+          "q": "Can I present PDFs in classrooms or meetings?",
+          "a": "Yes! TV PDF Viewer is perfect for presentations, classrooms, and meeting rooms. Display PDF presentations, lecture notes, or documents on any Android TV for easy viewing by large audiences. The night mode and zoom features make it ideal for professional use."
+        },
+        {
+          "q": "Does the app support FTP transfers?",
+          "a": "Yes! TV PDF Viewer supports FTP import with anonymous connection. This is great for professional environments where you need to transfer multiple files or integrate with existing workflows. Your TV and computer need to be on the same network for FTP."
+        },
+        {
+          "q": "Does the app support night mode?",
+          "a": "Yes! TV PDF Viewer includes a comfortable night mode feature for reduced eye strain during low-light viewing conditions. Perfect for reading e-books or documents in the evening."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Transform Your TV?",
+      "text": "Join 50,000+ users viewing PDFs on Android TV with ease",
+      "buttons": [
+        {
+          "type": "googlePlay",
+          "label": "Get Started - It's Free",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer",
+          "style": "primary"
+        },
+        {
+          "type": "amazon",
+          "label": "Download on Amazon",
+          "url": "https://www.amazon.com/gp/product/B0DJNCDDDK",
+          "style": "secondary"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "TV PDF Viewer",
+      "about": "Professional PDF viewing solution for Android TV. Transform your television into a powerful document viewer with wireless transfer capabilities."
+    },
+    "social": [
+      { "type": "facebook", "label": "Facebook", "url": "https://www.facebook.com/tvpdfviewer" }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          { "label": "Download on Google Play", "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer" },
+          { "label": "Download on Amazon", "url": "https://www.amazon.com/gp/product/B0DJNCDDDK" },
+          { "label": "Terms & Conditions", "url": "terms.html" },
+          { "label": "Privacy Policy", "url": "privacy.html" }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          { "label": "Email Support", "url": "mailto:deepakpk009@yahoo.in" },
+          { "label": "FAQ", "url": "#faq" }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          { "label": "TvExplorer", "url": "https://deepakpk.com/tvexplorer" },
+          { "label": "View All Apps", "url": "https://deepakpk.com/apps" },
+          { "label": "Developer Portfolio", "url": "https://deepakpk.com" }
+        ]
+      }
+    ],
+    "copyright": "© 2025 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TV PDF Viewer",
+      "operatingSystem": "Android TV",
+      "applicationCategory": "ProductivityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer",
+      "author": { "@type": "Person", "name": "Deepak PK", "url": "https://deepakpk.com" },
+      "publisher": { "@type": "Organization", "name": "Deepak PK" }
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": ["https://www.facebook.com/tvpdfviewer"],
+      "contactPoint": [{ "@type": "ContactPoint", "email": "deepakpk009@yahoo.in", "contactType": "Customer Support" }]
+    }
+  }
+}

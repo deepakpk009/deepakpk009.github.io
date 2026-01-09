@@ -1,0 +1,126 @@
+[
+  {
+    "title": "What is Photo Dream Screensaver?",
+    "content": "Photo Dream Screensaver allows you to display your personal photos as a beautiful slideshow screensaver on your Android TV. Your selected photos are shown automatically when the screensaver starts, turning your TV into a personal photo frame."
+  },
+  {
+    "title": "Which devices are supported?",
+    "content": "Photo Dream Screensaver is designed exclusively for TV devices. It supports Android TV, Google TV, and Fire TV. This app is not available for mobile phones or tablets."
+  },
+  {
+    "title": "Do I need a keyboard or mouse to use this app?",
+    "content": "No. The app is fully optimized for Android TV and can be completely controlled using your TV remote. A mouse can be used if connected, but it is not required."
+  },
+  {
+    "title": "How can I add photos to the screensaver?",
+    "content": "You can upload photos to your TV using multiple methods: Web upload, through Wi-Fi, or FTP connection. All upload options are available directly from the app menu."
+  },
+  {
+    "title": "Where are my photos stored?",
+    "content": "All your photos are stored locally on your TV device only. Photo Dream Screensaver does not upload or store your photos on any external servers or cloud services."
+  },
+  {
+    "title": "Is my data safe and private?",
+    "content": "Yes. Your personal photos never leave your TV. The app does not require login, does not collect personal data, and does not access external storage or USB devices."
+  },
+  {
+    "title": "What happens to photos uploaded via the web?",
+    "content": "Photos uploaded through the web interface are automatically deleted from the server once they are downloaded to your TV. If a download fails or a token expires, the uploaded files are automatically deleted within one hour."
+  },
+  {
+    "title": "How many photos can I use in the free version?",
+    "content": "The free version allows you to use up to 5 photos as a screensaver. To add more photos, you need to subscribe to a premium plan."
+  },
+  {
+    "title": "What subscription plans are available?",
+    "content": "Photo Dream Screensaver offers multiple subscription options including monthly, quarterly, half-yearly, and yearly plans. Subscribing removes the photo limit and unlocks full functionality."
+  },
+  {
+    "title": "What happens when my subscription expires?",
+    "content": "When your subscription expires, the app continues to work in free mode. Only up to 5 photos will be used for the screensaver, but your existing photos remain safely stored on your device."
+  },
+  {
+    "title": "How do I activate the screensaver?",
+    "content": "The app provides an Activate option that takes you directly to your TV\u2019s screensaver settings, making it easy to select and enable Photo Dream Screensaver."
+  },
+  {
+    "title": "Does the app work without an internet connection?",
+    "content": "Yes. Once your photos are added to the TV, the screensaver works completely offline. An internet connection is only needed for uploading photos or displaying limited informational content."
+  },
+  {
+    "title": "Does this app collect any user data?",
+    "content": "The app does not collect personal or identifiable user data. Only anonymous performance analytics and crash reports are collected to improve app stability and user experience."
+  },
+  {
+    "title": "Can this app be used for business or signage purposes?",
+    "content": "While Photo Dream Screensaver is designed mainly for personal use, it can also be used for simple business displays or signage where photo slideshows are required."
+  },
+  {
+    "title": "What should I do if the screensaver is not starting?",
+    "content": "Make sure Photo Dream Screensaver is selected as the active screensaver in your TV settings and that at least one photo is added. Some TVs may require disabling battery or power optimizations."
+  },
+  {
+    "title": "How can I contact support?",
+    "content": "If you need help or have questions, you can contact support at deepakpk009@yahoo.in or visit https://deepakpk.com/Photo Dream."
+  },
+  {
+    "title": "How do I enable or disable the clock display?",
+    "content": "To show or hide the clock, go to the Clock Settings menu from the main app menu. Toggle the 'Show Clock' option to enable or disable the clock visibility on your screensaver."
+  },
+  {
+    "title": "Can I customize the clock position on the screen?",
+    "content": "Yes. The clock can be positioned in five different locations: top-left, top-right, bottom-left, bottom-right, or center. You can select your preferred position from the Clock Settings page."
+  },
+  {
+    "title": "What clock formats are available?",
+    "content": "You can choose between 12-hour or 24-hour time format. The clock also supports multiple date format options, and you can toggle display of seconds, day of week, and blinking colon based on your preference."
+  },
+  {
+    "title": "How do I change the clock font size?",
+    "content": "Clock Settings offers four font size options: small, medium, large, and extra-large. Choose the size that works best for your TV screen and viewing distance."
+  },
+  {
+    "title": "What is burn-in protection and do I need it?",
+    "content": "Burn-in protection is a feature designed to prevent permanent image retention on OLED and plasma screens. When enabled, the clock position automatically shifts every minute to avoid displaying static content in the same location for extended periods."
+  },
+  {
+    "title": "Should I enable burn-in protection on my LED/LCD TV?",
+    "content": "Burn-in protection is primarily beneficial for OLED and plasma TVs. If you have an LED or LCD TV, burn-in is extremely rare and this feature is optional. However, enabling it causes no harm on any TV type."
+  },
+  {
+    "title": "Can I adjust the clock shadow intensity?",
+    "content": "Yes. Clock Settings provides three shadow intensity options: light, medium, and heavy. The shadow helps improve clock readability against bright photos by adding depth to the text."
+  },
+  {
+    "title": "How do I change how long each photo stays on screen?",
+    "content": "Use the Photo Duration menu option to set how long each photo should display before moving to the next one. You can adjust this duration to match your viewing preference."
+  },
+  {
+    "title": "Can I delete individual photos from the screensaver?",
+    "content": "Yes. Navigate to the photo you want to remove using your TV remote and press OK. A dialog will appear showing photo information and a delete option. Select delete to remove that specific photo."
+  },
+  {
+    "title": "What is the difference between web upload, WiFi upload, and FTP upload?",
+    "content": "Web upload allows photo transfer from any internet-connected device using a secure token, even outside your home network. WiFi upload is faster and requires both devices on the same network. FTP upload uses anonymous FTP connection for bulk transfers and also requires same network connectivity."
+  },
+  {
+    "title": "What are QR codes used for in the upload pages?",
+    "content": "QR codes are provided for web, WiFi, and FTP upload methods to make connection easier. Simply scan the QR code with your phone or tablet camera to quickly access the upload interface without manually typing URLs."
+  },
+  {
+    "title": "What photo file formats are supported?",
+    "content": "Photo Dream Screensaver supports all common photo formats including JPG, JPEG, PNG, and other standard image formats that Android TV can display."
+  },
+  {
+    "title": "Can I reload or refresh my photo list?",
+    "content": "Yes. Use the 'Reload Photos' menu option to scan and reload all files in the uploads folder. This is useful if you've added photos through alternative methods or want to refresh the photo list."
+  },
+  {
+    "title": "How can I check how much storage my photos are using?",
+    "content": "Go to the App Settings page to view your device screen resolution, screen ratio, available storage, total photo file count, and the total memory size used by your photos."
+  },
+  {
+    "title": "How do I clear all photos at once?",
+    "content": "The App Settings page includes a button to clear all photos in the uploads folder. This is useful if you want to start fresh with a new photo collection."
+  }
+]

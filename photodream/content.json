@@ -64,16 +64,12 @@
     ],
     "stats": [
       {
-        "value": "Android TV",
-        "label": "Platform"
+        "value": "📥 10K+",
+        "label": "Downloads"
       },
       {
-        "value": "Screensaver",
-        "label": "Category"
-      },
-      {
-        "value": "Latest",
-        "label": "Version"
+        "value": "📦 1.0.2",
+        "label": "Latest Version"
       }
     ],
     "features": {
@@ -261,9 +257,9 @@
     ],
     "video": {
       "sectionId": "demo",
-      "title": "See TV PDF Viewer in Action",
+      "title": "See Photo Dream in Action",
       "youtubeEmbedUrl": "https://www.youtube.com/embed/P4igRkeLCRo?autoplay=0&mute=1&rel=0&modestbranding=1",
-      "iframeTitle": "TV PDF Viewer Demo - Android TV PDF Reader"
+      "iframeTitle": "Photo Dream Screensaver Demo"
     }
   },
   "sections": {

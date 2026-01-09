@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title id="meta-title">Photo Dream Screensaver</title>
+<meta name="description" id="meta-description">
+
+<meta property="og:title" id="og-title">
+<meta property="og:description" id="og-description">
+<meta property="og:image" id="og-image">
+<meta property="og:type" content="website">
+
+<style>
+/* =====================================================
+   THEME (Derived from app background)
+===================================================== */
+:root {
+  --bg-main: #5f179e;
+  --bg-glass: rgba(77, 17, 107, 0.55);
+  --bg-glass-strong: rgba(96, 13, 112, 0.65);
+  --border-soft: rgba(255,255,255,0.08);
+
+  --text-main: #ffffff;
+  --text-muted: #c6c8e2;
+
+  --accent: #9a6aff;
+  --accent-strong: #6c4bcf;
+  --accent-glow: rgba(154,106,255,0.45);
+
+  --radius: 18px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 72px 20px;
+}
+
+h1 { font-size: clamp(2.6rem, 4vw, 3.4rem); margin-bottom: 12px; }
+h2 { font-size: clamp(2rem, 3vw, 2.6rem); margin-bottom: 20px; }
+h3 { margin-bottom: 8px; }
+p { color: var(--text-muted); }
+
+/* =====================================================
+   HERO
+===================================================== */
+header {
+  background:
+    linear-gradient(to bottom,
+      rgba(10,12,28,.9),
+      rgba(10,12,28,.6),
+      rgba(10,12,28,.95)),
+    url("background.jpg") center/cover no-repeat;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.hero {
+  text-align: center;
+  padding: 110px 20px;
+}
+
+.hero-logo {
+  width: 130px;
+  margin: 0 auto 24px;
+  filter: drop-shadow(0 0 40px var(--accent-glow));
+}
+
+.cta-group {
+  margin-top: 36px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #fff;
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* =====================================================
+   GLASS CARDS
+===================================================== */
+.card {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+  padding: 26px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* =====================================================
+   SLIDESHOW
+===================================================== */
+.slideshow {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #000;
+}
+
+.slideshow img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
+/* =====================================================
+   VIDEO
+===================================================== */
+.video {
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* =====================================================
+   FAQ
+===================================================== */
+details {
+  background: var(--bg-glass-strong);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+  padding: 20px;
+  margin-bottom: 14px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+footer {
+  background: #0a0b18;
+  border-top: 1px solid var(--border-soft);
+}
+.footer-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+footer p, footer a {
+  font-size: .9rem;
+  color: var(--text-muted);
+}
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     PAGE DATA (EDIT THIS ONLY)
+===================================================== -->
+<script>
+const PAGE = {
+  appName: "Photo Dream Screensaver",
+  tagline: "Customizable Photo Screensaver for Android TV",
+  value: "Turn your TV into a beautiful digital photo frame with clock customization and burn-in protection.",
+  description: "Photo Dream Screensaver lets you upload personal photos and display them as a smooth Android TV screensaver with advanced clock controls and OLED-safe burn-in protection.",
+
+  logo: "images/app_icon.png",
+  backgroundImage: "images/background.jpg",
+
+  ctaPrimary: { label: "Google Play Store", link: "https://play.google.com/store/apps/details?id=com.deepakpk.photodream" },
+  ctaSecondary: { label: "Amazon App Store", link: "#features" },
+
+  slideshow: [
+    "images/screenshots/ss01.jpg",
+    "images/screenshots/ss02.jpg",
+    "images/screenshots/ss03.jpg",
+    "images/screenshots/ss04.jpg",
+    "images/screenshots/ss05.jpg",
+    "images/screenshots/ss06.jpg",
+    "images/screenshots/ss07.jpg",
+    "images/screenshots/ss08.jpg",
+    "images/screenshots/ss09.jpg",
+    "images/screenshots/ss10.jpg",
+    "images/screenshots/ss11.jpg",
+    "images/screenshots/ss12.jpg",
+    "images/screenshots/ss13.jpg",
+  ],
+
+  features: [
+    { icon:"🖼️", title:"Multiple Photo Upload Options", desc:"Upload photos via web, Wi-Fi, or anonymous FTP with QR code access." },
+    { icon:"🕒", title:"Advanced Clock Customization", desc:"Control position, size, 12/24h format, date style, seconds, shadow, and blinking colon." },
+    { icon:"🔥", title:"Burn-In Protection", desc:"Clock shifts position automatically to protect OLED displays." },
+    { icon:"📂", title:"Smart File Management", desc:"Thumbnail view, file info dialog, sorting, and quick delete options." },
+    { icon:"⚙️", title:"Detailed App Settings", desc:"View resolution, aspect ratio, storage usage, and total photo count." },
+    { icon:"⚡", title:"Built for Android TV", desc:"Uses latest Dream Service APIs for performance and efficiency." }
+  ],
+
+  video: "https://www.youtube.com/embed/VIDEO_ID",
+
+  steps: [
+    "Upload photos using web, Wi-Fi, or FTP",
+    "Customize clock appearance and protection",
+    "Activate Photo Dream Screensaver in TV settings",
+    "Enjoy your photos beautifully on the big screen"
+  ],
+
+  faq: [
+    { q:"Are my photos uploaded to the cloud?", a:"No. All photos remain stored locally on your Android TV." },
+    { q:"Does it support OLED TVs?", a:"Yes. Burn-in protection is specifically designed for OLED panels." },
+    { q:"Can I disable the clock?", a:"Yes. The clock can be fully hidden if you prefer photos only." },
+    { q:"Is a subscription required?", a:"Some advanced features may require an optional subscription." }
+  ],
+
+  footer: {
+    primaryStore:"#",
+    secondaryStore:"#",
+    social:"#",
+    privacy:"#",
+    terms:"#",
+    developer:"#"
+  }
+};
+</script>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+<header>
+  <div class="hero">
+    <img class="hero-logo" id="logo">
+    <h1 id="title"></h1>
+    <p id="value"></p>
+    <div class="cta-group">
+      <a class="btn" id="cta1"></a>
+      <a class="btn secondary" id="cta2"></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="container">
+  <h2>What is Photo Dream Screensaver?</h2>
+  <p id="description"></p>
+</section>
+
+<section class="container">
+  <div class="slideshow" id="slideshow"></div>
+</section>
+
+<section class="container" id="features">
+  <h2>Key Features</h2>
+  <div class="grid" id="featuresGrid"></div>
+</section>
+
+<section class="container">
+  <h2>See It In Action</h2>
+  <div class="video">
+    <iframe id="video" loading="lazy" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="container">
+  <h2>How It Works</h2>
+  <div class="grid" id="steps"></div>
+</section>
+
+<section class="container">
+  <h2>FAQ</h2>
+  <div id="faq"></div>
+</section>
+
+<section class="container hero">
+  <h2>Bring Your Photos to Life on Android TV</h2>
+  <p>Install Photo Dream Screensaver and enjoy a calm, personal screensaver experience.</p>
+  <a class="btn" href="#">Get Started</a>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <strong>Photo Dream Screensaver</strong>
+      <p>Personal photo screensaver for Android TV</p>
+    </div>
+    <div>
+      <p><a href="#">Primary Store</a></p>
+      <p><a href="#">Secondary Store</a></p>
+      <p><a href="#">Social Page</a></p>
+    </div>
+    <div>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">Terms of Use</a></p>
+      <p><a href="#">Developer Portfolio</a></p>
+    </div>
+    <div>
+      <p>© <span id="year"></span></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ================== RENDER ================== */
+document.title = PAGE.appName;
+title.textContent = PAGE.appName;
+value.textContent = PAGE.value;
+description.textContent = PAGE.description;
+logo.src = PAGE.logo;
+
+cta1.textContent = PAGE.ctaPrimary.label;
+cta1.href = PAGE.ctaPrimary.link;
+cta2.textContent = PAGE.ctaSecondary.label;
+cta2.href = PAGE.ctaSecondary.link;
+
+PAGE.slideshow.forEach((src,i)=>{
+  const img=document.createElement("img");
+  img.src=src; img.alt="Slide "+(i+1);
+  if(i===0) img.classList.add("active");
+  slideshow.appendChild(img);
+});
+
+let s=0;
+setInterval(()=>{
+  const imgs=slideshow.children;
+  imgs[s].classList.remove("active");
+  s=(s+1)%imgs.length;
+  imgs[s].classList.add("active");
+},4000);
+
+PAGE.features.forEach(f=>{
+  featuresGrid.innerHTML+=`
+    <div class="card">
+      <h3>${f.icon} ${f.title}</h3>
+      <p>${f.desc}</p>
+    </div>`;
+});
+
+PAGE.steps.forEach((t,i)=>{
+  steps.innerHTML+=`
+    <div class="card">
+      <h3>Step ${i+1}</h3>
+      <p>${t}</p>
+    </div>`;
+});
+
+PAGE.faq.forEach(f=>{
+  faq.innerHTML+=`
+    <details>
+      <summary>${f.q}</summary>
+      <p>${f.a}</p>
+    </details>`;
+});
+
+video.src = PAGE.video;
+year.textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

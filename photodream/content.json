@@ -1,9 +1,9 @@
 {
   "meta": {
     "lang": "en",
-    "title": "TV PDF Viewer - Professional PDF Reader for Android TV",
-    "description": "Transform your Android TV into a powerful PDF viewing station. View, navigate, and manage PDF documents with web import, WiFi transfer, FTP support, and remote-optimized controls.",
-    "keywords": "Android TV PDF viewer, PDF reader for TV, view PDF on smart TV, Android TV document viewer, WiFi PDF viewer, PDF presentation on TV, classroom PDF display, web PDF transfer",
+    "title": "Photo Dream Screensaver - Photo Slideshow Screensaver for Android TV",
+    "description": "Turn your Android TV into a beautiful photo slideshow screensaver. Upload photos wirelessly via web token, WiFi, or FTP, and customize an optional clock overlay with burn-in protection.",
+    "keywords": "Android TV screensaver, photo screensaver, photo slideshow on TV, wireless photo upload, web token upload, WiFi upload, FTP upload, clock overlay",
     "author": "Deepak PK",
     "canonical": "https://deepakpk.com/tvpdfviewer",
     "og": {
@@ -30,23 +30,23 @@
     }
   },
   "theme": {
-    "primaryGreen": "#4CAF50",
-    "darkGreen": "#2E7D32",
-    "lightGreen": "#66BB6A",
-    "darkerGreen": "#1B5E20",
-    "black": "#0D0D0D",
-    "darkBg": "#121212",
-    "cardBg": "#1E1E1E",
-    "textWhite": "#FFFFFF",
-    "textGray": "#B0B0B0",
-    "borderGreen": "#3D8B40",
+    "primaryGreen": "251C73",
+    "darkGreen": "140F3F",
+    "lightGreen": "716BA4",
+    "darkerGreen": "1D165C",
+    "black": "060619",
+    "darkBg": "0F0E39",
+    "cardBg": "171556",
+    "textWhite": "FFFFFF",
+    "textGray": "B0B0B0",
+    "borderGreen": "1D165C",
     "heroWatermarkOpacity": 0.03,
     "ctaWatermarkOpacity": 0.05
   },
   "product": {
-    "name": "TV PDF Viewer",
-    "heroTitle": "TV PDF Viewer - Professional PDF Reader for Android TV",
-    "heroDescription": "Transform your Android TV into a powerful PDF viewing station. Transfer files wirelessly via web, WiFi, or FTP - perfect for presentations, classrooms, and document viewing on the big screen.",
+    "name": "Photo Dream Screensaver",
+    "heroTitle": "Photo Dream Screensaver for Android TV",
+    "heroDescription": "Use your own photos as an Android TV screensaver. Upload images from your phone or PC using web token, WiFi, or FTP, then relax with a slideshow and an optional customizable clock.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
@@ -63,25 +63,201 @@
       }
     ],
     "stats": [
-      { "value": "50K+", "label": "Downloads" },
-      { "value": "1.1.2", "label": "Latest Version" }
-    ]
+      {
+        "value": "Android TV",
+        "label": "Platform"
+      },
+      {
+        "value": "Screensaver",
+        "label": "Category"
+      },
+      {
+        "value": "Latest",
+        "label": "Version"
+      }
+    ],
+    "features": {
+      "title": "Features built for Android TV",
+      "cards": [
+        {
+          "icon": "",
+          "title": "TV-optimized photo browser",
+          "bullets": [
+            "Thumbnail + filename listing",
+            "Sorted by filename",
+            "OK button opens photo info dialog with preview, filename, and size",
+            "Delete photos from the info dialog"
+          ]
+        },
+        {
+          "icon": "",
+          "title": "Wireless photo upload",
+          "bullets": [
+            "Web upload using token (no shared network required)",
+            "WiFi upload for faster transfers on same network",
+            "FTP upload with anonymous connection (same network)",
+            "Web/WiFi/FTP pages provide QR codes for easy connection"
+          ]
+        },
+        {
+          "icon": "",
+          "title": "Screensaver playback controls",
+          "bullets": [
+            "Reload photos menu to rescan uploads folder",
+            "Photo duration setting to control how long each photo stays on screen"
+          ]
+        },
+        {
+          "icon": "",
+          "title": "Easy screensaver setup",
+          "bullets": [
+            "Activate option guides users to Android TV screensaver settings to set the app as screensaver"
+          ]
+        },
+        {
+          "icon": "",
+          "title": "Customizable clock overlay",
+          "bullets": [
+            "Show/hide clock",
+            "Clock position: top-left, top-right, bottom-left, bottom-right, center",
+            "Font size: small, medium, large, extra-large",
+            "Time format: 12-hour or 24-hour",
+            "Date format selections",
+            "Clock text shadow intensity: light, medium, heavy",
+            "Show/hide seconds",
+            "Blinking colon toggle",
+            "Show day of week toggle",
+            "Burn-in protection shifts clock position periodically"
+          ]
+        },
+        {
+          "icon": "",
+          "title": "Subscription",
+          "bullets": [
+            "Subscribe page for purchase",
+            "Manage subscription page with instructions"
+          ]
+        },
+        {
+          "icon": "",
+          "title": "App settings & utilities",
+          "bullets": [
+            "Shows screen resolution and screen ratio",
+            "Shows available storage",
+            "Shows total photo file count and storage used by photos",
+            "Clear all uploaded photos"
+          ]
+        },
+        {
+          "icon": "",
+          "title": "Help & support",
+          "bullets": [
+            "Help/FAQ with detailed answers",
+            "Support and feedback page with QR codes (support Facebook page and feedback form)",
+            "About page with developer details",
+            "Version info menu item",
+            "Privacy policy and terms of use pages"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect for",
+      "items": [
+        {
+          "icon": "",
+          "title": "Family TVs",
+          "text": "Display your favorite memories as a relaxing photo slideshow screensaver."
+        },
+        {
+          "icon": "",
+          "title": "Living rooms",
+          "text": "Keep the TV beautiful and informative with an optional clock overlay."
+        },
+        {
+          "icon": "",
+          "title": "Digital frames",
+          "text": "Use Android TV as a big-screen digital photo frame."
+        },
+        {
+          "icon": "",
+          "title": "Offices & lobbies",
+          "text": "Show curated photo sets in a clean, TV-friendly screensaver mode."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I upload photos to Photo Dream Screensaver?",
+          "a": "Use Web upload with a token (works even without being on the same Wi‑Fi), or use WiFi upload / FTP upload when your phone or PC is on the same network."
+        },
+        {
+          "q": "Can I show a clock on the screensaver?",
+          "a": "Yes. You can enable a clock overlay and customize position, size, formats, seconds, shadow, and burn‑in protection."
+        },
+        {
+          "q": "How do I set the app as my Android TV screensaver?",
+          "a": "Use the Activate option in the app to open Android TV screensaver settings and select Photo Dream Screensaver."
+        }
+      ]
+    }
   },
   "media": {
     "screenshots": [
-      { "src": "images/screenshots/ss01.jpg", "alt": "TV PDF Viewer Screenshot - Main Home Interface" },
-      { "src": "images/screenshots/ss02.jpg", "alt": "TV PDF Viewer Screenshot - Bookmark Interface" },
-      { "src": "images/screenshots/ss03.jpg", "alt": "TV PDF Viewer Screenshot - Web Import Interface" },
-      { "src": "images/screenshots/ss04.jpg", "alt": "TV PDF Viewer Screenshot - FTP Import Interface" },
-      { "src": "images/screenshots/ss05.jpg", "alt": "TV PDF Viewer Screenshot - PDF Options Interface" },
-      { "src": "images/screenshots/ss06.jpg", "alt": "TV PDF Viewer Screenshot - Night Mode Interface" },
-      { "src": "images/screenshots/ss07.jpg", "alt": "TV PDF Viewer Screenshot - Page Rotate Interface" },
-      { "src": "images/screenshots/ss08.jpg", "alt": "TV PDF Viewer Screenshot - Search PDF Interface" },
-      { "src": "images/screenshots/ss09.jpg", "alt": "TV PDF Viewer Screenshot - Search Result Interface" },
-      { "src": "images/screenshots/ss10.jpg", "alt": "TV PDF Viewer Screenshot - Go To Page Interface" },
-      { "src": "images/screenshots/ss11.jpg", "alt": "TV PDF Viewer Screenshot - In-PDF Bookmarks Listing Interface" },
-      { "src": "images/screenshots/ss12.jpg", "alt": "TV PDF Viewer Screenshot - Settings Interface" },
-      { "src": "images/screenshots/ss13.jpg", "alt": "TV PDF Viewer Screenshot - Empty Home Interface" }
+      {
+        "src": "images/screenshots/ss01.jpg",
+        "alt": "TV PDF Viewer Screenshot - Main Home Interface"
+      },
+      {
+        "src": "images/screenshots/ss02.jpg",
+        "alt": "TV PDF Viewer Screenshot - Bookmark Interface"
+      },
+      {
+        "src": "images/screenshots/ss03.jpg",
+        "alt": "TV PDF Viewer Screenshot - Web Import Interface"
+      },
+      {
+        "src": "images/screenshots/ss04.jpg",
+        "alt": "TV PDF Viewer Screenshot - FTP Import Interface"
+      },
+      {
+        "src": "images/screenshots/ss05.jpg",
+        "alt": "TV PDF Viewer Screenshot - PDF Options Interface"
+      },
+      {
+        "src": "images/screenshots/ss06.jpg",
+        "alt": "TV PDF Viewer Screenshot - Night Mode Interface"
+      },
+      {
+        "src": "images/screenshots/ss07.jpg",
+        "alt": "TV PDF Viewer Screenshot - Page Rotate Interface"
+      },
+      {
+        "src": "images/screenshots/ss08.jpg",
+        "alt": "TV PDF Viewer Screenshot - Search PDF Interface"
+      },
+      {
+        "src": "images/screenshots/ss09.jpg",
+        "alt": "TV PDF Viewer Screenshot - Search Result Interface"
+      },
+      {
+        "src": "images/screenshots/ss10.jpg",
+        "alt": "TV PDF Viewer Screenshot - Go To Page Interface"
+      },
+      {
+        "src": "images/screenshots/ss11.jpg",
+        "alt": "TV PDF Viewer Screenshot - In-PDF Bookmarks Listing Interface"
+      },
+      {
+        "src": "images/screenshots/ss12.jpg",
+        "alt": "TV PDF Viewer Screenshot - Settings Interface"
+      },
+      {
+        "src": "images/screenshots/ss13.jpg",
+        "alt": "TV PDF Viewer Screenshot - Empty Home Interface"
+      }
     ],
     "video": {
       "sectionId": "demo",
@@ -94,9 +270,21 @@
     "howItWorks": {
       "title": "Simple and Easy to Use",
       "steps": [
-        { "number": "1", "title": "Install the App", "text": "Download TV PDF Viewer from Google Play Store or Amazon Appstore on your Android TV device" },
-        { "number": "2", "title": "Transfer Your PDFs", "text": "Use web token, WiFi upload, or FTP menu to wirelessly transfer files to your TV" },
-        { "number": "3", "title": "Start Viewing", "text": "Browse thumbnails and open any PDF with your TV remote" }
+        {
+          "number": "1",
+          "title": "Install the App",
+          "text": "Download TV PDF Viewer from Google Play Store or Amazon Appstore on your Android TV device"
+        },
+        {
+          "number": "2",
+          "title": "Transfer Your PDFs",
+          "text": "Use web token, WiFi upload, or FTP menu to wirelessly transfer files to your TV"
+        },
+        {
+          "number": "3",
+          "title": "Start Viewing",
+          "text": "Browse thumbnails and open any PDF with your TV remote"
+        }
       ]
     },
     "features": {
@@ -168,12 +356,36 @@
     "perfectFor": {
       "title": "Perfect For",
       "items": [
-        { "icon": "💼", "title": "Business Professionals", "text": "Display presentations and reports on large screens during meetings" },
-        { "icon": "👩‍🏫", "title": "Educators", "text": "Share learning materials, lecture notes, and textbooks with students" },
-        { "icon": "🎓", "title": "Students", "text": "Study comfortably from your couch on a larger screen" },
-        { "icon": "🏠", "title": "Home Users", "text": "Read e-books, manuals, and documents on your TV" },
-        { "icon": "🏢", "title": "Corporate Training", "text": "Share training materials and employee handbooks on office TVs" },
-        { "icon": "🏋️", "title": "Fitness Trainers", "text": "Display workout plans, exercise guides, and nutrition charts during sessions" }
+        {
+          "icon": "💼",
+          "title": "Business Professionals",
+          "text": "Display presentations and reports on large screens during meetings"
+        },
+        {
+          "icon": "👩‍🏫",
+          "title": "Educators",
+          "text": "Share learning materials, lecture notes, and textbooks with students"
+        },
+        {
+          "icon": "🎓",
+          "title": "Students",
+          "text": "Study comfortably from your couch on a larger screen"
+        },
+        {
+          "icon": "🏠",
+          "title": "Home Users",
+          "text": "Read e-books, manuals, and documents on your TV"
+        },
+        {
+          "icon": "🏢",
+          "title": "Corporate Training",
+          "text": "Share training materials and employee handbooks on office TVs"
+        },
+        {
+          "icon": "🏋️",
+          "title": "Fitness Trainers",
+          "text": "Display workout plans, exercise guides, and nutrition charts during sessions"
+        }
       ]
     },
     "faq": {
@@ -235,32 +447,63 @@
       "about": "Professional PDF viewing solution for Android TV. Transform your television into a powerful document viewer with wireless transfer capabilities."
     },
     "social": [
-      { "type": "facebook", "label": "Facebook", "url": "https://www.facebook.com/tvpdfviewer" }
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/tvpdfviewer"
+      }
     ],
     "columns": [
       {
         "title": "Quick Links",
         "links": [
-          { "label": "Download on Google Play", "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer" },
-          { "label": "Download on Amazon", "url": "https://www.amazon.com/gp/product/B0DJNCDDDK" },
-          { "label": "Terms & Conditions", "url": "terms.html" },
-          { "label": "Privacy Policy", "url": "privacy.html" }
+          {
+            "label": "Download on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer"
+          },
+          {
+            "label": "Download on Amazon",
+            "url": "https://www.amazon.com/gp/product/B0DJNCDDDK"
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
         ]
       },
       {
         "title": "Support",
         "links": [
-          { "label": "Email Support", "url": "mailto:deepakpk009@yahoo.in" },
-          { "label": "FAQ", "url": "#faq" }
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
         ],
         "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
       },
       {
         "title": "More Apps",
         "links": [
-          { "label": "TvExplorer", "url": "https://deepakpk.com/tvexplorer" },
-          { "label": "View All Apps", "url": "https://deepakpk.com/apps" },
-          { "label": "Developer Portfolio", "url": "https://deepakpk.com" }
+          {
+            "label": "TvExplorer",
+            "url": "https://deepakpk.com/tvexplorer"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
         ]
       }
     ],
@@ -270,9 +513,9 @@
     "softwareApplication": {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "TV PDF Viewer",
+      "name": "Photo Dream Screensaver",
       "operatingSystem": "Android TV",
-      "applicationCategory": "ProductivityApplication",
+      "applicationCategory": "LifestyleApplication",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -280,8 +523,15 @@
         "availability": "https://schema.org/InStock"
       },
       "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer",
-      "author": { "@type": "Person", "name": "Deepak PK", "url": "https://deepakpk.com" },
-      "publisher": { "@type": "Organization", "name": "Deepak PK" }
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      }
     },
     "organization": {
       "@context": "https://schema.org",
@@ -289,8 +539,16 @@
       "name": "Deepak PK",
       "url": "https://deepakpk.com",
       "logo": "images/app_icon.png",
-      "sameAs": ["https://www.facebook.com/tvpdfviewer"],
-      "contactPoint": [{ "@type": "ContactPoint", "email": "deepakpk009@yahoo.in", "contactType": "Customer Support" }]
+      "sameAs": [
+        "https://www.facebook.com/tvpdfviewer"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
     }
   }
 }

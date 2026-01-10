@@ -48,7 +48,7 @@
 
   "product": {
     "name": "Photo Dream Screensaver",
-    "heroTitle": "Turn Your TV Into a Living Photo Frame 📺✨",
+    "heroTitle": "Photo Dream Screensaver - Turn Your TV Into a Living Photo Frame",
     "heroDescription": "Use your own photos as an Android TV screensaver. Upload images wirelessly and enjoy a smooth slideshow with an optional, customizable clock.",
     "icon": "images/app_icon.png",
 
@@ -233,7 +233,7 @@
 
   "sections": {
     "howItWorks": {
-      "title": "Simple & Relaxing Setup",
+      "title": "Super Easy Setup",
       "steps": [
         {
           "number": "1",
@@ -361,7 +361,7 @@
       {
         "type": "facebook",
         "label": "Facebook",
-        "url": "https://www.facebook.com/tvpdfviewer"
+        "url": "https://www.facebook.com/photodreamapp"
       }
     ],
     "columns": [
@@ -370,7 +370,7 @@
         "links": [
           {
             "label": "Download on Google Play",
-            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer"
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.photodream"
           },
           {
             "label": "Download on Amazon",
@@ -432,7 +432,7 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpdfviewer",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.photodream",
       "author": {
         "@type": "Person",
         "name": "Deepak PK",
@@ -450,7 +450,7 @@
       "url": "https://deepakpk.com",
       "logo": "images/app_icon.png",
       "sameAs": [
-        "https://www.facebook.com/tvpdfviewer"
+        "https://www.facebook.com/photodreamapp"
       ],
       "contactPoint": [
         {

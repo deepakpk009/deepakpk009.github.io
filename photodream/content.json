@@ -440,7 +440,7 @@
   "footer": {
     "brand": {
       "logo": "images/app_icon.png",
-      "name": "TV PDF Viewer",
+      "name": "Photo Dream Screensaver",
       "about": "Professional PDF viewing solution for Android TV. Transform your television into a powerful document viewer with wireless transfer capabilities."
     },
     "social": [
@@ -490,8 +490,8 @@
         "title": "More Apps",
         "links": [
           {
-            "label": "TvExplorer",
-            "url": "https://deepakpk.com/tvexplorer"
+            "label": "TV PDF Viewer",
+            "url": "https://deepakpk.com/tvpdfviewer"
           },
           {
             "label": "View All Apps",

@@ -58,12 +58,6 @@
         "label": "Get it on Google Play",
         "url": "https://play.google.com/store/apps/details?id=com.deepakpk.photodream",
         "style": "primary"
-      },
-      {
-        "type": "amazon",
-        "label": "Available on Amazon",
-        "url": "https://www.amazon.com/gp/product/B0DJNCDDDK",
-        "style": "secondary"
       }
     ],
 
@@ -238,7 +232,7 @@
         {
           "number": "1",
           "title": "Install the App",
-          "text": "Download Photo Dream Screensaver from Google Play or Amazon Appstore."
+          "text": "Download Photo Dream Screensaver from Google Play."
         },
         {
           "number": "2",
@@ -340,12 +334,6 @@
           "label": "Download on Google Play",
           "url": "https://play.google.com/store/apps/details?id=com.deepakpk.photodream",
           "style": "primary"
-        },
-        {
-          "type": "amazon",
-          "label": "Download on Amazon",
-          "url": "https://www.amazon.com/gp/product/B0DJNCDDDK",
-          "style": "secondary"
         }
       ]
     }
@@ -371,10 +359,6 @@
           {
             "label": "Download on Google Play",
             "url": "https://play.google.com/store/apps/details?id=com.deepakpk.photodream"
-          },
-          {
-            "label": "Download on Amazon",
-            "url": "https://www.amazon.com/gp/product/B0DJNCDDDK"
           },
           {
             "label": "Terms & Conditions",

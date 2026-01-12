@@ -58,6 +58,12 @@
         "label": "Get it on Google Play",
         "url": "https://play.google.com/store/apps/details?id=com.deepakpk.photodream",
         "style": "primary"
+      },
+      {
+        "type": "amazon",
+        "label": "Available on Amazon",
+        "url": "",
+        "style": "secondary"
       }
     ],
 
@@ -220,7 +226,7 @@
     "video": {
       "sectionId": "demo",
       "title": "See Photo Dream in Action",
-      "youtubeEmbedUrl": "https://www.youtube.com/embed/P4igRkeLCRo?autoplay=0&mute=1&rel=0",
+      "youtubeEmbedUrl": "",
       "iframeTitle": "Photo Dream Screensaver Demo"
     }
   },
@@ -334,6 +340,12 @@
           "label": "Download on Google Play",
           "url": "https://play.google.com/store/apps/details?id=com.deepakpk.photodream",
           "style": "primary"
+        },
+        {
+          "type": "amazon",
+          "label": "Download on Amazon",
+          "url": "",
+          "style": "secondary"
         }
       ]
     }
@@ -359,6 +371,10 @@
           {
             "label": "Download on Google Play",
             "url": "https://play.google.com/store/apps/details?id=com.deepakpk.photodream"
+          },
+          {
+            "label": "Download on Amazon",
+            "url": ""
           },
           {
             "label": "Terms & Conditions",

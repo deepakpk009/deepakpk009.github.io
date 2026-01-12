@@ -47,6 +47,12 @@
             "description": "USB Photos, Videos & Music on Android TV",
             "thumbnail": "https://deepakpk.com/usbgallery/images/app_icon.png",
             "url": "https://deepakpk.com/usbgallery/"
+        },
+        {
+            "title": "Photo Dream Screensaver",
+            "description": "Fully customizable photo screensaver with clock",
+            "thumbnail": "https://deepakpk.com/photodream/images/app_icon.png",
+            "url": "https://deepakpk.com/photodream/"
         }
     ]
 }

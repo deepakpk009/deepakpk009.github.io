@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #1e2228;
+  color: #ffffff;
 }
 
 .page-container {
@@ -18,25 +20,27 @@ body {
 h1 {
   font-size: 24px;
   font-weight: bold;
+  color: #ffffff;
 }
 
 h2 {
   font-size: 20px;
-  color: #666;
+  color: #b0b0b0;
 }
 
 p {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.5;
+  color: #d0d0d0;
 }
 
 .semi-bold {
   font-weight: 600;
-  color: #333;
+  color: #e0e0e0;
 }
 
 .container img {
-  width: 128px;
-  height: 128px;
+  width: 256px;
+  height: 181px;
 }

@@ -1,114 +1,82 @@
 [
   {
-    "title": "How does the app find RAW files on my TV?",
-    "content": "The app automatically scans any connected USB drives for RAW files. Once detected, these files are displayed in a list with the first page shown as a thumbnail alongside the file name for easy identification."
+    "title": "What is RAW View?",
+    "content": "RAW View is an Android TV application specifically designed to view RAW image files from USB drives on your TV. It supports 11 different RAW formats from major camera manufacturers and also handles standard photos, videos, and audio files, making it a comprehensive media viewer for Android TV."
   },
   {
-    "title": "How can I view information about a RAW file?",
-    "content": "Long press the OK button on your remote when focused on a RAW file in the list. This will display the file information including name, location, size, and last modified date. You'll also see options to open or delete the file."
+    "title": "Which RAW image formats does RAW View support?",
+    "content": "RAW View supports 11 RAW image formats: NEF (Nikon), CR2 and CR3 (Canon), ARW (Sony), DNG (Adobe/Universal), RAF (Fujifilm), ORF (Olympus), RW2 (Panasonic), PEF (Pentax), SRW (Samsung), and NRW (Nikon). These cover most professional and prosumer camera systems."
   },
   {
-    "title": "What are the ways to import RAW files to the app?",
-    "content": "There are three methods to import RAW files: 1) Connect a USB drive containing RAWs which will be automatically detected, 2) Use the web import feature with a token (no need for both devices to be on the same network), or 3) Use FTP import with an anonymous FTP connection (requires both devices to be on the same network). The web and FTP import pages provide QR codes for easy connection."
+    "title": "Does RAW View require a subscription?",
+    "content": "RAW View operates on a subscription-based model. The app includes a dedicated subscription page where you can subscribe, and a manage subscription page that provides information on how to view, modify, or cancel your subscription through the Google Play Store."
   },
   {
-    "title": "How do I use the web import feature?",
-    "content": "Navigate to the web import option in the app. You'll be shown a token and QR code. Scan the QR code with your sending device or manually enter the URL in a browser and enter the token to verify before selecting files for uploading. The advantage of web import is that your sending device doesn't need to be on the same network as your TV."
+    "title": "How do I load my photos and videos into RAW View?",
+    "content": "Simply connect your USB drive containing media files to your Android TV device. RAW View automatically scans the USB drive for folders, RAW/normal photos, videos, and music files, then lists them with thumbnails and file names. You can also use the reload files menu to rescan the drive at any time."
   },
   {
-    "title": "How do I use the FTP import feature?",
-    "content": "Navigate to the FTP import option in the app. The app will display connection information and a QR code. Scan the QR code or manually enter the connection details in your FTP client. Note that FTP import requires both your TV and sending device to be on the same network. The app uses anonymous FTP connection for simplicity."
+    "title": "Can I view metadata information from my RAW images?",
+    "content": "Yes, RAW View includes a metadata viewer. When viewing an image, press the OK button on your remote to access image options, then select 'toggle metadata info' to show or hide the metadata. You can use the D-pad up/down keys to scroll through the metadata information."
   },
   {
-    "title": "How do I bookmark pages in a RAW?",
-    "content": "While viewing a RAW, press the OK button on your remote to display the RAW options menu. Select the 'bookmark' option to toggle a bookmark for the current page. You can use this feature to easily return to important pages later."
+    "title": "How do I zoom and rotate images in RAW View?",
+    "content": "While viewing an image, press the OK button on your remote to open the image options menu. From there, you can select zoom in, zoom out, fit mode (fit to height/width), or rotate (which rotates the image 90 degrees with each selection)."
   },
   {
-    "title": "How do I view and manage all my bookmarks?",
-    "content": "From the main menu, select the bookmarks page to view all bookmarks across all your RAWs. Each bookmark entry displays the bookmarked page thumbnail, page number, and the RAW file title. You can also delete bookmarks directly from this listing page."
+    "title": "Does RAW View have a slideshow feature?",
+    "content": "Yes, RAW View includes a full-featured slideshow mode. Press OK while viewing an image and select the slideshow option to play all images in the current folder. You can pause/play by pressing OK, increase slide duration with the down button, decrease it with the up button, and the app will skip any failed images in subsequent loops."
   },
   {
-    "title": "How do I view bookmarks for just the RAW I'm currently reading?",
-    "content": "While viewing a RAW, press the OK button to show the RAW options menu, then select 'bookmarks' option. This will display all bookmarked pages specific to the current RAW file. You can select any bookmark to navigate directly to that page."
+    "title": "What video formats can RAW View play?",
+    "content": "RAW View supports 14 video formats: MP4, AVI, MKV, MOV, FLV, WMV, WebM, M4V, 3GP, TS, MTS, M2TS, VOB, and OGV. This covers most common video file types you'll encounter from cameras, drones, and other recording devices."
   },
   {
-    "title": "My USB drive has new RAWs, but they don't appear in the app. What should I do?",
-    "content": "Select the 'reload files' menu option. This will initiate a new scan of your USB drive and imports folder, making any new RAWs available in the app."
+    "title": "Does RAW View support subtitles for videos?",
+    "content": "Yes, RAW View supports 7 subtitle formats: SRT, VTT, ASS, SSA, TTML, DFXP, and XML. You can select closed caption subtitles using the player controls while watching a video."
   },
   {
-    "title": "How do I open and view a RAW file?",
-    "content": "Simply navigate to the RAW file in the main list and press the OK button on your remote. The RAW will open in the viewer with the page fitted to height by default."
+    "title": "Will RAW View remember where I stopped watching a video?",
+    "content": "Yes, RAW View saves your playback progress. When you close a video, the progress is saved and updated in the home listing. If you reopen a previously watched video, you'll be prompted with a dialog to either start over or resume playback from where you left off."
   },
   {
-    "title": "How do I navigate through pages in a RAW?",
-    "content": "When viewing a RAW that is zoomed out or fit to height, use the left/right remote keys to change pages. If the page is zoomed in, the left/right keys will scroll the page horizontally instead."
+    "title": "Can RAW View play audio files?",
+    "content": "Yes, RAW View supports 13 audio formats: MP3, M4A, AAC, OGG, OGA, Opus, FLAC, WAV, WebM, MKV, MKA, TS, 3GP, and AMR. The audio player features clean controls with rewind/forward (5 seconds), progress bar, and current time/total duration display. Note that audio playback always starts from the beginning."
   },
   {
-    "title": "How can I zoom in and out of a RAW page?",
-    "content": "While viewing a RAW, press the OK button to display the options menu. Select 'zoom in' to enlarge the page or 'zoom out' to reduce it. When zoomed in, you can use left/right remote keys to scroll horizontally."
+    "title": "How do I navigate during video or audio playback?",
+    "content": "RAW View provides clean player controls for both video and audio. You can rewind or fast forward by 5 seconds using the remote controls, view the progress bar with current time and total duration, and access subtitle options for videos. The interface is designed specifically for Android TV remote navigation."
   },
   {
-    "title": "Can I change how the RAW fits on the screen?",
-    "content": "Yes. While viewing a RAW, press the OK button for the options menu, then select 'fit mode'. This toggles between fitting the page to width or height, allowing you to choose the view that works best for your content."
+    "title": "What information can I see in the app settings?",
+    "content": "The app settings page displays your device's screen resolution, screen ratio, available storage space, total number of thumbnail files, and total size of thumbnails. You also have the option to clear all thumbnails and video progress data from this page."
   },
   {
-    "title": "How do I jump to a specific page in a RAW?",
-    "content": "While viewing a RAW, press the OK button to show the options menu, then select 'go to page'. You can then enter the specific page number you want to navigate to."
+    "title": "How do I control slideshow speed in RAW View?",
+    "content": "During a slideshow, you can adjust the slide interval by pressing the up button to decrease duration (faster transitions) or the down button to increase duration (slower transitions). The slideshow also displays a photo/slide index indicator in the top right corner so you can track your position."
   },
   {
-    "title": "Can I search for text within a RAW?",
-    "content": "Yes. While viewing a RAW, press the OK button for the options menu, then select 'search'. Enter your search text and the app will locate it within the document. Note that some searches might take time on larger documents. You can cancel an ongoing search by pressing the cancel button."
+    "title": "Why do I need to clear thumbnails?",
+    "content": "Thumbnails are cached images that help RAW View load and display your media library quickly. Over time, these can consume storage space on your Android TV device. The app settings page allows you to check how much storage thumbnails are using and clear them if needed to free up space."
   },
   {
-    "title": "How do I rotate RAW pages?",
-    "content": "While viewing a RAW, press the OK button to show the options menu, then select 'rotate'. Each click rotates the page 90 degrees, allowing you to view content in the orientation that works best."
+    "title": "What if I need to rescan my USB drive?",
+    "content": "RAW View includes a 'reload files' menu option that allows you to rescan the USB drive at any time. This is useful if you've added or removed files from the USB drive, or if you've connected a different USB drive to your Android TV."
   },
   {
-    "title": "Does the app have a night mode for reading?",
-    "content": "Yes. While viewing a RAW, press the OK button for the options menu, then select 'night mode'. This toggles a color scheme that's easier on the eyes in low-light conditions."
+    "title": "How can I get help or contact support?",
+    "content": "RAW View includes multiple support resources: a comprehensive help/FAQ page within the app that covers common queries with detailed answers, a support and feedback page with QR codes linking to the Facebook support page and feedback form, and an about us page with developer details."
   },
   {
-    "title": "How do I close the RAW options menu?",
-    "content": "You can either select the 'close' option in the menu or simply press the back key on your remote. The RAW options view is shown as an overlay so you can see live changes to the page when using zoom, fit mode, rotate, and night mode options."
+    "title": "Where can I find the app version number?",
+    "content": "RAW View includes a dedicated version info menu item, making it easy to check which version of the app you're running. This is particularly useful when troubleshooting issues or checking if you have the latest update."
   },
   {
-    "title": "How do I subscribe to the app?",
-    "content": "Navigate to the subscribe page from the main menu to make a subscription. This will give you access to all premium features of the app."
+    "title": "Are there privacy policy and terms of use available?",
+    "content": "Yes, RAW View includes dedicated pages for both the privacy policy and terms of use. These are accessible from within the app and outline how your data is handled and the conditions for using the application."
   },
   {
-    "title": "How do I manage my subscription?",
-    "content": "Go to the manage subscription page, which provides detailed information on how to manage your current subscription, including how to cancel or renew it."
-  },
-  {
-    "title": "How can I check the app's storage usage?",
-    "content": "Visit the app settings page to view information including device screen resolution, screen ratio, available storage, total RAW file count and memory size taken, number of bookmarks, and number of thumbnails files with their total size."
-  },
-  {
-    "title": "How do I clear imported RAWs from the app?",
-    "content": "In the settings page, use the option to clear all RAWs in the imports folder. Note that this will not delete RAW files stored on connected USB drives."
-  },
-  {
-    "title": "Can I clear all thumbnails and bookmarks?",
-    "content": "Yes. In the settings page, there are options to clear all thumbnails and bookmarks. This can help free up storage space if needed."
-  },
-  {
-    "title": "How do I contact support or provide feedback?",
-    "content": "Access the support and feedback page from the main menu. It displays QR codes linking to the support Facebook page and feedback form URLs for easy access."
-  },
-  {
-    "title": "How can I check which version of the app I'm using?",
-    "content": "Select the version info menu item from the main menu to see the current app version number."
-  },
-  {
-    "title": "Where can I find the privacy policy and terms of use?",
-    "content": "The app includes dedicated pages for both the privacy policy and terms of use, accessible from the main menu."
-  },
-  {
-    "title": "How do I exit the RAW viewer?",
-    "content": "While viewing a RAW, press the back key on your remote to return to the main app interface."
-  },
-  {
-    "title": "Can I delete a RAW file from within the app?",
-    "content": "Yes. Long press the OK button when focused on a RAW file in the main list. This will show file information along with options to open or delete the file."
+    "title": "Is RAW View designed specifically for Android TV?",
+    "content": "Yes, RAW View's user interface is developed based on Android TV development principles, ensuring optimal navigation with TV remotes and a user experience tailored for large screens. The interface uses D-pad navigation and is optimized for viewing from a distance."
   }
 ]

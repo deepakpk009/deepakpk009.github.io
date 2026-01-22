@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "RAW View – RAW Photo, Video & Audio Viewer for Android TV",
+    "description": "View RAW and normal photos, videos with subtitles, and music from USB drives on Android TV. Auto-scan thumbnails, resume playback, zoom, rotate, metadata, slideshow.",
+    "keywords": "Android TV RAW viewer, USB media player, RAW photo viewer, USB video player TV, Android TV audio player, RAW image formats",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/rawview",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/rawview",
+      "title": "RAW View for Android TV",
+      "description": "Professional RAW photos, videos and audio from USB on your TV.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/rawview",
+      "title": "RAW View for Android TV",
+      "description": "USB-based RAW image viewer and media player optimized for Android TV.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+  "theme": {
+    "primaryGreen": "#824caf",
+    "darkGreen": "#5d2e7d",
+    "lightGreen": "#9a66bb",
+    "darkerGreen": "#3e1b5e",
+    "black": "#0D0D0D",
+    "darkBg": "#121212",
+    "cardBg": "#1E1E1E",
+    "textWhite": "#FFFFFF",
+    "textGray": "#B0B0B0",
+    "borderGreen": "#693d8b",
+    "boxShadowColor": "#864caf4d",
+    "heroWatermarkOpacity": 0.03,
+    "ctaWatermarkOpacity": 0.05
+  },
+  "product": {
+    "name": "RAW View",
+    "heroTitle": "RAW View - Professional USB Media for Android TV",
+    "heroDescription": "Auto-scans USB drives for RAW/normal photos, videos, music. Thumbnail browser, advanced viewers with zoom, rotate, metadata, subtitles, resume, slideshow.",
+    "icon": "images/app_icon.png",
+    "storeButtons": [
+      {
+        "type": "googlePlay",
+        "label": "Get it on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.rawview",
+        "style": "primary"
+      },
+      {
+        "type": "amazon",
+        "label": "Available on Amazon",
+        "url": "",
+        "style": "secondary"
+      }
+    ],
+    "stats": [
+      {
+        "value": "",
+        "label": "Downloads"
+      },
+      {
+        "value": "",
+        "label": "Latest Version"
+      }
+    ],
+    "features": {
+      "title": "Features Built for Android TV",
+      "cards": [
+        {
+          "icon": "🖼️",
+          "title": "USB Auto-Scan Browser",
+          "bullets": [
+            "Scans folders for RAW/normal photos, videos, music",
+            "Thumbnail + filename listing",
+            "Reload menu to rescan USB"
+          ]
+        },
+        {
+          "icon": "🔍",
+          "title": "RAW Image Viewer",
+          "bullets": [
+            "Zoom in/out, fit height/width",
+            "Rotate 90 degrees",
+            "Toggle metadata, scroll with D-pad",
+            "RAW formats: NEF, CR2, CR3, ARW, DNG, RAF, ORF, RW2, PEF, SRW, NRW"
+          ]
+        },
+        {
+          "icon": "▶️",
+          "title": "Video & Audio Playback",
+          "bullets": [
+            "Resume/start-over dialog for videos",
+            "RW/FW 5s, subtitles, progress bar",
+            "Save progress on home list",
+            "Videos: MP4, AVI, MKV, MOV, ... Subs: SRT, VTT, ASS, ..."
+          ]
+        },
+        {
+          "icon": "⏭️",
+          "title": "Slideshow & Controls",
+          "bullets": [
+            "Adjust slide interval up/down",
+            "Pause/play with OK, index display",
+            "Skip failed images",
+            "Audio starts from beginning: MP3, FLAC, ..."
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "📸",
+          "title": "Photographers",
+          "text": "View camera RAW files directly from USB."
+        },
+        {
+          "icon": "🎥",
+          "title": "Video Enthusiasts",
+          "text": "USB movies with subs and resume on TV."
+        },
+        {
+          "icon": "🎵",
+          "title": "Music Fans",
+          "text": "Local USB audio playback."
+        },
+        {
+          "icon": "📺",
+          "title": "TV Media Users",
+          "text": "Local USB content without cloud."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Supported RAW formats?",
+          "a": "NEF, CR2, CR3, ARW, DNG, RAF, ORF, RW2, PEF, SRW, NRW."
+        },
+        {
+          "q": "How to play USB media?",
+          "a": "Plug USB, auto-scan lists files, OK to play/view."
+        },
+        {
+          "q": "Video progress saved?",
+          "a": "Yes, resume dialog and home progress indicator."
+        }
+      ]
+    }
+  },
+  "media": {
+    "screenshots": [
+      {
+        "src": "images/screenshots/ss01.jpg",
+        "alt": "RAW View Screenshot - Main Home Interface"
+      },
+      {
+        "src": "images/screenshots/ss02.jpg",
+        "alt": "RAW View Screenshot - Reload Files Menu"
+      },
+      {
+        "src": "images/screenshots/ss03.jpg",
+        "alt": "RAW View Screenshot - Image Viewer Options"
+      },
+      {
+        "src": "images/screenshots/ss04.jpg",
+        "alt": "RAW View Screenshot - Zoom and Rotate"
+      },
+      {
+        "src": "images/screenshots/ss05.jpg",
+        "alt": "RAW View Screenshot - Metadata Toggle"
+      },
+      {
+        "src": "images/screenshots/ss06.jpg",
+        "alt": "RAW View Screenshot - Slideshow Controls"
+      },
+      {
+        "src": "images/screenshots/ss07.jpg",
+        "alt": "RAW View Screenshot - Video Player Interface"
+      },
+      {
+        "src": "images/screenshots/ss08.jpg",
+        "alt": "RAW View Screenshot - Subtitle Selection"
+      },
+      {
+        "src": "images/screenshots/ss09.jpg",
+        "alt": "RAW View Screenshot - Audio Player"
+      },
+      {
+        "src": "images/screenshots/ss10.jpg",
+        "alt": "RAW View Screenshot - Settings Interface"
+      },
+      {
+        "src": "images/screenshots/ss11.jpg",
+        "alt": "RAW View Screenshot - Subscription Page"
+      },
+      {
+        "src": "images/screenshots/ss12.jpg",
+        "alt": "RAW View Screenshot - Help FAQ Page"
+      },
+      {
+        "src": "images/screenshots/ss13.jpg",
+        "alt": "RAW View Screenshot - Support QR Codes"
+      }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See RAW View in Action",
+      "youtubeEmbedUrl": "",
+      "iframeTitle": "RAW View Demo"
+    }
+  },
+  "sections": {
+    "howItWorks": {
+      "title": "Super Easy USB Playback",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Plug in USB Drive",
+          "text": "Insert USB into your Android TV."
+        },
+        {
+          "number": "2",
+          "title": "Auto-Scan Files",
+          "text": "App scans and lists photos, videos, music with thumbnails."
+        },
+        {
+          "number": "3",
+          "title": "View & Play",
+          "text": "Press OK on file to open viewer or player."
+        }
+      ]
+    },
+    "features": {
+      "title": "Why Users Love RAW View",
+      "cards": [
+        {
+          "icon": "📺",
+          "title": "Made for TV",
+          "bullets": [
+            "Android TV UI principles",
+            "D-pad navigation optimized"
+          ]
+        },
+        {
+          "icon": "🔒",
+          "title": "Local USB Only",
+          "bullets": [
+            "No cloud or internet needed",
+            "Direct from USB drives"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "Full Management",
+          "bullets": [
+            "Clear thumbnails/progress",
+            "Subscription info",
+            "Help, support QR, privacy"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start Viewing Your USB Media ✨",
+      "text": "Transform your Android TV into a powerful local media station.",
+      "buttons": [
+        {
+          "type": "googlePlay",
+          "label": "Download on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.rawview",
+          "style": "primary"
+        },
+        {
+          "type": "amazon",
+          "label": "Download on Amazon",
+          "url": "",
+          "style": "secondary"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "RAW View",
+      "about": "USB-powered RAW photo viewer, video and audio player for Android TV. Supports pro RAW formats, subtitles, progress resume, and TV-optimized controls."
+    },
+    "social": [
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/rawviewapp"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Download on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.rawview"
+          },
+          {
+            "label": "Download on Amazon",
+            "url": ""
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          {
+            "label": "TV PDF Viewer",
+            "url": "https://deepakpk.com/tvpdfviewer"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2025 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RAW View",
+      "operatingSystem": "Android TV",
+      "applicationCategory": "VideoPlayerApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.rawview",
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      }
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": [
+        "https://www.facebook.com/rawviewapp"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
+    }
+  }
+}

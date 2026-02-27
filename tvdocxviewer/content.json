@@ -31,7 +31,7 @@
   },
 
   "theme": {
-    "primaryGreen": "#824caf",
+    "primaryGreen": "#2b5e9b",
     "darkGreen": "#5d2e7d",
     "lightGreen": "#9a66bb",
     "darkerGreen": "#3e1b5e",
@@ -361,7 +361,7 @@
       {
         "type": "facebook",
         "label": "Facebook",
-        "url": "https://www.facebook.com/tvdocxviewerapp"
+        "url": "https://www.facebook.com/tvdocxviewer"
       }
     ],
     "columns": [
@@ -450,7 +450,7 @@
       "url": "https://deepakpk.com",
       "logo": "images/app_icon.png",
       "sameAs": [
-        "https://www.facebook.com/tvdocxviewerapp"
+        "https://www.facebook.com/tvdocxviewer"
       ],
       "contactPoint": [
         {

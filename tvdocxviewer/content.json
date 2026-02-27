@@ -1,0 +1,464 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "TV DocX Viewer – Personal Photo Screensaver for Android TV",
+    "description": "Turn your Android TV into a beautiful personal photo screensaver. Upload photos wirelessly via web token, Wi-Fi, or FTP and enjoy a relaxing slideshow with a customizable clock overlay.",
+    "keywords": "Android TV screensaver, photo screensaver, TV photo slideshow, Android TV digital frame, wireless photo upload, clock screensaver",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/tvdocxviewer",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/tvdocxviewer",
+      "title": "TV DocX Viewer for Android TV",
+      "description": "Display your favorite memories as a beautiful screensaver on Android TV.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/tvdocxviewer",
+      "title": "TV DocX Viewer for Android TV",
+      "description": "Your personal photos, beautifully displayed as an Android TV screensaver.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+
+  "theme": {
+    "primaryGreen": "#824caf",
+    "darkGreen": "#5d2e7d",
+    "lightGreen": "#9a66bb",
+    "darkerGreen": "#3e1b5e",
+    "black": "#0D0D0D",
+    "darkBg": "#121212",
+    "cardBg": "#1E1E1E",
+    "textWhite": "#FFFFFF",
+    "textGray": "#B0B0B0",
+    "borderGreen": "#693d8b",
+    "boxShadowColor": "#864caf4d",
+    "heroWatermarkOpacity": 0.03,
+    "ctaWatermarkOpacity": 0.05
+  },
+
+  "product": {
+    "name": "TV DocX Viewer",
+    "heroTitle": "TV DocX Viewer - Turn Your TV Into a Living Photo Frame",
+    "heroDescription": "Use your own photos as an Android TV screensaver. Upload images wirelessly and enjoy a smooth slideshow with an optional, customizable clock.",
+    "icon": "images/app_icon.png",
+
+    "storeButtons": [
+      {
+        "type": "googlePlay",
+        "label": "Get it on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvdocxviewer",
+        "style": "primary"
+      },
+      {
+        "type": "amazon",
+        "label": "Available on Amazon",
+        "url": "",
+        "style": "secondary"
+      }
+    ],
+
+    "stats": [
+      {
+        "value": "📥 10K+",
+        "label": "Downloads"
+      },
+      {
+        "value": "📦 1.0.5",
+        "label": "Latest Version"
+      }
+    ],
+
+    "features": {
+      "title": "Features Built for Android TV",
+      "cards": [
+        {
+          "icon": "🖼️",
+          "title": "TV-Optimized Photo Browser",
+          "bullets": [
+            "Thumbnail + filename listing",
+            "Sorted automatically by filename",
+            "Press OK to view photo info and large preview",
+            "Delete photos directly from the info dialog"
+          ]
+        },
+        {
+          "icon": "📤",
+          "title": "Wireless Photo Upload",
+          "bullets": [
+            "Web upload using secure token (no shared network needed)",
+            "Wi-Fi upload for faster local transfers",
+            "FTP upload using anonymous connection",
+            "QR codes for quick and easy connection"
+          ]
+        },
+        {
+          "icon": "⏱️",
+          "title": "Slideshow Controls",
+          "bullets": [
+            "Control how long each photo stays on screen",
+            "Reload photos anytime to rescan uploads folder"
+          ]
+        },
+        {
+          "icon": "🕒",
+          "title": "Custom Clock Overlay",
+          "bullets": [
+            "Show or hide clock",
+            "Multiple positions and font sizes",
+            "12-hour or 24-hour time format",
+            "Optional seconds and blinking colon",
+            "Burn-in protection for OLED displays"
+          ]
+        }
+      ]
+    },
+
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🏠",
+          "title": "Homes & Living Rooms",
+          "text": "Turn your idle TV into a calm, beautiful photo display."
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "Families",
+          "text": "Relive memories whenever your TV goes idle."
+        },
+        {
+          "icon": "🖼️",
+          "title": "Digital Photo Frames",
+          "text": "Use Android TV as a large-screen photo frame."
+        },
+        {
+          "icon": "🏢",
+          "title": "Offices & Waiting Areas",
+          "text": "Display curated images in a clean, distraction-free way."
+        }
+      ]
+    },
+
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I upload photos?",
+          "a": "You can upload photos using web upload with a token, Wi-Fi upload, or FTP upload. QR codes are provided for quick access."
+        },
+        {
+          "q": "Can I show a clock on the screensaver?",
+          "a": "Yes. The clock is fully customizable and includes burn-in protection for OLED TVs."
+        },
+        {
+          "q": "How do I activate it as my screensaver?",
+          "a": "Use the Activate option inside the app to jump directly to Android TV screensaver settings."
+        }
+      ]
+    }
+  },
+
+  "media": {
+    "screenshots": [
+      {
+        "src": "images/screenshots/ss01.jpg",
+        "alt": "TV PDF Viewer Screenshot - Main Home Interface"
+      },
+      {
+        "src": "images/screenshots/ss02.jpg",
+        "alt": "TV PDF Viewer Screenshot - Bookmark Interface"
+      },
+      {
+        "src": "images/screenshots/ss03.jpg",
+        "alt": "TV PDF Viewer Screenshot - Web Import Interface"
+      },
+      {
+        "src": "images/screenshots/ss04.jpg",
+        "alt": "TV PDF Viewer Screenshot - FTP Import Interface"
+      },
+      {
+        "src": "images/screenshots/ss05.jpg",
+        "alt": "TV PDF Viewer Screenshot - PDF Options Interface"
+      },
+      {
+        "src": "images/screenshots/ss06.jpg",
+        "alt": "TV PDF Viewer Screenshot - Night Mode Interface"
+      },
+      {
+        "src": "images/screenshots/ss07.jpg",
+        "alt": "TV PDF Viewer Screenshot - Page Rotate Interface"
+      },
+      {
+        "src": "images/screenshots/ss08.jpg",
+        "alt": "TV PDF Viewer Screenshot - Search PDF Interface"
+      },
+      {
+        "src": "images/screenshots/ss09.jpg",
+        "alt": "TV PDF Viewer Screenshot - Search Result Interface"
+      },
+      {
+        "src": "images/screenshots/ss10.jpg",
+        "alt": "TV PDF Viewer Screenshot - Go To Page Interface"
+      },
+      {
+        "src": "images/screenshots/ss11.jpg",
+        "alt": "TV PDF Viewer Screenshot - In-PDF Bookmarks Listing Interface"
+      },
+      {
+        "src": "images/screenshots/ss12.jpg",
+        "alt": "TV PDF Viewer Screenshot - Settings Interface"
+      },
+      {
+        "src": "images/screenshots/ss13.jpg",
+        "alt": "TV PDF Viewer Screenshot - Empty Home Interface"
+      }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See TV DocX Viewer in Action",
+      "youtubeEmbedUrl": "",
+      "iframeTitle": "TV DocX Viewer Demo"
+    }
+  },
+
+  "sections": {
+    "howItWorks": {
+      "title": "Super Easy Setup",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Install the App",
+          "text": "Download TV DocX Viewer from Google Play."
+        },
+        {
+          "number": "2",
+          "title": "Upload Your Photos",
+          "text": "Use web, Wi-Fi, or FTP upload to send photos wirelessly to your TV."
+        },
+        {
+          "number": "3",
+          "title": "Activate Screensaver",
+          "text": "Set TV DocX Viewer as your Android TV screensaver and enjoy."
+        }
+      ]
+    },
+
+    "features": {
+      "title": "Why Users Love TV DocX Viewer",
+      "cards": [
+        {
+          "icon": "📺",
+          "title": "Made for TV",
+          "bullets": [
+            "Optimized for remote control navigation",
+            "Clean 10-foot UI experience"
+          ]
+        },
+        {
+          "icon": "🔐",
+          "title": "Private & Secure",
+          "bullets": [
+            "Photos stay locally on your TV",
+            "No cloud sync required"
+          ]
+        },
+        {
+          "icon": "🎨",
+          "title": "Minimal & Elegant",
+          "bullets": [
+            "Distraction-free slideshow",
+            "Smooth transitions"
+          ]
+        }
+      ]
+    },
+
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🏠",
+          "title": "Homes & Living Rooms",
+          "text": "Turn your idle TV into a calm, beautiful display of memories."
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "Families",
+          "text": "Relive family moments whenever the TV is idle."
+        },
+        {
+          "icon": "🖼️",
+          "title": "Digital Photo Frames",
+          "text": "Use your Android TV as a large-screen digital photo frame."
+        },
+        {
+          "icon": "🏢",
+          "title": "Offices & Waiting Areas",
+          "text": "Display curated images in a clean, distraction-free way."
+        }
+      ]
+    },
+
+  "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I upload photos to TV DocX Viewer?",
+          "a": "You can upload photos using Web upload with a secure token, Wi-Fi upload when on the same network, or FTP upload. QR codes make connecting quick and easy."
+        },
+        {
+          "q": "Do I need to be on the same Wi-Fi network?",
+          "a": "Not for web upload. The token-based web upload works even if your phone or PC is on a different network."
+        },
+        {
+          "q": "Can I show a clock on the screensaver?",
+          "a": "Yes. You can fully customize the clock including position, size, format, seconds, shadow, and burn-in protection."
+        },
+        {
+          "q": "How do I activate it as my screensaver?",
+          "a": "Use the Activate option inside the app to jump directly to Android TV’s screensaver settings."
+        }
+      ]
+    },
+
+    "cta": {
+      "title": "Bring Your TV to Life ✨",
+      "text": "Turn idle screen time into a beautiful photo experience.",
+      "buttons": [
+        {
+          "type": "googlePlay",
+          "label": "Download on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvdocxviewer",
+          "style": "primary"
+        },
+        {
+          "type": "amazon",
+          "label": "Download on Amazon",
+          "url": "",
+          "style": "secondary"
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "TV DocX Viewer",
+      "about": "A beautifully designed photo screensaver for Android TV. Display your memories with elegance, comfort, and complete control."
+  },
+  "social": [
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/tvdocxviewerapp"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Download on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvdocxviewer"
+          },
+          {
+            "label": "Download on Amazon",
+            "url": ""
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          {
+            "label": "TV PDF Viewer",
+            "url": "https://deepakpk.com/tvpdfviewer"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2025 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TV DocX Viewer",
+      "operatingSystem": "Android TV",
+      "applicationCategory": "LifestyleApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.tvdocxviewer",
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      }
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": [
+        "https://www.facebook.com/tvdocxviewerapp"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
+    }
+  }
+}

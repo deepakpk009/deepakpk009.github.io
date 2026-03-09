@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #2b5e9b;
+  color: #ffffff;
 }
 
 .page-container {
@@ -22,7 +24,7 @@ h1 {
 
 h2 {
   font-size: 20px;
-  color: #666;
+  /* color: #666; */
 }
 
 p {
@@ -33,10 +35,10 @@ p {
 
 .semi-bold {
   font-weight: 600;
-  color: #333;
+  /* color: #333; */
 }
 
 .container img {
-  width: 215px;
-  height: 140px;
+  width: 191px;
+  height: 215px;
 }

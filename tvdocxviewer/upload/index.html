@@ -68,7 +68,7 @@
 <body>
     <div class="container">
         <h1>TV DocX Viewer Uploader</h1>
-        <p>Redirecting to the photo upload page...</p>
+        <p>Redirecting to the document upload page...</p>
         <div class="loader"></div>
         <div class="manual-link" id="manualLink">
             <p>If you are not redirected automatically, please click below:</p>
@@ -94,7 +94,7 @@
             const token = getParameterByName('token');
             
             // Build the redirect URL
-            let redirectUrl = 'https://deepakpk.com/upload?extension=jpg,jpeg,png,gif,bmp,webp';
+            let redirectUrl = 'https://deepakpk.com/upload?extension=docx';
             
             // Add token parameter if present
             if (token) {
@@ -146,7 +146,7 @@
     <noscript>
         <div style="text-align: center; margin-top: 20px;">
             <p>JavaScript is required to redirect automatically.</p>
-            <p>Please <a href="https://deepakpk.com/upload?extension=jpg,jpeg,png,gif,bmp,webp">click here</a> to go to the Photo uploader.</p>
+            <p>Please <a href="https://deepakpk.com/upload?extension=docx">click here</a> to go to the Photo uploader.</p>
         </div>
     </noscript>
 </body>

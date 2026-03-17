@@ -1,16 +1,16 @@
 {
   "meta": {
     "lang": "en",
-    "title": "TV DocX Viewer – Personal Photo Screensaver for Android TV",
-    "description": "Turn your Android TV into a beautiful personal photo screensaver. Upload photos wirelessly via web token, Wi-Fi, or FTP and enjoy a relaxing slideshow with a customizable clock overlay.",
-    "keywords": "Android TV screensaver, photo screensaver, TV photo slideshow, Android TV digital frame, wireless photo upload, clock screensaver",
+    "title": "TV DocX Viewer – Word Document Viewer for Android TV",
+    "description": "Read and manage Word documents on your Android TV with ease. Import DOCX files via USB, web, Wi-Fi, or FTP and enjoy a full-featured viewer with zoom, night mode, bookmarks, and search.",
+    "keywords": "Android TV DOCX viewer, Word document viewer Android TV, DOCX reader TV, Android TV document app, USB DOCX viewer, import Word file Android TV",
     "author": "Deepak PK",
     "canonical": "https://deepakpk.com/tvdocxviewer",
     "og": {
       "type": "website",
       "url": "https://deepakpk.com/tvdocxviewer",
       "title": "TV DocX Viewer for Android TV",
-      "description": "Display your favorite memories as a beautiful screensaver on Android TV.",
+      "description": "Read Word documents on your Android TV. Import DOCX files via USB, web, Wi-Fi, or FTP with a remote-friendly 10-foot UI.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
@@ -18,7 +18,7 @@
       "card": "summary_large_image",
       "url": "https://deepakpk.com/tvdocxviewer",
       "title": "TV DocX Viewer for Android TV",
-      "description": "Your personal photos, beautifully displayed as an Android TV screensaver.",
+      "description": "A full-featured Word document viewer for Android TV. Import, read, and manage DOCX files right on your big screen.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -48,8 +48,8 @@
 
   "product": {
     "name": "TV DocX Viewer",
-    "heroTitle": "TV DocX Viewer - Turn Your TV Into a Living Photo Frame",
-    "heroDescription": "Use your own photos as an Android TV screensaver. Upload images wirelessly and enjoy a smooth slideshow with an optional, customizable clock.",
+    "heroTitle": "TV DocX Viewer – Read Word Documents on Your Android TV",
+    "heroDescription": "Open and read DOCX files right on your big screen. Import documents from USB, web, Wi-Fi, or FTP and enjoy a full-featured viewer built for remote control navigation.",
     "icon": "images/app_icon.png",
 
     "storeButtons": [
@@ -73,7 +73,7 @@
         "label": "Downloads"
       },
       {
-        "value": "📦 1.0.5",
+        "value": "📦 1.0.1",
         "label": "Latest Version"
       }
     ],
@@ -82,42 +82,63 @@
       "title": "Features Built for Android TV",
       "cards": [
         {
-          "icon": "🖼️",
-          "title": "TV-Optimized Photo Browser",
+          "icon": "📂",
+          "title": "USB & File Browser",
           "bullets": [
-            "Thumbnail + filename listing",
-            "Sorted automatically by filename",
-            "Press OK to view photo info and large preview",
-            "Delete photos directly from the info dialog"
+            "Auto-scans USB drives for DOCX files",
+            "Thumbnail + filename listing for easy browsing",
+            "Long-press OK to view file info (name, location, size, date)",
+            "Open or delete files directly from the info dialog"
           ]
         },
         {
           "icon": "📤",
-          "title": "Wireless Photo Upload",
+          "title": "Easy DOCX Import",
           "bullets": [
-            "Web upload using secure token (no shared network needed)",
-            "Wi-Fi upload for faster local transfers",
-            "FTP upload using anonymous connection",
-            "QR codes for quick and easy connection"
+            "Web import using secure token — no shared network needed",
+            "Wi-Fi import for faster transfers on the same network",
+            "FTP import using anonymous connection",
+            "QR codes on web and FTP pages for quick connection"
           ]
         },
         {
-          "icon": "⏱️",
-          "title": "Slideshow Controls",
+          "icon": "📖",
+          "title": "Full-Featured DOCX Viewer",
           "bullets": [
-            "Control how long each photo stays on screen",
-            "Reload photos anytime to rescan uploads folder"
+            "Remembers last viewed page, zoom level, orientation, and night mode",
+            "Zoom in/out with horizontal scroll support when zoomed",
+            "Go to any specific page number instantly",
+            "Search text within the DOCX file",
+            "Night mode toggle for comfortable reading"
           ]
         },
         {
-          "icon": "🕒",
-          "title": "Custom Clock Overlay",
+          "icon": "🔖",
+          "title": "Bookmark Management",
           "bullets": [
-            "Show or hide clock",
-            "Multiple positions and font sizes",
-            "12-hour or 24-hour time format",
-            "Optional seconds and blinking colon",
-            "Burn-in protection for OLED displays"
+            "Bookmark any page while reading",
+            "View all bookmarks across all documents in one place",
+            "Bookmark list shows page thumbnail, page number, and document title",
+            "Long-press to delete bookmarks from the listing page"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "App Settings & Storage",
+          "bullets": [
+            "View screen resolution, storage info, file count, and memory usage",
+            "Clear imported DOCX files, thumbnails, or bookmarks easily",
+            "Reload/rescan USB drive and imports folder anytime"
+          ]
+        },
+        {
+          "icon": "🛠️",
+          "title": "More Built-In Pages",
+          "bullets": [
+            "Help/FAQ page with detailed answers to common questions",
+            "Support & feedback page with QR codes for quick access",
+            "About Us, Privacy Policy, and Terms of Use pages included",
+            "Version info accessible directly from the menu"
           ]
         }
       ]
@@ -127,24 +148,24 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "🏠",
-          "title": "Homes & Living Rooms",
-          "text": "Turn your idle TV into a calm, beautiful photo display."
+          "icon": "🎓",
+          "title": "Students & Learners",
+          "text": "Read study notes, assignments, and documents on a large screen without squinting at a small device."
         },
         {
-          "icon": "👨‍👩‍👧‍👦",
-          "title": "Families",
-          "text": "Relive memories whenever your TV goes idle."
-        },
-        {
-          "icon": "🖼️",
-          "title": "Digital Photo Frames",
-          "text": "Use Android TV as a large-screen photo frame."
+          "icon": "💼",
+          "title": "Professionals",
+          "text": "Review reports, drafts, and work documents comfortably from your couch using just a remote control."
         },
         {
           "icon": "🏢",
-          "title": "Offices & Waiting Areas",
-          "text": "Display curated images in a clean, distraction-free way."
+          "title": "Offices & Meeting Rooms",
+          "text": "Display Word documents on a shared TV screen for presentations or group review sessions."
+        },
+        {
+          "icon": "📚",
+          "title": "Readers & Book Lovers",
+          "text": "Enjoy long-form reading — novels, manuals, or eBooks saved as DOCX — on your big screen TV."
         }
       ]
     },
@@ -153,16 +174,24 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "How do I upload photos?",
-          "a": "You can upload photos using web upload with a token, Wi-Fi upload, or FTP upload. QR codes are provided for quick access."
+          "q": "How do I import DOCX files into the app?",
+          "a": "You can import DOCX files via web upload using a secure token (no shared network needed), Wi-Fi upload when on the same network, or FTP upload. QR codes are provided for quick access."
         },
         {
-          "q": "Can I show a clock on the screensaver?",
-          "a": "Yes. The clock is fully customizable and includes burn-in protection for OLED TVs."
+          "q": "Can the app read files from a USB drive?",
+          "a": "Yes. TV DocX Viewer automatically scans connected USB drives and lists all DOCX files for you to open directly."
         },
         {
-          "q": "How do I activate it as my screensaver?",
-          "a": "Use the Activate option inside the app to jump directly to Android TV screensaver settings."
+          "q": "Does the app remember where I left off?",
+          "a": "Yes. The viewer remembers your last viewed page, zoom level, orientation, and night mode setting for each document."
+        },
+        {
+          "q": "Can I search text inside a document?",
+          "a": "Yes. Use the Search option in the document options menu to find any text within the open DOCX file."
+        },
+        {
+          "q": "Is the app free to use?",
+          "a": "TV DocX Viewer is free to download with core features available. A subscription unlocks premium features for an enhanced reading experience."
         }
       ]
     }
@@ -172,55 +201,55 @@
     "screenshots": [
       {
         "src": "images/screenshots/ss01.jpg",
-        "alt": "TV PDF Viewer Screenshot - Main Home Interface"
+        "alt": "TV DocX Viewer Screenshot - Main Home Interface"
       },
       {
         "src": "images/screenshots/ss02.jpg",
-        "alt": "TV PDF Viewer Screenshot - Bookmark Interface"
+        "alt": "TV DocX Viewer Screenshot - Bookmark Interface"
       },
       {
         "src": "images/screenshots/ss03.jpg",
-        "alt": "TV PDF Viewer Screenshot - Web Import Interface"
+        "alt": "TV DocX Viewer Screenshot - Web Import Interface"
       },
       {
         "src": "images/screenshots/ss04.jpg",
-        "alt": "TV PDF Viewer Screenshot - FTP Import Interface"
+        "alt": "TV DocX Viewer Screenshot - FTP Import Interface"
       },
       {
         "src": "images/screenshots/ss05.jpg",
-        "alt": "TV PDF Viewer Screenshot - PDF Options Interface"
+        "alt": "TV DocX Viewer Screenshot - DOCX Options Interface"
       },
       {
         "src": "images/screenshots/ss06.jpg",
-        "alt": "TV PDF Viewer Screenshot - Night Mode Interface"
+        "alt": "TV DocX Viewer Screenshot - Night Mode Interface"
       },
       {
         "src": "images/screenshots/ss07.jpg",
-        "alt": "TV PDF Viewer Screenshot - Page Rotate Interface"
+        "alt": "TV DocX Viewer Screenshot - Page Navigation Interface"
       },
       {
         "src": "images/screenshots/ss08.jpg",
-        "alt": "TV PDF Viewer Screenshot - Search PDF Interface"
+        "alt": "TV DocX Viewer Screenshot - Search Interface"
       },
       {
         "src": "images/screenshots/ss09.jpg",
-        "alt": "TV PDF Viewer Screenshot - Search Result Interface"
+        "alt": "TV DocX Viewer Screenshot - Search Result Interface"
       },
       {
         "src": "images/screenshots/ss10.jpg",
-        "alt": "TV PDF Viewer Screenshot - Go To Page Interface"
+        "alt": "TV DocX Viewer Screenshot - Go To Page Interface"
       },
       {
         "src": "images/screenshots/ss11.jpg",
-        "alt": "TV PDF Viewer Screenshot - In-PDF Bookmarks Listing Interface"
+        "alt": "TV DocX Viewer Screenshot - In-Document Bookmarks Listing Interface"
       },
       {
         "src": "images/screenshots/ss12.jpg",
-        "alt": "TV PDF Viewer Screenshot - Settings Interface"
+        "alt": "TV DocX Viewer Screenshot - Settings Interface"
       },
       {
         "src": "images/screenshots/ss13.jpg",
-        "alt": "TV PDF Viewer Screenshot - Empty Home Interface"
+        "alt": "TV DocX Viewer Screenshot - Empty Home Interface"
       }
     ],
     "video": {
@@ -238,17 +267,17 @@
         {
           "number": "1",
           "title": "Install the App",
-          "text": "Download TV DocX Viewer from Google Play."
+          "text": "Download TV DocX Viewer from Google Play on your Android TV."
         },
         {
           "number": "2",
-          "title": "Upload Your Photos",
-          "text": "Use web, Wi-Fi, or FTP upload to send photos wirelessly to your TV."
+          "title": "Import Your Documents",
+          "text": "Connect a USB drive or import DOCX files via web, Wi-Fi, or FTP — whichever is most convenient."
         },
         {
           "number": "3",
-          "title": "Activate Screensaver",
-          "text": "Set TV DocX Viewer as your Android TV screensaver and enjoy."
+          "title": "Start Reading",
+          "text": "Select any document from the list and start reading with full zoom, search, and bookmark support."
         }
       ]
     },
@@ -266,18 +295,18 @@
         },
         {
           "icon": "🔐",
-          "title": "Private & Secure",
+          "title": "Private & Offline",
           "bullets": [
-            "Photos stay locally on your TV",
-            "No cloud sync required"
+            "Documents stay locally on your TV",
+            "No cloud sync or internet required to read"
           ]
         },
         {
-          "icon": "🎨",
-          "title": "Minimal & Elegant",
+          "icon": "🎯",
+          "title": "Powerful Reader",
           "bullets": [
-            "Distraction-free slideshow",
-            "Smooth transitions"
+            "Search, zoom, bookmarks, night mode",
+            "Picks up right where you left off"
           ]
         }
       ]
@@ -287,53 +316,57 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "🏠",
-          "title": "Homes & Living Rooms",
-          "text": "Turn your idle TV into a calm, beautiful display of memories."
+          "icon": "🎓",
+          "title": "Students & Learners",
+          "text": "Read study materials and documents on a large screen without straining your eyes."
         },
         {
-          "icon": "👨‍👩‍👧‍👦",
-          "title": "Families",
-          "text": "Relive family moments whenever the TV is idle."
-        },
-        {
-          "icon": "🖼️",
-          "title": "Digital Photo Frames",
-          "text": "Use your Android TV as a large-screen digital photo frame."
+          "icon": "💼",
+          "title": "Professionals",
+          "text": "Review work documents and reports comfortably from your couch."
         },
         {
           "icon": "🏢",
-          "title": "Offices & Waiting Areas",
-          "text": "Display curated images in a clean, distraction-free way."
+          "title": "Offices & Meeting Rooms",
+          "text": "Display Word documents on a shared TV for group review or presentations."
+        },
+        {
+          "icon": "📚",
+          "title": "Readers & Book Lovers",
+          "text": "Enjoy long-form DOCX content on your big screen with full reading controls."
         }
       ]
     },
 
-  "faq": {
+    "faq": {
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "How do I upload photos to TV DocX Viewer?",
-          "a": "You can upload photos using Web upload with a secure token, Wi-Fi upload when on the same network, or FTP upload. QR codes make connecting quick and easy."
+          "q": "How do I import DOCX files into TV DocX Viewer?",
+          "a": "You can import files using web upload with a secure token, Wi-Fi upload when on the same network, or FTP upload. QR codes make connecting quick and easy."
         },
         {
-          "q": "Do I need to be on the same Wi-Fi network?",
-          "a": "Not for web upload. The token-based web upload works even if your phone or PC is on a different network."
+          "q": "Can I read files from a USB drive?",
+          "a": "Yes. The app automatically scans connected USB drives and lists all DOCX files for direct access."
         },
         {
-          "q": "Can I show a clock on the screensaver?",
-          "a": "Yes. You can fully customize the clock including position, size, format, seconds, shadow, and burn-in protection."
+          "q": "Does it remember my reading position?",
+          "a": "Yes. TV DocX Viewer remembers your last viewed page, zoom level, orientation, and night mode setting per document."
         },
         {
-          "q": "How do I activate it as my screensaver?",
-          "a": "Use the Activate option inside the app to jump directly to Android TV’s screensaver settings."
+          "q": "Do I need an internet connection to read documents?",
+          "a": "No. Once your documents are imported or accessed from USB, you can read them fully offline."
+        },
+        {
+          "q": "Is TV DocX Viewer free?",
+          "a": "The app is free to download. A subscription is available to unlock premium reading features."
         }
       ]
     },
 
     "cta": {
-      "title": "Bring Your TV to Life ✨",
-      "text": "Turn idle screen time into a beautiful photo experience.",
+      "title": "Read Any Word Document on Your TV 📄",
+      "text": "Import your DOCX files and start reading on the big screen today.",
       "buttons": [
         {
           "type": "googlePlay",
@@ -355,9 +388,9 @@
     "brand": {
       "logo": "images/app_icon.png",
       "name": "TV DocX Viewer",
-      "about": "A beautifully designed photo screensaver for Android TV. Display your memories with elegance, comfort, and complete control."
-  },
-  "social": [
+      "about": "A powerful Word document viewer for Android TV. Import DOCX files from USB, web, Wi-Fi, or FTP and read them on your big screen with full remote control support."
+    },
+    "social": [
       {
         "type": "facebook",
         "label": "Facebook",
@@ -426,7 +459,7 @@
       "@type": "SoftwareApplication",
       "name": "TV DocX Viewer",
       "operatingSystem": "Android TV",
-      "applicationCategory": "LifestyleApplication",
+      "applicationCategory": "ProductivityApplication",
       "offers": {
         "@type": "Offer",
         "price": "0",

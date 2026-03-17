@@ -31,17 +31,17 @@
   },
 
   "theme": {
-    "primaryGreen": "#2b5e9b",
-    "darkGreen": "#5d2e7d",
-    "lightGreen": "#9a66bb",
-    "darkerGreen": "#3e1b5e",
+    "primaryGreen": "#2c5e9b",
+    "darkGreen": "#1c3d64",
+    "lightGreen": "#3f88e0",
+    "darkerGreen": "#132a45",
     "black": "#0D0D0D",
     "darkBg": "#121212",
     "cardBg": "#1E1E1E",
     "textWhite": "#FFFFFF",
     "textGray": "#B0B0B0",
-    "borderGreen": "#693d8b",
-    "boxShadowColor": "#864caf4d",
+    "borderGreen": "#254f83",
+    "boxShadowColor": "#2c5e9b4d",
     "heroWatermarkOpacity": 0.03,
     "ctaWatermarkOpacity": 0.05
   },

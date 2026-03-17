@@ -205,51 +205,51 @@
       },
       {
         "src": "images/screenshots/ss02.jpg",
-        "alt": "TV DocX Viewer Screenshot - Bookmark Interface"
+        "alt": "TV DocX Viewer Screenshot - Viewer interface"
       },
       {
         "src": "images/screenshots/ss03.jpg",
-        "alt": "TV DocX Viewer Screenshot - Web Import Interface"
+        "alt": "TV DocX Viewer Screenshot - viewer options"
       },
       {
         "src": "images/screenshots/ss04.jpg",
-        "alt": "TV DocX Viewer Screenshot - FTP Import Interface"
+        "alt": "TV DocX Viewer Screenshot - viewer bookmark listing"
       },
       {
         "src": "images/screenshots/ss05.jpg",
-        "alt": "TV DocX Viewer Screenshot - DOCX Options Interface"
+        "alt": "TV DocX Viewer Screenshot - goto page popup"
       },
       {
         "src": "images/screenshots/ss06.jpg",
-        "alt": "TV DocX Viewer Screenshot - Night Mode Interface"
+        "alt": "TV DocX Viewer Screenshot - search input"
       },
       {
         "src": "images/screenshots/ss07.jpg",
-        "alt": "TV DocX Viewer Screenshot - Page Navigation Interface"
+        "alt": "TV DocX Viewer Screenshot - search result listing"
       },
       {
         "src": "images/screenshots/ss08.jpg",
-        "alt": "TV DocX Viewer Screenshot - Search Interface"
+        "alt": "TV DocX Viewer Screenshot - night mode"
       },
       {
         "src": "images/screenshots/ss09.jpg",
-        "alt": "TV DocX Viewer Screenshot - Search Result Interface"
+        "alt": "TV DocX Viewer Screenshot - web import"
       },
       {
         "src": "images/screenshots/ss10.jpg",
-        "alt": "TV DocX Viewer Screenshot - Go To Page Interface"
+        "alt": "TV DocX Viewer Screenshot - wifi import"
       },
       {
         "src": "images/screenshots/ss11.jpg",
-        "alt": "TV DocX Viewer Screenshot - In-Document Bookmarks Listing Interface"
+        "alt": "TV DocX Viewer Screenshot - ftp import"
       },
       {
         "src": "images/screenshots/ss12.jpg",
-        "alt": "TV DocX Viewer Screenshot - Settings Interface"
+        "alt": "TV DocX Viewer Screenshot - bookmarks page"
       },
       {
         "src": "images/screenshots/ss13.jpg",
-        "alt": "TV DocX Viewer Screenshot - Empty Home Interface"
+        "alt": "TV DocX Viewer Screenshot - delete bookmark popup"
       }
     ],
     "video": {

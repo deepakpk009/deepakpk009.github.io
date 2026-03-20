@@ -62,7 +62,7 @@
       {
         "type": "amazon",
         "label": "Available on Amazon",
-        "url": "",
+        "url": "https://www.amazon.com/dp/B0GSXCH2SS/",
         "style": "secondary"
       }
     ],
@@ -377,7 +377,7 @@
         {
           "type": "amazon",
           "label": "Download on Amazon",
-          "url": "",
+          "url": "https://www.amazon.com/dp/B0GSXCH2SS/",
           "style": "secondary"
         }
       ]
@@ -407,7 +407,7 @@
           },
           {
             "label": "Download on Amazon",
-            "url": ""
+            "url": "https://www.amazon.com/dp/B0GSXCH2SS/"
           },
           {
             "label": "Terms & Conditions",

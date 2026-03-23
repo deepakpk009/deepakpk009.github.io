@@ -1,12 +1,26 @@
 #!/bin/bash
 
+# Usage
+# Save as check_umami.sh in your project root
+
+# Make it executable:
+
+# bash
+# chmod +x check_umami.sh
+# Run it:
+
+# bash
+# ./check_umami.sh
+# ./code_analysis_tools/check_umami.sh
+
 # ─── Configuration ───────────────────────────────────────────
 # Add or remove file extensions as needed
 # FILE_TYPES=("*.html" "*.php" "*.js" "*.ts" "*.jsx" "*.tsx")
 FILE_TYPES=("*.html")
 
 TARGET_STRING="umami.is"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
 
 # ─── Colors for output ───────────────────────────────────────
 RED='\033[0;31m'

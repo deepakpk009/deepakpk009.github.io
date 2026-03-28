@@ -53,6 +53,12 @@
             "description": "Fully customizable photo screensaver with clock",
             "thumbnail": "https://deepakpk.com/photodream/images/app_icon.png",
             "url": "https://deepakpk.com/photodream/"
+        },
+        {
+            "title": "TV DocX Viewer",
+            "description": "Read Word Documents on Your Android TV",
+            "thumbnail": "https://deepakpk.com/tvdocxviewer/images/app_icon.png",
+            "url": "https://deepakpk.com/tvdocxviewer/"
         }
     ]
 }

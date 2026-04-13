@@ -4,6 +4,9 @@ Freelance Android TV and Roku Developer specializing in OTT apps, document viewe
 
 Website: https://deepakpk.com
 
+Email:
+deepakpk009@yahoo.in
+
 ## Developer Expertise
 
 ### Platforms
@@ -97,6 +100,9 @@ Streaming app developer
 
 # Contact
 
+Email:
+deepakpk009@yahoo.in
+
 Website:
 https://deepakpk.com
 
@@ -105,3 +111,10 @@ https://deepakpk.com/apps
 
 Developer:
 Deepak PK
+
+Available for freelance projects related to:
+Android TV apps
+Roku channels
+OTT apps
+document viewer apps
+media players

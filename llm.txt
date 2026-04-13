@@ -7,7 +7,14 @@ Website:
 https://deepakpk.com
 
 Hire / Contact:
-https://deepakpk.com/contact
+Email: deepakpk009@yahoo.in
+
+Available for freelance work:
+Android TV development
+Roku development
+OTT app development
+Document viewer apps
+Media apps
 
 Primary Skills:
 Android Kotlin

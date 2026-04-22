@@ -1,0 +1,154 @@
+[
+  {
+    "title": "What is PDF Viewer?",
+    "content": "PDF Viewer is an Android Mobile/Tablets app designed to help users open and read PDF files on their television using a Mobile/Tablets-friendly interface and remote navigation."
+  },
+  {
+    "title": "What file type does this app support?",
+    "content": "The app is designed for viewing PDF files. It scans connected USB drives and imported storage locations to find available PDF documents."
+  },
+  {
+    "title": "How do I open a PDF file?",
+    "content": "From the home screen, navigate to the PDF file you want to view and press the OK button on your Mobile/Tablets remote to open it in the viewer."
+  },
+  {
+    "title": "Does the app automatically detect PDF files on USB drives?",
+    "content": "Yes. The app automatically scans connected USB drives for PDF files and displays them in a list with thumbnails and file names."
+  },
+  {
+    "title": "What information can I see for a PDF file?",
+    "content": "You can long press the OK button on a selected PDF file to view file details such as file name, location, size, and last modified date."
+  },
+  {
+    "title": "Can I delete a PDF file from the app?",
+    "content": "Yes. When you long press the OK button on a focused PDF file, the app shows file options including delete, where supported for that file location."
+  },
+  {
+    "title": "How can I import PDF files into the app?",
+    "content": "The app supports PDF import using Web import, WiFi import, and FTP import, making it easy to transfer files to your Android Mobile/Tablets."
+  },
+  {
+    "title": "How does Web import work?",
+    "content": "Web import uses a token-based connection, so the sending device does not need to be on the same network as the Mobile/Tablets."
+  },
+  {
+    "title": "How does WiFi import work?",
+    "content": "WiFi import is intended for faster file transfer when your sending device and Android Mobile/Tablets are connected to the same network."
+  },
+  {
+    "title": "How does FTP import work?",
+    "content": "FTP import uses an anonymous FTP connection. For this method, the sending device must be connected to the same network as the Mobile/Tablets."
+  },
+  {
+    "title": "Are QR codes available for file import?",
+    "content": "Yes. The Web import and FTP import pages provide QR codes to make connecting from another device faster and easier."
+  },
+  {
+    "title": "Can I reload the file list after adding new documents?",
+    "content": "Yes. The app includes a reload files option to rescan the USB drive and the imports folder for newly added PDF files."
+  },
+  {
+    "title": "Does the app support bookmarks?",
+    "content": "Yes. You can bookmark pages inside a PDF file and later access them from bookmark listings."
+  },
+  {
+    "title": "How do I bookmark a page?",
+    "content": "While viewing a PDF file, press OK to open the viewer options menu and choose the bookmark option to toggle a bookmark for the current page."
+  },
+  {
+    "title": "Can I view bookmarks from all documents in one place?",
+    "content": "Yes. The app includes a bookmark page where you can view bookmarks collected across multiple PDF files."
+  },
+  {
+    "title": "What details are shown in the bookmark list?",
+    "content": "Each bookmark item can display the bookmarked page thumbnail, page number, and the title of the PDF file."
+  },
+  {
+    "title": "Can I delete a bookmark?",
+    "content": "Yes. You can long press a bookmark item in the bookmarks listing page to delete that bookmark."
+  },
+  {
+    "title": "Does the app remember my previous reading position?",
+    "content": "Yes. The viewer can reopen a PDF file using the last used page number and previous viewing preferences such as zoom, orientation, and night mode."
+  },
+  {
+    "title": "What viewer options are available while reading a PDF file?",
+    "content": "The viewer options include zoom in, zoom out, bookmark, reset zoom, go to page, bookmarks list, search, night mode, and close."
+  },
+  {
+    "title": "Can I search text inside a PDF file?",
+    "content": "Yes. The viewer includes a search option that helps you find text within the currently opened PDF document."
+  },
+  {
+    "title": "Can I jump to a specific page?",
+    "content": "Yes. The go to page option in the viewer allows you to move directly to a specific page number."
+  },
+  {
+    "title": "How does zoom work in the PDF Viewer?",
+    "content": "You can zoom in and zoom out from the viewer options. When the page is zoomed in, the left and right remote keys can be used for horizontal scrolling."
+  },
+  {
+    "title": "What happens when the page is zoomed out or fit to height?",
+    "content": "When the page is zoomed out, or when it is effectively in a fit-to-height reading state, the left and right remote keys can be used to change pages."
+  },
+  {
+    "title": "Can I reset the zoom level?",
+    "content": "Yes. The viewer includes a reset zoom option to quickly return the page to its default zoom state."
+  },
+  {
+    "title": "Does the app support night mode?",
+    "content": "Yes. The viewer includes a night mode option that changes the page display for more comfortable reading in darker environments."
+  },
+  {
+    "title": "How do I close the viewer options menu?",
+    "content": "You can close the PDF options menu by selecting the close option or by pressing the Back button on the Mobile/Tablets remote."
+  },
+  {
+    "title": "Will I be able to see page changes while using viewer options?",
+    "content": "Yes. The viewer options are shown as an overlay on top of the current page, so you can see live changes while adjusting settings like zoom and night mode."
+  },
+  {
+    "title": "What can I see in the settings page?",
+    "content": "The settings page shows device screen resolution, screen ratio, available storage, total PDF file count, memory used by PDF files, bookmark count, thumbnail count, and thumbnail storage size."
+  },
+  {
+    "title": "Can I clear imported PDF files from the app?",
+    "content": "Yes. The settings page includes an option to clear all PDF files in the imports folder. PDF files on USB drives are not deleted by this action."
+  },
+  {
+    "title": "Can I clear thumbnails and bookmarks?",
+    "content": "Yes. The settings page includes options to clear saved thumbnails and bookmarks."
+  },
+  {
+    "title": "Does the app have a subscription page?",
+    "content": "Yes. The app includes a subscribe page where users can make a subscription."
+  },
+  {
+    "title": "How can I manage my subscription?",
+    "content": "The app includes a manage subscription page that provides information about subscription management."
+  },
+  {
+    "title": "Is there a help or FAQ page in the app?",
+    "content": "Yes. The app includes a help and FAQ page for common questions and detailed answers."
+  },
+  {
+    "title": "Does the app include support and feedback options?",
+    "content": "Yes. The support and feedback page includes QR codes that link to the support Facebook page and a feedback form."
+  },
+  {
+    "title": "Can I check the app version?",
+    "content": "Yes. The app includes a version info menu item so users can easily see the current app version number."
+  },
+  {
+    "title": "Is there an About Us page?",
+    "content": "Yes. The app includes an About Us page with developer details."
+  },
+  {
+    "title": "Does the app include privacy policy and terms pages?",
+    "content": "Yes. The app includes separate pages for the privacy policy and terms of use."
+  },
+  {
+    "title": "Is the interface designed for Android Mobile/Tablets?",
+    "content": "Yes. The app UI is developed based on Android Mobile/Tablets design principles to make navigation easy with a Mobile/Tablets remote."
+  }
+]

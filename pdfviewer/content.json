@@ -1,0 +1,497 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "PDF Viewer – Word Document Viewer for Android Mobile/Tablets",
+    "description": "Read and manage Word documents on your Android Mobile/Tablets with ease. Import PDF files via USB, web, Wi-Fi, or FTP and enjoy a full-featured viewer with zoom, night mode, bookmarks, and search.",
+    "keywords": "Android PDF Viewer, Word document viewer Android Mobile/Tablets, PDF reader Mobile/Tablets, Android Mobile/Tablets document app, USB PDF Viewer, import Word file Android Mobile/Tablets",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/pdfviewer",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/pdfviewer",
+      "title": "PDF Viewer for Android Mobile/Tablets",
+      "description": "Read Word documents on your Android Mobile/Tablets. Import PDF files via USB, web, Wi-Fi, or FTP with a remote-friendly 10-foot UI.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/pdfviewer",
+      "title": "PDF Viewer for Android Mobile/Tablets",
+      "description": "A full-featured Word document viewer for Android Mobile/Tablets. Import, read, and manage PDF files right on your big screen.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+
+  "theme": {
+    "primaryGreen": "#2c5e9b",
+    "darkGreen": "#1c3d64",
+    "lightGreen": "#3f88e0",
+    "darkerGreen": "#132a45",
+    "black": "#0D0D0D",
+    "darkBg": "#121212",
+    "cardBg": "#1E1E1E",
+    "textWhite": "#FFFFFF",
+    "textGray": "#B0B0B0",
+    "borderGreen": "#254f83",
+    "boxShadowColor": "#2c5e9b4d",
+    "heroWatermarkOpacity": 0.03,
+    "ctaWatermarkOpacity": 0.05
+  },
+
+  "product": {
+    "name": "PDF Viewer",
+    "heroTitle": "PDF Viewer – Read Word Documents on Your Android Mobile/Tablets",
+    "heroDescription": "Open and read PDF files right on your big screen. Import documents from USB, web, Wi-Fi, or FTP and enjoy a full-featured viewer built for remote control navigation.",
+    "icon": "images/app_icon.png",
+
+    "storeButtons": [
+      {
+        "type": "googlePlay",
+        "label": "Get it on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer",
+        "style": "primary"
+      },
+      {
+        "type": "amazon",
+        "label": "Available on Amazon",
+        "url": "https://www.amazon.com/dp/B0GSXCH2SS/",
+        "style": "secondary"
+      }
+    ],
+
+    "stats": [
+      {
+        "value": "📥 10K+",
+        "label": "Downloads"
+      },
+      {
+        "value": "📦 1.0.1",
+        "label": "Latest Version"
+      }
+    ],
+
+    "features": {
+      "title": "Features Built for Android Mobile/Tablets",
+      "cards": [
+        {
+          "icon": "📂",
+          "title": "USB & File Browser",
+          "bullets": [
+            "Auto-scans USB drives for PDF files",
+            "Thumbnail + filename listing for easy browsing",
+            "Long-press OK to view file info (name, location, size, date)",
+            "Open or delete files directly from the info dialog"
+          ]
+        },
+        {
+          "icon": "📤",
+          "title": "Easy PDF Import",
+          "bullets": [
+            "Web import using secure token — no shared network needed",
+            "Wi-Fi import for faster transfers on the same network",
+            "FTP import using anonymous connection",
+            "QR codes on web and FTP pages for quick connection"
+          ]
+        },
+        {
+          "icon": "📖",
+          "title": "Full-Featured PDF Viewer",
+          "bullets": [
+            "Remembers last viewed page, zoom level, orientation, and night mode",
+            "Zoom in/out with horizontal scroll support when zoomed",
+            "Go to any specific page number instantly",
+            "Search text within the PDF file",
+            "Night mode toggle for comfortable reading"
+          ]
+        },
+        {
+          "icon": "🔖",
+          "title": "Bookmark Management",
+          "bullets": [
+            "Bookmark any page while reading",
+            "View all bookmarks across all documents in one place",
+            "Bookmark list shows page thumbnail, page number, and document title",
+            "Long-press to delete bookmarks from the listing page"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "App Settings & Storage",
+          "bullets": [
+            "View screen resolution, storage info, file count, and memory usage",
+            "Clear imported PDF files, thumbnails, or bookmarks easily",
+            "Reload/rescan USB drive and imports folder anytime"
+          ]
+        },
+        {
+          "icon": "🛠️",
+          "title": "More Built-In Pages",
+          "bullets": [
+            "Help/FAQ page with detailed answers to common questions",
+            "Support & feedback page with QR codes for quick access",
+            "About Us, Privacy Policy, and Terms of Use pages included",
+            "Version info accessible directly from the menu"
+          ]
+        }
+      ]
+    },
+
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🎓",
+          "title": "Students & Learners",
+          "text": "Read study notes, assignments, and documents on a large screen without squinting at a small device."
+        },
+        {
+          "icon": "💼",
+          "title": "Professionals",
+          "text": "Review reports, drafts, and work documents comfortably from your couch using just a remote control."
+        },
+        {
+          "icon": "🏢",
+          "title": "Offices & Meeting Rooms",
+          "text": "Display Word documents on a shared Mobile/Tablets screen for presentations or group review sessions."
+        },
+        {
+          "icon": "📚",
+          "title": "Readers & Book Lovers",
+          "text": "Enjoy long-form reading — novels, manuals, or eBooks saved as PDF — on your big screen Mobile/Tablets."
+        }
+      ]
+    },
+
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I import PDF files into the app?",
+          "a": "You can import PDF files via web upload using a secure token (no shared network needed), Wi-Fi upload when on the same network, or FTP upload. QR codes are provided for quick access."
+        },
+        {
+          "q": "Can the app read files from a USB drive?",
+          "a": "Yes. PDF Viewer automatically scans connected USB drives and lists all PDF files for you to open directly."
+        },
+        {
+          "q": "Does the app remember where I left off?",
+          "a": "Yes. The viewer remembers your last viewed page, zoom level, orientation, and night mode setting for each document."
+        },
+        {
+          "q": "Can I search text inside a document?",
+          "a": "Yes. Use the Search option in the document options menu to find any text within the open PDF file."
+        },
+        {
+          "q": "Is the app free to use?",
+          "a": "PDF Viewer is free to download with core features available. A subscription unlocks premium features for an enhanced reading experience."
+        }
+      ]
+    }
+  },
+
+  "media": {
+    "screenshots": [
+      {
+        "src": "images/screenshots/ss01.jpg",
+        "alt": "PDF Viewer Screenshot - Main Home Interface"
+      },
+      {
+        "src": "images/screenshots/ss02.jpg",
+        "alt": "PDF Viewer Screenshot - Viewer interface"
+      },
+      {
+        "src": "images/screenshots/ss03.jpg",
+        "alt": "PDF Viewer Screenshot - viewer options"
+      },
+      {
+        "src": "images/screenshots/ss04.jpg",
+        "alt": "PDF Viewer Screenshot - viewer bookmark listing"
+      },
+      {
+        "src": "images/screenshots/ss05.jpg",
+        "alt": "PDF Viewer Screenshot - goto page popup"
+      },
+      {
+        "src": "images/screenshots/ss06.jpg",
+        "alt": "PDF Viewer Screenshot - search input"
+      },
+      {
+        "src": "images/screenshots/ss07.jpg",
+        "alt": "PDF Viewer Screenshot - search result listing"
+      },
+      {
+        "src": "images/screenshots/ss08.jpg",
+        "alt": "PDF Viewer Screenshot - night mode"
+      },
+      {
+        "src": "images/screenshots/ss09.jpg",
+        "alt": "PDF Viewer Screenshot - web import"
+      },
+      {
+        "src": "images/screenshots/ss10.jpg",
+        "alt": "PDF Viewer Screenshot - wifi import"
+      },
+      {
+        "src": "images/screenshots/ss11.jpg",
+        "alt": "PDF Viewer Screenshot - ftp import"
+      },
+      {
+        "src": "images/screenshots/ss12.jpg",
+        "alt": "PDF Viewer Screenshot - bookmarks page"
+      },
+      {
+        "src": "images/screenshots/ss13.jpg",
+        "alt": "PDF Viewer Screenshot - delete bookmark popup"
+      }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See PDF Viewer in Action",
+      "youtubeEmbedUrl": "",
+      "iframeTitle": "PDF Viewer Demo"
+    }
+  },
+
+  "sections": {
+    "howItWorks": {
+      "title": "Super Easy Setup",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Install the App",
+          "text": "Download PDF Viewer from Google Play on your Android Mobile/Tablets."
+        },
+        {
+          "number": "2",
+          "title": "Import Your Documents",
+          "text": "Connect a USB drive or import PDF files via web, Wi-Fi, or FTP — whichever is most convenient."
+        },
+        {
+          "number": "3",
+          "title": "Start Reading",
+          "text": "Select any document from the list and start reading with full zoom, search, and bookmark support."
+        }
+      ]
+    },
+
+    "features": {
+      "title": "Why Users Love PDF Viewer",
+      "cards": [
+        {
+          "icon": "📺",
+          "title": "Made for Mobile/Tablets",
+          "bullets": [
+            "Optimized for remote control navigation",
+            "Clean 10-foot UI experience"
+          ]
+        },
+        {
+          "icon": "🔐",
+          "title": "Private & Offline",
+          "bullets": [
+            "Documents stay locally on your Mobile/Tablets",
+            "No cloud sync or internet required to read"
+          ]
+        },
+        {
+          "icon": "🎯",
+          "title": "Powerful Reader",
+          "bullets": [
+            "Search, zoom, bookmarks, night mode",
+            "Picks up right where you left off"
+          ]
+        }
+      ]
+    },
+
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🎓",
+          "title": "Students & Learners",
+          "text": "Read study materials and documents on a large screen without straining your eyes."
+        },
+        {
+          "icon": "💼",
+          "title": "Professionals",
+          "text": "Review work documents and reports comfortably from your couch."
+        },
+        {
+          "icon": "🏢",
+          "title": "Offices & Meeting Rooms",
+          "text": "Display Word documents on a shared Mobile/Tablets for group review or presentations."
+        },
+        {
+          "icon": "📚",
+          "title": "Readers & Book Lovers",
+          "text": "Enjoy long-form PDF content on your big screen with full reading controls."
+        }
+      ]
+    },
+
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I import PDF files into PDF Viewer?",
+          "a": "You can import files using web upload with a secure token, Wi-Fi upload when on the same network, or FTP upload. QR codes make connecting quick and easy."
+        },
+        {
+          "q": "Can I read files from a USB drive?",
+          "a": "Yes. The app automatically scans connected USB drives and lists all PDF files for direct access."
+        },
+        {
+          "q": "Does it remember my reading position?",
+          "a": "Yes. PDF Viewer remembers your last viewed page, zoom level, orientation, and night mode setting per document."
+        },
+        {
+          "q": "Do I need an internet connection to read documents?",
+          "a": "No. Once your documents are imported or accessed from USB, you can read them fully offline."
+        },
+        {
+          "q": "Is PDF Viewer free?",
+          "a": "The app is free to download. A subscription is available to unlock premium reading features."
+        }
+      ]
+    },
+
+    "cta": {
+      "title": "Read Any Word Document on Your Mobile/Tablets 📄",
+      "text": "Import your PDF files and start reading on the big screen today.",
+      "buttons": [
+        {
+          "type": "googlePlay",
+          "label": "Download on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer",
+          "style": "primary"
+        },
+        {
+          "type": "amazon",
+          "label": "Download on Amazon",
+          "url": "https://www.amazon.com/dp/B0GSXCH2SS/",
+          "style": "secondary"
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "PDF Viewer",
+      "about": "A powerful Word document viewer for Android Mobile/Tablets. Import PDF files from USB, web, Wi-Fi, or FTP and read them on your big screen with full remote control support."
+    },
+    "social": [
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/pdfviewer"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Download on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer"
+          },
+          {
+            "label": "Download on Amazon",
+            "url": "https://www.amazon.com/dp/B0GSXCH2SS/"
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          {
+            "label": "Mobile/Tablets PDF Viewer",
+            "url": "https://deepakpk.com/Mobile/Tabletspdfviewer"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PDF Viewer",
+      "operatingSystem": "Android Mobile/Tablets",
+      "applicationCategory": "ProductivityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer",
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      }
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": [
+        "https://www.facebook.com/pdfviewer"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
+    }
+  }
+}

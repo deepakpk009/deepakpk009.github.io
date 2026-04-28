@@ -223,56 +223,40 @@
   "media": {
     "screenshots": [
       {
-        "src": "images/screenshots/ss01.jpg",
+        "src": "images/screenshots/ss001.jpg",
         "alt": "PDF Viewer Android app screenshot 1"
       },
       {
-        "src": "images/screenshots/ss02.jpg",
+        "src": "images/screenshots/ss002.jpg",
         "alt": "PDF Viewer Android app screenshot 2"
       },
       {
-        "src": "images/screenshots/ss03.jpg",
+        "src": "images/screenshots/ss003.jpg",
         "alt": "PDF Viewer Android app screenshot 3"
       },
       {
-        "src": "images/screenshots/ss04.jpg",
+        "src": "images/screenshots/ss004.jpg",
         "alt": "PDF Viewer Android app screenshot 4"
       },
       {
-        "src": "images/screenshots/ss05.jpg",
+        "src": "images/screenshots/ss005.jpg",
         "alt": "PDF Viewer Android app screenshot 5"
       },
       {
-        "src": "images/screenshots/ss06.jpg",
+        "src": "images/screenshots/ss006.jpg",
         "alt": "PDF Viewer Android app screenshot 6"
       },
       {
-        "src": "images/screenshots/ss07.jpg",
+        "src": "images/screenshots/ss007.jpg",
         "alt": "PDF Viewer Android app screenshot 7"
       },
       {
-        "src": "images/screenshots/ss08.jpg",
+        "src": "images/screenshots/ss008.jpg",
         "alt": "PDF Viewer Android app screenshot 8"
       },
       {
-        "src": "images/screenshots/ss09.jpg",
+        "src": "images/screenshots/ss009.jpg",
         "alt": "PDF Viewer Android app screenshot 9"
-      },
-      {
-        "src": "images/screenshots/ss10.jpg",
-        "alt": "PDF Viewer Android app screenshot 10"
-      },
-      {
-        "src": "images/screenshots/ss11.jpg",
-        "alt": "PDF Viewer Android app screenshot 11"
-      },
-      {
-        "src": "images/screenshots/ss12.jpg",
-        "alt": "PDF Viewer Android app screenshot 12"
-      },
-      {
-        "src": "images/screenshots/ss13.jpg",
-        "alt": "PDF Viewer Android app screenshot 13"
       }
     ],
     "video": {

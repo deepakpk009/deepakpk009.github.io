@@ -62,7 +62,7 @@
       {
         "type": "amazon",
         "label": "Available on Amazon",
-        "url": "https://www.amazon.com/dp/B0GSXCH2SS/",
+        "url": "https://www.amazon.com/dp/B0GYS11NYF/",
         "style": "secondary"
       }
     ],
@@ -383,7 +383,7 @@
         {
           "type": "amazon",
           "label": "Download on Amazon",
-          "url": "https://www.amazon.com/dp/B0GSXCH2SS/",
+          "url": "https://www.amazon.com/dp/B0GYS11NYF/",
           "style": "secondary"
         }
       ]
@@ -412,7 +412,7 @@
           },
           {
             "label": "Download on Amazon",
-            "url": "https://www.amazon.com/dp/B0GSXCH2SS/"
+            "url": "https://www.amazon.com/dp/B0GYS11NYF/"
           },
           {
             "label": "Terms & Conditions",
@@ -442,8 +442,8 @@
         "title": "More Apps",
         "links": [
           {
-            "label": "Android PDF Viewer",
-            "url": "https://deepakpk.com/pdfviewer"
+            "label": "Android TV PDF Viewer",
+            "url": "https://deepakpk.com/tvpdfviewer"
           },
           {
             "label": "View All Apps",

@@ -1,0 +1,503 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "PDF Viewer – Fast PDF Reader for Android Phones & Tablets",
+    "description": "Fast PDF viewer for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, share, and password-protected PDF support.",
+    "keywords": "PDF Viewer, Android PDF viewer, PDF reader Android, PDF opener, PDF search app, PDF bookmarks, read aloud PDF, OCR PDF reader, PDF viewer for phone, PDF viewer for tablet, night mode PDF, password PDF reader",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/pdfviewer",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/pdfviewer",
+      "title": "PDF Viewer for Android Phones & Tablets",
+      "description": "Open, search, bookmark, listen to, print, and share PDFs on Android phones and tablets with a fast modern PDF reader.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/pdfviewer",
+      "title": "PDF Viewer for Android Phones & Tablets",
+      "description": "Fast Android PDF reader with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, and share.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+  "theme": {
+    "primaryGreen": "#F51F24",
+    "darkGreen": "#B41118",
+    "lightGreen": "#FF5A16",
+    "darkerGreen": "#3A070A",
+    "black": "#0D0D0D",
+    "darkBg": "#14090A",
+    "cardBg": "#211112",
+    "textWhite": "#FFFFFF",
+    "textGray": "#D8C7C7",
+    "borderGreen": "#E22A2A",
+    "boxShadowColor": "#F51F244d",
+    "heroWatermarkOpacity": 0.04,
+    "ctaWatermarkOpacity": 0.06,
+    "accentOrange": "#FC6414",
+    "softRed": "#FF3A35",
+    "paperWhite": "#FFF7F7"
+  },
+  "product": {
+    "name": "PDF Viewer",
+    "heroTitle": "PDF Viewer – Fast PDF Reader for Android Phones & Tablets",
+    "heroDescription": "Open PDF files from your phone, file manager, downloads, email attachments, or shared links. Search, bookmark, zoom, listen with read aloud, use OCR fallback for scanned pages, and continue from where you stopped.",
+    "icon": "images/app_icon.png",
+    "storeButtons": [
+      {
+        "type": "googlePlay",
+        "label": "Get it on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer.mobile",
+        "style": "primary"
+      },
+      {
+        "type": "amazon",
+        "label": "Available on Amazon",
+        "url": "https://www.amazon.com/dp/B0GYS11NYF/",
+        "style": "secondary"
+      }
+    ],
+    "stats": [
+      {
+        "value": "📥 10K+",
+        "label": "Downloads"
+      },
+      {
+        "value": "🔎 Search",
+        "label": "Text Search"
+      },
+      {
+        "value": "🔊 Read Aloud",
+        "label": "OCR Fallback"
+      }
+    ],
+    "features": {
+      "title": "Features Built for Android PDF Reading",
+      "cards": [
+        {
+          "icon": "📂",
+          "title": "Open PDFs Anywhere",
+          "bullets": [
+            "Open PDF files from the app picker",
+            "Open PDFs from file managers and external apps",
+            "Persist read access for SAF document URIs",
+            "Unlock password-protected PDF files"
+          ]
+        },
+        {
+          "icon": "🕘",
+          "title": "Recent Files & Resume",
+          "bullets": [
+            "Recent files library with first-page thumbnails",
+            "Search recent files by name",
+            "Resume reading from the last page",
+            "Restore previous zoom level automatically"
+          ]
+        },
+        {
+          "icon": "📖",
+          "title": "Smooth Reading Controls",
+          "bullets": [
+            "Smooth PDF page rendering with lazy loading",
+            "Nearby-page high-resolution preloading",
+            "Pinch-to-zoom and double-tap zoom",
+            "Go to any page instantly"
+          ]
+        },
+        {
+          "icon": "🔎",
+          "title": "Powerful PDF Search",
+          "bullets": [
+            "Search text inside PDF documents",
+            "View result snippets with highlighted matches",
+            "Navigate quickly between search results",
+            "Find important content faster in long PDFs"
+          ]
+        },
+        {
+          "icon": "🔖",
+          "title": "Bookmarks & Thumbnails",
+          "bullets": [
+            "Bookmark important PDF pages",
+            "View bookmark thumbnails",
+            "Use thumbnail strip navigation",
+            "Remove recent files with confirmation"
+          ]
+        },
+        {
+          "icon": "🔊",
+          "title": "Read Aloud with OCR",
+          "bullets": [
+            "Listen with play, pause, previous, next, and stop controls",
+            "Tap to start reading from a selected word or sentence",
+            "Adjust speech rate, pitch, and voice",
+            "Use OCR fallback for scanned or image-only pages"
+          ]
+        },
+        {
+          "icon": "🌙",
+          "title": "Comfort Reading Tools",
+          "bullets": [
+            "Night mode for low-light reading",
+            "Margin crop for cleaner page viewing",
+            "Header, footer, and page number skipping during read aloud",
+            "Simple multi-column reading order detection"
+          ]
+        },
+        {
+          "icon": "📤",
+          "title": "Share, Print & Subscriptions",
+          "bullets": [
+            "Share PDF files from the app",
+            "Print PDF files when supported by your device",
+            "Free preview experience with subscription unlock",
+            "Offline subscription cache with grace period"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🎓",
+          "title": "Students & Learners",
+          "text": "Read notes, books, assignments, and study material with search, bookmarks, thumbnails, and read aloud support."
+        },
+        {
+          "icon": "💼",
+          "title": "Professionals",
+          "text": "Review reports, invoices, forms, manuals, and office documents with fast navigation and resume reading."
+        },
+        {
+          "icon": "📚",
+          "title": "Everyday Readers",
+          "text": "Open personal PDFs, eBooks, manuals, and downloaded documents in a clean, comfortable reader."
+        },
+        {
+          "icon": "♿",
+          "title": "Hands-Free Reading",
+          "text": "Use read aloud, voice controls, and OCR fallback to listen to supported PDFs and scanned pages."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I open PDF files in PDF Viewer?",
+          "a": "You can open PDF files from the app picker, file managers, downloads, email attachments, shared links, and other external apps."
+        },
+        {
+          "q": "Does the app remember where I stopped reading?",
+          "a": "Yes. PDF Viewer can restore your recent files, reading progress, last page, and zoom level."
+        },
+        {
+          "q": "Can I search inside PDF files?",
+          "a": "Yes. The app supports in-document text search with result snippets, highlighted matches, and quick result navigation."
+        },
+        {
+          "q": "Does read aloud work with scanned PDFs?",
+          "a": "Read aloud works best with PDFs that contain selectable text. For scanned or image-only pages, OCR fallback helps detect text when supported."
+        },
+        {
+          "q": "Can I open password-protected PDFs?",
+          "a": "Yes. PDF Viewer supports unlocking password-protected PDF files."
+        },
+        {
+          "q": "Is PDF Viewer free?",
+          "a": "PDF Viewer includes a free preview experience. Subscription options are available to unlock full-document viewing and extended reading access."
+        }
+      ]
+    }
+  },
+  "media": {
+    "screenshots": [
+      {
+        "src": "images/screenshots/ss001.jpg",
+        "alt": "PDF Viewer Android app screenshot 1"
+      },
+      {
+        "src": "images/screenshots/ss002.jpg",
+        "alt": "PDF Viewer Android app screenshot 2"
+      },
+      {
+        "src": "images/screenshots/ss003.jpg",
+        "alt": "PDF Viewer Android app screenshot 3"
+      },
+      {
+        "src": "images/screenshots/ss004.jpg",
+        "alt": "PDF Viewer Android app screenshot 4"
+      },
+      {
+        "src": "images/screenshots/ss005.jpg",
+        "alt": "PDF Viewer Android app screenshot 5"
+      },
+      {
+        "src": "images/screenshots/ss006.jpg",
+        "alt": "PDF Viewer Android app screenshot 6"
+      },
+      {
+        "src": "images/screenshots/ss007.jpg",
+        "alt": "PDF Viewer Android app screenshot 7"
+      },
+      {
+        "src": "images/screenshots/ss008.jpg",
+        "alt": "PDF Viewer Android app screenshot 8"
+      },
+      {
+        "src": "images/screenshots/ss009.jpg",
+        "alt": "PDF Viewer Android app screenshot 9"
+      }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See PDF Viewer in Action",
+      "youtubeEmbedUrl": "",
+      "iframeTitle": "PDF Viewer Demo"
+    }
+  },
+  "sections": {
+    "howItWorks": {
+      "title": "Start Reading in Seconds",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Install PDF Viewer",
+          "text": "Download PDF Viewer on your Android phone or tablet."
+        },
+        {
+          "number": "2",
+          "title": "Open a PDF",
+          "text": "Choose a PDF from the app picker, file manager, downloads, email attachments, or shared links."
+        },
+        {
+          "number": "3",
+          "title": "Read, Search, Bookmark, or Listen",
+          "text": "Use zoom, thumbnails, bookmarks, page jump, search, night mode, and read aloud to work with your document."
+        }
+      ]
+    },
+    "features": {
+      "title": "Why Users Love PDF Viewer",
+      "cards": [
+        {
+          "icon": "⚡",
+          "title": "Fast & Modern",
+          "bullets": [
+            "Fast PDF opening and smooth rendering",
+            "Lazy loading with high-resolution nearby-page preloading"
+          ]
+        },
+        {
+          "icon": "🔎",
+          "title": "Find Content Quickly",
+          "bullets": [
+            "Text search with highlighted snippets",
+            "Go to page, thumbnails, and bookmark navigation"
+          ]
+        },
+        {
+          "icon": "🔊",
+          "title": "Listen to PDFs",
+          "bullets": [
+            "Read aloud controls with voice customization",
+            "OCR fallback for scanned or image-only pages"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🎓",
+          "title": "Students & Learners",
+          "text": "Read notes, books, assignments, and study material with search, bookmarks, thumbnails, and read aloud support."
+        },
+        {
+          "icon": "💼",
+          "title": "Professionals",
+          "text": "Review reports, invoices, forms, manuals, and office documents with fast navigation and resume reading."
+        },
+        {
+          "icon": "📚",
+          "title": "Everyday Readers",
+          "text": "Open personal PDFs, eBooks, manuals, and downloaded documents in a clean, comfortable reader."
+        },
+        {
+          "icon": "♿",
+          "title": "Hands-Free Reading",
+          "text": "Use read aloud, voice controls, and OCR fallback to listen to supported PDFs and scanned pages."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I open PDF files in PDF Viewer?",
+          "a": "You can open PDF files from the app picker, file managers, downloads, email attachments, shared links, and other external apps."
+        },
+        {
+          "q": "Does the app remember where I stopped reading?",
+          "a": "Yes. PDF Viewer can restore your recent files, reading progress, last page, and zoom level."
+        },
+        {
+          "q": "Can I search inside PDF files?",
+          "a": "Yes. The app supports in-document text search with result snippets, highlighted matches, and quick result navigation."
+        },
+        {
+          "q": "Does read aloud work with scanned PDFs?",
+          "a": "Read aloud works best with PDFs that contain selectable text. For scanned or image-only pages, OCR fallback helps detect text when supported."
+        },
+        {
+          "q": "Can I open password-protected PDFs?",
+          "a": "Yes. PDF Viewer supports unlocking password-protected PDF files."
+        },
+        {
+          "q": "Is PDF Viewer free?",
+          "a": "PDF Viewer includes a free preview experience. Subscription options are available to unlock full-document viewing and extended reading access."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Open, Search, Listen to, and Manage PDFs 📄",
+      "text": "Download PDF Viewer and start reading documents faster on your Android phone or tablet.",
+      "buttons": [
+        {
+          "type": "googlePlay",
+          "label": "Download on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer.mobile",
+          "style": "primary"
+        },
+        {
+          "type": "amazon",
+          "label": "Download on Amazon",
+          "url": "https://www.amazon.com/dp/B0GYS11NYF/",
+          "style": "secondary"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "PDF Viewer",
+      "about": "A fast, modern PDF reader for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, and share support."
+    },
+    "social": [
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/pdfviewerbydpk"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Download on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer.mobile"
+          },
+          {
+            "label": "Download on Amazon",
+            "url": "https://www.amazon.com/dp/B0GYS11NYF/"
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          {
+            "label": "Android TV PDF Viewer",
+            "url": "https://deepakpk.com/tvpdfviewer"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PDF Viewer",
+      "operatingSystem": "Android",
+      "applicationCategory": "ProductivityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer.mobile",
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      },
+      "description": "Fast PDF viewer for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, share, and password-protected PDF support."
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": [
+        "https://www.facebook.com/pdfviewerbydpk"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
+    }
+  }
+}

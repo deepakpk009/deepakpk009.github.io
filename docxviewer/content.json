@@ -1,24 +1,24 @@
 {
   "meta": {
     "lang": "en",
-    "title": "PDF Viewer – Fast PDF Reader for Android Phones & Tablets",
-    "description": "Fast PDF viewer for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, share, and password-protected PDF support.",
-    "keywords": "PDF Viewer, Android PDF viewer, PDF reader Android, PDF opener, PDF search app, PDF bookmarks, read aloud PDF, OCR PDF reader, PDF viewer for phone, PDF viewer for tablet, night mode PDF, password PDF reader",
+    "title": "Docx Viewer – Fast DOCX Reader for Android Phones & Tablets",
+    "description": "Fast Docx Viewer for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, share, and password-protected DOCX support.",
+    "keywords": "Docx Viewer, Android Docx Viewer, DOCX reader Android, DOCX opener, DOCX search app, DOCX bookmarks, read aloud DOCX, OCR DOCX reader, Docx Viewer for phone, Docx Viewer for tablet, night mode DOCX, password DOCX reader",
     "author": "Deepak PK",
-    "canonical": "https://deepakpk.com/pdfviewer",
+    "canonical": "https://deepakpk.com/docxviewer",
     "og": {
       "type": "website",
-      "url": "https://deepakpk.com/pdfviewer",
-      "title": "PDF Viewer for Android Phones & Tablets",
-      "description": "Open, search, bookmark, listen to, print, and share PDFs on Android phones and tablets with a fast modern PDF reader.",
+      "url": "https://deepakpk.com/docxviewer",
+      "title": "Docx Viewer for Android Phones & Tablets",
+      "description": "Open, search, bookmark, listen to, print, and share DOCXs on Android phones and tablets with a fast modern DOCX reader.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
     "twitter": {
       "card": "summary_large_image",
-      "url": "https://deepakpk.com/pdfviewer",
-      "title": "PDF Viewer for Android Phones & Tablets",
-      "description": "Fast Android PDF reader with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, and share.",
+      "url": "https://deepakpk.com/docxviewer",
+      "title": "Docx Viewer for Android Phones & Tablets",
+      "description": "Fast Android DOCX reader with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, and share.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -48,15 +48,15 @@
     "paperWhite": "#FFF7F7"
   },
   "product": {
-    "name": "PDF Viewer",
-    "heroTitle": "PDF Viewer – Fast PDF Reader for Android Phones & Tablets",
-    "heroDescription": "Open PDF files from your phone, file manager, downloads, email attachments, or shared links. Search, bookmark, zoom, listen with read aloud, use OCR fallback for scanned pages, and continue from where you stopped.",
+    "name": "Docx Viewer",
+    "heroTitle": "Docx Viewer – Fast DOCX Reader for Android Phones & Tablets",
+    "heroDescription": "Open DOCX files from your phone, file manager, downloads, email attachments, or shared links. Search, bookmark, zoom, listen with read aloud, use OCR fallback for scanned pages, and continue from where you stopped.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
         "type": "googlePlay",
         "label": "Get it on Google Play",
-        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer.mobile",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer.mobile",
         "style": "primary"
       },
       {
@@ -81,16 +81,16 @@
       }
     ],
     "features": {
-      "title": "Features Built for Android PDF Reading",
+      "title": "Features Built for Android DOCX Reading",
       "cards": [
         {
           "icon": "📂",
-          "title": "Open PDFs Anywhere",
+          "title": "Open DOCXs Anywhere",
           "bullets": [
-            "Open PDF files from the app picker",
-            "Open PDFs from file managers and external apps",
+            "Open DOCX files from the app picker",
+            "Open DOCXs from file managers and external apps",
             "Persist read access for SAF document URIs",
-            "Unlock password-protected PDF files"
+            "Unlock password-protected DOCX files"
           ]
         },
         {
@@ -107,7 +107,7 @@
           "icon": "📖",
           "title": "Smooth Reading Controls",
           "bullets": [
-            "Smooth PDF page rendering with lazy loading",
+            "Smooth DOCX page rendering with lazy loading",
             "Nearby-page high-resolution preloading",
             "Pinch-to-zoom and double-tap zoom",
             "Go to any page instantly"
@@ -115,19 +115,19 @@
         },
         {
           "icon": "🔎",
-          "title": "Powerful PDF Search",
+          "title": "Powerful DOCX Search",
           "bullets": [
-            "Search text inside PDF documents",
+            "Search text inside DOCX documents",
             "View result snippets with highlighted matches",
             "Navigate quickly between search results",
-            "Find important content faster in long PDFs"
+            "Find important content faster in long DOCXs"
           ]
         },
         {
           "icon": "🔖",
           "title": "Bookmarks & Thumbnails",
           "bullets": [
-            "Bookmark important PDF pages",
+            "Bookmark important DOCX pages",
             "View bookmark thumbnails",
             "Use thumbnail strip navigation",
             "Remove recent files with confirmation"
@@ -157,8 +157,8 @@
           "icon": "📤",
           "title": "Share, Print & Subscriptions",
           "bullets": [
-            "Share PDF files from the app",
-            "Print PDF files when supported by your device",
+            "Share DOCX files from the app",
+            "Print DOCX files when supported by your device",
             "Free preview experience with subscription unlock",
             "Offline subscription cache with grace period"
           ]
@@ -181,12 +181,12 @@
         {
           "icon": "📚",
           "title": "Everyday Readers",
-          "text": "Open personal PDFs, eBooks, manuals, and downloaded documents in a clean, comfortable reader."
+          "text": "Open personal DOCXs, eBooks, manuals, and downloaded documents in a clean, comfortable reader."
         },
         {
           "icon": "♿",
           "title": "Hands-Free Reading",
-          "text": "Use read aloud, voice controls, and OCR fallback to listen to supported PDFs and scanned pages."
+          "text": "Use read aloud, voice controls, and OCR fallback to listen to supported DOCXs and scanned pages."
         }
       ]
     },
@@ -194,28 +194,28 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "How do I open PDF files in PDF Viewer?",
-          "a": "You can open PDF files from the app picker, file managers, downloads, email attachments, shared links, and other external apps."
+          "q": "How do I open DOCX files in Docx Viewer?",
+          "a": "You can open DOCX files from the app picker, file managers, downloads, email attachments, shared links, and other external apps."
         },
         {
           "q": "Does the app remember where I stopped reading?",
-          "a": "Yes. PDF Viewer can restore your recent files, reading progress, last page, and zoom level."
+          "a": "Yes. Docx Viewer can restore your recent files, reading progress, last page, and zoom level."
         },
         {
-          "q": "Can I search inside PDF files?",
+          "q": "Can I search inside DOCX files?",
           "a": "Yes. The app supports in-document text search with result snippets, highlighted matches, and quick result navigation."
         },
         {
-          "q": "Does read aloud work with scanned PDFs?",
-          "a": "Read aloud works best with PDFs that contain selectable text. For scanned or image-only pages, OCR fallback helps detect text when supported."
+          "q": "Does read aloud work with scanned DOCXs?",
+          "a": "Read aloud works best with DOCXs that contain selectable text. For scanned or image-only pages, OCR fallback helps detect text when supported."
         },
         {
-          "q": "Can I open password-protected PDFs?",
-          "a": "Yes. PDF Viewer supports unlocking password-protected PDF files."
+          "q": "Can I open password-protected DOCXs?",
+          "a": "Yes. Docx Viewer supports unlocking password-protected DOCX files."
         },
         {
-          "q": "Is PDF Viewer free?",
-          "a": "PDF Viewer includes a free preview experience. Subscription options are available to unlock full-document viewing and extended reading access."
+          "q": "Is Docx Viewer free?",
+          "a": "Docx Viewer includes a free preview experience. Subscription options are available to unlock full-document viewing and extended reading access."
         }
       ]
     }
@@ -224,46 +224,46 @@
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",
-        "alt": "PDF Viewer Android app screenshot 1"
+        "alt": "Docx Viewer Android app screenshot 1"
       },
       {
         "src": "images/screenshots/ss002.jpg",
-        "alt": "PDF Viewer Android app screenshot 2"
+        "alt": "Docx Viewer Android app screenshot 2"
       },
       {
         "src": "images/screenshots/ss003.jpg",
-        "alt": "PDF Viewer Android app screenshot 3"
+        "alt": "Docx Viewer Android app screenshot 3"
       },
       {
         "src": "images/screenshots/ss004.jpg",
-        "alt": "PDF Viewer Android app screenshot 4"
+        "alt": "Docx Viewer Android app screenshot 4"
       },
       {
         "src": "images/screenshots/ss005.jpg",
-        "alt": "PDF Viewer Android app screenshot 5"
+        "alt": "Docx Viewer Android app screenshot 5"
       },
       {
         "src": "images/screenshots/ss006.jpg",
-        "alt": "PDF Viewer Android app screenshot 6"
+        "alt": "Docx Viewer Android app screenshot 6"
       },
       {
         "src": "images/screenshots/ss007.jpg",
-        "alt": "PDF Viewer Android app screenshot 7"
+        "alt": "Docx Viewer Android app screenshot 7"
       },
       {
         "src": "images/screenshots/ss008.jpg",
-        "alt": "PDF Viewer Android app screenshot 8"
+        "alt": "Docx Viewer Android app screenshot 8"
       },
       {
         "src": "images/screenshots/ss009.jpg",
-        "alt": "PDF Viewer Android app screenshot 9"
+        "alt": "Docx Viewer Android app screenshot 9"
       }
     ],
     "video": {
       "sectionId": "demo",
-      "title": "See PDF Viewer in Action",
+      "title": "See Docx Viewer in Action",
       "youtubeEmbedUrl": "",
-      "iframeTitle": "PDF Viewer Demo"
+      "iframeTitle": "Docx Viewer Demo"
     }
   },
   "sections": {
@@ -272,13 +272,13 @@
       "steps": [
         {
           "number": "1",
-          "title": "Install PDF Viewer",
-          "text": "Download PDF Viewer on your Android phone or tablet."
+          "title": "Install Docx Viewer",
+          "text": "Download Docx Viewer on your Android phone or tablet."
         },
         {
           "number": "2",
-          "title": "Open a PDF",
-          "text": "Choose a PDF from the app picker, file manager, downloads, email attachments, or shared links."
+          "title": "Open a DOCX",
+          "text": "Choose a DOCX from the app picker, file manager, downloads, email attachments, or shared links."
         },
         {
           "number": "3",
@@ -288,13 +288,13 @@
       ]
     },
     "features": {
-      "title": "Why Users Love PDF Viewer",
+      "title": "Why Users Love Docx Viewer",
       "cards": [
         {
           "icon": "⚡",
           "title": "Fast & Modern",
           "bullets": [
-            "Fast PDF opening and smooth rendering",
+            "Fast DOCX opening and smooth rendering",
             "Lazy loading with high-resolution nearby-page preloading"
           ]
         },
@@ -308,7 +308,7 @@
         },
         {
           "icon": "🔊",
-          "title": "Listen to PDFs",
+          "title": "Listen to DOCXs",
           "bullets": [
             "Read aloud controls with voice customization",
             "OCR fallback for scanned or image-only pages"
@@ -332,12 +332,12 @@
         {
           "icon": "📚",
           "title": "Everyday Readers",
-          "text": "Open personal PDFs, eBooks, manuals, and downloaded documents in a clean, comfortable reader."
+          "text": "Open personal DOCXs, eBooks, manuals, and downloaded documents in a clean, comfortable reader."
         },
         {
           "icon": "♿",
           "title": "Hands-Free Reading",
-          "text": "Use read aloud, voice controls, and OCR fallback to listen to supported PDFs and scanned pages."
+          "text": "Use read aloud, voice controls, and OCR fallback to listen to supported DOCXs and scanned pages."
         }
       ]
     },
@@ -345,39 +345,39 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "How do I open PDF files in PDF Viewer?",
-          "a": "You can open PDF files from the app picker, file managers, downloads, email attachments, shared links, and other external apps."
+          "q": "How do I open DOCX files in Docx Viewer?",
+          "a": "You can open DOCX files from the app picker, file managers, downloads, email attachments, shared links, and other external apps."
         },
         {
           "q": "Does the app remember where I stopped reading?",
-          "a": "Yes. PDF Viewer can restore your recent files, reading progress, last page, and zoom level."
+          "a": "Yes. Docx Viewer can restore your recent files, reading progress, last page, and zoom level."
         },
         {
-          "q": "Can I search inside PDF files?",
+          "q": "Can I search inside DOCX files?",
           "a": "Yes. The app supports in-document text search with result snippets, highlighted matches, and quick result navigation."
         },
         {
-          "q": "Does read aloud work with scanned PDFs?",
-          "a": "Read aloud works best with PDFs that contain selectable text. For scanned or image-only pages, OCR fallback helps detect text when supported."
+          "q": "Does read aloud work with scanned DOCXs?",
+          "a": "Read aloud works best with DOCXs that contain selectable text. For scanned or image-only pages, OCR fallback helps detect text when supported."
         },
         {
-          "q": "Can I open password-protected PDFs?",
-          "a": "Yes. PDF Viewer supports unlocking password-protected PDF files."
+          "q": "Can I open password-protected DOCXs?",
+          "a": "Yes. Docx Viewer supports unlocking password-protected DOCX files."
         },
         {
-          "q": "Is PDF Viewer free?",
-          "a": "PDF Viewer includes a free preview experience. Subscription options are available to unlock full-document viewing and extended reading access."
+          "q": "Is Docx Viewer free?",
+          "a": "Docx Viewer includes a free preview experience. Subscription options are available to unlock full-document viewing and extended reading access."
         }
       ]
     },
     "cta": {
-      "title": "Open, Search, Listen to, and Manage PDFs 📄",
-      "text": "Download PDF Viewer and start reading documents faster on your Android phone or tablet.",
+      "title": "Open, Search, Listen to, and Manage DOCXs 📄",
+      "text": "Download Docx Viewer and start reading documents faster on your Android phone or tablet.",
       "buttons": [
         {
           "type": "googlePlay",
           "label": "Download on Google Play",
-          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer.mobile",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer.mobile",
           "style": "primary"
         },
         {
@@ -392,14 +392,14 @@
   "footer": {
     "brand": {
       "logo": "images/app_icon.png",
-      "name": "PDF Viewer",
-      "about": "A fast, modern PDF reader for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, and share support."
+      "name": "Docx Viewer",
+      "about": "A fast, modern DOCX reader for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, and share support."
     },
     "social": [
       {
         "type": "facebook",
         "label": "Facebook",
-        "url": "https://www.facebook.com/pdfviewerbydpk"
+        "url": "https://www.facebook.com/docxviewerbydpk"
       }
     ],
     "columns": [
@@ -408,7 +408,7 @@
         "links": [
           {
             "label": "Download on Google Play",
-            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer.mobile"
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer.mobile"
           },
           {
             "label": "Download on Amazon",
@@ -442,8 +442,8 @@
         "title": "More Apps",
         "links": [
           {
-            "label": "Android TV PDF Viewer",
-            "url": "https://deepakpk.com/tvpdfviewer"
+            "label": "Android TV Docx Viewer",
+            "url": "https://deepakpk.com/tvdocxviewer"
           },
           {
             "label": "View All Apps",
@@ -462,7 +462,7 @@
     "softwareApplication": {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "PDF Viewer",
+      "name": "Docx Viewer",
       "operatingSystem": "Android",
       "applicationCategory": "ProductivityApplication",
       "offers": {
@@ -470,7 +470,7 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.pdfviewer.mobile",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer.mobile",
       "author": {
         "@type": "Person",
         "name": "Deepak PK",
@@ -480,7 +480,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "Fast PDF viewer for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, share, and password-protected PDF support."
+      "description": "Fast Docx Viewer for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, share, and password-protected DOCX support."
     },
     "organization": {
       "@context": "https://schema.org",
@@ -489,7 +489,7 @@
       "url": "https://deepakpk.com",
       "logo": "images/app_icon.png",
       "sameAs": [
-        "https://www.facebook.com/pdfviewerbydpk"
+        "https://www.facebook.com/docxviewerbydpk"
       ],
       "contactPoint": [
         {

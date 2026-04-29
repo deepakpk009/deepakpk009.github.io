@@ -1,27 +1,27 @@
 [
   {
-    "title": "How do I open a PDF file in the app?",
-    "content": "You can open PDF files directly from the app, your file manager, downloads folder, email attachments, or any app that supports file sharing."
+    "title": "How do I open a DOCX file in the app?",
+    "content": "You can open DOCX files directly from the app, your file manager, downloads folder, email attachments, or any app that supports file sharing."
   },
   {
-    "title": "Can I open password-protected PDF files?",
-    "content": "Yes, the app supports opening password-protected PDF files. Simply enter the correct password when prompted."
+    "title": "Can I open password-protected DOCX files?",
+    "content": "Yes, the app supports opening password-protected DOCX files. Simply enter the correct password when prompted."
   },
   {
     "title": "Does the app remember my last reading position?",
     "content": "Yes, the app automatically remembers your last page, zoom level, and reading progress so you can continue where you left off."
   },
   {
-    "title": "Can I search text inside a PDF?",
-    "content": "Yes, you can search for any word or phrase inside a PDF. The app highlights matches and allows quick navigation between results."
+    "title": "Can I search text inside a DOCX?",
+    "content": "Yes, you can search for any word or phrase inside a DOCX. The app highlights matches and allows quick navigation between results."
   },
   {
-    "title": "Does the app support scanned PDFs?",
-    "content": "Yes, scanned or image-based PDFs are supported. OCR is used to detect text for features like read aloud."
+    "title": "Does the app support scanned DOCXs?",
+    "content": "Yes, scanned or image-based DOCXs are supported. OCR is used to detect text for features like read aloud."
   },
   {
     "title": "What is read aloud mode?",
-    "content": "Read aloud mode converts PDF text into speech, allowing you to listen to documents with playback controls like play, pause, next, and previous."
+    "content": "Read aloud mode converts DOCX text into speech, allowing you to listen to documents with playback controls like play, pause, next, and previous."
   },
   {
     "title": "Can I customize the voice in read aloud mode?",
@@ -36,7 +36,7 @@
     "content": "Yes, night mode reduces eye strain by using a dark background for comfortable reading in low-light conditions."
   },
   {
-    "title": "Can I zoom into PDF pages?",
+    "title": "Can I zoom into DOCX pages?",
     "content": "Yes, you can use pinch-to-zoom or double-tap zoom to adjust the zoom level easily."
   },
   {
@@ -48,12 +48,12 @@
     "content": "Yes, you can browse page thumbnails for quick navigation and better overview of the document."
   },
   {
-    "title": "Can I share PDF files from the app?",
-    "content": "Yes, you can easily share PDF files with other apps directly from the viewer."
+    "title": "Can I share DOCX files from the app?",
+    "content": "Yes, you can easily share DOCX files with other apps directly from the viewer."
   },
   {
     "title": "Does the app support printing?",
-    "content": "Yes, you can print PDF files using supported Android printing services."
+    "content": "Yes, you can print DOCX files using supported Android printing services."
   },
   {
     "title": "What is margin crop?",
@@ -72,8 +72,8 @@
     "content": "Yes, you can remove any file from the recent list with a confirmation option."
   },
   {
-    "title": "Does the app support large PDF files?",
-    "content": "Yes, the app uses optimized rendering and lazy loading to handle large PDF files smoothly."
+    "title": "Does the app support large DOCX files?",
+    "content": "Yes, the app uses optimized rendering and lazy loading to handle large DOCX files smoothly."
   },
   {
     "title": "What devices are supported?",
@@ -84,8 +84,8 @@
     "content": "Yes, the app includes a free version with core features. A subscription unlocks full document access and premium features."
   },
   {
-    "title": "Can I open PDFs from external apps?",
-    "content": "Yes, the app supports opening PDFs from file managers, email apps, and other external sources."
+    "title": "Can I open DOCXs from external apps?",
+    "content": "Yes, the app supports opening DOCXs from file managers, email apps, and other external sources."
   },
   {
     "title": "Does the app support multi-column documents?",

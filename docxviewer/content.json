@@ -227,6 +227,7 @@
     }
   },
   "media": {
+    "screenshotOrientation": "portrait",
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",

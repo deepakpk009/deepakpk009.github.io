@@ -133,11 +133,21 @@ body{
 .hero-right{position:relative}
 .screenshots-container{
   position:relative;
-  border-radius:16px;
+  width:100%;
+  margin:0 auto;
+  border-radius:24px;
   overflow:hidden;
   box-shadow:0 20px 60px rgba(0,0,0,.5);
   border:3px solid var(--border-green);
-  aspect-ratio:16/9;
+  background:rgba(7,16,27,.92);
+}
+.screenshots-container.is-portrait{
+  width:min(100%,320px);
+  aspect-ratio:9/20;
+}
+.screenshots-container.is-landscape{
+  width:min(100%,640px);
+  aspect-ratio:16/10;
 }
 .screenshot-slide{
   position:absolute; top:0; left:0;
@@ -146,7 +156,7 @@ body{
   transition:opacity 1s ease-in-out;
 }
 .screenshot-slide.active{opacity:1}
-.screenshot-slide img{width:100%;height:100%;object-fit:cover}
+.screenshot-slide img{width:100%;height:100%;object-fit:contain}
 
 .screenshot-dots{
   position:absolute;
@@ -493,6 +503,8 @@ footer{
   .app-stats{justify-content:space-around}
   .stat-value{font-size:1.5rem}
   .video-section,.features,.how-it-works,.perfect-for,.faq-section,.cta-section{padding:60px 20px}
+  .screenshots-container.is-portrait{width:min(82vw,320px)}
+  .screenshots-container.is-landscape{width:100%}
   .screenshot-nav{width:40px;height:40px;font-size:1.2rem}
 }
 @media (max-width:480px){

@@ -62,7 +62,7 @@
       {
         "type": "googlePlay",
         "label": "Get it on Google Play",
-        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer.mobile",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer",
         "style": "primary"
       },
       {
@@ -396,7 +396,7 @@
         {
           "type": "googlePlay",
           "label": "Download on Google Play",
-          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer.mobile",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer",
           "style": "primary"
         },
         {
@@ -427,7 +427,7 @@
         "links": [
           {
             "label": "Download on Google Play",
-            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer.mobile"
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer"
           },
           {
             "label": "Download on Amazon",
@@ -489,7 +489,7 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer.mobile",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.docxviewer",
       "author": {
         "@type": "Person",
         "name": "Deepak PK",

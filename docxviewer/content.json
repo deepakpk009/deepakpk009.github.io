@@ -30,22 +30,28 @@
     }
   },
   "theme": {
-    "primaryGreen": "#F51F24",
-    "darkGreen": "#B41118",
-    "lightGreen": "#FF5A16",
-    "darkerGreen": "#3A070A",
-    "black": "#0D0D0D",
-    "darkBg": "#14090A",
-    "cardBg": "#211112",
+    "primaryGreen": "#2A7DE1",
+    "darkGreen": "#1E5FBF",
+    "lightGreen": "#4A9CFF",
+    "darkerGreen": "#0F2A4D",
+
+    "black": "#0D1117",
+    "darkBg": "#0B1A2A",
+    "cardBg": "#13263A",
+
     "textWhite": "#FFFFFF",
-    "textGray": "#D8C7C7",
-    "borderGreen": "#E22A2A",
-    "boxShadowColor": "#F51F244d",
+    "textGray": "#C9D6E2",
+
+    "borderGreen": "#3A8DFF",
+    "boxShadowColor": "#2A7DE14d",
+
     "heroWatermarkOpacity": 0.04,
     "ctaWatermarkOpacity": 0.06,
-    "accentOrange": "#FC6414",
-    "softRed": "#FF3A35",
-    "paperWhite": "#FFF7F7"
+
+    "accentOrange": "#3A8DFF",
+    "softRed": "#6BB2FF",
+
+    "paperWhite": "#F4F6F8"
   },
   "product": {
     "name": "Docx Viewer",
@@ -488,9 +494,7 @@
       "name": "Deepak PK",
       "url": "https://deepakpk.com",
       "logo": "images/app_icon.png",
-      "sameAs": [
-        "https://www.facebook.com/docxviewerbydpk"
-      ],
+      "sameAs": ["https://www.facebook.com/docxviewerbydpk"],
       "contactPoint": [
         {
           "@type": "ContactPoint",

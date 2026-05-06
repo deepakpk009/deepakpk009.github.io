@@ -25,6 +25,10 @@ function hasArray(a) {
   return Array.isArray(a) && a.length > 0;
 }
 
+function normalizeScreenshotOrientation(orientation) {
+  return orientation === "landscape" ? "landscape" : "portrait";
+}
+
 function isHttpUrl(u) {
   return typeof u === "string" && (u.startsWith("http://") || u.startsWith("https://"));
 }
@@ -211,6 +215,7 @@ function renderButtons(buttons = []) {
 function buildHeroHtml(data) {
   const p = data.product || {};
   const screenshots = data.media?.screenshots || [];
+  const screenshotOrientation = normalizeScreenshotOrientation(data.media?.screenshotOrientation);
   const hasScreens = hasArray(screenshots);
 
   const hasHero =
@@ -256,7 +261,7 @@ function buildHeroHtml(data) {
           ${
             hasScreens
               ? `<div class="hero-right">
-                  <div class="screenshots-container" id="screenshotsContainer">
+                  <div class="screenshots-container is-${screenshotOrientation}" id="screenshotsContainer">
                     <div id="slidesRoot"></div>
 
                     <button class="screenshot-nav prev" id="prevBtn" aria-label="Previous screenshot">‹</button>

@@ -59,6 +59,18 @@
             "description": "Read Word Documents on Your Android TV",
             "thumbnail": "https://deepakpk.com/tvdocxviewer/images/app_icon.png",
             "url": "https://deepakpk.com/tvdocxviewer/"
+        },
+        {
+            "title": "PDF Viewer",
+            "description": "Fast PDF Reader for Android Phones & Tablets",
+            "thumbnail": "https://deepakpk.com/pdfviewer/images/app_icon.png",
+            "url": "https://deepakpk.com/pdfviewer/"
+        },
+        {
+            "title": "Docx Viewer",
+            "description": "Fast DOCX Reader for Android Phones & Tablets",
+            "thumbnail": "https://deepakpk.com/docxviewer/images/app_icon.png",
+            "url": "https://deepakpk.com/docxviewer/"
         }
     ]
 }

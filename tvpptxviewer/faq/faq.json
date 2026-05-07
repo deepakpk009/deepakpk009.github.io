@@ -1,0 +1,102 @@
+[
+  {
+    "title": "How do I open a PPTX file in the app?",
+    "content": "You can open PPTX files directly from the app, your file manager, downloads folder, email attachments, or any app that supports file sharing."
+  },
+  {
+    "title": "Can I open password-protected PPTX files?",
+    "content": "Yes, the app supports opening password-protected PPTX files. Simply enter the correct password when prompted."
+  },
+  {
+    "title": "Does the app remember my last reading position?",
+    "content": "Yes, the app automatically remembers your last page, zoom level, and reading progress so you can continue where you left off."
+  },
+  {
+    "title": "Can I search text inside a PPTX?",
+    "content": "Yes, you can search for any word or phrase inside a PPTX. The app highlights matches and allows quick navigation between results."
+  },
+  {
+    "title": "Does the app support scanned PPTXs?",
+    "content": "Yes, scanned or image-based PPTXs are supported. OCR is used to detect text for features like read aloud."
+  },
+  {
+    "title": "What is read aloud mode?",
+    "content": "Read aloud mode converts PPTX text into speech, allowing you to listen to documents with playback controls like play, pause, next, and previous."
+  },
+  {
+    "title": "Can I customize the voice in read aloud mode?",
+    "content": "Yes, you can adjust speech rate, pitch, and choose different voices for a personalized listening experience."
+  },
+  {
+    "title": "How do bookmarks work?",
+    "content": "You can bookmark any page and quickly access it later. Bookmarks also show thumbnails for easy identification."
+  },
+  {
+    "title": "Does the app support night mode?",
+    "content": "Yes, night mode reduces eye strain by using a dark background for comfortable reading in low-light conditions."
+  },
+  {
+    "title": "Can I zoom into PPTX pages?",
+    "content": "Yes, you can use pinch-to-zoom or double-tap zoom to adjust the zoom level easily."
+  },
+  {
+    "title": "How do I jump to a specific page?",
+    "content": "Use the 'Go to page' option to instantly navigate to any page number within the document."
+  },
+  {
+    "title": "Does the app show thumbnails of pages?",
+    "content": "Yes, you can browse page thumbnails for quick navigation and better overview of the document."
+  },
+  {
+    "title": "Can I share PPTX files from the app?",
+    "content": "Yes, you can easily share PPTX files with other apps directly from the viewer."
+  },
+  {
+    "title": "Does the app support printing?",
+    "content": "Yes, you can print PPTX files using supported Android printing services."
+  },
+  {
+    "title": "What is margin crop?",
+    "content": "Margin crop removes unnecessary white borders around pages to improve readability and maximize screen space."
+  },
+  {
+    "title": "Does the app work offline?",
+    "content": "Yes, once files are available on your device, you can read them without an internet connection."
+  },
+  {
+    "title": "How does recent files work?",
+    "content": "The app automatically saves recently opened files with thumbnails and allows you to quickly access them anytime."
+  },
+  {
+    "title": "Can I remove files from recent list?",
+    "content": "Yes, you can remove any file from the recent list with a confirmation option."
+  },
+  {
+    "title": "Does the app support large PPTX files?",
+    "content": "Yes, the app uses optimized rendering and lazy loading to handle large PPTX files smoothly."
+  },
+  {
+    "title": "What devices are supported?",
+    "content": "The app supports Android devices running Android 7.0 and above, including phones and tablets."
+  },
+  {
+    "title": "Is there a free version of the app?",
+    "content": "Yes, the app includes a free version with core features. A subscription unlocks full document access and premium features."
+  },
+  {
+    "title": "Can I open PPTXs from external apps?",
+    "content": "Yes, the app supports opening PPTXs from file managers, email apps, and other external sources."
+  },
+  {
+    "title": "Does the app support multi-column documents?",
+    "content": "Yes, the app includes basic multi-column reading detection for better read aloud performance."
+  },
+  {
+    "title": "Can I control playback from outside the app?",
+    "content": "Yes, media session support allows playback controls from notifications or external devices."
+  },
+  {
+    "title": "Is my data secure?",
+    "content": "Yes, your documents are stored locally on your device. The app does not upload your files unless you explicitly share them."
+  }
+]

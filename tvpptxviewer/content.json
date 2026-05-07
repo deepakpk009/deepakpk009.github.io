@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "TV PPTX Viewer – Fast PPTX Reader for Android Phones & Tablets",
+    "description": "Fast TV PPTX Viewer for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, share, and password-protected PPTX support.",
+    "keywords": "TV PPTX Viewer, Android TV PPTX Viewer, PPTX reader Android, PPTX opener, PPTX search app, PPTX bookmarks, read aloud PPTX, OCR PPTX reader, TV PPTX Viewer for phone, TV PPTX Viewer for tablet, night mode PPTX, password PPTX reader",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/tvpptxviewer",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/tvpptxviewer",
+      "title": "TV PPTX Viewer for Android Phones & Tablets",
+      "description": "Open, search, bookmark, listen to, print, and share PPTXs on Android phones and tablets with a fast modern PPTX reader.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/tvpptxviewer",
+      "title": "TV PPTX Viewer for Android Phones & Tablets",
+      "description": "Fast Android PPTX reader with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, and share.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+  "theme": {
+    "primaryGreen": "#2A7DE1",
+    "darkGreen": "#1E5FBF",
+    "lightGreen": "#4A9CFF",
+    "darkerGreen": "#0F2A4D",
+
+    "black": "#0D1117",
+    "darkBg": "#0B1A2A",
+    "cardBg": "#13263A",
+
+    "textWhite": "#FFFFFF",
+    "textGray": "#C9D6E2",
+
+    "borderGreen": "#3A8DFF",
+    "boxShadowColor": "#2A7DE14d",
+
+    "heroWatermarkOpacity": 0.04,
+    "ctaWatermarkOpacity": 0.06,
+
+    "accentOrange": "#3A8DFF",
+    "softRed": "#6BB2FF",
+
+    "paperWhite": "#F4F6F8"
+  },
+  "product": {
+    "name": "TV PPTX Viewer",
+    "heroTitle": "TV PPTX Viewer – Fast PPTX Reader for Android Phones & Tablets",
+    "heroDescription": "Open PPTX files from your phone, file manager, downloads, email attachments, or shared links. Search, bookmark, zoom, listen with read aloud, use OCR fallback for scanned pages, and continue from where you stopped.",
+    "icon": "images/app_icon.png",
+    "storeButtons": [
+      {
+        "type": "googlePlay",
+        "label": "Get it on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpptxviewer",
+        "style": "primary"
+      },
+      {
+        "type": "amazon",
+        "label": "Available on Amazon",
+        "url": "https://www.amazon.com/dp/B0GYZ9NRWL/",
+        "style": "secondary"
+      }
+    ],
+    "stats": [
+      {
+        "value": "📥 10K+",
+        "label": "Downloads"
+      },
+      {
+        "value": "🔎 Search",
+        "label": "Text Search"
+      },
+      {
+        "value": "🔊 Read Aloud",
+        "label": "OCR Fallback"
+      }
+    ],
+    "features": {
+      "title": "Features Built for Android PPTX Reading",
+      "cards": [
+        {
+          "icon": "📂",
+          "title": "Open PPTXs Anywhere",
+          "bullets": [
+            "Open PPTX files from the app picker",
+            "Open PPTXs from file managers and external apps",
+            "Persist read access for SAF document URIs",
+            "Unlock password-protected PPTX files"
+          ]
+        },
+        {
+          "icon": "🕘",
+          "title": "Recent Files & Resume",
+          "bullets": [
+            "Recent files library with first-page thumbnails",
+            "Search recent files by name",
+            "Resume reading from the last page",
+            "Restore previous zoom level automatically"
+          ]
+        },
+        {
+          "icon": "📖",
+          "title": "Smooth Reading Controls",
+          "bullets": [
+            "Smooth PPTX page rendering with lazy loading",
+            "Nearby-page high-resolution preloading",
+            "Pinch-to-zoom and double-tap zoom",
+            "Go to any page instantly"
+          ]
+        },
+        {
+          "icon": "🔎",
+          "title": "Powerful PPTX Search",
+          "bullets": [
+            "Search text inside PPTX documents",
+            "View result snippets with highlighted matches",
+            "Navigate quickly between search results",
+            "Find important content faster in long PPTXs"
+          ]
+        },
+        {
+          "icon": "🔖",
+          "title": "Bookmarks & Thumbnails",
+          "bullets": [
+            "Bookmark important PPTX pages",
+            "View bookmark thumbnails",
+            "Use thumbnail strip navigation",
+            "Remove recent files with confirmation"
+          ]
+        },
+        {
+          "icon": "🔊",
+          "title": "Read Aloud with OCR",
+          "bullets": [
+            "Listen with play, pause, previous, next, and stop controls",
+            "Tap to start reading from a selected word or sentence",
+            "Adjust speech rate, pitch, and voice",
+            "Use OCR fallback for scanned or image-only pages"
+          ]
+        },
+        {
+          "icon": "🌙",
+          "title": "Comfort Reading Tools",
+          "bullets": [
+            "Night mode for low-light reading",
+            "Margin crop for cleaner page viewing",
+            "Header, footer, and page number skipping during read aloud",
+            "Simple multi-column reading order detection"
+          ]
+        },
+        {
+          "icon": "📤",
+          "title": "Share, Print & Subscriptions",
+          "bullets": [
+            "Share PPTX files from the app",
+            "Print PPTX files when supported by your device",
+            "Free preview experience with subscription unlock",
+            "Offline subscription cache with grace period"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🎓",
+          "title": "Students & Learners",
+          "text": "Read notes, books, assignments, and study material with search, bookmarks, thumbnails, and read aloud support."
+        },
+        {
+          "icon": "💼",
+          "title": "Professionals",
+          "text": "Review reports, invoices, forms, manuals, and office documents with fast navigation and resume reading."
+        },
+        {
+          "icon": "📚",
+          "title": "Everyday Readers",
+          "text": "Open personal PPTXs, eBooks, manuals, and downloaded documents in a clean, comfortable reader."
+        },
+        {
+          "icon": "♿",
+          "title": "Hands-Free Reading",
+          "text": "Use read aloud, voice controls, and OCR fallback to listen to supported PPTXs and scanned pages."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I open PPTX files in TV PPTX Viewer?",
+          "a": "You can open PPTX files from the app picker, file managers, downloads, email attachments, shared links, and other external apps."
+        },
+        {
+          "q": "Does the app remember where I stopped reading?",
+          "a": "Yes. TV PPTX Viewer can restore your recent files, reading progress, last page, and zoom level."
+        },
+        {
+          "q": "Can I search inside PPTX files?",
+          "a": "Yes. The app supports in-document text search with result snippets, highlighted matches, and quick result navigation."
+        },
+        {
+          "q": "Does read aloud work with scanned PPTXs?",
+          "a": "Read aloud works best with PPTXs that contain selectable text. For scanned or image-only pages, OCR fallback helps detect text when supported."
+        },
+        {
+          "q": "Can I open password-protected PPTXs?",
+          "a": "Yes. TV PPTX Viewer supports unlocking password-protected PPTX files."
+        },
+        {
+          "q": "Is TV PPTX Viewer free?",
+          "a": "TV PPTX Viewer includes a free preview experience. Subscription options are available to unlock full-document viewing and extended reading access."
+        }
+      ]
+    }
+  },
+  "media": {
+    "screenshotOrientation": "portrait",
+    "screenshots": [
+      {
+        "src": "images/screenshots/ss001.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 1"
+      },
+      {
+        "src": "images/screenshots/ss002.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 2"
+      },
+      {
+        "src": "images/screenshots/ss003.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 3"
+      },
+      {
+        "src": "images/screenshots/ss004.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 4"
+      },
+      {
+        "src": "images/screenshots/ss005.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 5"
+      },
+      {
+        "src": "images/screenshots/ss006.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 6"
+      },
+      {
+        "src": "images/screenshots/ss007.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 7"
+      },
+      {
+        "src": "images/screenshots/ss008.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 8"
+      },
+      {
+        "src": "images/screenshots/ss009.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 9"
+      },
+      {
+        "src": "images/screenshots/ss010.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 9"
+      },
+      {
+        "src": "images/screenshots/ss011.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 9"
+      },
+      {
+        "src": "images/screenshots/ss012.jpg",
+        "alt": "TV PPTX Viewer Android app screenshot 9"
+      }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See TV PPTX Viewer in Action",
+      "youtubeEmbedUrl": "",
+      "iframeTitle": "TV PPTX Viewer Demo"
+    }
+  },
+  "sections": {
+    "howItWorks": {
+      "title": "Start Reading in Seconds",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Install TV PPTX Viewer",
+          "text": "Download TV PPTX Viewer on your Android phone or tablet."
+        },
+        {
+          "number": "2",
+          "title": "Open a PPTX",
+          "text": "Choose a PPTX from the app picker, file manager, downloads, email attachments, or shared links."
+        },
+        {
+          "number": "3",
+          "title": "Read, Search, Bookmark, or Listen",
+          "text": "Use zoom, thumbnails, bookmarks, page jump, search, night mode, and read aloud to work with your document."
+        }
+      ]
+    },
+    "features": {
+      "title": "Why Users Love TV PPTX Viewer",
+      "cards": [
+        {
+          "icon": "⚡",
+          "title": "Fast & Modern",
+          "bullets": [
+            "Fast PPTX opening and smooth rendering",
+            "Lazy loading with high-resolution nearby-page preloading"
+          ]
+        },
+        {
+          "icon": "🔎",
+          "title": "Find Content Quickly",
+          "bullets": [
+            "Text search with highlighted snippets",
+            "Go to page, thumbnails, and bookmark navigation"
+          ]
+        },
+        {
+          "icon": "🔊",
+          "title": "Listen to PPTXs",
+          "bullets": [
+            "Read aloud controls with voice customization",
+            "OCR fallback for scanned or image-only pages"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🎓",
+          "title": "Students & Learners",
+          "text": "Read notes, books, assignments, and study material with search, bookmarks, thumbnails, and read aloud support."
+        },
+        {
+          "icon": "💼",
+          "title": "Professionals",
+          "text": "Review reports, invoices, forms, manuals, and office documents with fast navigation and resume reading."
+        },
+        {
+          "icon": "📚",
+          "title": "Everyday Readers",
+          "text": "Open personal PPTXs, eBooks, manuals, and downloaded documents in a clean, comfortable reader."
+        },
+        {
+          "icon": "♿",
+          "title": "Hands-Free Reading",
+          "text": "Use read aloud, voice controls, and OCR fallback to listen to supported PPTXs and scanned pages."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How do I open PPTX files in TV PPTX Viewer?",
+          "a": "You can open PPTX files from the app picker, file managers, downloads, email attachments, shared links, and other external apps."
+        },
+        {
+          "q": "Does the app remember where I stopped reading?",
+          "a": "Yes. TV PPTX Viewer can restore your recent files, reading progress, last page, and zoom level."
+        },
+        {
+          "q": "Can I search inside PPTX files?",
+          "a": "Yes. The app supports in-document text search with result snippets, highlighted matches, and quick result navigation."
+        },
+        {
+          "q": "Does read aloud work with scanned PPTXs?",
+          "a": "Read aloud works best with PPTXs that contain selectable text. For scanned or image-only pages, OCR fallback helps detect text when supported."
+        },
+        {
+          "q": "Can I open password-protected PPTXs?",
+          "a": "Yes. TV PPTX Viewer supports unlocking password-protected PPTX files."
+        },
+        {
+          "q": "Is TV PPTX Viewer free?",
+          "a": "TV PPTX Viewer includes a free preview experience. Subscription options are available to unlock full-document viewing and extended reading access."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Open, Search, Listen to, and Manage PPTXs 📄",
+      "text": "Download TV PPTX Viewer and start reading documents faster on your Android phone or tablet.",
+      "buttons": [
+        {
+          "type": "googlePlay",
+          "label": "Download on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpptxviewer",
+          "style": "primary"
+        },
+        {
+          "type": "amazon",
+          "label": "Download on Amazon",
+          "url": "https://www.amazon.com/dp/B0GYZ9NRWL/",
+          "style": "secondary"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "TV PPTX Viewer",
+      "about": "A fast, modern PPTX reader for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, and share support."
+    },
+    "social": [
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/tvpptxviewer"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Download on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpptxviewer"
+          },
+          {
+            "label": "Download on Amazon",
+            "url": "https://www.amazon.com/dp/B0GYZ9NRWL/"
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          {
+            "label": "Android TV TV PPTX Viewer",
+            "url": "https://deepakpk.com/tvtvpptxviewer"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TV PPTX Viewer",
+      "operatingSystem": "Android",
+      "applicationCategory": "ProductivityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpptxviewer",
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      },
+      "description": "Fast TV PPTX Viewer for Android phones and tablets with search, bookmarks, read aloud, OCR fallback, night mode, thumbnails, zoom, print, share, and password-protected PPTX support."
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": ["https://www.facebook.com/tvpptxviewer"],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
+    }
+  }
+}

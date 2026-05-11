@@ -62,7 +62,7 @@
       {
         "type": "amazon",
         "label": "Available on Amazon",
-        "url": "https://www.amazon.com/dp/B0GYZ9NRWL/",
+        "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
         "style": "secondary"
       }
     ],
@@ -460,7 +460,7 @@
         {
           "type": "amazon",
           "label": "Available on Amazon",
-          "url": "https://www.amazon.com/dp/B0GYZ9NRWL/",
+          "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
           "style": "secondary"
         }
       ]
@@ -489,7 +489,7 @@
           },
           {
             "label": "Download on Amazon",
-            "url": "https://www.amazon.com/dp/B0GYZ9NRWL/"
+            "url": "https://www.amazon.com/dp/B0GZWMX1PT/"
           },
           {
             "label": "Terms & Conditions",

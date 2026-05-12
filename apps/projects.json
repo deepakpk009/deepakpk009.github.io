@@ -71,6 +71,12 @@
             "description": "Fast DOCX Reader for Android Phones & Tablets",
             "thumbnail": "https://deepakpk.com/docxviewer/images/app_icon.png",
             "url": "https://deepakpk.com/docxviewer/"
+        },
+        {
+            "title": "TV PPTX Viewer",
+            "description": "PPTX Presentations on Android TV",
+            "thumbnail": "https://deepakpk.com/tvpptxviewer/images/app_icon.png",
+            "url": "https://deepakpk.com/tvpptxviewer/"
         }
     ]
 }

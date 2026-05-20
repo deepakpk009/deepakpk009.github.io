@@ -1,16 +1,16 @@
 {
   "meta": {
     "lang": "en",
-    "title": "Simple USB Signage – PPTX Presentation Viewer for Android TV",
-    "description": "Simple USB Signage is an Android TV app for opening, importing, viewing, searching, bookmarking, and presenting PPTX files on your TV with remote-friendly controls.",
-    "keywords": "Simple USB Signage, Android Simple USB Signage, PPTX viewer for TV, PPTX viewer Android TV, PPTX presenter Android TV, view PPTX on TV, open PPTX on Android TV, presentation viewer for Android TV, PPTX bookmarks, PPTX search, PPTX slideshow TV, web import PPTX, WiFi upload PPTX, FTP upload PPTX, USB PPTX viewer TV",
+    "title": "Simple USB Signage – USB Photo & Video Signage for Android TV",
+    "description": "Simple USB Signage is an Android TV app for playing photos, videos, and optional background music from a USB drive as continuous digital signage.",
+    "keywords": "Simple USB Signage, Android TV signage app, USB signage Android TV, digital signage for TV, USB slideshow TV, photo video signage, Android TV media player, TV signage player, USB media signage, local signage app, offline signage TV, Fire TV signage, Google TV signage, image video slideshow TV, background music signage, simple digital signage",
     "author": "Deepak PK",
     "canonical": "https://deepakpk.com/simpleusbsignage",
     "og": {
       "type": "website",
       "url": "https://deepakpk.com/simpleusbsignage",
       "title": "Simple USB Signage for Android TV",
-      "description": "Open, import, search, bookmark, and present PPTX files on Android TV with a remote-friendly PPTX viewer.",
+      "description": "Turn an Android TV or Fire TV into a simple USB-powered signage screen for photos, videos, and optional background audio.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
@@ -18,7 +18,7 @@
       "card": "summary_large_image",
       "url": "https://deepakpk.com/simpleusbsignage",
       "title": "Simple USB Signage for Android TV",
-      "description": "A remote-friendly Android TV app to open, import, search, bookmark, and present PPTX files on the big screen.",
+      "description": "A simple Android TV signage app that plays photos, videos, and background music directly from USB storage.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -30,27 +30,27 @@
     }
   },
   "theme": {
-    "primaryGreen": "#2F80ED",
-    "darkGreen": "#1554B7",
-    "lightGreen": "#62A8FF",
-    "darkerGreen": "#071A33",
-    "black": "#050A12",
-    "darkBg": "#081426",
-    "cardBg": "#102640",
+    "primaryGreen": "#7ED957",
+    "darkGreen": "#2FAE63",
+    "lightGreen": "#B8F26A",
+    "darkerGreen": "#101820",
+    "black": "#0B1117",
+    "darkBg": "#151D26",
+    "cardBg": "#1E2A34",
     "textWhite": "#FFFFFF",
-    "textGray": "#D7E5F5",
-    "borderGreen": "#3F95FF",
-    "boxShadowColor": "#2F80ED4d",
+    "textGray": "#D7E6E4",
+    "borderGreen": "#27C4BE",
+    "boxShadowColor": "#27C4BE4d",
     "heroWatermarkOpacity": 0.045,
     "ctaWatermarkOpacity": 0.07,
-    "accentOrange": "#FF8A1F",
-    "softRed": "#FFB066",
-    "paperWhite": "#F7FAFF"
+    "accentOrange": "#27C4BE",
+    "softRed": "#8FEA5A",
+    "paperWhite": "#F4FFF8"
   },
   "product": {
     "name": "Simple USB Signage",
-    "heroTitle": "Simple USB Signage – PPTX Presentations on Android TV",
-    "heroDescription": "Open PPTX PPTX files on your Android TV with a clean, remote-friendly interface. Import presentations using Web Import, WiFi Upload, FTP, or USB, then view slides with zoom, bookmarks, search, night mode, animation mode, and resume support.",
+    "heroTitle": "Simple USB Signage – USB Digital Signage for Android TV",
+    "heroDescription": "Turn your Android TV, Google TV, or Fire TV into a simple signage player. Connect a USB drive with photos, videos, and optional audio files, then play a continuous full-screen signage loop using a remote-friendly interface.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
@@ -69,118 +69,118 @@
     "stats": [
       {
         "value": "📺 Android TV",
-        "label": "Remote-Friendly UI"
+        "label": "D-pad Friendly Signage UI"
       },
       {
-        "value": "📥 Web / WiFi / FTP",
-        "label": "Easy PPTX Import"
+        "value": "🔌 USB Playback",
+        "label": "Scan Folders & Subfolders"
       },
       {
-        "value": "🔖 Search + Bookmarks",
-        "label": "Fast Slide Navigation"
+        "value": "🎵 Optional Audio",
+        "label": "Background Music Support"
       }
     ],
     "features": {
-      "title": "Features Built for Android TV Presentations",
+      "title": "Features Built for Simple USB Signage",
       "cards": [
         {
           "icon": "📺",
           "title": "Made for Android TV",
           "bullets": [
-            "Designed around Android TV development principles",
-            "Remote-friendly navigation with clear focus behavior",
-            "Open PPTX files directly from the TV home listing",
-            "Landscape-first experience for big screens"
+            "Leanback-style interface designed for TV screens and remote controls",
+            "Works on Android TV, Google TV, and Fire TV devices",
+            "Clear menu options for Play, Reload Files, Settings, Help, and Subscription",
+            "Large, readable media cards with filename labels and thumbnails"
           ]
         },
         {
-          "icon": "📁",
-          "title": "PPTX File Library",
+          "icon": "🔌",
+          "title": "USB Media Scanning",
           "bullets": [
-            "PPTX grid/list items show thumbnail and file name",
-            "Long-press OK on a PPTX to view file options",
-            "View file name, location, size, and last modified date",
-            "Open or delete imported PPTX files from file options"
-          ]
-        },
-        {
-          "icon": "📥",
-          "title": "Easy PPTX Imports",
-          "bullets": [
-            "Import PPTX files using Web Import, WiFi Upload, or FTP",
-            "Web Import uses a token and works even outside the same network",
-            "WiFi Upload is faster when both devices are on the same network",
-            "FTP import supports anonymous FTP on the same network"
-          ]
-        },
-        {
-          "icon": "📱",
-          "title": "QR Code Connection",
-          "bullets": [
-            "Web Import page shows a QR code for quick connection",
-            "FTP import page shows a QR code for easy setup",
-            "Send presentations from phone, laptop, or another device",
-            "No typing long TV URLs when QR scanning is available"
+            "Detects USB mass-storage devices when the app launches",
+            "Handles USB attach and detach events while the app is running",
+            "Requests USB permission and retries initialization with timeout handling",
+            "Recursively scans folders and subfolders to build one flat media list"
           ]
         },
         {
           "icon": "🖼️",
-          "title": "Powerful PPTX Viewer",
+          "title": "Photos & Video Signage",
           "bullets": [
-            "Open PPTX files from the home page with the OK button",
-            "Resume last viewed slide number automatically",
-            "Restore last used zoom and night mode settings",
-            "Presentation options appear as an overlay on the current slide"
+            "Plays image and video files together in a continuous signage loop",
+            "Starts playback from a selected visual item or from the Play menu",
+            "Uses smooth crossfade transitions between visual items",
+            "Loops the visual playlist continuously for unattended display"
           ]
         },
         {
-          "icon": "🔍",
-          "title": "Search & Go To Slide",
+          "icon": "🎵",
+          "title": "Background Audio",
           "bullets": [
-            "Search text inside PPTX files",
-            "Jump directly to a specific slide number",
-            "Restart presentation from the first slide",
-            "Toggle slide/page info visibility while viewing"
-          ]
-        },
-        {
-          "icon": "🔖",
-          "title": "Bookmarks Across PPTXs",
-          "bullets": [
-            "Bookmark the current slide from the viewer options menu",
-            "View all bookmarks across all PPTX files",
-            "Bookmark items show slide thumbnail, page number, and PPTX title",
-            "Long-press a bookmark to delete it from the bookmarks page"
-          ]
-        },
-        {
-          "icon": "🎛️",
-          "title": "Viewer Controls Overlay",
-          "bullets": [
-            "Zoom in, zoom out, and reset zoom",
-            "Toggle night mode while previewing the change live",
-            "Choose animation mode for presentation viewing",
-            "Close the overlay with the close option or Back button"
+            "Builds a separate playlist for optional background audio files",
+            "Loops background music independently from photo and video playback",
+            "Can mute video audio and continue background music",
+            "Can enable video audio and automatically pause background music during videos"
           ]
         },
         {
           "icon": "⚙️",
-          "title": "Settings & Storage Tools",
+          "title": "Display Controls",
           "bullets": [
-            "View TV screen resolution and screen ratio",
-            "Check available storage and total PPTX file count",
-            "View bookmark count, thumbnail count, and storage usage",
-            "Clear imported PPTXs, bookmarks, and thumbnails from settings"
+            "Choose black or white signage background color",
+            "Set images to Fill screen for edge-to-edge signage",
+            "Set images to Show full image to avoid cropping",
+            "Increase or decrease image slide duration from settings"
           ]
         },
         {
-          "icon": "❓",
-          "title": "Help, Support & App Info",
+          "icon": "📁",
+          "title": "Media Library Tools",
           "bullets": [
-            "Built-in Help/FAQ page for common questions",
-            "About page with developer details",
-            "Version info menu item for quick app version checking",
-            "Support and feedback page with QR codes for useful links"
+            "Filters hidden files and unsupported extensions from the visible list",
+            "Shows image thumbnails and type artwork for video, audio, and unknown files",
+            "Long-press OK to view file details",
+            "File details include type, size/path information, open, and delete actions"
+          ]
+        },
+        {
+          "icon": "🚀",
+          "title": "Direct USB Streaming",
+          "bullets": [
+            "Uses an internal localhost media server for USB-hosted media",
+            "Streams videos, audio, and images without first copying them to app storage",
+            "Designed for simple local signage workflows",
+            "Reload/rescan USB media anytime from the main menu"
+          ]
+        },
+        {
+          "icon": "🔒",
+          "title": "Free Demo & Subscription",
+          "bullets": [
+            "Free/demo mode unlocks a limited number of media files for testing",
+            "Locked media items are blurred and marked with a lock badge",
+            "Unsubscribed playback shows a subtle Demo Version watermark",
+            "Includes subscription and subscription management screens"
+          ]
+        },
+        {
+          "icon": "🌍",
+          "title": "Localized Experience",
+          "bullets": [
+            "Includes localized strings for 16 languages",
+            "Supports English, Arabic, Chinese, French, German, Hindi, and more",
+            "Help, FAQ, About, Support, Privacy Policy, and Terms open inside the app",
+            "In-app browser includes progress, retry, and failure handling"
+          ]
+        },
+        {
+          "icon": "📊",
+          "title": "Device & Settings Info",
+          "bullets": [
+            "Shows screen resolution and calculated aspect ratio",
+            "Settings layout adapts to different screen sizes",
+            "Subscription status is cached for an offline grace period after verification",
+            "Store-specific builds support Google Play, Amazon Appstore, and Huawei AppGallery billing"
           ]
         }
       ]
@@ -189,24 +189,24 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "🎓",
-          "title": "Classrooms & Training",
-          "text": "Show lesson slides, training material, and study presentations on a TV without needing a computer connected all the time."
+          "icon": "🏪",
+          "title": "Shops & Small Businesses",
+          "text": "Run simple promotional screens, offers, product photos, and short videos from a USB drive without a cloud signage system."
         },
         {
-          "icon": "💼",
-          "title": "Office Presentations",
-          "text": "Open business PPTX files on meeting-room TVs with quick import options and remote-friendly navigation."
+          "icon": "🍔",
+          "title": "Food Stalls & Cafes",
+          "text": "Display menus, combo offers, food photos, and looping videos on a TV using local USB media."
         },
         {
-          "icon": "🏠",
-          "title": "Home & Personal Use",
-          "text": "View school projects, event slides, photo presentations, or saved PPTX files directly on Android TV."
+          "icon": "🎉",
+          "title": "Events & Parties",
+          "text": "Play birthday slides, welcome screens, event photos, sponsor videos, and background music on a TV."
         },
         {
-          "icon": "🪧",
-          "title": "Simple Display Use",
-          "text": "Use PPTX slides for lightweight information display where easy import, viewing, and slide navigation matter."
+          "icon": "🏛️",
+          "title": "Clubs & Auditoriums",
+          "text": "Use a TV as a simple media signage screen for announcements, schedules, event promotions, and waiting-area displays."
         }
       ]
     },
@@ -215,43 +215,43 @@
       "items": [
         {
           "q": "What is Simple USB Signage?",
-          "a": "Simple USB Signage is an Android TV app for opening and viewing PPTX PPTX files on a TV using a remote-friendly interface."
+          "a": "Simple USB Signage is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
         },
         {
-          "q": "How can I add PPTX files to the app?",
-          "a": "You can import PPTX files using Web Import, WiFi Upload, FTP Import, or by scanning available PPTX files from connected storage such as USB."
+          "q": "Do I need an internet connection to use the signage playback?",
+          "a": "No. The main signage workflow is USB-based, so your photos, videos, and audio files can play locally from the connected USB drive."
         },
         {
-          "q": "Does Web Import require the phone or laptop to be on the same WiFi network as the TV?",
-          "a": "No. Web Import uses a token-based flow, so the sending device does not need to be on the same network as the TV."
+          "q": "Does the app scan folders and subfolders?",
+          "a": "Yes. The app recursively scans folders and subfolders on connected USB drives and builds a flat media list for playback."
         },
         {
-          "q": "When should I use WiFi Upload instead of Web Import?",
-          "a": "Use WiFi Upload when your sending device and Android TV are on the same network. It is designed for faster local file transfer."
+          "q": "What media can I use for signage?",
+          "a": "The app supports common image, video, and audio formats. Images and videos are used for the visual signage playlist, while audio files can be used as optional background music."
         },
         {
-          "q": "Does FTP Import need the same network?",
-          "a": "Yes. FTP Import uses an anonymous FTP connection and requires the sending device to be on the same network as the TV."
+          "q": "Can photos and videos play in the same signage loop?",
+          "a": "Yes. The app supports mixed image and video playback in the same continuous signage session."
         },
         {
-          "q": "Can I bookmark slides?",
-          "a": "Yes. You can bookmark the current slide, view bookmarks for the current PPTX, and also browse bookmarks across all PPTX files."
+          "q": "Can I control how images fit on the TV screen?",
+          "a": "Yes. You can choose Fill screen for edge-to-edge display or Show full image to avoid cropping when the image aspect ratio does not match the TV."
         },
         {
-          "q": "Does the app remember where I stopped?",
-          "a": "Yes. The viewer can reopen a PPTX with the last viewed slide number and last used view settings such as zoom and night mode."
+          "q": "Can I change the image slide duration?",
+          "a": "Yes. The image slide duration can be increased or decreased from the settings screen."
         },
         {
-          "q": "Can I search inside PPTX files?",
-          "a": "Yes. The viewer includes a search option to find text inside supported PPTX files."
+          "q": "How does background music work?",
+          "a": "Audio files are played as a separate looping background playlist. You can also decide whether videos should play their own audio or stay muted while background audio continues."
         },
         {
-          "q": "Can I delete imported PPTX files?",
-          "a": "Yes. Long-press OK on a focused PPTX file to view file info and options such as open and delete. Settings also include an option to clear all PPTXs in the imports folder. USB files are not deleted."
+          "q": "What happens in demo/free mode?",
+          "a": "Free/demo mode limits the number of unlocked audio, video, and image files shown in the media set. Locked items are blurred and show a lock badge, and demo playback shows a subtle watermark."
         },
         {
-          "q": "Where can I manage subscription information?",
-          "a": "The app includes a subscribe page and a manage subscription page with information about managing your subscription."
+          "q": "Can I delete files from the app?",
+          "a": "Yes. Long-press OK on a media item to open the details dialog, where supported actions such as open and delete are available."
         }
       ]
     }
@@ -321,22 +321,22 @@
   },
   "sections": {
     "howItWorks": {
-      "title": "Start Presenting on TV in Minutes",
+      "title": "Start USB Signage in Minutes",
       "steps": [
         {
           "number": "1",
-          "title": "Install Simple USB Signage",
-          "text": "Install Simple USB Signage on your Android TV or Fire TV device."
+          "title": "Prepare a USB Drive",
+          "text": "Copy your signage photos, videos, and optional audio files to a FAT32 USB drive. You can organize files inside folders and subfolders."
         },
         {
           "number": "2",
-          "title": "Import or Scan PPTX Files",
-          "text": "Add files with Web Import, WiFi Upload, FTP Import, or reload/scan PPTX files from available storage."
+          "title": "Connect USB to TV",
+          "text": "Open Simple USB Signage on your Android TV, Google TV, or Fire TV, allow USB permission, and let the app scan supported media files."
         },
         {
           "number": "3",
-          "title": "Open and Control Slides",
-          "text": "Select a PPTX with the OK button, then use the overlay menu for zoom, bookmarks, search, go to slide, night mode, animation mode, and restart."
+          "title": "Press Play",
+          "text": "Start signage playback from the Play menu or from a selected visual item. The app loops photos and videos continuously with optional background music."
         }
       ]
     },
@@ -344,35 +344,35 @@
       "title": "Why TV Users Will Like It",
       "cards": [
         {
-          "icon": "📺",
-          "title": "TV-First Experience",
+          "icon": "🔌",
+          "title": "USB-First Signage",
           "bullets": [
-            "Built for Android TV usage and remote control navigation",
-            "Large-screen friendly PPTX browsing with thumbnails and file names"
+            "Scan media directly from USB storage",
+            "Reload/rescan connected USB media whenever needed"
           ]
         },
         {
-          "icon": "📥",
-          "title": "Flexible Import Options",
+          "icon": "🖼️",
+          "title": "Photo + Video Loop",
           "bullets": [
-            "Web Import with token support for remote uploads",
-            "Fast WiFi Upload and anonymous FTP for same-network transfers"
+            "Play images and videos in one continuous signage session",
+            "Automatic image slide timing with smooth crossfade transitions"
           ]
         },
         {
-          "icon": "🎛️",
-          "title": "Presentation Controls",
+          "icon": "🎵",
+          "title": "Flexible Audio",
           "bullets": [
-            "Zoom, reset zoom, night mode, animation mode, and slide info toggle",
-            "Bookmarks, search, go to slide, and restart options inside the viewer"
+            "Loop optional background audio independently",
+            "Choose whether videos play their own audio or stay muted"
           ]
         },
         {
           "icon": "⚙️",
-          "title": "Useful App Tools",
+          "title": "Simple TV Settings",
           "bullets": [
-            "Settings show resolution, screen ratio, storage, file counts, bookmarks, and thumbnail usage",
-            "Clear imported files, bookmarks, and thumbnails when needed"
+            "Choose black or white background",
+            "Set image display mode to Fill screen or Show full image"
           ]
         }
       ]
@@ -381,24 +381,24 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "🎓",
-          "title": "Classrooms & Training",
-          "text": "Show lesson slides, training material, and study presentations on a TV without needing a computer connected all the time."
+          "icon": "🏪",
+          "title": "Shops & Small Businesses",
+          "text": "Run simple promotional screens, offers, product photos, and short videos from a USB drive without a cloud signage system."
         },
         {
-          "icon": "💼",
-          "title": "Office Presentations",
-          "text": "Open business PPTX files on meeting-room TVs with quick import options and remote-friendly navigation."
+          "icon": "🍔",
+          "title": "Food Stalls & Cafes",
+          "text": "Display menus, combo offers, food photos, and looping videos on a TV using local USB media."
         },
         {
-          "icon": "🏠",
-          "title": "Home & Personal Use",
-          "text": "View school projects, event slides, photo presentations, or saved PPTX files directly on Android TV."
+          "icon": "🎉",
+          "title": "Events & Parties",
+          "text": "Play birthday slides, welcome screens, event photos, sponsor videos, and background music on a TV."
         },
         {
-          "icon": "🪧",
-          "title": "Simple Display Use",
-          "text": "Use PPTX slides for lightweight information display where easy import, viewing, and slide navigation matter."
+          "icon": "🏛️",
+          "title": "Clubs & Auditoriums",
+          "text": "Use a TV as a simple media signage screen for announcements, schedules, event promotions, and waiting-area displays."
         }
       ]
     },
@@ -407,49 +407,49 @@
       "items": [
         {
           "q": "What is Simple USB Signage?",
-          "a": "Simple USB Signage is an Android TV app for opening and viewing PPTX PPTX files on a TV using a remote-friendly interface."
+          "a": "Simple USB Signage is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
         },
         {
-          "q": "How can I add PPTX files to the app?",
-          "a": "You can import PPTX files using Web Import, WiFi Upload, FTP Import, or by scanning available PPTX files from connected storage such as USB."
+          "q": "Do I need an internet connection to use the signage playback?",
+          "a": "No. The main signage workflow is USB-based, so your photos, videos, and audio files can play locally from the connected USB drive."
         },
         {
-          "q": "Does Web Import require the phone or laptop to be on the same WiFi network as the TV?",
-          "a": "No. Web Import uses a token-based flow, so the sending device does not need to be on the same network as the TV."
+          "q": "Does the app scan folders and subfolders?",
+          "a": "Yes. The app recursively scans folders and subfolders on connected USB drives and builds a flat media list for playback."
         },
         {
-          "q": "When should I use WiFi Upload instead of Web Import?",
-          "a": "Use WiFi Upload when your sending device and Android TV are on the same network. It is designed for faster local file transfer."
+          "q": "What media can I use for signage?",
+          "a": "The app supports common image, video, and audio formats. Images and videos are used for the visual signage playlist, while audio files can be used as optional background music."
         },
         {
-          "q": "Does FTP Import need the same network?",
-          "a": "Yes. FTP Import uses an anonymous FTP connection and requires the sending device to be on the same network as the TV."
+          "q": "Can photos and videos play in the same signage loop?",
+          "a": "Yes. The app supports mixed image and video playback in the same continuous signage session."
         },
         {
-          "q": "Can I bookmark slides?",
-          "a": "Yes. You can bookmark the current slide, view bookmarks for the current PPTX, and also browse bookmarks across all PPTX files."
+          "q": "Can I control how images fit on the TV screen?",
+          "a": "Yes. You can choose Fill screen for edge-to-edge display or Show full image to avoid cropping when the image aspect ratio does not match the TV."
         },
         {
-          "q": "Does the app remember where I stopped?",
-          "a": "Yes. The viewer can reopen a PPTX with the last viewed slide number and last used view settings such as zoom and night mode."
+          "q": "Can I change the image slide duration?",
+          "a": "Yes. The image slide duration can be increased or decreased from the settings screen."
         },
         {
-          "q": "Can I search inside PPTX files?",
-          "a": "Yes. The viewer includes a search option to find text inside supported PPTX files."
+          "q": "How does background music work?",
+          "a": "Audio files are played as a separate looping background playlist. You can also decide whether videos should play their own audio or stay muted while background audio continues."
         },
         {
-          "q": "Can I delete imported PPTX files?",
-          "a": "Yes. Long-press OK on a focused PPTX file to view file info and options such as open and delete. Settings also include an option to clear all PPTXs in the imports folder. USB files are not deleted."
+          "q": "What happens in demo/free mode?",
+          "a": "Free/demo mode limits the number of unlocked audio, video, and image files shown in the media set. Locked items are blurred and show a lock badge, and demo playback shows a subtle watermark."
         },
         {
-          "q": "Where can I manage subscription information?",
-          "a": "The app includes a subscribe page and a manage subscription page with information about managing your subscription."
+          "q": "Can I delete files from the app?",
+          "a": "Yes. Long-press OK on a media item to open the details dialog, where supported actions such as open and delete are available."
         }
       ]
     },
     "cta": {
-      "title": "View PPTX Presentations on Your TV 📺",
-      "text": "Download Simple USB Signage and turn your Android TV into a simple, remote-friendly PPTX presentation viewer.",
+      "title": "Turn Your TV Into Simple USB Signage 📺",
+      "text": "Download Simple USB Signage and play photos, videos, and background music from a USB drive on Android TV.",
       "buttons": [
         {
           "type": "googlePlay",
@@ -470,7 +470,7 @@
     "brand": {
       "logo": "images/app_icon.png",
       "name": "Simple USB Signage",
-      "about": "A remote-friendly Android Simple USB Signage for importing, opening, searching, bookmarking, and presenting PPTX files on the big screen."
+      "about": "A remote-friendly Android TV signage app for playing photos, videos, and optional background music directly from USB storage."
     },
     "social": [
       {
@@ -541,7 +541,7 @@
       "@type": "SoftwareApplication",
       "name": "Simple USB Signage",
       "operatingSystem": "Android TV",
-      "applicationCategory": "ProductivityApplication",
+      "applicationCategory": "MultimediaApplication",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -557,7 +557,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "Simple USB Signage is an Android TV app for opening, importing, searching, bookmarking, and presenting PPTX PPTX files with remote-friendly controls."
+      "description": "Simple USB Signage is an Android TV app for playing photos, videos, and optional background audio from USB storage as continuous digital signage."
     },
     "organization": {
       "@context": "https://schema.org",

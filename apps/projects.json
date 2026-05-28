@@ -77,6 +77,18 @@
             "description": "PPTX Presentations on Android TV",
             "thumbnail": "https://deepakpk.com/tvpptxviewer/images/app_icon.png",
             "url": "https://deepakpk.com/tvpptxviewer/"
+        },
+        {
+            "title": "Simple USB Signage",
+            "description": "USB Digital Signage for Android TV",
+            "thumbnail": "https://deepakpk.com/simpleusbsignage/images/app_icon.png",
+            "url": "https://deepakpk.com/simpleusbsignage/"
+        },
+        {
+            "title": "Gliso Gallery Slideshow",
+            "description": "Beautiful Folder-Based Slideshows for Android Tablets",
+            "thumbnail": "https://deepakpk.com/gliso/images/app_icon.png",
+            "url": "https://deepakpk.com/gliso/"
         }
     ]
 }

@@ -1,0 +1,532 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "Ditto Scan - Folder-Based Slideshow App for Android Tablets",
+    "description": "Ditto Scan is an Android tablet-first app for turning local folders into reusable fullscreen photo and video slideshows with optional background music.",
+    "keywords": "Ditto Scan, Android tablet slideshow app, folder based slideshow Android, photo slideshow tablet app, video slideshow Android tablet, local gallery slideshow app, Android album slideshow, slideshow with music Android, fullscreen slideshow tablet, folder slideshow profile app, Android photo video viewer, Android tablet gallery app",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/dittoscan",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/dittoscan",
+      "title": "Ditto Scan for Android Tablets",
+      "description": "Create beautiful fullscreen slideshows from local folders on Android tablets with photos, videos, optional music, and reusable per-folder settings.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/dittoscan",
+      "title": "Ditto Scan for Android Tablets",
+      "description": "A tablet-first Android slideshow app for photos, videos, and optional music using local folders you choose.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+  "theme": {
+    "primaryGreen": "#9B35FF",
+    "darkGreen": "#5F20F5",
+    "lightGreen": "#C978FF",
+    "darkerGreen": "#171046",
+    "black": "#120B33",
+    "darkBg": "#1D1550",
+    "cardBg": "#281C68",
+    "textWhite": "#FFFFFF",
+    "textGray": "#DDD8FF",
+    "borderGreen": "#4D86FF",
+    "boxShadowColor": "#6A35FF4d",
+    "heroWatermarkOpacity": 0.05,
+    "ctaWatermarkOpacity": 0.075,
+    "accentOrange": "#FFB24C",
+    "softRed": "#6BCBFF",
+    "paperWhite": "#F8F6FF"
+  },
+  "product": {
+    "name": "Ditto Scan",
+    "heroTitle": "Ditto Scan - Beautiful Folder-Based Slideshows for Android Tablets",
+    "heroDescription": "Turn your Android tablet into a polished slideshow viewer for local media. Pick a folder once, save it as a reusable profile, and replay photos, videos, and optional background music in immersive fullscreen whenever you want.",
+    "icon": "images/app_icon.png",
+    "storeButtons": [
+      {
+        "type": "googlePlay",
+        "label": "Get it on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.galleryslideshow",
+        "style": "primary"
+      },
+      {
+        "type": "amazon",
+        "label": "Available on Amazon",
+        "url": "https://www.amazon.com/dp/B0H37FQVXD/",
+        "style": "secondary"
+      }
+    ],
+    "stats": [
+      {
+        "value": "📱 Tablet First",
+        "label": "Designed for larger Android screens"
+      },
+      {
+        "value": "📂 Saved Folders",
+        "label": "Reusable slideshow profiles"
+      },
+      {
+        "value": "🎵 Mixed Media",
+        "label": "Photos, videos, and optional music"
+      }
+    ],
+    "features": {
+      "title": "Features Built for Repeat Slideshow Use",
+      "cards": [
+        {
+          "icon": "📂",
+          "title": "Folder-Based Slideshow Profiles",
+          "bullets": [
+            "Choose local folders with Android's document picker",
+            "Save each selected folder as its own slideshow profile",
+            "Persist folder access so you can reopen the same media later",
+            "Rescan the folder at slideshow start so playback reflects current files"
+          ]
+        },
+        {
+          "icon": "🖼️",
+          "title": "Photos and Videos Together",
+          "bullets": [
+            "Play local photos and videos together in one fullscreen slideshow",
+            "Handle image-to-image, image-to-video, video-to-image, and video-to-video transitions",
+            "Keep photos on screen for your chosen duration",
+            "Let videos play through naturally inside the same loop"
+          ]
+        },
+        {
+          "icon": "🎵",
+          "title": "Optional Background Music",
+          "bullets": [
+            "Detect supported audio files in the same selected folder",
+            "Play background music independently during the slideshow",
+            "Let videos play with their own audio when you want",
+            "Or mute video audio while background music continues"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "Per-Folder Playback Settings",
+          "bullets": [
+            "Store settings separately for each saved folder",
+            "Adjust photo duration in seconds",
+            "Choose sort by name ascending, name descending, date taken, or shuffle",
+            "Decide whether subfolders should be included during scanning"
+          ]
+        },
+        {
+          "icon": "📐",
+          "title": "Fit and Fill Display Modes",
+          "bullets": [
+            "Show the full image or video inside the screen bounds",
+            "Or fill the screen with center-cropped media for a bolder look",
+            "Keep the slideshow immersive and fullscreen during playback",
+            "Keep the screen awake so longer viewing sessions are not interrupted"
+          ]
+        },
+        {
+          "icon": "📚",
+          "title": "Saved Folder Library",
+          "bullets": [
+            "Reopen favorite folders directly from the home screen",
+            "See thumbnail stacks for faster visual recognition",
+            "View compact counts for photos, videos, audio, and saved duration",
+            "Keep recent folders ordered by the last time you opened them"
+          ]
+        },
+        {
+          "icon": "🔎",
+          "title": "Tablet-Friendly Browsing",
+          "bullets": [
+            "Search saved folders by name with case-insensitive filtering",
+            "Use a one-column list on phones and roomier grids on tablets",
+            "Get touch-friendly cards, dialogs, and controls",
+            "Quickly start a slideshow, edit settings, or remove a saved profile"
+          ]
+        },
+        {
+          "icon": "🔒",
+          "title": "Private and Local by Design",
+          "bullets": [
+            "Built around folders you explicitly choose on your device",
+            "No cloud account is required for normal slideshow use",
+            "Only the folders you grant access to can be reopened later",
+            "Works well for personal albums, event folders, and repeat viewing setups"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "Family Photo Albums",
+          "text": "Turn a tablet into a relaxing viewer for vacation memories, family milestones, and everyday photo folders you want to revisit often."
+        },
+        {
+          "icon": "🎉",
+          "title": "Events and Celebrations",
+          "text": "Build quick slideshows for birthdays, anniversaries, school functions, reunions, or small event tables using local media folders."
+        },
+        {
+          "icon": "🧑‍🎨",
+          "title": "Portfolios and Creative Showcases",
+          "text": "Present artwork, design samples, photography sets, or demo reels on a tablet with fullscreen playback and reusable folder presets."
+        },
+        {
+          "icon": "🛋️",
+          "title": "Ambient Tablet Displays",
+          "text": "Create a calm looping viewer for quotes, mood boards, travel shots, or mixed media collections with optional background music."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is Ditto Scan?",
+          "a": "Ditto Scan is a folder-based slideshow app for Android, designed especially for tablets. It turns local folders into reusable fullscreen slideshows for photos, videos, and optional background music."
+        },
+        {
+          "q": "Does Ditto Scan work with local folders on my device?",
+          "a": "Yes. You choose folders through Android's document picker, and Ditto Scan saves permission so those folders can be reopened later without repeating setup every time."
+        },
+        {
+          "q": "Can I save more than one slideshow setup?",
+          "a": "Yes. Each selected folder is saved as its own slideshow profile with its own settings, so different albums can behave differently."
+        },
+        {
+          "q": "Can photos and videos play in the same slideshow?",
+          "a": "Yes. Ditto Scan supports mixed media playback, so photos and videos can appear together in one continuous fullscreen slideshow."
+        },
+        {
+          "q": "Can I play music during the slideshow?",
+          "a": "Yes. If the selected folder includes supported audio files, Ditto Scan can use them as optional background music during playback."
+        },
+        {
+          "q": "Can videos play with their own sound?",
+          "a": "Yes. You can choose whether videos use their own audio or stay muted while background music continues."
+        },
+        {
+          "q": "What settings can I change for each folder?",
+          "a": "Each saved folder can keep its own photo duration, sort mode, subfolder preference, video audio behavior, and fit or fill screen mode."
+        },
+        {
+          "q": "Can Ditto Scan include subfolders while scanning media?",
+          "a": "Yes. When you add a folder, you can decide whether Ditto Scan should scan only that folder or include its subfolders too."
+        },
+        {
+          "q": "Is the app good for tablets?",
+          "a": "Yes. The home screen layout adapts to device size, using roomier grid layouts on tablets for easier browsing and repeat use."
+        },
+        {
+          "q": "Do I need to upload my media anywhere?",
+          "a": "No. Ditto Scan is built around local folders you explicitly choose, so your slideshow media can stay on your device."
+        }
+      ]
+    }
+  },
+  "media": {
+    "screenshotOrientation": "landscape",
+    "screenshots": [
+      {
+        "src": "images/screenshots/ss001.jpg",
+        "alt": "Ditto Scan Android TV screenshot 1"
+      },
+      {
+        "src": "images/screenshots/ss002.jpg",
+        "alt": "Ditto Scan Android TV screenshot 2"
+      },
+      {
+        "src": "images/screenshots/ss003.jpg",
+        "alt": "Ditto Scan Android TV screenshot 3"
+      },
+      {
+        "src": "images/screenshots/ss004.jpg",
+        "alt": "Ditto Scan Android TV screenshot 4"
+      },
+      {
+        "src": "images/screenshots/ss005.jpg",
+        "alt": "Ditto Scan Android TV screenshot 5"
+      },
+      {
+        "src": "images/screenshots/ss006.jpg",
+        "alt": "Ditto Scan Android TV screenshot 6"
+      }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See Ditto Scan on Android TV",
+      "youtubeEmbedUrl": "",
+      "iframeTitle": "Ditto Scan Android TV Demo"
+    }
+  },
+  "sections": {
+    "howItWorks": {
+      "title": "Build a Reusable Slideshow in 3 Steps",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Choose a Folder",
+          "text": "Pick a local folder on your Android tablet, then decide whether Ditto Scan should also include media from subfolders."
+        },
+        {
+          "number": "2",
+          "title": "Save Its Settings",
+          "text": "Set photo duration, sort order, video audio behavior, and fit or fill mode. Ditto Scan saves those choices with that folder profile."
+        },
+        {
+          "number": "3",
+          "title": "Play Anytime",
+          "text": "Open the saved folder from your recent library and launch the slideshow again in immersive fullscreen whenever you want."
+        }
+      ]
+    },
+    "features": {
+      "title": "Why Tablet Users Will Like It",
+      "cards": [
+        {
+          "icon": "📂",
+          "title": "Reusable Folder Profiles",
+          "bullets": [
+            "Save multiple folder-based slideshow setups",
+            "Reopen favorite media collections without setting them up again"
+          ]
+        },
+        {
+          "icon": "🖼️",
+          "title": "Mixed Media Playback",
+          "bullets": [
+            "Play photos and videos together in one fullscreen loop",
+            "Use smooth fade transitions for a polished viewing experience"
+          ]
+        },
+        {
+          "icon": "🎵",
+          "title": "Optional Music Layer",
+          "bullets": [
+            "Use audio files from the same folder as background music",
+            "Choose whether videos use their own sound or stay muted"
+          ]
+        },
+        {
+          "icon": "📱",
+          "title": "Tablet-Optimized Library",
+          "bullets": [
+            "Browse saved slideshows in spacious tablet-friendly grids",
+            "Search, preview, and manage recent folders with touch-friendly controls"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "Family Photo Albums",
+          "text": "Turn a tablet into a relaxing viewer for vacation memories, family milestones, and everyday photo folders you want to revisit often."
+        },
+        {
+          "icon": "🎉",
+          "title": "Events and Celebrations",
+          "text": "Build quick slideshows for birthdays, anniversaries, school functions, reunions, or small event tables using local media folders."
+        },
+        {
+          "icon": "🧑‍🎨",
+          "title": "Portfolios and Creative Showcases",
+          "text": "Present artwork, design samples, photography sets, or demo reels on a tablet with fullscreen playback and reusable folder presets."
+        },
+        {
+          "icon": "🛋️",
+          "title": "Ambient Tablet Displays",
+          "text": "Create a calm looping viewer for quotes, mood boards, travel shots, or mixed media collections with optional background music."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is Ditto Scan?",
+          "a": "Ditto Scan is a folder-based slideshow app for Android, designed especially for tablets. It turns local folders into reusable fullscreen slideshows for photos, videos, and optional background music."
+        },
+        {
+          "q": "Does Ditto Scan work with local folders on my device?",
+          "a": "Yes. You choose folders through Android's document picker, and Ditto Scan saves permission so those folders can be reopened later without repeating setup every time."
+        },
+        {
+          "q": "Can I save more than one slideshow setup?",
+          "a": "Yes. Each selected folder is saved as its own slideshow profile with its own settings, so different albums can behave differently."
+        },
+        {
+          "q": "Can photos and videos play in the same slideshow?",
+          "a": "Yes. Ditto Scan supports mixed media playback, so photos and videos can appear together in one continuous fullscreen slideshow."
+        },
+        {
+          "q": "Can I play music during the slideshow?",
+          "a": "Yes. If the selected folder includes supported audio files, Ditto Scan can use them as optional background music during playback."
+        },
+        {
+          "q": "Can videos play with their own sound?",
+          "a": "Yes. You can choose whether videos use their own audio or stay muted while background music continues."
+        },
+        {
+          "q": "What settings can I change for each folder?",
+          "a": "Each saved folder can keep its own photo duration, sort mode, subfolder preference, video audio behavior, and fit or fill screen mode."
+        },
+        {
+          "q": "Can Ditto Scan include subfolders while scanning media?",
+          "a": "Yes. When you add a folder, you can decide whether Ditto Scan should scan only that folder or include its subfolders too."
+        },
+        {
+          "q": "Is the app good for tablets?",
+          "a": "Yes. The home screen layout adapts to device size, using roomier grid layouts on tablets for easier browsing and repeat use."
+        },
+        {
+          "q": "Do I need to upload my media anywhere?",
+          "a": "No. Ditto Scan is built around local folders you explicitly choose, so your slideshow media can stay on your device."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Turn Local Folders Into Beautiful Tablet Slideshows",
+      "text": "Download Ditto Scan to play photos, videos, and optional music from reusable folder profiles on Android tablets.",
+      "buttons": [
+        {
+          "type": "googlePlay",
+          "label": "Get it on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.galleryslideshow",
+          "style": "primary"
+        },
+        {
+          "type": "amazon",
+          "label": "Available on Amazon",
+          "url": "https://www.amazon.com/dp/B0H37FQVXD/",
+          "style": "secondary"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "Ditto Scan",
+      "about": "A tablet-first Android slideshow app for replaying local folders as fullscreen photo and video experiences with optional background music."
+    },
+    "social": [
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/glisogalleryslideshow"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Download on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.galleryslideshow"
+          },
+          {
+            "label": "Download on Amazon",
+            "url": "https://www.amazon.com/dp/B0H37FQVXD/"
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          {
+            "label": "TV PDF Viewer",
+            "url": "https://deepakpk.com/tvpdfviewer"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Ditto Scan",
+      "operatingSystem": "Android",
+      "applicationCategory": "MultimediaApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.galleryslideshow",
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      },
+      "description": "Ditto Scan is an Android app for turning local folders into reusable fullscreen slideshows with photos, videos, and optional background music."
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": [
+        "https://www.facebook.com/glisogalleryslideshow"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
+    }
+  }
+}

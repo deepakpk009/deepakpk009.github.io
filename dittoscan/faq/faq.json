@@ -1,0 +1,42 @@
+[
+  {
+    "title": "What is Ditto Scan?",
+    "content": "Ditto Scan is a folder-based slideshow app for Android that is especially well suited to tablets. It lets you turn local folders into reusable fullscreen slideshows for photos, videos, and optional background music."
+  },
+  {
+    "title": "How do I choose media for a slideshow?",
+    "content": "You pick a local folder using Android's document picker. Ditto Scan saves access to that folder so you can reopen it later without going through setup again each time."
+  },
+  {
+    "title": "Can I save multiple slideshow folders?",
+    "content": "Yes. Each selected folder becomes its own saved slideshow profile, so you can keep separate setups for different albums, events, or collections."
+  },
+  {
+    "title": "Can photos and videos play together?",
+    "content": "Yes. Ditto Scan supports mixed media playback, so photos and videos can play together in one continuous fullscreen slideshow."
+  },
+  {
+    "title": "Can I add music to the slideshow?",
+    "content": "Yes. If the selected folder includes supported audio files, Ditto Scan can use them as optional background music during playback."
+  },
+  {
+    "title": "Can videos use their own sound?",
+    "content": "Yes. You can choose whether videos play with their own audio or stay muted while background music continues."
+  },
+  {
+    "title": "What settings are saved for each folder?",
+    "content": "Each folder can keep its own photo duration, sort mode, subfolder preference, video audio behavior, and fit or fill screen mode."
+  },
+  {
+    "title": "Can Ditto Scan scan subfolders too?",
+    "content": "Yes. When you add a folder, you can decide whether Ditto Scan should include media from subfolders during scanning."
+  },
+  {
+    "title": "Is Ditto Scan designed for tablets?",
+    "content": "Yes. The app uses a tablet-friendly home screen layout with roomier grids, touch-friendly cards, and an easy way to reopen saved slideshow folders."
+  },
+  {
+    "title": "Do I need to upload my media to the cloud?",
+    "content": "No. Ditto Scan is built around local folders you explicitly choose on your device, so your media can stay private and local."
+  }
+]

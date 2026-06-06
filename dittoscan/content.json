@@ -1,24 +1,24 @@
 {
   "meta": {
     "lang": "en",
-    "title": "Ditto Scan - Folder-Based Slideshow App for Android Tablets",
-    "description": "Ditto Scan is an Android tablet-first app for turning local folders into reusable fullscreen photo and video slideshows with optional background music.",
-    "keywords": "Ditto Scan, Android tablet slideshow app, folder based slideshow Android, photo slideshow tablet app, video slideshow Android tablet, local gallery slideshow app, Android album slideshow, slideshow with music Android, fullscreen slideshow tablet, folder slideshow profile app, Android photo video viewer, Android tablet gallery app",
+    "title": "Ditto Scan - Document Scanner and PDF App for Android",
+    "description": "Ditto Scan is an Android document scanner app that lets you scan with the camera or import photos, clean up pages, organize multi-page documents, and export PDFs.",
+    "keywords": "Ditto Scan, Android document scanner, PDF scanner app Android, scan documents with camera, import document photos Android, multi page PDF Android, receipt scanner Android, document crop and deskew app, scan and share PDF Android, mobile document scanner, Deepak PK",
     "author": "Deepak PK",
     "canonical": "https://deepakpk.com/dittoscan",
     "og": {
       "type": "website",
       "url": "https://deepakpk.com/dittoscan",
-      "title": "Ditto Scan for Android Tablets",
-      "description": "Create beautiful fullscreen slideshows from local folders on Android tablets with photos, videos, optional music, and reusable per-folder settings.",
+      "title": "Ditto Scan - Document Scanner for Android",
+      "description": "Scan paper documents, import gallery images, enhance pages, and export clean multi-page PDFs from your Android phone or tablet.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
     "twitter": {
       "card": "summary_large_image",
       "url": "https://deepakpk.com/dittoscan",
-      "title": "Ditto Scan for Android Tablets",
-      "description": "A tablet-first Android slideshow app for photos, videos, and optional music using local folders you choose.",
+      "title": "Ditto Scan - Document Scanner for Android",
+      "description": "Capture, edit, organize, and export documents as PDFs with Ditto Scan on Android.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -30,27 +30,27 @@
     }
   },
   "theme": {
-    "primaryGreen": "#9B35FF",
-    "darkGreen": "#5F20F5",
-    "lightGreen": "#C978FF",
-    "darkerGreen": "#171046",
-    "black": "#120B33",
-    "darkBg": "#1D1550",
-    "cardBg": "#281C68",
+    "primaryGreen": "#0068F0",
+    "darkGreen": "#0058E8",
+    "lightGreen": "#49A7FF",
+    "darkerGreen": "#0A1E4F",
+    "black": "#081226",
+    "darkBg": "#0D2868",
+    "cardBg": "#12357E",
     "textWhite": "#FFFFFF",
-    "textGray": "#DDD8FF",
-    "borderGreen": "#4D86FF",
-    "boxShadowColor": "#6A35FF4d",
+    "textGray": "#DCE9FF",
+    "borderGreen": "#69B7FF",
+    "boxShadowColor": "#0068F04D",
     "heroWatermarkOpacity": 0.05,
     "ctaWatermarkOpacity": 0.075,
-    "accentOrange": "#FFB24C",
-    "softRed": "#6BCBFF",
-    "paperWhite": "#F8F6FF"
+    "accentOrange": "#6ED7FF",
+    "softRed": "#9FCCFF",
+    "paperWhite": "#F5F9FF"
   },
   "product": {
     "name": "Ditto Scan",
-    "heroTitle": "Ditto Scan - Beautiful Folder-Based Slideshows for Android Tablets",
-    "heroDescription": "Turn your Android tablet into a polished slideshow viewer for local media. Pick a folder once, save it as a reusable profile, and replay photos, videos, and optional background music in immersive fullscreen whenever you want.",
+    "heroTitle": "Ditto Scan - Scan Documents and Export PDFs on Android",
+    "heroDescription": "Capture paper documents with your camera or import existing photos, then crop, deskew, enhance, organize, and export them as polished multi-page PDFs. Ditto Scan is built for fast everyday scanning on Android phones and tablets.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
@@ -68,99 +68,99 @@
     ],
     "stats": [
       {
-        "value": "📱 Tablet First",
-        "label": "Designed for larger Android screens"
+        "value": "Camera + Gallery",
+        "label": "Scan live pages or import document photos"
       },
       {
-        "value": "📂 Saved Folders",
-        "label": "Reusable slideshow profiles"
+        "value": "Multi-Page PDF",
+        "label": "Export complete documents with size and quality options"
       },
       {
-        "value": "🎵 Mixed Media",
-        "label": "Photos, videos, and optional music"
+        "value": "Phone + Tablet",
+        "label": "Responsive layouts for compact and larger screens"
       }
     ],
     "features": {
-      "title": "Features Built for Repeat Slideshow Use",
+      "title": "Everything You Need for Everyday Document Scanning",
       "cards": [
         {
-          "icon": "📂",
-          "title": "Folder-Based Slideshow Profiles",
+          "icon": "📷",
+          "title": "Capture or Import Pages",
           "bullets": [
-            "Choose local folders with Android's document picker",
-            "Save each selected folder as its own slideshow profile",
-            "Persist folder access so you can reopen the same media later",
-            "Rescan the folder at slideshow start so playback reflects current files"
+            "Scan documents with the device camera",
+            "Import document photos from the gallery or photo picker",
+            "Use flash control while capturing pages",
+            "Turn the camera grid overlay on or off for better alignment"
           ]
         },
         {
-          "icon": "🖼️",
-          "title": "Photos and Videos Together",
+          "icon": "✨",
+          "title": "Clean Up Each Page",
           "bullets": [
-            "Play local photos and videos together in one fullscreen slideshow",
-            "Handle image-to-image, image-to-video, video-to-image, and video-to-video transitions",
-            "Keep photos on screen for your chosen duration",
-            "Let videos play through naturally inside the same loop"
+            "Manually crop document corners with precise control",
+            "Deskew pages into a flatter scanned-document view",
+            "Rotate pages left or right before saving",
+            "Apply Natural, Enhanced Color, Grayscale, or Black and White filters"
           ]
         },
         {
-          "icon": "🎵",
-          "title": "Optional Background Music",
+          "icon": "📄",
+          "title": "Build Multi-Page Documents",
           "bullets": [
-            "Detect supported audio files in the same selected folder",
-            "Play background music independently during the slideshow",
-            "Let videos play with their own audio when you want",
-            "Or mute video audio while background music continues"
+            "Create document projects with one page or many pages",
+            "Add new pages to an existing project at any time",
+            "Replace an existing page without changing its position",
+            "Reorder pages with drag and drop or remove pages you no longer need"
+          ]
+        },
+        {
+          "icon": "🔍",
+          "title": "Review Before You Export",
+          "bullets": [
+            "Open a full page preview for every scanned page",
+            "Move between previous and next pages inside preview",
+            "Pinch to zoom, pan, and double tap to reset the preview",
+            "Edit the crop again from the preview screen when needed"
+          ]
+        },
+        {
+          "icon": "🧾",
+          "title": "Flexible PDF Export",
+          "bullets": [
+            "Export each project as a multi-page PDF",
+            "Choose A4, Letter, or Original image size for exported pages",
+            "Choose Low, Medium, or High export quality",
+            "Share exported PDFs directly with the Android share sheet"
+          ]
+        },
+        {
+          "icon": "🗂️",
+          "title": "Organized Project Library",
+          "bullets": [
+            "Name, rename, open, search, and delete projects",
+            "Browse project thumbnails, page counts, and last updated info",
+            "Generate thumbnails for faster project and page browsing",
+            "Keep one current PDF export per project instead of piling up old copies"
           ]
         },
         {
           "icon": "⚙️",
-          "title": "Per-Folder Playback Settings",
+          "title": "Defaults That Save Time",
           "bullets": [
-            "Store settings separately for each saved folder",
-            "Adjust photo duration in seconds",
-            "Choose sort by name ascending, name descending, date taken, or shuffle",
-            "Decide whether subfolders should be included during scanning"
-          ]
-        },
-        {
-          "icon": "📐",
-          "title": "Fit and Fill Display Modes",
-          "bullets": [
-            "Show the full image or video inside the screen bounds",
-            "Or fill the screen with center-cropped media for a bolder look",
-            "Keep the slideshow immersive and fullscreen during playback",
-            "Keep the screen awake so longer viewing sessions are not interrupted"
-          ]
-        },
-        {
-          "icon": "📚",
-          "title": "Saved Folder Library",
-          "bullets": [
-            "Reopen favorite folders directly from the home screen",
-            "See thumbnail stacks for faster visual recognition",
-            "View compact counts for photos, videos, audio, and saved duration",
-            "Keep recent folders ordered by the last time you opened them"
-          ]
-        },
-        {
-          "icon": "🔎",
-          "title": "Tablet-Friendly Browsing",
-          "bullets": [
-            "Search saved folders by name with case-insensitive filtering",
-            "Use a one-column list on phones and roomier grids on tablets",
-            "Get touch-friendly cards, dialogs, and controls",
-            "Quickly start a slideshow, edit settings, or remove a saved profile"
+            "Save a default image filter mode",
+            "Save a default PDF page size",
+            "Save a default PDF export quality",
+            "Preserve photo orientation from original image metadata when loading images"
           ]
         },
         {
           "icon": "🔒",
-          "title": "Private and Local by Design",
+          "title": "Private Local Storage",
           "bullets": [
-            "Built around folders you explicitly choose on your device",
-            "No cloud account is required for normal slideshow use",
-            "Only the folders you grant access to can be reopened later",
-            "Works well for personal albums, event folders, and repeat viewing setups"
+            "Store projects, originals, processed pages, thumbnails, and exports in app-private local storage",
+            "No cloud account is required for normal use",
+            "Designed for quick personal scanning workflows on Android",
+            "Includes a free demo experience with subscription plans for expanded usage"
           ]
         }
       ]
@@ -169,24 +169,24 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "👨‍👩‍👧‍👦",
-          "title": "Family Photo Albums",
-          "text": "Turn a tablet into a relaxing viewer for vacation memories, family milestones, and everyday photo folders you want to revisit often."
+          "icon": "🎓",
+          "title": "Students and Study Notes",
+          "text": "Scan class notes, handouts, assignments, and reference sheets into portable PDFs you can keep organized by project."
         },
         {
-          "icon": "🎉",
-          "title": "Events and Celebrations",
-          "text": "Build quick slideshows for birthdays, anniversaries, school functions, reunions, or small event tables using local media folders."
+          "icon": "💼",
+          "title": "Work and Office Paperwork",
+          "text": "Capture invoices, reports, signed forms, meeting notes, and printed documents from your phone or tablet when you need a quick digital copy."
         },
         {
-          "icon": "🧑‍🎨",
-          "title": "Portfolios and Creative Showcases",
-          "text": "Present artwork, design samples, photography sets, or demo reels on a tablet with fullscreen playback and reusable folder presets."
+          "icon": "🧾",
+          "title": "Receipts and Expense Records",
+          "text": "Turn receipts, bills, and warranty papers into readable scans, then export and share them as PDFs for bookkeeping or reimbursement."
         },
         {
-          "icon": "🛋️",
-          "title": "Ambient Tablet Displays",
-          "text": "Create a calm looping viewer for quotes, mood boards, travel shots, or mixed media collections with optional background music."
+          "icon": "🏠",
+          "title": "Home Document Backup",
+          "text": "Digitize IDs, utility papers, application forms, appliance documents, and other everyday paperwork without needing a desktop scanner."
         }
       ]
     },
@@ -195,43 +195,43 @@
       "items": [
         {
           "q": "What is Ditto Scan?",
-          "a": "Ditto Scan is a folder-based slideshow app for Android, designed especially for tablets. It turns local folders into reusable fullscreen slideshows for photos, videos, and optional background music."
+          "a": "Ditto Scan is an Android document scanner app that helps you capture or import pages, clean them up, organize them into projects, and export them as PDFs."
         },
         {
-          "q": "Does Ditto Scan work with local folders on my device?",
-          "a": "Yes. You choose folders through Android's document picker, and Ditto Scan saves permission so those folders can be reopened later without repeating setup every time."
+          "q": "Can I scan documents with the camera?",
+          "a": "Yes. Ditto Scan supports live document capture with the device camera, including flash control and an optional grid overlay for alignment."
         },
         {
-          "q": "Can I save more than one slideshow setup?",
-          "a": "Yes. Each selected folder is saved as its own slideshow profile with its own settings, so different albums can behave differently."
+          "q": "Can I import existing document photos?",
+          "a": "Yes. You can bring in document images from the gallery or Android photo picker and continue editing them inside the app."
         },
         {
-          "q": "Can photos and videos play in the same slideshow?",
-          "a": "Yes. Ditto Scan supports mixed media playback, so photos and videos can appear together in one continuous fullscreen slideshow."
+          "q": "Can I crop and straighten scanned pages?",
+          "a": "Yes. You can manually adjust document corners, deskew pages into a flatter view, and rotate pages before saving."
         },
         {
-          "q": "Can I play music during the slideshow?",
-          "a": "Yes. If the selected folder includes supported audio files, Ditto Scan can use them as optional background music during playback."
+          "q": "What filters does Ditto Scan support?",
+          "a": "Ditto Scan includes Natural, Enhanced Color, Grayscale, and Black and White filter modes for scanned pages."
         },
         {
-          "q": "Can videos play with their own sound?",
-          "a": "Yes. You can choose whether videos use their own audio or stay muted while background music continues."
+          "q": "Can I create multi-page PDFs?",
+          "a": "Yes. Each project can contain multiple pages and can be exported as a multi-page PDF."
         },
         {
-          "q": "What settings can I change for each folder?",
-          "a": "Each saved folder can keep its own photo duration, sort mode, subfolder preference, video audio behavior, and fit or fill screen mode."
+          "q": "Can I reorder or replace pages in a project?",
+          "a": "Yes. You can reorder pages with drag and drop, replace a page without changing its position, add new pages, or delete individual pages."
         },
         {
-          "q": "Can Ditto Scan include subfolders while scanning media?",
-          "a": "Yes. When you add a folder, you can decide whether Ditto Scan should scan only that folder or include its subfolders too."
+          "q": "Can I preview and zoom pages before exporting?",
+          "a": "Yes. The page preview supports previous and next navigation, pinch to zoom, pan, double tap reset, and quick crop editing."
         },
         {
-          "q": "Is the app good for tablets?",
-          "a": "Yes. The home screen layout adapts to device size, using roomier grid layouts on tablets for easier browsing and repeat use."
+          "q": "What PDF export options are available?",
+          "a": "You can export using A4, Letter, or Original image size and choose Low, Medium, or High PDF quality before sharing."
         },
         {
-          "q": "Do I need to upload my media anywhere?",
-          "a": "No. Ditto Scan is built around local folders you explicitly choose, so your slideshow media can stay on your device."
+          "q": "Does Ditto Scan store documents locally?",
+          "a": "Yes. Projects, original photos, processed pages, thumbnails, and exports are stored in app-private local storage on the device."
         }
       ]
     }
@@ -241,90 +241,90 @@
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",
-        "alt": "Ditto Scan Android TV screenshot 1"
+        "alt": "Ditto Scan document scanner screenshot 1"
       },
       {
         "src": "images/screenshots/ss002.jpg",
-        "alt": "Ditto Scan Android TV screenshot 2"
+        "alt": "Ditto Scan document scanner screenshot 2"
       },
       {
         "src": "images/screenshots/ss003.jpg",
-        "alt": "Ditto Scan Android TV screenshot 3"
+        "alt": "Ditto Scan document scanner screenshot 3"
       },
       {
         "src": "images/screenshots/ss004.jpg",
-        "alt": "Ditto Scan Android TV screenshot 4"
+        "alt": "Ditto Scan document scanner screenshot 4"
       },
       {
         "src": "images/screenshots/ss005.jpg",
-        "alt": "Ditto Scan Android TV screenshot 5"
+        "alt": "Ditto Scan document scanner screenshot 5"
       },
       {
         "src": "images/screenshots/ss006.jpg",
-        "alt": "Ditto Scan Android TV screenshot 6"
+        "alt": "Ditto Scan document scanner screenshot 6"
       }
     ],
     "video": {
       "sectionId": "demo",
-      "title": "See Ditto Scan on Android TV",
+      "title": "See Ditto Scan in Action",
       "youtubeEmbedUrl": "",
-      "iframeTitle": "Ditto Scan Android TV Demo"
+      "iframeTitle": "Ditto Scan Android Document Scanner Demo"
     }
   },
   "sections": {
     "howItWorks": {
-      "title": "Build a Reusable Slideshow in 3 Steps",
+      "title": "Scan to PDF in 3 Steps",
       "steps": [
         {
           "number": "1",
-          "title": "Choose a Folder",
-          "text": "Pick a local folder on your Android tablet, then decide whether Ditto Scan should also include media from subfolders."
+          "title": "Capture or Import",
+          "text": "Scan a page with the camera or import an existing document photo from your gallery or Android photo picker."
         },
         {
           "number": "2",
-          "title": "Save Its Settings",
-          "text": "Set photo duration, sort order, video audio behavior, and fit or fill mode. Ditto Scan saves those choices with that folder profile."
+          "title": "Edit and Organize",
+          "text": "Crop corners, deskew, rotate, apply a filter, then add, reorder, or replace pages inside your document project."
         },
         {
           "number": "3",
-          "title": "Play Anytime",
-          "text": "Open the saved folder from your recent library and launch the slideshow again in immersive fullscreen whenever you want."
+          "title": "Export and Share",
+          "text": "Choose your PDF page size and quality, export the document, and share it directly from your Android device."
         }
       ]
     },
     "features": {
-      "title": "Why Tablet Users Will Like It",
+      "title": "Why Android Users Will Like It",
       "cards": [
         {
-          "icon": "📂",
-          "title": "Reusable Folder Profiles",
+          "icon": "📷",
+          "title": "Fast Capture Workflow",
           "bullets": [
-            "Save multiple folder-based slideshow setups",
-            "Reopen favorite media collections without setting them up again"
+            "Camera scanning, gallery import, flash control, and optional grid overlay",
+            "Live preview modes help you frame documents before saving"
           ]
         },
         {
-          "icon": "🖼️",
-          "title": "Mixed Media Playback",
+          "icon": "🧽",
+          "title": "Clean, Readable Pages",
           "bullets": [
-            "Play photos and videos together in one fullscreen loop",
-            "Use smooth fade transitions for a polished viewing experience"
+            "Crop, deskew, rotate, and enhance each page before export",
+            "Choose from Natural, Enhanced Color, Grayscale, and Black and White"
           ]
         },
         {
-          "icon": "🎵",
-          "title": "Optional Music Layer",
+          "icon": "📄",
+          "title": "Multi-Page Project Editing",
           "bullets": [
-            "Use audio files from the same folder as background music",
-            "Choose whether videos use their own sound or stay muted"
+            "Create document projects, add pages later, and rearrange them with drag and drop",
+            "Preview, zoom, replace, or delete individual pages whenever needed"
           ]
         },
         {
-          "icon": "📱",
-          "title": "Tablet-Optimized Library",
+          "icon": "📤",
+          "title": "Share-Ready PDF Export",
           "bullets": [
-            "Browse saved slideshows in spacious tablet-friendly grids",
-            "Search, preview, and manage recent folders with touch-friendly controls"
+            "Export multi-page PDFs with A4, Letter, or Original size options",
+            "Pick low, medium, or high quality and share through Android's share sheet"
           ]
         }
       ]
@@ -333,24 +333,24 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "👨‍👩‍👧‍👦",
-          "title": "Family Photo Albums",
-          "text": "Turn a tablet into a relaxing viewer for vacation memories, family milestones, and everyday photo folders you want to revisit often."
+          "icon": "🎓",
+          "title": "Students",
+          "text": "Capture handwritten notes, study sheets, forms, and classroom handouts into tidy digital documents."
         },
         {
-          "icon": "🎉",
-          "title": "Events and Celebrations",
-          "text": "Build quick slideshows for birthdays, anniversaries, school functions, reunions, or small event tables using local media folders."
+          "icon": "💼",
+          "title": "Professionals",
+          "text": "Digitize contracts, invoices, signed pages, and printed paperwork while away from a desktop scanner."
         },
         {
-          "icon": "🧑‍🎨",
-          "title": "Portfolios and Creative Showcases",
-          "text": "Present artwork, design samples, photography sets, or demo reels on a tablet with fullscreen playback and reusable folder presets."
+          "icon": "🧾",
+          "title": "Receipts and Bills",
+          "text": "Store receipts, expense records, and household bills as readable, easy-to-share PDFs."
         },
         {
-          "icon": "🛋️",
-          "title": "Ambient Tablet Displays",
-          "text": "Create a calm looping viewer for quotes, mood boards, travel shots, or mixed media collections with optional background music."
+          "icon": "🏠",
+          "title": "Everyday Paper Backup",
+          "text": "Keep copies of home and personal documents in app-private storage on your Android device."
         }
       ]
     },
@@ -359,49 +359,49 @@
       "items": [
         {
           "q": "What is Ditto Scan?",
-          "a": "Ditto Scan is a folder-based slideshow app for Android, designed especially for tablets. It turns local folders into reusable fullscreen slideshows for photos, videos, and optional background music."
+          "a": "Ditto Scan is an Android document scanner app that lets you capture or import pages, edit them, organize them into projects, and export PDFs."
         },
         {
-          "q": "Does Ditto Scan work with local folders on my device?",
-          "a": "Yes. You choose folders through Android's document picker, and Ditto Scan saves permission so those folders can be reopened later without repeating setup every time."
+          "q": "Can I scan paper documents with my phone camera?",
+          "a": "Yes. Ditto Scan supports camera-based document capture with flash control and an optional grid overlay."
         },
         {
-          "q": "Can I save more than one slideshow setup?",
-          "a": "Yes. Each selected folder is saved as its own slideshow profile with its own settings, so different albums can behave differently."
+          "q": "Can I import images from the gallery?",
+          "a": "Yes. You can import existing document photos from the gallery or Android photo picker."
         },
         {
-          "q": "Can photos and videos play in the same slideshow?",
-          "a": "Yes. Ditto Scan supports mixed media playback, so photos and videos can appear together in one continuous fullscreen slideshow."
+          "q": "Can I crop, deskew, and rotate pages?",
+          "a": "Yes. Ditto Scan lets you manually crop page corners, deskew the document view, and rotate pages before saving."
         },
         {
-          "q": "Can I play music during the slideshow?",
-          "a": "Yes. If the selected folder includes supported audio files, Ditto Scan can use them as optional background music during playback."
+          "q": "Can I create a document with multiple pages?",
+          "a": "Yes. Ditto Scan supports multi-page document projects and PDF export."
         },
         {
-          "q": "Can videos play with their own sound?",
-          "a": "Yes. You can choose whether videos use their own audio or stay muted while background music continues."
+          "q": "Can I rearrange pages later?",
+          "a": "Yes. You can reorder pages with drag and drop, add new pages, replace a page in place, or remove pages you no longer need."
         },
         {
-          "q": "What settings can I change for each folder?",
-          "a": "Each saved folder can keep its own photo duration, sort mode, subfolder preference, video audio behavior, and fit or fill screen mode."
+          "q": "Can I share a single page as an image?",
+          "a": "Yes. A single page can be shared as a JPEG from the preview flow."
         },
         {
-          "q": "Can Ditto Scan include subfolders while scanning media?",
-          "a": "Yes. When you add a folder, you can decide whether Ditto Scan should scan only that folder or include its subfolders too."
+          "q": "What PDF settings can I choose?",
+          "a": "You can choose A4, Letter, or Original image size, plus Low, Medium, or High export quality."
         },
         {
-          "q": "Is the app good for tablets?",
-          "a": "Yes. The home screen layout adapts to device size, using roomier grid layouts on tablets for easier browsing and repeat use."
+          "q": "Does Ditto Scan store files locally?",
+          "a": "Yes. The app stores projects and related files in app-private local storage on your device."
         },
         {
-          "q": "Do I need to upload my media anywhere?",
-          "a": "No. Ditto Scan is built around local folders you explicitly choose, so your slideshow media can stay on your device."
+          "q": "Does Ditto Scan work on tablets too?",
+          "a": "Yes. The app supports responsive layouts for phones and tablets, including flexible tablet-friendly screens."
         }
       ]
     },
     "cta": {
-      "title": "Turn Local Folders Into Beautiful Tablet Slideshows",
-      "text": "Download Ditto Scan to play photos, videos, and optional music from reusable folder profiles on Android tablets.",
+      "title": "Turn Paper Documents Into Clean PDFs on Android",
+      "text": "Download Ditto Scan to capture, edit, organize, and share documents from your Android phone or tablet.",
       "buttons": [
         {
           "type": "googlePlay",
@@ -422,7 +422,7 @@
     "brand": {
       "logo": "images/app_icon.png",
       "name": "Ditto Scan",
-      "about": "A tablet-first Android slideshow app for replaying local folders as fullscreen photo and video experiences with optional background music."
+      "about": "An Android document scanner app for capturing pages, organizing projects, and exporting clean PDFs from your phone or tablet."
     },
     "social": [
       {
@@ -493,7 +493,7 @@
       "@type": "SoftwareApplication",
       "name": "Ditto Scan",
       "operatingSystem": "Android",
-      "applicationCategory": "MultimediaApplication",
+      "applicationCategory": "UtilitiesApplication",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -509,7 +509,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "Ditto Scan is an Android app for turning local folders into reusable fullscreen slideshows with photos, videos, and optional background music."
+      "description": "Ditto Scan is an Android document scanner app for capturing pages, editing them, organizing multi-page projects, and exporting PDFs."
     },
     "organization": {
       "@context": "https://schema.org",

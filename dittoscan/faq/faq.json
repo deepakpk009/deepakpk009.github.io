@@ -1,42 +1,122 @@
 [
   {
     "title": "What is Ditto Scan?",
-    "content": "Ditto Scan is a folder-based slideshow app for Android that is especially well suited to tablets. It lets you turn local folders into reusable fullscreen slideshows for photos, videos, and optional background music."
+    "content": "Ditto Scan is an Android document scanner app that helps you capture or import pages, edit them, organize them into projects, and export polished PDFs."
   },
   {
-    "title": "How do I choose media for a slideshow?",
-    "content": "You pick a local folder using Android's document picker. Ditto Scan saves access to that folder so you can reopen it later without going through setup again each time."
+    "title": "Can I scan documents with my phone camera?",
+    "content": "Yes. Ditto Scan supports live document capture with the device camera so you can scan paper documents directly inside the app."
   },
   {
-    "title": "Can I save multiple slideshow folders?",
-    "content": "Yes. Each selected folder becomes its own saved slideshow profile, so you can keep separate setups for different albums, events, or collections."
+    "title": "Can I import document photos from the gallery?",
+    "content": "Yes. You can import images from the gallery or Android photo picker if you already have document photos saved on your device."
   },
   {
-    "title": "Can photos and videos play together?",
-    "content": "Yes. Ditto Scan supports mixed media playback, so photos and videos can play together in one continuous fullscreen slideshow."
+    "title": "Does Ditto Scan support flash while scanning?",
+    "content": "Yes. The capture flow includes flash control to help when lighting conditions are not ideal."
   },
   {
-    "title": "Can I add music to the slideshow?",
-    "content": "Yes. If the selected folder includes supported audio files, Ditto Scan can use them as optional background music during playback."
+    "title": "Is there a grid overlay while capturing pages?",
+    "content": "Yes. Ditto Scan includes an optional camera grid overlay that can help you line up documents more accurately."
   },
   {
-    "title": "Can videos use their own sound?",
-    "content": "Yes. You can choose whether videos play with their own audio or stay muted while background music continues."
+    "title": "Can I crop document corners manually?",
+    "content": "Yes. You can manually adjust document corners to tighten the crop around the page before saving."
   },
   {
-    "title": "What settings are saved for each folder?",
-    "content": "Each folder can keep its own photo duration, sort mode, subfolder preference, video audio behavior, and fit or fill screen mode."
+    "title": "Can I straighten or deskew scanned pages?",
+    "content": "Yes. Ditto Scan can deskew pages into a flatter scanned-document view for a cleaner final result."
   },
   {
-    "title": "Can Ditto Scan scan subfolders too?",
-    "content": "Yes. When you add a folder, you can decide whether Ditto Scan should include media from subfolders during scanning."
+    "title": "Can I rotate scanned pages?",
+    "content": "Yes. Pages can be rotated left or right before saving or exporting."
   },
   {
-    "title": "Is Ditto Scan designed for tablets?",
-    "content": "Yes. The app uses a tablet-friendly home screen layout with roomier grids, touch-friendly cards, and an easy way to reopen saved slideshow folders."
+    "title": "What image filters are available?",
+    "content": "Ditto Scan supports Natural, Enhanced Color, Grayscale, and Black and White filter modes."
   },
   {
-    "title": "Do I need to upload my media to the cloud?",
-    "content": "No. Ditto Scan is built around local folders you explicitly choose on your device, so your media can stay private and local."
+    "title": "Can I create multi-page document projects?",
+    "content": "Yes. You can build a project with multiple scanned or imported pages and export it later as one PDF."
+  },
+  {
+    "title": "Can I add more pages to an existing project later?",
+    "content": "Yes. Ditto Scan lets you add new pages to an existing document project whenever you need to expand it."
+  },
+  {
+    "title": "Can I replace a page without changing its position?",
+    "content": "Yes. You can replace an existing page while keeping it in the same position within the document."
+  },
+  {
+    "title": "Can I reorder or delete pages?",
+    "content": "Yes. Pages can be reordered with drag and drop, and individual pages can also be deleted from a project."
+  },
+  {
+    "title": "Can I preview pages before exporting?",
+    "content": "Yes. Every page can be opened in a full preview where you can move between pages and review the scan before export."
+  },
+  {
+    "title": "Can I zoom in on a scanned page?",
+    "content": "Yes. The page preview supports pinch to zoom, pan, and double tap to reset the zoom level."
+  },
+  {
+    "title": "Can I edit the crop again from preview?",
+    "content": "Yes. The preview screen provides a way to jump back into crop editing for a page."
+  },
+  {
+    "title": "Can I share a single page as an image?",
+    "content": "Yes. Ditto Scan can share an individual page as a JPEG."
+  },
+  {
+    "title": "Can I export a project as a PDF?",
+    "content": "Yes. Ditto Scan exports document projects as multi-page PDFs."
+  },
+  {
+    "title": "What PDF page sizes can I choose?",
+    "content": "You can export using A4, Letter, or the Original image size depending on the document you are creating."
+  },
+  {
+    "title": "What PDF quality options are available?",
+    "content": "Ditto Scan offers Low, Medium, and High PDF export quality settings."
+  },
+  {
+    "title": "Can I share exported PDFs?",
+    "content": "Yes. Exported PDFs can be shared using the Android share sheet."
+  },
+  {
+    "title": "Does Ditto Scan keep creating duplicate PDF exports?",
+    "content": "No. The app keeps one current PDF export per project instead of continuously accumulating old exported copies."
+  },
+  {
+    "title": "Can I search, rename, or delete projects?",
+    "content": "Yes. You can name, rename, search, open, and delete projects from the project library."
+  },
+  {
+    "title": "What project details can I see in the library?",
+    "content": "The project list includes thumbnails, page counts, and last updated information to make browsing easier."
+  },
+  {
+    "title": "Can I save default settings for future scans?",
+    "content": "Yes. You can save a default image filter mode, default PDF page size, and default PDF export quality."
+  },
+  {
+    "title": "Does Ditto Scan preserve image orientation?",
+    "content": "Yes. The app preserves photo orientation from the original image metadata when loading images."
+  },
+  {
+    "title": "Where are my documents stored?",
+    "content": "Projects, original photos, processed pages, thumbnails, and exports are stored in app-private local storage on your device."
+  },
+  {
+    "title": "Do I need a cloud account to use Ditto Scan?",
+    "content": "No. Ditto Scan is designed around local on-device storage and does not require a cloud account for normal scanning workflows."
+  },
+  {
+    "title": "Does Ditto Scan work on tablets?",
+    "content": "Yes. The app supports responsive layouts for both phones and tablets, including flexible tablet-friendly screens."
+  },
+  {
+    "title": "Is there a free version or demo?",
+    "content": "Yes. Ditto Scan includes a free demo experience with limits, and the app offers subscription plans for expanded access."
   }
 ]

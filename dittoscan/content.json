@@ -241,27 +241,47 @@
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",
-        "alt": "Ditto Scan document scanner screenshot 1"
+        "alt": "Ditto Scan document scanner screenshot"
       },
       {
         "src": "images/screenshots/ss002.jpg",
-        "alt": "Ditto Scan document scanner screenshot 2"
+        "alt": "Ditto Scan document scanner screenshot"
       },
       {
         "src": "images/screenshots/ss003.jpg",
-        "alt": "Ditto Scan document scanner screenshot 3"
+        "alt": "Ditto Scan document scanner screenshot"
       },
       {
         "src": "images/screenshots/ss004.jpg",
-        "alt": "Ditto Scan document scanner screenshot 4"
+        "alt": "Ditto Scan document scanner screenshot"
       },
       {
         "src": "images/screenshots/ss005.jpg",
-        "alt": "Ditto Scan document scanner screenshot 5"
+        "alt": "Ditto Scan document scanner screenshot"
       },
       {
         "src": "images/screenshots/ss006.jpg",
-        "alt": "Ditto Scan document scanner screenshot 6"
+        "alt": "Ditto Scan document scanner screenshot"
+      },
+      {
+        "src": "images/screenshots/ss007.jpg",
+        "alt": "Ditto Scan document scanner screenshot"
+      },
+      {
+        "src": "images/screenshots/ss008.jpg",
+        "alt": "Ditto Scan document scanner screenshot"
+      },
+      {
+        "src": "images/screenshots/ss009.jpg",
+        "alt": "Ditto Scan document scanner screenshot"
+      },
+      {
+        "src": "images/screenshots/ss010.jpg",
+        "alt": "Ditto Scan document scanner screenshot"
+      },
+      {
+        "src": "images/screenshots/ss011.jpg",
+        "alt": "Ditto Scan document scanner screenshot"
       }
     ],
     "video": {

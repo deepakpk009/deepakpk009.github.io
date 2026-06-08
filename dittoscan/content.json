@@ -287,7 +287,7 @@
     "video": {
       "sectionId": "demo",
       "title": "See Ditto Scan in Action",
-      "youtubeEmbedUrl": "https://www.youtube.com/shorts/XnKA7wZcnlU",
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/XnKA7wZcnlU",
       "iframeTitle": "Ditto Scan Android Document Scanner Demo"
     }
   },

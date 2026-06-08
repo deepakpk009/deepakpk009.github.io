@@ -29,6 +29,10 @@ function normalizeScreenshotOrientation(orientation) {
   return orientation === "landscape" ? "landscape" : "portrait";
 }
 
+function normalizeVideoOrientation(orientation) {
+  return orientation === "landscape" ? "landscape" : "portrait";
+}
+
 function isHttpUrl(u) {
   return typeof u === "string" && (u.startsWith("http://") || u.startsWith("https://"));
 }
@@ -280,6 +284,7 @@ function buildHeroHtml(data) {
 
 function buildVideoHtml(data) {
   const v = data.media?.video || {};
+  const videoOrientation = normalizeVideoOrientation(data.media?.videoOrientation);
   if (!hasText(v.youtubeEmbedUrl) || !hasText(v.title)) return "";
 
   return `
@@ -287,7 +292,7 @@ function buildVideoHtml(data) {
       <div class="container">
         <h2>${v.title}</h2>
         <div class="video-wrapper">
-          <div class="video-container">
+          <div class="video-container is-${videoOrientation}">
             <iframe
               src="${v.youtubeEmbedUrl}"
               title="${v.iframeTitle || ""}"

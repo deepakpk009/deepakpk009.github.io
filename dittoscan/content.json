@@ -238,6 +238,7 @@
   },
   "media": {
     "screenshotOrientation": "portrait",
+    "videoOrientation": "portrait",
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",

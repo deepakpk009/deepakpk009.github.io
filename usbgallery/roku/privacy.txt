@@ -1,0 +1,56 @@
+Privacy Policy
+
+This Privacy Policy applies to the USB Gallery application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local-media utility for browsing and viewing content from connected USB storage.
+
+Summary
+
+The Application is designed to work with media that you choose to access from a USB storage device connected to your Roku device. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application.
+
+Information the Application Handles
+
+To browse and display media from a connected USB storage device, the Application may access information such as:
+
+- Folder names
+- File names
+- File paths on the connected USB storage device
+- Basic media details needed to display or open supported files, such as file type
+
+This information is used only to provide the local media-browsing and playback experience inside the Application.
+
+Information the Application Does Not Collect for Tracking
+
+The Roku version of the Application does not use the Application to track your activity across apps or websites. The Service Provider does not use the Application to collect analytics events, advertising identifiers, precise location information, or behavioral tracking information for the purpose of profiling or targeted advertising.
+
+USB Media and Local Processing
+
+Media discovery in the Application is intended to happen locally on your Roku device while you browse content from a connected USB storage device. The Service Provider does not use the Application to upload your USB media library to external analytics platforms or marketing systems.
+
+Third-Party Services
+
+The Roku version of the Application does not include Google Analytics, Firebase Analytics, Firebase Crashlytics, or Google Play Services.
+
+The Application runs on the Roku platform. Your use of the Roku platform and Roku device may also be governed by Roku's own policies and terms.
+
+Data Retention
+
+The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile or a remote analytics history for your use of local USB media. If future versions introduce account, sync, or online features, this Privacy Policy will be updated before those features are offered.
+
+Children's Privacy
+
+The Service Provider does not knowingly use the Application to solicit personal information from children.
+
+Security
+
+The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. Because the Application is designed around local USB browsing, you should use only storage devices and media files that you trust.
+
+Changes to This Privacy Policy
+
+The Service Provider may update this Privacy Policy from time to time. If that happens, the updated version will be posted at the current Privacy Policy page.
+
+Effective Date
+
+This Privacy Policy is effective as of 2026-06-16.
+
+Contact Us
+
+If you have any questions about this Privacy Policy or the Roku version of the Application, please contact the Service Provider at deepakpk009@yahoo.in (mailto:deepakpk009@yahoo.in).

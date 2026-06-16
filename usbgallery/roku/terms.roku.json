@@ -1,0 +1,242 @@
+{
+  "id": "terms",
+  "title": "Terms & Conditions",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "These Terms & Conditions apply to the USB Gallery application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local-media utility for browsing and viewing supported content from connected USB storage."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Acceptance of These Terms"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "By downloading, installing, or using the Application on a Roku device, you agree to these Terms & Conditions."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use of the Application"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application is intended to help you browse and open supported media files from USB storage that you connect to your Roku device. You are responsible for the content you access through the Application and for making sure you have the right to view, use, or play that content."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Local Media Responsibility"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "You are responsible for:"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "items": [
+        [
+          {
+            "type": "text",
+            "text": "Any media files, folders, or metadata stored on your USB device"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "The safety and condition of your USB storage device"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Making sure your Roku device and connected storage are used in accordance with applicable laws and rights held by content owners"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider does not claim ownership of the media files you access through the Application."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Availability and Compatibility"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, and media formats."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider does not guarantee that every file, codec, storage device, or media format will be supported."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "No Analytics or Google/Firebase Services in the Roku Version"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Roku version of the Application does not use Google Analytics, Firebase Analytics, Firebase Crashlytics, or Google Play Services."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Acceptable Use"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "You agree not to:"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "items": [
+        [
+          {
+            "type": "text",
+            "text": "Use the Application in a way that violates applicable law"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Attempt to interfere with the operation of the Application or the Roku platform"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Copy, modify, reverse engineer, or create derivative versions of the Application except to the extent allowed by applicable law"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Warranty Disclaimer"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. To the maximum extent permitted by applicable law, the Service Provider disclaims warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Limitation of Liability"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, or device/storage issues arising from your use of the Application."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changes to These Terms"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider may update these Terms & Conditions from time to time. If that happens, the updated version will be posted at the current Terms page."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Effective Date"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "These Terms & Conditions are effective as of 2026-06-16."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Contact Us"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "If you have any questions or suggestions about these Terms & Conditions, please contact the Service Provider at "
+        },
+        {
+          "type": "link",
+          "text": "deepakpk009@yahoo.in",
+          "url": "mailto:deepakpk009@yahoo.in"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ]
+}

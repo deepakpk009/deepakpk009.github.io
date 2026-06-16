@@ -1,0 +1,59 @@
+Terms & Conditions
+
+These Terms & Conditions apply to the USB Gallery application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local-media utility for browsing and viewing supported content from connected USB storage.
+
+Acceptance of These Terms
+
+By downloading, installing, or using the Application on a Roku device, you agree to these Terms & Conditions.
+
+Use of the Application
+
+The Application is intended to help you browse and open supported media files from USB storage that you connect to your Roku device. You are responsible for the content you access through the Application and for making sure you have the right to view, use, or play that content.
+
+Local Media Responsibility
+
+You are responsible for:
+
+- Any media files, folders, or metadata stored on your USB device
+- The safety and condition of your USB storage device
+- Making sure your Roku device and connected storage are used in accordance with applicable laws and rights held by content owners
+
+The Service Provider does not claim ownership of the media files you access through the Application.
+
+Availability and Compatibility
+
+The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, and media formats.
+
+The Service Provider does not guarantee that every file, codec, storage device, or media format will be supported.
+
+No Analytics or Google/Firebase Services in the Roku Version
+
+The Roku version of the Application does not use Google Analytics, Firebase Analytics, Firebase Crashlytics, or Google Play Services.
+
+Acceptable Use
+
+You agree not to:
+
+- Use the Application in a way that violates applicable law
+- Attempt to interfere with the operation of the Application or the Roku platform
+- Copy, modify, reverse engineer, or create derivative versions of the Application except to the extent allowed by applicable law
+
+Warranty Disclaimer
+
+The Application is provided on an "AS IS" and "AS AVAILABLE" basis. To the maximum extent permitted by applicable law, the Service Provider disclaims warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+Limitation of Liability
+
+To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, or device/storage issues arising from your use of the Application.
+
+Changes to These Terms
+
+The Service Provider may update these Terms & Conditions from time to time. If that happens, the updated version will be posted at the current Terms page.
+
+Effective Date
+
+These Terms & Conditions are effective as of 2026-06-16.
+
+Contact Us
+
+If you have any questions or suggestions about these Terms & Conditions, please contact the Service Provider at deepakpk009@yahoo.in (mailto:deepakpk009@yahoo.in).

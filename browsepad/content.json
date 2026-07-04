@@ -1,23 +1,23 @@
 {
   "meta": {
     "lang": "en",
-    "title": "Simple USB Signage – USB Photo & Video Signage for Android TV",
-    "description": "Simple USB Signage is an Android TV app for playing photos, videos, and optional background music from a USB drive as continuous digital signage.",
-    "keywords": "Simple USB Signage, Android TV signage app, USB signage Android TV, digital signage for TV, USB slideshow TV, photo video signage, Android TV media player, TV signage player, USB media signage, local signage app, offline signage TV, Fire TV signage, Google TV signage, image video slideshow TV, background music signage, simple digital signage",
+    "title": "BrowsePad – USB Photo & Video Signage for Android TV",
+    "description": "BrowsePad is an Android TV app for playing photos, videos, and optional background music from a USB drive as continuous digital signage.",
+    "keywords": "BrowsePad, Android TV signage app, USB signage Android TV, digital signage for TV, USB slideshow TV, photo video signage, Android TV media player, TV signage player, USB media signage, local signage app, offline signage TV, Fire TV signage, Google TV signage, image video slideshow TV, background music signage, simple digital signage",
     "author": "Deepak PK",
-    "canonical": "https://deepakpk.com/simpleusbsignage",
+    "canonical": "https://deepakpk.com/browsepad",
     "og": {
       "type": "website",
-      "url": "https://deepakpk.com/simpleusbsignage",
-      "title": "Simple USB Signage for Android TV",
+      "url": "https://deepakpk.com/browsepad",
+      "title": "BrowsePad for Android TV",
       "description": "Turn an Android TV or Fire TV into a simple USB-powered signage screen for photos, videos, and optional background audio.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
     "twitter": {
       "card": "summary_large_image",
-      "url": "https://deepakpk.com/simpleusbsignage",
-      "title": "Simple USB Signage for Android TV",
+      "url": "https://deepakpk.com/browsepad",
+      "title": "BrowsePad for Android TV",
       "description": "A simple Android TV signage app that plays photos, videos, and background music directly from USB storage.",
       "image": "images/app_icon.png"
     },
@@ -48,15 +48,15 @@
     "paperWhite": "#F4FFF8"
   },
   "product": {
-    "name": "Simple USB Signage",
-    "heroTitle": "Simple USB Signage – USB Digital Signage for Android TV",
+    "name": "BrowsePad",
+    "heroTitle": "BrowsePad – USB Digital Signage for Android TV",
     "heroDescription": "Turn your Android TV, Google TV, or Fire TV into a simple signage player. Connect a USB drive with photos, videos, and optional audio files, then play a continuous full-screen signage loop using a remote-friendly interface.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
         "type": "googlePlay",
         "label": "Get it on Google Play",
-        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.browsepad",
         "style": "primary"
       },
       {
@@ -81,7 +81,7 @@
       }
     ],
     "features": {
-      "title": "Features Built for Simple USB Signage",
+      "title": "Features Built for BrowsePad",
       "cards": [
         {
           "icon": "📺",
@@ -214,8 +214,8 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "What is Simple USB Signage?",
-          "a": "Simple USB Signage is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
+          "q": "What is BrowsePad?",
+          "a": "BrowsePad is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
         },
         {
           "q": "Do I need an internet connection to use the signage playback?",
@@ -261,42 +261,42 @@
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 1"
+        "alt": "BrowsePad Android TV screenshot 1"
       },
       {
         "src": "images/screenshots/ss002.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 2"
+        "alt": "BrowsePad Android TV screenshot 2"
       },
       {
         "src": "images/screenshots/ss003.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 3"
+        "alt": "BrowsePad Android TV screenshot 3"
       },
       {
         "src": "images/screenshots/ss004.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 4"
+        "alt": "BrowsePad Android TV screenshot 4"
       },
       {
         "src": "images/screenshots/ss005.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 5"
+        "alt": "BrowsePad Android TV screenshot 5"
       },
       {
         "src": "images/screenshots/ss006.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 6"
+        "alt": "BrowsePad Android TV screenshot 6"
       },
       {
         "src": "images/screenshots/ss007.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 7"
+        "alt": "BrowsePad Android TV screenshot 7"
       },
       {
         "src": "images/screenshots/ss008.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 8"
+        "alt": "BrowsePad Android TV screenshot 8"
       }
     ],
     "video": {
       "sectionId": "demo",
-      "title": "See Simple USB Signage on Android TV",
+      "title": "See BrowsePad on Android TV",
       "youtubeEmbedUrl": "",
-      "iframeTitle": "Simple USB Signage Android TV Demo"
+      "iframeTitle": "BrowsePad Android TV Demo"
     }
   },
   "sections": {
@@ -311,7 +311,7 @@
         {
           "number": "2",
           "title": "Connect USB to TV",
-          "text": "Open Simple USB Signage on your Android TV, Google TV, or Fire TV, allow USB permission, and let the app scan supported media files."
+          "text": "Open BrowsePad on your Android TV, Google TV, or Fire TV, allow USB permission, and let the app scan supported media files."
         },
         {
           "number": "3",
@@ -386,8 +386,8 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "What is Simple USB Signage?",
-          "a": "Simple USB Signage is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
+          "q": "What is BrowsePad?",
+          "a": "BrowsePad is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
         },
         {
           "q": "Do I need an internet connection to use the signage playback?",
@@ -428,13 +428,13 @@
       ]
     },
     "cta": {
-      "title": "Turn Your TV Into Simple USB Signage 📺",
-      "text": "Download Simple USB Signage and play photos, videos, and background music from a USB drive on Android TV.",
+      "title": "Turn Your TV Into BrowsePad 📺",
+      "text": "Download BrowsePad and play photos, videos, and background music from a USB drive on Android TV.",
       "buttons": [
         {
           "type": "googlePlay",
           "label": "Get it on Google Play",
-          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.browsepad",
           "style": "primary"
         },
         {
@@ -449,14 +449,14 @@
   "footer": {
     "brand": {
       "logo": "images/app_icon.png",
-      "name": "Simple USB Signage",
+      "name": "BrowsePad",
       "about": "A remote-friendly Android TV signage app for playing photos, videos, and optional background music directly from USB storage."
     },
     "social": [
       {
         "type": "facebook",
         "label": "Facebook",
-        "url": "https://www.facebook.com/simpleusbsignage"
+        "url": "https://www.facebook.com/browsepad"
       }
     ],
     "columns": [
@@ -465,7 +465,7 @@
         "links": [
           {
             "label": "Download on Google Play",
-            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage"
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.browsepad"
           },
           {
             "label": "Download on Amazon",
@@ -519,7 +519,7 @@
     "softwareApplication": {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Simple USB Signage",
+      "name": "BrowsePad",
       "operatingSystem": "Android TV",
       "applicationCategory": "MultimediaApplication",
       "offers": {
@@ -527,7 +527,7 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.browsepad",
       "author": {
         "@type": "Person",
         "name": "Deepak PK",
@@ -537,7 +537,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "Simple USB Signage is an Android TV app for playing photos, videos, and optional background audio from USB storage as continuous digital signage."
+      "description": "BrowsePad is an Android TV app for playing photos, videos, and optional background audio from USB storage as continuous digital signage."
     },
     "organization": {
       "@context": "https://schema.org",
@@ -546,7 +546,7 @@
       "url": "https://deepakpk.com",
       "logo": "images/app_icon.png",
       "sameAs": [
-        "https://www.facebook.com/simpleusbsignage"
+        "https://www.facebook.com/browsepad"
       ],
       "contactPoint": [
         {

@@ -1,0 +1,158 @@
+[
+  {
+    "title": "What is Simple USB Signage?",
+    "content": "Simple USB Signage is an Android TV and Google TV app that lets you play images, videos, and audio directly from a USB drive as a digital signage display. It features a D-pad-friendly Leanback interface designed for TV remotes, making it easy to set up and run signage without a computer or cloud service."
+  },
+  {
+    "title": "What devices does Simple USB Signage work on?",
+    "content": "Simple USB Signage is designed for Android TV and Google TV devices. It supports the standard Leanback interface and is fully navigable with a D-pad remote control."
+  },
+  {
+    "title": "Do I need an internet connection to use the app?",
+    "content": "No. Simple USB Signage plays media directly from a connected USB drive, so no internet connection is required for playback. An internet connection may be needed for subscription verification, but the app supports an offline grace period after a successful verification, so playback can continue even when offline."
+  },
+  {
+    "title": "What USB drives are supported?",
+    "content": "The app supports standard USB mass-storage devices. It automatically detects USB drives when the app launches and when drives are attached or detached. If permission is needed to access the drive, the app will request it automatically and retry initialization with proper timeout and error handling."
+  },
+  {
+    "title": "How do I load my media files?",
+    "content": "Simply plug your USB drive into your Android TV device before or after opening the app. The app will detect the drive and scan all folders and subfolders recursively, building a complete flat list of your media. You can also manually reload or rescan media at any time from the main menu using the 'Reload Files' option."
+  },
+  {
+    "title": "What video file formats are supported?",
+    "content": "The app supports the following video formats: MP4, AVI, MKV, MOV, FLV, WMV, WebM, M4V, 3GP, TS, MTS, M2TS, VOB, and OGV."
+  },
+  {
+    "title": "What audio file formats are supported?",
+    "content": "The app supports the following audio formats: MP3, M4A, AAC, OGG, OGA, OPUS, FLAC, WAV, WebM, MKV, MKA, TS, 3GP, and AMR."
+  },
+  {
+    "title": "What image file formats are supported?",
+    "content": "The app supports a wide range of image formats including: JPG, JPEG, PNG, APNG, GIF, WebP, BMP, TIFF, SVG, AVIF, HEIF, HEIC, ICO, JP2, and more. Hidden files and unsupported file types are automatically filtered out from the media list."
+  },
+  {
+    "title": "How does signage playback work?",
+    "content": "You can start signage playback by selecting a playable image or video item, or by using the Play menu. The app builds a visual playlist (images and videos) and an optional background audio playlist. It loops through your visual content continuously, using dual visual slots with smooth crossfade transitions between items. Images advance automatically based on your configured slide duration."
+  },
+  {
+    "title": "Can I mix images and videos in the same signage session?",
+    "content": "Yes. Simple USB Signage supports mixed playback of images and videos in the same signage session. Both are included in a single visual playlist that loops continuously."
+  },
+  {
+    "title": "How does background audio work?",
+    "content": "You can add audio files to your USB drive and they will be picked up as a separate background audio playlist. This audio loops independently from the visual playlist. When video audio is enabled in Settings, background audio will automatically pause during video playback and resume afterward. If video audio is disabled, videos play muted and background audio plays uninterrupted throughout."
+  },
+  {
+    "title": "Can I play audio from videos?",
+    "content": "Yes. Video audio playback can be toggled on or off in the Settings screen. When enabled, the video's own audio will play and background audio will pause during that video. When disabled, all videos play muted and background audio continues uninterrupted."
+  },
+  {
+    "title": "Does the app copy files to internal storage?",
+    "content": "No. Simple USB Signage uses an internal localhost media server to stream video, audio, and image content directly from your USB drive without copying files to the device's internal storage. This means you can use large media libraries without worrying about device storage space."
+  },
+  {
+    "title": "How do crossfade transitions work?",
+    "content": "The app uses dual visual slots — two overlapping display layers — to create smooth crossfade transitions between images and videos. As one item finishes, the next one fades in seamlessly, giving your signage a polished, professional look."
+  },
+  {
+    "title": "How long does each image display?",
+    "content": "The image slide duration is configurable in the Settings screen. You can increase or decrease the duration to suit your needs. Videos play for their full duration before the playlist advances."
+  },
+  {
+    "title": "Can I change the background color during playback?",
+    "content": "Yes. In the Settings screen, you can set the signage background color to either black or white, which is shown during transitions or when content does not fill the entire screen."
+  },
+  {
+    "title": "What image display modes are available?",
+    "content": "You can choose between two image display modes in Settings: 'Fill Screen', which scales the image to cover the full screen, and 'Show Full Image', which fits the entire image on screen without cropping."
+  },
+  {
+    "title": "How do I view file details?",
+    "content": "Long-press any media item (or hold the OK button on your remote) to open a details dialog. This shows the file type, size, and path. From this dialog you can also open or delete the file."
+  },
+  {
+    "title": "Can I delete files from within the app?",
+    "content": "Yes. Using the long-press details dialog on any media item, you have the option to delete the file directly from your USB drive."
+  },
+  {
+    "title": "How are media items displayed in the library?",
+    "content": "Each media item is shown with its filename, an image thumbnail where applicable, and type artwork to distinguish between video, audio, and other file types. Locked items (in demo mode) are displayed with a blur effect and a lock badge."
+  },
+  {
+    "title": "What is demo mode / free mode?",
+    "content": "In the free (demo) version, playback is limited to 2 audio files, 2 video files, and 5 image files from your media set. Items beyond these limits appear blurred with a lock badge and will prompt you to subscribe when selected. A semi-transparent 'Demo Version' watermark is also shown during playback."
+  },
+  {
+    "title": "How do I remove the Demo Version watermark?",
+    "content": "The watermark is shown to users who have not subscribed. Purchasing a subscription removes the watermark and unlocks all media files for full playback."
+  },
+  {
+    "title": "How do I subscribe?",
+    "content": "You can access the subscription screen from the main menu under 'Subscribe'. Multiple plan options are available. The app supports billing through Google Play, Amazon Appstore, and Huawei AppGallery depending on which store you downloaded the app from."
+  },
+  {
+    "title": "How do I manage my subscription?",
+    "content": "Go to 'My Subscription' in the main menu to access the subscription management screen. For Google Play and Amazon builds, a QR code is provided that links directly to the subscription management page for your store."
+  },
+  {
+    "title": "Does my subscription work offline?",
+    "content": "Yes. The app caches your subscription status to support an offline grace period. After a successful verification, you can continue using the full app even without an internet connection for a period of time."
+  },
+  {
+    "title": "What screen resolution does my device support?",
+    "content": "You can check your device's screen resolution and calculated aspect ratio in the Settings screen of the app."
+  },
+  {
+    "title": "Is the app available in my language?",
+    "content": "Simple USB Signage is localized in 16 languages: English, Arabic, Chinese, French, German, Hindi, Indonesian, Italian, Japanese, Korean, Portuguese, Russian, Spanish, Thai, Turkish, and Vietnamese."
+  },
+  {
+    "title": "Where can I find the FAQ, Privacy Policy, or Terms of Use?",
+    "content": "All of these pages are accessible from the main menu and open inside the app in a built-in web browser. The browser includes loading progress feedback, automatic retry with exponential backoff, and error dialogs if a page is unreachable."
+  },
+  {
+    "title": "How do I contact support?",
+    "content": "You can reach out through the 'Support & Feedback' option in the main menu, which opens the support page directly within the app."
+  },
+  {
+    "title": "How do I check which version of the app I have?",
+    "content": "The current app version is displayed in the main menu under 'Version Info'."
+  },
+  {
+    "title": "My USB drive is not being detected. What should I do?",
+    "content": "Make sure your USB drive is properly inserted. The app detects USB mass-storage devices on launch and when they are connected or disconnected. If the drive is still not recognized, try unplugging and re-plugging it, then use 'Reload Files' from the main menu to trigger a rescan. Ensure your Android TV device supports USB OTG (On-The-Go) if you are using an adapter."
+  },
+  {
+    "title": "My media files are not showing up. What should I check?",
+    "content": "The app filters out hidden files (files starting with a dot) and files with unsupported extensions. Make sure your files use one of the supported formats listed for video, audio, or images. You can also try using 'Reload Files' from the main menu to force a fresh scan of your USB drive."
+  },
+  {
+    "title": "Videos are not playing correctly. What should I do?",
+    "content": "Video playback depends on your Android TV device's hardware decoder support. While the app supports a wide range of formats (MP4, MKV, MOV, AVI, etc.), some codecs may not be supported by your specific device. For the best compatibility, MP4 files encoded with H.264 are recommended."
+  },
+  {
+    "title": "The app is asking for USB permission. Is this normal?",
+    "content": "Yes, this is normal. Android requires apps to explicitly request permission before accessing USB devices for security reasons. The app will prompt you for permission when a USB drive is detected and will retry initialization automatically if needed."
+  },
+  {
+    "title": "Can I use Simple USB Signage for commercial signage or business displays?",
+    "content": "Yes. Simple USB Signage is well suited for business use cases such as retail displays, waiting room screens, restaurant menu boards, event signage, and more. A subscription is required to unlock all media files and remove the demo watermark for commercial use."
+  },
+  {
+    "title": "Does the app support scheduling or timed playback?",
+    "content": "The current version of Simple USB Signage focuses on continuous looping playback rather than scheduled content. The visual playlist and background audio playlist both loop independently and continuously once signage mode is started."
+  },
+  {
+    "title": "Can I control the order in which my files play?",
+    "content": "The app builds a playlist from all supported media files found on your USB drive. For custom ordering, you can organize your files with numbered filenames (e.g., 01_intro.jpg, 02_promo.mp4) so they are sorted in your desired sequence."
+  },
+  {
+    "title": "Does the app support 4K video?",
+    "content": "4K video playback depends on the hardware capabilities of your Android TV or Google TV device. The app supports the video formats typically used for 4K content (such as MP4 and MKV), but whether 4K playback is smooth will depend on your device's processor and decoder."
+  },
+  {
+    "title": "Will the signage keep playing if I leave the app idle?",
+    "content": "Yes. Once signage playback is started, it loops continuously through your media playlist. Make sure your Android TV device's sleep or screensaver settings are configured appropriately to prevent the display from turning off during extended signage sessions."
+  }
+]

@@ -31,11 +31,58 @@ function getProjectFolders() {
     .sort();
 }
 
-function copyMasterCss(projectDir) {
+function copyMasterCss(projectDir, projectName) {
   ensureFileExists(MASTER_CSS_PATH, "generator/styles.css");
 
   const targetCssPath = path.join(projectDir, "styles.css");
   fs.copyFileSync(MASTER_CSS_PATH, targetCssPath);
+
+  console.log(`✔ Copied CSS: ${projectName}/styles.css`);
+}
+
+function buildManifest(data, projectName) {
+  const product = data.product || {};
+  const meta = data.meta || {};
+  const theme = data.theme || {};
+
+  const name = product.name || meta.title || projectName;
+  const description = meta.description || product.heroDescription || "";
+  const icon = product.icon || "images/app_icon.png";
+
+  const primaryColor = theme.primary || theme.primaryGreen || "#4CAF50";
+  const backgroundColor = theme.background || theme.darkBg || "#121212";
+
+  return {
+    name,
+    short_name: name.length > 12 ? name.slice(0, 12) : name,
+    description,
+    start_url: `/${projectName}/`,
+    scope: `/${projectName}/`,
+    display: "standalone",
+    background_color: backgroundColor,
+    theme_color: primaryColor,
+    icons: [
+      {
+        src: icon,
+        sizes: "192x192",
+        type: "image/png"
+      },
+      {
+        src: icon,
+        sizes: "512x512",
+        type: "image/png"
+      }
+    ]
+  };
+}
+
+function generateManifest(projectDir, projectName, data) {
+  const manifest = buildManifest(data, projectName);
+  const outputPath = path.join(projectDir, "manifest.webmanifest");
+
+  fs.writeFileSync(outputPath, JSON.stringify(manifest, null, 2), "utf8");
+
+  console.log(`✔ Generated: ${projectName}/manifest.webmanifest`);
 }
 
 function generateProject(projectName) {
@@ -44,6 +91,7 @@ function generateProject(projectName) {
   const outputPath = path.join(projectDir, "index.html");
 
   ensureFileExists(TEMPLATE_PATH, "generator/template.html");
+  ensureFileExists(MASTER_CSS_PATH, "generator/styles.css");
   ensureFileExists(contentPath, `${projectName}/content.json`);
 
   const template = fs.readFileSync(TEMPLATE_PATH, "utf8");
@@ -52,10 +100,10 @@ function generateProject(projectName) {
   const html = renderPage(data, template);
 
   fs.writeFileSync(outputPath, html, "utf8");
-  copyMasterCss(projectDir);
-
   console.log(`✔ Generated: ${projectName}/index.html`);
-  console.log(`✔ Copied CSS: ${projectName}/styles.css`);
+
+  copyMasterCss(projectDir, projectName);
+  generateManifest(projectDir, projectName, data);
 }
 
 function printHelp() {
@@ -88,7 +136,7 @@ function main() {
     }
 
     projects.forEach(generateProject);
-    console.log(`\nDone. Generated ${projects.length} page(s).`);
+    console.log(`\nDone. Generated ${projects.length} product page(s).`);
     return;
   }
 

@@ -100,36 +100,92 @@ function buildThemeStyle(data) {
 function buildMetaTags(data) {
   const meta = data.meta || {};
   const og = meta.og || {};
-  const tw = meta.twitter || {};
+  const twitter = meta.twitter || {};
   const fav = meta.favicons || {};
+  const theme = data.theme || {};
+
+  const themeColor =
+    theme.primary ||
+    theme.primaryGreen ||
+    "#4CAF50";
 
   const tags = [];
 
+  // -----------------------------
+  // Basic SEO
+  // -----------------------------
   tags.push(`<title>${escapeHtml(meta.title || "App")}</title>`);
 
-  if (hasText(meta.description)) tags.push(`<meta name="description" content="${escapeHtml(meta.description)}" />`);
-  if (hasText(meta.keywords)) tags.push(`<meta name="keywords" content="${escapeHtml(meta.keywords)}" />`);
-  if (hasText(meta.author)) tags.push(`<meta name="author" content="${escapeHtml(meta.author)}" />`);
-  if (hasText(meta.canonical)) tags.push(`<link rel="canonical" href="${escapeHtml(meta.canonical)}" />`);
+  if (hasText(meta.description))
+    tags.push(`<meta name="description" content="${escapeHtml(meta.description)}">`);
 
-  if (hasText(og.type)) tags.push(`<meta property="og:type" content="${escapeHtml(og.type)}" />`);
-  if (hasText(og.url)) tags.push(`<meta property="og:url" content="${escapeHtml(og.url)}" />`);
-  if (hasText(og.title)) tags.push(`<meta property="og:title" content="${escapeHtml(og.title)}" />`);
-  if (hasText(og.description)) tags.push(`<meta property="og:description" content="${escapeHtml(og.description)}" />`);
-  if (hasText(og.image)) tags.push(`<meta property="og:image" content="${escapeHtml(og.image)}" />`);
-  if (hasText(og.siteName)) tags.push(`<meta property="og:site_name" content="${escapeHtml(og.siteName)}" />`);
+  if (hasText(meta.keywords))
+    tags.push(`<meta name="keywords" content="${escapeHtml(meta.keywords)}">`);
 
-  if (hasText(tw.card)) tags.push(`<meta name="twitter:card" content="${escapeHtml(tw.card)}" />`);
-  if (hasText(tw.url)) tags.push(`<meta name="twitter:url" content="${escapeHtml(tw.url)}" />`);
-  if (hasText(tw.title)) tags.push(`<meta name="twitter:title" content="${escapeHtml(tw.title)}" />`);
-  if (hasText(tw.description)) tags.push(`<meta name="twitter:description" content="${escapeHtml(tw.description)}" />`);
-  if (hasText(tw.image)) tags.push(`<meta name="twitter:image" content="${escapeHtml(tw.image)}" />`);
+  if (hasText(meta.author))
+    tags.push(`<meta name="author" content="${escapeHtml(meta.author)}">`);
 
-  if (hasText(fav.png192)) tags.push(`<link rel="icon" sizes="192x192" href="${escapeHtml(fav.png192)}" />`);
-  if (hasText(fav.png32)) tags.push(`<link rel="icon" sizes="32x32" href="${escapeHtml(fav.png32)}" />`);
-  if (hasText(fav.png16)) tags.push(`<link rel="icon" sizes="16x16" href="${escapeHtml(fav.png16)}" />`);
-  if (hasText(fav.appleTouch)) tags.push(`<link rel="apple-touch-icon" href="${escapeHtml(fav.appleTouch)}" />`);
-  if (hasText(fav.shortcut)) tags.push(`<link rel="shortcut icon" href="${escapeHtml(fav.shortcut)}" />`);
+  tags.push(`<meta name="theme-color" content="${escapeHtml(themeColor)}">`);
+
+  if (hasText(meta.canonical))
+    tags.push(`<link rel="canonical" href="${escapeHtml(meta.canonical)}">`);
+
+  // -----------------------------
+  // Open Graph
+  // -----------------------------
+  if (hasText(og.type))
+    tags.push(`<meta property="og:type" content="${escapeHtml(og.type)}">`);
+
+  if (hasText(og.url))
+    tags.push(`<meta property="og:url" content="${escapeHtml(og.url)}">`);
+
+  if (hasText(og.title))
+    tags.push(`<meta property="og:title" content="${escapeHtml(og.title)}">`);
+
+  if (hasText(og.description))
+    tags.push(`<meta property="og:description" content="${escapeHtml(og.description)}">`);
+
+  if (hasText(og.image))
+    tags.push(`<meta property="og:image" content="${escapeHtml(og.image)}">`);
+
+  if (hasText(og.siteName))
+    tags.push(`<meta property="og:site_name" content="${escapeHtml(og.siteName)}">`);
+
+  // -----------------------------
+  // Twitter
+  // -----------------------------
+  if (hasText(twitter.card))
+    tags.push(`<meta name="twitter:card" content="${escapeHtml(twitter.card)}">`);
+
+  if (hasText(twitter.url))
+    tags.push(`<meta name="twitter:url" content="${escapeHtml(twitter.url)}">`);
+
+  if (hasText(twitter.title))
+    tags.push(`<meta name="twitter:title" content="${escapeHtml(twitter.title)}">`);
+
+  if (hasText(twitter.description))
+    tags.push(`<meta name="twitter:description" content="${escapeHtml(twitter.description)}">`);
+
+  if (hasText(twitter.image))
+    tags.push(`<meta name="twitter:image" content="${escapeHtml(twitter.image)}">`);
+
+  // -----------------------------
+  // Favicons
+  // -----------------------------
+  if (hasText(fav.png192))
+    tags.push(`<link rel="icon" type="image/png" sizes="192x192" href="${escapeHtml(fav.png192)}">`);
+
+  if (hasText(fav.png32))
+    tags.push(`<link rel="icon" type="image/png" sizes="32x32" href="${escapeHtml(fav.png32)}">`);
+
+  if (hasText(fav.png16))
+    tags.push(`<link rel="icon" type="image/png" sizes="16x16" href="${escapeHtml(fav.png16)}">`);
+
+  if (hasText(fav.appleTouch))
+    tags.push(`<link rel="apple-touch-icon" href="${escapeHtml(fav.appleTouch)}">`);
+
+  if (hasText(fav.shortcut))
+    tags.push(`<link rel="shortcut icon" href="${escapeHtml(fav.shortcut)}">`);
 
   return tags.join("\n  ");
 }

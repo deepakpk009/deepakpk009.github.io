@@ -1,0 +1,22 @@
+{
+  "name": "Gliso Gallery Slideshow",
+  "short_name": "Gliso Galler",
+  "description": "Gliso Gallery Slideshow is an Android tablet-first app for turning local folders into reusable fullscreen photo and video slideshows with optional background music.",
+  "start_url": "/gliso/",
+  "scope": "/gliso/",
+  "display": "standalone",
+  "background_color": "#1D1550",
+  "theme_color": "#9B35FF",
+  "icons": [
+    {
+      "src": "images/app_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

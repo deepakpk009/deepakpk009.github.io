@@ -4,32 +4,556 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Meta is injected/updated by app.js from content.json -->
-  <title>Loading…</title>
-  <meta name="description" content="" />
+  <title>Gliso Gallery Slideshow - Folder-Based Slideshow App for Android Tablets</title>
+  <meta name="description" content="Gliso Gallery Slideshow is an Android tablet-first app for turning local folders into reusable fullscreen photo and video slideshows with optional background music.">
+  <meta name="keywords" content="Gliso Gallery Slideshow, Android tablet slideshow app, folder based slideshow Android, photo slideshow tablet app, video slideshow Android tablet, local gallery slideshow app, Android album slideshow, slideshow with music Android, fullscreen slideshow tablet, folder slideshow profile app, Android photo video viewer, Android tablet gallery app">
+  <meta name="author" content="Deepak PK">
+  <meta name="theme-color" content="#9B35FF">
+  <link rel="canonical" href="https://deepakpk.com/gliso">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deepakpk.com/gliso">
+  <meta property="og:title" content="Gliso Gallery Slideshow for Android Tablets">
+  <meta property="og:description" content="Create beautiful fullscreen slideshows from local folders on Android tablets with photos, videos, optional music, and reusable per-folder settings.">
+  <meta property="og:image" content="images/app_icon.png">
+  <meta property="og:site_name" content="Deepak PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://deepakpk.com/gliso">
+  <meta name="twitter:title" content="Gliso Gallery Slideshow for Android Tablets">
+  <meta name="twitter:description" content="A tablet-first Android slideshow app for photos, videos, and optional music using local folders you choose.">
+  <meta name="twitter:image" content="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/app_icon.png">
+  <link rel="apple-touch-icon" href="images/app_icon.png">
+  <link rel="shortcut icon" href="images/app_icon.png">
 
+  <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- JSON-LD placeholders (filled by app.js) -->
-  <script type="application/ld+json" id="schema-software"></script>
-  <script type="application/ld+json" id="schema-faq"></script>
-  <script type="application/ld+json" id="schema-org"></script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gliso Gallery Slideshow",
+  "operatingSystem": "Android",
+  "applicationCategory": "MultimediaApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.galleryslideshow",
+  "author": {
+    "@type": "Person",
+    "name": "Deepak PK",
+    "url": "https://deepakpk.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Deepak PK"
+  },
+  "description": "Gliso Gallery Slideshow is an Android app for turning local folders into reusable fullscreen slideshows with photos, videos, and optional background music.",
+  "screenshot": [
+    "images/screenshots/ss001.jpg",
+    "images/screenshots/ss002.jpg",
+    "images/screenshots/ss003.jpg",
+    "images/screenshots/ss004.jpg",
+    "images/screenshots/ss005.jpg",
+    "images/screenshots/ss006.jpg"
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Gliso Gallery Slideshow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gliso Gallery Slideshow is a folder-based slideshow app for Android, designed especially for tablets. It turns local folders into reusable fullscreen slideshows for photos, videos, and optional background music."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Gliso work with local folders on my device?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You choose folders through Android's document picker, and Gliso saves permission so those folders can be reopened later without repeating setup every time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I save more than one slideshow setup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Each selected folder is saved as its own slideshow profile with its own settings, so different albums can behave differently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can photos and videos play in the same slideshow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Gliso supports mixed media playback, so photos and videos can appear together in one continuous fullscreen slideshow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play music during the slideshow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If the selected folder includes supported audio files, Gliso can use them as optional background music during playback."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can videos play with their own sound?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can choose whether videos use their own audio or stay muted while background music continues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What settings can I change for each folder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each saved folder can keep its own photo duration, sort mode, subfolder preference, video audio behavior, and fit or fill screen mode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Gliso include subfolders while scanning media?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When you add a folder, you can decide whether Gliso should scan only that folder or include its subfolders too."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the app good for tablets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The home screen layout adapts to device size, using roomier grid layouts on tablets for easier browsing and repeat use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to upload my media anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Gliso is built around local folders you explicitly choose, so your slideshow media can stay on your device."
+      }
+    }
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Deepak PK",
+  "url": "https://deepakpk.com",
+  "logo": "images/app_icon.png",
+  "sameAs": [
+    "https://www.facebook.com/glisogalleryslideshow"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "deepakpk009@yahoo.in",
+      "contactType": "Customer Support"
+    }
+  ]
+}</script>
 
-  <script defer src="app.js"></script>
+  <script defer src="../generator/site.js"></script>
 
-  <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="3eb85710-2b57-4c5b-a822-ddf9990351ee"></script>
 </head>
 
 <body>
-  <!-- Render targets -->
-  <div id="hero"></div>
-  <div id="video"></div>
-  <div id="howItWorks"></div>
-  <div id="features"></div>
-  <div id="perfectFor"></div>
-  <div id="faq"></div>
-  <div id="cta"></div>
-  <div id="footer"></div>
+  
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content" >
+          <div class="hero-left">
+            <img src="images/app_icon.png" alt="Gliso Gallery Slideshow App Icon" class="app-icon-hero">
+            <h1>Gliso Gallery Slideshow - Beautiful Folder-Based Slideshows for Android Tablets</h1>
+            <p>Turn your Android tablet into a polished slideshow viewer for local media. Pick a folder once, save it as a reusable profile, and replay photos, videos, and optional background music in immersive fullscreen whenever you want.</p>
+            
+    <div class="download-buttons">
+      
+          <a href="https://play.google.com/store/apps/details?id=com.deepakpk.galleryslideshow" class="download-btn primary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+    </svg>
+  
+            Get it on Google Play
+          </a>
+        
+          <a href="https://www.amazon.com/dp/B0H37FQVXD/" class="download-btn secondary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.66,8.12 11.75,8 13.31,7.84V7.5C13.31,6.84 13.36,6.09 12.95,5.54C12.58,5.05 11.95,4.84 11.44,4.84C10.5,4.84 9.65,5.33 9.45,6.31C9.41,6.56 9.22,6.8 8.97,6.81L6.24,6.5C6,6.46 5.76,6.26 5.82,5.88C6.5,2.29 9.71,1.5 12.5,1.5C13.95,1.5 15.81,1.88 16.97,2.91C18.41,4.15 18.28,5.78 18.28,7.58V12.29C18.28,13.53 18.83,14.08 19.35,14.76C19.53,15 19.56,15.26 19.37,15.42C18.9,15.83 17.86,16.71 17.4,17.12L17.39,17.11M13.31,10.68C13.31,12.81 13.36,14.56 12.41,16.5C12.41,16.5 11.14,15.23 11.14,13.14C11.14,10.96 12.82,10.26 13.31,10.05V10.68Z"/>
+    </svg>
+  
+            Available on Amazon
+          </a>
+        
+    </div>
+  
+
+            <div class="app-stats">
+                    
+                      <div class="stat">
+                        <span class="stat-value">📱 Tablet First</span>
+                        <span class="stat-label">Designed for larger Android screens</span>
+                      </div>
+                    
+                      <div class="stat">
+                        <span class="stat-value">📂 Saved Folders</span>
+                        <span class="stat-label">Reusable slideshow profiles</span>
+                      </div>
+                    
+                      <div class="stat">
+                        <span class="stat-value">🎵 Mixed Media</span>
+                        <span class="stat-label">Photos, videos, and optional music</span>
+                      </div>
+                    
+                  </div>
+          </div>
+
+          <div class="hero-right">
+                  <div class="screenshots-container is-landscape" id="screenshotsContainer">
+                    <div id="slidesRoot">
+                      
+                        <div class="screenshot-slide active">
+                          <img src="images/screenshots/ss001.jpg" alt="Gliso Gallery Slideshow Android TV screenshot 1" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss002.jpg" alt="Gliso Gallery Slideshow Android TV screenshot 2" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss003.jpg" alt="Gliso Gallery Slideshow Android TV screenshot 3" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss004.jpg" alt="Gliso Gallery Slideshow Android TV screenshot 4" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss005.jpg" alt="Gliso Gallery Slideshow Android TV screenshot 5" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss006.jpg" alt="Gliso Gallery Slideshow Android TV screenshot 6" loading="lazy">
+                        </div>
+                      
+                    </div>
+
+                    <button class="screenshot-nav prev" id="prevBtn" aria-label="Previous screenshot">‹</button>
+                    <button class="screenshot-nav next" id="nextBtn" aria-label="Next screenshot">›</button>
+
+                    <div class="screenshot-dots" id="dotsRoot">
+                      <span class="dot active" data-slide="0"></span><span class="dot " data-slide="1"></span><span class="dot " data-slide="2"></span><span class="dot " data-slide="3"></span><span class="dot " data-slide="4"></span><span class="dot " data-slide="5"></span>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">Build a Reusable Slideshow in 3 Steps</h2>
+        <div class="steps">
+          
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Choose a Folder</h3>
+              <p>Pick a local folder on your Android tablet, then decide whether Gliso should also include media from subfolders.</p>
+            </div>
+          
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Save Its Settings</h3>
+              <p>Set photo duration, sort order, video audio behavior, and fit or fill mode. Gliso saves those choices with that folder profile.</p>
+            </div>
+          
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Play Anytime</h3>
+              <p>Open the saved folder from your recent library and launch the slideshow again in immersive fullscreen whenever you want.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why Tablet Users Will Like It</h2>
+        <div class="feature-grid">
+          
+              <div class="feature-card">
+                <span class="feature-icon">📂</span>
+                <h3>Reusable Folder Profiles</h3>
+                <ul><li>Save multiple folder-based slideshow setups</li><li>Reopen favorite media collections without setting them up again</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">🖼️</span>
+                <h3>Mixed Media Playback</h3>
+                <ul><li>Play photos and videos together in one fullscreen loop</li><li>Use smooth fade transitions for a polished viewing experience</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">🎵</span>
+                <h3>Optional Music Layer</h3>
+                <ul><li>Use audio files from the same folder as background music</li><li>Choose whether videos use their own sound or stay muted</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">📱</span>
+                <h3>Tablet-Optimized Library</h3>
+                <ul><li>Browse saved slideshows in spacious tablet-friendly grids</li><li>Search, preview, and manage recent folders with touch-friendly controls</li></ul>
+              </div>
+            
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="perfect-for">
+      <div class="container">
+        <h2 class="section-title">Perfect For</h2>
+        <div class="use-cases">
+          
+            <div class="use-case">
+              <div class="use-case-icon">👨‍👩‍👧‍👦</div>
+              <h3>Family Photo Albums</h3>
+              <p>Turn a tablet into a relaxing viewer for vacation memories, family milestones, and everyday photo folders you want to revisit often.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🎉</div>
+              <h3>Events and Celebrations</h3>
+              <p>Build quick slideshows for birthdays, anniversaries, school functions, reunions, or small event tables using local media folders.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🧑‍🎨</div>
+              <h3>Portfolios and Creative Showcases</h3>
+              <p>Present artwork, design samples, photography sets, or demo reels on a tablet with fullscreen playback and reusable folder presets.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🛋️</div>
+              <h3>Ambient Tablet Displays</h3>
+              <p>Create a calm looping viewer for quotes, mood boards, travel shots, or mixed media collections with optional background music.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container" id="faqContainer">
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What is Gliso Gallery Slideshow?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Gliso Gallery Slideshow is a folder-based slideshow app for Android, designed especially for tablets. It turns local folders into reusable fullscreen slideshows for photos, videos, and optional background music.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Does Gliso work with local folders on my device?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. You choose folders through Android&#039;s document picker, and Gliso saves permission so those folders can be reopened later without repeating setup every time.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I save more than one slideshow setup?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. Each selected folder is saved as its own slideshow profile with its own settings, so different albums can behave differently.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can photos and videos play in the same slideshow?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. Gliso supports mixed media playback, so photos and videos can appear together in one continuous fullscreen slideshow.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I play music during the slideshow?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. If the selected folder includes supported audio files, Gliso can use them as optional background music during playback.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can videos play with their own sound?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. You can choose whether videos use their own audio or stay muted while background music continues.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What settings can I change for each folder?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Each saved folder can keep its own photo duration, sort mode, subfolder preference, video audio behavior, and fit or fill screen mode.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can Gliso include subfolders while scanning media?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. When you add a folder, you can decide whether Gliso should scan only that folder or include its subfolders too.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Is the app good for tablets?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. The home screen layout adapts to device size, using roomier grid layouts on tablets for easier browsing and repeat use.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Do I need to upload my media anywhere?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>No. Gliso is built around local folders you explicitly choose, so your slideshow media can stay on your device.</p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Turn Local Folders Into Beautiful Tablet Slideshows</h2>
+          <p>Download Gliso Gallery Slideshow to play photos, videos, and optional music from reusable folder profiles on Android tablets.</p>
+          
+    <div class="download-buttons">
+      
+          <a href="https://play.google.com/store/apps/details?id=com.deepakpk.galleryslideshow" class="download-btn primary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+    </svg>
+  
+            Get it on Google Play
+          </a>
+        
+          <a href="https://www.amazon.com/dp/B0H37FQVXD/" class="download-btn secondary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.66,8.12 11.75,8 13.31,7.84V7.5C13.31,6.84 13.36,6.09 12.95,5.54C12.58,5.05 11.95,4.84 11.44,4.84C10.5,4.84 9.65,5.33 9.45,6.31C9.41,6.56 9.22,6.8 8.97,6.81L6.24,6.5C6,6.46 5.76,6.26 5.82,5.88C6.5,2.29 9.71,1.5 12.5,1.5C13.95,1.5 15.81,1.88 16.97,2.91C18.41,4.15 18.28,5.78 18.28,7.58V12.29C18.28,13.53 18.83,14.08 19.35,14.76C19.53,15 19.56,15.26 19.37,15.42C18.9,15.83 17.86,16.71 17.4,17.12L17.39,17.11M13.31,10.68C13.31,12.81 13.36,14.56 12.41,16.5C12.41,16.5 11.14,15.23 11.14,13.14C11.14,10.96 12.82,10.26 13.31,10.05V10.68Z"/>
+    </svg>
+  
+            Available on Amazon
+          </a>
+        
+    </div>
+  
+        </div>
+      </div>
+    </section>
+  
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+                    <img src="images/app_icon.png" alt="Gliso Gallery Slideshow Logo">
+                    <span class="footer-logo-text">Gliso Gallery Slideshow</span>
+                  </div>
+
+            <p>A tablet-first Android slideshow app for replaying local folders as fullscreen photo and video experiences with optional background music.</p>
+            
+      <div class="social-links">
+        
+            <a href="https://www.facebook.com/glisogalleryslideshow" target="_blank" rel="noopener" aria-label="Facebook">
+              
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+    </svg>
+  
+            </a>
+          
+      </div>
+    
+          </div>
+
+          
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.deepakpk.galleryslideshow" target="_blank" rel="noopener">Download on Google Play</a><a href="https://www.amazon.com/dp/B0H37FQVXD/" target="_blank" rel="noopener">Download on Amazon</a><a href="terms.html" target="_self">Terms &amp; Conditions</a><a href="privacy.html" target="_self">Privacy Policy</a>
+            
+          </div>
+        
+          <div class="footer-section">
+            <h3>Support</h3>
+            <a href="mailto:deepakpk009@yahoo.in" target="_self">Email Support</a><a href="#faq" target="_self">FAQ</a>
+            <p style="margin-top: 15px;"><strong style="color: var(--primary-green);">Email</strong><br><a href="mailto:deepakpk009@yahoo.in">deepakpk009@yahoo.in</a></p>
+          </div>
+        
+          <div class="footer-section">
+            <h3>More Apps</h3>
+            <a href="https://deepakpk.com/tvpdfviewer" target="_blank" rel="noopener">TV PDF Viewer</a><a href="https://deepakpk.com/apps" target="_blank" rel="noopener">View All Apps</a><a href="https://deepakpk.com" target="_blank" rel="noopener">Developer Portfolio</a>
+            
+          </div>
+        
+        </div>
+
+        <div class="footer-bottom"><p>© 2026 Deepak PK. All rights reserved.</p></div>
+      </div>
+    </footer>
+  
 </body>
 </html>

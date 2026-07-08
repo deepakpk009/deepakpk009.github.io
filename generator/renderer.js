@@ -581,7 +581,6 @@ function renderPage(data, template) {
   return template
     .replaceAll("{{LANG}}", escapeHtml(lang))
     .replaceAll("{{META_TAGS}}", buildMetaTags(data))
-    .replaceAll("{{THEME_STYLE}}", buildThemeStyle(data))
     .replaceAll("{{SCHEMA_TAGS}}", buildSchemaTags(data))
     .replaceAll("{{BODY_CONTENT}}", buildBodyContent(data));
 }

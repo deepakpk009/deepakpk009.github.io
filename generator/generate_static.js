@@ -18,6 +18,10 @@ function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
 }
 
+function hasText(value) {
+  return typeof value === "string" && value.trim().length > 0;
+}
+
 function getProjectFolders() {
   return fs.readdirSync(WEBSITE_ROOT)
     .filter((name) => {
@@ -31,13 +35,59 @@ function getProjectFolders() {
     .sort();
 }
 
-function copyMasterCss(projectDir, projectName) {
+function buildThemeVars(data) {
+  const theme = data.theme || {};
+  const icon = data.product?.icon;
+
+  return {
+    "--color-primary": theme.primary || theme.primaryGreen || "#4CAF50",
+    "--color-primary-dark": theme.primaryDark || theme.darkGreen || "#2E7D32",
+    "--color-primary-light": theme.primaryLight || theme.lightGreen || "#66BB6A",
+    "--color-bg-start": theme.bgStart || theme.darkerGreen || "#1B5E20",
+    "--color-bg": theme.background || theme.darkBg || "#121212",
+    "--color-bg-dark": theme.backgroundDark || theme.black || "#0D0D0D",
+    "--color-card": theme.card || theme.cardBg || "#1E1E1E",
+    "--color-text": theme.text || theme.textWhite || "#FFFFFF",
+    "--color-text-muted": theme.textMuted || theme.textGray || "#B0B0B0",
+    "--color-border": theme.border || theme.borderGreen || "#3D8B40",
+    "--color-shadow": theme.shadow || theme.boxShadowColor || "#3D8B404D",
+
+    "--hero-watermark": hasText(icon) ? `url("${icon}")` : "none",
+    "--cta-watermark": hasText(icon) ? `url("${icon}")` : "none",
+    "--hero-watermark-opacity":
+      typeof theme.heroWatermarkOpacity === "number" ? String(theme.heroWatermarkOpacity) : "0.03",
+    "--cta-watermark-opacity":
+      typeof theme.ctaWatermarkOpacity === "number" ? String(theme.ctaWatermarkOpacity) : "0.05"
+  };
+}
+
+function replaceCssRootVariables(css, themeVars) {
+  let updatedCss = css;
+
+  Object.entries(themeVars).forEach(([key, value]) => {
+    const escapedKey = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(`${escapedKey}\\s*:\\s*[^;]+;`, "g");
+
+    if (regex.test(updatedCss)) {
+      updatedCss = updatedCss.replace(regex, `${key}:${value};`);
+    } else {
+      updatedCss = updatedCss.replace(":root{", `:root{\n  ${key}:${value};`);
+    }
+  });
+
+  return updatedCss;
+}
+
+function writeThemedCss(projectDir, projectName, data) {
   ensureFileExists(MASTER_CSS_PATH, "generator/styles.css");
 
-  const targetCssPath = path.join(projectDir, "styles.css");
-  fs.copyFileSync(MASTER_CSS_PATH, targetCssPath);
+  const masterCss = fs.readFileSync(MASTER_CSS_PATH, "utf8");
+  const themeVars = buildThemeVars(data);
+  const themedCss = replaceCssRootVariables(masterCss, themeVars);
 
-  console.log(`✔ Copied CSS: ${projectName}/styles.css`);
+  fs.writeFileSync(path.join(projectDir, "styles.css"), themedCss, "utf8");
+
+  console.log(`✔ Generated themed CSS: ${projectName}/styles.css`);
 }
 
 function buildManifest(data, projectName) {
@@ -102,7 +152,7 @@ function generateProject(projectName) {
   fs.writeFileSync(outputPath, html, "utf8");
   console.log(`✔ Generated: ${projectName}/index.html`);
 
-  copyMasterCss(projectDir, projectName);
+  writeThemedCss(projectDir, projectName, data);
   generateManifest(projectDir, projectName, data);
 }
 

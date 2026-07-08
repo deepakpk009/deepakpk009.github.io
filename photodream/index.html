@@ -4,32 +4,453 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Meta is injected/updated by app.js from content.json -->
-  <title>Loading…</title>
-  <meta name="description" content="" />
+  <title>Photo Dream Screensaver – Personal Photo Screensaver for Android TV</title>
+  <meta name="description" content="Turn your Android TV into a beautiful personal photo screensaver. Upload photos wirelessly via web token, Wi-Fi, or FTP and enjoy a relaxing slideshow with a customizable clock overlay.">
+  <meta name="keywords" content="Android TV screensaver, photo screensaver, TV photo slideshow, Android TV digital frame, wireless photo upload, clock screensaver">
+  <meta name="author" content="Deepak PK">
+  <meta name="theme-color" content="#824caf">
+  <link rel="canonical" href="https://deepakpk.com/photodream">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deepakpk.com/photodream">
+  <meta property="og:title" content="Photo Dream Screensaver for Android TV">
+  <meta property="og:description" content="Display your favorite memories as a beautiful screensaver on Android TV.">
+  <meta property="og:image" content="images/app_icon.png">
+  <meta property="og:site_name" content="Deepak PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://deepakpk.com/photodream">
+  <meta name="twitter:title" content="Photo Dream Screensaver for Android TV">
+  <meta name="twitter:description" content="Your personal photos, beautifully displayed as an Android TV screensaver.">
+  <meta name="twitter:image" content="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/app_icon.png">
+  <link rel="apple-touch-icon" href="images/app_icon.png">
+  <link rel="shortcut icon" href="images/app_icon.png">
 
+  <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- JSON-LD placeholders (filled by app.js) -->
-  <script type="application/ld+json" id="schema-software"></script>
-  <script type="application/ld+json" id="schema-faq"></script>
-  <script type="application/ld+json" id="schema-org"></script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Photo Dream Screensaver",
+  "operatingSystem": "Android TV",
+  "applicationCategory": "LifestyleApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.photodream",
+  "author": {
+    "@type": "Person",
+    "name": "Deepak PK",
+    "url": "https://deepakpk.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Deepak PK"
+  },
+  "screenshot": [
+    "images/screenshots/ss01.jpg",
+    "images/screenshots/ss02.jpg",
+    "images/screenshots/ss03.jpg",
+    "images/screenshots/ss04.jpg",
+    "images/screenshots/ss05.jpg",
+    "images/screenshots/ss06.jpg",
+    "images/screenshots/ss07.jpg",
+    "images/screenshots/ss08.jpg",
+    "images/screenshots/ss09.jpg",
+    "images/screenshots/ss10.jpg",
+    "images/screenshots/ss11.jpg",
+    "images/screenshots/ss12.jpg",
+    "images/screenshots/ss13.jpg"
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I upload photos to Photo Dream Screensaver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can upload photos using Web upload with a secure token, Wi-Fi upload when on the same network, or FTP upload. QR codes make connecting quick and easy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to be on the same Wi-Fi network?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not for web upload. The token-based web upload works even if your phone or PC is on a different network."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I show a clock on the screensaver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can fully customize the clock including position, size, format, seconds, shadow, and burn-in protection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I activate it as my screensaver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Activate option inside the app to jump directly to Android TV’s screensaver settings."
+      }
+    }
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Deepak PK",
+  "url": "https://deepakpk.com",
+  "logo": "images/app_icon.png",
+  "sameAs": [
+    "https://www.facebook.com/photodreamapp"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "deepakpk009@yahoo.in",
+      "contactType": "Customer Support"
+    }
+  ]
+}</script>
 
-  <script defer src="app.js"></script>
+  <script defer src="../generator/site.js"></script>
 
-  <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="3eb85710-2b57-4c5b-a822-ddf9990351ee"></script>
 </head>
 
 <body>
-  <!-- Render targets -->
-  <div id="hero"></div>
-  <div id="video"></div>
-  <div id="howItWorks"></div>
-  <div id="features"></div>
-  <div id="perfectFor"></div>
-  <div id="faq"></div>
-  <div id="cta"></div>
-  <div id="footer"></div>
+  
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content" >
+          <div class="hero-left">
+            <img src="images/app_icon.png" alt="Photo Dream Screensaver App Icon" class="app-icon-hero">
+            <h1>Photo Dream Screensaver - Turn Your TV Into a Living Photo Frame</h1>
+            <p>Use your own photos as an Android TV screensaver. Upload images wirelessly and enjoy a smooth slideshow with an optional, customizable clock.</p>
+            
+    <div class="download-buttons">
+      
+          <a href="https://play.google.com/store/apps/details?id=com.deepakpk.photodream" class="download-btn primary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+    </svg>
+  
+            Get it on Google Play
+          </a>
+        
+    </div>
+  
+
+            <div class="app-stats">
+                    
+                      <div class="stat">
+                        <span class="stat-value">📥 10K+</span>
+                        <span class="stat-label">Downloads</span>
+                      </div>
+                    
+                      <div class="stat">
+                        <span class="stat-value">📦 1.0.5</span>
+                        <span class="stat-label">Latest Version</span>
+                      </div>
+                    
+                  </div>
+          </div>
+
+          <div class="hero-right">
+                  <div class="screenshots-container is-portrait" id="screenshotsContainer">
+                    <div id="slidesRoot">
+                      
+                        <div class="screenshot-slide active">
+                          <img src="images/screenshots/ss01.jpg" alt="TV PDF Viewer Screenshot - Main Home Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss02.jpg" alt="TV PDF Viewer Screenshot - Bookmark Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss03.jpg" alt="TV PDF Viewer Screenshot - Web Import Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss04.jpg" alt="TV PDF Viewer Screenshot - FTP Import Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss05.jpg" alt="TV PDF Viewer Screenshot - PDF Options Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss06.jpg" alt="TV PDF Viewer Screenshot - Night Mode Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss07.jpg" alt="TV PDF Viewer Screenshot - Page Rotate Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss08.jpg" alt="TV PDF Viewer Screenshot - Search PDF Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss09.jpg" alt="TV PDF Viewer Screenshot - Search Result Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss10.jpg" alt="TV PDF Viewer Screenshot - Go To Page Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss11.jpg" alt="TV PDF Viewer Screenshot - In-PDF Bookmarks Listing Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss12.jpg" alt="TV PDF Viewer Screenshot - Settings Interface" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss13.jpg" alt="TV PDF Viewer Screenshot - Empty Home Interface" loading="lazy">
+                        </div>
+                      
+                    </div>
+
+                    <button class="screenshot-nav prev" id="prevBtn" aria-label="Previous screenshot">‹</button>
+                    <button class="screenshot-nav next" id="nextBtn" aria-label="Next screenshot">›</button>
+
+                    <div class="screenshot-dots" id="dotsRoot">
+                      <span class="dot active" data-slide="0"></span><span class="dot " data-slide="1"></span><span class="dot " data-slide="2"></span><span class="dot " data-slide="3"></span><span class="dot " data-slide="4"></span><span class="dot " data-slide="5"></span><span class="dot " data-slide="6"></span><span class="dot " data-slide="7"></span><span class="dot " data-slide="8"></span><span class="dot " data-slide="9"></span><span class="dot " data-slide="10"></span><span class="dot " data-slide="11"></span><span class="dot " data-slide="12"></span>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">Super Easy Setup</h2>
+        <div class="steps">
+          
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Install the App</h3>
+              <p>Download Photo Dream Screensaver from Google Play.</p>
+            </div>
+          
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Upload Your Photos</h3>
+              <p>Use web, Wi-Fi, or FTP upload to send photos wirelessly to your TV.</p>
+            </div>
+          
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Activate Screensaver</h3>
+              <p>Set Photo Dream as your Android TV screensaver and enjoy.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why Users Love Photo Dream</h2>
+        <div class="feature-grid">
+          
+              <div class="feature-card">
+                <span class="feature-icon">📺</span>
+                <h3>Made for TV</h3>
+                <ul><li>Optimized for remote control navigation</li><li>Clean 10-foot UI experience</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">🔐</span>
+                <h3>Private &amp; Secure</h3>
+                <ul><li>Photos stay locally on your TV</li><li>No cloud sync required</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">🎨</span>
+                <h3>Minimal &amp; Elegant</h3>
+                <ul><li>Distraction-free slideshow</li><li>Smooth transitions</li></ul>
+              </div>
+            
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="perfect-for">
+      <div class="container">
+        <h2 class="section-title">Perfect For</h2>
+        <div class="use-cases">
+          
+            <div class="use-case">
+              <div class="use-case-icon">🏠</div>
+              <h3>Homes &amp; Living Rooms</h3>
+              <p>Turn your idle TV into a calm, beautiful display of memories.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">👨‍👩‍👧‍👦</div>
+              <h3>Families</h3>
+              <p>Relive family moments whenever the TV is idle.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🖼️</div>
+              <h3>Digital Photo Frames</h3>
+              <p>Use your Android TV as a large-screen digital photo frame.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🏢</div>
+              <h3>Offices &amp; Waiting Areas</h3>
+              <p>Display curated images in a clean, distraction-free way.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container" id="faqContainer">
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How do I upload photos to Photo Dream Screensaver?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>You can upload photos using Web upload with a secure token, Wi-Fi upload when on the same network, or FTP upload. QR codes make connecting quick and easy.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Do I need to be on the same Wi-Fi network?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Not for web upload. The token-based web upload works even if your phone or PC is on a different network.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I show a clock on the screensaver?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. You can fully customize the clock including position, size, format, seconds, shadow, and burn-in protection.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How do I activate it as my screensaver?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Use the Activate option inside the app to jump directly to Android TV’s screensaver settings.</p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Bring Your TV to Life ✨</h2>
+          <p>Turn idle screen time into a beautiful photo experience.</p>
+          
+    <div class="download-buttons">
+      
+          <a href="https://play.google.com/store/apps/details?id=com.deepakpk.photodream" class="download-btn primary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+    </svg>
+  
+            Download on Google Play
+          </a>
+        
+    </div>
+  
+        </div>
+      </div>
+    </section>
+  
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+                    <img src="images/app_icon.png" alt="Photo Dream Screensaver Logo">
+                    <span class="footer-logo-text">Photo Dream Screensaver</span>
+                  </div>
+
+            <p>A beautifully designed photo screensaver for Android TV. Display your memories with elegance, comfort, and complete control.</p>
+            
+      <div class="social-links">
+        
+            <a href="https://www.facebook.com/photodreamapp" target="_blank" rel="noopener" aria-label="Facebook">
+              
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+    </svg>
+  
+            </a>
+          
+      </div>
+    
+          </div>
+
+          
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.deepakpk.photodream" target="_blank" rel="noopener">Download on Google Play</a><a href="terms.html" target="_self">Terms &amp; Conditions</a><a href="privacy.html" target="_self">Privacy Policy</a>
+            
+          </div>
+        
+          <div class="footer-section">
+            <h3>Support</h3>
+            <a href="mailto:deepakpk009@yahoo.in" target="_self">Email Support</a><a href="#faq" target="_self">FAQ</a>
+            <p style="margin-top: 15px;"><strong style="color: var(--primary-green);">Email</strong><br><a href="mailto:deepakpk009@yahoo.in">deepakpk009@yahoo.in</a></p>
+          </div>
+        
+          <div class="footer-section">
+            <h3>More Apps</h3>
+            <a href="https://deepakpk.com/tvpdfviewer" target="_blank" rel="noopener">TV PDF Viewer</a><a href="https://deepakpk.com/apps" target="_blank" rel="noopener">View All Apps</a><a href="https://deepakpk.com" target="_blank" rel="noopener">Developer Portfolio</a>
+            
+          </div>
+        
+        </div>
+
+        <div class="footer-bottom"><p>© 2025 Deepak PK. All rights reserved.</p></div>
+      </div>
+    </footer>
+  
 </body>
 </html>

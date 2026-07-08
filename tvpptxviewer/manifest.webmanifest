@@ -1,0 +1,22 @@
+{
+  "name": "TV PPTX Viewer",
+  "short_name": "TV PPTX View",
+  "description": "TV PPTX Viewer is an Android TV app for opening, importing, viewing, searching, bookmarking, and presenting PPTX files on your TV with remote-friendly controls.",
+  "start_url": "/tvpptxviewer/",
+  "scope": "/tvpptxviewer/",
+  "display": "standalone",
+  "background_color": "#081426",
+  "theme_color": "#2F80ED",
+  "icons": [
+    {
+      "src": "images/app_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

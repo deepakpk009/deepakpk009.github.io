@@ -4,32 +4,566 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Meta is injected/updated by app.js from content.json -->
-  <title>Loading…</title>
-  <meta name="description" content="" />
+  <title>Simple USB Signage – USB Photo &amp; Video Signage for Android TV</title>
+  <meta name="description" content="Simple USB Signage is an Android TV app for playing photos, videos, and optional background music from a USB drive as continuous digital signage.">
+  <meta name="keywords" content="Simple USB Signage, Android TV signage app, USB signage Android TV, digital signage for TV, USB slideshow TV, photo video signage, Android TV media player, TV signage player, USB media signage, local signage app, offline signage TV, Fire TV signage, Google TV signage, image video slideshow TV, background music signage, simple digital signage">
+  <meta name="author" content="Deepak PK">
+  <meta name="theme-color" content="#7ED957">
+  <link rel="canonical" href="https://deepakpk.com/simpleusbsignage">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deepakpk.com/simpleusbsignage">
+  <meta property="og:title" content="Simple USB Signage for Android TV">
+  <meta property="og:description" content="Turn an Android TV or Fire TV into a simple USB-powered signage screen for photos, videos, and optional background audio.">
+  <meta property="og:image" content="images/app_icon.png">
+  <meta property="og:site_name" content="Deepak PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://deepakpk.com/simpleusbsignage">
+  <meta name="twitter:title" content="Simple USB Signage for Android TV">
+  <meta name="twitter:description" content="A simple Android TV signage app that plays photos, videos, and background music directly from USB storage.">
+  <meta name="twitter:image" content="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/app_icon.png">
+  <link rel="apple-touch-icon" href="images/app_icon.png">
+  <link rel="shortcut icon" href="images/app_icon.png">
 
+  <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- JSON-LD placeholders (filled by app.js) -->
-  <script type="application/ld+json" id="schema-software"></script>
-  <script type="application/ld+json" id="schema-faq"></script>
-  <script type="application/ld+json" id="schema-org"></script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Simple USB Signage",
+  "operatingSystem": "Android TV",
+  "applicationCategory": "MultimediaApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage",
+  "author": {
+    "@type": "Person",
+    "name": "Deepak PK",
+    "url": "https://deepakpk.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Deepak PK"
+  },
+  "description": "Simple USB Signage is an Android TV app for playing photos, videos, and optional background audio from USB storage as continuous digital signage.",
+  "screenshot": [
+    "images/screenshots/ss001.jpg",
+    "images/screenshots/ss002.jpg",
+    "images/screenshots/ss003.jpg",
+    "images/screenshots/ss004.jpg",
+    "images/screenshots/ss005.jpg",
+    "images/screenshots/ss006.jpg",
+    "images/screenshots/ss007.jpg",
+    "images/screenshots/ss008.jpg"
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Simple USB Signage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simple USB Signage is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an internet connection to use the signage playback?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The main signage workflow is USB-based, so your photos, videos, and audio files can play locally from the connected USB drive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the app scan folders and subfolders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The app recursively scans folders and subfolders on connected USB drives and builds a flat media list for playback."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What media can I use for signage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The app supports common image, video, and audio formats. Images and videos are used for the visual signage playlist, while audio files can be used as optional background music."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can photos and videos play in the same signage loop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The app supports mixed image and video playback in the same continuous signage session."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I control how images fit on the TV screen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can choose Fill screen for edge-to-edge display or Show full image to avoid cropping when the image aspect ratio does not match the TV."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the image slide duration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The image slide duration can be increased or decreased from the settings screen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does background music work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Audio files are played as a separate looping background playlist. You can also decide whether videos should play their own audio or stay muted while background audio continues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens in demo/free mode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Free/demo mode limits the number of unlocked audio, video, and image files shown in the media set. Locked items are blurred and show a lock badge, and demo playback shows a subtle watermark."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I delete files from the app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Long-press OK on a media item to open the details dialog, where supported actions such as open and delete are available."
+      }
+    }
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Deepak PK",
+  "url": "https://deepakpk.com",
+  "logo": "images/app_icon.png",
+  "sameAs": [
+    "https://www.facebook.com/simpleusbsignage"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "deepakpk009@yahoo.in",
+      "contactType": "Customer Support"
+    }
+  ]
+}</script>
 
-  <script defer src="app.js"></script>
+  <script defer src="../generator/site.js"></script>
 
-  <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="3eb85710-2b57-4c5b-a822-ddf9990351ee"></script>
 </head>
 
 <body>
-  <!-- Render targets -->
-  <div id="hero"></div>
-  <div id="video"></div>
-  <div id="howItWorks"></div>
-  <div id="features"></div>
-  <div id="perfectFor"></div>
-  <div id="faq"></div>
-  <div id="cta"></div>
-  <div id="footer"></div>
+  
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content" >
+          <div class="hero-left">
+            <img src="images/app_icon.png" alt="Simple USB Signage App Icon" class="app-icon-hero">
+            <h1>Simple USB Signage – USB Digital Signage for Android TV</h1>
+            <p>Turn your Android TV, Google TV, or Fire TV into a simple signage player. Connect a USB drive with photos, videos, and optional audio files, then play a continuous full-screen signage loop using a remote-friendly interface.</p>
+            
+    <div class="download-buttons">
+      
+          <a href="https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage" class="download-btn primary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+    </svg>
+  
+            Get it on Google Play
+          </a>
+        
+          <a href="https://www.amazon.com/dp/B0H2D655LT/" class="download-btn secondary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.66,8.12 11.75,8 13.31,7.84V7.5C13.31,6.84 13.36,6.09 12.95,5.54C12.58,5.05 11.95,4.84 11.44,4.84C10.5,4.84 9.65,5.33 9.45,6.31C9.41,6.56 9.22,6.8 8.97,6.81L6.24,6.5C6,6.46 5.76,6.26 5.82,5.88C6.5,2.29 9.71,1.5 12.5,1.5C13.95,1.5 15.81,1.88 16.97,2.91C18.41,4.15 18.28,5.78 18.28,7.58V12.29C18.28,13.53 18.83,14.08 19.35,14.76C19.53,15 19.56,15.26 19.37,15.42C18.9,15.83 17.86,16.71 17.4,17.12L17.39,17.11M13.31,10.68C13.31,12.81 13.36,14.56 12.41,16.5C12.41,16.5 11.14,15.23 11.14,13.14C11.14,10.96 12.82,10.26 13.31,10.05V10.68Z"/>
+    </svg>
+  
+            Available on Amazon
+          </a>
+        
+    </div>
+  
+
+            <div class="app-stats">
+                    
+                      <div class="stat">
+                        <span class="stat-value">📺 Android TV</span>
+                        <span class="stat-label">D-pad Friendly Signage UI</span>
+                      </div>
+                    
+                      <div class="stat">
+                        <span class="stat-value">🔌 USB Playback</span>
+                        <span class="stat-label">Scan Folders &amp; Subfolders</span>
+                      </div>
+                    
+                      <div class="stat">
+                        <span class="stat-value">🎵 Optional Audio</span>
+                        <span class="stat-label">Background Music Support</span>
+                      </div>
+                    
+                  </div>
+          </div>
+
+          <div class="hero-right">
+                  <div class="screenshots-container is-landscape" id="screenshotsContainer">
+                    <div id="slidesRoot">
+                      
+                        <div class="screenshot-slide active">
+                          <img src="images/screenshots/ss001.jpg" alt="Simple USB Signage Android TV screenshot 1" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss002.jpg" alt="Simple USB Signage Android TV screenshot 2" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss003.jpg" alt="Simple USB Signage Android TV screenshot 3" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss004.jpg" alt="Simple USB Signage Android TV screenshot 4" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss005.jpg" alt="Simple USB Signage Android TV screenshot 5" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss006.jpg" alt="Simple USB Signage Android TV screenshot 6" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss007.jpg" alt="Simple USB Signage Android TV screenshot 7" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss008.jpg" alt="Simple USB Signage Android TV screenshot 8" loading="lazy">
+                        </div>
+                      
+                    </div>
+
+                    <button class="screenshot-nav prev" id="prevBtn" aria-label="Previous screenshot">‹</button>
+                    <button class="screenshot-nav next" id="nextBtn" aria-label="Next screenshot">›</button>
+
+                    <div class="screenshot-dots" id="dotsRoot">
+                      <span class="dot active" data-slide="0"></span><span class="dot " data-slide="1"></span><span class="dot " data-slide="2"></span><span class="dot " data-slide="3"></span><span class="dot " data-slide="4"></span><span class="dot " data-slide="5"></span><span class="dot " data-slide="6"></span><span class="dot " data-slide="7"></span>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">Start USB Signage in Minutes</h2>
+        <div class="steps">
+          
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Prepare a USB Drive</h3>
+              <p>Copy your signage photos, videos, and optional audio files to a FAT32 USB drive. You can organize files inside folders and subfolders.</p>
+            </div>
+          
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Connect USB to TV</h3>
+              <p>Open Simple USB Signage on your Android TV, Google TV, or Fire TV, allow USB permission, and let the app scan supported media files.</p>
+            </div>
+          
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Press Play</h3>
+              <p>Start signage playback from the Play menu or from a selected visual item. The app loops photos and videos continuously with optional background music.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why TV Users Will Like It</h2>
+        <div class="feature-grid">
+          
+              <div class="feature-card">
+                <span class="feature-icon">🔌</span>
+                <h3>USB-First Signage</h3>
+                <ul><li>Scan media directly from USB storage</li><li>Reload/rescan connected USB media whenever needed</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">🖼️</span>
+                <h3>Photo + Video Loop</h3>
+                <ul><li>Play images and videos in one continuous signage session</li><li>Automatic image slide timing with smooth crossfade transitions</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">🎵</span>
+                <h3>Flexible Audio</h3>
+                <ul><li>Loop optional background audio independently</li><li>Choose whether videos play their own audio or stay muted</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">⚙️</span>
+                <h3>Simple TV Settings</h3>
+                <ul><li>Choose black or white background</li><li>Set image display mode to Fill screen or Show full image</li></ul>
+              </div>
+            
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="perfect-for">
+      <div class="container">
+        <h2 class="section-title">Perfect For</h2>
+        <div class="use-cases">
+          
+            <div class="use-case">
+              <div class="use-case-icon">🏪</div>
+              <h3>Shops &amp; Small Businesses</h3>
+              <p>Run simple promotional screens, offers, product photos, and short videos from a USB drive without a cloud signage system.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🍔</div>
+              <h3>Food Stalls &amp; Cafes</h3>
+              <p>Display menus, combo offers, food photos, and looping videos on a TV using local USB media.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🎉</div>
+              <h3>Events &amp; Parties</h3>
+              <p>Play birthday slides, welcome screens, event photos, sponsor videos, and background music on a TV.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🏛️</div>
+              <h3>Clubs &amp; Auditoriums</h3>
+              <p>Use a TV as a simple media signage screen for announcements, schedules, event promotions, and waiting-area displays.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container" id="faqContainer">
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What is Simple USB Signage?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Simple USB Signage is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Do I need an internet connection to use the signage playback?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>No. The main signage workflow is USB-based, so your photos, videos, and audio files can play locally from the connected USB drive.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Does the app scan folders and subfolders?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. The app recursively scans folders and subfolders on connected USB drives and builds a flat media list for playback.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What media can I use for signage?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>The app supports common image, video, and audio formats. Images and videos are used for the visual signage playlist, while audio files can be used as optional background music.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can photos and videos play in the same signage loop?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. The app supports mixed image and video playback in the same continuous signage session.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I control how images fit on the TV screen?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. You can choose Fill screen for edge-to-edge display or Show full image to avoid cropping when the image aspect ratio does not match the TV.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I change the image slide duration?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. The image slide duration can be increased or decreased from the settings screen.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How does background music work?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Audio files are played as a separate looping background playlist. You can also decide whether videos should play their own audio or stay muted while background audio continues.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What happens in demo/free mode?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Free/demo mode limits the number of unlocked audio, video, and image files shown in the media set. Locked items are blurred and show a lock badge, and demo playback shows a subtle watermark.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I delete files from the app?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. Long-press OK on a media item to open the details dialog, where supported actions such as open and delete are available.</p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Turn Your TV Into Simple USB Signage 📺</h2>
+          <p>Download Simple USB Signage and play photos, videos, and background music from a USB drive on Android TV.</p>
+          
+    <div class="download-buttons">
+      
+          <a href="https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage" class="download-btn primary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+    </svg>
+  
+            Get it on Google Play
+          </a>
+        
+          <a href="https://www.amazon.com/dp/B0H2D655LT/" class="download-btn secondary" target="_blank" rel="noopener">
+            
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M15.93,17.09C15.75,17.25 15.5,17.26 15.3,17.15C14.41,16.41 14.25,16.07 13.76,15.36C12.29,16.86 11.25,17.31 9.34,17.31C7.09,17.31 5.33,15.92 5.33,13.14C5.33,10.96 6.5,9.5 8.19,8.76C9.66,8.12 11.75,8 13.31,7.84V7.5C13.31,6.84 13.36,6.09 12.95,5.54C12.58,5.05 11.95,4.84 11.44,4.84C10.5,4.84 9.65,5.33 9.45,6.31C9.41,6.56 9.22,6.8 8.97,6.81L6.24,6.5C6,6.46 5.76,6.26 5.82,5.88C6.5,2.29 9.71,1.5 12.5,1.5C13.95,1.5 15.81,1.88 16.97,2.91C18.41,4.15 18.28,5.78 18.28,7.58V12.29C18.28,13.53 18.83,14.08 19.35,14.76C19.53,15 19.56,15.26 19.37,15.42C18.9,15.83 17.86,16.71 17.4,17.12L17.39,17.11M13.31,10.68C13.31,12.81 13.36,14.56 12.41,16.5C12.41,16.5 11.14,15.23 11.14,13.14C11.14,10.96 12.82,10.26 13.31,10.05V10.68Z"/>
+    </svg>
+  
+            Available on Amazon
+          </a>
+        
+    </div>
+  
+        </div>
+      </div>
+    </section>
+  
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+                    <img src="images/app_icon.png" alt="Simple USB Signage Logo">
+                    <span class="footer-logo-text">Simple USB Signage</span>
+                  </div>
+
+            <p>A remote-friendly Android TV signage app for playing photos, videos, and optional background music directly from USB storage.</p>
+            
+      <div class="social-links">
+        
+            <a href="https://www.facebook.com/simpleusbsignage" target="_blank" rel="noopener" aria-label="Facebook">
+              
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+    </svg>
+  
+            </a>
+          
+      </div>
+    
+          </div>
+
+          
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage" target="_blank" rel="noopener">Download on Google Play</a><a href="https://www.amazon.com/dp/B0H2D655LT/" target="_blank" rel="noopener">Download on Amazon</a><a href="terms.html" target="_self">Terms &amp; Conditions</a><a href="privacy.html" target="_self">Privacy Policy</a>
+            
+          </div>
+        
+          <div class="footer-section">
+            <h3>Support</h3>
+            <a href="mailto:deepakpk009@yahoo.in" target="_self">Email Support</a><a href="#faq" target="_self">FAQ</a>
+            <p style="margin-top: 15px;"><strong style="color: var(--primary-green);">Email</strong><br><a href="mailto:deepakpk009@yahoo.in">deepakpk009@yahoo.in</a></p>
+          </div>
+        
+          <div class="footer-section">
+            <h3>More Apps</h3>
+            <a href="https://deepakpk.com/tvpdfviewer" target="_blank" rel="noopener">TV PDF Viewer</a><a href="https://deepakpk.com/apps" target="_blank" rel="noopener">View All Apps</a><a href="https://deepakpk.com" target="_blank" rel="noopener">Developer Portfolio</a>
+            
+          </div>
+        
+        </div>
+
+        <div class="footer-bottom"><p>© 2026 Deepak PK. All rights reserved.</p></div>
+      </div>
+    </footer>
+  
 </body>
 </html>

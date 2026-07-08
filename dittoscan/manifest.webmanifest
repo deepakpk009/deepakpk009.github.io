@@ -1,0 +1,22 @@
+{
+  "name": "Ditto Scan",
+  "short_name": "Ditto Scan",
+  "description": "Ditto Scan is an Android document scanner app that lets you scan with the camera or import photos, clean up pages, organize multi-page documents, and export PDFs.",
+  "start_url": "/dittoscan/",
+  "scope": "/dittoscan/",
+  "display": "standalone",
+  "background_color": "#0D2868",
+  "theme_color": "#0068F0",
+  "icons": [
+    {
+      "src": "images/app_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

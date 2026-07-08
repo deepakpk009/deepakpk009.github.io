@@ -67,19 +67,24 @@ function buildThemeStyle(data) {
   const icon = data.product?.icon;
 
   const vars = {
-    "--primary-green": t.primaryGreen,
-    "--dark-green": t.darkGreen,
-    "--light-green": t.lightGreen,
-    "--darker-green": t.darkerGreen,
-    "--black": t.black,
-    "--dark-bg": t.darkBg,
-    "--card-bg": t.cardBg,
-    "--text-white": t.textWhite,
-    "--text-gray": t.textGray,
-    "--border-green": t.borderGreen,
-    "--box-shadow-color": t.boxShadowColor,
-    "--hero-watermark-opacity": typeof t.heroWatermarkOpacity === "number" ? String(t.heroWatermarkOpacity) : undefined,
-    "--cta-watermark-opacity": typeof t.ctaWatermarkOpacity === "number" ? String(t.ctaWatermarkOpacity) : undefined,
+    "--color-primary": t.primary || t.primaryGreen,
+    "--color-primary-dark": t.primaryDark || t.darkGreen,
+    "--color-primary-light": t.primaryLight || t.lightGreen,
+    "--color-bg-start": t.bgStart || t.darkerGreen,
+    "--color-bg": t.background || t.darkBg,
+    "--color-bg-dark": t.backgroundDark || t.black,
+    "--color-card": t.card || t.cardBg,
+    "--color-text": t.text || t.textWhite,
+    "--color-text-muted": t.textMuted || t.textGray,
+    "--color-border": t.border || t.borderGreen,
+    "--color-shadow": t.shadow || t.boxShadowColor,
+
+    "--hero-watermark-opacity":
+      typeof t.heroWatermarkOpacity === "number" ? String(t.heroWatermarkOpacity) : undefined,
+
+    "--cta-watermark-opacity":
+      typeof t.ctaWatermarkOpacity === "number" ? String(t.ctaWatermarkOpacity) : undefined,
+
     "--hero-watermark": hasText(icon) ? `url("${icon}")` : undefined,
     "--cta-watermark": hasText(icon) ? `url("${icon}")` : undefined
   };
@@ -125,8 +130,6 @@ function buildMetaTags(data) {
   if (hasText(fav.png16)) tags.push(`<link rel="icon" sizes="16x16" href="${escapeHtml(fav.png16)}" />`);
   if (hasText(fav.appleTouch)) tags.push(`<link rel="apple-touch-icon" href="${escapeHtml(fav.appleTouch)}" />`);
   if (hasText(fav.shortcut)) tags.push(`<link rel="shortcut icon" href="${escapeHtml(fav.shortcut)}" />`);
-
-  tags.push(buildThemeStyle(data));
 
   return tags.join("\n  ");
 }
@@ -522,6 +525,7 @@ function renderPage(data, template) {
   return template
     .replaceAll("{{LANG}}", escapeHtml(lang))
     .replaceAll("{{META_TAGS}}", buildMetaTags(data))
+    .replaceAll("{{THEME_STYLE}}", buildThemeStyle(data))
     .replaceAll("{{SCHEMA_TAGS}}", buildSchemaTags(data))
     .replaceAll("{{BODY_CONTENT}}", buildBodyContent(data));
 }

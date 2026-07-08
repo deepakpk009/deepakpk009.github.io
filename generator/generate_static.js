@@ -4,7 +4,9 @@ const { renderPage } = require("./renderer");
 
 const GENERATOR_DIR = __dirname;
 const WEBSITE_ROOT = path.resolve(GENERATOR_DIR, "..");
+
 const TEMPLATE_PATH = path.join(GENERATOR_DIR, "template.html");
+const MASTER_CSS_PATH = path.join(GENERATOR_DIR, "styles.css");
 
 function ensureFileExists(filePath, label) {
   if (!fs.existsSync(filePath)) {
@@ -29,21 +31,31 @@ function getProjectFolders() {
     .sort();
 }
 
+function copyMasterCss(projectDir) {
+  ensureFileExists(MASTER_CSS_PATH, "generator/styles.css");
+
+  const targetCssPath = path.join(projectDir, "styles.css");
+  fs.copyFileSync(MASTER_CSS_PATH, targetCssPath);
+}
+
 function generateProject(projectName) {
   const projectDir = path.join(WEBSITE_ROOT, projectName);
   const contentPath = path.join(projectDir, "content.json");
   const outputPath = path.join(projectDir, "index.html");
 
-  ensureFileExists(TEMPLATE_PATH, "template.html");
-  ensureFileExists(contentPath, "content.json");
+  ensureFileExists(TEMPLATE_PATH, "generator/template.html");
+  ensureFileExists(contentPath, `${projectName}/content.json`);
 
   const template = fs.readFileSync(TEMPLATE_PATH, "utf8");
   const data = readJson(contentPath);
+
   const html = renderPage(data, template);
 
   fs.writeFileSync(outputPath, html, "utf8");
+  copyMasterCss(projectDir);
 
   console.log(`✔ Generated: ${projectName}/index.html`);
+  console.log(`✔ Copied CSS: ${projectName}/styles.css`);
 }
 
 function printHelp() {
@@ -71,7 +83,7 @@ function main() {
     const projects = getProjectFolders();
 
     if (!projects.length) {
-      console.log("No project folders found.");
+      console.log("No project folders found. Each project folder should contain content.json.");
       process.exit(1);
     }
 

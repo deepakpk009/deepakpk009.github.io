@@ -1,53 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://deepakpk.com</loc>
-		<priority>1.00</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
-	<url>
-		<loc>https://deepakpk.com/secondlogin</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
-	<url>
-		<loc>https://deepakpk.com/usbslideshow</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
-	<url>
-		<loc>https://deepakpk.com/tvpdfviewer</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
-	<url>
-		<loc>https://deepakpk.com/tvepubviewer</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
-	<url>
-		<loc>https://deepakpk.com/tvexplorer</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
-	<url>
-		<loc>https://deepakpk.com/apps</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
-	<url>
-		<loc>https://deepakpk.com/llm.txt</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
-	<url>
-		<loc>https://deepakpk.com/llm.md</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
-	<url>
-		<loc>https://deepakpk.com/ai-developer-profile</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-09-02</lastmod>
-	</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://deepakpk.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/apps/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/sitemap/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/tvpdfviewer/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/tvpdfviewer/images/app_icon.png</image:loc>
+      <image:title>TV PDF Viewer</image:title>
+      <image:caption>Transform your TV into a giant eBook!, you can read and display any PDF in stunning clarity—right on your Android TV. Perfect for presentations, study, and cozy reading nights.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/tvepubviewer/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/tvepubviewer/images/app_icon.png</image:loc>
+      <image:title>TV ePUB Viewer</image:title>
+      <image:caption>Read comics better on TV screens, check out TV ePUB Viewer, an easy way to view ePUB files on Android TV.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/secondlogin/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/secondlogin/images/android-chrome-192x192.png</image:loc>
+      <image:title>Second Login</image:title>
+      <image:caption>Simplify account management on your mobile device with the Second Login app for Android. Offering website management, profile management, and desktop mode view, managing multiple accounts is a breeze.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/usbslideshow/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/usbslideshow/images/app_icon.png</image:loc>
+      <image:title>USB Slideshow &amp; Signage</image:title>
+      <image:caption>An easy way to set up Signage or photo montages for your shops, halls, auditoriums, reception areas, schools, classrooms, parties, and more.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/tvexplorer/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/tvexplorer/images/app_icon.png</image:loc>
+      <image:title>TvExplorer</image:title>
+      <image:caption>Smart File Browser &amp; Media Manager for Android TV</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/dinousbplayer/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/dinousbplayer/images/app_icon.png</image:loc>
+      <image:title>Dino USB Player</image:title>
+      <image:caption>Your Ultimate Android TV Video Player</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/tvdrop/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/tvdrop/images/app_icon.png</image:loc>
+      <image:title>TV Drop</image:title>
+      <image:caption>TV File Transfer Made Simple</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/usbgallery/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/usbgallery/images/app_icon.png</image:loc>
+      <image:title>USB Gallery</image:title>
+      <image:caption>USB Photos, Videos &amp; Music on Android TV</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/photodream/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/photodream/images/app_icon.png</image:loc>
+      <image:title>Photo Dream Screensaver</image:title>
+      <image:caption>Fully customizable photo screensaver with clock</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/tvdocxviewer/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/tvdocxviewer/images/app_icon.png</image:loc>
+      <image:title>TV DocX Viewer</image:title>
+      <image:caption>Read Word Documents on Your Android TV</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/pdfviewer/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/pdfviewer/images/app_icon.png</image:loc>
+      <image:title>PDF Viewer</image:title>
+      <image:caption>Fast PDF Reader for Android Phones &amp; Tablets</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/docxviewer/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/docxviewer/images/app_icon.png</image:loc>
+      <image:title>Docx Viewer</image:title>
+      <image:caption>Fast DOCX Reader for Android Phones &amp; Tablets</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/tvpptxviewer/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/tvpptxviewer/images/app_icon.png</image:loc>
+      <image:title>TV PPTX Viewer</image:title>
+      <image:caption>PPTX Presentations on Android TV</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/simpleusbsignage/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/simpleusbsignage/images/app_icon.png</image:loc>
+      <image:title>Simple USB Signage</image:title>
+      <image:caption>USB Digital Signage for Android TV</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/gliso/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/gliso/images/app_icon.png</image:loc>
+      <image:title>Gliso Gallery Slideshow</image:title>
+      <image:caption>Beautiful Folder-Based Slideshows for Android Tablets</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/dittoscan/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/dittoscan/images/app_icon.png</image:loc>
+      <image:title>Ditto Scan</image:title>
+      <image:caption>Scan Documents and Export PDFs on Android</image:caption>
+    </image:image>
+  </url>
 </urlset>

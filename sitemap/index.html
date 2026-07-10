@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Website Sitemap | Apps by Deepak</title>
+
+    <meta
+        name="description"
+        content="Browse all application and product pages available on Apps by Deepak."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="canonical"
+        href="https://deepakpk.com/sitemap/"
+    >
+
+    <link
+        rel="sitemap"
+        type="application/xml"
+        title="XML Sitemap"
+        href="https://deepakpk.com/sitemap.xml"
+    >
+
+    <style>
+        :root {
+            color-scheme: light dark;
+
+            --page-background: #f5f7fb;
+            --card-background: #ffffff;
+            --text-primary: #172033;
+            --text-secondary: #5c667a;
+            --border-color: #e1e6ef;
+            --accent-color: #1769e0;
+            --accent-hover: #0d51b8;
+            --shadow-color: rgba(28, 43, 72, 0.08);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --page-background: #0d1119;
+                --card-background: #161c27;
+                --text-primary: #f1f5fb;
+                --text-secondary: #aab4c5;
+                --border-color: #2a3342;
+                --accent-color: #72a9ff;
+                --accent-hover: #9bc1ff;
+                --shadow-color: rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--page-background);
+            color: var(--text-primary);
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent-color);
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+        }
+
+        .page-container {
+            width: min(1120px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 56px 0;
+        }
+
+        .page-header {
+            max-width: 760px;
+            margin-bottom: 42px;
+        }
+
+        .page-header h1 {
+            margin: 0 0 12px;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.12;
+            letter-spacing: -0.04em;
+        }
+
+        .page-header p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+        }
+
+        .sitemap-files {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .sitemap-files a {
+            display: inline-flex;
+            align-items: center;
+            min-height: 44px;
+            padding: 10px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: var(--card-background);
+            font-weight: 650;
+            text-decoration: none;
+        }
+
+        .section-title {
+            margin: 48px 0 20px;
+            font-size: 1.55rem;
+            letter-spacing: -0.02em;
+        }
+
+        .main-pages {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            background: var(--card-background);
+            overflow: hidden;
+        }
+
+        .main-pages li {
+            display: grid;
+            gap: 2px;
+            padding: 18px 20px;
+        }
+
+        .main-pages li + li {
+            border-top: 1px solid var(--border-color);
+        }
+
+        .main-pages a {
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .main-pages span {
+            color: var(--text-secondary);
+            font-size: 0.94rem;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(300px, 1fr));
+            gap: 18px;
+        }
+
+        .app-card {
+            display: flex;
+            gap: 18px;
+            min-width: 0;
+            padding: 22px;
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            background: var(--card-background);
+            box-shadow: 0 12px 30px var(--shadow-color);
+        }
+
+        .app-icon-wrapper {
+            display: grid;
+            flex: 0 0 84px;
+            width: 84px;
+            height: 84px;
+            place-items: center;
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            background: var(--page-background);
+            overflow: hidden;
+        }
+
+        .app-icon {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .app-icon-placeholder {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .app-content {
+            display: flex;
+            min-width: 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .app-content h2 {
+            margin: 0;
+            font-size: 1.15rem;
+            line-height: 1.35;
+        }
+
+        .app-content h2 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .app-content h2 a:hover {
+            color: var(--accent-color);
+        }
+
+        .app-content p {
+            margin: 8px 0 14px;
+            color: var(--text-secondary);
+            font-size: 0.94rem;
+        }
+
+        .visit-link {
+            margin-top: auto;
+            font-size: 0.92rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .page-footer {
+            margin-top: 52px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 520px) {
+            .page-container {
+                width: min(100% - 24px, 1120px);
+                padding: 34px 0;
+            }
+
+            .app-card {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page-container">
+        <header class="page-header">
+            <h1>Website Sitemap</h1>
+
+            <p>
+                Browse the product and application pages available on
+                Apps by Deepak.
+            </p>
+
+            <nav
+                class="sitemap-files"
+                aria-label="Machine-readable sitemap files"
+            >
+                <a href="../sitemap.xml">
+                    XML sitemap
+                </a>
+
+                <a href="../sitemap.txt">
+                    Text sitemap
+                </a>
+            </nav>
+        </header>
+
+        <section aria-labelledby="main-pages-title">
+            <h2
+                class="section-title"
+                id="main-pages-title"
+            >
+                Main pages
+            </h2>
+
+            <ul class="main-pages">
+                
+                    <li>
+                        <a href="https://deepakpk.com/">
+                            Apps by Deepak
+                        </a>
+
+                        <span>Explore Android, Android TV, Fire TV, and mobile applications developed by Deepak.</span>
+                    </li>
+
+                    <li>
+                        <a href="https://deepakpk.com/apps/">
+                            All Apps
+                        </a>
+
+                        <span>Browse all applications developed by Deepak.</span>
+                    </li>
+
+                    <li>
+                        <a href="https://deepakpk.com/sitemap/">
+                            Website Sitemap
+                        </a>
+
+                        <span>Browse all application and product pages available on the website.</span>
+                    </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="applications-title">
+            <h2
+                class="section-title"
+                id="applications-title"
+            >
+                Applications
+            </h2>
+
+            <div class="app-grid">
+                
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/tvpdfviewer/images/app_icon.png"
+                            alt="TV PDF Viewer app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/tvpdfviewer/">
+                                TV PDF Viewer
+                            </a>
+                        </h2>
+
+                        <p>Transform your TV into a giant eBook!, you can read and display any PDF in stunning clarity—right on your Android TV. Perfect for presentations, study, and cozy reading nights.</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/tvpdfviewer/"
+                            aria-label="View TV PDF Viewer product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/tvepubviewer/images/app_icon.png"
+                            alt="TV ePUB Viewer app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/tvepubviewer/">
+                                TV ePUB Viewer
+                            </a>
+                        </h2>
+
+                        <p>Read comics better on TV screens, check out TV ePUB Viewer, an easy way to view ePUB files on Android TV.</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/tvepubviewer/"
+                            aria-label="View TV ePUB Viewer product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/secondlogin/images/android-chrome-192x192.png"
+                            alt="Second Login app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/secondlogin/">
+                                Second Login
+                            </a>
+                        </h2>
+
+                        <p>Simplify account management on your mobile device with the Second Login app for Android. Offering website management, profile management, and desktop mode view, managing multiple accounts is a breeze.</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/secondlogin/"
+                            aria-label="View Second Login product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/usbslideshow/images/app_icon.png"
+                            alt="USB Slideshow &amp; Signage app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/usbslideshow/">
+                                USB Slideshow &amp; Signage
+                            </a>
+                        </h2>
+
+                        <p>An easy way to set up Signage or photo montages for your shops, halls, auditoriums, reception areas, schools, classrooms, parties, and more.</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/usbslideshow/"
+                            aria-label="View USB Slideshow &amp; Signage product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/tvexplorer/images/app_icon.png"
+                            alt="TvExplorer app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/tvexplorer/">
+                                TvExplorer
+                            </a>
+                        </h2>
+
+                        <p>Smart File Browser &amp; Media Manager for Android TV</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/tvexplorer/"
+                            aria-label="View TvExplorer product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/dinousbplayer/images/app_icon.png"
+                            alt="Dino USB Player app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/dinousbplayer/">
+                                Dino USB Player
+                            </a>
+                        </h2>
+
+                        <p>Your Ultimate Android TV Video Player</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/dinousbplayer/"
+                            aria-label="View Dino USB Player product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/tvdrop/images/app_icon.png"
+                            alt="TV Drop app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/tvdrop/">
+                                TV Drop
+                            </a>
+                        </h2>
+
+                        <p>TV File Transfer Made Simple</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/tvdrop/"
+                            aria-label="View TV Drop product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/usbgallery/images/app_icon.png"
+                            alt="USB Gallery app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/usbgallery/">
+                                USB Gallery
+                            </a>
+                        </h2>
+
+                        <p>USB Photos, Videos &amp; Music on Android TV</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/usbgallery/"
+                            aria-label="View USB Gallery product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/photodream/images/app_icon.png"
+                            alt="Photo Dream Screensaver app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/photodream/">
+                                Photo Dream Screensaver
+                            </a>
+                        </h2>
+
+                        <p>Fully customizable photo screensaver with clock</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/photodream/"
+                            aria-label="View Photo Dream Screensaver product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/tvdocxviewer/images/app_icon.png"
+                            alt="TV DocX Viewer app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/tvdocxviewer/">
+                                TV DocX Viewer
+                            </a>
+                        </h2>
+
+                        <p>Read Word Documents on Your Android TV</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/tvdocxviewer/"
+                            aria-label="View TV DocX Viewer product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/pdfviewer/images/app_icon.png"
+                            alt="PDF Viewer app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/pdfviewer/">
+                                PDF Viewer
+                            </a>
+                        </h2>
+
+                        <p>Fast PDF Reader for Android Phones &amp; Tablets</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/pdfviewer/"
+                            aria-label="View PDF Viewer product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/docxviewer/images/app_icon.png"
+                            alt="Docx Viewer app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/docxviewer/">
+                                Docx Viewer
+                            </a>
+                        </h2>
+
+                        <p>Fast DOCX Reader for Android Phones &amp; Tablets</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/docxviewer/"
+                            aria-label="View Docx Viewer product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/tvpptxviewer/images/app_icon.png"
+                            alt="TV PPTX Viewer app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/tvpptxviewer/">
+                                TV PPTX Viewer
+                            </a>
+                        </h2>
+
+                        <p>PPTX Presentations on Android TV</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/tvpptxviewer/"
+                            aria-label="View TV PPTX Viewer product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/simpleusbsignage/images/app_icon.png"
+                            alt="Simple USB Signage app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/simpleusbsignage/">
+                                Simple USB Signage
+                            </a>
+                        </h2>
+
+                        <p>USB Digital Signage for Android TV</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/simpleusbsignage/"
+                            aria-label="View Simple USB Signage product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/gliso/images/app_icon.png"
+                            alt="Gliso Gallery Slideshow app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/gliso/">
+                                Gliso Gallery Slideshow
+                            </a>
+                        </h2>
+
+                        <p>Beautiful Folder-Based Slideshows for Android Tablets</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/gliso/"
+                            aria-label="View Gliso Gallery Slideshow product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="app-card">
+                    
+                    <div class="app-icon-wrapper">
+                        <img
+                            class="app-icon"
+                            src="https://deepakpk.com/dittoscan/images/app_icon.png"
+                            alt="Ditto Scan app icon"
+                            width="84"
+                            height="84"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+
+                    <div class="app-content">
+                        <h2>
+                            <a href="https://deepakpk.com/dittoscan/">
+                                Ditto Scan
+                            </a>
+                        </h2>
+
+                        <p>Scan Documents and Export PDFs on Android</p>
+
+                        <a
+                            class="visit-link"
+                            href="https://deepakpk.com/dittoscan/"
+                            aria-label="View Ditto Scan product page"
+                        >
+                            View product page
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <p>
+                16 application pages listed.
+                Sitemap generated on July 10, 2026.
+            </p>
+        </footer>
+    </main>
+</body>
+</html>

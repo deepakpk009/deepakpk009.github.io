@@ -1,0 +1,15 @@
+Run it from the website root:
+
+node generator/generate-sitemap.js
+
+The resulting structure will be:
+
+website-root/
+├── apps/
+│   └── projects.json
+├── generator/
+│   └── generate-sitemap.js
+├── sitemap.xml
+├── sitemap.txt
+└── sitemap/
+    └── index.html

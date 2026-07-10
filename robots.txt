@@ -1,3 +1,9 @@
-User-Agent: *
-Disallow:
-Sitemap: https://www.deepakpk.com/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://deepakpk.com/sitemap.xml
+Sitemap: https://deepakpk.com/sitemap.txt
+
+# AI / LLM crawler info
+# https://deepakpk.com/llm.txt
+# https://deepakpk.com/llm.md

@@ -21,15 +21,26 @@
             background-color: #f4f4f9;
         }
         .container {
+            width: 320px;
+            min-height: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
             text-align: center;
             background: #fff;
             padding: 20px;
             margin: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            box-sizing: border-box;
         }
         .qr-code {
             margin-top: 20px;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
         }
         .action-button {
             display: inline-block;
@@ -55,6 +66,9 @@
         <div class="qr-code">
             <img id="supportQR" src="" alt="QR Code">
         </div>
+        <a id="supportButton" class="action-button" href="#" target="_blank" rel="noopener noreferrer">
+            Open Support Page
+        </a>
     </div>
     <div class="container">
         <h1>Feedback Form</h1>
@@ -75,6 +89,7 @@
         // URL for support
         const supportURL = 'https://www.facebook.com/browsepad/';
         generateQRCode("supportQR", supportURL);
+        document.getElementById("supportButton").href = supportURL;
         // URL for feedback form
         const feedbackURL = 'https://forms.gle/oV6bffrHGUVMzgNS8';
         generateQRCode("feedbackQR", feedbackURL);

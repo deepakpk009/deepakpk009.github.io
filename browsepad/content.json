@@ -1,16 +1,16 @@
 {
   "meta": {
     "lang": "en",
-    "title": "BrowsePad – USB Photo & Video Signage for Android TV",
-    "description": "BrowsePad is an Android TV app for playing photos, videos, and optional background music from a USB drive as continuous digital signage.",
-    "keywords": "BrowsePad, Android TV signage app, USB signage Android TV, digital signage for TV, USB slideshow TV, photo video signage, Android TV media player, TV signage player, USB media signage, local signage app, offline signage TV, Fire TV signage, Google TV signage, image video slideshow TV, background music signage, simple digital signage",
+    "title": "BrowsePad – TV-First Web Browser for Android TV",
+    "description": "BrowsePad is a TV-first web browser for Android TV with tabs, bookmarks, history, desktop view, and phone-based remote control through BrowsePad Connect.",
+    "keywords": "BrowsePad, Android TV browser, TV web browser, browser for Android TV, Google TV browser, Fire TV browser, TV remote browser, Android TV tabs, BrowsePad Connect, phone remote browser, Android TV bookmarks, Android TV history, desktop mode browser TV, Android TV downloads, Leanback browser",
     "author": "Deepak PK",
     "canonical": "https://deepakpk.com/browsepad",
     "og": {
       "type": "website",
       "url": "https://deepakpk.com/browsepad",
       "title": "BrowsePad for Android TV",
-      "description": "Turn an Android TV or Fire TV into a simple USB-powered signage screen for photos, videos, and optional background audio.",
+      "description": "Browse the web on Android TV with tabs, an app-wide pointer, and phone-based remote control through BrowsePad Connect.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
@@ -18,7 +18,7 @@
       "card": "summary_large_image",
       "url": "https://deepakpk.com/browsepad",
       "title": "BrowsePad for Android TV",
-      "description": "A simple Android TV signage app that plays photos, videos, and background music directly from USB storage.",
+      "description": "A TV-first Android TV browser with tabs, bookmarks, history, desktop view, and a built-in mobile remote experience.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -49,8 +49,8 @@
   },
   "product": {
     "name": "BrowsePad",
-    "heroTitle": "BrowsePad – USB Digital Signage for Android TV",
-    "heroDescription": "Turn your Android TV, Google TV, or Fire TV into a simple signage player. Connect a USB drive with photos, videos, and optional audio files, then play a continuous full-screen signage loop using a remote-friendly interface.",
+    "heroTitle": "BrowsePad – A TV-First Browser for Android TV",
+    "heroDescription": "Browse the web on Android TV, Google TV, and Fire TV with a desktop-style interface, multi-tab support, an app-wide pointer, and BrowsePad Connect for phone-based trackpad control.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
@@ -68,16 +68,16 @@
     ],
     "stats": [
       {
-        "value": "📺 Android TV",
-        "label": "D-pad Friendly Signage UI"
+        "value": "🖥️ Multi-Tab",
+        "label": "Desktop-Style TV Browsing"
       },
       {
-        "value": "🔌 USB Playback",
-        "label": "Scan Folders & Subfolders"
+        "value": "🖱️ App-Wide Pointer",
+        "label": "Remote and Phone Control"
       },
       {
-        "value": "🎵 Optional Audio",
-        "label": "Background Music Support"
+        "value": "📱 BrowsePad Connect",
+        "label": "Trackpad Pairing Over Local Network"
       }
     ],
     "features": {
@@ -87,100 +87,90 @@
           "icon": "📺",
           "title": "Made for Android TV",
           "bullets": [
-            "Leanback-style interface designed for TV screens and remote controls",
-            "Works on Android TV, Google TV, and Fire TV devices",
-            "Clear menu options for Play, Reload Files, Settings, Help, and Subscription",
-            "Large, readable media cards with filename labels and thumbnails"
+            "Desktop-style browser shell optimized for TV screens",
+            "Works with Android TV, Google TV, and Fire TV style remote navigation",
+            "Smooth handoff between toolbar focus mode and pointer mode",
+            "Browser chrome can auto-hide while browsing and return when needed"
           ]
         },
         {
-          "icon": "🔌",
-          "title": "USB Media Scanning",
+          "icon": "🗂️",
+          "title": "Tabs, Bookmarks, and History",
           "bullets": [
-            "Detects USB mass-storage devices when the app launches",
-            "Handles USB attach and detach events while the app is running",
-            "Requests USB permission and retries initialization with timeout handling",
-            "Recursively scans folders and subfolders to build one flat media list"
+            "Create, switch, close, and close all tabs from a TV-friendly tab strip",
+            "Per-tab titles and favicons make open pages easy to scan",
+            "Save bookmarks from the toolbar and review them in a dedicated Bookmarks page",
+            "Automatic browsing history with clear-history confirmation and session restore"
           ]
         },
         {
-          "icon": "🖼️",
-          "title": "Photos & Video Signage",
+          "icon": "🌐",
+          "title": "Smart Address Bar and Search",
           "bullets": [
-            "Plays image and video files together in a continuous signage loop",
-            "Starts playback from a selected visual item or from the Play menu",
-            "Uses smooth crossfade transitions between visual items",
-            "Loops the visual playlist continuously for unattended display"
+            "Address bar accepts full URLs, bare domains, and search queries",
+            "Automatic search-vs-URL resolution keeps navigation simple on TV",
+            "Choose your default search engine from Google, Bing, DuckDuckGo, Brave Search, Perplexity, or Andi",
+            "Built-in `browsepad://connect` route opens the BrowsePad Connect experience instantly"
           ]
         },
         {
-          "icon": "🎵",
-          "title": "Background Audio",
+          "icon": "🖱️",
+          "title": "TV Pointer and Remote Controls",
           "bullets": [
-            "Builds a separate playlist for optional background audio files",
-            "Loops background music independently from photo and video playback",
-            "Can mute video audio and continue background music",
-            "Can enable video audio and automatically pause background music during videos"
+            "Visible app-wide pointer works across browser chrome, internal pages, and website content",
+            "Use the D-pad for precise pointer nudging or hold directions for continuous movement",
+            "Long-press OK triggers secondary or right-click behavior",
+            "Pointer edge scrolling helps reach content inside long web pages"
+          ]
+        },
+        {
+          "icon": "📱",
+          "title": "BrowsePad Connect",
+          "bullets": [
+            "Built-in Connect page is available as a native TV tab",
+            "QR code pairing makes it fast to connect a phone",
+            "Controller URL is shown on the TV for manual pairing when needed",
+            "Connection status, disconnect summaries, and port fallback improve reliability"
+          ]
+        },
+        {
+          "icon": "⌨️",
+          "title": "Phone-Based Remote Input",
+          "bullets": [
+            "Phone controller supports single-finger cursor movement and tap-to-click",
+            "Use two-finger gestures for right-click and scrolling, plus fling momentum",
+            "Pinch-to-zoom and phone-side pointer speed settings help with difficult sites",
+            "Remote text input works for the address bar, webpage fields, textareas, and content-editable areas"
           ]
         },
         {
           "icon": "⚙️",
-          "title": "Display Controls",
+          "title": "View Modes and Settings",
           "bullets": [
-            "Choose black or white signage background color",
-            "Set images to Fill screen for edge-to-edge signage",
-            "Set images to Show full image to avoid cropping",
-            "Increase or decrease image slide duration from settings"
-          ]
-        },
-        {
-          "icon": "📁",
-          "title": "Media Library Tools",
-          "bullets": [
-            "Filters hidden files and unsupported extensions from the visible list",
-            "Shows image thumbnails and type artwork for video, audio, and unknown files",
-            "Long-press OK to view file details",
-            "File details include type, size/path information, open, and delete actions"
-          ]
-        },
-        {
-          "icon": "🚀",
-          "title": "Direct USB Streaming",
-          "bullets": [
-            "Uses an internal localhost media server for USB-hosted media",
-            "Streams videos, audio, and images without first copying them to app storage",
-            "Designed for simple local signage workflows",
-            "Reload/rescan USB media anytime from the main menu"
+            "Switch each site between Adaptive and Desktop view modes",
+            "Set a default view mode for sites without a saved override",
+            "Settings include search engine choice, cache clear, and app version display",
+            "Support pages like Help, Privacy Policy, Terms, About, and feedback open inside the browser"
           ]
         },
         {
           "icon": "🔒",
-          "title": "Free Demo & Subscription",
+          "title": "Downloads and Web Handling",
           "bullets": [
-            "Free/demo mode unlocks a limited number of media files for testing",
-            "Locked media items are blurred and marked with a lock badge",
-            "Unsubscribed playback shows a subtle Demo Version watermark",
-            "Includes subscription and subscription management screens"
+            "Download interception asks for confirmation before starting a file download",
+            "Android DownloadManager integration provides start and completion feedback",
+            "Context menu actions include open in new tab, copy link, and download resource",
+            "Friendly internal error pages cover common failures like timeouts, SSL issues, and connection errors"
           ]
         },
         {
-          "icon": "🌍",
-          "title": "Localized Experience",
+          "icon": "🛍️",
+          "title": "Store and Subscription Support",
           "bullets": [
-            "Includes localized strings for 16 languages",
-            "Supports English, Arabic, Chinese, French, German, Hindi, and more",
-            "Help, FAQ, About, Support, Privacy Policy, and Terms open inside the app",
-            "In-app browser includes progress, retry, and failure handling"
-          ]
-        },
-        {
-          "icon": "📊",
-          "title": "Device & Settings Info",
-          "bullets": [
-            "Shows screen resolution and calculated aspect ratio",
-            "Settings layout adapts to different screen sizes",
-            "Subscription status is cached for an offline grace period after verification",
-            "Store-specific builds support Google Play, Amazon Appstore, and Huawei AppGallery billing"
+            "Separate builds support Google Play, Amazon Appstore, and Huawei AppGallery",
+            "Store-specific subscription flows are integrated for each distribution channel",
+            "Subscription management entry points are available from the app menu",
+            "Recent subscription verification is cached with an offline grace period"
           ]
         }
       ]
@@ -189,24 +179,24 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "🏪",
-          "title": "Shops & Small Businesses",
-          "text": "Run simple promotional screens, offers, product photos, and short videos from a USB drive without a cloud signage system."
+          "icon": "🛋️",
+          "title": "Living Room Browsing",
+          "text": "Use a TV as a real browser for news, video sites, web apps, and everyday browsing without struggling through phone-style controls."
         },
         {
-          "icon": "🍔",
-          "title": "Food Stalls & Cafes",
-          "text": "Display menus, combo offers, food photos, and looping videos on a TV using local USB media."
+          "icon": "📱",
+          "title": "Phone-as-Trackpad Setups",
+          "text": "Pair a phone over your local network and control the TV browser with gestures, text input, scrolling, and pinch-to-zoom."
         },
         {
-          "icon": "🎉",
-          "title": "Events & Parties",
-          "text": "Play birthday slides, welcome screens, event photos, sponsor videos, and background music on a TV."
+          "icon": "🔎",
+          "title": "Search and Research on TV",
+          "text": "Switch between search engines, open multiple tabs, save bookmarks, and revisit pages from history on a big screen."
         },
         {
-          "icon": "🏛️",
-          "title": "Clubs & Auditoriums",
-          "text": "Use a TV as a simple media signage screen for announcements, schedules, event promotions, and waiting-area displays."
+          "icon": "🖥️",
+          "title": "Desktop-Style Site Access",
+          "text": "Force desktop view for sites that work better with a traditional browser layout and keep per-site preferences where supported."
         }
       ]
     },
@@ -215,43 +205,39 @@
       "items": [
         {
           "q": "What is BrowsePad?",
-          "a": "BrowsePad is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
+          "a": "BrowsePad is a TV-first web browser for Android TV with tabs, bookmarks, history, desktop view support, and a built-in phone-based remote experience called BrowsePad Connect."
         },
         {
-          "q": "Do I need an internet connection to use the signage playback?",
-          "a": "No. The main signage workflow is USB-based, so your photos, videos, and audio files can play locally from the connected USB drive."
+          "q": "How do I control BrowsePad on a TV?",
+          "a": "You can use a regular TV remote with the D-pad and OK button, or pair a phone through BrowsePad Connect for trackpad-style control, scrolling, zooming, and text input."
         },
         {
-          "q": "Does the app scan folders and subfolders?",
-          "a": "Yes. The app recursively scans folders and subfolders on connected USB drives and builds a flat media list for playback."
+          "q": "Does BrowsePad support tabs?",
+          "a": "Yes. BrowsePad supports creating, switching, closing, and closing all tabs, with per-tab titles and favicons shown in the tab strip."
         },
         {
-          "q": "What media can I use for signage?",
-          "a": "The app supports common image, video, and audio formats. Images and videos are used for the visual signage playlist, while audio files can be used as optional background music."
+          "q": "Can I use my phone as a remote?",
+          "a": "Yes. BrowsePad Connect serves a mobile controller from the TV app over your local network. The phone controller supports cursor movement, click, right-click, scrolling, pinch-to-zoom, and remote text entry."
         },
         {
-          "q": "Can photos and videos play in the same signage loop?",
-          "a": "Yes. The app supports mixed image and video playback in the same continuous signage session."
+          "q": "What search engines can I choose from?",
+          "a": "BrowsePad includes Google, Bing, DuckDuckGo, Brave Search, Perplexity, and Andi as built-in default search engine options."
         },
         {
-          "q": "Can I control how images fit on the TV screen?",
-          "a": "Yes. You can choose Fill screen for edge-to-edge display or Show full image to avoid cropping when the image aspect ratio does not match the TV."
+          "q": "Can websites open in desktop mode?",
+          "a": "Yes. BrowsePad supports per-site view mode switching between Adaptive and Desktop, and you can also choose a default view mode in settings."
         },
         {
-          "q": "Can I change the image slide duration?",
-          "a": "Yes. The image slide duration can be increased or decreased from the settings screen."
+          "q": "Does BrowsePad save bookmarks and history?",
+          "a": "Yes. You can save bookmarks from the toolbar, review them in a dedicated Bookmarks page, and revisit previously opened pages from History. Session restore also brings back previously open non-internal tabs after relaunch."
         },
         {
-          "q": "How does background music work?",
-          "a": "Audio files are played as a separate looping background playlist. You can also decide whether videos should play their own audio or stay muted while background audio continues."
+          "q": "Can I download files from websites?",
+          "a": "Yes. BrowsePad intercepts downloads, asks for confirmation before starting them, and integrates with Android DownloadManager where supported."
         },
         {
-          "q": "What happens in demo/free mode?",
-          "a": "Free/demo mode limits the number of unlocked audio, video, and image files shown in the media set. Locked items are blurred and show a lock badge, and demo playback shows a subtle watermark."
-        },
-        {
-          "q": "Can I delete files from the app?",
-          "a": "Yes. Long-press OK on a media item to open the details dialog, where supported actions such as open and delete are available."
+          "q": "What happens when a page fails to load?",
+          "a": "BrowsePad shows a friendly internal error page and handles common failures such as host lookup problems, connection failures, timeouts, SSL failures, redirect loops, I/O issues, and unsupported schemes."
         }
       ]
     }
@@ -296,27 +282,27 @@
       "sectionId": "demo",
       "title": "See BrowsePad on Android TV",
       "youtubeEmbedUrl": "",
-      "iframeTitle": "BrowsePad Android TV Demo"
+      "iframeTitle": "BrowsePad Android TV Browser Demo"
     }
   },
   "sections": {
     "howItWorks": {
-      "title": "Start USB Signage in Minutes",
+      "title": "Start Browsing on TV in Minutes",
       "steps": [
         {
           "number": "1",
-          "title": "Prepare a USB Drive",
-          "text": "Copy your signage photos, videos, and optional audio files to a FAT32 USB drive. You can organize files inside folders and subfolders."
+          "title": "Open BrowsePad",
+          "text": "Launch BrowsePad on your Android TV, Google TV, or Fire TV device to start with a browser interface designed for large screens and remote input."
         },
         {
           "number": "2",
-          "title": "Connect USB to TV",
-          "text": "Open BrowsePad on your Android TV, Google TV, or Fire TV, allow USB permission, and let the app scan supported media files."
+          "title": "Enter a URL or Search",
+          "text": "Use the address bar for direct URLs, bare domains, or search queries. BrowsePad automatically resolves whether you meant a website address or a search."
         },
         {
           "number": "3",
-          "title": "Press Play",
-          "text": "Start signage playback from the Play menu or from a selected visual item. The app loops photos and videos continuously with optional background music."
+          "title": "Pair a Phone if You Want",
+          "text": "Open BrowsePad Connect to pair a phone with a QR code and use it as a trackpad remote with scrolling, zooming, and text input."
         }
       ]
     },
@@ -324,35 +310,35 @@
       "title": "Why TV Users Will Like It",
       "cards": [
         {
-          "icon": "🔌",
-          "title": "USB-First Signage",
+          "icon": "🗂️",
+          "title": "TV-Friendly Tabs",
           "bullets": [
-            "Scan media directly from USB storage",
-            "Reload/rescan connected USB media whenever needed"
+            "Open, switch, and close tabs from a tab strip built for TV viewing",
+            "Favicons and titles keep multiple open pages easy to manage"
           ]
         },
         {
-          "icon": "🖼️",
-          "title": "Photo + Video Loop",
+          "icon": "🖱️",
+          "title": "Pointer-Based Browsing",
           "bullets": [
-            "Play images and videos in one continuous signage session",
-            "Automatic image slide timing with smooth crossfade transitions"
+            "Visible pointer overlay works across both browser UI and webpage content",
+            "Remote and phone controls make hard-to-target sites easier to use"
           ]
         },
         {
-          "icon": "🎵",
-          "title": "Flexible Audio",
+          "icon": "📱",
+          "title": "BrowsePad Connect",
           "bullets": [
-            "Loop optional background audio independently",
-            "Choose whether videos play their own audio or stay muted"
+            "Connect a phone quickly with QR pairing over your local network",
+            "Use gesture-based cursor control, scrolling, and remote text input"
           ]
         },
         {
           "icon": "⚙️",
-          "title": "Simple TV Settings",
+          "title": "Useful Browser Controls",
           "bullets": [
-            "Choose black or white background",
-            "Set image display mode to Fill screen or Show full image"
+            "Switch per-site view mode between Adaptive and Desktop",
+            "Save bookmarks, review history, and clear cached web data from settings"
           ]
         }
       ]
@@ -361,24 +347,24 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "🏪",
-          "title": "Shops & Small Businesses",
-          "text": "Run simple promotional screens, offers, product photos, and short videos from a USB drive without a cloud signage system."
+          "icon": "🛋️",
+          "title": "Living Room Browsing",
+          "text": "Navigate websites comfortably on a TV with tabs, bookmarks, and a pointer-based interface."
         },
         {
-          "icon": "🍔",
-          "title": "Food Stalls & Cafes",
-          "text": "Display menus, combo offers, food photos, and looping videos on a TV using local USB media."
+          "icon": "📱",
+          "title": "Phone Remote Control",
+          "text": "Pair a phone for trackpad gestures, zooming, scrolling, and text input when a regular remote is not enough."
         },
         {
-          "icon": "🎉",
-          "title": "Events & Parties",
-          "text": "Play birthday slides, welcome screens, event photos, sponsor videos, and background music on a TV."
+          "icon": "🔎",
+          "title": "Big-Screen Search",
+          "text": "Search the web, compare pages across tabs, and revisit past pages with bookmarks and history."
         },
         {
-          "icon": "🏛️",
-          "title": "Clubs & Auditoriums",
-          "text": "Use a TV as a simple media signage screen for announcements, schedules, event promotions, and waiting-area displays."
+          "icon": "🖥️",
+          "title": "Desktop-Site Access",
+          "text": "Force desktop rendering for sites that behave better with a desktop-style browser user agent."
         }
       ]
     },
@@ -387,49 +373,45 @@
       "items": [
         {
           "q": "What is BrowsePad?",
-          "a": "BrowsePad is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
+          "a": "BrowsePad is a TV-first web browser for Android TV that combines tabs, pointer-based browsing, bookmarks, history, and phone-based remote control through BrowsePad Connect."
         },
         {
-          "q": "Do I need an internet connection to use the signage playback?",
-          "a": "No. The main signage workflow is USB-based, so your photos, videos, and audio files can play locally from the connected USB drive."
+          "q": "How do I browse if a normal TV remote feels limited?",
+          "a": "BrowsePad includes both D-pad browsing and an app-wide pointer. You can also pair a phone over your local network and use BrowsePad Connect as a trackpad-style remote."
         },
         {
-          "q": "Does the app scan folders and subfolders?",
-          "a": "Yes. The app recursively scans folders and subfolders on connected USB drives and builds a flat media list for playback."
+          "q": "Can I open multiple tabs?",
+          "a": "Yes. BrowsePad supports tab creation, tab switching, tab closing, and close-all-tabs support."
         },
         {
-          "q": "What media can I use for signage?",
-          "a": "The app supports common image, video, and audio formats. Images and videos are used for the visual signage playlist, while audio files can be used as optional background music."
+          "q": "Can websites request a new window?",
+          "a": "Yes. Sites that try to open a new browser window are handled by opening that content in a new tab."
         },
         {
-          "q": "Can photos and videos play in the same signage loop?",
-          "a": "Yes. The app supports mixed image and video playback in the same continuous signage session."
+          "q": "Does BrowsePad support bookmarks and history?",
+          "a": "Yes. Bookmarks and history each have dedicated internal pages, and BrowsePad also restores previously open non-internal tabs after relaunch."
         },
         {
-          "q": "Can I control how images fit on the TV screen?",
-          "a": "Yes. You can choose Fill screen for edge-to-edge display or Show full image to avoid cropping when the image aspect ratio does not match the TV."
+          "q": "Can I switch sites into desktop mode?",
+          "a": "Yes. BrowsePad supports per-site switching between Adaptive and Desktop view modes, plus a default view mode setting."
         },
         {
-          "q": "Can I change the image slide duration?",
-          "a": "Yes. The image slide duration can be increased or decreased from the settings screen."
+          "q": "Can I download files?",
+          "a": "Yes. BrowsePad confirms downloads before starting them and uses Android DownloadManager integration where supported."
         },
         {
-          "q": "How does background music work?",
-          "a": "Audio files are played as a separate looping background playlist. You can also decide whether videos should play their own audio or stay muted while background audio continues."
+          "q": "What if a page fails or has SSL issues?",
+          "a": "BrowsePad blocks insecure certificate flows and shows a friendly internal error page for common failures like timeouts, SSL problems, redirect loops, and host lookup errors."
         },
         {
-          "q": "What happens in demo/free mode?",
-          "a": "Free/demo mode limits the number of unlocked audio, video, and image files shown in the media set. Locked items are blurred and show a lock badge, and demo playback shows a subtle watermark."
-        },
-        {
-          "q": "Can I delete files from the app?",
-          "a": "Yes. Long-press OK on a media item to open the details dialog, where supported actions such as open and delete are available."
+          "q": "Where does BrowsePad Connect live?",
+          "a": "BrowsePad Connect is built into the browser as an internal page, including a native TV Connect tab with QR pairing and controller status details."
         }
       ]
     },
     "cta": {
-      "title": "Turn Your TV Into BrowsePad 📺",
-      "text": "Download BrowsePad and play photos, videos, and background music from a USB drive on Android TV.",
+      "title": "Browse the Web Better on TV",
+      "text": "Download BrowsePad for Android TV and get tabs, pointer-based browsing, desktop view, and phone remote control with BrowsePad Connect.",
       "buttons": [
         {
           "type": "googlePlay",
@@ -450,7 +432,7 @@
     "brand": {
       "logo": "images/app_icon.png",
       "name": "BrowsePad",
-      "about": "A remote-friendly Android TV signage app for playing photos, videos, and optional background music directly from USB storage."
+      "about": "A TV-first Android TV browser with tabs, an app-wide pointer, desktop view support, and phone-based remote control through BrowsePad Connect."
     },
     "social": [
       {
@@ -521,7 +503,7 @@
       "@type": "SoftwareApplication",
       "name": "BrowsePad",
       "operatingSystem": "Android TV",
-      "applicationCategory": "MultimediaApplication",
+      "applicationCategory": "BrowserApplication",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -537,7 +519,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "BrowsePad is an Android TV app for playing photos, videos, and optional background audio from USB storage as continuous digital signage."
+      "description": "BrowsePad is a TV-first web browser for Android TV with tabs, bookmarks, history, desktop view support, downloads, and BrowsePad Connect phone remote control."
     },
     "organization": {
       "@context": "https://schema.org",

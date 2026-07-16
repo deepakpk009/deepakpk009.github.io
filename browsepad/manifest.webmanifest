@@ -1,7 +1,7 @@
 {
   "name": "BrowsePad",
   "short_name": "BrowsePad",
-  "description": "BrowsePad is a TV-first web browser for Android TV with tabs, bookmarks, history, desktop view, and phone-based remote control through BrowsePad Connect.",
+  "description": "BrowsePad redefines web browsing on Android TV with BrowsePad Connect, a phone-powered trackpad experience that makes TV browsing feel faster, more natural, and more precise.",
   "start_url": "/browsepad/",
   "scope": "/browsepad/",
   "display": "standalone",

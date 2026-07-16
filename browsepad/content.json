@@ -2,15 +2,15 @@
   "meta": {
     "lang": "en",
     "title": "BrowsePad – TV-First Web Browser for Android TV",
-    "description": "BrowsePad is a TV-first web browser for Android TV with tabs, bookmarks, history, desktop view, and phone-based remote control through BrowsePad Connect.",
-    "keywords": "BrowsePad, Android TV browser, TV web browser, browser for Android TV, Google TV browser, Fire TV browser, TV remote browser, Android TV tabs, BrowsePad Connect, phone remote browser, Android TV bookmarks, Android TV history, desktop mode browser TV, Android TV downloads, Leanback browser",
+    "description": "BrowsePad redefines web browsing on Android TV with BrowsePad Connect, a phone-powered trackpad experience that makes TV browsing feel faster, more natural, and more precise.",
+    "keywords": "BrowsePad, Android TV browser, TV web browser, browser for Android TV, Google TV browser, Fire TV browser, BrowsePad Connect, Android TV trackpad browser, phone trackpad for TV browser, mobile remote browser, Android TV pointer browser, TV browsing redefined, Android TV browsing experience, Leanback browser, phone remote browser",
     "author": "Deepak PK",
     "canonical": "https://deepakpk.com/browsepad",
     "og": {
       "type": "website",
       "url": "https://deepakpk.com/browsepad",
       "title": "BrowsePad for Android TV",
-      "description": "Browse the web on Android TV with tabs, an app-wide pointer, and phone-based remote control through BrowsePad Connect.",
+      "description": "BrowsePad redefines how people browse the web on Android TV with a phone-based trackpad remote, precise pointer control, and a TV-first browser experience.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
@@ -18,7 +18,7 @@
       "card": "summary_large_image",
       "url": "https://deepakpk.com/browsepad",
       "title": "BrowsePad for Android TV",
-      "description": "A TV-first Android TV browser with tabs, bookmarks, history, desktop view, and a built-in mobile remote experience.",
+      "description": "A TV browser built around phone-based trackpad control, making Android TV web browsing feel more natural and precise.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -49,8 +49,8 @@
   },
   "product": {
     "name": "BrowsePad",
-    "heroTitle": "BrowsePad – A TV-First Browser for Android TV",
-    "heroDescription": "Browse the web on Android TV, Google TV, and Fire TV with a desktop-style interface, multi-tab support, an app-wide pointer, and BrowsePad Connect for phone-based trackpad control.",
+    "heroTitle": "BrowsePad – Redefining Web Browsing on Android TV",
+    "heroDescription": "BrowsePad is built around BrowsePad Connect, a phone-powered trackpad experience that makes browsing on Android TV, Google TV, and Fire TV feel faster, more natural, and more precise than a traditional TV browser.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
@@ -68,16 +68,16 @@
     ],
     "stats": [
       {
-        "value": "🖥️ Multi-Tab",
-        "label": "Desktop-Style TV Browsing"
+        "value": "📱 Phone Trackpad",
+        "label": "A New Way to Browse on TV"
       },
       {
-        "value": "🖱️ App-Wide Pointer",
-        "label": "Remote and Phone Control"
+        "value": "🖱️ Precision Pointer",
+        "label": "Natural Web Control on Big Screens"
       },
       {
         "value": "📱 BrowsePad Connect",
-        "label": "Trackpad Pairing Over Local Network"
+        "label": "Pair and Browse in Seconds"
       }
     ],
     "features": {
@@ -85,11 +85,11 @@
       "cards": [
         {
           "icon": "📺",
-          "title": "Made for Android TV",
+          "title": "Built Around a Better Browsing Method",
           "bullets": [
-            "Desktop-style browser shell optimized for TV screens",
-            "Works with Android TV, Google TV, and Fire TV style remote navigation",
-            "Smooth handoff between toolbar focus mode and pointer mode",
+            "BrowsePad is designed around phone-powered trackpad input, not just basic D-pad navigation",
+            "It brings a more natural browsing flow to Android TV, Google TV, and Fire TV",
+            "Smooth handoff between toolbar focus mode and pointer mode keeps navigation fluid",
             "Browser chrome can auto-hide while browsing and return when needed"
           ]
         },
@@ -115,31 +115,31 @@
         },
         {
           "icon": "🖱️",
-          "title": "TV Pointer and Remote Controls",
+          "title": "Precision Pointer Control",
           "bullets": [
             "Visible app-wide pointer works across browser chrome, internal pages, and website content",
-            "Use the D-pad for precise pointer nudging or hold directions for continuous movement",
-            "Long-press OK triggers secondary or right-click behavior",
+            "Phone trackpad input gives users finer control than a typical TV browser remote flow",
+            "Use the D-pad for precise nudging when needed, or rely on the phone for fluid movement",
             "Pointer edge scrolling helps reach content inside long web pages"
           ]
         },
         {
           "icon": "📱",
-          "title": "BrowsePad Connect",
+          "title": "BrowsePad Connect Changes the Experience",
           "bullets": [
             "Built-in Connect page is available as a native TV tab",
-            "QR code pairing makes it fast to connect a phone",
+            "QR code pairing makes it fast to turn a phone into a browsing trackpad",
             "Controller URL is shown on the TV for manual pairing when needed",
             "Connection status, disconnect summaries, and port fallback improve reliability"
           ]
         },
         {
           "icon": "⌨️",
-          "title": "Phone-Based Remote Input",
+          "title": "Phone Input That Feels Like Real Browsing",
           "bullets": [
             "Phone controller supports single-finger cursor movement and tap-to-click",
             "Use two-finger gestures for right-click and scrolling, plus fling momentum",
-            "Pinch-to-zoom and phone-side pointer speed settings help with difficult sites",
+            "Pinch-to-zoom and phone-side pointer speed settings make complex sites easier to handle",
             "Remote text input works for the address bar, webpage fields, textareas, and content-editable areas"
           ]
         },
@@ -176,27 +176,27 @@
       ]
     },
     "perfectFor": {
-      "title": "Perfect For",
+      "title": "Why It Stands Out",
       "items": [
         {
-          "icon": "🛋️",
-          "title": "Living Room Browsing",
-          "text": "Use a TV as a real browser for news, video sites, web apps, and everyday browsing without struggling through phone-style controls."
-        },
-        {
           "icon": "📱",
-          "title": "Phone-as-Trackpad Setups",
-          "text": "Pair a phone over your local network and control the TV browser with gestures, text input, scrolling, and pinch-to-zoom."
+          "title": "Users Who Hate D-pad Browsing",
+          "text": "BrowsePad is for people who want web browsing on TV to feel less like fighting a remote and more like using a real pointing device."
         },
         {
-          "icon": "🔎",
-          "title": "Search and Research on TV",
-          "text": "Switch between search engines, open multiple tabs, save bookmarks, and revisit pages from history on a big screen."
+          "icon": "🖱️",
+          "title": "Precision-Heavy Websites",
+          "text": "Sites with small controls, hover states, long pages, and text fields become easier to use when your phone acts as the trackpad."
         },
         {
-          "icon": "🖥️",
-          "title": "Desktop-Style Site Access",
-          "text": "Force desktop view for sites that work better with a traditional browser layout and keep per-site preferences where supported."
+          "icon": "🔄",
+          "title": "A New TV Browsing Habit",
+          "text": "BrowsePad encourages a different browsing behavior on TV by combining the big screen with the familiarity of phone gestures and touch-like precision."
+        },
+        {
+          "icon": "🌐",
+          "title": "More Than Another TV Browser",
+          "text": "The goal is not just to match other Android TV browsers, but to redefine how browsing should feel on TV through BrowsePad Connect."
         }
       ]
     },
@@ -205,11 +205,11 @@
       "items": [
         {
           "q": "What is BrowsePad?",
-          "a": "BrowsePad is a TV-first web browser for Android TV with tabs, bookmarks, history, desktop view support, and a built-in phone-based remote experience called BrowsePad Connect."
+          "a": "BrowsePad is an Android TV browser built around BrowsePad Connect, a phone-powered trackpad system designed to redefine how people browse the web on TV."
         },
         {
           "q": "How do I control BrowsePad on a TV?",
-          "a": "You can use a regular TV remote with the D-pad and OK button, or pair a phone through BrowsePad Connect for trackpad-style control, scrolling, zooming, and text input."
+          "a": "You can use a regular TV remote, but BrowsePad is designed to shine when paired with a phone through BrowsePad Connect for trackpad-style control, scrolling, zooming, and text input."
         },
         {
           "q": "Does BrowsePad support tabs?",
@@ -217,7 +217,7 @@
         },
         {
           "q": "Can I use my phone as a remote?",
-          "a": "Yes. BrowsePad Connect serves a mobile controller from the TV app over your local network. The phone controller supports cursor movement, click, right-click, scrolling, pinch-to-zoom, and remote text entry."
+          "a": "Yes. BrowsePad Connect serves a mobile controller from the TV app over your local network. The phone controller supports cursor movement, click, right-click, scrolling, pinch-to-zoom, and remote text entry so browsing feels more natural on a TV."
         },
         {
           "q": "What search engines can I choose from?",
@@ -225,7 +225,7 @@
         },
         {
           "q": "Can websites open in desktop mode?",
-          "a": "Yes. BrowsePad supports per-site view mode switching between Adaptive and Desktop, and you can also choose a default view mode in settings."
+          "a": "Yes. BrowsePad supports per-site view mode switching between Adaptive and Desktop, helping the phone-trackpad experience work better across a wider range of websites."
         },
         {
           "q": "Does BrowsePad save bookmarks and history?",
@@ -287,31 +287,31 @@
   },
   "sections": {
     "howItWorks": {
-      "title": "Start Browsing on TV in Minutes",
+      "title": "Start a Better Way to Browse on TV",
       "steps": [
         {
           "number": "1",
           "title": "Open BrowsePad",
-          "text": "Launch BrowsePad on your Android TV, Google TV, or Fire TV device to start with a browser interface designed for large screens and remote input."
+          "text": "Launch BrowsePad on your Android TV, Google TV, or Fire TV device and open a browser experience designed to work with a phone-powered trackpad."
         },
         {
           "number": "2",
           "title": "Enter a URL or Search",
-          "text": "Use the address bar for direct URLs, bare domains, or search queries. BrowsePad automatically resolves whether you meant a website address or a search."
+          "text": "Use the address bar for direct URLs, bare domains, or search queries while BrowsePad handles the web basics with a TV-friendly interface."
         },
         {
           "number": "3",
-          "title": "Pair a Phone if You Want",
-          "text": "Open BrowsePad Connect to pair a phone with a QR code and use it as a trackpad remote with scrolling, zooming, and text input."
+          "title": "Pair a Phone and Feel the Difference",
+          "text": "Open BrowsePad Connect, scan the QR code, and turn your phone into the input method that makes browsing on TV feel fluid, precise, and natural."
         }
       ]
     },
     "features": {
-      "title": "Why TV Users Will Like It",
+      "title": "Why BrowsePad Feels Different",
       "cards": [
         {
           "icon": "🗂️",
-          "title": "TV-Friendly Tabs",
+          "title": "Real Browser Basics",
           "bullets": [
             "Open, switch, and close tabs from a tab strip built for TV viewing",
             "Favicons and titles keep multiple open pages easy to manage"
@@ -319,23 +319,23 @@
         },
         {
           "icon": "🖱️",
-          "title": "Pointer-Based Browsing",
+          "title": "Trackpad-Like Precision",
           "bullets": [
             "Visible pointer overlay works across both browser UI and webpage content",
-            "Remote and phone controls make hard-to-target sites easier to use"
+            "Phone-driven pointer control makes hard-to-target sites much easier to use"
           ]
         },
         {
           "icon": "📱",
-          "title": "BrowsePad Connect",
+          "title": "Phone as the Main Input",
           "bullets": [
             "Connect a phone quickly with QR pairing over your local network",
-            "Use gesture-based cursor control, scrolling, and remote text input"
+            "Use gesture-based cursor control, scrolling, zooming, and remote text input"
           ]
         },
         {
           "icon": "⚙️",
-          "title": "Useful Browser Controls",
+          "title": "Desktop Sites Work Better",
           "bullets": [
             "Switch per-site view mode between Adaptive and Desktop",
             "Save bookmarks, review history, and clear cached web data from settings"
@@ -344,27 +344,27 @@
       ]
     },
     "perfectFor": {
-      "title": "Perfect For",
+      "title": "Who It Is For",
       "items": [
         {
           "icon": "🛋️",
-          "title": "Living Room Browsing",
-          "text": "Navigate websites comfortably on a TV with tabs, bookmarks, and a pointer-based interface."
+          "title": "People Frustrated by TV Browser Remotes",
+          "text": "BrowsePad is for users who want TV browsing to feel less clumsy and more like natural pointer-driven web use."
         },
         {
           "icon": "📱",
-          "title": "Phone Remote Control",
-          "text": "Pair a phone for trackpad gestures, zooming, scrolling, and text input when a regular remote is not enough."
+          "title": "Users Who Already Reach for Their Phone",
+          "text": "If the phone is already in your hand, BrowsePad turns it into the control surface that makes TV browsing finally feel right."
         },
         {
           "icon": "🔎",
-          "title": "Big-Screen Search",
-          "text": "Search the web, compare pages across tabs, and revisit past pages with bookmarks and history."
+          "title": "Websites That Need Precision",
+          "text": "Search-heavy pages, dense menus, hover interactions, long forms, and smaller UI controls benefit from trackpad-style input."
         },
         {
           "icon": "🖥️",
-          "title": "Desktop-Site Access",
-          "text": "Force desktop rendering for sites that behave better with a desktop-style browser user agent."
+          "title": "Anyone Who Wants a Better TV Browsing Model",
+          "text": "BrowsePad is not just about loading websites on TV. It is about changing how browsing should work on TV in the first place."
         }
       ]
     },
@@ -373,11 +373,11 @@
       "items": [
         {
           "q": "What is BrowsePad?",
-          "a": "BrowsePad is a TV-first web browser for Android TV that combines tabs, pointer-based browsing, bookmarks, history, and phone-based remote control through BrowsePad Connect."
+          "a": "BrowsePad is an Android TV browser built to redefine how browsing works on TV by centering the experience around BrowsePad Connect and phone-powered trackpad control."
         },
         {
           "q": "How do I browse if a normal TV remote feels limited?",
-          "a": "BrowsePad includes both D-pad browsing and an app-wide pointer. You can also pair a phone over your local network and use BrowsePad Connect as a trackpad-style remote."
+          "a": "BrowsePad includes both D-pad browsing and an app-wide pointer, but its main advantage is BrowsePad Connect, which lets your phone take over as a trackpad-style remote for smoother browsing."
         },
         {
           "q": "Can I open multiple tabs?",
@@ -410,8 +410,8 @@
       ]
     },
     "cta": {
-      "title": "Browse the Web Better on TV",
-      "text": "Download BrowsePad for Android TV and get tabs, pointer-based browsing, desktop view, and phone remote control with BrowsePad Connect.",
+      "title": "Redefine How You Browse on TV",
+      "text": "Download BrowsePad for Android TV and experience web browsing built around a phone-powered trackpad, precise pointer control, and BrowsePad Connect.",
       "buttons": [
         {
           "type": "googlePlay",
@@ -432,7 +432,7 @@
     "brand": {
       "logo": "images/app_icon.png",
       "name": "BrowsePad",
-      "about": "A TV-first Android TV browser with tabs, an app-wide pointer, desktop view support, and phone-based remote control through BrowsePad Connect."
+      "about": "An Android TV browser focused on redefining TV web browsing through BrowsePad Connect, phone-powered trackpad input, and precise pointer control."
     },
     "social": [
       {
@@ -519,7 +519,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "BrowsePad is a TV-first web browser for Android TV with tabs, bookmarks, history, desktop view support, downloads, and BrowsePad Connect phone remote control."
+      "description": "BrowsePad is an Android TV browser designed to redefine TV web browsing with BrowsePad Connect, phone-powered trackpad input, precise pointer control, tabs, bookmarks, and desktop view support."
     },
     "organization": {
       "@context": "https://schema.org",

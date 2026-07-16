@@ -10,6 +10,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            padding: 24px;
+            box-sizing: border-box;
+            min-height: 100vh;
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
@@ -25,6 +30,21 @@
         }
         .qr-code {
             margin-top: 20px;
+        }
+        .action-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            border-radius: 999px;
+            background-color: #2563eb;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+        .action-button:hover,
+        .action-button:focus {
+            background-color: #1d4ed8;
         }
     </style>
 </head>
@@ -42,6 +62,9 @@
         <div class="qr-code">
             <img id="feedbackQR" src="" alt="QR Code">
         </div>
+        <a id="feedbackButton" class="action-button" href="#" target="_blank" rel="noopener noreferrer">
+            Open Feedback Form
+        </a>
     </div>
     <script>
         function generateQRCode(view, url) {
@@ -55,6 +78,7 @@
         // URL for feedback form
         const feedbackURL = 'https://forms.gle/oV6bffrHGUVMzgNS8';
         generateQRCode("feedbackQR", feedbackURL);
+        document.getElementById("feedbackButton").href = feedbackURL;
     </script>
 </body>
 </html>

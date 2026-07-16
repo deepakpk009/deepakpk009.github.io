@@ -1,0 +1,22 @@
+{
+  "name": "BrowsePad",
+  "short_name": "BrowsePad",
+  "description": "BrowsePad is a TV-first web browser for Android TV with tabs, bookmarks, history, desktop view, and phone-based remote control through BrowsePad Connect.",
+  "start_url": "/browsepad/",
+  "scope": "/browsepad/",
+  "display": "standalone",
+  "background_color": "#122A57",
+  "theme_color": "#5EA7FF",
+  "icons": [
+    {
+      "src": "images/app_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

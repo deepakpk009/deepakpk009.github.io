@@ -88,6 +88,7 @@
             <li>BrowsePad is a browser, so websites you visit may collect information about you directly.</li>
             <li>BrowsePad may store browsing data locally on your device to provide browser features.</li>
             <li>BrowsePad Connect works over your local network between your phone and TV device and may transmit control actions and text input locally for remote-control features.</li>
+            <li>BrowsePad uses Firebase and Firebase Crashlytics, and store billing libraries such as Google Play Billing, which may process limited technical or purchase-related data under their own policies.</li>
             <li>If you buy or manage a subscription, the relevant app store or billing provider may process purchase and account-related information under its own policies.</li>
             <li>We do not state that we collect your browsing history, page content, passwords, or form entries on our own servers unless a specific in-app feature clearly says otherwise.</li>
             <li>You can control much of your data by clearing browsing data, managing permissions, and uninstalling the app.</li>
@@ -113,7 +114,7 @@
           <li>cookies, cache, and other website storage created by sites you visit;</li>
           <li>download records and files saved by you to your device;</li>
           <li>site permissions and browser settings such as desktop mode or search preferences; and</li>
-          <li>local network or pairing data needed for remote-control style features such as BrowsePad Connect, if you choose to use them.</li>
+          <li>local network or pairing data needed for remote-control style features such as BrowsePad Connect, including the local IP information needed to connect devices on the same Wi-Fi network, if you choose to use them.</li>
         </ul>
         <p>
           This data is generally used to operate the browser and improve the user experience on
@@ -138,6 +139,11 @@
           feature list you provided, this feature is designed to work locally between your devices
           on the same network unless a future version clearly says otherwise.
         </p>
+        <p>
+          The phone controller does not create an account profile or store browsing, pairing, or
+          text-entry history. Based on your description, the controller stores only a local
+          preference for pointer speed in the phone browser's local storage.
+        </p>
 
         <h2>4. Information We May Receive Automatically</h2>
         <p>
@@ -152,8 +158,28 @@
           data should be limited to what is reasonably necessary to operate, secure, maintain, or
           troubleshoot that feature.
         </p>
+        <p>
+          Based on the information you provided, BrowsePad does not send app data to your own
+          backend servers. However, third-party SDKs or store providers used in the app may receive
+          limited technical, diagnostic, or transaction-related data directly.
+        </p>
 
-        <h2>5. Information We Do Not Intend To Collect As A Service Provider</h2>
+        <h2>5. Third-Party Services And SDKs Used By BrowsePad</h2>
+        <p>BrowsePad may use third-party libraries and services such as:</p>
+        <ul>
+          <li>Firebase;</li>
+          <li>Firebase Crashlytics;</li>
+          <li>Google Play Billing Library; and</li>
+          <li>store-equivalent billing or purchase frameworks for Amazon Appstore or Huawei AppGallery builds, where applicable.</li>
+        </ul>
+        <p>
+          These providers may process limited information such as app diagnostics, crash reports,
+          purchase state, transaction identifiers, entitlement information, device or app metadata,
+          and account-linked store information as needed to provide their services. Their handling
+          of data is governed by their own terms and privacy policies.
+        </p>
+
+        <h2>6. Information We Do Not Intend To Collect As A Service Provider</h2>
         <p>
           Unless a specific feature or in-app disclosure says otherwise, we do not intend to
           collect or store the following on our own servers:
@@ -165,8 +191,12 @@
           <li>passwords, payment card numbers, or form entries; or</li>
           <li>precise device location.</li>
         </ul>
+        <p>
+          Based on your current feature description, BrowsePad also does not use microphone,
+          camera, or location access as an app feature today.
+        </p>
 
-        <h2>6. Websites, Search Providers, And Embedded Services</h2>
+        <h2>7. Websites, Search Providers, And Embedded Services</h2>
         <p>
           When you visit websites through BrowsePad, those websites and services may collect
           information directly from your device or browser. This can include your IP address, user
@@ -178,20 +208,22 @@
           control how third-party websites or services collect, use, or share your information.
         </p>
 
-        <h2>7. Downloads And Files</h2>
+        <h2>8. Downloads And Files</h2>
         <p>
           If you choose to download files through BrowsePad, the app may pass the download request
           to Android system components such as DownloadManager and may save files to your device’s
-          public Downloads folder or an app-specific external downloads location, depending on the
-          Android version, device capabilities, and permissions available.
+          Downloads folder, depending on the Android version, device capabilities, and permissions
+          available.
         </p>
         <p>
           Downloaded files are controlled by you and may remain on your device until you delete
-          them. Third-party websites or file hosts may also receive information related to your
-          download requests.
+          them. Based on your current feature description, BrowsePad does not currently keep a
+          dedicated in-app downloads history, although that could change in a future version.
+          Third-party websites or file hosts may also receive information related to your download
+          requests.
         </p>
 
-        <h2>8. Permissions And Sensitive Features</h2>
+        <h2>9. Permissions And Sensitive Features</h2>
         <p>
           Some websites or browser features may request access to device capabilities such as
           location, microphone, camera, storage, Bluetooth, nearby devices, or local network
@@ -203,12 +235,17 @@
           <li>you can revoke permissions later through your device settings.</li>
         </ul>
         <p>
+          Based on your current description, BrowsePad itself currently uses storage access for file
+          downloads. You also indicated that websites in BrowsePad do not currently request or use
+          microphone, camera, or location access through the app.
+        </p>
+        <p>
           If BrowsePad ever uses personal or sensitive data in a way that would not be reasonably
           expected, that use should be accompanied by an appropriate in-app disclosure and any
           consent required by applicable law or platform policy.
         </p>
 
-        <h2>9. Subscriptions, Purchases, And Store Providers</h2>
+        <h2>10. Subscriptions, Purchases, And Store Providers</h2>
         <p>
           BrowsePad may offer subscription-related flows through app store providers such as Google
           Play, Amazon Appstore, or Huawei AppGallery. If you start, renew, restore, verify, or
@@ -219,11 +256,13 @@
         </p>
         <p>
           BrowsePad may locally cache subscription status or recent verification results to support
-          app access and short offline grace-period behavior. We do not describe ourselves as the
-          merchant of record for app-store purchases handled by those providers.
+          app access and short offline grace-period behavior. Based on your description, that cache
+          is local to the device and subscription verification is handled on-device through the
+          relevant store provider rather than through your own backend. We do not describe
+          ourselves as the merchant of record for app-store purchases handled by those providers.
         </p>
 
-        <h2>10. How We Use Information</h2>
+        <h2>11. How We Use Information</h2>
         <p>We may use information processed through BrowsePad to:</p>
         <ul>
           <li>provide browser functionality;</li>
@@ -231,14 +270,16 @@
           <li>support features such as tabs, bookmarks, history, downloads, and remote control;</li>
           <li>provide local-network pairing, connection, and remote text-input features;</li>
           <li>support subscriptions, entitlement checks, and store-management entry points;</li>
+          <li>receive crash diagnostics and technical troubleshooting information through supported third-party SDKs;</li>
           <li>maintain security, prevent misuse, and diagnose technical issues; and</li>
           <li>comply with legal obligations.</li>
         </ul>
 
-        <h2>11. Sharing Of Information</h2>
+        <h2>12. Sharing Of Information</h2>
         <p>We may share information only in limited situations, such as:</p>
         <ul>
           <li>with service providers acting on our behalf to host, secure, maintain, or troubleshoot app functionality;</li>
+          <li>with third-party SDK or infrastructure providers such as Firebase and Crashlytics to support app diagnostics and reliability;</li>
           <li>with store or billing providers when necessary to support purchases, subscription verification, renewals, restores, or account-linked entitlement handling;</li>
           <li>when required by law, legal process, or a valid government request;</li>
           <li>to protect rights, safety, security, users, or the public; or</li>
@@ -248,7 +289,7 @@
           We do not state that we sell personal and sensitive user data.
         </p>
 
-        <h2>12. Data Retention</h2>
+        <h2>13. Data Retention</h2>
         <p>
           Data stored locally in BrowsePad generally remains on your device until you delete it,
           clear browsing data, remove downloads, clear app storage, or uninstall the app.
@@ -259,7 +300,7 @@
           fraud prevention, legal compliance, debugging, or recordkeeping.
         </p>
 
-        <h2>13. Your Choices</h2>
+        <h2>14. Your Choices</h2>
         <p>Depending on the version of BrowsePad and your device, you may be able to:</p>
         <ul>
           <li>clear browsing history, cookies, cache, and other site data;</li>
@@ -270,15 +311,21 @@
           <li>uninstall the app at any time.</li>
         </ul>
 
-        <h2>14. Children’s Privacy</h2>
+        <h2>15. Children’s Privacy</h2>
         <p>
-          BrowsePad is not directed to children under 13, and we do not knowingly collect personal
+          BrowsePad is intended for a general audience and is not designed specifically for
+          children. It is not marketed as a kids app, and we do not knowingly collect personal
           information from children under 13 as a service provider. If you believe a child has
           provided personal information to us directly, please contact us so we can review and take
           appropriate action.
         </p>
+        <p>
+          Because BrowsePad is a general web browser that can access third-party internet content,
+          parents and guardians should supervise use by children. The app does not provide a
+          dedicated child-safe browsing environment or age-verification flow.
+        </p>
 
-        <h2>15. Security</h2>
+        <h2>16. Security</h2>
         <p>
           We use reasonable measures designed to help protect information under our control.
           However, no method of transmission, storage, or electronic security is completely secure,
@@ -289,7 +336,7 @@
           but website security and network conditions outside the app remain outside our control.
         </p>
 
-        <h2>16. International Users And Legal Rights</h2>
+        <h2>17. International Users And Legal Rights</h2>
         <p>
           Depending on where you live, you may have rights under applicable privacy laws, such as
           rights to request access, correction, deletion, or information about how your personal
@@ -297,19 +344,29 @@
           accordance with applicable law.
         </p>
 
-        <h2>17. Changes To This Policy</h2>
+        <h2>18. Changes To This Policy</h2>
         <p>
           We may update this Privacy Policy from time to time. If we make material changes, we will
           post the updated version at this page and update the "Last updated" date above.
         </p>
 
-        <h2>18. Contact</h2>
+        <h2>19. Contact</h2>
         <p>
           If you have questions or privacy requests related to BrowsePad, contact:
           <a href="mailto:deepakpk009@yahoo.in">deepakpk009@yahoo.in</a>
         </p>
 
-        <h2>19. Website Note</h2>
+        <h2>20. Third-Party Policy Links</h2>
+        <p>
+          You can review more about some third-party providers used by BrowsePad here:
+        </p>
+        <ul>
+          <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase and Firebase Crashlytics</a></li>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+          <li><a href="https://support.google.com/googleplay/android-developer/answer/10144311" target="_blank" rel="noopener noreferrer">Google Play User Data policy</a></li>
+        </ul>
+
+        <h2>21. Website Note</h2>
         <p class="note">
           This page describes the BrowsePad Android app. If you visit the BrowsePad website, the
           website itself may have separate hosting, logging, or analytics behavior that is distinct

@@ -1,158 +1,186 @@
 [
   {
     "title": "What is BrowsePad?",
-    "content": "BrowsePad is an Android TV and Google TV app that lets you play images, videos, and audio directly from a USB drive as a digital signage display. It features a D-pad-friendly Leanback interface designed for TV remotes, making it easy to set up and run signage without a computer or cloud service."
+    "content": "BrowsePad is a TV-first web browser built for Android TV and Google TV devices. It is designed for large-screen browsing with a desktop-style browser interface, multi-tab support, TV-remote navigation, and an optional phone-based trackpad controller called BrowsePad Connect."
   },
   {
     "title": "What devices does BrowsePad work on?",
-    "content": "BrowsePad is designed for Android TV and Google TV devices. It supports the standard Leanback interface and is fully navigable with a D-pad remote control."
+    "content": "BrowsePad is designed for Android TV and Google TV devices that support the Leanback TV experience. It is optimized for televisions, streaming boxes, and other TV form-factor devices that use a D-pad remote, and it also supports pairing with a phone over the same local network for easier pointer control."
   },
   {
-    "title": "Do I need an internet connection to use the app?",
-    "content": "No. BrowsePad plays media directly from a connected USB drive, so no internet connection is required for playback. An internet connection may be needed for subscription verification, but the app supports an offline grace period after a successful verification, so playback can continue even when offline."
+    "title": "Can I use BrowsePad with just my TV remote?",
+    "content": "Yes. BrowsePad is fully usable with a normal TV remote. You can navigate using the D-pad, use the center or OK button to click, hold directional buttons for continuous pointer movement, and long-press OK to trigger a secondary or right-click style action where supported."
   },
   {
-    "title": "What USB drives are supported?",
-    "content": "The app supports standard USB mass-storage devices. It automatically detects USB drives when the app launches and when drives are attached or detached. If permission is needed to access the drive, the app will request it automatically and retry initialization with proper timeout and error handling."
+    "title": "What makes BrowsePad different from a normal TV browser?",
+    "content": "BrowsePad combines several TV-focused features that make web browsing easier on a television: a visible app-wide pointer overlay, smooth switching between pointer mode and toolbar focus, multi-tab browsing, desktop-style browsing controls, phone-based trackpad control, built-in remote text entry, bookmarks, history, downloads, and per-site view-mode options."
   },
   {
-    "title": "How do I load my media files?",
-    "content": "Simply plug your USB drive into your Android TV device before or after opening the app. The app will detect the drive and scan all folders and subfolders recursively, building a complete flat list of your media. You can also manually reload or rescan media at any time from the main menu using the 'Reload Files' option."
+    "title": "Does BrowsePad support multiple tabs?",
+    "content": "Yes. BrowsePad supports multi-tab browsing with tab creation, tab switching, tab closing, and a close-all-tabs action. Each tab shows its own title and favicon, making it easier to recognize and return to the pages you have open."
   },
   {
-    "title": "What video file formats are supported?",
-    "content": "The app supports the following video formats: MP4, AVI, MKV, MOV, FLV, WMV, WebM, M4V, 3GP, TS, MTS, M2TS, VOB, and OGV."
+    "title": "Can websites open content in a new tab?",
+    "content": "Yes. If a website requests a new browser window, BrowsePad handles that by opening the content in a new tab instead of ignoring it. This helps improve compatibility with websites that rely on popup or new-window behavior."
   },
   {
-    "title": "What audio file formats are supported?",
-    "content": "The app supports the following audio formats: MP3, M4A, AAC, OGG, OGA, OPUS, FLAC, WAV, WebM, MKV, MKA, TS, 3GP, and AMR."
+    "title": "What can I type into the address bar?",
+    "content": "The address bar accepts full URLs, bare domain names, and normal search queries. BrowsePad automatically decides whether your input should open as a website address or be sent to your selected search engine, so you do not need to format everything manually."
   },
   {
-    "title": "What image file formats are supported?",
-    "content": "The app supports a wide range of image formats including: JPG, JPEG, PNG, APNG, GIF, WebP, BMP, TIFF, SVG, AVIF, HEIF, HEIC, ICO, JP2, and more. Hidden files and unsupported file types are automatically filtered out from the media list."
+    "title": "Which search engines are supported?",
+    "content": "BrowsePad includes configurable search engine choices for Google, Bing, DuckDuckGo, Brave Search, Perplexity, and Andi. You can choose your preferred default search engine from the Settings page."
   },
   {
-    "title": "How does signage playback work?",
-    "content": "You can start signage playback by selecting a playable image or video item, or by using the Play menu. The app builds a visual playlist (images and videos) and an optional background audio playlist. It loops through your visual content continuously, using dual visual slots with smooth crossfade transitions between items. Images advance automatically based on your configured slide duration."
+    "title": "What is BrowsePad Connect?",
+    "content": "BrowsePad Connect is the app's built-in phone pairing and remote-control system. It opens as a native Connect page inside the browser and allows you to pair a phone with your TV browser over the local network, turning your phone into a trackpad-style controller for browsing."
   },
   {
-    "title": "Can I mix images and videos in the same signage session?",
-    "content": "Yes. BrowsePad supports mixed playback of images and videos in the same signage session. Both are included in a single visual playlist that loops continuously."
+    "title": "How do I connect my phone to BrowsePad?",
+    "content": "Open the BrowsePad Connect page in the app. BrowsePad shows a QR code for fast pairing and also displays a local controller URL for manual connection. Once your phone opens that controller page on the same local network, it can connect to the TV browser and start controlling the pointer and text input."
   },
   {
-    "title": "How does background audio work?",
-    "content": "You can add audio files to your USB drive and they will be picked up as a separate background audio playlist. This audio loops independently from the visual playlist. When video audio is enabled in Settings, background audio will automatically pause during video playback and resume afterward. If video audio is disabled, videos play muted and background audio plays uninterrupted throughout."
+    "title": "Do my phone and TV need to be on the same Wi-Fi network?",
+    "content": "Yes. BrowsePad Connect works over your local network, so the TV device running BrowsePad and the phone acting as the controller must be able to reach each other on the same network. This allows the controller page to communicate with the TV app in real time."
   },
   {
-    "title": "Can I play audio from videos?",
-    "content": "Yes. Video audio playback can be toggled on or off in the Settings screen. When enabled, the video's own audio will play and background audio will pause during that video. When disabled, all videos play muted and background audio continues uninterrupted."
+    "title": "What can I do from the phone remote?",
+    "content": "The phone controller supports single-finger cursor movement, tap-to-click, two-finger tap for right-click, two-finger scrolling, fling or momentum scrolling, pinch-to-zoom, and remote text input. It is designed to make web browsing on TV feel much closer to using a laptop trackpad."
   },
   {
-    "title": "Does the app copy files to internal storage?",
-    "content": "No. BrowsePad uses an internal localhost media server to stream video, audio, and image content directly from your USB drive without copying files to the device's internal storage. This means you can use large media libraries without worrying about device storage space."
+    "title": "Can I adjust the pointer speed on my phone?",
+    "content": "Yes. The mobile controller includes pointer-speed options such as slow, normal, and fast. BrowsePad also remembers your phone-side pointer-speed preference, so you do not need to set it again every time you reconnect."
   },
   {
-    "title": "How do crossfade transitions work?",
-    "content": "The app uses dual visual slots — two overlapping display layers — to create smooth crossfade transitions between images and videos. As one item finishes, the next one fades in seamlessly, giving your signage a polished, professional look."
+    "title": "What happens if the phone remote disconnects?",
+    "content": "BrowsePad Connect includes automatic reconnect behavior, heartbeat-based keepalive handling, and on-device diagnostics for connection events and failures. The Connect page can also show connection status and a last-disconnect summary when helpful, making it easier to understand what happened if the controller drops."
   },
   {
-    "title": "How long does each image display?",
-    "content": "The image slide duration is configurable in the Settings screen. You can increase or decrease the duration to suit your needs. Videos play for their full duration before the playlist advances."
+    "title": "Can I enter text from my phone instead of using the TV keyboard?",
+    "content": "Yes. BrowsePad supports remote text input from the phone. When the TV browser needs text input, the phone can show a text-entry panel for the address bar, webpage input fields, textareas, and content-editable fields. It supports live typing updates, submission, blur or dismiss behavior, and Enter-key submission."
   },
   {
-    "title": "Can I change the background color during playback?",
-    "content": "Yes. In the Settings screen, you can set the signage background color to either black or white, which is shown during transitions or when content does not fill the entire screen."
+    "title": "How does the pointer work on TV?",
+    "content": "BrowsePad includes an app-wide visible pointer overlay that works across browser controls, internal app pages, and webpage content. You can nudge it precisely with the TV remote, hold direction keys for continuous movement, and use edge scrolling when the pointer reaches the boundary of scrollable webpage content."
   },
   {
-    "title": "What image display modes are available?",
-    "content": "You can choose between two image display modes in Settings: 'Fill Screen', which scales the image to cover the full screen, and 'Show Full Image', which fits the entire image on screen without cropping."
+    "title": "Can I still use D-pad focus navigation instead of the pointer?",
+    "content": "Yes. BrowsePad is built to support both pointer-based and focus-based navigation. It provides a smooth handoff between pointer mode and toolbar focus mode, so you can move through browser chrome with D-pad focus and then return to pointer control when you want more precise interaction inside a webpage."
   },
   {
-    "title": "How do I view file details?",
-    "content": "Long-press any media item (or hold the OK button on your remote) to open a details dialog. This shows the file type, size, and path. From this dialog you can also open or delete the file."
+    "title": "Does the browser interface get out of the way while browsing?",
+    "content": "Yes. The browser chrome can auto-hide while you are viewing web content and reappear when needed. This gives you more screen space for the page itself while still keeping browser controls accessible."
   },
   {
-    "title": "Can I delete files from within the app?",
-    "content": "Yes. Using the long-press details dialog on any media item, you have the option to delete the file directly from your USB drive."
+    "title": "Can I save bookmarks?",
+    "content": "Yes. You can save or remove the current page using the browser toolbar bookmark button. BrowsePad also includes a dedicated Bookmarks page inside the browser where saved items are listed with their titles and cached favicons."
   },
   {
-    "title": "How are media items displayed in the library?",
-    "content": "Each media item is shown with its filename, an image thumbnail where applicable, and type artwork to distinguish between video, audio, and other file types. Locked items (in demo mode) are displayed with a blur effect and a lock badge."
+    "title": "How are bookmarks organized?",
+    "content": "Bookmarks are shown in a dedicated in-app Bookmarks page and are ordered newest first. Each saved entry can display the page title along with a cached favicon, making the list easier to scan and recognize."
   },
   {
-    "title": "What is demo mode / free mode?",
-    "content": "In the free (demo) version, playback is limited to 2 audio files, 2 video files, and 5 image files from your media set. Items beyond these limits appear blurred with a lock badge and will prompt you to subscribe when selected. A semi-transparent 'Demo Version' watermark is also shown during playback."
+    "title": "Does BrowsePad save browsing history?",
+    "content": "Yes. BrowsePad automatically records browsing history for regular web pages and provides a dedicated History page inside the browser. History entries are ordered newest first, so your most recent pages appear at the top."
   },
   {
-    "title": "How do I remove the Demo Version watermark?",
-    "content": "The watermark is shown to users who have not subscribed. Purchasing a subscription removes the watermark and unlocks all media files for full playback."
+    "title": "Can I clear my browsing history?",
+    "content": "Yes. BrowsePad includes a Clear History action with a confirmation step. This lets you remove recorded browsing history intentionally without having to delete items one by one."
   },
   {
-    "title": "How do I subscribe?",
-    "content": "You can access the subscription screen from the main menu under 'Subscribe'. Multiple plan options are available. The app supports billing through Google Play, Amazon Appstore, and Huawei AppGallery depending on which store you downloaded the app from."
+    "title": "Will my tabs come back after I restart the app?",
+    "content": "Yes, for previously open non-internal tabs. BrowsePad supports session restore so that your open website tabs can be restored after relaunch, helping you continue where you left off."
+  },
+  {
+    "title": "What happens to internal pages like Connect or Help after restart?",
+    "content": "BrowsePad's session restore is intended for previously open non-internal tabs. Internal app routes and utility pages are handled separately, so the restore behavior focuses on normal browsing tabs rather than treating every internal page like a regular website."
+  },
+  {
+    "title": "Does BrowsePad support desktop mode?",
+    "content": "Yes. BrowsePad supports per-site view mode switching between Adaptive and Desktop. Desktop mode uses a desktop-style browser user agent, and you can also set a default view mode in Settings for sites that do not already have their own saved override."
+  },
+  {
+    "title": "Can I change the default search engine and view mode later?",
+    "content": "Yes. The Settings page includes controls for changing the default search engine and the default site view mode. These settings let you tune the browsing experience without affecting your bookmarks or history."
+  },
+  {
+    "title": "Can websites show a context menu in BrowsePad?",
+    "content": "Yes. BrowsePad supports web context menus on webpage content. Available context actions include back, forward, reload, open link in a new tab, copy a link URL, and download a linked or embedded resource when supported."
+  },
+  {
+    "title": "Can I download files from websites?",
+    "content": "Yes. BrowsePad supports file downloads using Android's DownloadManager. Downloads are intercepted with a confirmation step before they begin, and the app provides feedback when a download starts and when it completes."
+  },
+  {
+    "title": "Where are downloaded files saved?",
+    "content": "BrowsePad saves downloads to the public Downloads folder where the Android version and permissions allow it. If legacy write permission is unavailable, the app falls back to an app-specific external downloads location so downloads can still be stored reliably."
+  },
+  {
+    "title": "Can I download media or links from a context menu?",
+    "content": "Yes. BrowsePad supports context-menu download actions for links and media resources, which makes it easier to save files directly from webpage content without manually opening them first."
+  },
+  {
+    "title": "What web technologies does BrowsePad support?",
+    "content": "BrowsePad uses Android WebView with support for JavaScript, DOM storage, zoom controls, overview mode, wide viewport handling, and multiple windows. This gives modern websites the core browser features they typically expect on Android TV."
+  },
+  {
+    "title": "How does BrowsePad handle page errors or broken websites?",
+    "content": "BrowsePad includes a friendly internal error page for page-load failures and handles common web issues such as host lookup failures, connection problems, timeouts, SSL failures, redirect loops, I/O problems, and unsupported URL schemes. This helps users understand why a page did not load instead of failing silently."
+  },
+  {
+    "title": "Does BrowsePad ignore unsafe SSL certificate problems?",
+    "content": "No. BrowsePad uses safe SSL handling and blocks insecure certificate flows instead of bypassing them. This helps protect users from unsafe or misconfigured HTTPS connections."
+  },
+  {
+    "title": "Can I clear cached web data without deleting everything else?",
+    "content": "Yes. BrowsePad includes a clear-cache flow in Settings that removes cached web data and saved favicons without deleting your bookmarks or browsing history. A confirmation flow is included so the action is not triggered accidentally."
+  },
+  {
+    "title": "What pages are available in the main app menu?",
+    "content": "BrowsePad's app menu includes access to New Tab, Close All Tabs, Bookmarks, History, Subscription Management, Settings, Support and Feedback, Privacy Policy, Terms of Use, Help or FAQ, About, and Exit. Informational pages such as Support, Privacy Policy, Terms of Use, Help, and About open as web pages in a new browser tab."
+  },
+  {
+    "title": "Is there an exit confirmation before closing the app?",
+    "content": "Yes. BrowsePad shows an exit confirmation dialog before closing the app and returning you to the TV home screen, which helps prevent accidental exits during browsing."
+  },
+  {
+    "title": "Does BrowsePad support subscriptions?",
+    "content": "Yes. BrowsePad includes subscription support with separate store-specific purchase flows depending on where you installed the app. The app provides a subscription plans screen for starting a purchase and a subscription management entry point from the app menu."
+  },
+  {
+    "title": "Which app stores and billing systems are supported?",
+    "content": "BrowsePad supports separate builds for Google Play, Amazon Appstore, and Huawei AppGallery. It includes store-specific subscription integrations for Google Play Billing, Amazon billing, and Huawei IAP, along with store-appropriate subscription management destinations for each build."
+  },
+  {
+    "title": "Will my subscription still work if I am temporarily offline?",
+    "content": "Yes. BrowsePad uses cached subscription-status handling with an offline grace period after recent verification. That means the app can continue recognizing your subscription for a period of time even when the device is temporarily offline."
   },
   {
     "title": "How do I manage my subscription?",
-    "content": "Go to 'My Subscription' in the main menu to access the subscription management screen. For Google Play and Amazon builds, a QR code is provided that links directly to the subscription management page for your store."
+    "content": "You can open Subscription Management from the app menu. BrowsePad routes users to the appropriate store-specific management destination based on whether they are using the Google Play, Amazon, or Huawei version of the app."
   },
   {
-    "title": "Does my subscription work offline?",
-    "content": "Yes. The app caches your subscription status to support an offline grace period. After a successful verification, you can continue using the full app even without an internet connection for a period of time."
+    "title": "Does the Huawei version have anything extra?",
+    "content": "Yes. The Huawei build includes in-app update-check integration in addition to Huawei-specific subscription support, helping users on that store stay aware of app updates."
   },
   {
-    "title": "What screen resolution does my device support?",
-    "content": "You can check your device's screen resolution and calculated aspect ratio in the Settings screen of the app."
+    "title": "Does BrowsePad need internet access to browse websites?",
+    "content": "Yes. BrowsePad is a web browser, so an internet connection is required to access online websites and services. However, some internal pages and app-managed UI experiences, such as the built-in Connect page and internal error page, are rendered from app assets and do not depend on a live website response."
   },
   {
-    "title": "Is the app available in my language?",
-    "content": "BrowsePad is localized in 16 languages: English, Arabic, Chinese, French, German, Hindi, Indonesian, Italian, Japanese, Korean, Portuguese, Russian, Spanish, Thai, Turkish, and Vietnamese."
+    "title": "Why does BrowsePad open the Connect page on a new tab?",
+    "content": "BrowsePad's new-tab flow opens BrowsePad Connect by default so users can quickly pair a phone and start controlling the browser with a trackpad-style remote. This makes the mobile control system easy to discover right from the start."
   },
   {
-    "title": "Where can I find the FAQ, Privacy Policy, or Terms of Use?",
-    "content": "All of these pages are accessible from the main menu and open inside the app in a built-in web browser. The browser includes loading progress feedback, automatic retry with exponential backoff, and error dialogs if a page is unreachable."
+    "title": "Can BrowsePad be used without a phone at all?",
+    "content": "Yes. The phone controller is optional. BrowsePad is designed to work with a regular TV remote alone, and the phone-based controller is there as an additional convenience for easier pointing, scrolling, zooming, and text entry."
   },
   {
-    "title": "How do I contact support?",
-    "content": "You can reach out through the 'Support & Feedback' option in the main menu, which opens the support page directly within the app."
+    "title": "How does BrowsePad store favicons?",
+    "content": "BrowsePad uses persistent favicon caching in memory and on disk so site icons can be reused across tabs, bookmarks, and history. This helps pages and saved items remain visually recognizable even after restarting the app."
   },
   {
-    "title": "How do I check which version of the app I have?",
-    "content": "The current app version is displayed in the main menu under 'Version Info'."
-  },
-  {
-    "title": "My USB drive is not being detected. What should I do?",
-    "content": "Make sure your USB drive is properly inserted. The app detects USB mass-storage devices on launch and when they are connected or disconnected. If the drive is still not recognized, try unplugging and re-plugging it, then use 'Reload Files' from the main menu to trigger a rescan. Ensure your Android TV device supports USB OTG (On-The-Go) if you are using an adapter."
-  },
-  {
-    "title": "My media files are not showing up. What should I check?",
-    "content": "The app filters out hidden files (files starting with a dot) and files with unsupported extensions. Make sure your files use one of the supported formats listed for video, audio, or images. You can also try using 'Reload Files' from the main menu to force a fresh scan of your USB drive."
-  },
-  {
-    "title": "Videos are not playing correctly. What should I do?",
-    "content": "Video playback depends on your Android TV device's hardware decoder support. While the app supports a wide range of formats (MP4, MKV, MOV, AVI, etc.), some codecs may not be supported by your specific device. For the best compatibility, MP4 files encoded with H.264 are recommended."
-  },
-  {
-    "title": "The app is asking for USB permission. Is this normal?",
-    "content": "Yes, this is normal. Android requires apps to explicitly request permission before accessing USB devices for security reasons. The app will prompt you for permission when a USB drive is detected and will retry initialization automatically if needed."
-  },
-  {
-    "title": "Can I use BrowsePad for commercial signage or business displays?",
-    "content": "Yes. BrowsePad is well suited for business use cases such as retail displays, waiting room screens, restaurant menu boards, event signage, and more. A subscription is required to unlock all media files and remove the demo watermark for commercial use."
-  },
-  {
-    "title": "Does the app support scheduling or timed playback?",
-    "content": "The current version of BrowsePad focuses on continuous looping playback rather than scheduled content. The visual playlist and background audio playlist both loop independently and continuously once signage mode is started."
-  },
-  {
-    "title": "Can I control the order in which my files play?",
-    "content": "The app builds a playlist from all supported media files found on your USB drive. For custom ordering, you can organize your files with numbered filenames (e.g., 01_intro.jpg, 02_promo.mp4) so they are sorted in your desired sequence."
-  },
-  {
-    "title": "Does the app support 4K video?",
-    "content": "4K video playback depends on the hardware capabilities of your Android TV or Google TV device. The app supports the video formats typically used for 4K content (such as MP4 and MKV), but whether 4K playback is smooth will depend on your device's processor and decoder."
-  },
-  {
-    "title": "Will the signage keep playing if I leave the app idle?",
-    "content": "Yes. Once signage playback is started, it loops continuously through your media playlist. Make sure your Android TV device's sleep or screensaver settings are configured appropriately to prevent the display from turning off during extended signage sessions."
+    "title": "Can I see the app version inside BrowsePad?",
+    "content": "Yes. The Settings page includes an app-version display so you can check which version of BrowsePad is currently installed on your device."
   }
 ]

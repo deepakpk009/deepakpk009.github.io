@@ -92,7 +92,7 @@ h2 {
 
 .lead,
 .panel p,
-.feature-list li {
+.attribution-list li {
   color: var(--muted);
   line-height: 1.65;
 }
@@ -124,15 +124,6 @@ h2 {
   margin-bottom: 0;
 }
 
-.feature-list {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.feature-list li + li {
-  margin-top: 8px;
-}
-
 .link-list {
   display: grid;
   gap: 12px;
@@ -160,6 +151,19 @@ h2 {
 .label {
   color: var(--text);
   font-weight: 700;
+}
+
+.support-note {
+  margin-top: 14px;
+}
+
+.attribution-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.attribution-list li + li {
+  margin-top: 8px;
 }
 
 @media (max-width: 720px) {

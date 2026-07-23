@@ -58,12 +58,6 @@
         "label": "Get it on Google Play",
         "url": "https://play.google.com/store/apps/details?id=com.deepakpk.browsepad",
         "style": "primary"
-      },
-      {
-        "type": "amazon",
-        "label": "Available on Amazon",
-        "url": "https://www.amazon.com/dp/B0H2D655LT/",
-        "style": "secondary"
       }
     ],
     "stats": [
@@ -167,7 +161,7 @@
           "icon": "🛍️",
           "title": "Store and Subscription Support",
           "bullets": [
-            "Separate builds support Google Play, Amazon Appstore, and Huawei AppGallery",
+            "Separate builds support Google Play, and Huawei AppGallery",
             "Store-specific subscription flows are integrated for each distribution channel",
             "Subscription management entry points are available from the app menu",
             "Recent subscription verification is cached with an offline grace period"
@@ -414,12 +408,6 @@
           "label": "Get it on Google Play",
           "url": "https://play.google.com/store/apps/details?id=com.deepakpk.browsepad",
           "style": "primary"
-        },
-        {
-          "type": "amazon",
-          "label": "Available on Amazon",
-          "url": "https://www.amazon.com/dp/B0H2D655LT/",
-          "style": "secondary"
         }
       ]
     }
@@ -444,10 +432,6 @@
           {
             "label": "Download on Google Play",
             "url": "https://play.google.com/store/apps/details?id=com.deepakpk.browsepad"
-          },
-          {
-            "label": "Download on Amazon",
-            "url": "https://www.amazon.com/dp/B0H2D655LT/"
           },
           {
             "label": "Terms & Conditions",

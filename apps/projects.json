@@ -95,6 +95,12 @@
             "description": "Scan Documents and Export PDFs on Android",
             "thumbnail": "https://deepakpk.com/dittoscan/images/app_icon.png",
             "url": "https://deepakpk.com/dittoscan/"
+        },
+        {
+            "title": "BrowsePad",
+            "description": "Redefining Web Browsing on Android TV",
+            "thumbnail": "https://deepakpk.com/browsepad/images/app_icon.png",
+            "url": "https://deepakpk.com/browsepad/"
         }
     ]
 }

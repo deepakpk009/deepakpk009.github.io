@@ -1,0 +1,580 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "TV Comic Book Reader – Comic Book Presentation Viewer for Android TV",
+    "description": "TV Comic Book Reader is an Android TV app for opening, importing, viewing, searching, bookmarking, and presenting Comic Book files on your TV with remote-friendly controls.",
+    "keywords": "TV Comic Book Reader, Android TV Comic Book Reader, Comic Book viewer for TV, Comic Book viewer Android TV, Comic Book presenter Android TV, view Comic Book on TV, open Comic Book on Android TV, presentation viewer for Android TV, Comic Book bookmarks, Comic Book search, Comic Book slideshow TV, web import Comic Book, WiFi upload Comic Book, FTP upload Comic Book, USB Comic Book viewer TV",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/tvcomicbookreader",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/tvcomicbookreader",
+      "title": "TV Comic Book Reader for Android TV",
+      "description": "Open, import, search, bookmark, and present Comic Book files on Android TV with a remote-friendly Comic Book viewer.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/tvcomicbookreader",
+      "title": "TV Comic Book Reader for Android TV",
+      "description": "A remote-friendly Android TV app to open, import, search, bookmark, and present Comic Book files on the big screen.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+  "theme": {
+    "primaryGreen": "#2F80ED",
+    "darkGreen": "#1554B7",
+    "lightGreen": "#62A8FF",
+    "darkerGreen": "#071A33",
+    "black": "#050A12",
+    "darkBg": "#081426",
+    "cardBg": "#102640",
+    "textWhite": "#FFFFFF",
+    "textGray": "#D7E5F5",
+    "borderGreen": "#3F95FF",
+    "boxShadowColor": "#2F80ED4d",
+    "heroWatermarkOpacity": 0.045,
+    "ctaWatermarkOpacity": 0.07,
+    "accentOrange": "#FF8A1F",
+    "softRed": "#FFB066",
+    "paperWhite": "#F7FAFF"
+  },
+  "product": {
+    "name": "TV Comic Book Reader",
+    "heroTitle": "TV Comic Book Reader – Comic Book Presentations on Android TV",
+    "heroDescription": "Open Comic Book Comic Book files on your Android TV with a clean, remote-friendly interface. Import presentations using Web Import, WiFi Upload, FTP, or USB, then view slides with zoom, bookmarks, search, night mode, animation mode, and resume support.",
+    "icon": "images/app_icon.png",
+    "storeButtons": [
+      {
+        "type": "googlePlay",
+        "label": "Get it on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvcomicbookreader",
+        "style": "primary"
+      },
+      {
+        "type": "amazon",
+        "label": "Available on Amazon",
+        "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
+        "style": "secondary"
+      }
+    ],
+    "stats": [
+      {
+        "value": "📺 Android TV",
+        "label": "Remote-Friendly UI"
+      },
+      {
+        "value": "📥 Web / WiFi / FTP",
+        "label": "Easy Comic Book Import"
+      },
+      {
+        "value": "🔖 Search + Bookmarks",
+        "label": "Fast Slide Navigation"
+      }
+    ],
+    "features": {
+      "title": "Features Built for Android TV Presentations",
+      "cards": [
+        {
+          "icon": "📺",
+          "title": "Made for Android TV",
+          "bullets": [
+            "Designed around Android TV development principles",
+            "Remote-friendly navigation with clear focus behavior",
+            "Open Comic Book files directly from the TV home listing",
+            "Landscape-first experience for big screens"
+          ]
+        },
+        {
+          "icon": "📁",
+          "title": "Comic Book File Library",
+          "bullets": [
+            "Comic Book grid/list items show thumbnail and file name",
+            "Long-press OK on a Comic Book to view file options",
+            "View file name, location, size, and last modified date",
+            "Open or delete imported Comic Book files from file options"
+          ]
+        },
+        {
+          "icon": "📥",
+          "title": "Easy Comic Book Imports",
+          "bullets": [
+            "Import Comic Book files using Web Import, WiFi Upload, or FTP",
+            "Web Import uses a token and works even outside the same network",
+            "WiFi Upload is faster when both devices are on the same network",
+            "FTP import supports anonymous FTP on the same network"
+          ]
+        },
+        {
+          "icon": "📱",
+          "title": "QR Code Connection",
+          "bullets": [
+            "Web Import page shows a QR code for quick connection",
+            "FTP import page shows a QR code for easy setup",
+            "Send presentations from phone, laptop, or another device",
+            "No typing long TV URLs when QR scanning is available"
+          ]
+        },
+        {
+          "icon": "🖼️",
+          "title": "Powerful Comic Book Viewer",
+          "bullets": [
+            "Open Comic Book files from the home page with the OK button",
+            "Resume last viewed slide number automatically",
+            "Restore last used zoom and night mode settings",
+            "Presentation options appear as an overlay on the current slide"
+          ]
+        },
+        {
+          "icon": "🔍",
+          "title": "Search & Go To Slide",
+          "bullets": [
+            "Search text inside Comic Book files",
+            "Jump directly to a specific slide number",
+            "Restart presentation from the first slide",
+            "Toggle slide/page info visibility while viewing"
+          ]
+        },
+        {
+          "icon": "🔖",
+          "title": "Bookmarks Across Comic Books",
+          "bullets": [
+            "Bookmark the current slide from the viewer options menu",
+            "View all bookmarks across all Comic Book files",
+            "Bookmark items show slide thumbnail, page number, and Comic Book title",
+            "Long-press a bookmark to delete it from the bookmarks page"
+          ]
+        },
+        {
+          "icon": "🎛️",
+          "title": "Viewer Controls Overlay",
+          "bullets": [
+            "Zoom in, zoom out, and reset zoom",
+            "Toggle night mode while previewing the change live",
+            "Choose animation mode for presentation viewing",
+            "Close the overlay with the close option or Back button"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "Settings & Storage Tools",
+          "bullets": [
+            "View TV screen resolution and screen ratio",
+            "Check available storage and total Comic Book file count",
+            "View bookmark count, thumbnail count, and storage usage",
+            "Clear imported Comic Books, bookmarks, and thumbnails from settings"
+          ]
+        },
+        {
+          "icon": "❓",
+          "title": "Help, Support & App Info",
+          "bullets": [
+            "Built-in Help/FAQ page for common questions",
+            "About page with developer details",
+            "Version info menu item for quick app version checking",
+            "Support and feedback page with QR codes for useful links"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🎓",
+          "title": "Classrooms & Training",
+          "text": "Show lesson slides, training material, and study presentations on a TV without needing a computer connected all the time."
+        },
+        {
+          "icon": "💼",
+          "title": "Office Presentations",
+          "text": "Open business Comic Book files on meeting-room TVs with quick import options and remote-friendly navigation."
+        },
+        {
+          "icon": "🏠",
+          "title": "Home & Personal Use",
+          "text": "View school projects, event slides, photo presentations, or saved Comic Book files directly on Android TV."
+        },
+        {
+          "icon": "🪧",
+          "title": "Simple Display Use",
+          "text": "Use Comic Book slides for lightweight information display where easy import, viewing, and slide navigation matter."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is TV Comic Book Reader?",
+          "a": "TV Comic Book Reader is an Android TV app for opening and viewing Comic Book Comic Book files on a TV using a remote-friendly interface."
+        },
+        {
+          "q": "How can I add Comic Book files to the app?",
+          "a": "You can import Comic Book files using Web Import, WiFi Upload, FTP Import, or by scanning available Comic Book files from connected storage such as USB."
+        },
+        {
+          "q": "Does Web Import require the phone or laptop to be on the same WiFi network as the TV?",
+          "a": "No. Web Import uses a token-based flow, so the sending device does not need to be on the same network as the TV."
+        },
+        {
+          "q": "When should I use WiFi Upload instead of Web Import?",
+          "a": "Use WiFi Upload when your sending device and Android TV are on the same network. It is designed for faster local file transfer."
+        },
+        {
+          "q": "Does FTP Import need the same network?",
+          "a": "Yes. FTP Import uses an anonymous FTP connection and requires the sending device to be on the same network as the TV."
+        },
+        {
+          "q": "Can I bookmark slides?",
+          "a": "Yes. You can bookmark the current slide, view bookmarks for the current Comic Book, and also browse bookmarks across all Comic Book files."
+        },
+        {
+          "q": "Does the app remember where I stopped?",
+          "a": "Yes. The viewer can reopen a Comic Book with the last viewed slide number and last used view settings such as zoom and night mode."
+        },
+        {
+          "q": "Can I search inside Comic Book files?",
+          "a": "Yes. The viewer includes a search option to find text inside supported Comic Book files."
+        },
+        {
+          "q": "Can I delete imported Comic Book files?",
+          "a": "Yes. Long-press OK on a focused Comic Book file to view file info and options such as open and delete. Settings also include an option to clear all Comic Books in the imports folder. USB files are not deleted."
+        },
+        {
+          "q": "Where can I manage subscription information?",
+          "a": "The app includes a subscribe page and a manage subscription page with information about managing your subscription."
+        }
+      ]
+    }
+  },
+  "media": {
+    "screenshotOrientation": "landscape",
+    "screenshots": [
+      {
+        "src": "images/screenshots/ss001.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 1"
+      },
+      {
+        "src": "images/screenshots/ss002.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 2"
+      },
+      {
+        "src": "images/screenshots/ss003.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 3"
+      },
+      {
+        "src": "images/screenshots/ss004.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 4"
+      },
+      {
+        "src": "images/screenshots/ss005.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 5"
+      },
+      {
+        "src": "images/screenshots/ss006.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 6"
+      },
+      {
+        "src": "images/screenshots/ss007.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 7"
+      },
+      {
+        "src": "images/screenshots/ss008.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 8"
+      },
+      {
+        "src": "images/screenshots/ss009.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 9"
+      },
+      {
+        "src": "images/screenshots/ss010.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 10"
+      },
+      {
+        "src": "images/screenshots/ss011.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 11"
+      },
+      {
+        "src": "images/screenshots/ss012.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 12"
+      },
+      {
+        "src": "images/screenshots/ss013.jpg",
+        "alt": "TV Comic Book Reader Android TV screenshot 12"
+      }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See TV Comic Book Reader on Android TV",
+      "youtubeEmbedUrl": "",
+      "iframeTitle": "TV Comic Book Reader Android TV Demo"
+    }
+  },
+  "sections": {
+    "howItWorks": {
+      "title": "Start Presenting on TV in Minutes",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Install TV Comic Book Reader",
+          "text": "Install TV Comic Book Reader on your Android TV or Fire TV device."
+        },
+        {
+          "number": "2",
+          "title": "Import or Scan Comic Book Files",
+          "text": "Add files with Web Import, WiFi Upload, FTP Import, or reload/scan Comic Book files from available storage."
+        },
+        {
+          "number": "3",
+          "title": "Open and Control Slides",
+          "text": "Select a Comic Book with the OK button, then use the overlay menu for zoom, bookmarks, search, go to slide, night mode, animation mode, and restart."
+        }
+      ]
+    },
+    "features": {
+      "title": "Why TV Users Will Like It",
+      "cards": [
+        {
+          "icon": "📺",
+          "title": "TV-First Experience",
+          "bullets": [
+            "Built for Android TV usage and remote control navigation",
+            "Large-screen friendly Comic Book browsing with thumbnails and file names"
+          ]
+        },
+        {
+          "icon": "📥",
+          "title": "Flexible Import Options",
+          "bullets": [
+            "Web Import with token support for remote uploads",
+            "Fast WiFi Upload and anonymous FTP for same-network transfers"
+          ]
+        },
+        {
+          "icon": "🎛️",
+          "title": "Presentation Controls",
+          "bullets": [
+            "Zoom, reset zoom, night mode, animation mode, and slide info toggle",
+            "Bookmarks, search, go to slide, and restart options inside the viewer"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "Useful App Tools",
+          "bullets": [
+            "Settings show resolution, screen ratio, storage, file counts, bookmarks, and thumbnail usage",
+            "Clear imported files, bookmarks, and thumbnails when needed"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "🎓",
+          "title": "Classrooms & Training",
+          "text": "Show lesson slides, training material, and study presentations on a TV without needing a computer connected all the time."
+        },
+        {
+          "icon": "💼",
+          "title": "Office Presentations",
+          "text": "Open business Comic Book files on meeting-room TVs with quick import options and remote-friendly navigation."
+        },
+        {
+          "icon": "🏠",
+          "title": "Home & Personal Use",
+          "text": "View school projects, event slides, photo presentations, or saved Comic Book files directly on Android TV."
+        },
+        {
+          "icon": "🪧",
+          "title": "Simple Display Use",
+          "text": "Use Comic Book slides for lightweight information display where easy import, viewing, and slide navigation matter."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is TV Comic Book Reader?",
+          "a": "TV Comic Book Reader is an Android TV app for opening and viewing Comic Book Comic Book files on a TV using a remote-friendly interface."
+        },
+        {
+          "q": "How can I add Comic Book files to the app?",
+          "a": "You can import Comic Book files using Web Import, WiFi Upload, FTP Import, or by scanning available Comic Book files from connected storage such as USB."
+        },
+        {
+          "q": "Does Web Import require the phone or laptop to be on the same WiFi network as the TV?",
+          "a": "No. Web Import uses a token-based flow, so the sending device does not need to be on the same network as the TV."
+        },
+        {
+          "q": "When should I use WiFi Upload instead of Web Import?",
+          "a": "Use WiFi Upload when your sending device and Android TV are on the same network. It is designed for faster local file transfer."
+        },
+        {
+          "q": "Does FTP Import need the same network?",
+          "a": "Yes. FTP Import uses an anonymous FTP connection and requires the sending device to be on the same network as the TV."
+        },
+        {
+          "q": "Can I bookmark slides?",
+          "a": "Yes. You can bookmark the current slide, view bookmarks for the current Comic Book, and also browse bookmarks across all Comic Book files."
+        },
+        {
+          "q": "Does the app remember where I stopped?",
+          "a": "Yes. The viewer can reopen a Comic Book with the last viewed slide number and last used view settings such as zoom and night mode."
+        },
+        {
+          "q": "Can I search inside Comic Book files?",
+          "a": "Yes. The viewer includes a search option to find text inside supported Comic Book files."
+        },
+        {
+          "q": "Can I delete imported Comic Book files?",
+          "a": "Yes. Long-press OK on a focused Comic Book file to view file info and options such as open and delete. Settings also include an option to clear all Comic Books in the imports folder. USB files are not deleted."
+        },
+        {
+          "q": "Where can I manage subscription information?",
+          "a": "The app includes a subscribe page and a manage subscription page with information about managing your subscription."
+        }
+      ]
+    },
+    "cta": {
+      "title": "View Comic Book Presentations on Your TV 📺",
+      "text": "Download TV Comic Book Reader and turn your Android TV into a simple, remote-friendly Comic Book presentation viewer.",
+      "buttons": [
+        {
+          "type": "googlePlay",
+          "label": "Get it on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvcomicbookreader",
+          "style": "primary"
+        },
+        {
+          "type": "amazon",
+          "label": "Available on Amazon",
+          "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
+          "style": "secondary"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "TV Comic Book Reader",
+      "about": "A remote-friendly Android TV Comic Book Reader for importing, opening, searching, bookmarking, and presenting Comic Book files on the big screen."
+    },
+    "social": [
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/tvcomicbookreader"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Download on Google Play",
+            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvcomicbookreader"
+          },
+          {
+            "label": "Download on Amazon",
+            "url": "https://www.amazon.com/dp/B0GZWMX1PT/"
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          {
+            "label": "TV PDF Viewer",
+            "url": "https://deepakpk.com/tvpdfviewer"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TV Comic Book Reader",
+      "operatingSystem": "Android TV",
+      "applicationCategory": "ProductivityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.tvcomicbookreader",
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      },
+      "description": "TV Comic Book Reader is an Android TV app for opening, importing, searching, bookmarking, and presenting Comic Book Comic Book files with remote-friendly controls."
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": [
+        "https://www.facebook.com/tvcomicbookreader"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
+    }
+  }
+}

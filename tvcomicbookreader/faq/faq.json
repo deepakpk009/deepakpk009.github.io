@@ -1,102 +1,54 @@
 [
   {
-    "title": "How do I open a Comic Book file in the app?",
-    "content": "You can open Comic Book files directly from the app, your file manager, downloads folder, email attachments, or any app that supports file sharing."
+    "title": "What comic formats does TV Comic Book Reader support?",
+    "content": "The app supports CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR comic archives on Android TV."
   },
   {
-    "title": "Can I open password-protected Comic Book files?",
-    "content": "Yes, the app supports opening password-protected Comic Book files. Simply enter the correct password when prompted."
+    "title": "How can I import comics into the app?",
+    "content": "You can import comics with Web Import, WiFi Import, or FTP Import. The app can also open compatible comic archives shared from other apps."
   },
   {
-    "title": "Does the app remember my last reading position?",
-    "content": "Yes, the app automatically remembers your last page, zoom level, and reading progress so you can continue where you left off."
+    "title": "Does Web Import require my phone or computer to be on the same network as the TV?",
+    "content": "No. Web Import uses a temporary token and QR code, so it can work even when the sending device is not on the same local network."
   },
   {
-    "title": "Can I search text inside a Comic Book?",
-    "content": "Yes, you can search for any word or phrase inside a Comic Book. The app highlights matches and allows quick navigation between results."
+    "title": "When should I use WiFi Import?",
+    "content": "Use WiFi Import when your Android TV and the sending device are on the same network. It provides a local upload page and QR code for quick transfers."
   },
   {
-    "title": "Does the app support scanned Comic Books?",
-    "content": "Yes, scanned or image-based Comic Books are supported. OCR is used to detect text for features like read aloud."
+    "title": "How does FTP Import work?",
+    "content": "FTP Import is designed for same-network transfers from a computer or another device. It supports anonymous login for quick setup."
   },
   {
-    "title": "What is read aloud mode?",
-    "content": "Read aloud mode converts Comic Book text into speech, allowing you to listen to documents with playback controls like play, pause, next, and previous."
+    "title": "Does the app create thumbnails for my comics?",
+    "content": "Yes. TV Comic Book Reader generates visual thumbnails from comic pages so you can browse your library and bookmarks more easily."
   },
   {
-    "title": "Can I customize the voice in read aloud mode?",
-    "content": "Yes, you can adjust speech rate, pitch, and choose different voices for a personalized listening experience."
+    "title": "Can I change how pages look while reading?",
+    "content": "Yes. You can zoom in or out, change fit mode, rotate pages, enable night mode or color inversion, and choose a background color for more comfortable reading."
+  },
+  {
+    "title": "Is there a gallery view for browsing pages?",
+    "content": "Yes. The app includes a gallery or strip view that lets you browse pages visually and jump back into the reader from the selected page."
+  },
+  {
+    "title": "Does the app remember my reading progress?",
+    "content": "Yes. The app saves your reading progress per comic and also remembers reader settings such as zoom, rotation, background color, and night mode."
   },
   {
     "title": "How do bookmarks work?",
-    "content": "You can bookmark any page and quickly access it later. Bookmarks also show thumbnails for easy identification."
+    "content": "You can add bookmarks for specific pages, open a bookmark list for the current comic, or browse all saved bookmarks from the dedicated bookmarks screen. Bookmark entries also include page thumbnails."
   },
   {
-    "title": "Does the app support night mode?",
-    "content": "Yes, night mode reduces eye strain by using a dark background for comfortable reading in low-light conditions."
+    "title": "Can I delete imported comics or clear app data?",
+    "content": "Yes. You can long-press an imported comic to view details or delete it, and the settings screen includes tools to clear imported comics, thumbnails, and bookmarks."
   },
   {
-    "title": "Can I zoom into Comic Book pages?",
-    "content": "Yes, you can use pinch-to-zoom or double-tap zoom to adjust the zoom level easily."
+    "title": "Does TV Comic Book Reader work offline?",
+    "content": "Yes. Once your comics are imported or available on the device, you can browse and read them without an internet connection."
   },
   {
-    "title": "How do I jump to a specific page?",
-    "content": "Use the 'Go to page' option to instantly navigate to any page number within the document."
-  },
-  {
-    "title": "Does the app show thumbnails of pages?",
-    "content": "Yes, you can browse page thumbnails for quick navigation and better overview of the document."
-  },
-  {
-    "title": "Can I share Comic Book files from the app?",
-    "content": "Yes, you can easily share Comic Book files with other apps directly from the viewer."
-  },
-  {
-    "title": "Does the app support printing?",
-    "content": "Yes, you can print Comic Book files using supported Android printing services."
-  },
-  {
-    "title": "What is margin crop?",
-    "content": "Margin crop removes unnecessary white borders around pages to improve readability and maximize screen space."
-  },
-  {
-    "title": "Does the app work offline?",
-    "content": "Yes, once files are available on your device, you can read them without an internet connection."
-  },
-  {
-    "title": "How does recent files work?",
-    "content": "The app automatically saves recently opened files with thumbnails and allows you to quickly access them anytime."
-  },
-  {
-    "title": "Can I remove files from recent list?",
-    "content": "Yes, you can remove any file from the recent list with a confirmation option."
-  },
-  {
-    "title": "Does the app support large Comic Book files?",
-    "content": "Yes, the app uses optimized rendering and lazy loading to handle large Comic Book files smoothly."
-  },
-  {
-    "title": "What devices are supported?",
-    "content": "The app supports Android devices running Android 7.0 and above, including phones and tablets."
-  },
-  {
-    "title": "Is there a free version of the app?",
-    "content": "Yes, the app includes a free version with core features. A subscription unlocks full document access and premium features."
-  },
-  {
-    "title": "Can I open Comic Books from external apps?",
-    "content": "Yes, the app supports opening Comic Books from file managers, email apps, and other external sources."
-  },
-  {
-    "title": "Does the app support multi-column documents?",
-    "content": "Yes, the app includes basic multi-column reading detection for better read aloud performance."
-  },
-  {
-    "title": "Can I control playback from outside the app?",
-    "content": "Yes, media session support allows playback controls from notifications or external devices."
-  },
-  {
-    "title": "Is my data secure?",
-    "content": "Yes, your documents are stored locally on your device. The app does not upload your files unless you explicitly share them."
+    "title": "Is the app available in multiple languages?",
+    "content": "Yes. The app includes translations for multiple languages, including Arabic, Chinese, French, German, Hindi, Italian, Japanese, Korean, Portuguese, Russian, Spanish, Thai, Turkish, Vietnamese, and Indonesian."
   }
 ]

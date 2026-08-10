@@ -1,12 +1,12 @@
 {
   "name": "TV Comic Book Reader",
-  "short_name": "TV Comic Book View",
-  "description": "TV Comic Book Reader is an Android TV app for opening, importing, viewing, searching, bookmarking, and presenting Comic Book files on your TV with remote-friendly controls.",
+  "short_name": "TV Comic Boo",
+  "description": "TV Comic Book Reader is an Android TV app for importing and reading CBZ, CBR, ZIP, RAR, CB7, 7Z, CBT, and TAR comic archives with remote-friendly controls, bookmarks, gallery view, and resume support.",
   "start_url": "/tvcomicbookreader/",
   "scope": "/tvcomicbookreader/",
   "display": "standalone",
-  "background_color": "#081426",
-  "theme_color": "#2F80ED",
+  "background_color": "#081A63",
+  "theme_color": "#1E48E2",
   "icons": [
     {
       "src": "images/app_icon.png",

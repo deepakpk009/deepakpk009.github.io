@@ -101,6 +101,12 @@
             "description": "Redefining Web Browsing on Android TV",
             "thumbnail": "https://deepakpk.com/browsepad/images/app_icon.png",
             "url": "https://deepakpk.com/browsepad/"
+        },
+        {
+            "title": "TV Comic Book Reader",
+            "description": "Browse and read CBZ, CBR, ZIP, RAR, CB7, 7Z, CBT, and TAR comic archives on Android TV",
+            "thumbnail": "https://deepakpk.com/tvcomicbookreader/images/app_icon.png",
+            "url": "https://deepakpk.com/tvcomicbookreader/"
         }
     ]
 }

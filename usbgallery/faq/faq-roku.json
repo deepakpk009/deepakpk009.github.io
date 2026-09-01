@@ -1,0 +1,82 @@
+[
+  {
+    "title": "How does USB Gallery detect and list files?",
+    "content": "USB Gallery automatically scans connected USB drives for folders and media files on Android TV devices, displaying them with thumbnails and file names for easy access."
+  },
+  {
+    "title": "Which media file types does the app support?",
+    "content": "The app supports a wide range of video (MP4, AVI, MKV, MOV, FLV, WMV, WEBM, M4V, 3GP, TS, MTS, M2TS, VOB, OGV), audio (MP3, M4A, AAC, OGG, OGA, OPUS, FLAC, WAV, MKV, MKA, TS, 3GP, AMR), and photo formats for versatile playback."
+  },
+  {
+    "title": "Can I reload files after inserting a USB drive?",
+    "content": "Yes, the 'Reload files' menu allows rescanning of the USB drive for any newly added or changed media files, updating the media list instantly."
+  },
+  {
+    "title": "Does the app offer subscription features?",
+    "content": "USB Gallery provides a subscription page for users to subscribe, offering potential premium features or enhanced access within the app."
+  },
+  {
+    "title": "How do I manage my subscription?",
+    "content": "There's a dedicated manage subscription page that guides users on how to handle their subscription, update details, or cancel as needed."
+  },
+  {
+    "title": "What device information can I view in the app?",
+    "content": "The settings page displays device screen resolution, screen ratio, available storage, total thumbnails count, and their cumulative size, helping users understand system usage."
+  },
+  {
+    "title": "Is there an option to clear saved data?",
+    "content": "Users can clear all generated thumbnails and reset video progress from the settings page for privacy or to free up storage space."
+  },
+  {
+    "title": "Where can I find help or FAQ?",
+    "content": "The app includes a help/FAQ page with detailed answers to common questions, helping users quickly resolve issues."
+  },
+  {
+    "title": "How is developer and version info provided?",
+    "content": "An 'About Us' page lists developer details, and a separate menu item shows the current app version for transparency and support."
+  },
+  {
+    "title": "How do I send feedback or get support?",
+    "content": "A support and feedback page displays a QR code with links to the developer's Facebook page and feedback forms for easy communication."
+  },
+  {
+    "title": "Are privacy and terms documents available?",
+    "content": "The app offers dedicated pages for its privacy policy and terms of use for regulatory compliance and user awareness."
+  },
+  {
+    "title": "Can video playback resume from last position?",
+    "content": "When opening a previously played video, the app prompts whether to resume or start over, saving and updating progress in home screen listings."
+  },
+  {
+    "title": "What video controls exist in the player?",
+    "content": "The built-in video player offers controls for rewinding/forwarding by 5 seconds, selecting subtitle tracks, and viewing a progress bar with time and duration."
+  },
+  {
+    "title": "What subtitle formats are supported?",
+    "content": "Subtitle support includes SRT, VTT, ASS, SSA, TTML, DFXP, and XML file formats for better accessibility."
+  },
+  {
+    "title": "How does the audio player function?",
+    "content": "The audio player always starts playback from the beginning, provides rewind/forward, subtitle selection, and displays playback progress."
+  },
+  {
+    "title": "What audio formats are compatible?",
+    "content": "Supported audio formats include MP3, M4A, AAC, OGG, OGA, OPUS, FLAC, WAV, WEBM, MKV, MKA, TS, 3GP, and AMR."
+  },
+  {
+    "title": "What photo viewing features are available?",
+    "content": "The image viewer allows users to zoom in/out, fit to height/width, rotate images in 90-degree increments, start slideshows, and close viewer easily."
+  },
+  {
+    "title": "Can I run slideshow presentations?",
+    "content": "Yes, select 'Slideshow' to view all images from the current folder, with options to adjust slide interval and control playback with the remote."
+  },
+  {
+    "title": "How does the slideshow indicator work?",
+    "content": "During a slideshow, a slide index on the top right shows the user's position within the photo set, so you know which image is displayed."
+  },
+  {
+    "title": "Are there keyboard controls for slideshows?",
+    "content": "Users can pause/play slideshows with the OK button, increase slide duration using the down button, or decrease with the up button for customized viewing speed."
+  }
+]

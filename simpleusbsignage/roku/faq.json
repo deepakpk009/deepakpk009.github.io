@@ -1,98 +1,186 @@
 [
   {
-    "title": "How does Simple USB Signage work on Roku devices?",
-    "content": "Simple USB Signage helps you browse and play media from a USB drive on supported Roku devices. Roku support depends on the model, Roku OS version, available USB port, and the codecs inside each file."
+    "title": "What is Simple USB Signage for Roku?",
+    "content": "Simple USB Signage turns a Roku device with USB support into a simple digital signage player. Add photos, videos, and optional audio files to a USB drive, connect it to your Roku device, and use the app to play a clean signage loop on your TV."
+  },
+  {
+    "title": "How does Simple USB Signage work?",
+    "content": "The app scans your connected USB drive, finds supported signage media across folders and subfolders, and builds a playback loop. Images and videos are used as the visual signage loop, while audio files can be used as optional background music during image playback."
+  },
+  {
+    "title": "Do I need an internet connection to play USB signage?",
+    "content": "Local USB playback does not require a separate media server or cloud dashboard. However, an internet connection may be needed for Roku subscription purchase and validation, Help / FAQ, Privacy Policy, Terms of Use, and support or feedback links."
   },
   {
     "title": "Do all Roku devices support USB playback?",
-    "content": "No. Only Roku devices with a USB port can play directly from a USB drive. Roku TVs and some Roku streaming players include USB support, while many smaller streaming sticks do not."
+    "content": "No. Simple USB Signage needs a Roku device or Roku TV that can read media from a USB drive. Many Roku TVs and some Roku players include USB support, while smaller streaming sticks usually do not have a USB port for media playback."
   },
   {
-    "title": "Which USB drive file systems are supported on Roku?",
-    "content": "Roku Media Player supports USB drives formatted as FAT16, FAT32, NTFS, EXT2, EXT3, exFAT, and HFS+. If your drive is not detected, reformatting to a supported file system may help."
+    "title": "Which USB drive format should I use?",
+    "content": "For best compatibility, use a FAT32-formatted USB drive. Roku USB storage support can vary by device model and Roku OS version, so if your drive is not detected, try a dedicated FAT32 drive with your signage files copied onto it."
   },
   {
-    "title": "Which video file formats are supported on Roku?",
-    "content": "Common Roku video support includes H.264/AVC video in MKV, MP4, and MOV files. On 4K-capable Roku devices, H.265/HEVC in MKV, MP4, and MOV is also supported, with VP9 in MKV or WEBM and AV1 in MKV or MP4 available on some models."
+    "title": "Why is my USB drive not detected?",
+    "content": "Make sure your Roku device supports USB media, the drive is connected firmly, the drive is readable by Roku, and the drive has enough power. Large portable hard drives may require external power or a powered USB hub. If detection still fails, try reformatting the drive as FAT32 and reconnecting it."
   },
   {
-    "title": "Does Roku support 4K video files?",
-    "content": "Yes, on Roku devices that support 4K. Supported 4K formats can include H.265/HEVC in MKV, MP4, or MOV, VP9 in MKV or WEBM, and AV1 in MKV or MP4 on some devices. 4K H.264 is limited to specific Roku Premiere, Premiere+, and Ultra models."
+    "title": "What should I put on the USB drive?",
+    "content": "Add the photos and videos you want to show on screen. You can also add audio files if you want background music while images are displayed. For predictable playback order, use clear filenames such as 001-welcome.jpg, 002-menu.mp4, and 003-offer.png."
   },
   {
-    "title": "Does Roku support 8K video files?",
-    "content": "Only Roku devices with 8K support can play 8K files. Roku lists AV1 in MKV or MP4 and H.265/HEVC in MKV or MP4 as supported 8K video formats on compatible devices."
+    "title": "Does the app scan folders and subfolders?",
+    "content": "Yes. The app is designed to scan folders and subfolders so you can organize your USB drive while still creating one signage-ready media list."
   },
   {
-    "title": "Are older video formats like AVI, WMV, FLV, or VOB supported?",
-    "content": "Roku does not list AVI, WMV, FLV, or VOB as supported Roku Media Player formats. For best results, convert videos to MP4, MOV, or MKV using H.264/AVC, or HEVC if your Roku device supports it."
+    "title": "Can I use photos and videos in the same signage loop?",
+    "content": "Yes. The signage player can play a mixed visual loop of images and videos from your USB drive."
   },
   {
-    "title": "Which audio formats are supported on Roku?",
-    "content": "Roku Media Player supports MP3, FLAC, PCM/WAV, DTS, ALAC, and Vorbis in supported containers. Examples include MP3 files, FLAC files, WAV files, OGG files, and supported audio tracks inside MKV, MP4, MOV, M4A, or WEBM files."
+    "title": "Can I use audio as background music?",
+    "content": "Yes. Audio files on the USB drive can play as background music while image slides are being shown. Audio files are optional, so the app also works with only photos and videos."
   },
   {
-    "title": "Does Roku support Dolby Digital or DTS audio?",
-    "content": "Roku support for Dolby Digital, Dolby Digital Plus, and DTS depends on your Roku model and the TV or audio receiver connected to it. DTS is pass-through only, so the connected TV or receiver must be able to decode it."
+    "title": "What happens to background music when a video plays?",
+    "content": "When a video plays, the app stops or releases background audio so the video's own sound can be heard. When the signage loop returns to image playback, background audio can continue again."
   },
   {
-    "title": "Does Roku support AAC audio?",
-    "content": "Roku devices can handle stereo AAC by converting it to PCM stereo. Multichannel AAC support varies by device and connected audio equipment, so a stereo audio track is the safest option for broad compatibility."
+    "title": "Can videos play with their own sound?",
+    "content": "Yes. Videos play through Roku video playback and can use their own audio track. Background music is not mixed over the video."
   },
   {
-    "title": "Which photo formats are supported on Roku?",
-    "content": "Roku Media Player supports JPG, PNG, and non-animated GIF images. Roku platform apps can also support additional image formats such as BMP and WebP on newer Roku OS versions, but JPG and PNG are the safest choices for USB photo viewing."
+    "title": "How does the app decide playback order?",
+    "content": "The signage list is sorted by filename. Visual media such as images and videos play in filename order. Audio files are used separately as a background music list."
   },
   {
-    "title": "Are animated GIFs supported?",
-    "content": "Roku Media Player lists GIF support for non-animated images. Animated GIF playback should not be expected when browsing photos from a USB drive."
+    "title": "Can I control the playback order?",
+    "content": "Yes. Rename your files to control the order. Numbered prefixes work well, for example 001-intro.jpg, 002-product.mp4, 003-hours.png, and 004-promo.jpg."
   },
   {
-    "title": "What playlist formats can Roku read?",
-    "content": "Roku Media Player supports M3U, M3U8, and PLS playlist files. Playlist entries should point to media files with recognizable supported extensions such as MP3, MKV, MP4, JPG, or PNG."
+    "title": "What image file types can the app recognize?",
+    "content": "The app recognizes image extensions including JPG, JPEG, JPE, JIF, JFIF, JFI, PNG, APNG, GIF, WebP, BMP, DIB, TIF, TIFF, AVIF, HEIF, and HEIC. Recognition is based on file extension, and actual display support depends on Roku's platform support for that image format."
   },
   {
-    "title": "Why does a file not appear in the app?",
-    "content": "Roku may hide files that are in an unsupported format or that it determines cannot be played on your specific device. A file extension alone is not enough; the video and audio codecs inside the file must also be supported."
+    "title": "What video file types can the app recognize?",
+    "content": "The app recognizes video extensions including MP4, AVI, MKV, MOV, FLV, WMV, WebM, M4V, 3GP, TS, MTS, M2TS, MPG, MPEG, VOB, and OGV. Recognition is based on file extension, and actual playback depends on whether your Roku device supports the video's container, video codec, and audio codec."
+  },
+  {
+    "title": "What audio file types can the app recognize?",
+    "content": "The app recognizes audio extensions including MP3, M4A, AAC, OGG, OGA, OPUS, FLAC, WAV, WebM, MKV, MKA, TS, 3GP, AMR, WMA, and ALAC. Recognition is based on file extension, and actual playback depends on Roku codec support."
+  },
+  {
+    "title": "Why does a file appear but not play?",
+    "content": "The app may recognize a file extension even when Roku cannot decode the actual media inside the file. For best video compatibility, use common Roku-friendly files such as MP4 with H.264 video and AAC audio."
   },
   {
     "title": "Why does a video play without sound?",
-    "content": "This usually means the video track is supported but the audio track is not supported by your Roku setup. Try converting the audio to stereo AAC or another Roku-supported format, or connect to an audio receiver that supports the file's audio codec."
+    "content": "This usually means the video track is compatible but the audio track is not supported by your Roku device or connected audio system. Try converting the video to use a broadly supported audio format such as stereo AAC."
   },
   {
     "title": "Are DRM-protected files supported?",
-    "content": "No. DRM-protected movies, music, or other protected media files are not supported for local playback from USB."
+    "content": "No. DRM-protected movies, music, or other protected media files are not supported for local USB signage playback."
   },
   {
-    "title": "How can I make videos more compatible with Roku?",
-    "content": "Use MP4, MOV, or MKV with H.264/AVC video and a broadly supported stereo audio track. For 4K files, use HEVC only on 4K-capable Roku devices and keep a compatible stereo audio track available."
+    "title": "Does the app hide system files?",
+    "content": "Yes. The app skips dot-prefixed hidden files and common system folders such as lost.dir, System Volume Information, and $Recycle.Bin so they do not clutter the signage library."
   },
   {
-    "title": "Can I use subtitles with videos on Roku?",
-    "content": "Roku Media Player supports embedded subtitles in MKV files and side-loaded SRT or VTT subtitle files. Side-loaded subtitle files should be in the same folder as the video and use the same base file name."
+    "title": "Why do I see a No USB Connected message?",
+    "content": "This means the app could not find a readable USB drive. Confirm that your Roku device supports USB storage, connect a compatible USB drive, and use Reload Files after reconnecting the drive."
   },
   {
-    "title": "How should I name side-loaded subtitle files?",
-    "content": "Use the same name as the video file, followed by .srt or .vtt, such as Movie.mp4 and Movie.srt. For multiple languages, include a language code such as Movie.eng.srt or Movie.spa.vtt."
+    "title": "Why do I see an empty folder or no playable media message?",
+    "content": "This means the USB drive was found, but the app did not find playable signage media. Add images, videos, and optional audio files, then choose Reload Files from the menu."
   },
   {
-    "title": "Can I add poster artwork for videos on a USB drive?",
-    "content": "Yes. Add a JPG, THM, or PNG image with the same base name as the video file and place it in the same folder on the USB drive."
+    "title": "What does Reload Files do?",
+    "content": "Reload Files rescans the USB drive from the USB root. Use it after adding, removing, renaming, or reorganizing files on the USB drive."
   },
   {
-    "title": "Can Roku automatically play media from a USB drive?",
-    "content": "Roku Media Player can use an Autostart.m3u playlist in the root of a USB drive for automatic playback. Roku also has a USB media setting that can auto-launch Roku Media Player when a USB drive is inserted."
+    "title": "Can I start playback from the menu?",
+    "content": "Yes. Choose Play from the left menu to start signage playback from the current USB media list. You can also select playable USB media from the grid."
   },
   {
-    "title": "Can I browse media from a network server instead of USB?",
-    "content": "Roku Media Player can access media from DLNA servers on the same network. Some DLNA servers can transcode unsupported files into Roku-compatible formats during playback."
+    "title": "What happens if there are only audio files on the USB drive?",
+    "content": "The signage player needs at least one image or video for the visual loop. If no playable images or videos are available, the app shows a Signage Unavailable message."
   },
   {
-    "title": "Why do some files work through Plex or DLNA but not from USB?",
-    "content": "Some media servers, including Plex and Serviio, can transcode files before they reach Roku. USB playback usually requires the file itself to already be in a Roku-supported format."
+    "title": "Can I change how long each image stays on screen?",
+    "content": "Yes. Open Settings and adjust Slide Duration. The default duration is 3 seconds, and the app prevents the duration from going below 1 second."
   },
   {
-    "title": "What should I do if the USB drive is not detected?",
-    "content": "Confirm that your Roku device has a USB port, the drive uses a supported file system, and the drive has enough power. Large portable hard drives may need external power or a powered USB hub."
+    "title": "Can I change how images fit the screen?",
+    "content": "Yes. Open Settings and choose Fill Screen or Show Full Image. Fill Screen fills the TV and may crop the image. Show Full Image preserves the complete image and may show borders if the image aspect ratio does not match the TV."
+  },
+  {
+    "title": "Can I change the image background color?",
+    "content": "Yes. Open Settings and choose a black or white background. This is most visible when Show Full Image mode leaves empty space around an image."
+  },
+  {
+    "title": "Are settings saved?",
+    "content": "Yes. Slide duration, image display mode, and background color are saved on the Roku device, so your choices remain available after restarting the app."
+  },
+  {
+    "title": "Why do some items show a lock icon?",
+    "content": "Locked items appear when the free access limit has been reached. Subscribe through Roku to unlock larger USB media collections."
+  },
+  {
+    "title": "What are the free access limits?",
+    "content": "Free access includes limited playback from the USB media list. In the current app, recursive signage mode allows the first 5 image files, first 2 video files, and first 2 audio files before additional items are locked."
+  },
+  {
+    "title": "What does the subscription unlock?",
+    "content": "A Roku subscription unlocks fuller access to larger USB collections so more of your photos, videos, and audio files can be included in the signage experience."
+  },
+  {
+    "title": "How do I subscribe?",
+    "content": "Choose Subscribe from the app menu or from the lock-limit dialog. The app uses Roku's Channel Store purchase flow and shows available subscription plans from the Roku catalog."
+  },
+  {
+    "title": "What subscription plans can appear?",
+    "content": "The subscription screen can show Roku catalog products such as monthly, quarterly, half-yearly, or yearly plans, depending on what is configured and available in the Roku Channel Store."
+  },
+  {
+    "title": "How do I manage or cancel my subscription?",
+    "content": "Use Manage Subscription in the app for guidance. On your Roku device, you can also highlight Simple USB Signage on the Roku Home screen, press the * button, and choose Manage subscription when available."
+  },
+  {
+    "title": "Why do I see a demo watermark?",
+    "content": "A demo watermark may appear during signage playback when the app is running without an active Roku subscription. Subscribed users should not see the demo watermark."
+  },
+  {
+    "title": "Does the app upload my USB files?",
+    "content": "No. USB media playback is local to your Roku device. The app does not upload your photos, videos, or audio files to a cloud dashboard."
+  },
+  {
+    "title": "Does the app include a remote web dashboard?",
+    "content": "No. Simple USB Signage is focused on simple USB-based playback. It does not include cloud sync, remote web management, or network file sharing."
+  },
+  {
+    "title": "Can I schedule different playlists by time or date?",
+    "content": "No. The current app is designed for a simple continuous USB signage loop. Time-based scheduling is not part of the current feature set."
+  },
+  {
+    "title": "Can the app edit, resize, or convert media files?",
+    "content": "No. The app plays media from your USB drive but does not edit, resize, repair, or convert files. If a file is too large or not compatible, convert it on a computer before copying it to the USB drive."
+  },
+  {
+    "title": "How can I make playback smoother?",
+    "content": "Use compressed media files close to your TV's display resolution, avoid extremely large images or high-bitrate videos on lower-powered Roku devices, and use a dedicated USB drive for signage content."
+  },
+  {
+    "title": "Where can I get support?",
+    "content": "Open Support & Feedback from the app menu. The page includes a QR code for the support page and a QR code for the feedback form."
+  },
+  {
+    "title": "Where can I send feedback or suggestions?",
+    "content": "Open Support & Feedback in the app and scan the Feedback Form QR code. You can also use the feedback contact shown on the About Us page."
+  },
+  {
+    "title": "Where can I read the Privacy Policy and Terms of Use?",
+    "content": "Privacy Policy and Terms of Use are available from the app menu. These pages load the latest published documents and may require an internet connection."
+  },
+  {
+    "title": "What information is shown on the About Us page?",
+    "content": "The About Us page shows the Simple USB Signage app name, app tagline, app icon, developer credit, icon and menu icon credits, and feedback contact information."
   }
 ]

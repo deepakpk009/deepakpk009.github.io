@@ -1,0 +1,98 @@
+[
+  {
+    "title": "How does Simple USB Signage work on Roku devices?",
+    "content": "Simple USB Signage helps you browse and play media from a USB drive on supported Roku devices. Roku support depends on the model, Roku OS version, available USB port, and the codecs inside each file."
+  },
+  {
+    "title": "Do all Roku devices support USB playback?",
+    "content": "No. Only Roku devices with a USB port can play directly from a USB drive. Roku TVs and some Roku streaming players include USB support, while many smaller streaming sticks do not."
+  },
+  {
+    "title": "Which USB drive file systems are supported on Roku?",
+    "content": "Roku Media Player supports USB drives formatted as FAT16, FAT32, NTFS, EXT2, EXT3, exFAT, and HFS+. If your drive is not detected, reformatting to a supported file system may help."
+  },
+  {
+    "title": "Which video file formats are supported on Roku?",
+    "content": "Common Roku video support includes H.264/AVC video in MKV, MP4, and MOV files. On 4K-capable Roku devices, H.265/HEVC in MKV, MP4, and MOV is also supported, with VP9 in MKV or WEBM and AV1 in MKV or MP4 available on some models."
+  },
+  {
+    "title": "Does Roku support 4K video files?",
+    "content": "Yes, on Roku devices that support 4K. Supported 4K formats can include H.265/HEVC in MKV, MP4, or MOV, VP9 in MKV or WEBM, and AV1 in MKV or MP4 on some devices. 4K H.264 is limited to specific Roku Premiere, Premiere+, and Ultra models."
+  },
+  {
+    "title": "Does Roku support 8K video files?",
+    "content": "Only Roku devices with 8K support can play 8K files. Roku lists AV1 in MKV or MP4 and H.265/HEVC in MKV or MP4 as supported 8K video formats on compatible devices."
+  },
+  {
+    "title": "Are older video formats like AVI, WMV, FLV, or VOB supported?",
+    "content": "Roku does not list AVI, WMV, FLV, or VOB as supported Roku Media Player formats. For best results, convert videos to MP4, MOV, or MKV using H.264/AVC, or HEVC if your Roku device supports it."
+  },
+  {
+    "title": "Which audio formats are supported on Roku?",
+    "content": "Roku Media Player supports MP3, FLAC, PCM/WAV, DTS, ALAC, and Vorbis in supported containers. Examples include MP3 files, FLAC files, WAV files, OGG files, and supported audio tracks inside MKV, MP4, MOV, M4A, or WEBM files."
+  },
+  {
+    "title": "Does Roku support Dolby Digital or DTS audio?",
+    "content": "Roku support for Dolby Digital, Dolby Digital Plus, and DTS depends on your Roku model and the TV or audio receiver connected to it. DTS is pass-through only, so the connected TV or receiver must be able to decode it."
+  },
+  {
+    "title": "Does Roku support AAC audio?",
+    "content": "Roku devices can handle stereo AAC by converting it to PCM stereo. Multichannel AAC support varies by device and connected audio equipment, so a stereo audio track is the safest option for broad compatibility."
+  },
+  {
+    "title": "Which photo formats are supported on Roku?",
+    "content": "Roku Media Player supports JPG, PNG, and non-animated GIF images. Roku platform apps can also support additional image formats such as BMP and WebP on newer Roku OS versions, but JPG and PNG are the safest choices for USB photo viewing."
+  },
+  {
+    "title": "Are animated GIFs supported?",
+    "content": "Roku Media Player lists GIF support for non-animated images. Animated GIF playback should not be expected when browsing photos from a USB drive."
+  },
+  {
+    "title": "What playlist formats can Roku read?",
+    "content": "Roku Media Player supports M3U, M3U8, and PLS playlist files. Playlist entries should point to media files with recognizable supported extensions such as MP3, MKV, MP4, JPG, or PNG."
+  },
+  {
+    "title": "Why does a file not appear in the app?",
+    "content": "Roku may hide files that are in an unsupported format or that it determines cannot be played on your specific device. A file extension alone is not enough; the video and audio codecs inside the file must also be supported."
+  },
+  {
+    "title": "Why does a video play without sound?",
+    "content": "This usually means the video track is supported but the audio track is not supported by your Roku setup. Try converting the audio to stereo AAC or another Roku-supported format, or connect to an audio receiver that supports the file's audio codec."
+  },
+  {
+    "title": "Are DRM-protected files supported?",
+    "content": "No. DRM-protected movies, music, or other protected media files are not supported for local playback from USB."
+  },
+  {
+    "title": "How can I make videos more compatible with Roku?",
+    "content": "Use MP4, MOV, or MKV with H.264/AVC video and a broadly supported stereo audio track. For 4K files, use HEVC only on 4K-capable Roku devices and keep a compatible stereo audio track available."
+  },
+  {
+    "title": "Can I use subtitles with videos on Roku?",
+    "content": "Roku Media Player supports embedded subtitles in MKV files and side-loaded SRT or VTT subtitle files. Side-loaded subtitle files should be in the same folder as the video and use the same base file name."
+  },
+  {
+    "title": "How should I name side-loaded subtitle files?",
+    "content": "Use the same name as the video file, followed by .srt or .vtt, such as Movie.mp4 and Movie.srt. For multiple languages, include a language code such as Movie.eng.srt or Movie.spa.vtt."
+  },
+  {
+    "title": "Can I add poster artwork for videos on a USB drive?",
+    "content": "Yes. Add a JPG, THM, or PNG image with the same base name as the video file and place it in the same folder on the USB drive."
+  },
+  {
+    "title": "Can Roku automatically play media from a USB drive?",
+    "content": "Roku Media Player can use an Autostart.m3u playlist in the root of a USB drive for automatic playback. Roku also has a USB media setting that can auto-launch Roku Media Player when a USB drive is inserted."
+  },
+  {
+    "title": "Can I browse media from a network server instead of USB?",
+    "content": "Roku Media Player can access media from DLNA servers on the same network. Some DLNA servers can transcode unsupported files into Roku-compatible formats during playback."
+  },
+  {
+    "title": "Why do some files work through Plex or DLNA but not from USB?",
+    "content": "Some media servers, including Plex and Serviio, can transcode files before they reach Roku. USB playback usually requires the file itself to already be in a Roku-supported format."
+  },
+  {
+    "title": "What should I do if the USB drive is not detected?",
+    "content": "Confirm that your Roku device has a USB port, the drive uses a supported file system, and the drive has enough power. Large portable hard drives may need external power or a powered USB hub."
+  }
+]

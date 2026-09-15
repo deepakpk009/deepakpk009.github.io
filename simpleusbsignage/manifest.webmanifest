@@ -1,7 +1,7 @@
 {
   "name": "Simple USB Signage",
   "short_name": "Simple USB S",
-  "description": "Simple USB Signage is an Android TV app for playing photos, videos, and optional background music from a USB drive as continuous digital signage.",
+  "description": "Simple USB Signage is a TV app for playing photos, videos, and optional background music from a USB drive as continuous digital signage on Android TV, Fire TV, and Roku.",
   "start_url": "/simpleusbsignage/",
   "scope": "/simpleusbsignage/",
   "display": "standalone",

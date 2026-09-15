@@ -1,24 +1,24 @@
 {
   "meta": {
     "lang": "en",
-    "title": "Simple USB Signage – USB Photo & Video Signage for Android TV",
-    "description": "Simple USB Signage is an Android TV app for playing photos, videos, and optional background music from a USB drive as continuous digital signage.",
-    "keywords": "Simple USB Signage, Android TV signage app, USB signage Android TV, digital signage for TV, USB slideshow TV, photo video signage, Android TV media player, TV signage player, USB media signage, local signage app, offline signage TV, Fire TV signage, Google TV signage, image video slideshow TV, background music signage, simple digital signage",
+    "title": "Simple USB Signage – USB Photo & Video Signage for Android TV, Fire TV & Roku",
+    "description": "Simple USB Signage is a TV app for playing photos, videos, and optional background music from a USB drive as continuous digital signage on Android TV, Fire TV, and Roku.",
+    "keywords": "Simple USB Signage, Android TV signage app, USB signage Android TV, Roku signage app, Roku USB signage, Roku digital signage, Fire TV signage, Google TV signage, digital signage for TV, USB slideshow TV, photo video signage, TV signage player, USB media signage, local signage app, offline signage TV, image video slideshow TV, background music signage, simple digital signage",
     "author": "Deepak PK",
     "canonical": "https://deepakpk.com/simpleusbsignage",
     "og": {
       "type": "website",
       "url": "https://deepakpk.com/simpleusbsignage",
-      "title": "Simple USB Signage for Android TV",
-      "description": "Turn an Android TV or Fire TV into a simple USB-powered signage screen for photos, videos, and optional background audio.",
+      "title": "Simple USB Signage for Android TV, Fire TV & Roku",
+      "description": "Turn an Android TV, Fire TV, or Roku device into a simple USB-powered signage screen for photos, videos, and optional background audio.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
     "twitter": {
       "card": "summary_large_image",
       "url": "https://deepakpk.com/simpleusbsignage",
-      "title": "Simple USB Signage for Android TV",
-      "description": "A simple Android TV signage app that plays photos, videos, and background music directly from USB storage.",
+      "title": "Simple USB Signage for Android TV, Fire TV & Roku",
+      "description": "A simple TV signage app that plays photos, videos, and background music directly from USB storage.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -49,8 +49,8 @@
   },
   "product": {
     "name": "Simple USB Signage",
-    "heroTitle": "Simple USB Signage – USB Digital Signage for Android TV",
-    "heroDescription": "Turn your Android TV, Google TV, or Fire TV into a simple signage player. Connect a USB drive with photos, videos, and optional audio files, then play a continuous full-screen signage loop using a remote-friendly interface.",
+    "heroTitle": "Simple USB Signage – USB Digital Signage for Android TV, Fire TV & Roku",
+    "heroDescription": "Turn your Android TV, Google TV, Fire TV, or Roku device with USB support into a simple signage player. Connect a USB drive with photos, videos, and optional audio files, then play a continuous full-screen signage loop using a remote-friendly interface.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
@@ -64,12 +64,18 @@
         "label": "Available on Amazon",
         "url": "https://www.amazon.com/dp/B0H2D655LT/",
         "style": "secondary"
+      },
+      {
+        "type": "roku",
+        "label": "Add channel on Roku",
+        "url": "https://channelstore.roku.com/details/1cc3d04043561aa02ace3b284fbe3e5f:0a4593ecadac8415ddfe96539e0cc49e/simple-usb-signage",
+        "style": "secondary"
       }
     ],
     "stats": [
       {
-        "value": "📺 Android TV",
-        "label": "D-pad Friendly Signage UI"
+        "value": "📺 TV Platforms",
+        "label": "Android TV, Fire TV & Roku"
       },
       {
         "value": "🔌 USB Playback",
@@ -85,10 +91,10 @@
       "cards": [
         {
           "icon": "📺",
-          "title": "Made for Android TV",
+          "title": "Made for TV Screens",
           "bullets": [
             "Leanback-style interface designed for TV screens and remote controls",
-            "Works on Android TV, Google TV, and Fire TV devices",
+            "Works on Android TV, Google TV, Fire TV, and Roku devices with USB support",
             "Clear menu options for Play, Reload Files, Settings, Help, and Subscription",
             "Large, readable media cards with filename labels and thumbnails"
           ]
@@ -97,9 +103,9 @@
           "icon": "🔌",
           "title": "USB Media Scanning",
           "bullets": [
-            "Detects USB mass-storage devices when the app launches",
-            "Handles USB attach and detach events while the app is running",
-            "Requests USB permission and retries initialization with timeout handling",
+            "Detects supported USB storage when the app launches",
+            "Handles USB media discovery for local signage playback",
+            "Provides clear setup guidance when no USB drive is found",
             "Recursively scans folders and subfolders to build one flat media list"
           ]
         },
@@ -119,8 +125,8 @@
           "bullets": [
             "Builds a separate playlist for optional background audio files",
             "Loops background music independently from photo and video playback",
-            "Can mute video audio and continue background music",
-            "Can enable video audio and automatically pause background music during videos"
+            "Uses USB audio files as background music during image playback",
+            "Coordinates background music with video playback so audio does not overlap"
           ]
         },
         {
@@ -139,16 +145,16 @@
           "bullets": [
             "Filters hidden files and unsupported extensions from the visible list",
             "Shows image thumbnails and type artwork for video, audio, and unknown files",
-            "Long-press OK to view file details",
-            "File details include type, size/path information, open, and delete actions"
+            "Shows lock indicators for media beyond free/demo access limits",
+            "Keeps common system files out of the signage browser"
           ]
         },
         {
           "icon": "🚀",
           "title": "Direct USB Streaming",
           "bullets": [
-            "Uses an internal localhost media server for USB-hosted media",
-            "Streams videos, audio, and images without first copying them to app storage",
+            "Plays media locally from connected USB storage",
+            "Uses platform-appropriate playback for videos, audio, and images",
             "Designed for simple local signage workflows",
             "Reload/rescan USB media anytime from the main menu"
           ]
@@ -160,7 +166,7 @@
             "Free/demo mode unlocks a limited number of media files for testing",
             "Locked media items are blurred and marked with a lock badge",
             "Unsubscribed playback shows a subtle Demo Version watermark",
-            "Includes subscription and subscription management screens"
+            "Includes store-specific subscription and subscription management screens"
           ]
         },
         {
@@ -179,8 +185,8 @@
           "bullets": [
             "Shows screen resolution and calculated aspect ratio",
             "Settings layout adapts to different screen sizes",
-            "Subscription status is cached for an offline grace period after verification",
-            "Store-specific builds support Google Play, Amazon Appstore, and Huawei AppGallery billing"
+            "Roku builds include Roku-native subscription purchase and management guidance",
+            "Store-specific builds support Google Play, Amazon Appstore, Huawei AppGallery, and Roku subscription flows"
           ]
         }
       ]
@@ -215,7 +221,7 @@
       "items": [
         {
           "q": "What is Simple USB Signage?",
-          "a": "Simple USB Signage is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
+          "a": "Simple USB Signage is a TV app for Android TV, Google TV, Fire TV, and Roku devices that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
         },
         {
           "q": "Do I need an internet connection to use the signage playback?",
@@ -243,15 +249,15 @@
         },
         {
           "q": "How does background music work?",
-          "a": "Audio files are played as a separate looping background playlist. You can also decide whether videos should play their own audio or stay muted while background audio continues."
+          "a": "Audio files are played as a separate looping background playlist during image playback. On Roku, background music is released while videos play so the video's own audio can be heard."
         },
         {
           "q": "What happens in demo/free mode?",
           "a": "Free/demo mode limits the number of unlocked audio, video, and image files shown in the media set. Locked items are blurred and show a lock badge, and demo playback shows a subtle watermark."
         },
         {
-          "q": "Can I delete files from the app?",
-          "a": "Yes. Long-press OK on a media item to open the details dialog, where supported actions such as open and delete are available."
+          "q": "Does Simple USB Signage work on Roku?",
+          "a": "Yes. The Roku version is available from the Roku Channel Store and is designed for Roku devices or Roku TVs that support USB media playback."
         }
       ]
     }
@@ -261,42 +267,42 @@
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 1"
+        "alt": "Simple USB Signage TV screenshot 1"
       },
       {
         "src": "images/screenshots/ss002.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 2"
+        "alt": "Simple USB Signage TV screenshot 2"
       },
       {
         "src": "images/screenshots/ss003.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 3"
+        "alt": "Simple USB Signage TV screenshot 3"
       },
       {
         "src": "images/screenshots/ss004.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 4"
+        "alt": "Simple USB Signage TV screenshot 4"
       },
       {
         "src": "images/screenshots/ss005.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 5"
+        "alt": "Simple USB Signage TV screenshot 5"
       },
       {
         "src": "images/screenshots/ss006.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 6"
+        "alt": "Simple USB Signage TV screenshot 6"
       },
       {
         "src": "images/screenshots/ss007.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 7"
+        "alt": "Simple USB Signage TV screenshot 7"
       },
       {
         "src": "images/screenshots/ss008.jpg",
-        "alt": "Simple USB Signage Android TV screenshot 8"
+        "alt": "Simple USB Signage TV screenshot 8"
       }
     ],
     "video": {
       "sectionId": "demo",
-      "title": "See Simple USB Signage on Android TV",
+      "title": "See Simple USB Signage on TV",
       "youtubeEmbedUrl": "",
-      "iframeTitle": "Simple USB Signage Android TV Demo"
+      "iframeTitle": "Simple USB Signage TV Demo"
     }
   },
   "sections": {
@@ -311,7 +317,7 @@
         {
           "number": "2",
           "title": "Connect USB to TV",
-          "text": "Open Simple USB Signage on your Android TV, Google TV, or Fire TV, allow USB permission, and let the app scan supported media files."
+          "text": "Open Simple USB Signage on your Android TV, Google TV, Fire TV, or supported Roku device, then let the app scan supported media files from USB storage."
         },
         {
           "number": "3",
@@ -328,7 +334,8 @@
           "title": "USB-First Signage",
           "bullets": [
             "Scan media directly from USB storage",
-            "Reload/rescan connected USB media whenever needed"
+            "Reload/rescan connected USB media whenever needed",
+            "Use Roku devices and Roku TVs that support USB media playback"
           ]
         },
         {
@@ -344,7 +351,7 @@
           "title": "Flexible Audio",
           "bullets": [
             "Loop optional background audio independently",
-            "Choose whether videos play their own audio or stay muted"
+            "Use music during image playback and let videos play with their own audio where supported"
           ]
         },
         {
@@ -387,7 +394,7 @@
       "items": [
         {
           "q": "What is Simple USB Signage?",
-          "a": "Simple USB Signage is an Android TV app that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
+          "a": "Simple USB Signage is a TV app for Android TV, Google TV, Fire TV, and Roku devices that plays photos, videos, and optional background audio from a connected USB drive as continuous digital signage."
         },
         {
           "q": "Do I need an internet connection to use the signage playback?",
@@ -415,21 +422,21 @@
         },
         {
           "q": "How does background music work?",
-          "a": "Audio files are played as a separate looping background playlist. You can also decide whether videos should play their own audio or stay muted while background audio continues."
+          "a": "Audio files are played as a separate looping background playlist during image playback. On Roku, background music is released while videos play so the video's own audio can be heard."
         },
         {
           "q": "What happens in demo/free mode?",
           "a": "Free/demo mode limits the number of unlocked audio, video, and image files shown in the media set. Locked items are blurred and show a lock badge, and demo playback shows a subtle watermark."
         },
         {
-          "q": "Can I delete files from the app?",
-          "a": "Yes. Long-press OK on a media item to open the details dialog, where supported actions such as open and delete are available."
+          "q": "Does Simple USB Signage work on Roku?",
+          "a": "Yes. The Roku version is available from the Roku Channel Store and is designed for Roku devices or Roku TVs that support USB media playback."
         }
       ]
     },
     "cta": {
       "title": "Turn Your TV Into Simple USB Signage 📺",
-      "text": "Download Simple USB Signage and play photos, videos, and background music from a USB drive on Android TV.",
+      "text": "Download Simple USB Signage and play photos, videos, and background music from a USB drive on Android TV, Fire TV, or Roku.",
       "buttons": [
         {
           "type": "googlePlay",
@@ -442,6 +449,12 @@
           "label": "Available on Amazon",
           "url": "https://www.amazon.com/dp/B0H2D655LT/",
           "style": "secondary"
+        },
+        {
+          "type": "roku",
+          "label": "Add channel on Roku",
+          "url": "https://channelstore.roku.com/details/1cc3d04043561aa02ace3b284fbe3e5f:0a4593ecadac8415ddfe96539e0cc49e/simple-usb-signage",
+          "style": "secondary"
         }
       ]
     }
@@ -450,7 +463,7 @@
     "brand": {
       "logo": "images/app_icon.png",
       "name": "Simple USB Signage",
-      "about": "A remote-friendly Android TV signage app for playing photos, videos, and optional background music directly from USB storage."
+      "about": "A remote-friendly TV signage app for playing photos, videos, and optional background music directly from USB storage on Android TV, Fire TV, and Roku."
     },
     "social": [
       {
@@ -470,6 +483,10 @@
           {
             "label": "Download on Amazon",
             "url": "https://www.amazon.com/dp/B0H2D655LT/"
+          },
+          {
+            "label": "Add channel on Roku",
+            "url": "https://channelstore.roku.com/details/1cc3d04043561aa02ace3b284fbe3e5f:0a4593ecadac8415ddfe96539e0cc49e/simple-usb-signage"
           },
           {
             "label": "Terms & Conditions",
@@ -520,14 +537,18 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Simple USB Signage",
-      "operatingSystem": "Android TV",
+      "operatingSystem": "Android TV, Fire TV, Roku OS",
       "applicationCategory": "MultimediaApplication",
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage",
+      "downloadUrl": [
+        "https://play.google.com/store/apps/details?id=com.deepakpk.simpleusbsignage",
+        "https://www.amazon.com/dp/B0H2D655LT/",
+        "https://channelstore.roku.com/details/1cc3d04043561aa02ace3b284fbe3e5f:0a4593ecadac8415ddfe96539e0cc49e/simple-usb-signage"
+      ],
       "author": {
         "@type": "Person",
         "name": "Deepak PK",
@@ -537,7 +558,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "Simple USB Signage is an Android TV app for playing photos, videos, and optional background audio from USB storage as continuous digital signage."
+      "description": "Simple USB Signage is a TV app for playing photos, videos, and optional background audio from USB storage as continuous digital signage on Android TV, Fire TV, and Roku."
     },
     "organization": {
       "@context": "https://schema.org",

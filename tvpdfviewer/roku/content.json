@@ -1,24 +1,24 @@
 {
   "meta": {
     "lang": "en",
-    "title": "TV PPTX Viewer – PPTX Presentation Viewer for Android TV",
-    "description": "TV PPTX Viewer is an Android TV app for opening, importing, viewing, searching, bookmarking, and presenting PPTX files on your TV with remote-friendly controls.",
-    "keywords": "TV PPTX Viewer, Android TV PPTX viewer, PPTX viewer for TV, PPTX viewer Android TV, PPTX presenter Android TV, view PPTX on TV, open PPTX on Android TV, presentation viewer for Android TV, PPTX bookmarks, PPTX search, PPTX slideshow TV, web import PPTX, WiFi upload PPTX, FTP upload PPTX, USB PPTX viewer TV",
+    "title": "TV PDF Viewer – PDF Reader for Roku TV",
+    "description": "TV PDF Viewer is a Roku app for reading PDF documents on your TV with simple pairing, a remote-friendly library, page navigation, zoom, search, and viewing controls.",
+    "keywords": "TV PDF Viewer, Roku PDF viewer, PDF viewer for Roku, PDF reader for TV, view PDF on Roku, open PDF on TV, Roku PDF reader, PDF document viewer TV, PDF search Roku, PDF zoom TV, PDF thumbnails TV, local WiFi PDF viewer, TV document reader",
     "author": "Deepak PK",
     "canonical": "https://deepakpk.com/tvpptxviewer",
     "og": {
       "type": "website",
       "url": "https://deepakpk.com/tvpptxviewer",
-      "title": "TV PPTX Viewer for Android TV",
-      "description": "Open, import, search, bookmark, and present PPTX files on Android TV with a remote-friendly PPTX viewer.",
+      "title": "TV PDF Viewer for Roku TV",
+      "description": "Read, search, zoom, and navigate PDF documents on Roku with a remote-friendly TV viewer.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
     "twitter": {
       "card": "summary_large_image",
       "url": "https://deepakpk.com/tvpptxviewer",
-      "title": "TV PPTX Viewer for Android TV",
-      "description": "A remote-friendly Android TV app to open, import, search, bookmark, and present PPTX files on the big screen.",
+      "title": "TV PDF Viewer for Roku TV",
+      "description": "A remote-friendly Roku app to read PDF documents on the big screen.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -48,119 +48,119 @@
     "paperWhite": "#F7FAFF"
   },
   "product": {
-    "name": "TV PPTX Viewer",
-    "heroTitle": "TV PPTX Viewer – PPTX Presentations on Android TV",
-    "heroDescription": "Open PPTX PPTX files on your Android TV with a clean, remote-friendly interface. Import presentations using Web Import, WiFi Upload, FTP, or USB, then view slides with zoom, bookmarks, search, night mode, animation mode, and resume support.",
+    "name": "TV PDF Viewer",
+    "heroTitle": "TV PDF Viewer – Read PDFs on Roku TV",
+    "heroDescription": "Open PDF documents on your Roku TV with a clean, remote-friendly interface. Connect from your phone, tablet, or computer on the same Wi-Fi network, choose PDFs, and read them on the big screen with zoom, search, thumbnails, page jump, rotation, night mode, and resume support.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
         "type": "googlePlay",
-        "label": "Get it on Google Play",
+        "label": "Get TV PDF Viewer",
         "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpptxviewer",
         "style": "primary"
       },
       {
         "type": "amazon",
-        "label": "Available on Amazon",
+        "label": "More Download Options",
         "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
         "style": "secondary"
       }
     ],
     "stats": [
       {
-        "value": "📺 Android TV",
+        "value": "📺 Roku TV",
         "label": "Remote-Friendly UI"
       },
       {
-        "value": "📥 Web / WiFi / FTP",
-        "label": "Easy PPTX Import"
+        "value": "📱 QR / Wi-Fi",
+        "label": "Simple PDF Connection"
       },
       {
-        "value": "🔖 Search + Bookmarks",
-        "label": "Fast Slide Navigation"
+        "value": "🔍 Search + Zoom",
+        "label": "Fast Page Navigation"
       }
     ],
     "features": {
-      "title": "Features Built for Android TV Presentations",
+      "title": "Features Built for Roku PDF Reading",
       "cards": [
         {
           "icon": "📺",
-          "title": "Made for Android TV",
+          "title": "Made for Roku TV",
           "bullets": [
-            "Designed around Android TV development principles",
-            "Remote-friendly navigation with clear focus behavior",
-            "Open PPTX files directly from the TV home listing",
-            "Landscape-first experience for big screens"
+            "Designed for Roku TV and remote control navigation",
+            "Large labels, clear focus states, and simple D-pad movement",
+            "Move between Connect, Library, and the full-screen reader",
+            "TV-optimized screens for comfortable big-screen reading"
           ]
         },
         {
           "icon": "📁",
-          "title": "PPTX File Library",
+          "title": "PDF Document Library",
           "bullets": [
-            "PPTX grid/list items show thumbnail and file name",
-            "Long-press OK on a PPTX to view file options",
-            "View file name, location, size, and last modified date",
-            "Open or delete imported PPTX files from file options"
+            "Browse selected PDFs in a Roku-friendly grid",
+            "Document cards show first-page thumbnails and clean file names",
+            "Open the focused PDF with the OK button",
+            "Empty library state guides you back to the Connect screen"
           ]
         },
         {
           "icon": "📥",
-          "title": "Easy PPTX Imports",
+          "title": "Easy PDF Connection",
           "bullets": [
-            "Import PPTX files using Web Import, WiFi Upload, or FTP",
-            "Web Import uses a token and works even outside the same network",
-            "WiFi Upload is faster when both devices are on the same network",
-            "FTP import supports anonymous FTP on the same network"
+            "Connect from a phone, tablet, or computer on the same Wi-Fi network",
+            "Use the short connection address shown on your Roku screen",
+            "Select one PDF, multiple PDFs, or a folder where supported",
+            "Duplicate selections are skipped so the library stays clean"
           ]
         },
         {
           "icon": "📱",
-          "title": "QR Code Connection",
+          "title": "QR Code Pairing",
           "bullets": [
-            "Web Import page shows a QR code for quick connection",
-            "FTP import page shows a QR code for easy setup",
-            "Send presentations from phone, laptop, or another device",
-            "No typing long TV URLs when QR scanning is available"
+            "Connect screen shows a scannable QR code",
+            "Manual connection address is also shown on the TV",
+            "Connection status keeps you informed while pairing",
+            "Retry and reconnect options help recover from temporary issues"
           ]
         },
         {
           "icon": "🖼️",
-          "title": "Powerful PPTX Viewer",
+          "title": "Powerful PDF Viewer",
           "bullets": [
-            "Open PPTX files from the home page with the OK button",
-            "Resume last viewed slide number automatically",
-            "Restore last used zoom and night mode settings",
-            "Presentation options appear as an overlay on the current slide"
+            "Open PDFs in a full-screen TV reader",
+            "Resume the last viewed page for previously opened documents",
+            "Restore viewing settings such as zoom, fit mode, rotation, and night mode",
+            "Viewer options appear as a remote-friendly overlay"
           ]
         },
         {
           "icon": "🔍",
-          "title": "Search & Go To Slide",
+          "title": "Search & Go To Page",
           "bullets": [
-            "Search text inside PPTX files",
-            "Jump directly to a specific slide number",
-            "Restart presentation from the first slide",
-            "Toggle slide/page info visibility while viewing"
+            "Search text inside supported PDF documents",
+            "Review matching page numbers and snippets",
+            "Jump directly to a specific page number",
+            "Use TV-friendly search and page number input"
           ]
         },
         {
           "icon": "🔖",
-          "title": "Bookmarks Across PPTXs",
+          "title": "Page Thumbnails",
           "bullets": [
-            "Bookmark the current slide from the viewer options menu",
-            "View all bookmarks across all PPTX files",
-            "Bookmark items show slide thumbnail, page number, and PPTX title",
-            "Long-press a bookmark to delete it from the bookmarks page"
+            "Open a full-screen thumbnail navigator",
+            "Browse nearby pages with left and right controls",
+            "Select a focused thumbnail to jump to that page",
+            "Cancel thumbnail navigation without changing pages"
           ]
         },
         {
           "icon": "🎛️",
           "title": "Viewer Controls Overlay",
           "bullets": [
-            "Zoom in, zoom out, and reset zoom",
-            "Toggle night mode while previewing the change live",
-            "Choose animation mode for presentation viewing",
-            "Close the overlay with the close option or Back button"
+            "Zoom in, zoom out, and change fit mode",
+            "Rotate pages for comfortable reading",
+            "Choose background color and toggle night mode",
+            "Open search, thumbnails, and Go to Page from one overlay"
           ]
         },
         {
@@ -168,9 +168,9 @@
           "title": "Settings & Storage Tools",
           "bullets": [
             "View TV screen resolution and screen ratio",
-            "Check available storage and total PPTX file count",
-            "View bookmark count, thumbnail count, and storage usage",
-            "Clear imported PPTXs, bookmarks, and thumbnails from settings"
+            "Check temporary render file count and storage usage",
+            "Clear temporary storage when needed",
+            "See success, no-data, and failure messages for cleanup actions"
           ]
         },
         {
@@ -178,8 +178,8 @@
           "title": "Help, Support & App Info",
           "bullets": [
             "Built-in Help/FAQ page for common questions",
-            "About page with developer details",
-            "Version info menu item for quick app version checking",
+            "Privacy Policy and Terms of Use pages",
+            "About page with app and developer details",
             "Support and feedback page with QR codes for useful links"
           ]
         }
@@ -190,23 +190,23 @@
       "items": [
         {
           "icon": "🎓",
-          "title": "Classrooms & Training",
-          "text": "Show lesson slides, training material, and study presentations on a TV without needing a computer connected all the time."
+          "title": "Study & Training",
+          "text": "Read course notes, training manuals, worksheets, and reference PDFs on a TV where everyone can see them."
         },
         {
           "icon": "💼",
-          "title": "Office Presentations",
-          "text": "Open business PPTX files on meeting-room TVs with quick import options and remote-friendly navigation."
+          "title": "Office Documents",
+          "text": "Review reports, manuals, policies, and shared PDF documents on a meeting-room Roku TV."
         },
         {
           "icon": "🏠",
           "title": "Home & Personal Use",
-          "text": "View school projects, event slides, photo presentations, or saved PPTX files directly on Android TV."
+          "text": "Open recipes, manuals, forms, guides, bills, and saved PDFs directly on the big screen."
         },
         {
           "icon": "🪧",
-          "title": "Simple Display Use",
-          "text": "Use PPTX slides for lightweight information display where easy import, viewing, and slide navigation matter."
+          "title": "Shared Reading",
+          "text": "Use your TV for group reading, quick reference, and document review without passing a small screen around."
         }
       ]
     },
@@ -214,40 +214,40 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "What is TV PPTX Viewer?",
-          "a": "TV PPTX Viewer is an Android TV app for opening and viewing PPTX PPTX files on a TV using a remote-friendly interface."
+          "q": "What is TV PDF Viewer?",
+          "a": "TV PDF Viewer is a Roku app for reading PDF documents on your TV using a remote-friendly interface."
         },
         {
-          "q": "How can I add PPTX files to the app?",
-          "a": "You can import PPTX files using Web Import, WiFi Upload, FTP Import, or by scanning available PPTX files from connected storage such as USB."
+          "q": "How can I open PDFs on my Roku TV?",
+          "a": "Open the Connect screen, scan the QR code or enter the shown address on a phone, tablet, or computer on the same Wi-Fi network, then choose the PDF files you want to view."
         },
         {
-          "q": "Does Web Import require the phone or laptop to be on the same WiFi network as the TV?",
-          "a": "No. Web Import uses a token-based flow, so the sending device does not need to be on the same network as the TV."
+          "q": "Do my device and Roku need to be on the same Wi-Fi network?",
+          "a": "Yes. The phone, tablet, or computer you use to choose PDFs should be connected to the same local Wi-Fi network as your Roku device."
         },
         {
-          "q": "When should I use WiFi Upload instead of Web Import?",
-          "a": "Use WiFi Upload when your sending device and Android TV are on the same network. It is designed for faster local file transfer."
+          "q": "Can I choose more than one PDF?",
+          "a": "Yes. You can select multiple PDF files, and folder selection may also be available on supported devices."
         },
         {
-          "q": "Does FTP Import need the same network?",
-          "a": "Yes. FTP Import uses an anonymous FTP connection and requires the sending device to be on the same network as the TV."
+          "q": "Can I view password-protected PDFs?",
+          "a": "Yes. If a PDF requires a password, you can unlock it from the device you are using to choose the file."
         },
         {
-          "q": "Can I bookmark slides?",
-          "a": "Yes. You can bookmark the current slide, view bookmarks for the current PPTX, and also browse bookmarks across all PPTX files."
+          "q": "Can I search inside PDFs?",
+          "a": "Yes. The viewer includes PDF text search with result snippets and page numbers for supported documents."
         },
         {
           "q": "Does the app remember where I stopped?",
-          "a": "Yes. The viewer can reopen a PPTX with the last viewed slide number and last used view settings such as zoom and night mode."
+          "a": "Yes. The viewer can reopen a PDF with the last viewed page and viewing settings such as zoom, fit mode, rotation, background color, and night mode."
         },
         {
-          "q": "Can I search inside PPTX files?",
-          "a": "Yes. The viewer includes a search option to find text inside supported PPTX files."
+          "q": "Can I zoom, rotate, or change the reading view?",
+          "a": "Yes. The options overlay includes zoom, fit mode, rotate, background color, night mode, search, thumbnails, and Go to Page."
         },
         {
-          "q": "Can I delete imported PPTX files?",
-          "a": "Yes. Long-press OK on a focused PPTX file to view file info and options such as open and delete. Settings also include an option to clear all PPTXs in the imports folder. USB files are not deleted."
+          "q": "Does Roku store my full PDF files?",
+          "a": "TV PDF Viewer is designed for local viewing. The app keeps temporary viewing data for active documents and includes a Settings option to clear temporary storage."
         },
         {
           "q": "Where can I manage subscription information?",
@@ -261,82 +261,82 @@
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 1"
+        "alt": "TV PDF Viewer Roku TV screenshot 1"
       },
       {
         "src": "images/screenshots/ss002.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 2"
+        "alt": "TV PDF Viewer Roku TV screenshot 2"
       },
       {
         "src": "images/screenshots/ss003.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 3"
+        "alt": "TV PDF Viewer Roku TV screenshot 3"
       },
       {
         "src": "images/screenshots/ss004.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 4"
+        "alt": "TV PDF Viewer Roku TV screenshot 4"
       },
       {
         "src": "images/screenshots/ss005.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 5"
+        "alt": "TV PDF Viewer Roku TV screenshot 5"
       },
       {
         "src": "images/screenshots/ss006.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 6"
+        "alt": "TV PDF Viewer Roku TV screenshot 6"
       },
       {
         "src": "images/screenshots/ss007.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 7"
+        "alt": "TV PDF Viewer Roku TV screenshot 7"
       },
       {
         "src": "images/screenshots/ss008.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 8"
+        "alt": "TV PDF Viewer Roku TV screenshot 8"
       },
       {
         "src": "images/screenshots/ss009.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 9"
+        "alt": "TV PDF Viewer Roku TV screenshot 9"
       },
       {
         "src": "images/screenshots/ss010.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 10"
+        "alt": "TV PDF Viewer Roku TV screenshot 10"
       },
       {
         "src": "images/screenshots/ss011.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 11"
+        "alt": "TV PDF Viewer Roku TV screenshot 11"
       },
       {
         "src": "images/screenshots/ss012.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 12"
+        "alt": "TV PDF Viewer Roku TV screenshot 12"
       },
       {
         "src": "images/screenshots/ss013.jpg",
-        "alt": "TV PPTX Viewer Android TV screenshot 12"
+        "alt": "TV PDF Viewer Roku TV screenshot 13"
       }
     ],
     "video": {
       "sectionId": "demo",
-      "title": "See TV PPTX Viewer on Android TV",
+      "title": "See TV PDF Viewer on Roku TV",
       "youtubeEmbedUrl": "",
-      "iframeTitle": "TV PPTX Viewer Android TV Demo"
+      "iframeTitle": "TV PDF Viewer Roku TV Demo"
     }
   },
   "sections": {
     "howItWorks": {
-      "title": "Start Presenting on TV in Minutes",
+      "title": "Start Reading PDFs on TV in Minutes",
       "steps": [
         {
           "number": "1",
-          "title": "Install TV PPTX Viewer",
-          "text": "Install TV PPTX Viewer on your Android TV or Fire TV device."
+          "title": "Install TV PDF Viewer",
+          "text": "Install TV PDF Viewer on your Roku device."
         },
         {
           "number": "2",
-          "title": "Import or Scan PPTX Files",
-          "text": "Add files with Web Import, WiFi Upload, FTP Import, or reload/scan PPTX files from available storage."
+          "title": "Connect Your Device",
+          "text": "Use the QR code or short address on the Connect screen from a phone, tablet, or computer on the same Wi-Fi network."
         },
         {
           "number": "3",
-          "title": "Open and Control Slides",
-          "text": "Select a PPTX with the OK button, then use the overlay menu for zoom, bookmarks, search, go to slide, night mode, animation mode, and restart."
+          "title": "Open and Read PDFs",
+          "text": "Choose a PDF from the library, then use the options overlay for zoom, fit mode, rotate, search, thumbnails, Go to Page, background color, and night mode."
         }
       ]
     },
@@ -347,32 +347,32 @@
           "icon": "📺",
           "title": "TV-First Experience",
           "bullets": [
-            "Built for Android TV usage and remote control navigation",
-            "Large-screen friendly PPTX browsing with thumbnails and file names"
+            "Built for Roku TV usage and remote control navigation",
+            "Large-screen friendly PDF browsing with thumbnails and file names"
           ]
         },
         {
           "icon": "📥",
-          "title": "Flexible Import Options",
+          "title": "Simple Local Pairing",
           "bullets": [
-            "Web Import with token support for remote uploads",
-            "Fast WiFi Upload and anonymous FTP for same-network transfers"
+            "Scan a QR code or type the short connection address",
+            "Choose PDFs from a phone, tablet, or computer on the same Wi-Fi network"
           ]
         },
         {
           "icon": "🎛️",
-          "title": "Presentation Controls",
+          "title": "Reading Controls",
           "bullets": [
-            "Zoom, reset zoom, night mode, animation mode, and slide info toggle",
-            "Bookmarks, search, go to slide, and restart options inside the viewer"
+            "Zoom, fit mode, rotate, night mode, and background color controls",
+            "Search, thumbnails, and Go to Page options inside the viewer"
           ]
         },
         {
           "icon": "⚙️",
           "title": "Useful App Tools",
           "bullets": [
-            "Settings show resolution, screen ratio, storage, file counts, bookmarks, and thumbnail usage",
-            "Clear imported files, bookmarks, and thumbnails when needed"
+            "Settings show resolution, screen ratio, temporary file count, and storage usage",
+            "Clear temporary storage when needed"
           ]
         }
       ]
@@ -382,23 +382,23 @@
       "items": [
         {
           "icon": "🎓",
-          "title": "Classrooms & Training",
-          "text": "Show lesson slides, training material, and study presentations on a TV without needing a computer connected all the time."
+          "title": "Study & Training",
+          "text": "Read course notes, training manuals, worksheets, and reference PDFs on a TV where everyone can see them."
         },
         {
           "icon": "💼",
-          "title": "Office Presentations",
-          "text": "Open business PPTX files on meeting-room TVs with quick import options and remote-friendly navigation."
+          "title": "Office Documents",
+          "text": "Review reports, manuals, policies, and shared PDF documents on a meeting-room Roku TV."
         },
         {
           "icon": "🏠",
           "title": "Home & Personal Use",
-          "text": "View school projects, event slides, photo presentations, or saved PPTX files directly on Android TV."
+          "text": "Open recipes, manuals, forms, guides, bills, and saved PDFs directly on the big screen."
         },
         {
           "icon": "🪧",
-          "title": "Simple Display Use",
-          "text": "Use PPTX slides for lightweight information display where easy import, viewing, and slide navigation matter."
+          "title": "Shared Reading",
+          "text": "Use your TV for group reading, quick reference, and document review without passing a small screen around."
         }
       ]
     },
@@ -406,40 +406,40 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "What is TV PPTX Viewer?",
-          "a": "TV PPTX Viewer is an Android TV app for opening and viewing PPTX PPTX files on a TV using a remote-friendly interface."
+          "q": "What is TV PDF Viewer?",
+          "a": "TV PDF Viewer is a Roku app for reading PDF documents on your TV using a remote-friendly interface."
         },
         {
-          "q": "How can I add PPTX files to the app?",
-          "a": "You can import PPTX files using Web Import, WiFi Upload, FTP Import, or by scanning available PPTX files from connected storage such as USB."
+          "q": "How can I open PDFs on my Roku TV?",
+          "a": "Open the Connect screen, scan the QR code or enter the shown address on a phone, tablet, or computer on the same Wi-Fi network, then choose the PDF files you want to view."
         },
         {
-          "q": "Does Web Import require the phone or laptop to be on the same WiFi network as the TV?",
-          "a": "No. Web Import uses a token-based flow, so the sending device does not need to be on the same network as the TV."
+          "q": "Do my device and Roku need to be on the same Wi-Fi network?",
+          "a": "Yes. The phone, tablet, or computer you use to choose PDFs should be connected to the same local Wi-Fi network as your Roku device."
         },
         {
-          "q": "When should I use WiFi Upload instead of Web Import?",
-          "a": "Use WiFi Upload when your sending device and Android TV are on the same network. It is designed for faster local file transfer."
+          "q": "Can I choose more than one PDF?",
+          "a": "Yes. You can select multiple PDF files, and folder selection may also be available on supported devices."
         },
         {
-          "q": "Does FTP Import need the same network?",
-          "a": "Yes. FTP Import uses an anonymous FTP connection and requires the sending device to be on the same network as the TV."
+          "q": "Can I view password-protected PDFs?",
+          "a": "Yes. If a PDF requires a password, you can unlock it from the device you are using to choose the file."
         },
         {
-          "q": "Can I bookmark slides?",
-          "a": "Yes. You can bookmark the current slide, view bookmarks for the current PPTX, and also browse bookmarks across all PPTX files."
+          "q": "Can I search inside PDFs?",
+          "a": "Yes. The viewer includes PDF text search with result snippets and page numbers for supported documents."
         },
         {
           "q": "Does the app remember where I stopped?",
-          "a": "Yes. The viewer can reopen a PPTX with the last viewed slide number and last used view settings such as zoom and night mode."
+          "a": "Yes. The viewer can reopen a PDF with the last viewed page and viewing settings such as zoom, fit mode, rotation, background color, and night mode."
         },
         {
-          "q": "Can I search inside PPTX files?",
-          "a": "Yes. The viewer includes a search option to find text inside supported PPTX files."
+          "q": "Can I zoom, rotate, or change the reading view?",
+          "a": "Yes. The options overlay includes zoom, fit mode, rotate, background color, night mode, search, thumbnails, and Go to Page."
         },
         {
-          "q": "Can I delete imported PPTX files?",
-          "a": "Yes. Long-press OK on a focused PPTX file to view file info and options such as open and delete. Settings also include an option to clear all PPTXs in the imports folder. USB files are not deleted."
+          "q": "Does Roku store my full PDF files?",
+          "a": "TV PDF Viewer is designed for local viewing. The app keeps temporary viewing data for active documents and includes a Settings option to clear temporary storage."
         },
         {
           "q": "Where can I manage subscription information?",
@@ -448,18 +448,18 @@
       ]
     },
     "cta": {
-      "title": "View PPTX Presentations on Your TV 📺",
-      "text": "Download TV PPTX Viewer and turn your Android TV into a simple, remote-friendly PPTX presentation viewer.",
+      "title": "Read PDF Documents on Your TV 📺",
+      "text": "Download TV PDF Viewer and turn your Roku into a simple, remote-friendly PDF reader for the big screen.",
       "buttons": [
         {
           "type": "googlePlay",
-          "label": "Get it on Google Play",
+          "label": "Get TV PDF Viewer",
           "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpptxviewer",
           "style": "primary"
         },
         {
           "type": "amazon",
-          "label": "Available on Amazon",
+          "label": "More Download Options",
           "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
           "style": "secondary"
         }
@@ -469,8 +469,8 @@
   "footer": {
     "brand": {
       "logo": "images/app_icon.png",
-      "name": "TV PPTX Viewer",
-      "about": "A remote-friendly Android TV PPTX viewer for importing, opening, searching, bookmarking, and presenting PPTX files on the big screen."
+      "name": "TV PDF Viewer",
+      "about": "A remote-friendly Roku PDF viewer for opening, reading, searching, zooming, and navigating PDF documents on the big screen."
     },
     "social": [
       {
@@ -484,11 +484,11 @@
         "title": "Quick Links",
         "links": [
           {
-            "label": "Download on Google Play",
+            "label": "Download App",
             "url": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpptxviewer"
           },
           {
-            "label": "Download on Amazon",
+            "label": "More Download Options",
             "url": "https://www.amazon.com/dp/B0GZWMX1PT/"
           },
           {
@@ -539,8 +539,8 @@
     "softwareApplication": {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "TV PPTX Viewer",
-      "operatingSystem": "Android TV",
+      "name": "TV PDF Viewer",
+      "operatingSystem": "Roku OS",
       "applicationCategory": "ProductivityApplication",
       "offers": {
         "@type": "Offer",
@@ -557,7 +557,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "TV PPTX Viewer is an Android TV app for opening, importing, searching, bookmarking, and presenting PPTX PPTX files with remote-friendly controls."
+      "description": "TV PDF Viewer is a Roku app for opening, reading, searching, zooming, and navigating PDF documents with remote-friendly controls."
     },
     "organization": {
       "@context": "https://schema.org",

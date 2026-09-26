@@ -60,6 +60,7 @@ expand/collapse - Smooth scrolling - Scroll animations
 
 ``` bash
 node generator/generate_static.js dittoscan
+node generator/generate_static.js tvpdfviewer/roku
 ```
 
 ## Generate All Apps
@@ -90,6 +91,9 @@ themed `styles.css`; no JavaScript is used to apply colors.
 -   index.html
 -   styles.css
 -   manifest.webmanifest
+
+Generated pages automatically link to the shared `generator/site.js`
+using a relative path based on the output folder depth.
 
 Do not edit these manually.
 

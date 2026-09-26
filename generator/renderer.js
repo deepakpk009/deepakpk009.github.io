@@ -575,13 +575,15 @@ function buildBodyContent(data) {
   ].filter(hasText).join("\n");
 }
 
-function renderPage(data, template) {
+function renderPage(data, template, options = {}) {
   const lang = data.meta?.lang || "en";
+  const siteJsPath = options.siteJsPath || "../generator/site.js";
 
   return template
     .replaceAll("{{LANG}}", escapeHtml(lang))
     .replaceAll("{{META_TAGS}}", buildMetaTags(data))
     .replaceAll("{{SCHEMA_TAGS}}", buildSchemaTags(data))
+    .replaceAll("{{SITE_JS_PATH}}", escapeHtml(siteJsPath))
     .replaceAll("{{BODY_CONTENT}}", buildBodyContent(data));
 }
 

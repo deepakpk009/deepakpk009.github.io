@@ -23,16 +23,28 @@ function hasText(value) {
 }
 
 function getProjectFolders() {
-  return fs.readdirSync(WEBSITE_ROOT)
-    .filter((name) => {
-      if (name === "generator") return false;
+  const projects = [];
 
-      const fullPath = path.join(WEBSITE_ROOT, name);
-      if (!fs.statSync(fullPath).isDirectory()) return false;
+  function scan(dir, relativeDir = "") {
+    fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
+      if (!entry.isDirectory()) return;
+      if (entry.name === "generator" || entry.name === "node_modules" || entry.name.startsWith(".")) return;
 
-      return fs.existsSync(path.join(fullPath, "content.json"));
-    })
-    .sort();
+      const childRelativeDir = relativeDir
+        ? path.posix.join(relativeDir, entry.name)
+        : entry.name;
+      const childDir = path.join(dir, entry.name);
+
+      if (fs.existsSync(path.join(childDir, "content.json"))) {
+        projects.push(childRelativeDir);
+      }
+
+      scan(childDir, childRelativeDir);
+    });
+  }
+
+  scan(WEBSITE_ROOT);
+  return projects.sort();
 }
 
 function buildThemeVars(data) {
@@ -139,6 +151,9 @@ function generateProject(projectName) {
   const projectDir = path.join(WEBSITE_ROOT, projectName);
   const contentPath = path.join(projectDir, "content.json");
   const outputPath = path.join(projectDir, "index.html");
+  const siteJsPath = path
+    .relative(projectDir, path.join(GENERATOR_DIR, "site.js"))
+    .replaceAll(path.sep, "/");
 
   ensureFileExists(TEMPLATE_PATH, "generator/template.html");
   ensureFileExists(MASTER_CSS_PATH, "generator/styles.css");
@@ -147,7 +162,7 @@ function generateProject(projectName) {
   const template = fs.readFileSync(TEMPLATE_PATH, "utf8");
   const data = readJson(contentPath);
 
-  const html = renderPage(data, template);
+  const html = renderPage(data, template, { siteJsPath });
 
   fs.writeFileSync(outputPath, html, "utf8");
   console.log(`✔ Generated: ${projectName}/index.html`);

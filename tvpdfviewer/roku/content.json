@@ -55,7 +55,7 @@
     "storeButtons": [
       {
         "type": "roku",
-        "label": "Get TV PDF Viewer on ROKU",
+        "label": "Get TV PDF Viewer on Roku",
         "url": "https://my.roku.com/account/add/tvpdfviewer",
         "style": "primary"
       }
@@ -447,7 +447,7 @@
       "buttons": [
         {
           "type": "roku",
-          "label": "Get TV PDF Viewer on ROKU",
+          "label": "Get TV PDF Viewer on Roku",
           "url": "https://my.roku.com/account/add/tvpdfviewer",
           "style": "primary"
         }

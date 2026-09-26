@@ -7,7 +7,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "These Terms & Conditions apply to the TV PDF Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local-media utility for browsing and viewing supported content from connected USB storage."
+          "text": "These Terms & Conditions apply to the TV PDF Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local PDF-viewing utility for reading PDF documents on a TV through a same-Wi-Fi browser connection."
         }
       ]
     },
@@ -35,14 +35,23 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application is intended to help you browse and open supported media files from USB storage that you connect to your Roku device. You are responsible for the content you access through the Application and for making sure you have the right to view, use, or play that content."
+          "text": "The Application is intended to help you view PDF documents on your TV. You connect a phone, tablet, or computer browser on the same Wi-Fi network, choose PDF files in that browser, and the browser sends document metadata, thumbnails, rendered page images, and rendered zoomed page regions to the Roku device for display."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "You are responsible for the PDF files you choose to open and for making sure you have the right to view, use, display, or search those documents."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Local Media Responsibility"
+      "text": "Document Responsibility"
     },
     {
       "type": "paragraph",
@@ -59,19 +68,25 @@
         [
           {
             "type": "text",
-            "text": "Any media files, folders, or metadata stored on your USB device"
+            "text": "Any PDF files, filenames, metadata, document text, or rendered page images you choose to use with the Application"
           }
         ],
         [
           {
             "type": "text",
-            "text": "The safety and condition of your USB storage device"
+            "text": "Keeping your phone, tablet, computer, Roku device, and Wi-Fi network secure"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Making sure your Roku device and connected storage are used in accordance with applicable laws and rights held by content owners"
+            "text": "Making sure your use of the Application and documents complies with applicable laws and rights held by content owners"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Entering passwords only for PDFs that you are authorized to access"
           }
         ]
       ]
@@ -81,7 +96,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider does not claim ownership of the media files you access through the Application."
+          "text": "The Service Provider does not claim ownership of the PDF files or document content you access through the Application."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Local Network and Browser Requirements"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application depends on a local Wi-Fi connection between your Roku device and a browser on your phone, tablet, or computer. The quality and availability of the experience may depend on your network, browser capabilities, device performance, PDF size, PDF complexity, and Roku device resources."
         }
       ]
     },
@@ -95,7 +124,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, and media formats."
+          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, browsers, PDF.js behavior, Roku platform requirements, and PDF viewing features."
         }
       ]
     },
@@ -104,7 +133,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider does not guarantee that every file, codec, storage device, or media format will be supported."
+          "text": "The Service Provider does not guarantee that every PDF file, PDF feature, password-protected file, form, font, image, browser, device, network, or document size will be supported."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Subscriptions and Page Limits"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application may offer subscription features through the Roku platform. Free use may be limited, including by page limits per PDF or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms."
         }
       ]
     },
@@ -148,7 +191,19 @@
         [
           {
             "type": "text",
-            "text": "Attempt to interfere with the operation of the Application or the Roku platform"
+            "text": "Use the Application to view, copy, display, or search documents that you are not authorized to access"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Attempt to interfere with the operation of the Application, the local pairing session, the local server, or the Roku platform"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Attempt to bypass subscription limits, entitlement checks, page limits, security features, or local session protections"
           }
         ],
         [
@@ -183,7 +238,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, or device/storage issues arising from your use of the Application."
+          "text": "To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of document access, document rendering issues, network issues, device issues, subscription availability, or temporary cache behavior arising from your use of the Application."
         }
       ]
     },
@@ -211,7 +266,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "These Terms & Conditions are effective as of 2026-06-16."
+          "text": "These Terms & Conditions are effective as of 2026-09-26."
         }
       ]
     },

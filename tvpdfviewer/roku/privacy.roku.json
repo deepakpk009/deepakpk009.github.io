@@ -7,7 +7,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "This Privacy Policy applies to the TV PDF Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local-media utility for browsing and viewing content from connected USB storage."
+          "text": "This Privacy Policy applies to the TV PDF Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local PDF-viewing utility for reading PDF documents on a TV through a same-Wi-Fi browser connection."
         }
       ]
     },
@@ -21,7 +21,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application is designed to work with media that you choose to access from a USB storage device connected to your Roku device. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
+          "text": "The Application is designed so that PDF files stay on your phone, tablet, or computer browser. Your Roku device receives document metadata, thumbnails, rendered page images, and rendered zoomed page regions over your local Wi-Fi network so the PDF can be viewed on your TV. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
         }
       ]
     },
@@ -35,7 +35,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "To browse and display media from a connected USB storage device, the Application may access information such as:"
+          "text": "To provide the PDF viewing experience, the Application may handle information such as:"
         }
       ]
     },
@@ -45,25 +45,55 @@
         [
           {
             "type": "text",
-            "text": "Folder names"
+            "text": "PDF file names"
           }
         ],
         [
           {
             "type": "text",
-            "text": "File names"
+            "text": "PDF page counts"
           }
         ],
         [
           {
             "type": "text",
-            "text": "File paths on the connected USB storage device"
+            "text": "PDF file sizes"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Basic media details needed to display or open supported files, such as file type"
+            "text": "PDF titles or other basic document metadata when available"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Browser connection status and session identifiers used for local pairing"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Rendered JPEG images of PDF pages, thumbnails, and zoomed viewports"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Viewer preferences for the current session, such as zoom, fit mode, rotation, pan position, night mode, and background color"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Temporary render cache information, such as temporary file count and temporary storage used"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Subscription or entitlement status provided through the Roku platform"
           }
         ]
       ]
@@ -73,7 +103,44 @@
       "spans": [
         {
           "type": "text",
-          "text": "This information is used only to provide the local media-browsing and playback experience inside the Application."
+          "text": "This information is used to provide document selection, viewing, search, navigation, temporary caching, subscription access control, support, and related in-app features."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Local PDF Processing"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "PDF files are selected in your browser on a phone, tablet, or computer connected to the same Wi-Fi network as your Roku device. The browser uses bundled PDF.js assets served by the Roku device to parse and render the PDFs locally in the browser. Full PDF files are not uploaded to an external Service Provider server by the Application."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Roku device receives only the information needed to display the document on your TV, such as metadata, thumbnails, rendered page images, and rendered zoomed page regions. Password-protected PDFs are unlocked in the browser. The Roku device does not receive, store, or log your PDF password."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Local Network Connection"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application displays a local browser URL and QR code so your phone, tablet, or computer can connect to the Roku device on the same Wi-Fi network. A per-run session token is used to help pair the browser session with the Roku app. The local connection may exchange status, command, render, upload, reconnect, and error messages needed for the viewing session."
         }
       ]
     },
@@ -87,21 +154,58 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Roku version of the Application does not use the Application to track your activity across apps or websites. The Service Provider does not use the Application to collect analytics events, advertising identifiers, precise location information, or behavioral tracking information for the purpose of profiling or targeted advertising."
+          "text": "The Roku version of the Application does not use the Application to track your activity across apps or websites. The Service Provider does not use the Application to collect analytics events, advertising identifiers, precise location information, or behavioral tracking information for profiling or targeted advertising."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "USB Media and Local Processing"
+      "text": "Temporary Storage and Retention"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "Media discovery in the Application is intended to happen locally on your Roku device while you browse content from a connected USB storage device. The Service Provider does not use the Application to upload your USB media library to external analytics platforms or marketing systems."
+          "text": "The Application may temporarily cache rendered pages, thumbnails, and zoomed viewport images on the Roku device to improve navigation performance. The Application includes a Clear Temporary Storage action for render cache files. Temporary cached render files may also be pruned or cleared during normal app operation, when a local browser session ends, or when the Roku app restarts."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your PDFs to a Service Provider cloud service, or keep a remote analytics history of your document viewing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Search and Document Text"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "When you use PDF search, text extraction and matching are performed in the connected browser using PDF.js. Search queries, search results, and snippets may be exchanged locally between your browser and Roku device to show results on your TV. These search features are intended to operate over the local Wi-Fi connection for the current viewing session."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Subscriptions and Purchases"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application may offer subscription features or page access limits. Subscription purchases, renewals, cancellations, and entitlement recovery are handled through the Roku platform. The Service Provider may receive or use entitlement status made available by Roku to enable subscription-related features inside the Application. Payment details are handled by Roku and are subject to Roku's policies and terms."
         }
       ]
     },
@@ -124,21 +228,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application runs on the Roku platform. Your use of the Roku platform and Roku device may also be governed by Roku's own policies and terms."
-        }
-      ]
-    },
-    {
-      "type": "heading",
-      "level": 2,
-      "text": "Data Retention"
-    },
-    {
-      "type": "paragraph",
-      "spans": [
-        {
-          "type": "text",
-          "text": "The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile or a remote analytics history for your use of local USB media. If future versions introduce account, sync, or online features, this Privacy Policy will be updated before those features are offered."
+          "text": "The Application runs on the Roku platform and uses Roku platform features, including Roku billing or entitlement features where applicable. Your use of the Roku platform and Roku device may also be governed by Roku's own policies and terms."
         }
       ]
     },
@@ -166,7 +256,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. Because the Application is designed around local USB browsing, you should use only storage devices and media files that you trust."
+          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. Because the Application relies on a local Wi-Fi browser connection, you should use the Application only on networks and with PDF files that you trust."
         }
       ]
     },
@@ -194,7 +284,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "This Privacy Policy is effective as of 2026-06-16."
+          "text": "This Privacy Policy is effective as of 2026-09-26."
         }
       ]
     },

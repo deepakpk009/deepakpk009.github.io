@@ -5,8 +5,8 @@
   "start_url": "/tvpdfviewer/roku/",
   "scope": "/tvpdfviewer/roku/",
   "display": "standalone",
-  "background_color": "#081426",
-  "theme_color": "#2F80ED",
+  "background_color": "#121212",
+  "theme_color": "#4CAF50",
   "icons": [
     {
       "src": "images/app_icon.png",

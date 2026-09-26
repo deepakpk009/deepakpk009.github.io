@@ -1,36 +1,33 @@
 Privacy Policy
 
-This Privacy Policy applies to the TV PDF Viewer application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local PDF-viewing utility for reading PDF documents on a TV through a same-Wi-Fi browser connection.
+This Privacy Policy applies to the TV PDF Viewer application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local PDF-viewing utility for reading PDF documents on a TV.
 
 Summary
 
-The Application is designed so that PDF files stay on your phone, tablet, or computer browser. Your Roku device receives document metadata, thumbnails, rendered page images, and rendered zoomed page regions over your local Wi-Fi network so the PDF can be viewed on your TV. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application.
+TV PDF Viewer is designed for local viewing between your own devices. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application.
 
 Information the Application Handles
 
 To provide the PDF viewing experience, the Application may handle information such as:
 
-- PDF file names
-- PDF page counts
-- PDF file sizes
-- PDF titles or other basic document metadata when available
-- Browser connection status and session identifiers used for local pairing
-- Rendered JPEG images of PDF pages, thumbnails, and zoomed viewports
-- Viewer preferences for the current session, such as zoom, fit mode, rotation, pan position, night mode, and background color
-- Temporary render cache information, such as temporary file count and temporary storage used
+- PDF files you choose to open with the Application
+- Basic document details, such as file names, file sizes, page counts, and titles when available
+- Reading preferences, such as zoom, fit mode, rotation, page position, night mode, and background color
+- Search terms and search results when you use the in-app PDF search feature
+- Temporary app data used to support viewing and navigation
 - Subscription or entitlement status provided through the Roku platform
 
-This information is used to provide document selection, viewing, search, navigation, temporary caching, subscription access control, support, and related in-app features.
+This information is used to provide document selection, viewing, search, navigation, subscription access control, support, and related in-app features.
 
-Local PDF Processing
+Local PDF Viewing
 
-PDF files are selected in your browser on a phone, tablet, or computer connected to the same Wi-Fi network as your Roku device. The browser uses bundled PDF.js assets served by the Roku device to parse and render the PDFs locally in the browser. Full PDF files are not uploaded to an external Service Provider server by the Application.
+PDF files are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your PDF files to a Service Provider cloud storage account.
 
-The Roku device receives only the information needed to display the document on your TV, such as metadata, thumbnails, rendered page images, and rendered zoomed page regions. Password-protected PDFs are unlocked in the browser. The Roku device does not receive, store, or log your PDF password.
+If a PDF requires a password, you enter the password on the device you are using to select the PDF. TV PDF Viewer does not save your PDF password.
 
-Local Network Connection
+Local Network Use
 
-The Application displays a local browser URL and QR code so your phone, tablet, or computer can connect to the Roku device on the same Wi-Fi network. A per-run session token is used to help pair the browser session with the Roku app. The local connection may exchange status, command, render, upload, reconnect, and error messages needed for the viewing session.
+The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during PDF viewing. You should use the Application only on networks and with PDF files that you trust.
 
 Information the Application Does Not Collect for Tracking
 
@@ -38,13 +35,13 @@ The Roku version of the Application does not use the Application to track your a
 
 Temporary Storage and Retention
 
-The Application may temporarily cache rendered pages, thumbnails, and zoomed viewport images on the Roku device to improve navigation performance. The Application includes a Clear Temporary Storage action for render cache files. Temporary cached render files may also be pruned or cleared during normal app operation, when a local browser session ends, or when the Roku app restarts.
+The Application may keep temporary app data on the Roku device to support viewing, navigation, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation or when the Roku app restarts.
 
 The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your PDFs to a Service Provider cloud service, or keep a remote analytics history of your document viewing.
 
 Search and Document Text
 
-When you use PDF search, text extraction and matching are performed in the connected browser using PDF.js. Search queries, search results, and snippets may be exchanged locally between your browser and Roku device to show results on your TV. These search features are intended to operate over the local Wi-Fi connection for the current viewing session.
+When you use PDF search, the Application may use your search terms, document text, and matching results to show search results on your TV. These search features are intended for your current use of the Application.
 
 Subscriptions and Purchases
 
@@ -62,7 +59,7 @@ The Service Provider does not knowingly use the Application to solicit personal 
 
 Security
 
-The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. Because the Application relies on a local Wi-Fi browser connection, you should use the Application only on networks and with PDF files that you trust.
+The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and PDF files secure.
 
 Changes to This Privacy Policy
 

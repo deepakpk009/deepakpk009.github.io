@@ -7,7 +7,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "These Terms & Conditions apply to the TV PDF Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local PDF-viewing utility for reading PDF documents on a TV through a same-Wi-Fi browser connection."
+          "text": "These Terms & Conditions apply to the TV PDF Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local PDF-viewing utility for reading PDF documents on a TV."
         }
       ]
     },
@@ -35,7 +35,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application is intended to help you view PDF documents on your TV. You connect a phone, tablet, or computer browser on the same Wi-Fi network, choose PDF files in that browser, and the browser sends document metadata, thumbnails, rendered page images, and rendered zoomed page regions to the Roku device for display."
+          "text": "The Application is intended to help you view PDF documents on your TV. To use it, you select PDF files from a phone, tablet, or computer connected to the same local network as your Roku device."
         }
       ]
     },
@@ -68,7 +68,7 @@
         [
           {
             "type": "text",
-            "text": "Any PDF files, filenames, metadata, document text, or rendered page images you choose to use with the Application"
+            "text": "Any PDF files, filenames, document text, passwords, or other document content you choose to use with the Application"
           }
         ],
         [
@@ -103,14 +103,14 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Local Network and Browser Requirements"
+      "text": "Local Network and Device Requirements"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "The Application depends on a local Wi-Fi connection between your Roku device and a browser on your phone, tablet, or computer. The quality and availability of the experience may depend on your network, browser capabilities, device performance, PDF size, PDF complexity, and Roku device resources."
+          "text": "The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select PDFs. The quality and availability of the experience may depend on your network, browser capabilities, device performance, PDF size, PDF complexity, and Roku device resources."
         }
       ]
     },
@@ -124,7 +124,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, browsers, PDF.js behavior, Roku platform requirements, and PDF viewing features."
+          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, browsers, Roku platform requirements, and PDF viewing features."
         }
       ]
     },
@@ -197,13 +197,13 @@
         [
           {
             "type": "text",
-            "text": "Attempt to interfere with the operation of the Application, the local pairing session, the local server, or the Roku platform"
+            "text": "Attempt to interfere with the operation of the Application, Roku platform, or related access controls"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Attempt to bypass subscription limits, entitlement checks, page limits, security features, or local session protections"
+            "text": "Attempt to bypass subscription limits, entitlement checks, page limits, or security features"
           }
         ],
         [
@@ -238,7 +238,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of document access, document rendering issues, network issues, device issues, subscription availability, or temporary cache behavior arising from your use of the Application."
+          "text": "To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of document access, document display issues, network issues, device issues, subscription availability, or temporary app data behavior arising from your use of the Application."
         }
       ]
     },

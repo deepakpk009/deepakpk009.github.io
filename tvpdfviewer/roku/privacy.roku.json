@@ -7,7 +7,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "This Privacy Policy applies to the TV PDF Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local PDF-viewing utility for reading PDF documents on a TV through a same-Wi-Fi browser connection."
+          "text": "This Privacy Policy applies to the TV PDF Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local PDF-viewing utility for reading PDF documents on a TV."
         }
       ]
     },
@@ -21,7 +21,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application is designed so that PDF files stay on your phone, tablet, or computer browser. Your Roku device receives document metadata, thumbnails, rendered page images, and rendered zoomed page regions over your local Wi-Fi network so the PDF can be viewed on your TV. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
+          "text": "TV PDF Viewer is designed for local viewing between your own devices. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
         }
       ]
     },
@@ -45,49 +45,31 @@
         [
           {
             "type": "text",
-            "text": "PDF file names"
+            "text": "PDF files you choose to open with the Application"
           }
         ],
         [
           {
             "type": "text",
-            "text": "PDF page counts"
+            "text": "Basic document details, such as file names, file sizes, page counts, and titles when available"
           }
         ],
         [
           {
             "type": "text",
-            "text": "PDF file sizes"
+            "text": "Reading preferences, such as zoom, fit mode, rotation, page position, night mode, and background color"
           }
         ],
         [
           {
             "type": "text",
-            "text": "PDF titles or other basic document metadata when available"
+            "text": "Search terms and search results when you use the in-app PDF search feature"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Browser connection status and session identifiers used for local pairing"
-          }
-        ],
-        [
-          {
-            "type": "text",
-            "text": "Rendered JPEG images of PDF pages, thumbnails, and zoomed viewports"
-          }
-        ],
-        [
-          {
-            "type": "text",
-            "text": "Viewer preferences for the current session, such as zoom, fit mode, rotation, pan position, night mode, and background color"
-          }
-        ],
-        [
-          {
-            "type": "text",
-            "text": "Temporary render cache information, such as temporary file count and temporary storage used"
+            "text": "Temporary app data used to support viewing and navigation"
           }
         ],
         [
@@ -103,21 +85,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "This information is used to provide document selection, viewing, search, navigation, temporary caching, subscription access control, support, and related in-app features."
+          "text": "This information is used to provide document selection, viewing, search, navigation, subscription access control, support, and related in-app features."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Local PDF Processing"
+      "text": "Local PDF Viewing"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "PDF files are selected in your browser on a phone, tablet, or computer connected to the same Wi-Fi network as your Roku device. The browser uses bundled PDF.js assets served by the Roku device to parse and render the PDFs locally in the browser. Full PDF files are not uploaded to an external Service Provider server by the Application."
+          "text": "PDF files are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your PDF files to a Service Provider cloud storage account."
         }
       ]
     },
@@ -126,21 +108,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Roku device receives only the information needed to display the document on your TV, such as metadata, thumbnails, rendered page images, and rendered zoomed page regions. Password-protected PDFs are unlocked in the browser. The Roku device does not receive, store, or log your PDF password."
+          "text": "If a PDF requires a password, you enter the password on the device you are using to select the PDF. TV PDF Viewer does not save your PDF password."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Local Network Connection"
+      "text": "Local Network Use"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "The Application displays a local browser URL and QR code so your phone, tablet, or computer can connect to the Roku device on the same Wi-Fi network. A per-run session token is used to help pair the browser session with the Roku app. The local connection may exchange status, command, render, upload, reconnect, and error messages needed for the viewing session."
+          "text": "The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during PDF viewing. You should use the Application only on networks and with PDF files that you trust."
         }
       ]
     },
@@ -168,7 +150,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application may temporarily cache rendered pages, thumbnails, and zoomed viewport images on the Roku device to improve navigation performance. The Application includes a Clear Temporary Storage action for render cache files. Temporary cached render files may also be pruned or cleared during normal app operation, when a local browser session ends, or when the Roku app restarts."
+          "text": "The Application may keep temporary app data on the Roku device to support viewing, navigation, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation or when the Roku app restarts."
         }
       ]
     },
@@ -191,7 +173,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "When you use PDF search, text extraction and matching are performed in the connected browser using PDF.js. Search queries, search results, and snippets may be exchanged locally between your browser and Roku device to show results on your TV. These search features are intended to operate over the local Wi-Fi connection for the current viewing session."
+          "text": "When you use PDF search, the Application may use your search terms, document text, and matching results to show search results on your TV. These search features are intended for your current use of the Application."
         }
       ]
     },
@@ -256,7 +238,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. Because the Application relies on a local Wi-Fi browser connection, you should use the Application only on networks and with PDF files that you trust."
+          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and PDF files secure."
         }
       ]
     },

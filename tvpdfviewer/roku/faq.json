@@ -1,214 +1,206 @@
 [
   {
     "title": "What is TV PDF Viewer for Roku?",
-    "content": "TV PDF Viewer lets you read PDF documents on your TV using your Roku device. You open a local browser page from your phone, tablet, or computer, choose PDF files there, and the Roku app displays rendered PDF pages on the TV."
+    "content": "TV PDF Viewer lets you read PDF documents on your TV using your Roku device. Use your phone, tablet, or computer to choose PDFs, then view them comfortably on the big screen."
   },
   {
-    "title": "How does TV PDF Viewer work?",
-    "content": "The app creates a local connection between your Roku device and a browser on the same Wi-Fi network. The browser reads and renders your PDFs, then sends document details, thumbnails, and page images to Roku for viewing."
+    "title": "How do I start using TV PDF Viewer?",
+    "content": "Open TV PDF Viewer on Roku, go to Connect, and follow the QR code or web address shown on your TV. From your phone, tablet, or computer, choose the PDF files you want to view."
   },
   {
-    "title": "Does Roku read the PDF files directly?",
-    "content": "No. Roku does not parse the PDF files directly. PDF parsing and rendering happen in your browser using bundled PDF.js assets, and Roku receives rendered JPEG page images for display."
+    "title": "What devices can I use to add PDFs?",
+    "content": "You can use a phone, tablet, laptop, or desktop computer with a modern web browser."
   },
   {
-    "title": "Do I need a phone, tablet, or computer?",
-    "content": "Yes. Use a phone, tablet, or computer browser to select the PDF files you want to view. The Roku app then shows those documents in the TV-friendly Document Library and full-screen viewer."
+    "title": "Do my devices need to be on the same Wi-Fi network?",
+    "content": "Yes. Your Roku device and the phone, tablet, or computer used to choose PDFs should be connected to the same local Wi-Fi network."
   },
   {
-    "title": "Do my Roku device and browser device need to be on the same Wi-Fi?",
-    "content": "Yes. The browser device and Roku device must be connected to the same local network so the browser can reach the local URL shown on the TV."
-  },
-  {
-    "title": "How do I connect my browser to the Roku app?",
-    "content": "Open the Connect screen in TV PDF Viewer, then scan the QR code or type the short local URL shown on your TV into a browser on your phone, tablet, or computer."
-  },
-  {
-    "title": "Why does the browser page use a local Roku address?",
-    "content": "The Roku app serves the upload page directly from the Roku device. This keeps the pairing flow local and lets the visible QR/manual URL stay short while the app manages the current session in the background."
-  },
-  {
-    "title": "What can I do if the browser cannot connect?",
-    "content": "Make sure both devices are on the same Wi-Fi network, the Roku app is open on the Connect screen, and your network allows local devices to communicate. If the session stopped or expired, use the retry or reconnect option on the Connect screen."
+    "title": "Do I need to install another app on my phone or computer?",
+    "content": "No. You only need a web browser on your phone, tablet, or computer."
   },
   {
     "title": "Can I choose more than one PDF?",
-    "content": "Yes. The browser page supports choosing multiple PDF files. Selected PDFs appear in the Roku Document Library so you can pick which one to read."
+    "content": "Yes. You can select multiple PDF files and choose which one to open from the Document Library on Roku."
   },
   {
-    "title": "Can I drag and drop PDF files into the browser page?",
-    "content": "Yes. On browsers that support it, you can drag and drop PDF files onto the browser page. You can also use the file picker."
+    "title": "Can I drag and drop PDF files?",
+    "content": "Yes, on browsers that support drag and drop. You can also use the file picker."
   },
   {
     "title": "Can I choose a folder of PDFs?",
-    "content": "Yes, where your browser supports folder selection. The browser filters the selected files to PDFs and reports files that were skipped."
+    "content": "Some browsers support selecting a folder. When available, you can choose a folder and TV PDF Viewer will use the PDF files from that selection."
   },
   {
-    "title": "What happens if I select the same PDF twice?",
-    "content": "The browser detects duplicate PDFs and ignores duplicates instead of adding the same document repeatedly."
+    "title": "What happens if I select the same PDF more than once?",
+    "content": "Duplicate selections are ignored so the same PDF is not added repeatedly."
   },
   {
-    "title": "Can I remove a PDF after selecting it?",
-    "content": "Yes. Remove the PDF from the browser page. The Roku Document Library updates automatically, and if you remove the final PDF from that browser client, the Roku library is cleared for that client."
-  },
-  {
-    "title": "Can multiple browsers or devices connect at the same time?",
-    "content": "Yes. Documents from multiple connected browser clients can appear together in the Roku Document Library. If one browser refreshes, unloads, or clears its selection, only that browser client's documents are removed."
-  },
-  {
-    "title": "Are my PDF files uploaded to a cloud server?",
-    "content": "No. PDF content stays local to your browser and Roku device. The browser holds the PDF files in memory and sends Roku rendered JPEG images for pages, thumbnails, and zoomed viewports."
-  },
-  {
-    "title": "Does Roku store my full PDF files?",
-    "content": "No. Roku does not persist full PDF files. It stores temporary rendered images and thumbnails used for viewing and performance."
-  },
-  {
-    "title": "Are password-protected PDFs supported?",
-    "content": "Yes. Password-protected PDFs can be unlocked in the browser. Roku does not receive, store, or log the PDF password."
-  },
-  {
-    "title": "What happens if I enter the wrong PDF password?",
-    "content": "The browser asks you to try again. If password entry is cancelled, the unusable document is not sent to Roku."
-  },
-  {
-    "title": "What types of PDFs can I view?",
-    "content": "The app is designed for many common PDF types, including portrait, landscape, A4, Letter, Legal, text-only, image-heavy, fillable-form, small, and larger PDFs, as long as the browser can render them with PDF.js."
-  },
-  {
-    "title": "What happens with invalid or corrupted files?",
-    "content": "Invalid, corrupted, unsupported, or non-PDF files are handled in the browser with concise recovery messages. They are not added as usable documents in Roku."
+    "title": "Can I remove a selected PDF?",
+    "content": "Yes. Remove the PDF from the browser page and the Roku Document Library will update."
   },
   {
     "title": "What is the Document Library?",
-    "content": "The Document Library is the Roku screen that shows your selected PDFs in a TV-friendly grid with first-page thumbnails and cleanly truncated file names."
+    "content": "The Document Library shows the PDFs you selected in a TV-friendly grid. Use your Roku remote to choose a document and open it."
   },
   {
     "title": "Why is the Document Library empty?",
-    "content": "The library is empty when no browser has selected PDFs for the current session. Go to Connect, open the local browser page, and choose one or more PDF files."
+    "content": "The library is empty when no PDFs have been selected. Go to Connect, open the web address shown on your TV, and choose one or more PDF files."
   },
   {
     "title": "How do I open a PDF from the library?",
-    "content": "Use the Roku remote D-pad to focus a document, then press OK to open it in the full-screen PDF viewer."
+    "content": "Use the Roku remote D-pad to highlight a PDF, then press OK to open it."
   },
   {
-    "title": "Will one selected PDF open automatically?",
-    "content": "When exactly one PDF is selected, the app can open the full-screen viewer automatically once the first page is ready. When multiple PDFs are selected, the app stays in the library so you can choose a document."
+    "title": "Will a single selected PDF open automatically?",
+    "content": "When only one PDF is selected, the app may open it automatically once it is ready. When multiple PDFs are selected, you can choose one from the Document Library."
   },
   {
     "title": "How do I move between pages?",
-    "content": "In the full-screen viewer, press Left or Right to move between pages when the page is not horizontally pannable. Press Back to close the reader and return to the Document Library."
+    "content": "Use Left and Right on the Roku remote to move between pages. Press Back to leave the viewer and return to the Document Library."
   },
   {
-    "title": "How do I open viewer options?",
-    "content": "Press OK or Options in the full-screen viewer to open the PDF options overlay. From there you can use zoom, fit mode, rotate, background, night mode, search, thumbnails, go to page, and close controls."
+    "title": "How do I open reading options?",
+    "content": "Press OK or Options while viewing a PDF to open the reading options menu."
   },
   {
-    "title": "Can I zoom in and pan around a page?",
-    "content": "Yes. Zoom In and Zoom Out change the page scale. When zoomed content overflows the screen, use the D-pad to pan. Long-press panning repeats movement while the key is held."
+    "title": "What reading options are available?",
+    "content": "Reading options can include zoom, fit mode, rotate, background color, night mode, search, thumbnails, go to page, and close."
   },
   {
-    "title": "Why do zoomed pages become sharper after a moment?",
-    "content": "When a zoomed or fit-width view needs more detail, Roku asks the browser to render a high-resolution image of the visible page area. The current page stays visible while the sharper viewport image loads."
+    "title": "Can I zoom in and out?",
+    "content": "Yes. Use Zoom In and Zoom Out from the reading options menu."
   },
   {
-    "title": "Can I rotate pages?",
-    "content": "Yes. Use Rotate from the viewer options overlay to turn the displayed page clockwise in 90-degree increments."
+    "title": "Can I pan around a zoomed page?",
+    "content": "Yes. When a page is zoomed in, use the Roku remote D-pad to move around the page."
   },
   {
-    "title": "Can I change how the page fits the screen?",
-    "content": "Yes. Use Fit Mode from the viewer options overlay to switch fit behavior for different page shapes and reading preferences."
+    "title": "Can I rotate a PDF page?",
+    "content": "Yes. Use Rotate from the reading options menu to turn the page."
   },
   {
-    "title": "Does the app remember my reading position and view settings?",
-    "content": "Yes. For the current session, the viewer saves per-document reading state such as page, zoom, fit mode, rotation, pan offset, night mode, and selected background color."
+    "title": "Can I change how the page fits the TV screen?",
+    "content": "Yes. Use Fit Mode from the reading options menu to adjust how the page is displayed on your TV."
   },
   {
-    "title": "Can I jump to a specific page number?",
-    "content": "Yes. Open Go to Page from the viewer options overlay, enter a page number with the TV-friendly numeric keypad, and submit it to jump to that page."
+    "title": "Can I jump to a specific page?",
+    "content": "Yes. Use Go to Page from the reading options menu, enter a page number, and submit it."
   },
   {
     "title": "Can I browse page thumbnails?",
-    "content": "Yes. Open Thumbnails from the viewer options overlay. The thumbnail overlay lets you move through nearby pages, select a page with OK, or press Back to cancel without changing pages."
+    "content": "Yes. Use Thumbnails from the reading options menu to browse nearby pages and jump to the page you want."
   },
   {
     "title": "Can I search inside a PDF?",
-    "content": "Yes. Open Search from the viewer options overlay and enter a search term using Roku's keyboard dialog. The browser performs text extraction and matching, and results appear on Roku with page numbers and snippets."
+    "content": "Yes. Use Search from the reading options menu, enter the text you want to find, and choose a result to jump to that page."
   },
   {
     "title": "Why does search take time in large PDFs?",
-    "content": "Search runs in page-range batches so large documents do not need to be searched all at once. The results overlay shows loading or done status and the number of results found."
+    "content": "Large PDFs can take longer to search. The app shows search progress and results as they become available."
   },
   {
     "title": "What is Night Mode?",
-    "content": "Night Mode inverts page rendering for easier reading in a dark room. It affects normal page renders and high-resolution zoom viewport renders."
+    "content": "Night Mode changes the page appearance for easier reading in a dark room."
   },
   {
     "title": "Can I change the page background color?",
-    "content": "Yes. The background color overlay provides light, neutral, tinted, and dark page background choices. The current page is re-rendered with the selected background."
+    "content": "Yes. Use Background from the reading options menu to choose a different page background color."
   },
   {
-    "title": "What happens if the browser disconnects temporarily?",
-    "content": "The Roku viewer keeps the latest visible page during short browser or network disconnects. If the browser reconnects within the grace period, page navigation can continue without selecting the PDF again."
+    "title": "Does the app remember my reading settings?",
+    "content": "While you are using the app, it can remember reading preferences such as page position, zoom, rotation, fit mode, background color, and night mode."
   },
   {
-    "title": "What happens if the browser does not reconnect?",
-    "content": "If the reconnect grace period expires, documents from the unavailable browser client are cleared and stale queued work is removed. You can reconnect from the Connect screen and select the PDFs again."
+    "title": "Are password-protected PDFs supported?",
+    "content": "Yes. If a PDF requires a password, enter it on the browser device when prompted."
   },
   {
-    "title": "Can the browser recover if the Roku app restarts?",
-    "content": "In supported cases, the browser can refresh the session, adopt the new session token, and re-sync PDFs that are still in browser memory."
+    "title": "Does TV PDF Viewer save my PDF password?",
+    "content": "No. PDF passwords are not saved by TV PDF Viewer."
   },
   {
-    "title": "What temporary files does the app create?",
-    "content": "The app creates temporary rendered page images, viewport images, and thumbnails so recently viewed pages can appear faster. These are render cache files, not full PDF files."
+    "title": "What kinds of PDFs are supported?",
+    "content": "TV PDF Viewer is designed to work with many common PDF documents, including portrait, landscape, text-based, image-heavy, and form-style PDFs."
   },
   {
-    "title": "How do I clear temporary storage?",
-    "content": "Open Settings and choose Clear Temporary Storage. Settings also shows the temporary render file count and temporary storage used."
+    "title": "What should I do if a PDF does not open?",
+    "content": "Make sure the file is a valid PDF and try selecting it again. If the file is damaged, unsupported, or requires a password that was not entered correctly, it may not open."
   },
   {
-    "title": "What does Clear Temporary Storage remove?",
-    "content": "Clear Temporary Storage removes render cache files for normal pages and zoom viewports. It preserves Library document thumbnails and page-thumbnail navigation images."
+    "title": "Can I view PDFs with long file names?",
+    "content": "Yes. Long PDF names are shortened on the TV screen so the library stays easy to read."
   },
   {
-    "title": "What information is shown in Settings?",
-    "content": "Settings shows screen resolution, screen ratio, temporary render file count, temporary storage used, and the Clear Temporary Storage action."
+    "title": "What happens if my phone or computer disconnects?",
+    "content": "If the connection is interrupted, reconnect from the Connect screen and select your PDFs again if needed."
   },
   {
-    "title": "What are the free access limits?",
-    "content": "Free users may be limited to the first configured number of pages per PDF. When the free page limit is reached, the viewer shows a Page Limit Reached dialog instead of requesting the locked page."
+    "title": "Why can't I connect from my browser?",
+    "content": "Check that your Roku and browser device are on the same Wi-Fi network, the Roku app is open, and the web address was entered exactly as shown on the TV."
   },
   {
-    "title": "What does a subscription unlock?",
-    "content": "A Roku subscription unlocks continued viewing beyond the configured free page limit, so subscribed users can keep reading later pages without the page-limit popup."
+    "title": "Can I use TV PDF Viewer away from home?",
+    "content": "TV PDF Viewer is designed for local viewing when your Roku and browser device are on the same network."
   },
   {
-    "title": "How do I subscribe?",
-    "content": "Choose Subscribe from the app menu or from the Page Limit Reached dialog. The app uses Roku's Channel Store purchase flow."
+    "title": "Are my PDFs uploaded to a cloud service?",
+    "content": "No. TV PDF Viewer is designed for local viewing between your own devices. It does not provide cloud PDF storage or upload your PDF files to a cloud document account."
   },
   {
-    "title": "How do I manage my subscription?",
-    "content": "When a subscription is active, the app menu can show Manage Subscription. You can also manage eligible Roku subscriptions from your Roku account or Roku device subscription settings."
+    "title": "Does TV PDF Viewer store my full PDF files on Roku?",
+    "content": "No. TV PDF Viewer is not designed to permanently store your full PDF files on the Roku device."
   },
   {
     "title": "Does the app require an internet connection?",
-    "content": "PDF viewing uses your local network between the browser and Roku. Internet access may still be needed for Roku subscription purchase and validation, remote Help/FAQ content, Privacy Policy, Terms of Use, support links, or feedback links."
+    "content": "PDF viewing is designed to work over your local network. Internet access may be needed for Roku purchases, subscription validation, Help/FAQ, Privacy Policy, Terms of Use, support links, or feedback links."
   },
   {
-    "title": "Can I use TV PDF Viewer as a cloud document service?",
-    "content": "No. TV PDF Viewer is designed for local PDF viewing from your browser to your Roku device. It does not provide cloud document storage, cloud sync, or remote file hosting."
+    "title": "Can I use TV PDF Viewer as cloud storage?",
+    "content": "No. TV PDF Viewer is a local PDF viewing app for Roku. It is not a cloud storage, backup, or document management service."
+  },
+  {
+    "title": "What information is shown in Settings?",
+    "content": "Settings can show display information and temporary storage information, and it includes an option to clear temporary storage."
+  },
+  {
+    "title": "How do I clear temporary storage?",
+    "content": "Open Settings and choose Clear Temporary Storage."
+  },
+  {
+    "title": "Will clearing temporary storage delete my original PDFs?",
+    "content": "No. Clearing temporary storage only removes temporary app data on Roku. It does not delete the original PDF files from your phone, tablet, or computer."
+  },
+  {
+    "title": "What are the free access limits?",
+    "content": "Free users may have a page-viewing limit per PDF. If the limit is reached, the app will show a Page Limit Reached message."
+  },
+  {
+    "title": "What does a subscription unlock?",
+    "content": "A subscription unlocks continued viewing beyond the free page limit."
+  },
+  {
+    "title": "How do I subscribe?",
+    "content": "Choose Subscribe from the app menu or from the Page Limit Reached message. The purchase is handled through Roku."
+  },
+  {
+    "title": "How do I manage my subscription?",
+    "content": "Use Manage Subscription from the app when available, or manage your subscription through your Roku account or Roku device subscription settings."
   },
   {
     "title": "Where can I read the Privacy Policy and Terms of Use?",
-    "content": "Privacy Policy and Terms of Use are available from the app menu. These pages load the latest published legal content and may require an internet connection."
+    "content": "Privacy Policy and Terms of Use are available from the app menu."
   },
   {
-    "title": "Where can I get support or send feedback?",
-    "content": "Open Support & Feedback from the app menu. The page shows separate support and feedback cards with QR codes for the configured support and feedback URLs."
+    "title": "Where can I get support?",
+    "content": "Open Support & Feedback from the app menu and use the support option shown there."
+  },
+  {
+    "title": "Where can I send feedback or suggestions?",
+    "content": "Open Support & Feedback from the app menu and use the feedback option shown there."
   },
   {
     "title": "What information is shown on the About page?",
-    "content": "The About page shows the app icon, TV PDF Viewer app title, tagline, and app details."
+    "content": "The About page shows the TV PDF Viewer app name, icon, tagline, and app details."
   }
 ]

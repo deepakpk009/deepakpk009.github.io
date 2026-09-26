@@ -1,0 +1,22 @@
+{
+  "name": "TV PDF Viewer",
+  "short_name": "TV PDF Viewe",
+  "description": "TV PDF Viewer is a Roku app for reading PDF documents on your TV with simple pairing, a remote-friendly library, page navigation, zoom, search, and viewing controls.",
+  "start_url": "/tvpdfviewer/roku/",
+  "scope": "/tvpdfviewer/roku/",
+  "display": "standalone",
+  "background_color": "#081426",
+  "theme_color": "#2F80ED",
+  "icons": [
+    {
+      "src": "images/app_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

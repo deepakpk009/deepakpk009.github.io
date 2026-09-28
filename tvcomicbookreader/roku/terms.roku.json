@@ -1,0 +1,297 @@
+{
+  "id": "terms",
+  "title": "Terms & Conditions",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "These Terms & Conditions apply to the TV Comic Book Reader application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local PDF-viewing utility for reading comic books on a TV."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Acceptance of These Terms"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "By downloading, installing, or using the Application on a Roku device, you agree to these Terms & Conditions."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use of the Application"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application is intended to help you view comic books on your TV. To use it, you select PDF files from a phone, tablet, or computer connected to the same local network as your Roku device."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "You are responsible for the PDF files you choose to open and for making sure you have the right to view, use, display, or search those documents."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Document Responsibility"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "You are responsible for:"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "items": [
+        [
+          {
+            "type": "text",
+            "text": "Any PDF files, filenames, document text, passwords, or other document content you choose to use with the Application"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Keeping your phone, tablet, computer, Roku device, and Wi-Fi network secure"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Making sure your use of the Application and documents complies with applicable laws and rights held by content owners"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Entering passwords only for PDFs that you are authorized to access"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider does not claim ownership of the PDF files or document content you access through the Application."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Local Network and Device Requirements"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select PDFs. The quality and availability of the experience may depend on your network, browser capabilities, device performance, PDF size, PDF complexity, and Roku device resources."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Availability and Compatibility"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, browsers, Roku platform requirements, and PDF viewing features."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider does not guarantee that every PDF file, PDF feature, password-protected file, form, font, image, browser, device, network, or document size will be supported."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Subscriptions and Page Limits"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application may offer subscription features through the Roku platform. Free use may be limited, including by page limits per PDF or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "No Analytics or Google/Firebase Services in the Roku Version"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Roku version of the Application does not use Google Analytics, Firebase Analytics, Firebase Crashlytics, or Google Play Services."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Acceptable Use"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "You agree not to:"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "items": [
+        [
+          {
+            "type": "text",
+            "text": "Use the Application in a way that violates applicable law"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Use the Application to view, copy, display, or search documents that you are not authorized to access"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Attempt to interfere with the operation of the Application, Roku platform, or related access controls"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Attempt to bypass subscription limits, entitlement checks, page limits, or security features"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Copy, modify, reverse engineer, or create derivative versions of the Application except to the extent allowed by applicable law"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Warranty Disclaimer"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. To the maximum extent permitted by applicable law, the Service Provider disclaims warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Limitation of Liability"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of document access, document display issues, network issues, device issues, subscription availability, or temporary app data behavior arising from your use of the Application."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changes to These Terms"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider may update these Terms & Conditions from time to time. If that happens, the updated version will be posted at the current Terms page."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Effective Date"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "These Terms & Conditions are effective as of 2026-09-26."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Contact Us"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "If you have any questions or suggestions about these Terms & Conditions, please contact the Service Provider at "
+        },
+        {
+          "type": "link",
+          "text": "deepakpk009@yahoo.in",
+          "url": "mailto:deepakpk009@yahoo.in"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ]
+}

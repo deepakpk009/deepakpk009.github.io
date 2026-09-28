@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>TV Comic Book Reader – Comic book reader for Roku TV</title>
+  <meta name="description" content="TV Comic Book Reader is a Roku app for reading comic books on your TV with simple pairing, a remote-friendly library, page navigation, zoom, search, and viewing controls.">
+  <meta name="keywords" content="TV Comic Book Reader, Roku comics viewer, comics viewer for Roku, Comic book reader for TV, view PDF on Roku, open PDF on TV, Roku Comic book reader, PDF document viewer TV, PDF search Roku, PDF zoom TV, PDF thumbnails TV, local WiFi comics viewer, TV document reader">
+  <meta name="author" content="Deepak PK">
+  <meta name="theme-color" content="#4CAF50">
+  <link rel="canonical" href="https://deepakpk.com/tvpptxviewer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deepakpk.com/tvpptxviewer">
+  <meta property="og:title" content="TV Comic Book Reader for Roku TV">
+  <meta property="og:description" content="Read, search, zoom, and navigate comic books on Roku with a remote-friendly TV viewer.">
+  <meta property="og:image" content="images/app_icon.png">
+  <meta property="og:site_name" content="Deepak PK">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://deepakpk.com/tvpptxviewer">
+  <meta name="twitter:title" content="TV Comic Book Reader for Roku TV">
+  <meta name="twitter:description" content="A remote-friendly Roku app to read comic books on the big screen.">
+  <meta name="twitter:image" content="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/app_icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/app_icon.png">
+  <link rel="apple-touch-icon" href="images/app_icon.png">
+  <link rel="shortcut icon" href="images/app_icon.png">
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TV Comic Book Reader",
+  "operatingSystem": "Roku OS",
+  "applicationCategory": "ProductivityApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.tvpptxviewer",
+  "author": {
+    "@type": "Person",
+    "name": "Deepak PK",
+    "url": "https://deepakpk.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Deepak PK"
+  },
+  "description": "TV Comic Book Reader is a Roku app for opening, reading, searching, zooming, and navigating comic books with remote-friendly controls.",
+  "screenshot": [
+    "images/screenshots/ss001.jpg",
+    "images/screenshots/ss002.jpg",
+    "images/screenshots/ss003.jpg",
+    "images/screenshots/ss004.jpg",
+    "images/screenshots/ss005.jpg",
+    "images/screenshots/ss006.jpg",
+    "images/screenshots/ss007.jpg",
+    "images/screenshots/ss008.jpg"
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is TV Comic Book Reader?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TV Comic Book Reader is a Roku app for reading comic books on your TV using a remote-friendly interface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I open PDFs on my Roku TV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open the Connect screen, scan the QR code or enter the shown address on a phone, tablet, or computer on the same Wi-Fi network, then choose the PDF files you want to view."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do my device and Roku need to be on the same Wi-Fi network?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The phone, tablet, or computer you use to choose PDFs should be connected to the same local Wi-Fi network as your Roku device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I choose more than one PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can select multiple PDF files, and folder selection may also be available on supported devices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I view password-protected PDFs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If a PDF requires a password, you can unlock it from the device you are using to choose the file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I search inside PDFs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The viewer includes PDF text search with result snippets and page numbers for supported documents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the app remember where I stopped?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The viewer can reopen a PDF with the last viewed page and viewing settings such as zoom, fit mode, rotation, background color, and night mode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I zoom, rotate, or change the reading view?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The options overlay includes zoom, fit mode, rotate, background color, night mode, search, thumbnails, and Go to Page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Roku store my full PDF files?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TV Comic Book Reader is designed for local viewing. The app keeps temporary viewing data for active documents and includes a Settings option to clear temporary storage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I manage subscription information?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The app includes a subscribe page and a manage subscription page with information about managing your subscription."
+      }
+    }
+  ]
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Deepak PK",
+  "url": "https://deepakpk.com",
+  "logo": "images/app_icon.png",
+  "sameAs": [
+    "https://www.facebook.com/tvpptxviewer"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "deepakpk009@yahoo.in",
+      "contactType": "Customer Support"
+    }
+  ]
+}</script>
+
+  <script defer src="../../generator/site.js"></script>
+
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="3eb85710-2b57-4c5b-a822-ddf9990351ee"></script>
+</head>
+
+<body>
+  
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content" >
+          <div class="hero-left">
+            <img src="images/app_icon.png" alt="TV Comic Book Reader App Icon" class="app-icon-hero">
+            <h1>TV Comic Book Reader – Read PDFs on Roku TV</h1>
+            <p>Open comic books on your Roku TV with a clean, remote-friendly interface. Connect from your phone, tablet, or computer on the same Wi-Fi network, choose PDFs, and read them on the big screen with zoom, search, thumbnails, page jump, rotation, night mode, and resume support.</p>
+            
+    <div class="download-buttons">
+      
+          <a href="https://my.roku.com/account/add/tvpdfviewer" class="download-btn primary" target="_blank" rel="noopener">
+            
+            Get TV Comic Book Reader on Roku
+          </a>
+        
+    </div>
+  
+
+            <div class="app-stats">
+                    
+                      <div class="stat">
+                        <span class="stat-value">📺 Roku TV</span>
+                        <span class="stat-label">Remote-Friendly UI</span>
+                      </div>
+                    
+                      <div class="stat">
+                        <span class="stat-value">📱 QR / Wi-Fi</span>
+                        <span class="stat-label">Simple PDF Connection</span>
+                      </div>
+                    
+                      <div class="stat">
+                        <span class="stat-value">🔍 Search + Zoom</span>
+                        <span class="stat-label">Fast Page Navigation</span>
+                      </div>
+                    
+                  </div>
+          </div>
+
+          <div class="hero-right">
+                  <div class="screenshots-container is-landscape" id="screenshotsContainer">
+                    <div id="slidesRoot">
+                      
+                        <div class="screenshot-slide active">
+                          <img src="images/screenshots/ss001.jpg" alt="TV Comic Book Reader Roku TV screenshot 1" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss002.jpg" alt="TV Comic Book Reader Roku TV screenshot 2" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss003.jpg" alt="TV Comic Book Reader Roku TV screenshot 3" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss004.jpg" alt="TV Comic Book Reader Roku TV screenshot 4" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss005.jpg" alt="TV Comic Book Reader Roku TV screenshot 5" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss006.jpg" alt="TV Comic Book Reader Roku TV screenshot 6" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss007.jpg" alt="TV Comic Book Reader Roku TV screenshot 7" loading="lazy">
+                        </div>
+                      
+                        <div class="screenshot-slide ">
+                          <img src="images/screenshots/ss008.jpg" alt="TV Comic Book Reader Roku TV screenshot 8" loading="lazy">
+                        </div>
+                      
+                    </div>
+
+                    <button class="screenshot-nav prev" id="prevBtn" aria-label="Previous screenshot">‹</button>
+                    <button class="screenshot-nav next" id="nextBtn" aria-label="Next screenshot">›</button>
+
+                    <div class="screenshot-dots" id="dotsRoot">
+                      <span class="dot active" data-slide="0"></span><span class="dot " data-slide="1"></span><span class="dot " data-slide="2"></span><span class="dot " data-slide="3"></span><span class="dot " data-slide="4"></span><span class="dot " data-slide="5"></span><span class="dot " data-slide="6"></span><span class="dot " data-slide="7"></span>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">Start Reading PDFs on TV in Minutes</h2>
+        <div class="steps">
+          
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Install TV Comic Book Reader</h3>
+              <p>Install TV Comic Book Reader on your Roku device.</p>
+            </div>
+          
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Connect Your Device</h3>
+              <p>Use the QR code or short address on the Connect screen from a phone, tablet, or computer on the same Wi-Fi network.</p>
+            </div>
+          
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Open and Read PDFs</h3>
+              <p>Choose a PDF from the library, then use the options overlay for zoom, fit mode, rotate, search, thumbnails, Go to Page, background color, and night mode.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why TV Users Will Like It</h2>
+        <div class="feature-grid">
+          
+              <div class="feature-card">
+                <span class="feature-icon">📺</span>
+                <h3>TV-First Experience</h3>
+                <ul><li>Built for Roku TV usage and remote control navigation</li><li>Large-screen friendly PDF browsing with thumbnails and file names</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">📥</span>
+                <h3>Simple Local Pairing</h3>
+                <ul><li>Scan a QR code or type the short connection address</li><li>Choose PDFs from a phone, tablet, or computer on the same Wi-Fi network</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">🎛️</span>
+                <h3>Reading Controls</h3>
+                <ul><li>Zoom, fit mode, rotate, night mode, and background color controls</li><li>Search, thumbnails, and Go to Page options inside the viewer</li></ul>
+              </div>
+            
+              <div class="feature-card">
+                <span class="feature-icon">⚙️</span>
+                <h3>Useful App Tools</h3>
+                <ul><li>Settings show resolution, screen ratio, temporary file count, and storage usage</li><li>Clear temporary storage when needed</li></ul>
+              </div>
+            
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="perfect-for">
+      <div class="container">
+        <h2 class="section-title">Perfect For</h2>
+        <div class="use-cases">
+          
+            <div class="use-case">
+              <div class="use-case-icon">🎓</div>
+              <h3>Study &amp; Training</h3>
+              <p>Read course notes, training manuals, worksheets, and reference PDFs on a TV where everyone can see them.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">💼</div>
+              <h3>Office Documents</h3>
+              <p>Review reports, manuals, policies, and shared comic books on a meeting-room Roku TV.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🏠</div>
+              <h3>Home &amp; Personal Use</h3>
+              <p>Open recipes, manuals, forms, guides, bills, and saved PDFs directly on the big screen.</p>
+            </div>
+          
+            <div class="use-case">
+              <div class="use-case-icon">🪧</div>
+              <h3>Shared Reading</h3>
+              <p>Use your TV for group reading, quick reference, and document review without passing a small screen around.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container" id="faqContainer">
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>What is TV Comic Book Reader?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>TV Comic Book Reader is a Roku app for reading comic books on your TV using a remote-friendly interface.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>How can I open PDFs on my Roku TV?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Open the Connect screen, scan the QR code or enter the shown address on a phone, tablet, or computer on the same Wi-Fi network, then choose the PDF files you want to view.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Do my device and Roku need to be on the same Wi-Fi network?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. The phone, tablet, or computer you use to choose PDFs should be connected to the same local Wi-Fi network as your Roku device.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I choose more than one PDF?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. You can select multiple PDF files, and folder selection may also be available on supported devices.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I view password-protected PDFs?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. If a PDF requires a password, you can unlock it from the device you are using to choose the file.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I search inside PDFs?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. The viewer includes PDF text search with result snippets and page numbers for supported documents.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Does the app remember where I stopped?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. The viewer can reopen a PDF with the last viewed page and viewing settings such as zoom, fit mode, rotation, background color, and night mode.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Can I zoom, rotate, or change the reading view?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes. The options overlay includes zoom, fit mode, rotate, background color, night mode, search, thumbnails, and Go to Page.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Does Roku store my full PDF files?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>TV Comic Book Reader is designed for local viewing. The app keeps temporary viewing data for active documents and includes a Settings option to clear temporary storage.</p>
+              </div>
+            </div>
+          
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Where can I manage subscription information?</span>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>The app includes a subscribe page and a manage subscription page with information about managing your subscription.</p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Read PDF Documents on Your TV 📺</h2>
+          <p>Download TV Comic Book Reader and turn your Roku into a simple, remote-friendly Comic book reader for the big screen.</p>
+          
+    <div class="download-buttons">
+      
+          <a href="https://my.roku.com/account/add/tvpdfviewer" class="download-btn primary" target="_blank" rel="noopener">
+            
+            Get TV Comic Book Reader on Roku
+          </a>
+        
+    </div>
+  
+        </div>
+      </div>
+    </section>
+  
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+                    <img src="images/app_icon.png" alt="TV Comic Book Reader Logo">
+                    <span class="footer-logo-text">TV Comic Book Reader</span>
+                  </div>
+
+            <p>A remote-friendly Roku comics viewer for opening, reading, searching, zooming, and navigating comic books on the big screen.</p>
+            
+      <div class="social-links">
+        
+            <a href="https://www.facebook.com/tvpptxviewer" target="_blank" rel="noopener" aria-label="Facebook">
+              
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+    </svg>
+  
+            </a>
+          
+      </div>
+    
+          </div>
+
+          
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.deepakpk.tvpptxviewer" target="_blank" rel="noopener">Download App</a><a href="https://www.amazon.com/dp/B0GZWMX1PT/" target="_blank" rel="noopener">More Download Options</a><a href="terms.html" target="_self">Terms &amp; Conditions</a><a href="privacy.html" target="_self">Privacy Policy</a>
+            
+          </div>
+        
+          <div class="footer-section">
+            <h3>Support</h3>
+            <a href="mailto:deepakpk009@yahoo.in" target="_self">Email Support</a><a href="#faq" target="_self">FAQ</a>
+            <p style="margin-top: 15px;"><strong style="color: var(--primary-green);">Email</strong><br><a href="mailto:deepakpk009@yahoo.in">deepakpk009@yahoo.in</a></p>
+          </div>
+        
+          <div class="footer-section">
+            <h3>More Apps</h3>
+            <a href="https://deepakpk.com/tvpdfviewer" target="_blank" rel="noopener">TV Comic Book Reader</a><a href="https://deepakpk.com/apps" target="_blank" rel="noopener">View All Apps</a><a href="https://deepakpk.com" target="_blank" rel="noopener">Developer Portfolio</a>
+            
+          </div>
+        
+        </div>
+
+        <div class="footer-bottom"><p>© 2026 Deepak PK. All rights reserved.</p></div>
+      </div>
+    </footer>
+  
+</body>
+</html>

@@ -1,0 +1,297 @@
+{
+  "id": "privacy",
+  "title": "Privacy Policy",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "This Privacy Policy applies to the TV Comic Book Reader application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local PDF-viewing utility for reading comic books on a TV."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "TV Comic Book Reader is designed for local viewing between your own devices. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Information the Application Handles"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "To provide the PDF viewing experience, the Application may handle information such as:"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "items": [
+        [
+          {
+            "type": "text",
+            "text": "PDF files you choose to open with the Application"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Basic document details, such as file names, file sizes, page counts, and titles when available"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Reading preferences, such as zoom, fit mode, rotation, page position, night mode, and background color"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Search terms and search results when you use the in-app PDF search feature"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Temporary app data used to support viewing and navigation"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Subscription or entitlement status provided through the Roku platform"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "This information is used to provide document selection, viewing, search, navigation, subscription access control, support, and related in-app features."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Local PDF Viewing"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "PDF files are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your PDF files to a Service Provider cloud storage account."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "If a PDF requires a password, you enter the password on the device you are using to select the PDF. TV Comic Book Reader does not save your PDF password."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Local Network Use"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during PDF viewing. You should use the Application only on networks and with PDF files that you trust."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Information the Application Does Not Collect for Tracking"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Roku version of the Application does not use the Application to track your activity across apps or websites. The Service Provider does not use the Application to collect analytics events, advertising identifiers, precise location information, or behavioral tracking information for profiling or targeted advertising."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Temporary Storage and Retention"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application may keep temporary app data on the Roku device to support viewing, navigation, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation or when the Roku app restarts."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your PDFs to a Service Provider cloud service, or keep a remote analytics history of your document viewing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Search and Document Text"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "When you use PDF search, the Application may use your search terms, document text, and matching results to show search results on your TV. These search features are intended for your current use of the Application."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Subscriptions and Purchases"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application may offer subscription features or page access limits. Subscription purchases, renewals, cancellations, and entitlement recovery are handled through the Roku platform. The Service Provider may receive or use entitlement status made available by Roku to enable subscription-related features inside the Application. Payment details are handled by Roku and are subject to Roku's policies and terms."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Third-Party Services"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Roku version of the Application does not include Google Analytics, Firebase Analytics, Firebase Crashlytics, or Google Play Services."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application runs on the Roku platform and uses Roku platform features, including Roku billing or entitlement features where applicable. Your use of the Roku platform and Roku device may also be governed by Roku's own policies and terms."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Children's Privacy"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider does not knowingly use the Application to solicit personal information from children."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Security"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and PDF files secure."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changes to This Privacy Policy"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider may update this Privacy Policy from time to time. If that happens, the updated version will be posted at the current Privacy Policy page."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Effective Date"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "This Privacy Policy is effective as of 2026-09-26."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Contact Us"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "If you have any questions about this Privacy Policy or the Roku version of the Application, please contact the Service Provider at "
+        },
+        {
+          "type": "link",
+          "text": "deepakpk009@yahoo.in",
+          "url": "mailto:deepakpk009@yahoo.in"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ]
+}

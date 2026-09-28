@@ -1,0 +1,22 @@
+{
+  "name": "TV Comic Book Reader",
+  "short_name": "TV PDF Viewe",
+  "description": "TV Comic Book Reader is a Roku app for reading comic books on your TV with simple pairing, a remote-friendly library, page navigation, zoom, search, and viewing controls.",
+  "start_url": "/tvpdfviewer/roku/",
+  "scope": "/tvpdfviewer/roku/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "images/app_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

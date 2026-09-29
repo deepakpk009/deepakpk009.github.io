@@ -1,33 +1,35 @@
 Privacy Policy
 
-This Privacy Policy applies to the TV Comic Book Reader application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local PDF-viewing utility for reading comic books on a TV.
+This Privacy Policy applies to the TV Comic Book Reader application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local comic book reading utility for viewing supported comic archives on a TV.
 
 Summary
 
-TV Comic Book Reader is designed for local viewing between your own devices. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application.
+TV Comic Book Reader is designed for local viewing between your own devices on the same Wi-Fi network. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application.
 
 Information the Application Handles
 
-To provide the PDF viewing experience, the Application may handle information such as:
+To provide the comic reading experience, the Application may handle information such as:
 
-- PDF files you choose to open with the Application
-- Basic document details, such as file names, file sizes, page counts, and titles when available
-- Reading preferences, such as zoom, fit mode, rotation, page position, night mode, and background color
-- Search terms and search results when you use the in-app PDF search feature
-- Temporary app data used to support viewing and navigation
+- Comic archive files you choose to open with the Application, including supported formats such as CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR
+- Basic comic and file details, such as file names, file sizes, page counts, archive formats, thumbnails, and titles when available
+- Comic metadata when present, such as series, issue number, summary, and reading direction
+- Reading preferences and state, such as zoom, fit mode, rotation, page position, pan position, night mode, and recently viewed pages
+- Temporary session, connection, and device information used to pair your Roku device with your phone, tablet, or computer on your local network
+- Temporary app data used to support viewing, thumbnails, navigation, reconnection, and performance
 - Subscription or entitlement status provided through the Roku platform
+- Support or feedback information you choose to send through external support or feedback links
 
-This information is used to provide document selection, viewing, search, navigation, subscription access control, support, and related in-app features.
+This information is used to provide comic selection, local pairing, library display, viewing, navigation, reading-state restoration, subscription access control, support, and related in-app features.
 
-Local PDF Viewing
+Local Comic Viewing
 
-PDF files are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your PDF files to a Service Provider cloud storage account.
+Comic archives are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your comic archives to a Service Provider cloud storage account.
 
-If a PDF requires a password, you enter the password on the device you are using to select the PDF. TV Comic Book Reader does not save your PDF password.
+Original comic archive files remain on the device you use to select them. The Roku version of the Application uses local network communication to support the TV reading experience and does not persist original comic archive files on the Roku device.
 
 Local Network Use
 
-The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during PDF viewing. You should use the Application only on networks and with PDF files that you trust.
+The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during comic reading. Connection status, temporary session information, and recovery messages may be used to help connect, reconnect, or clear unavailable local sessions. You should use the Application only on networks and with comic files that you trust.
 
 Information the Application Does Not Collect for Tracking
 
@@ -35,13 +37,13 @@ The Roku version of the Application does not use the Application to track your a
 
 Temporary Storage and Retention
 
-The Application may keep temporary app data on the Roku device to support viewing, navigation, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation or when the Roku app restarts.
+The Application may keep temporary app data on the Roku device to support viewing, thumbnails, navigation, reading-state restoration, reconnection, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation, when a local session ends, when cached data is pruned, or when the Roku app restarts.
 
-The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your PDFs to a Service Provider cloud service, or keep a remote analytics history of your document viewing.
+The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your comic archives to a Service Provider cloud service, or keep a remote analytics history of your comic reading.
 
-Search and Document Text
+Settings, Help, and Support
 
-When you use PDF search, the Application may use your search terms, document text, and matching results to show search results on your TV. These search features are intended for your current use of the Application.
+The Application may display device-related settings information such as screen resolution, screen ratio, temporary file count, and temporary storage used. Help, FAQ, support, and feedback pages may open or display external support resources. If you choose to contact support or submit feedback, the information you provide through those external resources is handled according to the policies that apply to those resources.
 
 Subscriptions and Purchases
 
@@ -59,7 +61,7 @@ The Service Provider does not knowingly use the Application to solicit personal 
 
 Security
 
-The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and PDF files secure.
+The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, browser, and comic files secure.
 
 Changes to This Privacy Policy
 
@@ -67,7 +69,7 @@ The Service Provider may update this Privacy Policy from time to time. If that h
 
 Effective Date
 
-This Privacy Policy is effective as of 2026-09-26.
+This Privacy Policy is effective as of 2026-09-29.
 
 Contact Us
 

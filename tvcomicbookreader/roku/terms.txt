@@ -1,6 +1,6 @@
 Terms & Conditions
 
-These Terms & Conditions apply to the TV Comic Book Reader application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local PDF-viewing utility for reading comic books on a TV.
+These Terms & Conditions apply to the TV Comic Book Reader application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local comic book reading utility for viewing supported comic archives on a TV.
 
 Acceptance of These Terms
 
@@ -8,34 +8,36 @@ By downloading, installing, or using the Application on a Roku device, you agree
 
 Use of the Application
 
-The Application is intended to help you view comic books on your TV. To use it, you select PDF files from a phone, tablet, or computer connected to the same local network as your Roku device.
+The Application is intended to help you view comic books on your TV. To use it, you select supported comic archive files from a phone, tablet, or computer connected to the same local network as your Roku device.
 
-You are responsible for the PDF files you choose to open and for making sure you have the right to view, use, display, or search those documents.
+Supported archive formats may include CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR. Supported page image formats may include common comic image formats such as JPG, JPEG, PNG, WebP, GIF, BMP, and JPEG 2000 variants. Compatibility may vary depending on the file, device, browser, network, and Roku platform behavior.
 
-Document Responsibility
+You are responsible for the comic files you choose to open and for making sure you have the right to view, use, display, or access those files.
+
+Content Responsibility
 
 You are responsible for:
 
-- Any PDF files, filenames, document text, passwords, or other document content you choose to use with the Application
-- Keeping your phone, tablet, computer, Roku device, and Wi-Fi network secure
-- Making sure your use of the Application and documents complies with applicable laws and rights held by content owners
-- Entering passwords only for PDFs that you are authorized to access
+- Any comic archives, file names, metadata, images, or other content you choose to use with the Application
+- Keeping your phone, tablet, computer, Roku device, browser, and Wi-Fi network secure
+- Making sure your use of the Application and comic files complies with applicable laws and rights held by content owners
+- Using the Application only with files and networks that you trust
 
-The Service Provider does not claim ownership of the PDF files or document content you access through the Application.
+The Service Provider does not claim ownership of the comic archives or comic content you access through the Application.
 
 Local Network and Device Requirements
 
-The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select PDFs. The quality and availability of the experience may depend on your network, browser capabilities, device performance, PDF size, PDF complexity, and Roku device resources.
+The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select comic archives. The quality and availability of the experience may depend on your network, browser capabilities, device performance, archive size, archive complexity, image size, image format, and Roku device resources.
 
 Availability and Compatibility
 
-The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, browsers, Roku platform requirements, and PDF viewing features.
+The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, browsers, Roku platform requirements, comic archive formats, and comic reading features.
 
-The Service Provider does not guarantee that every PDF file, PDF feature, password-protected file, form, font, image, browser, device, network, or document size will be supported.
+The Service Provider does not guarantee that every archive file, archive format, image format, metadata field, browser, device, network, document size, or reading feature will be supported or error-free.
 
 Subscriptions and Page Limits
 
-The Application may offer subscription features through the Roku platform. Free use may be limited, including by page limits per PDF or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms.
+The Application may offer subscription features through the Roku platform. Free use may be limited, including by page limits per comic or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms.
 
 No Analytics or Google/Firebase Services in the Roku Version
 
@@ -46,10 +48,14 @@ Acceptable Use
 You agree not to:
 
 - Use the Application in a way that violates applicable law
-- Use the Application to view, copy, display, or search documents that you are not authorized to access
-- Attempt to interfere with the operation of the Application, Roku platform, or related access controls
+- Use the Application to view, copy, display, or access content that you are not authorized to use
+- Attempt to interfere with the operation of the Application, Roku platform, local connection, or related access controls
 - Attempt to bypass subscription limits, entitlement checks, page limits, or security features
 - Copy, modify, reverse engineer, or create derivative versions of the Application except to the extent allowed by applicable law
+
+Support, Feedback, and External Resources
+
+The Application may provide Help, FAQ, support, feedback, Privacy Policy, and Terms of Use pages or links. External resources may be operated outside the Application and may be subject to their own terms, policies, and availability.
 
 Warranty Disclaimer
 
@@ -57,7 +63,7 @@ The Application is provided on an "AS IS" and "AS AVAILABLE" basis. To the maxim
 
 Limitation of Liability
 
-To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of document access, document display issues, network issues, device issues, subscription availability, or temporary app data behavior arising from your use of the Application.
+To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, comic display issues, network issues, device issues, subscription availability, unsupported files, corrupted files, temporary app data behavior, or local connection behavior arising from your use of the Application.
 
 Changes to These Terms
 
@@ -65,7 +71,7 @@ The Service Provider may update these Terms & Conditions from time to time. If t
 
 Effective Date
 
-These Terms & Conditions are effective as of 2026-09-26.
+These Terms & Conditions are effective as of 2026-09-29.
 
 Contact Us
 

@@ -7,7 +7,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "This Privacy Policy applies to the TV Comic Book Reader application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local PDF-viewing utility for reading comic books on a TV."
+          "text": "This Privacy Policy applies to the TV Comic Book Reader application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local comic book reading utility for viewing supported comic archives on a TV."
         }
       ]
     },
@@ -21,7 +21,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "TV Comic Book Reader is designed for local viewing between your own devices. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
+          "text": "TV Comic Book Reader is designed for local viewing between your own devices on the same Wi-Fi network. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
         }
       ]
     },
@@ -35,7 +35,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "To provide the PDF viewing experience, the Application may handle information such as:"
+          "text": "To provide the comic reading experience, the Application may handle information such as:"
         }
       ]
     },
@@ -45,37 +45,49 @@
         [
           {
             "type": "text",
-            "text": "PDF files you choose to open with the Application"
+            "text": "Comic archive files you choose to open with the Application, including supported formats such as CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Basic document details, such as file names, file sizes, page counts, and titles when available"
+            "text": "Basic comic and file details, such as file names, file sizes, page counts, archive formats, thumbnails, and titles when available"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Reading preferences, such as zoom, fit mode, rotation, page position, night mode, and background color"
+            "text": "Comic metadata when present, such as series, issue number, summary, and reading direction"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Search terms and search results when you use the in-app PDF search feature"
+            "text": "Reading preferences and state, such as zoom, fit mode, rotation, page position, pan position, night mode, and recently viewed pages"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Temporary app data used to support viewing and navigation"
+            "text": "Temporary session, connection, and device information used to pair your Roku device with your phone, tablet, or computer on your local network"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Temporary app data used to support viewing, thumbnails, navigation, reconnection, and performance"
           }
         ],
         [
           {
             "type": "text",
             "text": "Subscription or entitlement status provided through the Roku platform"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Support or feedback information you choose to send through external support or feedback links"
           }
         ]
       ]
@@ -85,21 +97,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "This information is used to provide document selection, viewing, search, navigation, subscription access control, support, and related in-app features."
+          "text": "This information is used to provide comic selection, local pairing, library display, viewing, navigation, reading-state restoration, subscription access control, support, and related in-app features."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Local PDF Viewing"
+      "text": "Local Comic Viewing"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "PDF files are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your PDF files to a Service Provider cloud storage account."
+          "text": "Comic archives are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your comic archives to a Service Provider cloud storage account."
         }
       ]
     },
@@ -108,7 +120,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "If a PDF requires a password, you enter the password on the device you are using to select the PDF. TV Comic Book Reader does not save your PDF password."
+          "text": "Original comic archive files remain on the device you use to select them. The Roku version of the Application uses local network communication to support the TV reading experience and does not persist original comic archive files on the Roku device."
         }
       ]
     },
@@ -122,7 +134,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during PDF viewing. You should use the Application only on networks and with PDF files that you trust."
+          "text": "The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during comic reading. Connection status, temporary session information, and recovery messages may be used to help connect, reconnect, or clear unavailable local sessions. You should use the Application only on networks and with comic files that you trust."
         }
       ]
     },
@@ -150,7 +162,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application may keep temporary app data on the Roku device to support viewing, navigation, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation or when the Roku app restarts."
+          "text": "The Application may keep temporary app data on the Roku device to support viewing, thumbnails, navigation, reading-state restoration, reconnection, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation, when a local session ends, when cached data is pruned, or when the Roku app restarts."
         }
       ]
     },
@@ -159,21 +171,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your PDFs to a Service Provider cloud service, or keep a remote analytics history of your document viewing."
+          "text": "The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your comic archives to a Service Provider cloud service, or keep a remote analytics history of your comic reading."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Search and Document Text"
+      "text": "Settings, Help, and Support"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "When you use PDF search, the Application may use your search terms, document text, and matching results to show search results on your TV. These search features are intended for your current use of the Application."
+          "text": "The Application may display device-related settings information such as screen resolution, screen ratio, temporary file count, and temporary storage used. Help, FAQ, support, and feedback pages may open or display external support resources. If you choose to contact support or submit feedback, the information you provide through those external resources is handled according to the policies that apply to those resources."
         }
       ]
     },
@@ -238,7 +250,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and PDF files secure."
+          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, browser, and comic files secure."
         }
       ]
     },
@@ -266,7 +278,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "This Privacy Policy is effective as of 2026-09-26."
+          "text": "This Privacy Policy is effective as of 2026-09-29."
         }
       ]
     },

@@ -64,6 +64,12 @@
         "label": "Available on Amazon",
         "url": "https://www.amazon.com/dp/B0HDQ81MNZ/",
         "style": "secondary"
+      },
+      {
+        "type": "roku",
+        "label": "View Roku Version",
+        "url": "roku/",
+        "style": "secondary"
       }
     ],
     "stats": [
@@ -430,6 +436,12 @@
           "label": "Available on Amazon",
           "url": "https://www.amazon.com/dp/B0HDQ81MNZ/",
           "style": "secondary"
+        },
+        {
+          "type": "roku",
+          "label": "View Roku Version",
+          "url": "roku/",
+          "style": "secondary"
         }
       ]
     }
@@ -458,6 +470,10 @@
           {
             "label": "Download on Amazon",
             "url": "https://www.amazon.com/dp/B0HDQ81MNZ/"
+          },
+          {
+            "label": "Roku Version",
+            "url": "roku/"
           },
           {
             "label": "Terms & Conditions",

@@ -5,8 +5,8 @@
   "start_url": "/tvcomicbookreader/roku/",
   "scope": "/tvcomicbookreader/roku/",
   "display": "standalone",
-  "background_color": "#121212",
-  "theme_color": "#4CAF50",
+  "background_color": "#081A63",
+  "theme_color": "#1E48E2",
   "icons": [
     {
       "src": "images/app_icon.png",

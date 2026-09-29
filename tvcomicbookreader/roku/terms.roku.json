@@ -44,7 +44,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "Supported archive formats may include CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR. Supported page image formats may include common comic image formats such as JPG, JPEG, PNG, WebP, GIF, BMP, and JPEG 2000 variants. Compatibility may vary depending on the file, device, browser, network, and Roku platform behavior."
+          "text": "Supported archive formats may include CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR. Supported page image formats may include common comic image formats such as JPG, JPEG, PNG, WebP, GIF, BMP, and JPEG 2000 variants. Compatibility may vary depending on the file, device, network, and Roku platform behavior."
         }
       ]
     },
@@ -83,7 +83,7 @@
         [
           {
             "type": "text",
-            "text": "Keeping your phone, tablet, computer, Roku device, browser, and Wi-Fi network secure"
+            "text": "Keeping your phone, tablet, computer, Roku device, and Wi-Fi network secure"
           }
         ],
         [
@@ -119,7 +119,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select comic archives. The quality and availability of the experience may depend on your network, browser capabilities, device performance, archive size, archive complexity, image size, image format, and Roku device resources."
+          "text": "The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select comic archives. The quality and availability of the experience may depend on your network, device performance, archive size, archive complexity, image size, image format, and Roku device resources."
         }
       ]
     },
@@ -133,7 +133,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, browsers, Roku platform requirements, comic archive formats, and comic reading features."
+          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, Roku platform requirements, comic archive formats, and comic reading features."
         }
       ]
     },
@@ -142,7 +142,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider does not guarantee that every archive file, archive format, image format, metadata field, browser, device, network, document size, or reading feature will be supported or error-free."
+          "text": "The Service Provider does not guarantee that every archive file, archive format, image format, metadata field, device, network, document size, or reading feature will be supported or error-free."
         }
       ]
     },

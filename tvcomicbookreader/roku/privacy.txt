@@ -61,7 +61,7 @@ The Service Provider does not knowingly use the Application to solicit personal 
 
 Security
 
-The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, browser, and comic files secure.
+The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and comic files secure.
 
 Changes to This Privacy Policy
 

@@ -1,0 +1,320 @@
+{
+  "id": "terms",
+  "title": "Terms & Conditions",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "These Terms & Conditions apply to the TV Comic Book Reader application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local comic book reading utility for viewing supported comic archives on a TV."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Acceptance of These Terms"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "By downloading, installing, or using the Application on a Roku device, you agree to these Terms & Conditions."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use of the Application"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application is intended to help you view comic books on your TV. To use it, you select supported comic archive files from a phone, tablet, or computer connected to the same local network as your Roku device."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "Supported archive formats may include CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR. Supported page image formats may include common comic image formats such as JPG, JPEG, PNG, WebP, GIF, BMP, and JPEG 2000 variants. Compatibility may vary depending on the file, device, network, and Roku platform behavior."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "You are responsible for the comic files you choose to open and for making sure you have the right to view, use, display, or access those files."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Content Responsibility"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "You are responsible for:"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "items": [
+        [
+          {
+            "type": "text",
+            "text": "Any comic archives, file names, metadata, images, or other content you choose to use with the Application"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Keeping your phone, tablet, computer, Roku device, and Wi-Fi network secure"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Making sure your use of the Application and comic files complies with applicable laws and rights held by content owners"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Using the Application only with files and networks that you trust"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider does not claim ownership of the comic archives or comic content you access through the Application."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Local Network and Device Requirements"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select comic archives. The quality and availability of the experience may depend on your network, device performance, archive size, archive complexity, image size, image format, and Roku device resources."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Availability and Compatibility"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, Roku platform requirements, comic archive formats, and comic reading features."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider does not guarantee that every archive file, archive format, image format, metadata field, device, network, document size, or reading feature will be supported or error-free."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Subscriptions and Page Limits"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application may offer subscription features through the Roku platform. Free use may be limited, including by page limits per comic or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "No Analytics or Google/Firebase Services in the Roku Version"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Roku version of the Application does not use Google Analytics, Firebase Analytics, Firebase Crashlytics, or Google Play Services."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Acceptable Use"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "You agree not to:"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "items": [
+        [
+          {
+            "type": "text",
+            "text": "Use the Application in a way that violates applicable law"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Use the Application to view, copy, display, or access content that you are not authorized to use"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Attempt to interfere with the operation of the Application, Roku platform, local connection, or related access controls"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Attempt to bypass subscription limits, entitlement checks, page limits, or security features"
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Copy, modify, reverse engineer, or create derivative versions of the Application except to the extent allowed by applicable law"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Support, Feedback, and External Resources"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application may provide Help, FAQ, support, feedback, Privacy Policy, and Terms of Use pages or links. External resources may be operated outside the Application and may be subject to their own terms, policies, and availability."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Warranty Disclaimer"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Application is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. To the maximum extent permitted by applicable law, the Service Provider disclaims warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Limitation of Liability"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, comic display issues, network issues, device issues, subscription availability, unsupported files, corrupted files, temporary app data behavior, or local connection behavior arising from your use of the Application."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changes to These Terms"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "The Service Provider may update these Terms & Conditions from time to time. If that happens, the updated version will be posted at the current Terms page."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Effective Date"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "These Terms & Conditions are effective as of 2026-09-29."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Contact Us"
+    },
+    {
+      "type": "paragraph",
+      "spans": [
+        {
+          "type": "text",
+          "text": "If you have any questions or suggestions about these Terms & Conditions, please contact the Service Provider at "
+        },
+        {
+          "type": "link",
+          "text": "deepakpk009@yahoo.in",
+          "url": "mailto:deepakpk009@yahoo.in"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    }
+  ]
+}

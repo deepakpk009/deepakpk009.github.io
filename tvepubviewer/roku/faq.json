@@ -1,0 +1,210 @@
+[
+  {
+    "title": "What is TV Comic Book Reader for Roku?",
+    "content": "TV Comic Book Reader lets you enjoy comic book archives on your TV using your Roku device. Choose comics from your phone, tablet, or computer, then read them comfortably with your Roku remote."
+  },
+  {
+    "title": "What comic formats are supported?",
+    "content": "The app is designed for common comic archive formats including CBZ, CBR, CB7, CBT, ZIP, RAR, 7Z, and TAR."
+  },
+  {
+    "title": "What image types can be inside my comic archive?",
+    "content": "Supported page image types include JPG, JPEG, PNG, WebP, GIF, BMP, and JPEG 2000 formats such as JP2, J2K, J2C, and JPC."
+  },
+  {
+    "title": "How do I start using the app?",
+    "content": "Open TV Comic Book Reader on Roku, go to Connect, and follow the QR code or web address shown on your TV. From your phone, tablet, or computer, choose the comic archives you want to read."
+  },
+  {
+    "title": "What devices can I use to choose comics?",
+    "content": "You can use a phone, tablet, laptop, or desktop computer with a modern web browser."
+  },
+  {
+    "title": "Do my devices need to be on the same Wi-Fi network?",
+    "content": "Yes. Your Roku device and the phone, tablet, or computer used to choose comics should be connected to the same local Wi-Fi network."
+  },
+  {
+    "title": "Do I need to install another app on my phone or computer?",
+    "content": "No. You only need a modern web browser on your phone, tablet, or computer."
+  },
+  {
+    "title": "Can I choose more than one comic?",
+    "content": "Yes. You can select multiple comic archives and choose which one to open from the Library on Roku."
+  },
+  {
+    "title": "Can I drag and drop comic files?",
+    "content": "Yes, on browsers that support drag and drop. You can also use the file picker."
+  },
+  {
+    "title": "Can I choose a folder of comics?",
+    "content": "Some browsers support folder selection. When available, you can choose a folder and the app will use the supported comic archives from that selection."
+  },
+  {
+    "title": "What happens if I select the same comic twice?",
+    "content": "Duplicate selections are ignored so the same comic is not added repeatedly."
+  },
+  {
+    "title": "Can I remove a selected comic?",
+    "content": "Yes. Remove the comic from the selection page on your phone, tablet, or computer and the Roku Library will update."
+  },
+  {
+    "title": "What is the Library?",
+    "content": "The Library shows your selected comics in a TV-friendly grid with cover-style thumbnails when available. Use your Roku remote to choose a comic and open it."
+  },
+  {
+    "title": "Why is the Library empty?",
+    "content": "The Library is empty when no comics have been selected. Go to Connect, open the web address shown on your TV, and choose one or more supported comic archives."
+  },
+  {
+    "title": "How do I open a comic from the Library?",
+    "content": "Use the Roku remote D-pad to highlight a comic, then press OK to open it."
+  },
+  {
+    "title": "Will a single selected comic open automatically?",
+    "content": "When only one comic is selected, the app may open it automatically once it is ready. When multiple comics are selected, you can choose one from the Library."
+  },
+  {
+    "title": "Can multiple phones or computers connect at the same time?",
+    "content": "Yes. Comics selected from multiple connected devices can appear together in the Roku Library. If one device clears its selection, comics from other connected devices can remain available."
+  },
+  {
+    "title": "How do I move between pages?",
+    "content": "Use Left and Right on the Roku remote to move between pages. Press Back to leave the reader and return to the Library."
+  },
+  {
+    "title": "How do I open reading options?",
+    "content": "Press OK or Options while reading a comic to open the reading options menu."
+  },
+  {
+    "title": "What reading options are available?",
+    "content": "Reading options include Zoom In, Zoom Out, Fit Mode, Rotate, Night Mode, Thumbnails, Go to Page, and Close."
+  },
+  {
+    "title": "Can I zoom in and out?",
+    "content": "Yes. Use Zoom In and Zoom Out from the reading options menu."
+  },
+  {
+    "title": "Can I pan around a zoomed page?",
+    "content": "Yes. When a page is zoomed in, use the Roku remote D-pad to move around the page. Holding a direction can continue panning while the button is held."
+  },
+  {
+    "title": "Can I rotate a comic page?",
+    "content": "Yes. Use Rotate from the reading options menu to turn the page clockwise."
+  },
+  {
+    "title": "Can I change how the page fits the TV screen?",
+    "content": "Yes. Use Fit Mode from the reading options menu to switch between fit behaviors for different page shapes and reading styles."
+  },
+  {
+    "title": "Can I jump to a specific page?",
+    "content": "Yes. Use Go to Page from the reading options menu, enter a page number with the TV-friendly keypad, and submit it."
+  },
+  {
+    "title": "Can I browse page thumbnails?",
+    "content": "Yes. Use Thumbnails from the reading options menu to browse nearby pages and jump to the page you want."
+  },
+  {
+    "title": "What is Night Mode?",
+    "content": "Night Mode changes the page appearance for easier reading in a dark room."
+  },
+  {
+    "title": "Does the app remember where I left off?",
+    "content": "While you are using the app, it can remember per-comic reading state such as page position, zoom, fit mode, rotation, pan position, and Night Mode."
+  },
+  {
+    "title": "Does the app support right-to-left or manga-style comics?",
+    "content": "When supported metadata is present in the comic archive, the app can use reading-direction information such as manga or right-to-left hints."
+  },
+  {
+    "title": "Can the app read ComicInfo.xml metadata?",
+    "content": "Yes. When ComicInfo.xml is included, the app may use details such as title, series, issue number, summary, and reading direction."
+  },
+  {
+    "title": "Can I use comics with long or Unicode file names?",
+    "content": "Yes. The app supports localized and Unicode comic file names, and long names are shortened on the TV screen so the Library stays easy to read."
+  },
+  {
+    "title": "How are pages ordered inside an archive?",
+    "content": "Pages are ordered naturally by filename, so names like page2 and page10 appear in the expected reading order."
+  },
+  {
+    "title": "Why was one of my selected files skipped?",
+    "content": "A file may be skipped if it is not a supported comic archive, is damaged, is empty, or does not contain supported image pages."
+  },
+  {
+    "title": "What should I do if a comic does not open?",
+    "content": "Make sure the file is a valid supported archive and try selecting it again. If the archive is corrupted, unsupported, or has no readable image pages, it may not open."
+  },
+  {
+    "title": "What happens if my phone or computer disconnects?",
+    "content": "Short interruptions may recover automatically. If the connection does not return, go back to Connect and select your comics again if needed."
+  },
+  {
+    "title": "Why can't I connect from my browser?",
+    "content": "Check that your Roku and browser device are on the same Wi-Fi network, the Roku app is open on the Connect screen, and the web address was entered exactly as shown on the TV."
+  },
+  {
+    "title": "Can I use TV Comic Book Reader away from home?",
+    "content": "TV Comic Book Reader is designed for local viewing when your Roku and browser device are on the same network."
+  },
+  {
+    "title": "Are my comics uploaded to a cloud service?",
+    "content": "No. TV Comic Book Reader is designed for local viewing between your own devices. It does not provide cloud comic storage or upload your comic files to a cloud document account."
+  },
+  {
+    "title": "Does Roku permanently store my full comic archives?",
+    "content": "No. TV Comic Book Reader is not designed to permanently store your full comic archive files on the Roku device."
+  },
+  {
+    "title": "Does the app require an internet connection?",
+    "content": "Comic reading is designed to work over your local network. Internet access may be needed for Roku purchases, subscription validation, Help/FAQ, Privacy Policy, Terms of Use, support links, or feedback links."
+  },
+  {
+    "title": "Can I use TV Comic Book Reader as cloud storage?",
+    "content": "No. TV Comic Book Reader is a local comic viewing app for Roku. It is not a cloud storage, backup, or document management service."
+  },
+  {
+    "title": "What information is shown in Settings?",
+    "content": "Settings can show display information, temporary file information, temporary storage used, and an option to clear temporary storage."
+  },
+  {
+    "title": "How do I clear temporary storage?",
+    "content": "Open Settings and choose Clear Temporary Storage."
+  },
+  {
+    "title": "Will clearing temporary storage delete my original comics?",
+    "content": "No. Clearing temporary storage only removes temporary app data on Roku. It does not delete the original comic files from your phone, tablet, or computer."
+  },
+  {
+    "title": "What are the free access limits?",
+    "content": "Free users may have a page-viewing limit per comic. If the limit is reached, the app will show a Page Limit Reached message."
+  },
+  {
+    "title": "What does a subscription unlock?",
+    "content": "A subscription unlocks continued viewing beyond the free page limit."
+  },
+  {
+    "title": "How do I subscribe?",
+    "content": "Choose Subscribe from the app menu or from the Page Limit Reached message. The purchase is handled through Roku."
+  },
+  {
+    "title": "How do I manage my subscription?",
+    "content": "Use Manage Subscription from the app when available, or manage your subscription through your Roku account or Roku device subscription settings."
+  },
+  {
+    "title": "Where can I read the Privacy Policy and Terms of Use?",
+    "content": "Privacy Policy and Terms of Use are available from the app menu."
+  },
+  {
+    "title": "Where can I get support?",
+    "content": "Open Support & Feedback from the app menu and use the support option shown there."
+  },
+  {
+    "title": "Where can I send feedback or suggestions?",
+    "content": "Open Support & Feedback from the app menu and use the feedback option shown there."
+  },
+  {
+    "title": "What information is shown on the About page?",
+    "content": "The About page shows the TV Comic Book Reader app name, icon, tagline, and app details."
+  }
+]

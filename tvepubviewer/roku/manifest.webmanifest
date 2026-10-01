@@ -1,0 +1,22 @@
+{
+  "name": "TV Comic Book Reader",
+  "short_name": "TV Comic Boo",
+  "description": "TV Comic Book Reader is a Roku app for reading comic book archives on your TV with local Wi-Fi pairing, a remote-friendly library, page navigation, zoom, fit modes, rotation, night mode, thumbnails, and resume support.",
+  "start_url": "/tvcomicbookreader/roku/",
+  "scope": "/tvcomicbookreader/roku/",
+  "display": "standalone",
+  "background_color": "#081A63",
+  "theme_color": "#1E48E2",
+  "icons": [
+    {
+      "src": "images/app_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

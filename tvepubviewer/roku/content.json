@@ -1,0 +1,616 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "TV Comic Book Reader - Comic book reader for Roku TV",
+    "description": "TV Comic Book Reader is a Roku app for reading comic book archives on your TV with local Wi-Fi pairing, a remote-friendly library, page navigation, zoom, fit modes, rotation, night mode, thumbnails, and resume support.",
+    "keywords": "TV Comic Book Reader, Roku comic reader, comics viewer for Roku, CBZ reader Roku, CBR reader Roku, comic archive reader TV, read comics on TV, Roku manga reader, comic book viewer for TV, local WiFi comic reader, CBZ CBR CB7 CBT reader Roku",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/tvcomicbookreader",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/tvcomicbookreader",
+      "title": "TV Comic Book Reader for Roku TV",
+      "description": "Read comic book archives on Roku with a clean, remote-friendly TV reader.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/tvcomicbookreader",
+      "title": "TV Comic Book Reader for Roku TV",
+      "description": "A remote-friendly Roku app for reading CBZ, CBR, ZIP, RAR, 7Z, TAR, and other comic archives on the big screen.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+  "theme": {
+    "primaryGreen": "#1E48E2",
+    "darkGreen": "#0B2C9A",
+    "lightGreen": "#20CFFF",
+    "darkerGreen": "#050A24",
+    "black": "#030611",
+    "darkBg": "#081A63",
+    "cardBg": "#12308A",
+    "textWhite": "#FFFFFF",
+    "textGray": "#DCE7FF",
+    "borderGreen": "#31D7FF",
+    "boxShadowColor": "#1E48E259",
+    "heroWatermarkOpacity": 0.045,
+    "ctaWatermarkOpacity": 0.07,
+    "accentOrange": "#FFD21A",
+    "softRed": "#FF4FA3",
+    "paperWhite": "#F5F8FF"
+  },
+  "product": {
+    "name": "TV Comic Book Reader",
+    "heroTitle": "TV Comic Book Reader - Read Comics on Roku TV",
+    "heroDescription": "Open comic book archives on your Roku TV with a clean, remote-friendly interface. Connect from your phone, tablet, or computer on the same Wi-Fi network, choose one or more comics, and read them on the big screen with zoom, fit modes, rotation, night mode, page thumbnails, Go to Page, and resume support.",
+    "icon": "images/app_icon.png",
+    "storeButtons": [
+      {
+        "type": "roku",
+        "label": "Get TV Comic Book Reader on Roku",
+        "url": "https://my.roku.com/account/add/tvcomicbookreader",
+        "style": "primary"
+      }
+    ],
+    "stats": [
+      {
+        "value": "Roku TV",
+        "label": "Remote-Friendly Reader"
+      },
+      {
+        "value": "CBZ / CBR",
+        "label": "Comic Archive Support"
+      },
+      {
+        "value": "QR / Wi-Fi",
+        "label": "Simple Local Pairing"
+      }
+    ],
+    "features": {
+      "title": "Features Built for Big-Screen Comic Reading",
+      "cards": [
+        {
+          "icon": "📺",
+          "title": "Made for Roku TV",
+          "bullets": [
+            "Designed for Roku TV and remote control navigation",
+            "Large labels, clear focus states, and simple D-pad movement",
+            "Move between Connect, Library, Settings, Help, and the full-screen reader",
+            "TV-optimized screens for comfortable reading from the couch"
+          ]
+        },
+        {
+          "icon": "📱",
+          "title": "Easy Local Pairing",
+          "bullets": [
+            "Connect from a phone, tablet, or computer on the same Wi-Fi network",
+            "Scan the QR code shown on your Roku screen",
+            "Use the short manual address if you prefer typing the link",
+            "Connection status and retry options help you reconnect when needed"
+          ]
+        },
+        {
+          "icon": "📚",
+          "title": "Comic Archive Selection",
+          "bullets": [
+            "Choose one comic, multiple comics, or a folder where supported",
+            "Drag and drop comic archives in supported browsers",
+            "Duplicate selections are skipped so your library stays clean",
+            "Selected comics show format, file size, page count, and remove actions"
+          ]
+        },
+        {
+          "icon": "🗂️",
+          "title": "Supported Comic Formats",
+          "bullets": [
+            "Supports CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR archives",
+            "Supports JPG, JPEG, PNG, WebP, GIF, BMP, and JPEG 2000 page images",
+            "Uses natural page ordering so page 2 appears before page 10",
+            "Supports localized and Unicode comic file names"
+          ]
+        },
+        {
+          "icon": "📖",
+          "title": "Remote-Friendly Library",
+          "bullets": [
+            "Browse selected comics in a Roku-friendly grid",
+            "Comic cards show first-page thumbnails and clean file names",
+            "Open the focused comic with the OK button",
+            "Empty library guidance sends you back to the Connect screen"
+          ]
+        },
+        {
+          "icon": "🖼️",
+          "title": "Full-Screen Comic Reader",
+          "bullets": [
+            "Read selected comics in a full-screen TV viewer",
+            "Use Left and Right to move between pages",
+            "Use Back to return to the Library without losing the active session",
+            "The reader keeps your last visible page on screen during brief loading moments"
+          ]
+        },
+        {
+          "icon": "🎛️",
+          "title": "Reading Controls",
+          "bullets": [
+            "Zoom in and out for panel-level reading",
+            "Switch fit modes for different page shapes",
+            "Rotate pages in 90-degree steps",
+            "Toggle night mode for easier dark-room reading"
+          ]
+        },
+        {
+          "icon": "↔️",
+          "title": "Pan and Page Movement",
+          "bullets": [
+            "Pan vertically or horizontally when a zoomed page is larger than the screen",
+            "Long-press D-pad controls for smooth repeated panning",
+            "Pan boundaries keep the page from moving off screen",
+            "Left and Right return to page navigation when horizontal panning is not needed"
+          ]
+        },
+        {
+          "icon": "🔖",
+          "title": "Page Thumbnails",
+          "bullets": [
+            "Open a full-screen page thumbnail navigator",
+            "Browse nearby pages with a focused center thumbnail",
+            "Select a thumbnail to jump directly to that page",
+            "Cancel thumbnail navigation without changing pages"
+          ]
+        },
+        {
+          "icon": "🔢",
+          "title": "Go to Page",
+          "bullets": [
+            "Open a TV-friendly numeric keypad",
+            "Enter a page number with the D-pad and OK button",
+            "Delete digits before submitting",
+            "Jump only to valid pages within the current comic"
+          ]
+        },
+        {
+          "icon": "🔄",
+          "title": "Resume Reading",
+          "bullets": [
+            "Reopen a comic at the last page you were reading",
+            "Restore saved zoom, fit mode, rotation, pan, and night mode",
+            "Open new comics with sensible default viewing settings",
+            "Return from the reader to the Library without clearing your selected comics"
+          ]
+        },
+        {
+          "icon": "💳",
+          "title": "Subscription Support",
+          "bullets": [
+            "Subscribe or manage your subscription from the app menu",
+            "Subscription purchase and recovery flows use the Roku channel store",
+            "Free users may be limited to the first configured number of pages per comic",
+            "Subscribed users can continue reading later pages without the page limit prompt"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "Settings and Storage Tools",
+          "bullets": [
+            "View TV screen resolution and screen ratio",
+            "Check temporary viewing file count and storage usage",
+            "Clear temporary storage when needed",
+            "See clear success, no-data, and failure messages for cleanup actions"
+          ]
+        },
+        {
+          "icon": "❓",
+          "title": "Help, Legal, and Support",
+          "bullets": [
+            "Built-in Help/FAQ page with expandable questions",
+            "Privacy Policy and Terms of Use pages",
+            "About page with app, developer, and version details",
+            "Support and feedback page with QR codes for useful links"
+          ]
+        },
+        {
+          "icon": "🔒",
+          "title": "Local Viewing Design",
+          "bullets": [
+            "Comic archives are selected from your own phone, tablet, or computer",
+            "No external upload service is required for comic content",
+            "Roku does not persist original comic archive files",
+            "Temporary viewing data can be cleared from Settings"
+          ]
+        },
+        {
+          "icon": "🌐",
+          "title": "Localization Ready",
+          "bullets": [
+            "Roku interface text uses localized app strings",
+            "Reader controls, page prompts, settings, and subscription messages support translation",
+            "The companion selection page includes localized status and error messages",
+            "Browser language selection can be stored locally"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "📚",
+          "title": "Digital Comic Collections",
+          "text": "Read CBZ, CBR, ZIP, RAR, 7Z, TAR, and other supported comic archives from your own collection on a Roku TV."
+        },
+        {
+          "icon": "🛋️",
+          "title": "Couch Reading",
+          "text": "Enjoy comics on a larger screen with simple remote navigation, zoom, pan, rotation, and night mode."
+        },
+        {
+          "icon": "👪",
+          "title": "Shared Reading",
+          "text": "Use the TV for family reading, group browsing, or showing comic pages without passing around a small screen."
+        },
+        {
+          "icon": "📱",
+          "title": "Local Wi-Fi Viewing",
+          "text": "Choose comics from a phone, tablet, or computer on the same Wi-Fi network without needing an external upload service."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is TV Comic Book Reader?",
+          "a": "TV Comic Book Reader is a Roku app for reading comic book archives on your TV with a remote-friendly interface."
+        },
+        {
+          "q": "How do I open comics on my Roku TV?",
+          "a": "Open the Connect screen, scan the QR code or enter the short address from a phone, tablet, or computer on the same Wi-Fi network, then choose the comic archives you want to read."
+        },
+        {
+          "q": "Which comic archive formats are supported?",
+          "a": "The app supports CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR archives containing readable image pages."
+        },
+        {
+          "q": "Which page image formats are supported?",
+          "a": "Supported page image formats include JPG, JPEG, PNG, WebP, GIF, BMP, and JPEG 2000 variants."
+        },
+        {
+          "q": "Can I choose more than one comic?",
+          "a": "Yes. You can select multiple comic archives, and folder selection may also be available on supported devices and browsers."
+        },
+        {
+          "q": "Do my device and Roku need to be on the same Wi-Fi network?",
+          "a": "Yes. The phone, tablet, or computer used to choose comics should be connected to the same local Wi-Fi network as your Roku device."
+        },
+        {
+          "q": "Does the app remember where I stopped?",
+          "a": "Yes. The reader can reopen a comic with the last page and viewing settings such as zoom, fit mode, rotation, pan, and night mode."
+        },
+        {
+          "q": "Can I zoom, pan, rotate, or change the reading view?",
+          "a": "Yes. The options overlay includes zoom, fit mode, rotate, night mode, thumbnails, Go to Page, and close controls. When a page is zoomed, you can pan with the D-pad."
+        },
+        {
+          "q": "Does Roku store my original comic archive files?",
+          "a": "No. TV Comic Book Reader is designed for local viewing and does not persist original comic archive files on Roku. Temporary viewing data can be cleared from Settings."
+        },
+        {
+          "q": "Where can I manage subscription information?",
+          "a": "The app includes Subscribe and Manage Subscription options. Subscription purchase and recovery use the Roku channel store flow."
+        }
+      ]
+    }
+  },
+  "media": {
+    "screenshotOrientation": "landscape",
+    "screenshots": [
+      {
+        "src": "images/screenshots/ss001.jpg",
+        "alt": "TV Comic Book Reader Roku TV screenshot 1"
+      },
+      {
+        "src": "images/screenshots/ss002.jpg",
+        "alt": "TV Comic Book Reader Roku TV screenshot 2"
+      },
+      {
+        "src": "images/screenshots/ss003.jpg",
+        "alt": "TV Comic Book Reader Roku TV screenshot 3"
+      },
+      {
+        "src": "images/screenshots/ss004.jpg",
+        "alt": "TV Comic Book Reader Roku TV screenshot 4"
+      },
+      {
+        "src": "images/screenshots/ss005.jpg",
+        "alt": "TV Comic Book Reader Roku TV screenshot 5"
+      },
+      {
+        "src": "images/screenshots/ss006.jpg",
+        "alt": "TV Comic Book Reader Roku TV screenshot 6"
+      }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See TV Comic Book Reader on Roku TV",
+      "youtubeEmbedUrl": "",
+      "iframeTitle": "TV Comic Book Reader Roku TV Demo"
+    }
+  },
+  "sections": {
+    "howItWorks": {
+      "title": "Start Reading Comics on TV in Minutes",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Install TV Comic Book Reader",
+          "text": "Install TV Comic Book Reader on your Roku device."
+        },
+        {
+          "number": "2",
+          "title": "Connect Your Device",
+          "text": "Use the QR code or short address on the Connect screen from a phone, tablet, or computer on the same Wi-Fi network."
+        },
+        {
+          "number": "3",
+          "title": "Choose and Read Comics",
+          "text": "Select one or more supported comic archives, open a comic from the Library, then use the remote-friendly controls for zoom, fit mode, rotate, night mode, thumbnails, and Go to Page."
+        }
+      ]
+    },
+    "features": {
+      "title": "Why Comic Readers Will Like It",
+      "cards": [
+        {
+          "icon": "📺",
+          "title": "TV-First Experience",
+          "bullets": [
+            "Built for Roku TV usage and remote control navigation",
+            "Large-screen friendly comic browsing with thumbnails and clean file names"
+          ]
+        },
+        {
+          "icon": "📥",
+          "title": "Simple Local Pairing",
+          "bullets": [
+            "Scan a QR code or type the short connection address",
+            "Choose comics from a phone, tablet, or computer on the same Wi-Fi network"
+          ]
+        },
+        {
+          "icon": "🗂️",
+          "title": "Comic Format Support",
+          "bullets": [
+            "Supports CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR archives",
+            "Supports common comic page images including JPG, PNG, WebP, GIF, BMP, and JPEG 2000"
+          ]
+        },
+        {
+          "icon": "🎛️",
+          "title": "Reading Controls",
+          "bullets": [
+            "Zoom, fit mode, rotate, night mode, pan, thumbnails, and Go to Page controls",
+            "Resume previously opened comics with saved page and viewing settings"
+          ]
+        },
+        {
+          "icon": "💳",
+          "title": "Subscription Options",
+          "bullets": [
+            "Subscribe or manage your subscription from the app menu",
+            "Subscribed users can continue beyond the configured free page limit"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "Useful App Tools",
+          "bullets": [
+            "Settings show resolution, screen ratio, temporary file count, and storage usage",
+            "Clear temporary viewing storage when needed"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "📚",
+          "title": "Digital Comic Collections",
+          "text": "Read CBZ, CBR, ZIP, RAR, 7Z, TAR, and other supported comic archives from your own collection on a Roku TV."
+        },
+        {
+          "icon": "🛋️",
+          "title": "Couch Reading",
+          "text": "Enjoy comics on a larger screen with simple remote navigation, zoom, pan, rotation, and night mode."
+        },
+        {
+          "icon": "👪",
+          "title": "Shared Reading",
+          "text": "Use the TV for family reading, group browsing, or showing comic pages without passing around a small screen."
+        },
+        {
+          "icon": "📱",
+          "title": "Local Wi-Fi Viewing",
+          "text": "Choose comics from a phone, tablet, or computer on the same Wi-Fi network without needing an external upload service."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is TV Comic Book Reader?",
+          "a": "TV Comic Book Reader is a Roku app for reading comic book archives on your TV with a remote-friendly interface."
+        },
+        {
+          "q": "How do I open comics on my Roku TV?",
+          "a": "Open the Connect screen, scan the QR code or enter the short address from a phone, tablet, or computer on the same Wi-Fi network, then choose the comic archives you want to read."
+        },
+        {
+          "q": "Which comic archive formats are supported?",
+          "a": "The app supports CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR archives containing readable image pages."
+        },
+        {
+          "q": "Which page image formats are supported?",
+          "a": "Supported page image formats include JPG, JPEG, PNG, WebP, GIF, BMP, and JPEG 2000 variants."
+        },
+        {
+          "q": "Can I choose more than one comic?",
+          "a": "Yes. You can select multiple comic archives, and folder selection may also be available on supported devices and browsers."
+        },
+        {
+          "q": "Do my device and Roku need to be on the same Wi-Fi network?",
+          "a": "Yes. The phone, tablet, or computer used to choose comics should be connected to the same local Wi-Fi network as your Roku device."
+        },
+        {
+          "q": "Does the app remember where I stopped?",
+          "a": "Yes. The reader can reopen a comic with the last page and viewing settings such as zoom, fit mode, rotation, pan, and night mode."
+        },
+        {
+          "q": "Can I zoom, pan, rotate, or change the reading view?",
+          "a": "Yes. The options overlay includes zoom, fit mode, rotate, night mode, thumbnails, Go to Page, and close controls. When a page is zoomed, you can pan with the D-pad."
+        },
+        {
+          "q": "Does Roku store my original comic archive files?",
+          "a": "No. TV Comic Book Reader is designed for local viewing and does not persist original comic archive files on Roku. Temporary viewing data can be cleared from Settings."
+        },
+        {
+          "q": "Where can I manage subscription information?",
+          "a": "The app includes Subscribe and Manage Subscription options. Subscription purchase and recovery use the Roku channel store flow."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Read Comic Books on Your Roku TV",
+      "text": "Download TV Comic Book Reader and turn your Roku into a simple, remote-friendly comic archive reader for the big screen.",
+      "buttons": [
+        {
+          "type": "roku",
+          "label": "Get TV Comic Book Reader on Roku",
+          "url": "https://my.roku.com/account/add/tvcomicbookreader",
+          "style": "primary"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "TV Comic Book Reader",
+      "about": "A remote-friendly Roku comic reader for opening, reading, zooming, rotating, and navigating comic book archives on the big screen."
+    },
+    "social": [
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/tvcomicbookreader"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Download App",
+            "url": "https://my.roku.com/account/add/tvcomicbookreader"
+          },
+          {
+            "label": "More Download Options",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          {
+            "label": "TV Comic Book Reader",
+            "url": "https://deepakpk.com/tvcomicbookreader"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TV Comic Book Reader",
+      "operatingSystem": "Roku OS",
+      "applicationCategory": "EntertainmentApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://my.roku.com/account/add/tvcomicbookreader",
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      },
+      "description": "TV Comic Book Reader is a Roku app for opening, reading, zooming, rotating, and navigating comic book archives with remote-friendly controls."
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": [
+        "https://www.facebook.com/tvcomicbookreader"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
+    }
+  }
+}

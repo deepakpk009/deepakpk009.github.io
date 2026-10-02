@@ -5,10 +5,10 @@
     "description": "TV EPUB Viewer is a Roku app for reading EPUB books on your TV with local Wi-Fi pairing, a remote-friendly library, page navigation, text zoom, night mode, page thumbnails, search, Go to Page, and resume support.",
     "keywords": "TV EPUB Viewer, Roku EPUB reader, EPUB viewer for Roku, EPUB reader Roku, eBook reader Roku, read EPUB on TV, EPUB viewer TV, Roku eBook reader, local WiFi EPUB reader, TV ePub reader",
     "author": "Deepak PK",
-    "canonical": "https://deepakpk.com/tvcomicbookreader",
+    "canonical": "https://deepakpk.com/tvepubviewer",
     "og": {
       "type": "website",
-      "url": "https://deepakpk.com/tvcomicbookreader",
+      "url": "https://deepakpk.com/tvepubviewer",
       "title": "TV EPUB Viewer for Roku TV",
       "description": "Read EPUB books on Roku with a clean, remote-friendly TV reader.",
       "image": "images/app_icon.png",
@@ -16,7 +16,7 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "url": "https://deepakpk.com/tvcomicbookreader",
+      "url": "https://deepakpk.com/tvepubviewer",
       "title": "TV EPUB Viewer for Roku TV",
       "description": "A remote-friendly Roku app for reading EPUB books on the big screen.",
       "image": "images/app_icon.png"
@@ -56,7 +56,7 @@
       {
         "type": "roku",
         "label": "Get TV EPUB Viewer on Roku",
-        "url": "https://my.roku.com/account/add/tvcomicbookreader",
+        "url": "https://my.roku.com/account/add/tvepubviewer",
         "style": "primary"
       }
     ],
@@ -508,7 +508,7 @@
         {
           "type": "roku",
           "label": "Get TV EPUB Viewer on Roku",
-          "url": "https://my.roku.com/account/add/tvcomicbookreader",
+          "url": "https://my.roku.com/account/add/tvepubviewer",
           "style": "primary"
         }
       ]
@@ -524,7 +524,7 @@
       {
         "type": "facebook",
         "label": "Facebook",
-        "url": "https://www.facebook.com/tvcomicbookreader"
+        "url": "https://www.facebook.com/tvepubviewer"
       }
     ],
     "columns": [
@@ -533,7 +533,7 @@
         "links": [
           {
             "label": "Download App",
-            "url": "https://my.roku.com/account/add/tvcomicbookreader"
+            "url": "https://my.roku.com/account/add/tvepubviewer"
           },
           {
             "label": "More Download Options",
@@ -568,7 +568,7 @@
         "links": [
           {
             "label": "TV EPUB Viewer",
-            "url": "https://deepakpk.com/tvcomicbookreader"
+            "url": "https://deepakpk.com/tvepubviewer"
           },
           {
             "label": "View All Apps",
@@ -595,7 +595,7 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://my.roku.com/account/add/tvcomicbookreader",
+      "downloadUrl": "https://my.roku.com/account/add/tvepubviewer",
       "author": {
         "@type": "Person",
         "name": "Deepak PK",
@@ -614,7 +614,7 @@
       "url": "https://deepakpk.com",
       "logo": "images/app_icon.png",
       "sameAs": [
-        "https://www.facebook.com/tvcomicbookreader"
+        "https://www.facebook.com/tvepubviewer"
       ],
       "contactPoint": [
         {

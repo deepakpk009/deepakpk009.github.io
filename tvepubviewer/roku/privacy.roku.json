@@ -7,7 +7,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "This Privacy Policy applies to the TV Comic Book Reader application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local comic book reading utility for viewing supported comic archives on a TV."
+          "text": "This Privacy Policy applies to the TV EPUB Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local EPUB reading utility for viewing EPUB books on a TV."
         }
       ]
     },
@@ -21,7 +21,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "TV Comic Book Reader is designed for local viewing between your own devices on the same Wi-Fi network. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
+          "text": "TV EPUB Viewer is designed for local reading between your own devices on the same Wi-Fi network. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
         }
       ]
     },
@@ -35,7 +35,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "To provide the comic reading experience, the Application may handle information such as:"
+          "text": "To provide the EPUB reading experience, the Application may handle information such as:"
         }
       ]
     },
@@ -45,25 +45,19 @@
         [
           {
             "type": "text",
-            "text": "Comic archive files you choose to open with the Application, including supported formats such as CBZ, ZIP, CBR, RAR, CB7, 7Z, CBT, and TAR"
+            "text": "EPUB files you choose to open with the Application"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Basic comic and file details, such as file names, file sizes, page counts, archive formats, thumbnails, and titles when available"
+            "text": "Basic book and file details, such as file names, file sizes, page counts, thumbnails, titles, authors, and language when available"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Comic metadata when present, such as series, issue number, summary, and reading direction"
-          }
-        ],
-        [
-          {
-            "type": "text",
-            "text": "Reading preferences and state, such as zoom, fit mode, rotation, page position, pan position, night mode, and recently viewed pages"
+            "text": "Reading preferences and state, such as page position, text size, background color, night mode, and recently viewed pages"
           }
         ],
         [
@@ -97,21 +91,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "This information is used to provide comic selection, local pairing, library display, viewing, navigation, reading-state restoration, subscription access control, support, and related in-app features."
+          "text": "This information is used to provide EPUB selection, local pairing, library display, reading, navigation, reading-state restoration, subscription access control, support, and related in-app features."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Local Comic Viewing"
+      "text": "Local EPUB Reading"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "Comic archives are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your comic archives to a Service Provider cloud storage account."
+          "text": "EPUB books are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your EPUB files to a Service Provider cloud storage account."
         }
       ]
     },
@@ -120,7 +114,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "Original comic archive files remain on the device you use to select them. The Roku version of the Application uses local network communication to support the TV reading experience and does not persist original comic archive files on the Roku device."
+          "text": "Original EPUB files remain on the device you use to select them. The Roku version of the Application uses local network communication to support the TV reading experience and does not persist original EPUB files on the Roku device."
         }
       ]
     },
@@ -134,7 +128,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during comic reading. Connection status, temporary session information, and recovery messages may be used to help connect, reconnect, or clear unavailable local sessions. You should use the Application only on networks and with comic files that you trust."
+          "text": "The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during EPUB reading. Connection status, temporary session information, and recovery messages may be used to help connect, reconnect, or clear unavailable local sessions. You should use the Application only on networks and with EPUB files that you trust."
         }
       ]
     },
@@ -171,7 +165,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your comic archives to a Service Provider cloud service, or keep a remote analytics history of your comic reading."
+          "text": "The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your EPUB files to a Service Provider cloud service, or keep a remote analytics history of your reading."
         }
       ]
     },
@@ -250,7 +244,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and comic files secure."
+          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and EPUB files secure."
         }
       ]
     },
@@ -278,7 +272,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "This Privacy Policy is effective as of 2026-09-29."
+          "text": "This Privacy Policy is effective as of 2026-10-02."
         }
       ]
     },

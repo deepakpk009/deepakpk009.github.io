@@ -5,8 +5,8 @@
   "start_url": "/tvepubviewer/roku/",
   "scope": "/tvepubviewer/roku/",
   "display": "standalone",
-  "background_color": "#081A63",
-  "theme_color": "#1E48E2",
+  "background_color": "#0D2B0A",
+  "theme_color": "#0ED335",
   "icons": [
     {
       "src": "images/app_icon.png",

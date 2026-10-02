@@ -1,0 +1,190 @@
+[
+  {
+    "title": "What is TV EPUB Viewer for Roku?",
+    "content": "TV EPUB Viewer lets you read EPUB books on your TV using your Roku device. Choose EPUB files from your phone, tablet, or computer, then read them comfortably with your Roku remote."
+  },
+  {
+    "title": "What book format is supported?",
+    "content": "The app is designed for EPUB books."
+  },
+  {
+    "title": "How do I start using the app?",
+    "content": "Open TV EPUB Viewer on Roku, go to Connect, and follow the QR code or web address shown on your TV. From your phone, tablet, or computer, choose the EPUB files you want to read."
+  },
+  {
+    "title": "What devices can I use to choose EPUB files?",
+    "content": "You can use a phone, tablet, laptop, or desktop computer with a modern web browser."
+  },
+  {
+    "title": "Do my devices need to be on the same Wi-Fi network?",
+    "content": "Yes. Your Roku device and the phone, tablet, or computer used to choose EPUB books should be connected to the same local Wi-Fi network."
+  },
+  {
+    "title": "Do I need to install another app on my phone or computer?",
+    "content": "No. You only need a modern web browser on your phone, tablet, or computer."
+  },
+  {
+    "title": "Can I choose more than one EPUB?",
+    "content": "Yes. You can select multiple EPUB files and choose which one to open from the Library on Roku."
+  },
+  {
+    "title": "Can I drag and drop EPUB files?",
+    "content": "Yes, on browsers that support drag and drop. You can also use the file picker."
+  },
+  {
+    "title": "Can I choose a folder of EPUB books?",
+    "content": "Some browsers support folder selection. When available, you can choose a folder and the app will use the EPUB files from that selection."
+  },
+  {
+    "title": "What happens if I select the same EPUB twice?",
+    "content": "Duplicate selections are ignored so the same book is not added repeatedly."
+  },
+  {
+    "title": "Can I remove a selected EPUB?",
+    "content": "Yes. Remove the EPUB from the selection page on your phone, tablet, or computer and the Roku Library will update."
+  },
+  {
+    "title": "What is the Library?",
+    "content": "The Library shows your selected EPUB books in a TV-friendly grid with thumbnails when available. Use your Roku remote to choose a book and open it."
+  },
+  {
+    "title": "Why is the Library empty?",
+    "content": "The Library is empty when no EPUB books have been selected. Go to Connect, open the web address shown on your TV, and choose one or more EPUB files."
+  },
+  {
+    "title": "How do I open a book from the Library?",
+    "content": "Use the Roku remote D-pad to highlight a book, then press OK to open it."
+  },
+  {
+    "title": "Will a single selected EPUB open automatically?",
+    "content": "When only one EPUB is selected, the app may open it automatically once it is ready. When multiple EPUBs are selected, you can choose one from the Library."
+  },
+  {
+    "title": "Can multiple phones or computers connect at the same time?",
+    "content": "Yes. EPUB books selected from multiple connected devices can appear together in the Roku Library. If one device clears its selection, books from other connected devices can remain available."
+  },
+  {
+    "title": "How do I move between pages?",
+    "content": "Use Left and Right on the Roku remote to move between pages. Press Back to leave the reader and return to the Library."
+  },
+  {
+    "title": "How do I open reading options?",
+    "content": "Press OK or Options while reading an EPUB to open the reading options menu."
+  },
+  {
+    "title": "What reading options are available?",
+    "content": "Reading options include Zoom In, Zoom Out, Zoom Reset, Search, Thumbnails, Go to Page, Background, Night Mode, and Close."
+  },
+  {
+    "title": "Can I change the text size?",
+    "content": "Yes. Use Zoom In, Zoom Out, or Zoom Reset from the reading options menu."
+  },
+  {
+    "title": "Can I change the page background?",
+    "content": "Yes. Use Background from the reading options menu to choose a page background color."
+  },
+  {
+    "title": "Can I search inside an EPUB?",
+    "content": "Yes. Use Search from the reading options menu, enter your search text, and choose a result to jump to the matching page."
+  },
+  {
+    "title": "Can I jump to a specific page?",
+    "content": "Yes. Use Go to Page from the reading options menu, enter a page number with the TV-friendly keypad, and submit it."
+  },
+  {
+    "title": "Can I browse page thumbnails?",
+    "content": "Yes. Use Thumbnails from the reading options menu to browse nearby pages and jump to the page you want."
+  },
+  {
+    "title": "What is Night Mode?",
+    "content": "Night Mode changes the page appearance for easier reading in a dark room."
+  },
+  {
+    "title": "Does the app remember where I left off?",
+    "content": "While you are using the app, it can remember per-book reading state such as page position, text size, background color, and Night Mode."
+  },
+  {
+    "title": "Can I use EPUBs with long or Unicode file names?",
+    "content": "Yes. The app supports localized and Unicode EPUB file names, and long names are shortened on the TV screen so the Library stays easy to read."
+  },
+  {
+    "title": "Why was one of my selected files skipped?",
+    "content": "A file may be skipped if it is not an EPUB file, is damaged, is empty, is unsupported, or cannot be read by the app."
+  },
+  {
+    "title": "What should I do if an EPUB does not open?",
+    "content": "Make sure the file is a valid EPUB and try selecting it again. If the file is corrupted or unsupported, it may not open."
+  },
+  {
+    "title": "What happens if my phone or computer disconnects?",
+    "content": "Short interruptions may recover automatically. If the connection does not return, go back to Connect and select your EPUB files again if needed."
+  },
+  {
+    "title": "Why can't I connect from my browser?",
+    "content": "Check that your Roku and browser device are on the same Wi-Fi network, the Roku app is open on the Connect screen, and the web address was entered exactly as shown on the TV."
+  },
+  {
+    "title": "Can I use TV EPUB Viewer away from home?",
+    "content": "TV EPUB Viewer is designed for local reading when your Roku and browser device are on the same network."
+  },
+  {
+    "title": "Are my EPUB files uploaded to a cloud service?",
+    "content": "No. TV EPUB Viewer is designed for local reading between your own devices. It does not provide cloud book storage or upload your EPUB files to a cloud document account."
+  },
+  {
+    "title": "Does Roku permanently store my full EPUB files?",
+    "content": "No. TV EPUB Viewer is not designed to permanently store your full EPUB files on the Roku device."
+  },
+  {
+    "title": "Does the app require an internet connection?",
+    "content": "EPUB reading is designed to work over your local network. Internet access may be needed for Roku purchases, subscription validation, Help/FAQ, Privacy Policy, Terms of Use, support links, or feedback links."
+  },
+  {
+    "title": "Can I use TV EPUB Viewer as cloud storage?",
+    "content": "No. TV EPUB Viewer is a local EPUB reading app for Roku. It is not a cloud storage, backup, or document management service."
+  },
+  {
+    "title": "What information is shown in Settings?",
+    "content": "Settings can show display information, temporary file information, temporary storage used, and an option to clear temporary storage."
+  },
+  {
+    "title": "How do I clear temporary storage?",
+    "content": "Open Settings and choose Clear Temporary Storage."
+  },
+  {
+    "title": "Will clearing temporary storage delete my original EPUB files?",
+    "content": "No. Clearing temporary storage only removes temporary app data on Roku. It does not delete the original EPUB files from your phone, tablet, or computer."
+  },
+  {
+    "title": "What are the free access limits?",
+    "content": "Free users may have a page-viewing limit per EPUB. If the limit is reached, the app will show a Page Limit Reached message."
+  },
+  {
+    "title": "What does a subscription unlock?",
+    "content": "A subscription unlocks continued reading beyond the free page limit."
+  },
+  {
+    "title": "How do I subscribe?",
+    "content": "Choose Subscribe from the app menu or from the Page Limit Reached message. The purchase is handled through Roku."
+  },
+  {
+    "title": "How do I manage my subscription?",
+    "content": "Use Manage Subscription from the app when available, or manage your subscription through your Roku account or Roku device subscription settings."
+  },
+  {
+    "title": "Where can I read the Privacy Policy and Terms of Use?",
+    "content": "Privacy Policy and Terms of Use are available from the app menu."
+  },
+  {
+    "title": "Where can I get support?",
+    "content": "Open Support & Feedback from the app menu and use the support option shown there."
+  },
+  {
+    "title": "Where can I send feedback or suggestions?",
+    "content": "Open Support & Feedback from the app menu and use the feedback option shown there."
+  },
+  {
+    "title": "What information is shown on the About page?",
+    "content": "The About page shows the TV EPUB Viewer app name, icon, tagline, and app details."
+  }
+]

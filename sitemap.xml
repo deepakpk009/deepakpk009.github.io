@@ -77,7 +77,7 @@
     <image:image>
       <image:loc>https://deepakpk.com/usbgallery/images/app_icon.png</image:loc>
       <image:title>USB Gallery</image:title>
-      <image:caption>USB Photos, Videos &amp; Music on Android TV</image:caption>
+      <image:caption>USB Photos, Videos &amp; Music on Android TV, Fire TV &amp; Roku</image:caption>
     </image:image>
   </url>
   <url>
@@ -125,7 +125,7 @@
     <image:image>
       <image:loc>https://deepakpk.com/simpleusbsignage/images/app_icon.png</image:loc>
       <image:title>Simple USB Signage</image:title>
-      <image:caption>USB Digital Signage for Android TV</image:caption>
+      <image:caption>USB Digital Signage for Android TV, Fire TV &amp; Roku</image:caption>
     </image:image>
   </url>
   <url>
@@ -142,6 +142,22 @@
       <image:loc>https://deepakpk.com/dittoscan/images/app_icon.png</image:loc>
       <image:title>Ditto Scan</image:title>
       <image:caption>Scan Documents and Export PDFs on Android</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/browsepad/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/browsepad/images/app_icon.png</image:loc>
+      <image:title>BrowsePad</image:title>
+      <image:caption>Redefining Web Browsing on Android TV</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://deepakpk.com/tvcomicbookreader/</loc>
+    <image:image>
+      <image:loc>https://deepakpk.com/tvcomicbookreader/images/app_icon.png</image:loc>
+      <image:title>TV Comic Book Reader</image:title>
+      <image:caption>Browse and read CBZ, CBR, ZIP, RAR, CB7, 7Z, CBT, and TAR comic archives on Android TV</image:caption>
     </image:image>
   </url>
 </urlset>

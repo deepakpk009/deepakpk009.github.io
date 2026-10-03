@@ -1,0 +1,22 @@
+{
+  "name": "TV EPUB Viewer",
+  "short_name": "TV EPUB View",
+  "description": "TV EPUB Viewer is a Roku app for reading EPUB books on your TV with local Wi-Fi pairing, a remote-friendly library, page navigation, text zoom, night mode, page thumbnails, search, Go to Page, and resume support.",
+  "start_url": "/tvepubviewer/roku/",
+  "scope": "/tvepubviewer/roku/",
+  "display": "standalone",
+  "background_color": "#0D2B0A",
+  "theme_color": "#0ED335",
+  "icons": [
+    {
+      "src": "images/app_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

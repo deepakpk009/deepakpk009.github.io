@@ -1,0 +1,628 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "TV EPUB Viewer - EPUB reader for Roku TV",
+    "description": "TV EPUB Viewer is a Roku app for reading EPUB books on your TV with local Wi-Fi pairing, a remote-friendly library, page navigation, text zoom, night mode, page thumbnails, search, Go to Page, and resume support.",
+    "keywords": "TV EPUB Viewer, Roku EPUB reader, EPUB viewer for Roku, EPUB reader Roku, eBook reader Roku, read EPUB on TV, EPUB viewer TV, Roku eBook reader, local WiFi EPUB reader, TV ePub reader",
+    "author": "Deepak PK",
+    "canonical": "https://deepakpk.com/tvepubviewer",
+    "og": {
+      "type": "website",
+      "url": "https://deepakpk.com/tvepubviewer",
+      "title": "TV EPUB Viewer for Roku TV",
+      "description": "Read EPUB books on Roku with a clean, remote-friendly TV reader.",
+      "image": "images/app_icon.png",
+      "siteName": "Deepak PK"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "url": "https://deepakpk.com/tvepubviewer",
+      "title": "TV EPUB Viewer for Roku TV",
+      "description": "A remote-friendly Roku app for reading EPUB books on the big screen.",
+      "image": "images/app_icon.png"
+    },
+    "favicons": {
+      "png192": "images/app_icon.png",
+      "png32": "images/app_icon.png",
+      "png16": "images/app_icon.png",
+      "appleTouch": "images/app_icon.png",
+      "shortcut": "images/app_icon.png"
+    }
+  },
+  "theme": {
+    "primaryGreen": "#0ED335",
+    "darkGreen": "#0D2B0A",
+    "lightGreen": "#2563EB",
+    "darkerGreen": "#071805",
+    "black": "#030611",
+    "darkBg": "#0D2B0A",
+    "cardBg": "#003406",
+    "textWhite": "#FFFFFF",
+    "textGray": "#F3F4F6",
+    "borderGreen": "#0ED335",
+    "boxShadowColor": "#0ED33559",
+    "heroWatermarkOpacity": 0.045,
+    "ctaWatermarkOpacity": 0.07,
+    "accentOrange": "#F97316",
+    "softRed": "#8300DA",
+    "paperWhite": "#FFFFFF"
+  },
+  "product": {
+    "name": "TV EPUB Viewer",
+    "heroTitle": "TV EPUB Viewer - Read EPUB Books on Roku TV",
+    "heroDescription": "Open EPUB books on your Roku TV with a clean, remote-friendly interface. Connect from your phone, tablet, or computer on the same Wi-Fi network, choose one or more EPUB files, and read them on the big screen with text zoom, night mode, page thumbnails, search, Go to Page, and resume support.",
+    "icon": "images/app_icon.png",
+    "storeButtons": [
+      {
+        "type": "roku",
+        "label": "Get TV EPUB Viewer on Roku",
+        "url": "https://my.roku.com/account/add/tvepubviewer",
+        "style": "primary"
+      }
+    ],
+    "stats": [
+      {
+        "value": "Roku TV",
+        "label": "Remote-Friendly Reader"
+      },
+      {
+        "value": "EPUB",
+        "label": "Book File Support"
+      },
+      {
+        "value": "QR / Wi-Fi",
+        "label": "Simple Local Pairing"
+      }
+    ],
+    "features": {
+      "title": "Features Built for Big-Screen EPUB Reading",
+      "cards": [
+        {
+          "icon": "📺",
+          "title": "Made for Roku TV",
+          "bullets": [
+            "Designed for Roku TV and remote control navigation",
+            "Large labels, clear focus states, and simple D-pad movement",
+            "Move between Connect, Library, Settings, Help, and the full-screen reader",
+            "TV-optimized screens for comfortable reading from the couch"
+          ]
+        },
+        {
+          "icon": "📱",
+          "title": "Easy Local Pairing",
+          "bullets": [
+            "Connect from a phone, tablet, or computer on the same Wi-Fi network",
+            "Scan the QR code shown on your Roku screen",
+            "Use the short manual address if you prefer typing the link",
+            "Connection status and retry options help you reconnect when needed"
+          ]
+        },
+        {
+          "icon": "📚",
+          "title": "EPUB Selection",
+          "bullets": [
+            "Choose one EPUB, multiple EPUBs, or a folder where supported",
+            "Drag and drop EPUB files in supported browsers",
+            "Duplicate selections are skipped so your library stays clean",
+            "Selected books show file size, page count, and remove actions"
+          ]
+        },
+        {
+          "icon": "🗂️",
+          "title": "EPUB Book Support",
+          "bullets": [
+            "Supports EPUB books selected from your own device",
+            "Handles many standard EPUB titles, covers, images, and metadata",
+            "Supports reflowable books with TV-friendly page display",
+            "Supports localized and Unicode EPUB file names"
+          ]
+        },
+        {
+          "icon": "📖",
+          "title": "Remote-Friendly Library",
+          "bullets": [
+            "Browse selected EPUBs in a Roku-friendly grid",
+            "Book cards show first-page thumbnails and clean file names",
+            "Open the focused EPUB with the OK button",
+            "Empty library guidance sends you back to the Connect screen"
+          ]
+        },
+        {
+          "icon": "🖼️",
+          "title": "Full-Screen EPUB Reader",
+          "bullets": [
+            "Read selected EPUB books in a full-screen TV viewer",
+            "Use Left and Right to move between pages",
+            "Use Back to return to the Library without losing the active session",
+            "The reader keeps your last visible page on screen during brief loading moments"
+          ]
+        },
+        {
+          "icon": "🎛️",
+          "title": "Reading Controls",
+          "bullets": [
+            "Increase or decrease text size for more comfortable reading",
+            "Reset text size when you want the default view",
+            "Choose page background colors for different reading conditions",
+            "Toggle night mode for easier dark-room reading"
+          ]
+        },
+        {
+          "icon": "↔️",
+          "title": "Search and Navigation",
+          "bullets": [
+            "Search inside EPUB text from the Roku reader",
+            "Review matching page numbers and snippets",
+            "Jump from a search result directly to the matching page",
+            "Use simple D-pad navigation for search results"
+          ]
+        },
+        {
+          "icon": "🔖",
+          "title": "Page Thumbnails",
+          "bullets": [
+            "Open a full-screen page thumbnail navigator",
+            "Browse nearby pages with a focused center thumbnail",
+            "Select a thumbnail to jump directly to that page",
+            "Cancel thumbnail navigation without changing pages"
+          ]
+        },
+        {
+          "icon": "🔢",
+          "title": "Go to Page",
+          "bullets": [
+            "Open a TV-friendly numeric keypad",
+            "Enter a page number with the D-pad and OK button",
+            "Delete digits before submitting",
+            "Jump only to valid pages within the current EPUB"
+          ]
+        },
+        {
+          "icon": "🔄",
+          "title": "Resume Reading",
+          "bullets": [
+            "Reopen an EPUB at the last page you were reading",
+            "Restore saved page, text size, background color, and night mode",
+            "Open new EPUBs with sensible default viewing settings",
+            "Return from the reader to the Library without clearing your selected books"
+          ]
+        },
+        {
+          "icon": "💳",
+          "title": "Subscription Support",
+          "bullets": [
+            "Subscribe or manage your subscription from the app menu",
+            "Subscription purchase and recovery flows use the Roku channel store",
+            "Free users may be limited to the first configured number of pages per EPUB",
+            "Subscribed users can continue reading later pages without the page limit prompt"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "Settings and Storage Tools",
+          "bullets": [
+            "View TV screen resolution and screen ratio",
+            "Check temporary viewing file count and storage usage",
+            "Clear temporary storage when needed",
+            "See clear success, no-data, and failure messages for cleanup actions"
+          ]
+        },
+        {
+          "icon": "❓",
+          "title": "Help, Legal, and Support",
+          "bullets": [
+            "Built-in Help/FAQ page with expandable questions",
+            "Privacy Policy and Terms of Use pages",
+            "About page with app, developer, and version details",
+            "Support and feedback page with QR codes for useful links"
+          ]
+        },
+        {
+          "icon": "🔒",
+          "title": "Local Viewing Design",
+          "bullets": [
+            "EPUB files are selected from your own phone, tablet, or computer",
+            "No external upload service is required for EPUB content",
+            "Roku does not persist original EPUB files",
+            "Temporary viewing data can be cleared from Settings"
+          ]
+        },
+        {
+          "icon": "🌐",
+          "title": "Localization Ready",
+          "bullets": [
+            "Roku interface text uses localized app strings",
+            "Reader controls, page prompts, settings, and subscription messages support translation",
+            "The browser selection page includes localized status and error messages",
+            "Browser language selection can be stored locally"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "📚",
+          "title": "Digital Book Collections",
+          "text": "Read EPUB books from your own collection on a Roku TV."
+        },
+        {
+          "icon": "🛋️",
+          "title": "Couch Reading",
+          "text": "Enjoy EPUB books on a larger screen with simple remote navigation, text zoom, background colors, and night mode."
+        },
+        {
+          "icon": "👪",
+          "title": "Shared Reading",
+          "text": "Use the TV for family reading, group browsing, or sharing book pages without passing around a small screen."
+        },
+        {
+          "icon": "📱",
+          "title": "Local Wi-Fi Viewing",
+          "text": "Choose EPUB files from a phone, tablet, or computer on the same Wi-Fi network without needing an external upload service."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is TV EPUB Viewer?",
+          "a": "TV EPUB Viewer is a Roku app for reading EPUB books on your TV with a remote-friendly interface."
+        },
+        {
+          "q": "How do I open EPUB books on my Roku TV?",
+          "a": "Open the Connect screen, scan the QR code or enter the short address from a phone, tablet, or computer on the same Wi-Fi network, then choose the EPUB files you want to read."
+        },
+        {
+          "q": "Which book format is supported?",
+          "a": "The app is designed for EPUB books."
+        },
+        {
+          "q": "Can I search inside a book?",
+          "a": "Yes. The reader includes EPUB text search with results that can jump to matching pages."
+        },
+        {
+          "q": "Can I choose more than one EPUB?",
+          "a": "Yes. You can select multiple EPUB files, and folder selection may also be available on supported devices and browsers."
+        },
+        {
+          "q": "Do my device and Roku need to be on the same Wi-Fi network?",
+          "a": "Yes. The phone, tablet, or computer used to choose EPUB books should be connected to the same local Wi-Fi network as your Roku device."
+        },
+        {
+          "q": "Does the app remember where I stopped?",
+          "a": "Yes. The reader can reopen an EPUB with the last page and reading settings such as text size, background color, and night mode."
+        },
+        {
+          "q": "Can I change the reading view?",
+          "a": "Yes. The options overlay includes text zoom, background color, night mode, thumbnails, search, Go to Page, and close controls."
+        },
+        {
+          "q": "Does Roku store my original EPUB files?",
+          "a": "No. TV EPUB Viewer is designed for local reading and does not persist original EPUB files on Roku. Temporary viewing data can be cleared from Settings."
+        },
+        {
+          "q": "Where can I manage subscription information?",
+          "a": "The app includes Subscribe and Manage Subscription options. Subscription purchase and recovery use the Roku channel store flow."
+        }
+      ]
+    }
+  },
+  "media": {
+    "screenshotOrientation": "landscape",
+    "screenshots": [
+      {
+        "src": "images/screenshots/ss001.jpg",
+        "alt": "TV EPUB Viewer Roku TV screenshot 1"
+      },
+      {
+        "src": "images/screenshots/ss002.jpg",
+        "alt": "TV EPUB Viewer Roku TV screenshot 2"
+      },
+      {
+        "src": "images/screenshots/ss003.jpg",
+        "alt": "TV EPUB Viewer Roku TV screenshot 3"
+      },
+      {
+        "src": "images/screenshots/ss004.jpg",
+        "alt": "TV EPUB Viewer Roku TV screenshot 4"
+      },
+      {
+        "src": "images/screenshots/ss005.jpg",
+        "alt": "TV EPUB Viewer Roku TV screenshot 5"
+      },
+      {
+        "src": "images/screenshots/ss006.jpg",
+        "alt": "TV EPUB Viewer Roku TV screenshot 6"
+      },
+      {
+        "src": "images/screenshots/ss007.jpg",
+        "alt": "TV EPUB Viewer Roku TV screenshot 7"
+      },
+      {
+        "src": "images/screenshots/ss008.jpg",
+        "alt": "TV EPUB Viewer Roku TV screenshot 8"
+      },
+      {
+        "src": "images/screenshots/ss009.jpg",
+        "alt": "TV EPUB Viewer Roku TV screenshot 9"
+      }
+    ],
+    "video": {
+      "sectionId": "demo",
+      "title": "See TV EPUB Viewer on Roku TV",
+      "youtubeEmbedUrl": "",
+      "iframeTitle": "TV EPUB Viewer Roku TV Demo"
+    }
+  },
+  "sections": {
+    "howItWorks": {
+      "title": "Start Reading EPUB Books on TV in Minutes",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Install TV EPUB Viewer",
+          "text": "Install TV EPUB Viewer on your Roku device."
+        },
+        {
+          "number": "2",
+          "title": "Connect Your Device",
+          "text": "Use the QR code or short address on the Connect screen from a phone, tablet, or computer on the same Wi-Fi network."
+        },
+        {
+          "number": "3",
+          "title": "Choose and Read EPUB Books",
+          "text": "Select one or more EPUB files, open a book from the Library, then use the remote-friendly controls for text zoom, background color, night mode, thumbnails, search, and Go to Page."
+        }
+      ]
+    },
+    "features": {
+      "title": "Why EPUB Readers Will Like It",
+      "cards": [
+        {
+          "icon": "📺",
+          "title": "TV-First Experience",
+          "bullets": [
+            "Built for Roku TV usage and remote control navigation",
+            "Large-screen friendly book browsing with thumbnails and clean file names"
+          ]
+        },
+        {
+          "icon": "📥",
+          "title": "Simple Local Pairing",
+          "bullets": [
+            "Scan a QR code or type the short connection address",
+            "Choose EPUB books from a phone, tablet, or computer on the same Wi-Fi network"
+          ]
+        },
+        {
+          "icon": "🗂️",
+          "title": "EPUB Book Support",
+          "bullets": [
+            "Supports EPUB books selected from your own device",
+            "Handles many standard EPUB titles, covers, images, and metadata"
+          ]
+        },
+        {
+          "icon": "🎛️",
+          "title": "Reading Controls",
+          "bullets": [
+            "Text zoom, background color, night mode, thumbnails, search, and Go to Page controls",
+            "Resume previously opened EPUBs with saved page and reading settings"
+          ]
+        },
+        {
+          "icon": "💳",
+          "title": "Subscription Options",
+          "bullets": [
+            "Subscribe or manage your subscription from the app menu",
+            "Subscribed users can continue beyond the configured free page limit"
+          ]
+        },
+        {
+          "icon": "⚙️",
+          "title": "Useful App Tools",
+          "bullets": [
+            "Settings show resolution, screen ratio, temporary file count, and storage usage",
+            "Clear temporary viewing storage when needed"
+          ]
+        }
+      ]
+    },
+    "perfectFor": {
+      "title": "Perfect For",
+      "items": [
+        {
+          "icon": "📚",
+          "title": "Digital Book Collections",
+          "text": "Read EPUB books from your own collection on a Roku TV."
+        },
+        {
+          "icon": "🛋️",
+          "title": "Couch Reading",
+          "text": "Enjoy EPUB books on a larger screen with simple remote navigation, text zoom, background colors, and night mode."
+        },
+        {
+          "icon": "👪",
+          "title": "Shared Reading",
+          "text": "Use the TV for family reading, group browsing, or sharing book pages without passing around a small screen."
+        },
+        {
+          "icon": "📱",
+          "title": "Local Wi-Fi Viewing",
+          "text": "Choose EPUB files from a phone, tablet, or computer on the same Wi-Fi network without needing an external upload service."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is TV EPUB Viewer?",
+          "a": "TV EPUB Viewer is a Roku app for reading EPUB books on your TV with a remote-friendly interface."
+        },
+        {
+          "q": "How do I open EPUB books on my Roku TV?",
+          "a": "Open the Connect screen, scan the QR code or enter the short address from a phone, tablet, or computer on the same Wi-Fi network, then choose the EPUB files you want to read."
+        },
+        {
+          "q": "Which book format is supported?",
+          "a": "The app is designed for EPUB books."
+        },
+        {
+          "q": "Can I search inside a book?",
+          "a": "Yes. The reader includes EPUB text search with results that can jump to matching pages."
+        },
+        {
+          "q": "Can I choose more than one EPUB?",
+          "a": "Yes. You can select multiple EPUB files, and folder selection may also be available on supported devices and browsers."
+        },
+        {
+          "q": "Do my device and Roku need to be on the same Wi-Fi network?",
+          "a": "Yes. The phone, tablet, or computer used to choose EPUB books should be connected to the same local Wi-Fi network as your Roku device."
+        },
+        {
+          "q": "Does the app remember where I stopped?",
+          "a": "Yes. The reader can reopen an EPUB with the last page and reading settings such as text size, background color, and night mode."
+        },
+        {
+          "q": "Can I change the reading view?",
+          "a": "Yes. The options overlay includes text zoom, background color, night mode, thumbnails, search, Go to Page, and close controls."
+        },
+        {
+          "q": "Does Roku store my original EPUB files?",
+          "a": "No. TV EPUB Viewer is designed for local reading and does not persist original EPUB files on Roku. Temporary viewing data can be cleared from Settings."
+        },
+        {
+          "q": "Where can I manage subscription information?",
+          "a": "The app includes Subscribe and Manage Subscription options. Subscription purchase and recovery use the Roku channel store flow."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Read EPUB Books on Your Roku TV",
+      "text": "Download TV EPUB Viewer and turn your Roku into a simple, remote-friendly EPUB reader for the big screen.",
+      "buttons": [
+        {
+          "type": "roku",
+          "label": "Get TV EPUB Viewer on Roku",
+          "url": "https://my.roku.com/account/add/tvepubviewer",
+          "style": "primary"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "brand": {
+      "logo": "images/app_icon.png",
+      "name": "TV EPUB Viewer",
+      "about": "A remote-friendly Roku EPUB reader for opening, reading, searching, and navigating EPUB books on the big screen."
+    },
+    "social": [
+      {
+        "type": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/tvepubviewer"
+      }
+    ],
+    "columns": [
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "label": "Download App",
+            "url": "https://my.roku.com/account/add/tvepubviewer"
+          },
+          {
+            "label": "More Download Options",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Terms & Conditions",
+            "url": "terms.html"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "privacy.html"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Email Support",
+            "url": "mailto:deepakpk009@yahoo.in"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
+          }
+        ],
+        "extraHtml": "<p style=\"margin-top: 15px;\"><strong style=\"color: var(--primary-green);\">Email</strong><br><a href=\"mailto:deepakpk009@yahoo.in\">deepakpk009@yahoo.in</a></p>"
+      },
+      {
+        "title": "More Apps",
+        "links": [
+          {
+            "label": "TV EPUB Viewer",
+            "url": "https://deepakpk.com/tvepubviewer"
+          },
+          {
+            "label": "View All Apps",
+            "url": "https://deepakpk.com/apps"
+          },
+          {
+            "label": "Developer Portfolio",
+            "url": "https://deepakpk.com"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Deepak PK. All rights reserved."
+  },
+  "schema": {
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TV EPUB Viewer",
+      "operatingSystem": "Roku OS",
+      "applicationCategory": "EntertainmentApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": "https://my.roku.com/account/add/tvepubviewer",
+      "author": {
+        "@type": "Person",
+        "name": "Deepak PK",
+        "url": "https://deepakpk.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Deepak PK"
+      },
+      "description": "TV EPUB Viewer is a Roku app for opening, reading, searching, and navigating EPUB books with remote-friendly controls."
+    },
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deepak PK",
+      "url": "https://deepakpk.com",
+      "logo": "images/app_icon.png",
+      "sameAs": [
+        "https://www.facebook.com/tvepubviewer"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "deepakpk009@yahoo.in",
+          "contactType": "Customer Support"
+        }
+      ]
+    }
+  }
+}

@@ -64,6 +64,12 @@
         "label": "Available on Amazon",
         "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
         "style": "secondary"
+      },
+      {
+        "type": "roku",
+        "label": "View Roku Version",
+        "url": "roku/",
+        "style": "secondary"
       }
     ],
     "stats": [
@@ -461,6 +467,12 @@
           "type": "amazon",
           "label": "Available on Amazon",
           "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
+          "style": "secondary"
+        },
+        {
+          "type": "roku",
+          "label": "View Roku Version",
+          "url": "roku/",
           "style": "secondary"
         }
       ]

@@ -1,6 +1,6 @@
 Terms & Conditions
 
-These Terms & Conditions apply to the TV EPUB Viewer application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local EPUB reading utility for viewing EPUB books on a TV.
+These Terms & Conditions apply to the TV PPTX Viewer application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local presentation viewing utility for displaying PowerPoint files on a TV.
 
 Acceptance of These Terms
 
@@ -8,36 +8,36 @@ By downloading, installing, or using the Application on a Roku device, you agree
 
 Use of the Application
 
-The Application is intended to help you read EPUB books on your TV. To use it, you select EPUB files from a phone, tablet, or computer connected to the same local network as your Roku device.
+The Application is intended to help you view PPTX presentations on your TV. To use it, you select PPTX files from a phone, tablet, or computer connected to the same local network as your Roku device.
 
-Compatibility may vary depending on the EPUB file, device, network, and Roku platform behavior.
+Compatibility may vary depending on the PPTX file, device, network, and Roku platform behavior.
 
-You are responsible for the EPUB files you choose to open and for making sure you have the right to view, use, display, or access those files.
+You are responsible for the PPTX files you choose to open and for making sure you have the right to view, use, display, or access those files.
 
 Content Responsibility
 
 You are responsible for:
 
-- Any EPUB files, file names, metadata, images, text, or other content you choose to use with the Application
+- Any PPTX files, file names, metadata, images, text, presentation content, or other content you choose to use with the Application
 - Keeping your phone, tablet, computer, Roku device, and Wi-Fi network secure
-- Making sure your use of the Application and EPUB files complies with applicable laws and rights held by content owners
+- Making sure your use of the Application and PPTX files complies with applicable laws and rights held by content owners
 - Using the Application only with files and networks that you trust
 
-The Service Provider does not claim ownership of the EPUB files or book content you access through the Application.
+The Service Provider does not claim ownership of the PPTX files or presentation content you access through the Application.
 
 Local Network and Device Requirements
 
-The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select EPUB files. The quality and availability of the experience may depend on your network, device performance, EPUB size, EPUB complexity, and Roku device resources.
+The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select PPTX files. The quality and availability of the experience may depend on your network, device performance, PPTX size, PPTX complexity, and Roku device resources.
 
 Availability and Compatibility
 
-The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, Roku platform requirements, EPUB files, and reading features.
+The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, Roku platform requirements, PPTX files, and viewing features.
 
-The Service Provider does not guarantee that every EPUB file, metadata field, device, network, document size, or reading feature will be supported or error-free.
+The Service Provider does not guarantee that every PPTX file, metadata field, device, network, document size, presentation effect, or viewing feature will be supported or error-free.
 
-Subscriptions and Page Limits
+Subscriptions and Slide Limits
 
-The Application may offer subscription features through the Roku platform. Free use may be limited, including by page limits per EPUB or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms.
+The Application may offer subscription features through the Roku platform. Free use may be limited, including by slide limits per presentation or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms.
 
 No Analytics or Google/Firebase Services in the Roku Version
 
@@ -50,7 +50,7 @@ You agree not to:
 - Use the Application in a way that violates applicable law
 - Use the Application to view, copy, display, or access content that you are not authorized to use
 - Attempt to interfere with the operation of the Application, Roku platform, local connection, or related access controls
-- Attempt to bypass subscription limits, entitlement checks, page limits, or security features
+- Attempt to bypass subscription limits, entitlement checks, slide limits, or security features
 - Copy, modify, reverse engineer, or create derivative versions of the Application except to the extent allowed by applicable law
 
 Support, Feedback, and External Resources
@@ -63,7 +63,7 @@ The Application is provided on an "AS IS" and "AS AVAILABLE" basis. To the maxim
 
 Limitation of Liability
 
-To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, EPUB display issues, network issues, device issues, subscription availability, unsupported files, corrupted files, temporary app data behavior, or local connection behavior arising from your use of the Application.
+To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, PPTX display issues, network issues, device issues, subscription availability, unsupported files, corrupted files, temporary app data behavior, or local connection behavior arising from your use of the Application.
 
 Changes to These Terms
 
@@ -71,7 +71,7 @@ The Service Provider may update these Terms & Conditions from time to time. If t
 
 Effective Date
 
-These Terms & Conditions are effective as of 2026-10-02.
+These Terms & Conditions are effective as of 2026-10-06.
 
 Contact Us
 

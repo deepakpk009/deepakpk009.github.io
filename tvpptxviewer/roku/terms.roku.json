@@ -7,7 +7,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "These Terms & Conditions apply to the TV EPUB Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local EPUB reading utility for viewing EPUB books on a TV."
+          "text": "These Terms & Conditions apply to the TV PPTX Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local presentation viewing utility for displaying PowerPoint files on a TV."
         }
       ]
     },
@@ -35,7 +35,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application is intended to help you read EPUB books on your TV. To use it, you select EPUB files from a phone, tablet, or computer connected to the same local network as your Roku device."
+          "text": "The Application is intended to help you view PPTX presentations on your TV. To use it, you select PPTX files from a phone, tablet, or computer connected to the same local network as your Roku device."
         }
       ]
     },
@@ -44,7 +44,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "Compatibility may vary depending on the EPUB file, device, network, and Roku platform behavior."
+          "text": "Compatibility may vary depending on the PPTX file, device, network, and Roku platform behavior."
         }
       ]
     },
@@ -53,7 +53,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "You are responsible for the EPUB files you choose to open and for making sure you have the right to view, use, display, or access those files."
+          "text": "You are responsible for the PPTX files you choose to open and for making sure you have the right to view, use, display, or access those files."
         }
       ]
     },
@@ -77,7 +77,7 @@
         [
           {
             "type": "text",
-            "text": "Any EPUB files, file names, metadata, images, text, or other content you choose to use with the Application"
+            "text": "Any PPTX files, file names, metadata, images, text, presentation content, or other content you choose to use with the Application"
           }
         ],
         [
@@ -89,7 +89,7 @@
         [
           {
             "type": "text",
-            "text": "Making sure your use of the Application and EPUB files complies with applicable laws and rights held by content owners"
+            "text": "Making sure your use of the Application and PPTX files complies with applicable laws and rights held by content owners"
           }
         ],
         [
@@ -105,7 +105,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider does not claim ownership of the EPUB files or book content you access through the Application."
+          "text": "The Service Provider does not claim ownership of the PPTX files or presentation content you access through the Application."
         }
       ]
     },
@@ -119,7 +119,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select EPUB files. The quality and availability of the experience may depend on your network, device performance, EPUB size, EPUB complexity, and Roku device resources."
+          "text": "The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select PPTX files. The quality and availability of the experience may depend on your network, device performance, PPTX size, PPTX complexity, and Roku device resources."
         }
       ]
     },
@@ -133,7 +133,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, Roku platform requirements, EPUB files, and reading features."
+          "text": "The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, Roku platform requirements, PPTX files, and viewing features."
         }
       ]
     },
@@ -142,21 +142,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider does not guarantee that every EPUB file, metadata field, device, network, document size, or reading feature will be supported or error-free."
+          "text": "The Service Provider does not guarantee that every PPTX file, metadata field, device, network, document size, presentation effect, or viewing feature will be supported or error-free."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Subscriptions and Page Limits"
+      "text": "Subscriptions and Slide Limits"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "The Application may offer subscription features through the Roku platform. Free use may be limited, including by page limits per EPUB or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms."
+          "text": "The Application may offer subscription features through the Roku platform. Free use may be limited, including by slide limits per presentation or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms."
         }
       ]
     },
@@ -212,7 +212,7 @@
         [
           {
             "type": "text",
-            "text": "Attempt to bypass subscription limits, entitlement checks, page limits, or security features"
+            "text": "Attempt to bypass subscription limits, entitlement checks, slide limits, or security features"
           }
         ],
         [
@@ -261,7 +261,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, EPUB display issues, network issues, device issues, subscription availability, unsupported files, corrupted files, temporary app data behavior, or local connection behavior arising from your use of the Application."
+          "text": "To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, PPTX display issues, network issues, device issues, subscription availability, unsupported files, corrupted files, temporary app data behavior, or local connection behavior arising from your use of the Application."
         }
       ]
     },
@@ -289,7 +289,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "These Terms & Conditions are effective as of 2026-10-02."
+          "text": "These Terms & Conditions are effective as of 2026-10-06."
         }
       ]
     },

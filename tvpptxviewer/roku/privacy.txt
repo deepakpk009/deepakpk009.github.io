@@ -1,34 +1,34 @@
 Privacy Policy
 
-This Privacy Policy applies to the TV EPUB Viewer application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local EPUB reading utility for viewing EPUB books on a TV.
+This Privacy Policy applies to the TV PPTX Viewer application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local presentation viewing utility for displaying PowerPoint files on a TV.
 
 Summary
 
-TV EPUB Viewer is designed for local reading between your own devices on the same Wi-Fi network. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application.
+TV PPTX Viewer is designed for local presentation viewing between your own devices on the same Wi-Fi network. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application.
 
 Information the Application Handles
 
-To provide the EPUB reading experience, the Application may handle information such as:
+To provide the presentation viewing experience, the Application may handle information such as:
 
-- EPUB files you choose to open with the Application
-- Basic book and file details, such as file names, file sizes, page counts, thumbnails, titles, authors, and language when available
-- Reading preferences and state, such as page position, text size, background color, night mode, and recently viewed pages
+- PPTX files you choose to open with the Application
+- Basic file and presentation details, such as file names, file sizes, slide counts, titles, thumbnails, and related metadata when available
+- Viewing preferences and state, such as current slide, zoom, rotation, pan position, night mode, and recently viewed presentations
 - Temporary session, connection, and device information used to pair your Roku device with your phone, tablet, or computer on your local network
 - Temporary app data used to support viewing, thumbnails, navigation, reconnection, and performance
 - Subscription or entitlement status provided through the Roku platform
 - Support or feedback information you choose to send through external support or feedback links
 
-This information is used to provide EPUB selection, local pairing, library display, reading, navigation, reading-state restoration, subscription access control, support, and related in-app features.
+This information is used to provide local pairing, presentation selection, library display, slide viewing, navigation, viewing-state restoration, subscription access control, support, and related in-app features.
 
-Local EPUB Reading
+Local Presentation Viewing
 
-EPUB books are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your EPUB files to a Service Provider cloud storage account.
+Presentations are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your PPTX files to a Service Provider cloud storage account.
 
-Original EPUB files remain on the device you use to select them. The Roku version of the Application uses local network communication to support the TV reading experience and does not persist original EPUB files on the Roku device.
+Original PPTX files remain on the device you use to select them. The Roku version of the Application uses local network communication to support the TV viewing experience and does not persist original PPTX files on the Roku device.
 
 Local Network Use
 
-The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during EPUB reading. Connection status, temporary session information, and recovery messages may be used to help connect, reconnect, or clear unavailable local sessions. You should use the Application only on networks and with EPUB files that you trust.
+The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during presentation viewing. Connection status, temporary session information, and recovery messages may be used to help connect, reconnect, or clear unavailable local sessions. You should use the Application only on networks and with files that you trust.
 
 Information the Application Does Not Collect for Tracking
 
@@ -36,9 +36,9 @@ The Roku version of the Application does not use the Application to track your a
 
 Temporary Storage and Retention
 
-The Application may keep temporary app data on the Roku device to support viewing, thumbnails, navigation, reading-state restoration, reconnection, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation, when a local session ends, when cached data is pruned, or when the Roku app restarts.
+The Application may keep temporary app data on the Roku device to support viewing, thumbnails, navigation, viewing-state restoration, reconnection, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation, when a local session ends, when cached data is pruned, or when the Roku app restarts.
 
-The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your EPUB files to a Service Provider cloud service, or keep a remote analytics history of your reading.
+The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your PPTX files to a Service Provider cloud service, or keep a remote analytics history of your presentation activity.
 
 Settings, Help, and Support
 
@@ -46,7 +46,7 @@ The Application may display device-related settings information such as screen r
 
 Subscriptions and Purchases
 
-The Application may offer subscription features or page access limits. Subscription purchases, renewals, cancellations, and entitlement recovery are handled through the Roku platform. The Service Provider may receive or use entitlement status made available by Roku to enable subscription-related features inside the Application. Payment details are handled by Roku and are subject to Roku's policies and terms.
+The Application may offer subscription features or slide access limits. Subscription purchases, renewals, cancellations, and entitlement recovery are handled through the Roku platform. The Service Provider may receive or use entitlement status made available by Roku to enable subscription-related features inside the Application. Payment details are handled by Roku and are subject to Roku's policies and terms.
 
 Third-Party Services
 
@@ -60,7 +60,7 @@ The Service Provider does not knowingly use the Application to solicit personal 
 
 Security
 
-The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and EPUB files secure.
+The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and PPTX files secure.
 
 Changes to This Privacy Policy
 
@@ -68,7 +68,7 @@ The Service Provider may update this Privacy Policy from time to time. If that h
 
 Effective Date
 
-This Privacy Policy is effective as of 2026-10-02.
+This Privacy Policy is effective as of 2026-10-06.
 
 Contact Us
 

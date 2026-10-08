@@ -56,7 +56,7 @@
       {
         "type": "roku",
         "label": "Get USB Slideshow & Signage on Roku",
-        "url": "https://my.roku.com/account/add/usbslideshow",
+        "url": "https://my.roku.com/account/add/usbsas",
         "style": "primary"
       }
     ],
@@ -276,6 +276,26 @@
       {
         "src": "images/screenshots/ss001.jpg",
         "alt": "USB Slideshow & Signage Roku screenshot showing USB slideshow and media playback"
+      },
+      {
+        "src": "images/screenshots/ss002.jpg",
+        "alt": "USB Slideshow & Signage Roku screenshot showing USB slideshow and media playback"
+      },
+      {
+        "src": "images/screenshots/ss003.jpg",
+        "alt": "USB Slideshow & Signage Roku screenshot showing USB slideshow and media playback"
+      },
+      {
+        "src": "images/screenshots/ss004.jpg",
+        "alt": "USB Slideshow & Signage Roku screenshot showing USB slideshow and media playback"
+      },
+      {
+        "src": "images/screenshots/ss005.jpg",
+        "alt": "USB Slideshow & Signage Roku screenshot showing USB slideshow and media playback"
+      },
+      {
+        "src": "images/screenshots/ss006.jpg",
+        "alt": "USB Slideshow & Signage Roku screenshot showing USB slideshow and media playback"
       }
     ],
     "video": {
@@ -428,7 +448,7 @@
         {
           "type": "roku",
           "label": "Get USB Slideshow & Signage on Roku",
-          "url": "https://my.roku.com/account/add/usbslideshow",
+          "url": "https://my.roku.com/account/add/usbsas",
           "style": "primary"
         }
       ]
@@ -453,7 +473,7 @@
         "links": [
           {
             "label": "Download App",
-            "url": "https://my.roku.com/account/add/usbslideshow"
+            "url": "https://my.roku.com/account/add/usbsas"
           },
           {
             "label": "More Download Options",
@@ -515,7 +535,7 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://my.roku.com/account/add/usbslideshow",
+      "downloadUrl": "https://my.roku.com/account/add/usbsas",
       "author": {
         "@type": "Person",
         "name": "Deepak PK",

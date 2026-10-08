@@ -1,206 +1,178 @@
 [
   {
-    "title": "What is TV PPTX Viewer for Roku?",
-    "content": "TV PPTX Viewer lets you view PowerPoint presentations on your TV using your Roku device. Choose PPTX files from your phone, tablet, or computer, then present or browse slides with your Roku remote."
+    "title": "What is USB Slideshow & Signage for Roku?",
+    "content": "USB Slideshow & Signage turns a Roku device into a USB-powered slideshow and digital signage player. Add photos, videos, and optional audio files to a USB drive, connect it to a compatible Roku device, and start full-screen playback from your TV."
   },
   {
-    "title": "What file format is supported?",
-    "content": "The app is designed for PPTX presentation files."
+    "title": "How do I start a slideshow?",
+    "content": "Connect a USB drive that contains playable photos or videos, open the app, and choose Start Slideshow from the Home Menu. The app scans the USB drive and starts a full-screen slideshow/signage loop when playable media is found."
   },
   {
-    "title": "How do I start using the app?",
-    "content": "Open TV PPTX Viewer on Roku, go to Connect, and follow the QR code or web address shown on your TV. From your phone, tablet, or computer, choose the PPTX files you want to view."
+    "title": "Do I need a phone, computer, or media server?",
+    "content": "No. The app is USB-first. Place your media on a USB drive and control playback with the Roku remote. A separate phone app, browser upload page, cloud dashboard, or media server is not required for local USB playback."
   },
   {
-    "title": "What devices can I use to choose PPTX files?",
-    "content": "You can use a phone, tablet, laptop, or desktop computer with a modern web browser."
+    "title": "Does the app upload my media to the cloud?",
+    "content": "No. The app is designed to play media from local USB storage connected to your Roku device. It is not designed to upload your photos, videos, audio files, folders, or media library to a Service Provider cloud storage account."
   },
   {
-    "title": "Do my devices need to be on the same Wi-Fi network?",
-    "content": "Yes. Your Roku device and the phone, tablet, or computer used to choose presentations should be connected to the same local Wi-Fi network."
+    "title": "Does local playback work without internet?",
+    "content": "Local USB playback can work without a Service Provider media server. Internet or network access may still be needed for Roku subscription catalog, purchase, recovery, and entitlement features, as well as Help/FAQ, Privacy Policy, Terms of Use, support links, and feedback links."
   },
   {
-    "title": "Do I need to install another app on my phone or computer?",
-    "content": "No. You only need a modern web browser on your phone, tablet, or computer."
+    "title": "What type of USB drive should I use?",
+    "content": "Use a USB drive that your Roku device can read. For best results, use a dedicated USB drive for slideshow/signage content, keep files reasonably sized for your Roku device, and use media near the TV resolution shown in Settings."
   },
   {
-    "title": "Can I choose more than one PPTX file?",
-    "content": "Yes. You can select multiple PPTX files and choose which presentation to open from the Library on Roku."
+    "title": "What if the app says no USB is connected?",
+    "content": "Make sure the USB drive is firmly connected to the Roku device, formatted in a way your Roku device supports, and readable by the Roku platform. If needed, reconnect the drive, restart the app, or try another USB drive."
   },
   {
-    "title": "Can I drag and drop PPTX files?",
-    "content": "Yes, on browsers that support drag and drop. You can also use the file picker."
+    "title": "Does every Roku device support USB drives?",
+    "content": "No. USB support depends on the Roku device or Roku TV model. Some devices may not include a USB port or may have platform limitations around external storage and media playback."
   },
   {
-    "title": "Can I choose a folder of presentations?",
-    "content": "Some browsers support folder selection. When available, you can choose a folder and the app will use the PPTX files from that selection."
+    "title": "Does the app scan folders and subfolders?",
+    "content": "Yes. Start Slideshow, Gallery, and background music selection can scan folders and subfolders on the connected USB drive so you can organize media in directories and still play it in one slideshow/signage loop."
   },
   {
-    "title": "What happens if I select the same PPTX twice?",
-    "content": "Duplicate selections are ignored so the same presentation is not added repeatedly."
+    "title": "Are hidden or system files shown?",
+    "content": "The app filters common hidden and system entries, such as dot-prefixed items, lost.dir, System Volume Information, and recycle-bin folders, so they do not clutter the media browser or playback list."
   },
   {
-    "title": "Can I remove a selected PPTX file?",
-    "content": "Yes. Remove the presentation from the selection page on your phone, tablet, or computer and the Roku Library will update."
+    "title": "What image file types are recognized?",
+    "content": "The app recognizes common image extensions such as JPG, JPEG, PNG, GIF, WEBP, BMP, TIFF, AVIF, HEIF, and HEIC. Recognition is extension-based, and actual display depends on Roku platform support and the file itself."
   },
   {
-    "title": "What is the Library?",
-    "content": "The Library shows your selected presentations in a TV-friendly grid with thumbnails when available. Use your Roku remote to choose a presentation and open it."
+    "title": "What video file types are recognized?",
+    "content": "The app recognizes common video extensions such as MP4, AVI, MKV, MOV, WMV, WEBM, M4V, 3GP, TS, MTS, M2TS, MPG, MPEG, VOB, and OGV. Actual playback depends on Roku codec, container, device, and file support."
   },
   {
-    "title": "Why is the Library empty?",
-    "content": "The Library is empty when no PPTX files have been selected. Go to Connect, open the web address shown on your TV, and choose one or more PPTX files."
+    "title": "What audio file types are recognized?",
+    "content": "The app recognizes common audio extensions such as MP3, M4A, AAC, OGG, OPUS, FLAC, WAV, MKA, AMR, WMA, and ALAC. Actual playback depends on Roku platform support and the file itself."
   },
   {
-    "title": "How do I open a presentation from the Library?",
-    "content": "Use the Roku remote D-pad to highlight a presentation, then press OK to open it."
+    "title": "Why does a recognized file fail to play?",
+    "content": "The app may recognize a file extension even when Roku cannot play the specific codec, container, file size, damaged file, or media variant. Try converting the file to a Roku-friendly format such as a standard MP4 video or JPG/PNG image."
   },
   {
-    "title": "Will a single selected PPTX open automatically?",
-    "content": "When only one PPTX file is selected, the app may open it automatically once it is ready. When multiple PPTX files are selected, you can choose one from the Library."
+    "title": "How is slideshow order decided?",
+    "content": "When shuffle is off, media is sorted predictably by type and title. When Shuffle Slides is on, the visual order for Home Menu Start Slideshow is shuffled before playback begins."
   },
   {
-    "title": "Can multiple phones or computers connect at the same time?",
-    "content": "Yes. Presentations selected from multiple connected devices can appear together in the Roku Library. If one device clears its selection, presentations from other connected devices can remain available."
+    "title": "How do I turn shuffle on or off?",
+    "content": "Choose Shuffle Slides from the Home Menu. The menu label shows whether shuffle is currently ON or OFF, and the setting is saved for future app launches."
   },
   {
-    "title": "How do I move between slides?",
-    "content": "Use Left and Right on the Roku remote to move between slides. Press Back to leave the viewer and return to the Library."
+    "title": "How do I change the slide interval?",
+    "content": "Choose Slide Interval from the Home Menu and select one of the fixed timing options, such as 3, 5, 7, 10, 12, 15, or 20 seconds. The selected interval is saved and used for image playback."
   },
   {
-    "title": "How do I open presentation options?",
-    "content": "Press OK or Options while viewing a presentation to open the presentation options menu."
+    "title": "Can the app play videos in the slideshow?",
+    "content": "Yes. Images and videos can play together in a continuous full-screen loop. Images use the selected slide interval, while videos advance when Roku reports that video playback has finished."
   },
   {
-    "title": "What presentation options are available?",
-    "content": "Presentation options can include Zoom In, Zoom Out, Reset Zoom, Search, Thumbnails, Go to Slide, Animation Mode, Rotate, Night Mode, Restart, and Close."
+    "title": "What happens if a video cannot play?",
+    "content": "If a video errors, the app shows an unable-to-play message and skips to the next visual item. If every visual item fails, playback closes instead of looping forever through failed files."
   },
   {
-    "title": "Can I zoom in on a slide?",
-    "content": "Yes. Use Zoom In, Zoom Out, or Reset Zoom from the presentation options menu."
+    "title": "Can I use background music?",
+    "content": "Yes. Choose Background Music from the Home Menu to select an unlocked audio file from the USB drive, or choose OFF to disable background music. Background music is optional."
   },
   {
-    "title": "Can I pan around a zoomed slide?",
-    "content": "Yes. When a slide is zoomed in, use the Roku remote D-pad to pan around the visible slide area."
+    "title": "Why does background music stop during videos?",
+    "content": "Background music is released while videos play so the video's own audio can be heard. When image playback resumes, background music can resume from the remembered position."
   },
   {
-    "title": "Can I rotate slides?",
-    "content": "Yes. Use Rotate from the presentation options menu to rotate the displayed slide."
+    "title": "What if my selected background music file is removed?",
+    "content": "If the saved background music file is no longer found during a later USB scan, the app clears the stale selection and continues without that background music."
   },
   {
-    "title": "Can I search inside a presentation?",
-    "content": "Yes. Use Search from the presentation options menu, enter your search text, and choose a result to jump to the matching slide."
+    "title": "What is the Gallery?",
+    "content": "Gallery is a TV-friendly media browser available from the Home Menu. It shows USB folders and media in a grid, lets you open folders, and can launch playback from selected images or videos."
   },
   {
-    "title": "Can I jump to a specific slide?",
-    "content": "Yes. Use Go to Slide from the presentation options menu, enter a slide number with the TV-friendly keypad, and submit it."
+    "title": "How do I browse folders in Gallery?",
+    "content": "Open Gallery from the Home Menu, use the Roku remote to move focus, and press OK on a folder to open it. Press Back inside a folder to return to the parent folder, or Back at the USB root to return to the Home Menu."
   },
   {
-    "title": "Can I browse slide thumbnails?",
-    "content": "Yes. Use Thumbnails from the presentation options menu to browse nearby slides and jump to the slide you want."
+    "title": "Can I start playback from Gallery?",
+    "content": "Yes. Select an unlocked image or video in Gallery to start playback from that media context. Gallery playback uses unlocked visual items and available unlocked audio items from the current session."
   },
   {
-    "title": "What is Night Mode?",
-    "content": "Night Mode changes the slide appearance for easier viewing in a dark room."
-  },
-  {
-    "title": "What is Animation Mode?",
-    "content": "Animation Mode lets you choose whether to view slides in a simple static mode or step through supported presentation effects when available."
-  },
-  {
-    "title": "How do I restart a presentation?",
-    "content": "Open the presentation options menu and choose Restart to return to the first slide and reset the current view."
-  },
-  {
-    "title": "Does the app remember where I left off?",
-    "content": "While you are using the app, it can remember per-presentation viewing state such as slide position, zoom, rotation, pan position, Night Mode, and Animation Mode."
-  },
-  {
-    "title": "Can I use PPTX files with long or Unicode file names?",
-    "content": "Yes. The app supports localized and Unicode PPTX file names, and long names are shortened on the TV screen so the Library stays easy to read."
-  },
-  {
-    "title": "Why was one of my selected files skipped?",
-    "content": "A file may be skipped if it is not a PPTX file, is damaged, is empty, is unsupported, or cannot be read by the app."
-  },
-  {
-    "title": "What should I do if a PPTX does not open?",
-    "content": "Make sure the file is a valid PPTX file and try selecting it again. If the file is corrupted, password-protected, unusually large, or unsupported, it may not open or may not display correctly."
-  },
-  {
-    "title": "Will every PowerPoint effect look exactly the same?",
-    "content": "Not always. Compatibility can vary by file, device, presentation content, effects used, and Roku device resources."
-  },
-  {
-    "title": "What happens if my phone or computer disconnects?",
-    "content": "Short interruptions may recover automatically. If the connection does not return, go back to Connect and select your PPTX files again if needed."
-  },
-  {
-    "title": "Why can't I connect from my browser?",
-    "content": "Check that your Roku and browser device are on the same Wi-Fi network, the Roku app is open on the Connect screen, and the web address was entered exactly as shown on the TV."
-  },
-  {
-    "title": "Can I use TV PPTX Viewer away from home?",
-    "content": "TV PPTX Viewer is designed for local viewing when your Roku and browser device are on the same network."
-  },
-  {
-    "title": "Are my PPTX files uploaded to a cloud service?",
-    "content": "No. TV PPTX Viewer is designed for local presentation viewing between your own devices. It does not provide cloud presentation storage or upload your PPTX files to a cloud document account."
-  },
-  {
-    "title": "Does Roku permanently store my full PPTX files?",
-    "content": "No. TV PPTX Viewer is not designed to permanently store your full PPTX files on the Roku device."
-  },
-  {
-    "title": "Does the app require an internet connection?",
-    "content": "Presentation viewing is designed to work over your local network. Internet access may be needed for Roku purchases, subscription validation, Help/FAQ, Privacy Policy, Terms of Use, support links, or feedback links."
-  },
-  {
-    "title": "Can I use TV PPTX Viewer as cloud storage?",
-    "content": "No. TV PPTX Viewer is a local presentation viewing app for Roku. It is not a cloud storage, backup, or document management service."
-  },
-  {
-    "title": "What information is shown in Settings?",
-    "content": "Settings can show display information, temporary file information, temporary storage used, and an option to clear temporary storage."
-  },
-  {
-    "title": "How do I clear temporary storage?",
-    "content": "Open Settings and choose Clear Temporary Storage."
-  },
-  {
-    "title": "Will clearing temporary storage delete my original PPTX files?",
-    "content": "No. Clearing temporary storage only removes temporary app data on Roku. It does not delete the original PPTX files from your phone, tablet, or computer."
+    "title": "What do locked items mean?",
+    "content": "Locked items are outside the current free access limit. Locked image thumbnails may be blurred and show a lock overlay. Select a locked item to see the limit message and subscription option."
   },
   {
     "title": "What are the free access limits?",
-    "content": "Free users may have a slide-viewing limit per presentation. If the limit is reached, the app will show a limit message."
+    "content": "Free access may limit larger media collections. Current free-mode limits can include the first 5 folders, first 20 files, first 2 audio files, first 2 video files, and first 5 image files in recursive slideshow/signage mode."
   },
   {
     "title": "What does a subscription unlock?",
-    "content": "A subscription unlocks continued viewing beyond the free slide limit."
+    "content": "A Roku subscription unlocks fuller access to larger USB media collections and removes free-mode restrictions applied inside the app. Subscription availability, pricing, plans, trials, renewals, and entitlement recovery are handled through Roku."
   },
   {
     "title": "How do I subscribe?",
-    "content": "Choose Subscribe from the app menu or from the limit message. The purchase is handled through Roku."
+    "content": "Choose Subscribe from the Home Menu or from a limit message. The purchase flow is handled by Roku, and the app uses Roku entitlement information to unlock subscription features."
   },
   {
     "title": "How do I manage my subscription?",
-    "content": "Use Manage Subscription from the app when available, or manage your subscription through your Roku account or Roku device subscription settings."
+    "content": "Subscribed users can open Manage Subscription from the Home Menu when available. You can also manage subscriptions through your Roku account or Roku device subscription settings."
+  },
+  {
+    "title": "What is Fill Screen?",
+    "content": "Fill Screen scales images to fill the TV display. This can look more immersive, but parts of the image may be cropped if the image aspect ratio does not match the screen."
+  },
+  {
+    "title": "What is Show Full Image?",
+    "content": "Show Full Image scales images so the complete image remains visible. Borders may appear when the image aspect ratio does not match the TV screen."
+  },
+  {
+    "title": "Can I change the image background color?",
+    "content": "Yes. Settings include black and white background options. The selected color appears behind images, especially when Show Full Image leaves borders around the image."
+  },
+  {
+    "title": "Where are my settings saved?",
+    "content": "Settings such as slide interval, shuffle, selected background music, image display mode, and background color are saved in Roku registry storage so they can survive app restarts."
+  },
+  {
+    "title": "What information is shown in Settings?",
+    "content": "Settings can show display details such as screen resolution and aspect ratio, along with slideshow/signage display controls such as slide duration, image display mode, and background color."
+  },
+  {
+    "title": "Can I use this app for digital signage?",
+    "content": "Yes. The app is designed for simple USB-based slideshow and signage loops. For best reliability, use a dedicated USB drive, use supported media formats, test your content before public display, and keep backup copies of your files."
+  },
+  {
+    "title": "Can I schedule playlists by time or date?",
+    "content": "No. The current app focuses on USB media browsing and slideshow/signage playback. It does not provide time/date scheduling, a remote web dashboard, cloud sync, or automatic playlist management."
+  },
+  {
+    "title": "Can the app edit or convert my media files?",
+    "content": "No. The app plays local USB media when supported by Roku. It is not a media editor, converter, backup tool, or cloud storage service."
+  },
+  {
+    "title": "Why should I compress media near the TV resolution?",
+    "content": "Large or unusually complex files can be slower to scan, display, or play on some Roku devices. Using compressed media near the TV resolution can improve performance and reliability."
+  },
+  {
+    "title": "What should I do if the USB drive is empty in the app?",
+    "content": "Check that the drive contains supported photos, videos, or audio files, and that they are not only hidden or system files. If the drive has folders, the app can scan subfolders, but Roku still needs to be able to read the drive and files."
   },
   {
     "title": "Where can I read the Privacy Policy and Terms of Use?",
-    "content": "Privacy Policy and Terms of Use are available from the app menu."
+    "content": "Privacy Policy and Terms of Use are available from the Home Menu. These pages may load hosted content, so network access may be required."
   },
   {
     "title": "Where can I get support?",
-    "content": "Open Support & Feedback from the app menu and use the support option shown there."
+    "content": "Open Support & Feedback from the Home Menu and use the Support Page option shown there. The support resource may open or display an external page or QR code."
   },
   {
     "title": "Where can I send feedback or suggestions?",
-    "content": "Open Support & Feedback from the app menu and use the feedback option shown there."
+    "content": "Open Support & Feedback from the Home Menu and use the Feedback Form option shown there. Feedback is optional and is handled by the external form or service used for submission."
   },
   {
     "title": "What information is shown on the About page?",
-    "content": "The About page shows the TV PPTX Viewer app name, icon, tagline, and app details."
+    "content": "The About page shows the USB Slideshow & Signage app identity, app icon, tagline, developer credit, asset credits, and feedback contact information."
   }
 ]

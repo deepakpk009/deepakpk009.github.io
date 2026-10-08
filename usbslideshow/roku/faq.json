@@ -8,14 +8,6 @@
     "content": "Connect a USB drive that contains playable photos or videos, open the app, and choose Start Slideshow from the Home Menu. The app scans the USB drive and starts a full-screen slideshow/signage loop when playable media is found."
   },
   {
-    "title": "Do I need a phone, computer, or media server?",
-    "content": "No. The app is USB-first. Place your media on a USB drive and control playback with the Roku remote. A separate phone app, browser upload page, cloud dashboard, or media server is not required for local USB playback."
-  },
-  {
-    "title": "Does the app upload my media to the cloud?",
-    "content": "No. The app is designed to play media from local USB storage connected to your Roku device. It is not designed to upload your photos, videos, audio files, folders, or media library to a Service Provider cloud storage account."
-  },
-  {
     "title": "Does local playback work without internet?",
     "content": "Local USB playback can work without a Service Provider media server. Internet or network access may still be needed for Roku subscription catalog, purchase, recovery, and entitlement features, as well as Help/FAQ, Privacy Policy, Terms of Use, support links, and feedback links."
   },
@@ -128,10 +120,6 @@
     "content": "Show Full Image scales images so the complete image remains visible. Borders may appear when the image aspect ratio does not match the TV screen."
   },
   {
-    "title": "Can I change the image background color?",
-    "content": "Yes. Settings include black and white background options. The selected color appears behind images, especially when Show Full Image leaves borders around the image."
-  },
-  {
     "title": "Where are my settings saved?",
     "content": "Settings such as slide interval, shuffle, selected background music, image display mode, and background color are saved in Roku registry storage so they can survive app restarts."
   },
@@ -170,9 +158,5 @@
   {
     "title": "Where can I send feedback or suggestions?",
     "content": "Open Support & Feedback from the Home Menu and use the Feedback Form option shown there. Feedback is optional and is handled by the external form or service used for submission."
-  },
-  {
-    "title": "What information is shown on the About page?",
-    "content": "The About page shows the USB Slideshow & Signage app identity, app icon, tagline, developer credit, asset credits, and feedback contact information."
   }
 ]

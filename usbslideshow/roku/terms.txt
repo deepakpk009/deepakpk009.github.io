@@ -1,43 +1,50 @@
 Terms & Conditions
 
-These Terms & Conditions apply to the TV PPTX Viewer application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local presentation viewing utility for displaying PowerPoint files on a TV.
+These Terms & Conditions apply to the USB Slideshow & Signage application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a USB slideshow and digital signage utility for playing locally stored photos, videos, and optional audio from a USB drive on a TV.
 
 Acceptance of These Terms
 
-By downloading, installing, or using the Application on a Roku device, you agree to these Terms & Conditions.
+By downloading, installing, accessing, or using the Application on a Roku device, you agree to these Terms & Conditions. If you do not agree, do not use the Application.
 
 Use of the Application
 
-The Application is intended to help you view PPTX presentations on your TV. To use it, you select PPTX files from a phone, tablet, or computer connected to the same local network as your Roku device.
+The Application is intended to help you play photos, videos, and optional audio from a USB drive connected to a Roku device. It may include a home menu, slideshow and signage playback, gallery browsing, display settings, background music controls, support resources, legal pages, free-mode limits, and Roku subscription features.
 
-Compatibility may vary depending on the PPTX file, device, network, and Roku platform behavior.
+Compatibility may vary depending on the Roku device, Roku OS version, USB drive, file system, file size, file path, media extension, media codec, media container, file condition, device resources, network availability, and Roku platform behavior. Extension recognition does not guarantee playback.
 
-You are responsible for the PPTX files you choose to open and for making sure you have the right to view, use, display, or access those files.
+You are responsible for the USB drive, files, folders, media content, file names, metadata, and settings you use with the Application, and for making sure you have the right to view, display, play, distribute, or otherwise use that content.
 
 Content Responsibility
 
 You are responsible for:
 
-- Any PPTX files, file names, metadata, images, text, presentation content, or other content you choose to use with the Application
-- Keeping your phone, tablet, computer, Roku device, and Wi-Fi network secure
-- Making sure your use of the Application and PPTX files complies with applicable laws and rights held by content owners
-- Using the Application only with files and networks that you trust
+- Any photos, videos, audio files, folder names, file names, metadata, images, text, music, video audio, signage content, or other content you use with the Application
+- Making sure your use of the Application and your media content complies with applicable laws, venue rules, privacy rights, publicity rights, copyright, trademark, licensing, and other rights held by content owners or third parties
+- Keeping your USB drive, Roku device, Roku account, network, and related accounts secure
+- Using the Application only with files, USB drives, devices, and networks that you trust
+- Backing up your media and not relying on the Application as storage, backup, conversion, editing, security, compliance, emergency, or mission-critical software
 
-The Service Provider does not claim ownership of the PPTX files or presentation content you access through the Application.
+The Service Provider does not claim ownership of the media content you access through the Application.
 
-Local Network and Device Requirements
+USB Drive and Device Requirements
 
-The Application depends on a local network connection between your Roku device and the phone, tablet, or computer you use to select PPTX files. The quality and availability of the experience may depend on your network, device performance, PPTX size, PPTX complexity, and Roku device resources.
+The Application depends on the Roku platform's ability to access external USB storage and play local media. Some Roku devices may not support USB storage or may support only certain file systems, formats, sizes, or codecs. Very large USB drives, folders, playlists, or media files may be limited by device performance, memory, Roku platform limits, app limits, or subscription status.
 
 Availability and Compatibility
 
-The Service Provider may update, improve, limit, or discontinue parts of the Application at any time. The Application may also change over time to remain compatible with supported Roku devices, Roku TV devices, Roku platform requirements, PPTX files, and viewing features.
+The Service Provider may update, improve, limit, suspend, or discontinue parts of the Application at any time. Features, limits, supported behavior, subscription offerings, product codes, prices, and hosted resources may change over time.
 
-The Service Provider does not guarantee that every PPTX file, metadata field, device, network, document size, presentation effect, or viewing feature will be supported or error-free.
+The Service Provider does not guarantee that every USB drive, folder, file, extension, codec, media item, display mode, slideshow interval, background audio track, video, network condition, subscription state, support resource, or Roku device will be supported, uninterrupted, secure, or error-free.
 
-Subscriptions and Slide Limits
+Subscriptions, Purchases, and Free Limits
 
-The Application may offer subscription features through the Roku platform. Free use may be limited, including by slide limits per presentation or other feature limits. If you choose to subscribe, the purchase, renewal, cancellation, and entitlement recovery process is handled through Roku and may be subject to Roku's policies and terms.
+The Application may offer free access with media listing, playback, or feature limits and may offer subscription features through the Roku platform. Subscription plans, prices, trial availability, renewal terms, cancellation, refunds, payment processing, entitlement recovery, and billing account management are handled by Roku and may be subject to Roku's policies and terms.
+
+The Service Provider may use entitlement status made available by Roku to enable, limit, restore, or manage subscription-related features inside the Application. You agree not to bypass or interfere with subscription limits, entitlement checks, free-mode limits, watermark behavior, or other access controls.
+
+Network, Help, Legal, and Support Resources
+
+Local USB playback does not require a Service Provider media server. Internet or network access may still be required for Roku subscription catalog, purchase, recovery, and entitlement features; Help/FAQ, Privacy Policy, Terms of Use, and other hosted content; support pages; feedback forms; and platform services. External resources may be operated outside the Application and may be subject to their own terms, policies, availability, and data practices.
 
 No Analytics or Google/Firebase Services in the Roku Version
 
@@ -47,31 +54,38 @@ Acceptable Use
 
 You agree not to:
 
-- Use the Application in a way that violates applicable law
-- Use the Application to view, copy, display, or access content that you are not authorized to use
-- Attempt to interfere with the operation of the Application, Roku platform, local connection, or related access controls
-- Attempt to bypass subscription limits, entitlement checks, slide limits, or security features
-- Copy, modify, reverse engineer, or create derivative versions of the Application except to the extent allowed by applicable law
+- Use the Application in a way that violates applicable law or third-party rights
+- Use the Application to display, play, copy, distribute, or access content that you are not authorized to use
+- Use the Application for unlawful, harmful, deceptive, infringing, unsafe, or abusive signage or media playback
+- Attempt to interfere with the operation of the Application, Roku platform, media playback, local storage access, subscription flow, entitlement checks, or related access controls
+- Attempt to bypass subscription limits, free-mode limits, watermarks, locks, entitlement checks, or security features
+- Copy, modify, reverse engineer, decompile, disassemble, redistribute, resell, or create derivative versions of the Application except to the extent allowed by applicable law
 
-Support, Feedback, and External Resources
+User Responsibility and Indemnity
 
-The Application may provide Help, FAQ, support, feedback, Privacy Policy, and Terms of Use pages or links. External resources may be operated outside the Application and may be subject to their own terms, policies, and availability.
+To the maximum extent permitted by applicable law, you are responsible for your use of the Application and for any claims, losses, liabilities, damages, costs, or expenses arising from your media content, USB drive, signage use, public display, rights violations, unlawful use, unsafe use, or breach of these Terms.
+
+Support and Feedback
+
+The Application may provide Help, FAQ, support, feedback, Privacy Policy, Terms of Use, and About pages or links. The Service Provider may review and use feedback, suggestions, diagnostics, or support information you voluntarily provide to improve, support, maintain, or operate the Application, without any obligation to compensate you.
 
 Warranty Disclaimer
 
-The Application is provided on an "AS IS" and "AS AVAILABLE" basis. To the maximum extent permitted by applicable law, the Service Provider disclaims warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+The Application is provided on an "AS IS" and "AS AVAILABLE" basis. To the maximum extent permitted by applicable law, the Service Provider disclaims warranties of any kind, whether express, implied, statutory, or otherwise, including implied warranties of merchantability, fitness for a particular purpose, title, non-infringement, availability, accuracy, compatibility, performance, and uninterrupted or error-free operation.
 
 Limitation of Liability
 
-To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, loss of content access, PPTX display issues, network issues, device issues, subscription availability, unsupported files, corrupted files, temporary app data behavior, or local connection behavior arising from your use of the Application.
+To the maximum extent permitted by applicable law, the Service Provider will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of profits, revenue, business, goodwill, data, media, content access, subscriptions, display time, signage operation, or device use arising from or related to the Application.
+
+To the maximum extent permitted by applicable law, the Service Provider will not be liable for USB drive issues, unsupported files, corrupted files, media display or playback issues, codec or container limitations, network issues, Roku platform issues, device issues, subscription availability, billing platform behavior, entitlement recovery, temporary app data behavior, public display consequences, business interruption, or your failure to secure, license, back up, or verify your content.
 
 Changes to These Terms
 
-The Service Provider may update these Terms & Conditions from time to time. If that happens, the updated version will be posted at the current Terms page.
+The Service Provider may update these Terms & Conditions from time to time. If that happens, the updated version will be posted at the current Terms page. Continued use of the Application after an update means you accept the updated Terms to the extent permitted by applicable law.
 
 Effective Date
 
-These Terms & Conditions are effective as of 2026-10-06.
+These Terms & Conditions are effective as of 2026-10-08.
 
 Contact Us
 

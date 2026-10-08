@@ -1,74 +1,76 @@
 Privacy Policy
 
-This Privacy Policy applies to the TV PPTX Viewer application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a local presentation viewing utility for displaying PowerPoint files on a TV.
+This Privacy Policy applies to the USB Slideshow & Signage application for Roku devices and Roku TV devices (the "Application"). The Application is provided by Deepak PK (the "Service Provider") as a USB slideshow and digital signage utility for playing locally stored photos, videos, and optional audio from a USB drive on a TV.
 
 Summary
 
-TV PPTX Viewer is designed for local presentation viewing between your own devices on the same Wi-Fi network. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application.
+USB Slideshow & Signage is designed primarily for local USB media playback on your Roku device. The Service Provider does not use Google Analytics, Firebase Analytics, Firebase Crashlytics, Google Play Services, or similar third-party analytics or advertising tracking services in the Roku version of the Application.
 
 Information the Application Handles
 
-To provide the presentation viewing experience, the Application may handle information such as:
+To provide the slideshow, signage, gallery, settings, subscription, support, and legal-page features, the Application may handle information such as:
 
-- PPTX files you choose to open with the Application
-- Basic file and presentation details, such as file names, file sizes, slide counts, titles, thumbnails, and related metadata when available
-- Viewing preferences and state, such as current slide, zoom, rotation, pan position, night mode, and recently viewed presentations
-- Temporary session, connection, and device information used to pair your Roku device with your phone, tablet, or computer on your local network
-- Temporary app data used to support viewing, thumbnails, navigation, reconnection, and performance
-- Subscription or entitlement status provided through the Roku platform
-- Support or feedback information you choose to send through external support or feedback links
+- Media files you choose to place on a USB drive and access with the Application, including photos, videos, and audio files
+- File and folder details available from the USB drive, such as file names, folder names, file paths, extensions, media type classification, thumbnails or placeholders, and related metadata when available
+- Playback and display preferences, such as slide interval, shuffle setting, selected background music, image display mode, background color, and gallery or playback state
+- Device and app settings information used inside the Application, such as display resolution, aspect ratio, subscription state, entitlement recovery state, app version, and temporary storage information
+- Temporary app data used to support USB scanning, gallery display, thumbnails, playback, background audio selection, subscriptions, help pages, legal pages, support pages, performance, and error recovery
+- Subscription, purchase, entitlement, catalog, recovery, renewal, expiration, or billing-status information made available through the Roku platform
+- Support or feedback information you choose to send through external support pages, feedback forms, email, or other linked resources
 
-This information is used to provide local pairing, presentation selection, library display, slide viewing, navigation, viewing-state restoration, subscription access control, support, and related in-app features.
+This information is used to provide USB media discovery, gallery browsing, slideshow and signage playback, background music, saved settings, free-mode limits, subscription access control, support, troubleshooting, and related in-app features.
 
-Local Presentation Viewing
+Local USB Media
 
-Presentations are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your PPTX files to a Service Provider cloud storage account.
+The Application is designed to read supported media from USB storage connected to your Roku device. The Roku version of the Application is not designed to upload your photos, videos, audio files, folders, or media library to a Service Provider cloud storage account.
 
-Original PPTX files remain on the device you use to select them. The Roku version of the Application uses local network communication to support the TV viewing experience and does not persist original PPTX files on the Roku device.
+Media remains on the USB drive unless the Roku platform or the Application temporarily caches data needed for normal operation, such as thumbnails, display state, or playback-related data. You are responsible for the contents of the USB drive and for removing any private or sensitive files you do not want accessible on your TV.
 
-Local Network Use
+USB Scanning and Playback
 
-The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during presentation viewing. Connection status, temporary session information, and recovery messages may be used to help connect, reconnect, or clear unavailable local sessions. You should use the Application only on networks and with files that you trust.
+The Application may scan folders and subfolders on a connected USB drive to find supported image, video, and audio file extensions. Classification is based on file information such as names and extensions, and actual playback depends on Roku platform support, file condition, codec/container support, device resources, and app behavior.
 
 Information the Application Does Not Collect for Tracking
 
 The Roku version of the Application does not use the Application to track your activity across apps or websites. The Service Provider does not use the Application to collect analytics events, advertising identifiers, precise location information, or behavioral tracking information for profiling or targeted advertising.
 
-Temporary Storage and Retention
+Network, Hosted Content, and External Resources
 
-The Application may keep temporary app data on the Roku device to support viewing, thumbnails, navigation, viewing-state restoration, reconnection, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation, when a local session ends, when cached data is pruned, or when the Roku app restarts.
-
-The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your PPTX files to a Service Provider cloud service, or keep a remote analytics history of your presentation activity.
-
-Settings, Help, and Support
-
-The Application may display device-related settings information such as screen resolution, screen ratio, temporary file count, and temporary storage used. Help, FAQ, support, and feedback pages may open or display external support resources. If you choose to contact support or submit feedback, the information you provide through those external resources is handled according to the policies that apply to those resources.
+Local USB playback does not require a Service Provider media server. However, internet or network access may be used for Roku subscription catalog, purchase, entitlement, and recovery features; Help/FAQ, Privacy Policy, Terms of Use, and other hosted content; support pages; feedback forms; and platform services. When these resources are loaded, the Roku platform, hosting provider, form provider, social platform, or other external service may receive normal technical information such as request, device, browser, app, network, or account information according to their own policies.
 
 Subscriptions and Purchases
 
-The Application may offer subscription features or slide access limits. Subscription purchases, renewals, cancellations, and entitlement recovery are handled through the Roku platform. The Service Provider may receive or use entitlement status made available by Roku to enable subscription-related features inside the Application. Payment details are handled by Roku and are subject to Roku's policies and terms.
+The Application may offer free access with media listing, playback, or feature limits and may offer subscription features through the Roku platform. Subscription purchases, renewals, cancellations, entitlement checks, entitlement recovery, payment handling, refunds, and billing account management are handled by Roku and are subject to Roku's policies and terms. The Service Provider may receive or use entitlement status and related subscription information made available by Roku to enable subscription-related features inside the Application.
 
-Third-Party Services
+Temporary Storage and Retention
 
-The Roku version of the Application does not include Google Analytics, Firebase Analytics, Firebase Crashlytics, or Google Play Services.
+The Application may keep temporary app data on the Roku device to support USB scanning, gallery display, thumbnails, playback, background audio, settings, subscriptions, help/legal page loading, performance, and error recovery. Temporary app data may be cleared during normal app operation, when cached data is pruned, when the app restarts, when the USB drive changes, or through available app or Roku system controls.
 
-The Application runs on the Roku platform and uses Roku platform features, including Roku billing or entitlement features where applicable. Your use of the Roku platform and Roku device may also be governed by Roku's own policies and terms.
+The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your USB media to a Service Provider cloud service, or keep a remote analytics history of your media playback activity.
+
+Settings, Help, and Support
+
+The Application may display settings and device-related information such as screen resolution, aspect ratio, selected display preferences, and app version. Help, FAQ, support, feedback, Privacy Policy, and Terms of Use pages may load hosted content or open external resources. If you contact support or submit feedback, the information you provide is handled according to the policies that apply to the relevant email service, form provider, social platform, or support resource.
+
+Third-Party Services and Platform Providers
+
+The Roku version of the Application runs on the Roku platform and uses Roku platform features, including external storage access, media playback, registry storage, channel store, billing, catalog, and entitlement features where applicable. Your use of Roku devices, Roku accounts, Roku payments, and Roku services is also governed by Roku's own policies and terms.
 
 Children's Privacy
 
-The Service Provider does not knowingly use the Application to solicit personal information from children.
+The Application is not directed to children under 13, and the Service Provider does not knowingly use the Application to solicit personal information from children. If you believe a child has provided personal information through a support or feedback channel, please contact the Service Provider so reasonable steps can be taken to address it.
 
 Security
 
-The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and PPTX files secure.
+The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. No app, device, network, storage medium, or transmission method can be guaranteed to be completely secure. You are responsible for keeping your Roku device, Roku account, USB drive, files, network, and any linked support or feedback accounts secure.
 
 Changes to This Privacy Policy
 
-The Service Provider may update this Privacy Policy from time to time. If that happens, the updated version will be posted at the current Privacy Policy page.
+The Service Provider may update this Privacy Policy from time to time. If that happens, the updated version will be posted at the current Privacy Policy page. Continued use of the Application after an update means you accept the updated Privacy Policy to the extent permitted by applicable law.
 
 Effective Date
 
-This Privacy Policy is effective as of 2026-10-06.
+This Privacy Policy is effective as of 2026-10-08.
 
 Contact Us
 

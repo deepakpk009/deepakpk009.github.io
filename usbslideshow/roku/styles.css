@@ -1,22 +1,22 @@
 /* Extracted from inline <style> and made themeable via CSS variables. */
 
 :root{
-  --color-primary:#2F80ED;
-  --color-primary-dark:#1554B7;
-  --color-primary-light:#62A8FF;
-  --color-bg-start:#071A33;
-  --color-bg:#081426;
-  --color-bg-dark:#050A12;
-  --color-card:#102640;
+  --color-primary:#8F79C8;
+  --color-primary-dark:#4E3F86;
+  --color-primary-light:#8EC7EC;
+  --color-bg-start:#111428;
+  --color-bg:#0B1020;
+  --color-bg-dark:#050506;
+  --color-card:#182033;
   --color-text:#FFFFFF;
-  --color-text-muted:#D7E5F5;
-  --color-border:#3F95FF;
-  --color-shadow:#2F80ED4d;
+  --color-text-muted:#DFE8F2;
+  --color-border:#9B8AD4;
+  --color-shadow:#8F79C84d;
 
   --hero-watermark:url("images/app_icon.png");
   --cta-watermark:url("images/app_icon.png");
-  --hero-watermark-opacity:0.045;
-  --cta-watermark-opacity:0.07;
+  --hero-watermark-opacity:0.05;
+  --cta-watermark-opacity:0.08;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}

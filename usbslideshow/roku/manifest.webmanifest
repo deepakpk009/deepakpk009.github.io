@@ -1,12 +1,12 @@
 {
-  "name": "TV PPTX Viewer",
-  "short_name": "TV PPTX View",
-  "description": "TV PPTX Viewer is a Roku app for viewing PowerPoint presentations on your TV with local Wi-Fi pairing, a remote-friendly library, slide navigation, zoom, pan, rotate, night mode, thumbnails, search, Go to Slide, animation mode, and subscription support.",
-  "start_url": "/tvpptxviewer/roku/",
-  "scope": "/tvpptxviewer/roku/",
+  "name": "USB Slideshow & Signage",
+  "short_name": "USB Slidesho",
+  "description": "USB Slideshow & Signage is a Roku app for playing photos, videos, and optional background music from a USB drive. Start a full-screen slideshow or signage loop, browse media in Gallery, adjust slide interval, shuffle playback, choose image display settings, and unlock larger USB media collections with a Roku subscription.",
+  "start_url": "/usbslideshow/roku/",
+  "scope": "/usbslideshow/roku/",
   "display": "standalone",
-  "background_color": "#081426",
-  "theme_color": "#2F80ED",
+  "background_color": "#0B1020",
+  "theme_color": "#8F79C8",
   "icons": [
     {
       "src": "images/app_icon.png",

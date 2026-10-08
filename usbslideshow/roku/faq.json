@@ -1,0 +1,206 @@
+[
+  {
+    "title": "What is TV PPTX Viewer for Roku?",
+    "content": "TV PPTX Viewer lets you view PowerPoint presentations on your TV using your Roku device. Choose PPTX files from your phone, tablet, or computer, then present or browse slides with your Roku remote."
+  },
+  {
+    "title": "What file format is supported?",
+    "content": "The app is designed for PPTX presentation files."
+  },
+  {
+    "title": "How do I start using the app?",
+    "content": "Open TV PPTX Viewer on Roku, go to Connect, and follow the QR code or web address shown on your TV. From your phone, tablet, or computer, choose the PPTX files you want to view."
+  },
+  {
+    "title": "What devices can I use to choose PPTX files?",
+    "content": "You can use a phone, tablet, laptop, or desktop computer with a modern web browser."
+  },
+  {
+    "title": "Do my devices need to be on the same Wi-Fi network?",
+    "content": "Yes. Your Roku device and the phone, tablet, or computer used to choose presentations should be connected to the same local Wi-Fi network."
+  },
+  {
+    "title": "Do I need to install another app on my phone or computer?",
+    "content": "No. You only need a modern web browser on your phone, tablet, or computer."
+  },
+  {
+    "title": "Can I choose more than one PPTX file?",
+    "content": "Yes. You can select multiple PPTX files and choose which presentation to open from the Library on Roku."
+  },
+  {
+    "title": "Can I drag and drop PPTX files?",
+    "content": "Yes, on browsers that support drag and drop. You can also use the file picker."
+  },
+  {
+    "title": "Can I choose a folder of presentations?",
+    "content": "Some browsers support folder selection. When available, you can choose a folder and the app will use the PPTX files from that selection."
+  },
+  {
+    "title": "What happens if I select the same PPTX twice?",
+    "content": "Duplicate selections are ignored so the same presentation is not added repeatedly."
+  },
+  {
+    "title": "Can I remove a selected PPTX file?",
+    "content": "Yes. Remove the presentation from the selection page on your phone, tablet, or computer and the Roku Library will update."
+  },
+  {
+    "title": "What is the Library?",
+    "content": "The Library shows your selected presentations in a TV-friendly grid with thumbnails when available. Use your Roku remote to choose a presentation and open it."
+  },
+  {
+    "title": "Why is the Library empty?",
+    "content": "The Library is empty when no PPTX files have been selected. Go to Connect, open the web address shown on your TV, and choose one or more PPTX files."
+  },
+  {
+    "title": "How do I open a presentation from the Library?",
+    "content": "Use the Roku remote D-pad to highlight a presentation, then press OK to open it."
+  },
+  {
+    "title": "Will a single selected PPTX open automatically?",
+    "content": "When only one PPTX file is selected, the app may open it automatically once it is ready. When multiple PPTX files are selected, you can choose one from the Library."
+  },
+  {
+    "title": "Can multiple phones or computers connect at the same time?",
+    "content": "Yes. Presentations selected from multiple connected devices can appear together in the Roku Library. If one device clears its selection, presentations from other connected devices can remain available."
+  },
+  {
+    "title": "How do I move between slides?",
+    "content": "Use Left and Right on the Roku remote to move between slides. Press Back to leave the viewer and return to the Library."
+  },
+  {
+    "title": "How do I open presentation options?",
+    "content": "Press OK or Options while viewing a presentation to open the presentation options menu."
+  },
+  {
+    "title": "What presentation options are available?",
+    "content": "Presentation options can include Zoom In, Zoom Out, Reset Zoom, Search, Thumbnails, Go to Slide, Animation Mode, Rotate, Night Mode, Restart, and Close."
+  },
+  {
+    "title": "Can I zoom in on a slide?",
+    "content": "Yes. Use Zoom In, Zoom Out, or Reset Zoom from the presentation options menu."
+  },
+  {
+    "title": "Can I pan around a zoomed slide?",
+    "content": "Yes. When a slide is zoomed in, use the Roku remote D-pad to pan around the visible slide area."
+  },
+  {
+    "title": "Can I rotate slides?",
+    "content": "Yes. Use Rotate from the presentation options menu to rotate the displayed slide."
+  },
+  {
+    "title": "Can I search inside a presentation?",
+    "content": "Yes. Use Search from the presentation options menu, enter your search text, and choose a result to jump to the matching slide."
+  },
+  {
+    "title": "Can I jump to a specific slide?",
+    "content": "Yes. Use Go to Slide from the presentation options menu, enter a slide number with the TV-friendly keypad, and submit it."
+  },
+  {
+    "title": "Can I browse slide thumbnails?",
+    "content": "Yes. Use Thumbnails from the presentation options menu to browse nearby slides and jump to the slide you want."
+  },
+  {
+    "title": "What is Night Mode?",
+    "content": "Night Mode changes the slide appearance for easier viewing in a dark room."
+  },
+  {
+    "title": "What is Animation Mode?",
+    "content": "Animation Mode lets you choose whether to view slides in a simple static mode or step through supported presentation effects when available."
+  },
+  {
+    "title": "How do I restart a presentation?",
+    "content": "Open the presentation options menu and choose Restart to return to the first slide and reset the current view."
+  },
+  {
+    "title": "Does the app remember where I left off?",
+    "content": "While you are using the app, it can remember per-presentation viewing state such as slide position, zoom, rotation, pan position, Night Mode, and Animation Mode."
+  },
+  {
+    "title": "Can I use PPTX files with long or Unicode file names?",
+    "content": "Yes. The app supports localized and Unicode PPTX file names, and long names are shortened on the TV screen so the Library stays easy to read."
+  },
+  {
+    "title": "Why was one of my selected files skipped?",
+    "content": "A file may be skipped if it is not a PPTX file, is damaged, is empty, is unsupported, or cannot be read by the app."
+  },
+  {
+    "title": "What should I do if a PPTX does not open?",
+    "content": "Make sure the file is a valid PPTX file and try selecting it again. If the file is corrupted, password-protected, unusually large, or unsupported, it may not open or may not display correctly."
+  },
+  {
+    "title": "Will every PowerPoint effect look exactly the same?",
+    "content": "Not always. Compatibility can vary by file, device, presentation content, effects used, and Roku device resources."
+  },
+  {
+    "title": "What happens if my phone or computer disconnects?",
+    "content": "Short interruptions may recover automatically. If the connection does not return, go back to Connect and select your PPTX files again if needed."
+  },
+  {
+    "title": "Why can't I connect from my browser?",
+    "content": "Check that your Roku and browser device are on the same Wi-Fi network, the Roku app is open on the Connect screen, and the web address was entered exactly as shown on the TV."
+  },
+  {
+    "title": "Can I use TV PPTX Viewer away from home?",
+    "content": "TV PPTX Viewer is designed for local viewing when your Roku and browser device are on the same network."
+  },
+  {
+    "title": "Are my PPTX files uploaded to a cloud service?",
+    "content": "No. TV PPTX Viewer is designed for local presentation viewing between your own devices. It does not provide cloud presentation storage or upload your PPTX files to a cloud document account."
+  },
+  {
+    "title": "Does Roku permanently store my full PPTX files?",
+    "content": "No. TV PPTX Viewer is not designed to permanently store your full PPTX files on the Roku device."
+  },
+  {
+    "title": "Does the app require an internet connection?",
+    "content": "Presentation viewing is designed to work over your local network. Internet access may be needed for Roku purchases, subscription validation, Help/FAQ, Privacy Policy, Terms of Use, support links, or feedback links."
+  },
+  {
+    "title": "Can I use TV PPTX Viewer as cloud storage?",
+    "content": "No. TV PPTX Viewer is a local presentation viewing app for Roku. It is not a cloud storage, backup, or document management service."
+  },
+  {
+    "title": "What information is shown in Settings?",
+    "content": "Settings can show display information, temporary file information, temporary storage used, and an option to clear temporary storage."
+  },
+  {
+    "title": "How do I clear temporary storage?",
+    "content": "Open Settings and choose Clear Temporary Storage."
+  },
+  {
+    "title": "Will clearing temporary storage delete my original PPTX files?",
+    "content": "No. Clearing temporary storage only removes temporary app data on Roku. It does not delete the original PPTX files from your phone, tablet, or computer."
+  },
+  {
+    "title": "What are the free access limits?",
+    "content": "Free users may have a slide-viewing limit per presentation. If the limit is reached, the app will show a limit message."
+  },
+  {
+    "title": "What does a subscription unlock?",
+    "content": "A subscription unlocks continued viewing beyond the free slide limit."
+  },
+  {
+    "title": "How do I subscribe?",
+    "content": "Choose Subscribe from the app menu or from the limit message. The purchase is handled through Roku."
+  },
+  {
+    "title": "How do I manage my subscription?",
+    "content": "Use Manage Subscription from the app when available, or manage your subscription through your Roku account or Roku device subscription settings."
+  },
+  {
+    "title": "Where can I read the Privacy Policy and Terms of Use?",
+    "content": "Privacy Policy and Terms of Use are available from the app menu."
+  },
+  {
+    "title": "Where can I get support?",
+    "content": "Open Support & Feedback from the app menu and use the support option shown there."
+  },
+  {
+    "title": "Where can I send feedback or suggestions?",
+    "content": "Open Support & Feedback from the app menu and use the feedback option shown there."
+  },
+  {
+    "title": "What information is shown on the About page?",
+    "content": "The About page shows the TV PPTX Viewer app name, icon, tagline, and app details."
+  }
+]

@@ -5,8 +5,8 @@
   "start_url": "/dinousbplayer/roku/",
   "scope": "/dinousbplayer/roku/",
   "display": "standalone",
-  "background_color": "#081426",
-  "theme_color": "#2F80ED",
+  "background_color": "#082A28",
+  "theme_color": "#78B84A",
   "icons": [
     {
       "src": "images/app_icon.png",

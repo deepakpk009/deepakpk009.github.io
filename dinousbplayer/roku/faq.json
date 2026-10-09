@@ -1,191 +1,183 @@
 [
   {
-    "title": "What is TV PPTX Viewer for Roku?",
-    "content": "TV PPTX Viewer lets you view PowerPoint presentations on your TV using your Roku device. Choose PPTX files from your phone, tablet, or computer, then present or browse slides with your Roku remote."
-  },
-  {
-    "title": "What file format is supported?",
-    "content": "The app is designed for PPTX presentation files."
+    "title": "What is Dino USB Player for Roku?",
+    "content": "Dino USB Player is a Roku app for finding and playing video files from an attached USB drive. It gives you a remote-friendly USB video browser, full-screen playback, subtitles, resume support, and subscription options."
   },
   {
     "title": "How do I start using the app?",
-    "content": "Open TV PPTX Viewer on Roku, go to Connect, and follow the QR code or web address shown on your TV. From your phone, tablet, or computer, choose the PPTX files you want to view."
+    "content": "Connect a USB storage device to your Roku device, open Dino USB Player, wait for the app to scan your drive, then choose a video from the USB browser."
   },
   {
-    "title": "What devices can I use to choose PPTX files?",
-    "content": "You can use a phone, tablet, laptop, or desktop computer with a modern web browser."
+    "title": "Do I need a USB drive?",
+    "content": "Yes. Dino USB Player is designed for videos stored on an external USB storage device connected to your Roku."
   },
   {
-    "title": "Do my devices need to be on the same Wi-Fi network?",
-    "content": "Yes. Your Roku device and the phone, tablet, or computer used to choose presentations should be connected to the same local Wi-Fi network."
+    "title": "What happens if no USB drive is connected?",
+    "content": "The app shows a No USB Connected state. Connect a USB drive and use Reload Files if you want the app to check again."
   },
   {
-    "title": "Do I need to install another app on my phone or computer?",
-    "content": "No. You only need a modern web browser on your phone, tablet, or computer."
+    "title": "Does the app scan folders and subfolders?",
+    "content": "Yes. Dino USB Player recursively scans folders and subfolders for supported video files."
   },
   {
-    "title": "Can I choose more than one PPTX file?",
-    "content": "Yes. You can select multiple PPTX files and choose which presentation to open from the Library on Roku."
+    "title": "Does the browser show folders?",
+    "content": "No. The visible USB browser lists video files only. Folders are scanned in the background so videos inside subfolders can still appear."
   },
   {
-    "title": "Can I drag and drop PPTX files?",
-    "content": "Yes, on browsers that support drag and drop. You can also use the file picker."
+    "title": "Which video file extensions are recognized?",
+    "content": "The app recognizes MP4, AVI, MKV, MOV, FLV, WMV, WebM, M4V, 3GP, TS, MTS, M2TS, MPG, MPEG, VOB, and OGV video extensions."
   },
   {
-    "title": "Can I choose a folder of presentations?",
-    "content": "Some browsers support folder selection. When available, you can choose a folder and the app will use the PPTX files from that selection."
+    "title": "Will every recognized video file play?",
+    "content": "Not always. Dino USB Player can recognize many video extensions, but actual playback depends on the video encoding, audio encoding, file condition, and what your Roku device supports."
   },
   {
-    "title": "What happens if I select the same PPTX twice?",
-    "content": "Duplicate selections are ignored so the same presentation is not added repeatedly."
+    "title": "Why is one of my videos not listed?",
+    "content": "A file may not appear if it is not recognized as a supported video extension, is hidden or inside a filtered system folder, is unreadable, or is not available from the connected USB drive."
   },
   {
-    "title": "Can I remove a selected PPTX file?",
-    "content": "Yes. Remove the presentation from the selection page on your phone, tablet, or computer and the Roku Library will update."
+    "title": "Are audio, image, and subtitle files listed as videos?",
+    "content": "No. The browser is focused on video playback. Audio files, image files, standalone subtitle files, folders, and unknown files are not shown as selectable video entries."
   },
   {
-    "title": "What is the Library?",
-    "content": "The Library shows your selected presentations in a TV-friendly grid with thumbnails when available. Use your Roku remote to choose a presentation and open it."
+    "title": "How are videos sorted?",
+    "content": "Videos are sorted alphabetically by file name, case-insensitively. If two names match, the file path is used as a tie-breaker."
   },
   {
-    "title": "Why is the Library empty?",
-    "content": "The Library is empty when no PPTX files have been selected. Go to Connect, open the web address shown on your TV, and choose one or more PPTX files."
+    "title": "What does Reload Files do?",
+    "content": "Reload Files returns the browser to the USB root and scans the USB drive again. Use it after connecting, replacing, or changing files on a USB drive."
   },
   {
-    "title": "How do I open a presentation from the Library?",
-    "content": "Use the Roku remote D-pad to highlight a presentation, then press OK to open it."
+    "title": "How do I open a video?",
+    "content": "Use the Roku remote D-pad to highlight a video in the USB browser, then press OK to open it in the full-screen player."
   },
   {
-    "title": "Will a single selected PPTX open automatically?",
-    "content": "When only one PPTX file is selected, the app may open it automatically once it is ready. When multiple PPTX files are selected, you can choose one from the Library."
+    "title": "What playback controls are available?",
+    "content": "The player includes rewind 5 seconds, play/pause/replay, forward 5 seconds, subtitles when available, and a More menu with options such as Restart, Audio Track when available, and Close Player."
   },
   {
-    "title": "Can multiple phones or computers connect at the same time?",
-    "content": "Yes. Presentations selected from multiple connected devices can appear together in the Roku Library. If one device clears its selection, presentations from other connected devices can remain available."
+    "title": "How do I show the video controls?",
+    "content": "Press OK while watching a video to show the transport overlay. The overlay auto-hides while the video is playing."
   },
   {
-    "title": "How do I move between slides?",
-    "content": "Use Left and Right on the Roku remote to move between slides. Press Back to leave the viewer and return to the Library."
+    "title": "How do I hide the video controls?",
+    "content": "Wait for the overlay to auto-hide during playback, or press Back when the overlay is visible. Pressing Back with the overlay visible hides the controls before closing the player."
   },
   {
-    "title": "How do I open presentation options?",
-    "content": "Press OK or Options while viewing a presentation to open the presentation options menu."
+    "title": "Can I use the Roku Play button?",
+    "content": "Yes. The Play remote key toggles play and pause."
   },
   {
-    "title": "What presentation options are available?",
-    "content": "Presentation options can include Zoom In, Zoom Out, Reset Zoom, Search, Thumbnails, Go to Slide, Animation Mode, Rotate, Night Mode, Restart, and Close."
+    "title": "Can I restart a video?",
+    "content": "Yes. Use the Replay remote key or choose Restart from the player options. Restart resets playback to the beginning and clears saved progress for that video."
   },
   {
-    "title": "Can I zoom in on a slide?",
-    "content": "Yes. Use Zoom In, Zoom Out, or Reset Zoom from the presentation options menu."
+    "title": "Does the app remember where I stopped watching?",
+    "content": "Yes. Dino USB Player saves playback progress while playing, when paused, and when the player is closed, then uses that saved position when you open the video again."
   },
   {
-    "title": "Can I pan around a zoomed slide?",
-    "content": "Yes. When a slide is zoomed in, use the Roku remote D-pad to pan around the visible slide area."
+    "title": "When is saved progress cleared?",
+    "content": "Saved progress is cleared when a video finishes or is restarted. The app also avoids keeping progress for very short videos, very early positions, and near-end positions."
   },
   {
-    "title": "Can I rotate slides?",
-    "content": "Yes. Use Rotate from the presentation options menu to rotate the displayed slide."
+    "title": "How much playback progress can the app remember?",
+    "content": "The app stores up to 30 playback records."
   },
   {
-    "title": "Can I search inside a presentation?",
-    "content": "Yes. Use Search from the presentation options menu, enter your search text, and choose a result to jump to the matching slide."
+    "title": "Can I clear playback and resume data?",
+    "content": "Yes. Open Settings and use Clear Playback Data to remove stored playback and resume records."
   },
   {
-    "title": "Can I jump to a specific slide?",
-    "content": "Yes. Use Go to Slide from the presentation options menu, enter a slide number with the TV-friendly keypad, and submit it."
+    "title": "Will clearing playback data delete my USB videos?",
+    "content": "No. Clearing playback data only removes saved app progress records on Roku. It does not delete video files from your USB drive."
   },
   {
-    "title": "Can I browse slide thumbnails?",
-    "content": "Yes. Use Thumbnails from the presentation options menu to browse nearby slides and jump to the slide you want."
+    "title": "Which subtitle formats are supported?",
+    "content": "Dino USB Player detects SRT, VTT, ASS, SSA, TTML, DFXP, and XML subtitle files stored in the same folder as videos."
   },
   {
-    "title": "What is Night Mode?",
-    "content": "Night Mode changes the slide appearance for easier viewing in a dark room."
+    "title": "How should subtitle files be stored?",
+    "content": "Put subtitle files in the same folder as the video. Subtitle files with the same base name as the video are prioritized before other subtitle files in that folder."
   },
   {
-    "title": "What is Animation Mode?",
-    "content": "Animation Mode lets you choose whether to view slides in a simple static mode or step through supported presentation effects when available."
+    "title": "How do I know if a video has subtitles?",
+    "content": "When same-folder subtitles are detected, the USB browser can show a CC indicator in the video row metadata."
   },
   {
-    "title": "How do I restart a presentation?",
-    "content": "Open the presentation options menu and choose Restart to return to the first slide and reset the current view."
+    "title": "How do I turn subtitles on or off?",
+    "content": "Use the subtitle button in the player. With one subtitle file, the button toggles subtitles on and off. With multiple subtitle files, it opens a subtitle picker that includes Turn Off Subtitles."
   },
   {
-    "title": "Does the app remember where I left off?",
-    "content": "While you are using the app, it can remember per-presentation viewing state such as slide position, zoom, rotation, pan position, Night Mode, and Animation Mode."
+    "title": "Can the app detect subtitle languages?",
+    "content": "The app tries to infer subtitle languages from filenames. It recognizes common markers for English, Spanish, French, German, Italian, Portuguese, Hindi, Japanese, Korean, and Chinese."
   },
   {
-    "title": "Can I use PPTX files with long or Unicode file names?",
-    "content": "Yes. The app supports localized and Unicode PPTX file names, and long names are shortened on the TV screen so the Library stays easy to read."
+    "title": "Why did subtitles fail to load?",
+    "content": "A subtitle may fail if the file is unreadable, damaged, unsupported by Roku playback, or not accessible from the USB drive. The player shows subtitle-load error text when applying subtitles fails."
   },
   {
-    "title": "Why was one of my selected files skipped?",
-    "content": "A file may be skipped if it is not a PPTX file, is damaged, is empty, is unsupported, or cannot be read by the app."
+    "title": "What subtitle access is included for free users?",
+    "content": "Free users can use subtitles for the first 20 minutes of each video when subtitle files are available. After 20 minutes, active subtitles are cleared and enabling subtitles again is blocked unless you subscribe."
   },
   {
-    "title": "What should I do if a PPTX does not open?",
-    "content": "Make sure the file is a valid PPTX file and try selecting it again. If the file is corrupted, password-protected, unusually large, or unsupported, it may not open or may not display correctly."
+    "title": "Does restarting playback reset free subtitle access?",
+    "content": "Restarting playback returns to the beginning of the video, so free users can use subtitles again within the first 20 minutes."
   },
   {
-    "title": "Will every PowerPoint effect look exactly the same?",
-    "content": "Not always. Compatibility can vary by file, device, presentation content, effects used, and Roku device resources."
+    "title": "What is included for free?",
+    "content": "Free users can open the first filename-sorted video from the USB browser. Videos after the first free item show a lock overlay and subscription prompt."
   },
   {
-    "title": "What happens if my phone or computer disconnects?",
-    "content": "Short interruptions may recover automatically. If the connection does not return, go back to Connect and select your PPTX files again if needed."
-  },
-  {
-    "title": "Why can't I connect from my browser?",
-    "content": "Check that your Roku and browser device are on the same Wi-Fi network, the Roku app is open on the Connect screen, and the web address was entered exactly as shown on the TV."
-  },
-  {
-    "title": "Can I use TV PPTX Viewer away from home?",
-    "content": "TV PPTX Viewer is designed for local viewing when your Roku and browser device are on the same network."
-  },
-  {
-    "title": "Are my PPTX files uploaded to a cloud service?",
-    "content": "No. TV PPTX Viewer is designed for local presentation viewing between your own devices. It does not provide cloud presentation storage or upload your PPTX files to a cloud document account."
-  },
-  {
-    "title": "Does Roku permanently store my full PPTX files?",
-    "content": "No. TV PPTX Viewer is not designed to permanently store your full PPTX files on the Roku device."
-  },
-  {
-    "title": "Does the app require an internet connection?",
-    "content": "Presentation viewing is designed to work over your local network. Internet access may be needed for Roku purchases, subscription validation, Help/FAQ, Privacy Policy, Terms of Use, support links, or feedback links."
-  },
-  {
-    "title": "Can I use TV PPTX Viewer as cloud storage?",
-    "content": "No. TV PPTX Viewer is a local presentation viewing app for Roku. It is not a cloud storage, backup, or document management service."
-  },
-  {
-    "title": "What information is shown in Settings?",
-    "content": "Settings can show display information, temporary file information, temporary storage used, and an option to clear temporary storage."
-  },
-  {
-    "title": "How do I clear temporary storage?",
-    "content": "Open Settings and choose Clear Temporary Storage."
-  },
-  {
-    "title": "Will clearing temporary storage delete my original PPTX files?",
-    "content": "No. Clearing temporary storage only removes temporary app data on Roku. It does not delete the original PPTX files from your phone, tablet, or computer."
-  },
-  {
-    "title": "What are the free access limits?",
-    "content": "Free users may have a slide-viewing limit per presentation. If the limit is reached, the app will show a limit message."
+    "title": "Why is a video locked?",
+    "content": "Videos beyond the first free item are locked for free users. Subscribe to unlock the full USB video library."
   },
   {
     "title": "What does a subscription unlock?",
-    "content": "A subscription unlocks continued viewing beyond the free slide limit."
+    "content": "A subscription unlocks the full USB video library and extended subtitle access."
   },
   {
     "title": "How do I subscribe?",
-    "content": "Choose Subscribe from the app menu or from the limit message. The purchase is handled through Roku."
+    "content": "Choose Subscribe from the app menu or from a subscription prompt. Purchases are handled through Roku."
   },
   {
     "title": "How do I manage my subscription?",
-    "content": "Use Manage Subscription from the app when available, or manage your subscription through your Roku account or Roku device subscription settings."
+    "content": "Subscribed users can open Manage Subscription in the app. You can also visit https://my.roku.com/subscriptions or manage the subscription from the Roku Home screen by highlighting Dino USB Player, pressing the * button, and selecting Manage subscription."
+  },
+  {
+    "title": "What happens after a successful purchase?",
+    "content": "After a successful purchase, the app saves the Roku entitlement, refreshes subscription state, and reloads the USB browser so locked videos can unlock."
+  },
+  {
+    "title": "What happens if I cancel a purchase?",
+    "content": "If you cancel during Roku checkout, the subscription screen remains available and your access level does not change."
+  },
+  {
+    "title": "Does the app recover existing Roku subscriptions?",
+    "content": "Yes. Dino USB Player runs a subscription recovery flow at startup and checks Roku purchase information to restore valid subscription access when possible."
+  },
+  {
+    "title": "Does Dino USB Player need the internet?",
+    "content": "USB video playback is based on your attached drive, but internet access may be needed for Roku subscription purchase and validation, Help/FAQ, Privacy Policy, Terms of Use, support links, or feedback links."
+  },
+  {
+    "title": "What happens if network connectivity is lost?",
+    "content": "The app listens for Roku link-status changes and can show a No Internet progress dialog when network connectivity is lost."
+  },
+  {
+    "title": "Is Dino USB Player a cloud storage service?",
+    "content": "No. Dino USB Player is a local USB video player. It is not a cloud storage, backup, or media hosting service."
+  },
+  {
+    "title": "Does the app upload my USB videos?",
+    "content": "No. Dino USB Player is designed to play videos from your attached USB drive on Roku. It does not provide cloud video upload or hosting."
+  },
+  {
+    "title": "What information is shown in Settings?",
+    "content": "Settings can show screen resolution, screen aspect ratio, local storage information, USB storage size when a likely external USB volume is detected, and the Clear Playback Data action."
+  },
+  {
+    "title": "Why does USB storage size not appear?",
+    "content": "The app only shows USB storage size when it detects a likely external USB volume. Very small volumes below 512 MB may be treated as unlikely to be external USB storage."
   },
   {
     "title": "Where can I read the Privacy Policy and Terms of Use?",
@@ -193,14 +185,14 @@
   },
   {
     "title": "Where can I get support?",
-    "content": "Open Support & Feedback from the app menu and use the support option shown there."
+    "content": "Open Support & Feedback from the app menu. The support QR code points to the Dino USB Player Facebook page."
   },
   {
     "title": "Where can I send feedback or suggestions?",
-    "content": "Open Support & Feedback from the app menu and use the feedback option shown there."
+    "content": "Open Support & Feedback from the app menu and use the feedback form QR code."
   },
   {
     "title": "What information is shown on the About page?",
-    "content": "The About page shows the TV PPTX Viewer app name, icon, tagline, and app details."
+    "content": "The About page shows Dino USB Player app, developer, and version details."
   }
 ]

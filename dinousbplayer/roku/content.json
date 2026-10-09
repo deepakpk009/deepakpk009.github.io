@@ -1,24 +1,24 @@
 {
   "meta": {
     "lang": "en",
-    "title": "TV PPTX Viewer - PPTX presentation viewer for Roku TV",
-    "description": "TV PPTX Viewer is a Roku app for viewing PowerPoint presentations on your TV with local Wi-Fi pairing, a remote-friendly library, slide navigation, zoom, pan, rotate, night mode, thumbnails, search, Go to Slide, animation mode, and subscription support.",
-    "keywords": "TV PPTX Viewer, Roku PPTX viewer, PPTX viewer for Roku, PowerPoint viewer Roku, presentation viewer Roku, view PPTX on TV, PPTX viewer TV, Roku presentation viewer, local WiFi PPTX viewer, TV PowerPoint viewer",
+    "title": "Dino USB Player - USB video player for Roku TV",
+    "description": "Dino USB Player is a Roku app for browsing and playing videos from an attached USB drive, with recursive video discovery, full-screen playback, subtitles, resume support, simple remote controls, and subscription options.",
+    "keywords": "Dino USB Player, Roku USB player, USB video player Roku, Roku media player, play USB videos on Roku, Roku video player, USB movie player, Roku subtitle player, Roku external drive video player",
     "author": "Deepak PK",
-    "canonical": "https://deepakpk.com/tvpptxviewer/roku",
+    "canonical": "https://deepakpk.com/dinousbplayer/roku",
     "og": {
       "type": "website",
-      "url": "https://deepakpk.com/tvpptxviewer/roku",
-      "title": "TV PPTX Viewer for Roku TV",
-      "description": "View PPTX presentations on Roku with a clean, remote-friendly TV viewer.",
+      "url": "https://deepakpk.com/dinousbplayer/roku",
+      "title": "Dino USB Player for Roku TV",
+      "description": "Browse and play USB drive videos on Roku with subtitles, resume playback, and remote-friendly controls.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
     "twitter": {
       "card": "summary_large_image",
-      "url": "https://deepakpk.com/tvpptxviewer/roku",
-      "title": "TV PPTX Viewer for Roku TV",
-      "description": "A remote-friendly Roku app for viewing PowerPoint presentations on the big screen.",
+      "url": "https://deepakpk.com/dinousbplayer/roku",
+      "title": "Dino USB Player for Roku TV",
+      "description": "Turn your Roku TV into a simple USB video player for movies, home videos, and personal recordings.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -48,153 +48,143 @@
     "paperWhite": "#F7FAFF"
   },
   "product": {
-    "name": "TV PPTX Viewer",
-    "heroTitle": "TV PPTX Viewer - View PowerPoint Presentations on Roku TV",
-    "heroDescription": "Open PPTX presentations on your Roku TV with a clean, remote-friendly interface. Connect from your phone, tablet, or computer on the same Wi-Fi network, choose one or more PPTX files, and view slides on the big screen with zoom, pan, rotate, night mode, thumbnails, search, Go to Slide, Animation Mode, and resume support.",
+    "name": "Dino USB Player",
+    "heroTitle": "Dino USB Player - Watch USB Videos on Roku TV",
+    "heroDescription": "Turn your Roku TV into a USB video player. Connect a USB drive, browse videos from folders and subfolders, and enjoy full-screen playback with subtitles, resume support, quick seek controls, restart, and a clean Roku remote-friendly interface.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
         "type": "roku",
-        "label": "Get TV PPTX Viewer on Roku",
-        "url": "https://my.roku.com/account/add/tvpptxviewer",
+        "label": "Get Dino USB Player on Roku",
+        "url": "https://my.roku.com/account/add/dinousbplayer",
         "style": "primary"
       }
     ],
     "stats": [
       {
-        "value": "Roku TV",
-        "label": "Remote-Friendly Viewer"
+        "value": "USB",
+        "label": "External Drive Video Playback"
       },
       {
-        "value": "PPTX",
-        "label": "Presentation File Support"
+        "value": "MP4 / MKV / AVI",
+        "label": "Popular Video Format Detection"
       },
       {
-        "value": "QR / Wi-Fi",
-        "label": "Simple Local Pairing"
+        "value": "Subtitles",
+        "label": "Same-Folder Caption Support"
       }
     ],
     "features": {
-      "title": "Features Built for Big-Screen PPTX Viewing",
+      "title": "Features Built for Big-Screen USB Video Playback",
       "cards": [
         {
           "icon": "📺",
           "title": "Made for Roku TV",
           "bullets": [
-            "Designed for Roku TV and remote control navigation",
-            "Large labels, clear focus states, and simple D-pad movement",
-            "Move between Connect, Library, Settings, Help, and the full-screen viewer",
-            "TV-optimized screens for comfortable viewing from the couch or meeting room"
+            "Designed for Roku TV and simple remote control navigation",
+            "Two-pane home screen with a persistent side menu and USB video browser",
+            "Move between Reload Files, Subscribe, Settings, Help, About, Support, Privacy, and Terms",
+            "Back at the top level shows an exit confirmation instead of closing immediately"
           ]
         },
         {
-          "icon": "📱",
-          "title": "Easy Local Pairing",
+          "icon": "💾",
+          "title": "USB Drive Browsing",
           "bullets": [
-            "Connect from a phone, tablet, or computer on the same Wi-Fi network",
-            "Scan the QR code shown on your Roku screen",
-            "Use the short manual address if you prefer typing the link",
-            "Connection status and retry options help you reconnect when needed"
+            "Detects connected Roku external storage roots when a USB drive is available",
+            "Scans folders and subfolders recursively for video files",
+            "Shows loading, no-USB, and no-video states so the app status is clear",
+            "Reload Files returns the browser to the USB root and refreshes the library"
           ]
         },
         {
-          "icon": "📁",
-          "title": "PPTX Selection",
+          "icon": "🎬",
+          "title": "Video File Discovery",
           "bullets": [
-            "Choose one PPTX file, multiple PPTX files, or a folder where supported",
-            "Drag and drop PPTX files in supported browsers",
-            "Duplicate selections are skipped so your Library stays clean",
-            "Selected presentations show useful details such as file name, file size, and slide count when available"
-          ]
-        },
-        {
-          "icon": "🖼️",
-          "title": "Presentation Library",
-          "bullets": [
-            "Browse selected presentations in a Roku-friendly grid",
-            "Presentation cards show thumbnails and clean file names when available",
-            "Open the focused presentation with the OK button",
-            "Empty Library guidance sends you back to the Connect screen"
+            "Lists video files only, keeping folders, images, audio, subtitles, and unknown files out of the visible browser",
+            "Recognizes MP4, AVI, MKV, MOV, FLV, WMV, WebM, M4V, 3GP, TS, MTS, M2TS, MPG, MPEG, VOB, and OGV extensions",
+            "Filters common hidden and system entries such as dot-prefixed names, lost.dir, System Volume Information, and $RECYCLE.BIN",
+            "Sorts videos alphabetically by file name with path used as a tie-breaker"
           ]
         },
         {
           "icon": "🎞️",
-          "title": "Full-Screen Slide Viewer",
+          "title": "Full-Screen Video Player",
           "bullets": [
-            "View selected presentations in a full-screen TV viewer",
-            "Use Left and Right to move between slides",
-            "Use Back to return to the Library without losing the active session",
-            "The viewer keeps your current slide visible during brief loading or connection moments"
+            "Opens selected USB videos in a full-screen Roku video player",
+            "Custom transport overlay shows title, elapsed time, total duration, and progress",
+            "Use rewind 5 seconds, play/pause/replay, forward 5 seconds, subtitles, and More controls",
+            "Overlay auto-hides while video is playing and can be shown again with OK"
           ]
         },
         {
-          "icon": "🎛️",
-          "title": "Slide Controls",
+          "icon": "⏯️",
+          "title": "Remote-Friendly Playback Controls",
           "bullets": [
-            "Zoom in, zoom out, and reset zoom from the presentation options menu",
-            "Pan around zoomed slides with the Roku remote D-pad",
-            "Rotate slides when a different orientation is easier to view",
-            "Restart a presentation from the first slide when needed"
-          ]
-        },
-        {
-          "icon": "🔍",
-          "title": "Search and Go To Slide",
-          "bullets": [
-            "Search inside supported presentation text",
-            "Review matching slide numbers and snippets",
-            "Jump from a search result directly to the matching slide",
-            "Use Go to Slide with a TV-friendly numeric keypad"
+            "Play remote key toggles play and pause",
+            "Replay remote key restarts playback",
+            "Back hides the visible controls before closing the player",
+            "Seeking is clamped safely between the beginning and known video duration"
           ]
         },
         {
           "icon": "🔖",
-          "title": "Slide Thumbnails",
+          "title": "Resume Playback",
           "bullets": [
-            "Open a full-screen slide thumbnail navigator",
-            "Browse nearby slides with a focused center slide",
-            "Select a thumbnail to jump directly to that slide",
-            "Cancel thumbnail navigation without changing slides"
+            "Saves progress while playing, when paused, and when closing the player",
+            "Resumes supported videos from the last saved position",
+            "Clears saved progress when a video finishes or is restarted",
+            "Skips resume records for very short videos, very early playback, and near-end positions"
           ]
         },
         {
-          "icon": "🌙",
-          "title": "Viewing Comfort",
+          "icon": "💬",
+          "title": "Subtitle Support",
           "bullets": [
-            "Use Night Mode for easier viewing in a dark room",
-            "Save per-presentation viewing state during the current session",
-            "Restore slide position, zoom, rotation, pan, Night Mode, and Animation Mode when returning to a presentation",
-            "Open new presentations with sensible default viewing settings"
+            "Detects same-folder SRT, VTT, ASS, SSA, TTML, DFXP, and XML subtitle files",
+            "Shows a CC indicator in the USB browser when subtitles are available",
+            "Prioritizes subtitle files whose base name matches the selected video",
+            "Use the subtitle button to toggle one subtitle file or choose from multiple subtitle tracks"
           ]
         },
         {
-          "icon": "✨",
-          "title": "Animation Mode",
+          "icon": "🌐",
+          "title": "Subtitle Language Detection",
           "bullets": [
-            "Choose simple static viewing for predictable slide display",
-            "Step through supported presentation effects when available",
-            "Switch modes from the presentation options menu",
-            "Compatibility can vary by file, presentation content, and Roku device resources"
+            "Builds Roku subtitle tracks with language, description, and track name metadata",
+            "Infers language markers from subtitle filenames when available",
+            "Recognizes common markers for English, Spanish, French, German, Italian, Portuguese, Hindi, Japanese, Korean, and Chinese",
+            "Includes a Turn Off Subtitles option in the subtitle picker"
           ]
         },
         {
           "icon": "💳",
-          "title": "Subscription Support",
+          "title": "Free and Premium Access",
           "bullets": [
-            "Subscribe or manage your subscription from the app menu",
-            "Subscription purchase and recovery flows use the Roku channel store",
-            "Free users may be limited to the first configured number of slides per presentation",
-            "Subscribed users can continue viewing later slides without the free limit prompt"
+            "Free users can try the first filename-sorted video from the USB browser",
+            "Videos beyond the free item show a centered lock overlay and subscription prompt",
+            "Free users can use subtitles for the first 20 minutes of each video when subtitles are available",
+            "Subscribed users unlock the full USB video library and extended subtitle access"
+          ]
+        },
+        {
+          "icon": "🧾",
+          "title": "Roku Subscription Flow",
+          "bullets": [
+            "Uses Roku ChannelStore purchase, recovery, and catalog flows",
+            "Subscription plans can show title, billing period, price, and free-trial text when provided",
+            "Subscribe prompts are available from locked video and subtitle-limit messages",
+            "Manage Subscription shows Roku account and device-side management instructions"
           ]
         },
         {
           "icon": "⚙️",
-          "title": "Settings and Storage Tools",
+          "title": "Settings and Playback Data",
           "bullets": [
-            "View TV screen resolution and screen ratio",
-            "Check temporary viewing file count and storage usage",
-            "Clear temporary storage when needed",
-            "See clear success, no-data, and failure messages for cleanup actions"
+            "View screen resolution and screen aspect ratio",
+            "See available and total local storage information",
+            "Show USB storage size when a likely external USB volume is detected",
+            "Clear stored playback and resume records from Settings"
           ]
         },
         {
@@ -202,29 +192,19 @@
           "title": "Help, Legal, and Support",
           "bullets": [
             "Built-in Help/FAQ page with expandable questions",
-            "Privacy Policy and Terms of Use pages",
+            "Privacy Policy and Terms of Use pages loaded from the Dino USB Player site",
             "About page with app, developer, and version details",
-            "Support and feedback page with QR codes for useful links"
+            "Support and feedback page with QR codes for Facebook support and feedback form links"
           ]
         },
         {
           "icon": "🔒",
-          "title": "Local Viewing Design",
+          "title": "Local USB Design",
           "bullets": [
-            "PPTX files are selected from your own phone, tablet, or computer",
-            "No cloud presentation storage account is required for viewing",
-            "Roku is not designed to permanently store your original PPTX files",
-            "Temporary viewing data can be cleared from Settings"
-          ]
-        },
-        {
-          "icon": "🌐",
-          "title": "Localization Ready",
-          "bullets": [
-            "Roku interface text uses localized app strings",
-            "Viewer controls, slide prompts, settings, and subscription messages support translation",
-            "The browser selection page includes localized status and error messages",
-            "Browser language selection can be stored locally on that browser"
+            "Videos are read from your attached USB drive",
+            "The app is not a cloud storage, backup, or media hosting service",
+            "Playback compatibility depends on the file encoding and Roku device capabilities",
+            "Internet may be needed for Roku subscription, legal, support, and help links"
           ]
         }
       ]
@@ -233,24 +213,24 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "🎓",
-          "title": "Classrooms & Training",
-          "text": "Show lesson slides, study material, and training presentations on a Roku TV with simple remote navigation."
-        },
-        {
-          "icon": "💼",
-          "title": "Office Presentations",
-          "text": "Open business PPTX files on meeting-room TVs without keeping a laptop connected to the TV."
+          "icon": "🎥",
+          "title": "Movies on USB",
+          "text": "Browse and play compatible movie files from a USB drive directly on your Roku TV."
         },
         {
           "icon": "🏠",
-          "title": "Home & Personal Use",
-          "text": "View school projects, event slides, photo presentations, or saved PPTX files on the big screen."
+          "title": "Family Videos",
+          "text": "Watch home videos and personal recordings on the big screen with easy remote controls."
         },
         {
-          "icon": "📱",
-          "title": "Local Wi-Fi Viewing",
-          "text": "Choose PPTX files from a phone, tablet, or computer on the same Wi-Fi network without using cloud storage."
+          "icon": "🧳",
+          "title": "Offline Collections",
+          "text": "Use a local USB drive for video collections without relying on a cloud media library."
+        },
+        {
+          "icon": "💬",
+          "title": "Subtitled Videos",
+          "text": "Play videos with subtitle files stored in the same folder, including common subtitle formats."
         }
       ]
     },
@@ -258,48 +238,36 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "What is TV PPTX Viewer?",
-          "a": "TV PPTX Viewer is a Roku app for viewing PowerPoint presentations on your TV with a remote-friendly interface."
+          "q": "What is Dino USB Player?",
+          "a": "Dino USB Player is a Roku app for finding and playing video files from an attached USB drive."
         },
         {
-          "q": "How do I open PPTX files on my Roku TV?",
-          "a": "Open the Connect screen, scan the QR code or enter the short address from a phone, tablet, or computer on the same Wi-Fi network, then choose the PPTX files you want to view."
+          "q": "How do I start watching USB videos?",
+          "a": "Connect a USB drive to your Roku device, open Dino USB Player, let it scan your drive, then choose a video from the USB browser."
         },
         {
-          "q": "Which presentation format is supported?",
-          "a": "The app is designed for PPTX presentation files."
+          "q": "Which video formats does it recognize?",
+          "a": "The app recognizes common video extensions including MP4, MKV, AVI, MOV, WMV, FLV, WebM, M4V, 3GP, TS, MTS, M2TS, MPG, MPEG, VOB, and OGV."
         },
         {
-          "q": "Can I choose more than one PPTX file?",
-          "a": "Yes. You can select multiple PPTX files, and folder selection may also be available on supported devices and browsers."
+          "q": "Does it scan folders and subfolders?",
+          "a": "Yes. Dino USB Player recursively scans folders and subfolders for video files."
         },
         {
-          "q": "Do my device and Roku need to be on the same Wi-Fi network?",
-          "a": "Yes. The phone, tablet, or computer used to choose PPTX files should be connected to the same local Wi-Fi network as your Roku device."
+          "q": "Can I use subtitles?",
+          "a": "Yes. The app detects subtitle files stored alongside videos and lets you enable, disable, or choose available subtitle tracks."
         },
         {
-          "q": "Can I search inside a presentation?",
-          "a": "Yes. The viewer includes search with results that can jump to matching slides when supported by the presentation."
+          "q": "Does it remember where I stopped watching?",
+          "a": "Yes. Dino USB Player can save and resume playback position for supported videos."
         },
         {
-          "q": "Can I zoom, rotate, or pan slides?",
-          "a": "Yes. The presentation options menu includes zoom, reset zoom, rotate, and pan support for zoomed slides."
+          "q": "What is included for free?",
+          "a": "Free users can try the first video in the sorted USB library, and subtitle use may be limited to the first 20 minutes of each video."
         },
         {
-          "q": "Can I jump to a specific slide?",
-          "a": "Yes. Use Go to Slide from the presentation options menu and enter a slide number with the TV-friendly keypad."
-        },
-        {
-          "q": "Does the app remember where I stopped?",
-          "a": "While you are using the app, the viewer can restore per-presentation state such as slide position, zoom, rotation, pan, Night Mode, and Animation Mode."
-        },
-        {
-          "q": "Does Roku store my original PPTX files?",
-          "a": "No. TV PPTX Viewer is designed for local viewing and is not designed to permanently store original PPTX files on Roku. Temporary viewing data can be cleared from Settings."
-        },
-        {
-          "q": "Where can I manage subscription information?",
-          "a": "The app includes Subscribe and Manage Subscription options. Subscription purchase and recovery use the Roku channel store flow."
+          "q": "What does a subscription unlock?",
+          "a": "A subscription unlocks the full USB video library and extended subtitle access."
         }
       ]
     }
@@ -309,109 +277,86 @@
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",
-        "alt": "TV PPTX Viewer Roku TV screenshot 1"
-      },
-      {
-        "src": "images/screenshots/ss002.jpg",
-        "alt": "TV PPTX Viewer Roku TV screenshot 1"
-      },
-      {
-        "src": "images/screenshots/ss003.jpg",
-        "alt": "TV PPTX Viewer Roku TV screenshot 1"
-      },
-      {
-        "src": "images/screenshots/ss004.jpg",
-        "alt": "TV PPTX Viewer Roku TV screenshot 1"
-      },
-      {
-        "src": "images/screenshots/ss005.jpg",
-        "alt": "TV PPTX Viewer Roku TV screenshot 1"
-      },
-      {
-        "src": "images/screenshots/ss006.jpg",
-        "alt": "TV PPTX Viewer Roku TV screenshot 1"
-      },{
-        "src": "images/screenshots/ss007.jpg",
-        "alt": "TV PPTX Viewer Roku TV screenshot 1"
+        "alt": "Dino USB Player Roku TV screenshot"
       }
     ],
     "video": {
       "sectionId": "demo",
-      "title": "See TV PPTX Viewer on Roku TV",
+      "title": "See Dino USB Player on Roku TV",
       "youtubeEmbedUrl": "",
-      "iframeTitle": "TV PPTX Viewer Roku TV Demo"
+      "iframeTitle": "Dino USB Player Roku TV Demo"
     }
   },
   "sections": {
     "howItWorks": {
-      "title": "Start Viewing PPTX Presentations on TV in Minutes",
+      "title": "Start Watching USB Videos on Roku in Minutes",
       "steps": [
         {
           "number": "1",
-          "title": "Install TV PPTX Viewer",
-          "text": "Install TV PPTX Viewer on your Roku device."
+          "title": "Install Dino USB Player",
+          "text": "Install Dino USB Player on your Roku device."
         },
         {
           "number": "2",
-          "title": "Connect Your Device",
-          "text": "Use the QR code or short address on the Connect screen from a phone, tablet, or computer on the same Wi-Fi network."
+          "title": "Connect a USB Drive",
+          "text": "Attach a USB storage device with compatible video files to your Roku device."
         },
         {
           "number": "3",
-          "title": "Choose and View PPTX Files",
-          "text": "Select one or more PPTX files, open a presentation from the Library, then use the remote-friendly controls for zoom, pan, rotate, night mode, thumbnails, search, Go to Slide, and Animation Mode."
+          "title": "Browse and Play",
+          "text": "Let the app scan your drive, choose a video from the USB browser, then use the full-screen player for play, pause, quick seek, subtitles, restart, and resume."
         }
       ]
     },
     "features": {
-      "title": "Why Presentation Viewers Will Like It",
+      "title": "Why USB Video Viewers Will Like It",
       "cards": [
         {
-          "icon": "📺",
-          "title": "TV-First Experience",
+          "icon": "💾",
+          "title": "USB Library Scanning",
           "bullets": [
-            "Built for Roku TV usage and remote control navigation",
-            "Large-screen friendly presentation browsing with thumbnails and clean file names"
+            "Finds compatible videos on connected USB storage",
+            "Scans folders and subfolders while filtering hidden and system entries"
           ]
         },
         {
-          "icon": "📥",
-          "title": "Simple Local Pairing",
+          "icon": "🎬",
+          "title": "Popular Video Formats",
           "bullets": [
-            "Scan a QR code or type the short connection address",
-            "Choose PPTX files from a phone, tablet, or computer on the same Wi-Fi network"
+            "Recognizes MP4, MKV, AVI, MOV, WMV, FLV, WebM, MPEG, VOB, TS, M2TS, and more",
+            "Playback compatibility depends on the media encoding and Roku device support"
           ]
         },
         {
-          "icon": "🎛️",
-          "title": "Presentation Controls",
+          "icon": "⏯️",
+          "title": "Full-Screen Controls",
           "bullets": [
-            "Zoom, pan, rotate, reset zoom, night mode, thumbnails, search, and Go to Slide controls",
-            "Animation Mode and restart options inside the viewer"
+            "Custom transport overlay with elapsed time, duration, and progress",
+            "Quick 5-second rewind and forward controls, play/pause, replay, and restart"
           ]
         },
         {
-          "icon": "🔍",
-          "title": "Search and Navigation",
+          "icon": "🔖",
+          "title": "Resume Watching",
           "bullets": [
-            "Search inside supported presentation text and jump to matching slides",
-            "Use slide thumbnails or Go to Slide for fast movement through a deck"
+            "Saves playback position while watching",
+            "Clears completed or near-end progress so finished videos start cleanly"
+          ]
+        },
+        {
+          "icon": "💬",
+          "title": "Subtitle Tools",
+          "bullets": [
+            "Detects same-folder SRT, VTT, ASS, SSA, TTML, DFXP, and XML subtitles",
+            "Choose from multiple subtitle files or turn subtitles off"
           ]
         },
         {
           "icon": "💳",
           "title": "Subscription Options",
           "bullets": [
-            "Subscribe or manage your subscription from the app menu",
-            "Subscribed users can continue beyond the configured free slide limit"
-          ]
-        },
-        {
-          "icon": "⚙️",
-          "title": "Useful App Tools",
-          "bullets": [
-            "Settings show resolution, screen ratio, temporary file count, and storage usage",
-            "Clear temporary viewing storage when needed"
+            "Try the first sorted video for free",
+            "Subscribe through Roku to unlock the full USB library and extended subtitle access"
           ]
         }
       ]
@@ -420,24 +365,24 @@
       "title": "Perfect For",
       "items": [
         {
-          "icon": "🎓",
-          "title": "Classrooms & Training",
-          "text": "Show lesson slides, study material, and training presentations on a Roku TV with simple remote navigation."
-        },
-        {
-          "icon": "💼",
-          "title": "Office Presentations",
-          "text": "Open business PPTX files on meeting-room TVs without keeping a laptop connected to the TV."
+          "icon": "🎥",
+          "title": "USB Movie Nights",
+          "text": "Play compatible movies from a USB drive on your Roku TV."
         },
         {
           "icon": "🏠",
-          "title": "Home & Personal Use",
-          "text": "View school projects, event slides, photo presentations, or saved PPTX files on the big screen."
+          "title": "Home Videos",
+          "text": "Watch family videos, clips, and personal recordings on the big screen."
         },
         {
-          "icon": "📱",
-          "title": "Local Wi-Fi Viewing",
-          "text": "Choose PPTX files from a phone, tablet, or computer on the same Wi-Fi network without using cloud storage."
+          "icon": "🧳",
+          "title": "Offline Video Libraries",
+          "text": "Keep videos on a local USB drive and browse them from the couch."
+        },
+        {
+          "icon": "💬",
+          "title": "Subtitle Playback",
+          "text": "Use subtitle files stored next to your videos for easier viewing."
         }
       ]
     },
@@ -445,59 +390,43 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "q": "What is TV PPTX Viewer?",
-          "a": "TV PPTX Viewer is a Roku app for viewing PowerPoint presentations on your TV with a remote-friendly interface."
+          "q": "What is Dino USB Player?",
+          "a": "Dino USB Player is a Roku app for browsing and playing videos from an attached USB drive."
         },
         {
-          "q": "How do I open PPTX files on my Roku TV?",
-          "a": "Open the Connect screen, scan the QR code or enter the short address from a phone, tablet, or computer on the same Wi-Fi network, then choose the PPTX files you want to view."
+          "q": "Do I need a USB drive?",
+          "a": "Yes. Dino USB Player is built around videos stored on a USB storage device connected to your Roku."
         },
         {
-          "q": "Which presentation format is supported?",
-          "a": "The app is designed for PPTX presentation files."
+          "q": "Does it list folders?",
+          "a": "The visible browser lists video files only. Folders are scanned in the background so videos inside subfolders can still appear."
         },
         {
-          "q": "Can I choose more than one PPTX file?",
-          "a": "Yes. You can select multiple PPTX files, and folder selection may also be available on supported devices and browsers."
+          "q": "Can I use subtitle files?",
+          "a": "Yes. Supported subtitle files in the same folder can be detected and offered in the video player."
         },
         {
-          "q": "Do my device and Roku need to be on the same Wi-Fi network?",
-          "a": "Yes. The phone, tablet, or computer used to choose PPTX files should be connected to the same local Wi-Fi network as your Roku device."
+          "q": "Can I resume a video?",
+          "a": "Yes. Dino USB Player saves playback progress and can resume supported videos from where you left off."
         },
         {
-          "q": "Can I search inside a presentation?",
-          "a": "Yes. The viewer includes search with results that can jump to matching slides when supported by the presentation."
+          "q": "Why is a video locked?",
+          "a": "Free users can open the first filename-sorted video. Videos after the free item require a subscription."
         },
         {
-          "q": "Can I zoom, rotate, or pan slides?",
-          "a": "Yes. The presentation options menu includes zoom, reset zoom, rotate, and pan support for zoomed slides."
-        },
-        {
-          "q": "Can I jump to a specific slide?",
-          "a": "Yes. Use Go to Slide from the presentation options menu and enter a slide number with the TV-friendly keypad."
-        },
-        {
-          "q": "Does the app remember where I stopped?",
-          "a": "While you are using the app, the viewer can restore per-presentation state such as slide position, zoom, rotation, pan, Night Mode, and Animation Mode."
-        },
-        {
-          "q": "Does Roku store my original PPTX files?",
-          "a": "No. TV PPTX Viewer is designed for local viewing and is not designed to permanently store original PPTX files on Roku. Temporary viewing data can be cleared from Settings."
-        },
-        {
-          "q": "Where can I manage subscription information?",
-          "a": "The app includes Subscribe and Manage Subscription options. Subscription purchase and recovery use the Roku channel store flow."
+          "q": "Where do I manage my subscription?",
+          "a": "Subscribed users can use Manage Subscription in the app, visit https://my.roku.com/subscriptions, or manage the app subscription from the Roku Home screen."
         }
       ]
     },
     "cta": {
-      "title": "View PPTX Presentations on Your Roku TV",
-      "text": "Download TV PPTX Viewer and turn your Roku into a simple, remote-friendly PPTX presentation viewer for the big screen.",
+      "title": "Watch USB Videos on Your Roku TV",
+      "text": "Download Dino USB Player and turn your Roku into a simple, remote-friendly USB video player for movies, home videos, and personal recordings.",
       "buttons": [
         {
           "type": "roku",
-          "label": "Get TV PPTX Viewer on Roku",
-          "url": "https://my.roku.com/account/add/tvpptxviewer",
+          "label": "Get Dino USB Player on Roku",
+          "url": "https://my.roku.com/account/add/dinousbplayer",
           "style": "primary"
         }
       ]
@@ -506,14 +435,14 @@
   "footer": {
     "brand": {
       "logo": "images/app_icon.png",
-      "name": "TV PPTX Viewer",
-      "about": "A remote-friendly Roku PPTX viewer for opening, searching, navigating, and presenting PowerPoint files on the big screen."
+      "name": "Dino USB Player",
+      "about": "A remote-friendly Roku USB video player for browsing, playing, resuming, and watching compatible videos from an attached USB drive."
     },
     "social": [
       {
         "type": "facebook",
         "label": "Facebook",
-        "url": "https://www.facebook.com/tvpptxviewer"
+        "url": "https://www.facebook.com/dinousbplayer"
       }
     ],
     "columns": [
@@ -522,7 +451,7 @@
         "links": [
           {
             "label": "Download App",
-            "url": "https://my.roku.com/account/add/tvpptxviewer"
+            "url": "https://my.roku.com/account/add/dinousbplayer"
           },
           {
             "label": "More Download Options",
@@ -556,8 +485,8 @@
         "title": "More Apps",
         "links": [
           {
-            "label": "TV PPTX Viewer",
-            "url": "https://deepakpk.com/tvpptxviewer"
+            "label": "Dino USB Player",
+            "url": "https://deepakpk.com/dinousbplayer"
           },
           {
             "label": "View All Apps",
@@ -576,15 +505,15 @@
     "softwareApplication": {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "TV PPTX Viewer",
+      "name": "Dino USB Player",
       "operatingSystem": "Roku OS",
-      "applicationCategory": "ProductivityApplication",
+      "applicationCategory": "MultimediaApplication",
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://my.roku.com/account/add/tvpptxviewer",
+      "downloadUrl": "https://my.roku.com/account/add/dinousbplayer",
       "author": {
         "@type": "Person",
         "name": "Deepak PK",
@@ -594,7 +523,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "TV PPTX Viewer is a Roku app for opening, searching, navigating, and presenting PPTX files with remote-friendly controls."
+      "description": "Dino USB Player is a Roku app for browsing and playing compatible video files from an attached USB drive with subtitles, resume playback, and remote-friendly controls."
     },
     "organization": {
       "@context": "https://schema.org",
@@ -603,7 +532,7 @@
       "url": "https://deepakpk.com",
       "logo": "images/app_icon.png",
       "sameAs": [
-        "https://www.facebook.com/tvpptxviewer"
+        "https://www.facebook.com/dinousbplayer"
       ],
       "contactPoint": [
         {

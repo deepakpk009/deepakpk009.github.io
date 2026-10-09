@@ -7,7 +7,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "This Privacy Policy applies to the TV PPTX Viewer application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local presentation viewing utility for displaying PowerPoint files on a TV."
+          "text": "This Privacy Policy applies to the Dino USB Player application for Roku devices and Roku TV devices (the \"Application\"). The Application is provided by Deepak PK (the \"Service Provider\") as a local USB video playback utility for Roku."
         }
       ]
     },
@@ -21,7 +21,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "TV PPTX Viewer is designed for local presentation viewing between your own devices on the same Wi-Fi network. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
+          "text": "Dino USB Player is designed to browse and play video files from a USB storage device connected to your Roku device. The Service Provider does not use Google Analytics, Firebase, Crashlytics, or similar analytics or tracking services in the Roku version of the Application."
         }
       ]
     },
@@ -35,7 +35,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "To provide the presentation viewing experience, the Application may handle information such as:"
+          "text": "To provide the USB browsing, playback, subtitle, subscription, support, and settings features, the Application may handle information such as:"
         }
       ]
     },
@@ -45,43 +45,37 @@
         [
           {
             "type": "text",
-            "text": "PPTX files you choose to open with the Application"
+            "text": "Video files, subtitle files, file names, file paths, file sizes, folder relationships, and related metadata available from the USB drive you connect"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Basic file and presentation details, such as file names, file sizes, slide counts, titles, thumbnails, and related metadata when available"
+            "text": "Playback state and preferences, such as resume position, elapsed time, subtitle selection, playback status, and recently stored progress records"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Viewing preferences and state, such as current slide, zoom, rotation, pan position, night mode, and recently viewed presentations"
+            "text": "Device and app information shown or used inside the Application, such as app version, display size, screen ratio, local storage availability, USB storage availability, and network link status"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Temporary session, connection, and device information used to pair your Roku device with your phone, tablet, or computer on your local network"
+            "text": "Temporary app data used to support USB scanning, video listing, subtitles, playback, entitlement checks, cached remote documents, settings, and diagnostics"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Temporary app data used to support viewing, thumbnails, navigation, reconnection, and performance"
+            "text": "Subscription catalog, purchase, recovery, entitlement, dunning, renewal, expiration, and status information made available through the Roku platform"
           }
         ],
         [
           {
             "type": "text",
-            "text": "Subscription or entitlement status provided through the Roku platform"
-          }
-        ],
-        [
-          {
-            "type": "text",
-            "text": "Support or feedback information you choose to send through external support or feedback links"
+            "text": "Support or feedback information you choose to send through external support pages, feedback forms, email, or other links"
           }
         ]
       ]
@@ -91,21 +85,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "This information is used to provide local pairing, presentation selection, library display, slide viewing, navigation, viewing-state restoration, subscription access control, support, and related in-app features."
+          "text": "This information is used to operate the Application, display your USB video library, play selected videos, restore playback progress, show subtitles, manage access limits, verify subscription status, provide support resources, and improve reliability."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Local Presentation Viewing"
+      "text": "USB Media and Local Storage"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "Presentations are selected from your phone, tablet, or computer while it is connected to the same local network as your Roku device. The Application is not designed to upload your PPTX files to a Service Provider cloud storage account."
+          "text": "The Application reads supported video and subtitle files from USB storage connected to your Roku device. The Application is not designed to upload your USB video files or subtitle files to a Service Provider cloud storage account."
         }
       ]
     },
@@ -114,21 +108,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "Original PPTX files remain on the device you use to select them. The Roku version of the Application uses local network communication to support the TV viewing experience and does not persist original PPTX files on the Roku device."
+          "text": "The Application may store limited local playback data on the Roku device, such as resume records and related identifiers. Playback records may be keyed using file information such as lowercased file name and file size, and may be cleared by the Application when videos are completed, when records are old or no longer useful, when storage is pruned, or when you use the Clear Playback Data action in Settings."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Local Network Use"
+      "text": "Network Use"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "The Application uses your local network so your Roku device and your phone, tablet, or computer can work together during presentation viewing. Connection status, temporary session information, and recovery messages may be used to help connect, reconnect, or clear unavailable local sessions. You should use the Application only on networks and with files that you trust."
+          "text": "The Application may use network access to load Help/FAQ content, Privacy Policy content, Terms of Use content, support or feedback resources, and Roku subscription, purchase, entitlement, or recovery services. The Application may also detect network link status to show connectivity messages. You are responsible for using trusted devices, networks, USB drives, files, and subtitles."
         }
       ]
     },
@@ -142,21 +136,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Roku version of the Application does not use the Application to track your activity across apps or websites. The Service Provider does not use the Application to collect analytics events, advertising identifiers, precise location information, or behavioral tracking information for profiling or targeted advertising."
+          "text": "The Roku version of the Application does not use the Application to track your activity across apps or websites. The Service Provider does not use the Application to collect analytics events, advertising identifiers, precise location information, contact lists, photos, microphone recordings, camera data, or behavioral tracking information for profiling or targeted advertising."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Temporary Storage and Retention"
+      "text": "Temporary Data and Retention"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "The Application may keep temporary app data on the Roku device to support viewing, thumbnails, navigation, viewing-state restoration, reconnection, and performance. The Application includes a Clear Temporary Storage action in Settings. Temporary app data may also be cleared during normal app operation, when a local session ends, when cached data is pruned, or when the Roku app restarts."
+          "text": "The Application may keep temporary or local app data on the Roku device to support USB scanning, library display, playback, subtitles, resume behavior, subscription access control, remote legal/FAQ loading, settings, and performance. The Application includes a Clear Playback Data action in Settings. Roku device settings, app removal, normal app operation, or future updates may also clear local data."
         }
       ]
     },
@@ -165,21 +159,21 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your PPTX files to a Service Provider cloud service, or keep a remote analytics history of your presentation activity."
+          "text": "The Service Provider does not intend for the Roku version of the Application to maintain a cloud-hosted user profile, upload your USB media library to a Service Provider cloud service, or keep a remote analytics history of your viewing activity."
         }
       ]
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "Settings, Help, and Support"
+      "text": "Settings, Help, Support, and Feedback"
     },
     {
       "type": "paragraph",
       "spans": [
         {
           "type": "text",
-          "text": "The Application may display device-related settings information such as screen resolution, screen ratio, temporary file count, and temporary storage used. Help, FAQ, support, and feedback pages may open or display external support resources. If you choose to contact support or submit feedback, the information you provide through those external resources is handled according to the policies that apply to those resources."
+          "text": "The Application may display device-related settings information such as screen resolution, screen aspect ratio, available local storage, total local storage, and USB storage size when available. Help, FAQ, support, feedback, Privacy Policy, and Terms of Use pages may load or link to external resources. If you choose to contact support or submit feedback, the information you provide through those external resources is handled according to the policies that apply to those resources."
         }
       ]
     },
@@ -193,7 +187,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application may offer subscription features or slide access limits. Subscription purchases, renewals, cancellations, and entitlement recovery are handled through the Roku platform. The Service Provider may receive or use entitlement status made available by Roku to enable subscription-related features inside the Application. Payment details are handled by Roku and are subject to Roku's policies and terms."
+          "text": "The Application may offer subscription features and free-use limits, including limits on accessible videos or subtitle use. Subscription purchases, renewals, cancellations, recovery, billing, and payment handling are managed through the Roku platform. The Service Provider may receive or use entitlement status made available by Roku to enable subscription-related features inside the Application. Payment details are handled by Roku and are subject to Roku's policies and terms."
         }
       ]
     },
@@ -216,7 +210,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Application runs on the Roku platform and uses Roku platform features, including Roku billing or entitlement features where applicable. Your use of the Roku platform and Roku device may also be governed by Roku's own policies and terms."
+          "text": "The Application runs on the Roku platform and uses Roku platform features, including Roku ChannelStore billing, catalog, purchase, recovery, and entitlement features where applicable. External Help/FAQ, support, feedback, Privacy Policy, and Terms of Use resources may be loaded from or link to websites or services outside the Application. Your use of Roku and any external resources may also be governed by their own policies and terms."
         }
       ]
     },
@@ -244,7 +238,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, phone, tablet, computer, Wi-Fi network, and PPTX files secure."
+          "text": "The Service Provider takes reasonable steps to avoid unnecessary collection of personal information in the Roku version of the Application. You are responsible for keeping your Roku device, Roku account, USB storage device, network, video files, subtitle files, and related content secure."
         }
       ]
     },
@@ -272,7 +266,7 @@
       "spans": [
         {
           "type": "text",
-          "text": "This Privacy Policy is effective as of 2026-10-06."
+          "text": "This Privacy Policy is effective as of 2026-10-09."
         }
       ]
     },

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f5af22" />
+    <meta name="description" content="A private, offline-friendly shopping list saved on your device." />
+    <meta name="color-scheme" content="light" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/icons/icon-192.png" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Shopping List</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="list-card" aria-labelledby="page-title">
+        <header class="list-header">
+          <div>
+            <p class="eyebrow">My little list</p>
+            <h1 id="page-title">Shopping List</h1>
+          </div>
+          <span class="item-count" id="item-count" aria-live="polite">0 items</span>
+        </header>
+
+        <form class="add-form" id="add-form" novalidate>
+          <label class="sr-only" for="item-input">Add an item</label>
+          <input
+            id="item-input"
+            name="item"
+            type="text"
+            maxlength="120"
+            autocomplete="off"
+            placeholder="What do we need?"
+            enterkeyhint="done"
+          />
+          <button class="add-button" type="submit">
+            <span aria-hidden="true">＋</span>
+            <span>Add</span>
+          </button>
+        </form>
+
+        <p class="storage-warning" id="storage-warning" role="status" hidden>
+          Your list works for now, but this browser is not allowing it to be saved.
+        </p>
+
+        <div class="list-area">
+          <div class="empty-state" id="empty-state">
+            <span class="empty-icon" aria-hidden="true">♡</span>
+            <p>Your list is ready for something tasty.</p>
+          </div>
+          <ul class="shopping-list" id="shopping-list" aria-label="Shopping items"></ul>
+        </div>
+
+        <footer class="list-footer">
+          <button class="quiet-button" id="clear-checked" type="button" disabled>Clear checked</button>
+          <button class="quiet-button danger" id="clear-all" type="button" disabled>Clear all</button>
+        </footer>
+      </section>
+
+      <div class="utility-actions" aria-label="App options">
+        <button class="utility-button" id="install-button" type="button" hidden>
+          <span aria-hidden="true">⇩</span> Install app
+        </button>
+        <button class="utility-button" id="update-button" type="button" hidden>
+          Update available
+        </button>
+        <span class="privacy-note">Saved only on this device</span>
+      </div>
+    </main>
+
+    <dialog class="confirm-dialog" id="clear-dialog" aria-labelledby="dialog-title">
+      <form method="dialog">
+        <span class="dialog-icon" aria-hidden="true">✦</span>
+        <h2 id="dialog-title">Clear your whole list?</h2>
+        <p id="dialog-description">This will remove every item and cannot be undone.</p>
+        <div class="dialog-actions">
+          <button class="dialog-button secondary" value="cancel">Keep list</button>
+          <button class="dialog-button primary" id="confirm-clear" value="confirm">Clear all</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+      <span id="toast-message"></span>
+      <button id="toast-action" type="button" hidden>Undo</button>
+    </div>
+
+    <div class="sr-only" id="announcer" aria-live="polite" aria-atomic="true"></div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

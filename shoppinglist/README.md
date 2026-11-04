@@ -4,7 +4,8 @@ A small, local-first shopping-list Progressive Web App. Items are stored only in
 
 ## Features
 
-- Add, check, edit, and delete shopping items.
+- Type directly into pre-drawn list lines; entries save automatically.
+- Check, edit in place, and delete shopping items.
 - Undo an accidental single-item deletion.
 - Clear checked items or confirm before clearing the whole list.
 - Install as a standalone PWA in supported browsers.

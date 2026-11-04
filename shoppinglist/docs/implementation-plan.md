@@ -2,7 +2,7 @@
 
 ## 1. Product summary
 
-Create a very small, installable shopping-list web app inspired by the physical yellow shopping pad in the reference image. The app will work entirely in the browser, save its state on the current device, and remain usable without a network connection after the first visit.
+Create a very small, installable shopping-list web app inspired by the ruled shopping pad in the reference image. The supplied kitchen-character poster is the primary background, while the editable list sits on a light translucent surface. The app will work entirely in the browser, save its state on the current device, and remain usable without a network connection after the first visit.
 
 The product should feel as immediate as writing on a fridge-mounted notepad: open it, type an item, tick it off, and clear the list when the shop is finished.
 
@@ -39,7 +39,7 @@ The physical product communicates its purpose with a few strong cues:
 The web app should translate those qualities rather than copy the photographed product literally:
 
 - Use the supplied cute kitchen-character illustration as a full-page background, softened by a warm translucent overlay.
-- Place a centered yellow list card above the illustration so the list remains the dominant, readable surface.
+- Place a light translucent list surface above the illustration so the poster remains clearly visible.
 - Give the card a restrained shadow and rounded corners so it feels like a physical pad.
 - Use one editable list row per item, with a large checkbox replacing the decorative loop.
 - Keep controls visually quiet and place destructive actions away from the primary input.
@@ -47,7 +47,7 @@ The web app should translate those qualities rather than copy the photographed p
 
 Suggested palette:
 
-- Pad: `#F7B928` or a nearby warm amber.
+- List surface: translucent warm cream.
 - Page background: `#F7F3EA`.
 - Primary text: `#28231B`.
 - Ruled lines: a translucent cream/white.
@@ -61,11 +61,11 @@ Use the attached kitchen illustration as atmosphere, not as the surface behind t
 
 1. A fixed or viewport-filling image layer using `background-size: cover`.
 2. A warm cream overlay above the image at roughly 68–82% opacity.
-3. The opaque or nearly opaque yellow list card above both layers.
+3. A translucent warm-cream list surface above both layers.
 
-The image itself should remain at full opacity; the separate overlay provides the faded appearance. Applying `opacity` to the page container would also fade the list and controls, reducing legibility.
+The image itself should remain at full opacity; separate overlays provide the faded appearance. Applying `opacity` to the page container would also fade the list and controls, reducing legibility.
 
-Start with a cream overlay around 74% and tune it during visual testing. A subtle `saturate()` reduction is acceptable, but heavy blur should be avoided because it can make the friendly characters look muddy. The yellow card may use a very slight translucency only if contrast remains strong in every crop.
+Start with a light cream overlay and tune it during visual testing. A subtle `saturate()` reduction is acceptable, but heavy blur should be avoided because it can make the friendly characters look muddy. The translucent list surface must retain enough contrast for text, controls, and ruled lines in every crop.
 
 Responsive crop guidance:
 
@@ -86,18 +86,16 @@ Asset handling:
 
 ### Empty state
 
-The page opens directly to a yellow list card. The title reads “Shopping List.” Below it is a single input row with a short prompt such as “Add an item…” and an Add button that is both visible and keyboard accessible. Focus should move to the input automatically on desktop, but not force the mobile keyboard open on page load.
-
-An understated empty-state message may appear beneath the input: “Your list is empty.” It disappears as soon as an item is added.
+The page opens directly to a translucent ruled list over the poster. The title reads “Shopping List.” Twelve editable lines are visible immediately, even when the list is empty. The first available line carries a short “Type an item…” prompt, but the mobile keyboard is not forced open on page load.
 
 ### Add an item
 
-1. The user types an item.
-2. Pressing Enter or selecting Add creates the item.
-3. Leading and trailing whitespace is removed.
-4. Empty values are ignored.
-5. The input is cleared and remains ready for another entry.
-6. The list is saved immediately.
+1. The user types directly into any visible ruled line.
+2. The line becomes an item as soon as it contains non-whitespace text.
+3. The item is saved automatically while typing.
+4. Pressing Enter moves focus to the next line.
+5. Leading and trailing whitespace is removed when the user leaves the line.
+6. Empty lines remain available and are not stored as items.
 
 Duplicate item names are allowed because a person may intentionally need the same item more than once.
 
@@ -110,9 +108,9 @@ Duplicate item names are allowed because a person may intentionally need the sam
 
 ### Edit and remove an item
 
-- Each row exposes a compact overflow or action control.
-- Edit turns the item text into an inline input and supports Enter to save and Escape to cancel.
-- Delete removes only that row.
+- Item text is always an inline input, so no separate edit mode or edit icon is necessary.
+- A delete cross appears only when the line contains an item.
+- Delete removes only that line's item and leaves the ruled line available for new text.
 - Item deletion may offer a short-lived Undo message so accidental taps are recoverable without a confirmation dialog.
 
 ### Clear actions
@@ -261,7 +259,7 @@ The service worker affects application assets only. Shopping-list data remains i
 
 ### Phone
 
-- Fill most of the viewport width with the yellow pad.
+- Fill most of the viewport width with the translucent ruled list surface.
 - Keep controls within thumb reach and account for safe-area insets.
 - Crop the portrait background around the characters without relying on important details at the extreme edges.
 - Use a sticky input area only if testing shows it improves long-list use without hiding content or fighting the on-screen keyboard.
@@ -288,7 +286,7 @@ The service worker affects application assets only. Shopping-list data remains i
 
 - Create semantic HTML and the responsive pad-inspired layout.
 - Bundle and optimize the supplied kitchen illustration, then implement the separate background and overlay layers.
-- Implement add, toggle, edit, delete, clear-checked, and clear-all interactions.
+- Implement direct line entry, toggle, in-place editing, delete, clear-checked, and clear-all interactions.
 - Add keyboard behaviors, confirmation dialog, Undo for single-item deletion, and live-region feedback.
 
 Exit condition: all list operations work in a normal browser session without persistence.
@@ -323,7 +321,8 @@ Exit condition: all acceptance criteria below pass in the supported browser matr
 
 ### List behavior
 
-- A user can add an item by pressing Enter or selecting Add.
+- A user can create an item by typing directly into any ruled line.
+- Pressing Enter moves focus to the next line.
 - Blank or whitespace-only items are not created.
 - A user can check and uncheck an item.
 - A user can edit and delete an individual item.
@@ -377,7 +376,7 @@ Automatable checks can use small browser tests for:
 - Keep a single list and preserve manual ordering.
 - Allow duplicates.
 - Keep completed items in place.
-- Include per-item edit and delete controls.
+- Keep item text directly editable and show a delete cross only on populated lines.
 - Include both Clear checked and confirmed Clear all.
 - Include offline support and installability from the first release.
 - Bundle the supplied kitchen illustration locally with a separate warm overlay rather than lowering the opacity of the entire interface.

@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "shopping-list-shell";
-const CACHE_NAME = `${CACHE_PREFIX}-v5`;
+const CACHE_NAME = `${CACHE_PREFIX}-v7`;
 const APP_SHELL_URL = new URL("./index.html", self.location).href;
 const PRECACHE_URLS = [
   "./",

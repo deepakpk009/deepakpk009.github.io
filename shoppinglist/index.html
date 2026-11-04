@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#f5af22" />
+    <meta name="theme-color" content="#f7efe1" />
     <meta name="description" content="A private, offline-friendly shopping list saved on your device." />
     <meta name="color-scheme" content="light" />
     <link rel="manifest" href="./manifest.webmanifest" />
@@ -23,33 +23,19 @@
           <span class="item-count" id="item-count" aria-live="polite">0 items</span>
         </header>
 
-        <form class="add-form" id="add-form" novalidate>
-          <label class="sr-only" for="item-input">Add an item</label>
-          <input
-            id="item-input"
-            name="item"
-            type="text"
-            maxlength="120"
-            autocomplete="off"
-            placeholder="What do we need?"
-            enterkeyhint="done"
-          />
-          <button class="add-button" type="submit">
-            <span aria-hidden="true">＋</span>
-            <span>Add</span>
-          </button>
-        </form>
+        <p class="line-hint" id="line-hint">Type directly on any line. Changes save automatically.</p>
 
         <p class="storage-warning" id="storage-warning" role="status" hidden>
           Your list works for now, but this browser is not allowing it to be saved.
         </p>
 
         <div class="list-area">
-          <div class="empty-state" id="empty-state">
-            <span class="empty-icon" aria-hidden="true">♡</span>
-            <p>Your list is ready for something tasty.</p>
-          </div>
-          <ul class="shopping-list" id="shopping-list" aria-label="Shopping items"></ul>
+          <ul
+            class="shopping-list"
+            id="shopping-list"
+            aria-label="Shopping list lines"
+            aria-describedby="line-hint"
+          ></ul>
         </div>
 
         <footer class="list-footer">

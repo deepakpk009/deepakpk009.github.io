@@ -13,7 +13,8 @@ function isValidItem(item) {
     item.text.length <= MAX_TEXT_LENGTH &&
     typeof item.completed === "boolean" &&
     typeof item.createdAt === "string" &&
-    typeof item.updatedAt === "string"
+    typeof item.updatedAt === "string" &&
+    (item.slot === undefined || (Number.isInteger(item.slot) && item.slot >= 0))
   );
 }
 

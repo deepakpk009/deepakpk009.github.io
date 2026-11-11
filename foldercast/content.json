@@ -1,24 +1,24 @@
 {
   "meta": {
     "lang": "en",
-    "title": "FolderCast – PPTX Presentation Viewer for Android TV",
-    "description": "FolderCast is an Android TV app for opening, importing, viewing, searching, bookmarking, and presenting PPTX files on your TV with remote-friendly controls.",
-    "keywords": "FolderCast, Android FolderCast, PPTX viewer for TV, PPTX viewer Android TV, PPTX presenter Android TV, view PPTX on TV, open PPTX on Android TV, presentation viewer for Android TV, PPTX bookmarks, PPTX search, PPTX slideshow TV, web import PPTX, WiFi upload PPTX, FTP upload PPTX, USB PPTX viewer TV",
+    "title": "FolderCast for Roku TV | Browse Photos, Videos & Music over Wi-Fi",
+    "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required.",
+    "keywords": "FolderCast, Roku media browser, Roku photo viewer, Roku video player, Roku music player, browse phone files on Roku, stream local media to Roku, Roku WiFi media sharing, photo slideshow Roku, Roku subtitles, Roku folder browser, media from computer to Roku",
     "author": "Deepak PK",
-    "canonical": "https://deepakpk.com/foldercast",
+    "canonical": "https://deepakpk.com/foldercast/",
     "og": {
       "type": "website",
-      "url": "https://deepakpk.com/foldercast",
-      "title": "FolderCast for Android TV",
-      "description": "Open, import, search, bookmark, and present PPTX files on Android TV with a remote-friendly PPTX viewer.",
+      "url": "https://deepakpk.com/foldercast/",
+      "title": "FolderCast for Roku TV | Your Media on the Big Screen",
+      "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
     "twitter": {
       "card": "summary_large_image",
-      "url": "https://deepakpk.com/foldercast",
-      "title": "FolderCast for Android TV",
-      "description": "A remote-friendly Android TV app to open, import, search, bookmark, and present PPTX files on the big screen.",
+      "url": "https://deepakpk.com/foldercast/",
+      "title": "FolderCast for Roku TV",
+      "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -30,41 +30,29 @@
     }
   },
   "theme": {
-    "primaryGreen": "#2F80ED",
-    "darkGreen": "#1554B7",
-    "lightGreen": "#62A8FF",
-    "darkerGreen": "#071A33",
-    "black": "#050A12",
-    "darkBg": "#081426",
-    "cardBg": "#102640",
+    "primaryGreen": "#FF704D",
+    "darkGreen": "#E94B45",
+    "lightGreen": "#FFB13B",
+    "darkerGreen": "#071A43",
+    "black": "#030B20",
+    "darkBg": "#061638",
+    "cardBg": "#102858",
     "textWhite": "#FFFFFF",
-    "textGray": "#D7E5F5",
-    "borderGreen": "#3F95FF",
-    "boxShadowColor": "#2F80ED4d",
+    "textGray": "#DCE6FA",
+    "borderGreen": "#FF875A",
+    "boxShadowColor": "#FF704D4d",
     "heroWatermarkOpacity": 0.045,
     "ctaWatermarkOpacity": 0.07,
-    "accentOrange": "#FF8A1F",
-    "softRed": "#FFB066",
-    "paperWhite": "#F7FAFF"
+    "accentOrange": "#FF9B39",
+    "softRed": "#FF5252",
+    "paperWhite": "#F8FAFF"
   },
   "product": {
     "name": "FolderCast",
-    "heroTitle": "FolderCast – PPTX Presentations on Android TV",
-    "heroDescription": "Open PPTX PPTX files on your Android TV with a clean, remote-friendly interface. Import presentations using Web Import, WiFi Upload, FTP, or USB, then view slides with zoom, bookmarks, search, night mode, animation mode, and resume support.",
+    "heroTitle": "Your Photos, Videos & Music. On Roku TV.",
+    "heroDescription": "Browse media from your phone, tablet, or computer on Roku TV over your private Wi-Fi. Scan a QR code, choose files or folders in your browser, and enjoy them with your Roku remote.",
     "icon": "images/app_icon.png",
     "storeButtons": [
-      {
-        "type": "googlePlay",
-        "label": "Get it on Google Play",
-        "url": "https://play.google.com/store/apps/details?id=com.deepakpk.foldercast",
-        "style": "primary"
-      },
-      {
-        "type": "amazon",
-        "label": "Available on Amazon",
-        "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
-        "style": "secondary"
-      },
       {
         "type": "roku",
         "label": "View Roku Version",
@@ -74,145 +62,126 @@
     ],
     "stats": [
       {
-        "value": "📺 Android TV",
-        "label": "Remote-Friendly UI"
+        "value": "📱 Browser",
+        "label": "No Companion App"
       },
       {
-        "value": "📥 Web / WiFi / FTP",
-        "label": "Easy PPTX Import"
+        "value": "📁 Multiple Folders",
+        "label": "Keep Your Structure"
       },
       {
-        "value": "🔖 Search + Bookmarks",
-        "label": "Fast Slide Navigation"
+        "value": "📺 Roku TV",
+        "label": "Remote-Friendly Playback"
       }
     ],
     "features": {
-      "title": "Features Built for Android TV Presentations",
+      "title": "Everything You Need to Enjoy Local Media on Roku",
       "cards": [
         {
-          "icon": "📺",
-          "title": "Made for Android TV",
+          "icon": "📱",
+          "title": "Connect in Your Browser",
           "bullets": [
-            "Designed around Android TV development principles",
-            "Remote-friendly navigation with clear focus behavior",
-            "Open PPTX files directly from the TV home listing",
-            "Landscape-first experience for big screens"
+            "Scan the QR code or enter the address shown on Roku",
+            "Choose media from a phone, tablet, or computer",
+            "No separate companion app or cloud library needed"
           ]
         },
         {
           "icon": "📁",
-          "title": "PPTX File Library",
+          "title": "Browse Real Folders",
           "bullets": [
-            "PPTX grid/list items show thumbnail and file name",
-            "Long-press OK on a PPTX to view file options",
-            "View file name, location, size, and last modified date",
-            "Open or delete imported PPTX files from file options"
-          ]
-        },
-        {
-          "icon": "📥",
-          "title": "Easy PPTX Imports",
-          "bullets": [
-            "Import PPTX files using Web Import, WiFi Upload, or FTP",
-            "Web Import uses a token and works even outside the same network",
-            "WiFi Upload is faster when both devices are on the same network",
-            "FTP import supports anonymous FTP on the same network"
-          ]
-        },
-        {
-          "icon": "📱",
-          "title": "QR Code Connection",
-          "bullets": [
-            "Web Import page shows a QR code for quick connection",
-            "FTP import page shows a QR code for easy setup",
-            "Send presentations from phone, laptop, or another device",
-            "No typing long TV URLs when QR scanning is available"
+            "Keep your familiar folder structure",
+            "Connect multiple devices and share multiple folders",
+            "Browse a remote-friendly grid with previews and breadcrumbs"
           ]
         },
         {
           "icon": "🖼️",
-          "title": "Powerful PPTX Viewer",
+          "title": "Full-Screen Photo Viewer",
           "bullets": [
-            "Open PPTX files from the home page with the OK button",
-            "Resume last viewed slide number automatically",
-            "Restore last used zoom and night mode settings",
-            "Presentation options appear as an overlay on the current slide"
+            "Move between photos, zoom, pan, and rotate",
+            "Choose fit modes for different screens",
+            "View image counts and quick previews"
           ]
         },
         {
-          "icon": "🔍",
-          "title": "Search & Go To Slide",
+          "icon": "▶️",
+          "title": "Photo Slideshows",
           "bullets": [
-            "Search text inside PPTX files",
-            "Jump directly to a specific slide number",
-            "Restart presentation from the first slide",
-            "Toggle slide/page info visibility while viewing"
+            "Start a slideshow from the current folder",
+            "Pause or resume with OK",
+            "Adjust each slide from 1 to 15 seconds"
           ]
         },
         {
-          "icon": "🔖",
-          "title": "Bookmarks Across PPTXs",
+          "icon": "🎵",
+          "title": "Music Player",
           "bullets": [
-            "Bookmark the current slide from the viewer options menu",
-            "View all bookmarks across all PPTX files",
-            "Bookmark items show slide thumbnail, page number, and PPTX title",
-            "Long-press a bookmark to delete it from the bookmarks page"
+            "Browse a folder playlist and select tracks",
+            "See cover art, progress, and available song details",
+            "Shuffle, repeat, and skip 10 seconds"
           ]
         },
         {
-          "icon": "🎛️",
-          "title": "Viewer Controls Overlay",
+          "icon": "🎬",
+          "title": "Video Player",
           "bullets": [
-            "Zoom in, zoom out, and reset zoom",
-            "Toggle night mode while previewing the change live",
-            "Choose animation mode for presentation viewing",
-            "Close the overlay with the close option or Back button"
+            "Watch compatible videos full screen",
+            "Pause, replay, restart, and seek",
+            "Resume eligible videos from recent positions"
           ]
         },
         {
-          "icon": "⚙️",
-          "title": "Settings & Storage Tools",
+          "icon": "💬",
+          "title": "Subtitles & Audio Tracks",
           "bullets": [
-            "View TV screen resolution and screen ratio",
-            "Check available storage and total PPTX file count",
-            "View bookmark count, thumbnail count, and storage usage",
-            "Clear imported PPTXs, bookmarks, and thumbnails from settings"
+            "Choose supported subtitle files alongside videos",
+            "Turn subtitles on or off",
+            "Select an alternate audio track when available"
           ]
         },
         {
-          "icon": "❓",
-          "title": "Help, Support & App Info",
+          "icon": "🔒",
+          "title": "Local Sharing & Controls",
           "bullets": [
-            "Built-in Help/FAQ page for common questions",
-            "About page with developer details",
-            "Version info menu item for quick app version checking",
-            "Support and feedback page with QR codes for useful links"
+            "Choose exactly what you share",
+            "Remove shares without deleting originals",
+            "Clear temporary viewing data from Settings"
+          ]
+        },
+        {
+          "icon": "⭐",
+          "title": "Free & Premium",
+          "bullets": [
+            "Try the first 5 subfolders and 20 playable files per folder",
+            "Subscribe to unlock eligible media browsing",
+            "Manage billing through Roku"
           ]
         }
       ]
     },
     "perfectFor": {
-      "title": "Perfect For",
+      "title": "Great Ways to Use FolderCast",
       "items": [
         {
-          "icon": "🎓",
-          "title": "Classrooms & Training",
-          "text": "Show lesson slides, training material, and study presentations on a TV without needing a computer connected all the time."
-        },
-        {
-          "icon": "💼",
-          "title": "Office Presentations",
-          "text": "Open business PPTX files on meeting-room TVs with quick import options and remote-friendly navigation."
-        },
-        {
           "icon": "🏠",
-          "title": "Home & Personal Use",
-          "text": "View school projects, event slides, photo presentations, or saved PPTX files directly on Android TV."
+          "title": "Family Photo Nights",
+          "text": "Show vacation pictures and family albums on the big screen, with zoom and automatic slideshows."
         },
         {
-          "icon": "🪧",
-          "title": "Simple Display Use",
-          "text": "Use PPTX slides for lightweight information display where easy import, viewing, and slide navigation matter."
+          "icon": "🎉",
+          "title": "Parties & Gatherings",
+          "text": "Play a shared folder of music or display a photo slideshow during an event."
+        },
+        {
+          "icon": "🎬",
+          "title": "Personal Video Collections",
+          "text": "Browse and play compatible videos from a computer or phone, with seeking and resume support."
+        },
+        {
+          "icon": "💻",
+          "title": "Media Across Devices",
+          "text": "Connect multiple phones or computers and explore their selected folders in one Roku-friendly library."
         }
       ]
     },
@@ -221,43 +190,51 @@
       "items": [
         {
           "q": "What is FolderCast?",
-          "a": "FolderCast is an Android TV app for opening and viewing PPTX PPTX files on a TV using a remote-friendly interface."
+          "a": "FolderCast is a Roku TV app that lets you browse and enjoy photos, videos, and music selected from a phone, tablet, or computer connected to the same Wi-Fi network."
         },
         {
-          "q": "How can I add PPTX files to the app?",
-          "a": "You can import PPTX files using Web Import, WiFi Upload, FTP Import, or by scanning available PPTX files from connected storage such as USB."
+          "q": "How do I get started?",
+          "a": "Open FolderCast on Roku, scan the QR code shown on your TV or enter its displayed address in a browser, choose files or folders, then browse and play them using your Roku remote."
         },
         {
-          "q": "Does Web Import require the phone or laptop to be on the same WiFi network as the TV?",
-          "a": "No. Web Import uses a token-based flow, so the sending device does not need to be on the same network as the TV."
+          "q": "Do I need to install a companion app on my phone or computer?",
+          "a": "No. Use a compatible web browser on your phone, tablet, or computer. No separate companion app is required."
         },
         {
-          "q": "When should I use WiFi Upload instead of Web Import?",
-          "a": "Use WiFi Upload when your sending device and Android TV are on the same network. It is designed for faster local file transfer."
+          "q": "Do my Roku and phone or computer need to be on the same Wi-Fi?",
+          "a": "Yes. Connect the Roku and the device sharing media to the same local Wi-Fi network. Guest networks or network isolation may prevent them from communicating."
         },
         {
-          "q": "Does FTP Import need the same network?",
-          "a": "Yes. FTP Import uses an anonymous FTP connection and requires the sending device to be on the same network as the TV."
+          "q": "Do I need an internet connection or a FolderCast account?",
+          "a": "FolderCast is designed for local Wi-Fi sharing and does not require a cloud media library or a separate FolderCast account. Internet access may still be needed for Roku installation, purchases, or account services."
         },
         {
-          "q": "Can I bookmark slides?",
-          "a": "Yes. You can bookmark the current slide, view bookmarks for the current PPTX, and also browse bookmarks across all PPTX files."
+          "q": "Can I connect by typing an address instead of scanning the QR code?",
+          "a": "Yes. Enter the address displayed by FolderCast on your TV into a browser on your phone, tablet, or computer."
         },
         {
-          "q": "Does the app remember where I stopped?",
-          "a": "Yes. The viewer can reopen a PPTX with the last viewed slide number and last used view settings such as zoom and night mode."
+          "q": "Can I share a complete folder instead of selecting files one by one?",
+          "a": "Yes. Choose an entire media folder in the browser, or select individual supported media files."
         },
         {
-          "q": "Can I search inside PPTX files?",
-          "a": "Yes. The viewer includes a search option to find text inside supported PPTX files."
+          "q": "Can I share several folders?",
+          "a": "Yes. You can add multiple folders and individual file selections from the same connected device."
         },
         {
-          "q": "Can I delete imported PPTX files?",
-          "a": "Yes. Long-press OK on a focused PPTX file to view file info and options such as open and delete. Settings also include an option to clear all PPTXs in the imports folder. USB files are not deleted."
+          "q": "Can I connect more than one phone or computer?",
+          "a": "Yes. FolderCast supports multiple connected devices and organizes their shared media by source device."
         },
         {
-          "q": "Where can I manage subscription information?",
-          "a": "The app includes a subscribe page and a manage subscription page with information about managing your subscription."
+          "q": "Can I name my connected device?",
+          "a": "Yes. Give a connected browser device a friendly name to help identify it on your TV. The browser remembers that name locally."
+        },
+        {
+          "q": "What is the Selected files collection?",
+          "a": "Files chosen individually from one browser device appear together in its Selected files collection. Additional individual selections are added to that collection."
+        },
+        {
+          "q": "Can I drag and drop files or folders?",
+          "a": "Yes, on desktop browsers that support drag-and-drop selection."
         }
       ]
     }
@@ -267,222 +244,388 @@
     "screenshots": [
       {
         "src": "images/screenshots/ss001.jpg",
-        "alt": "FolderCast Android TV screenshot 1"
+        "alt": "FolderCast screenshot 1"
       },
       {
         "src": "images/screenshots/ss002.jpg",
-        "alt": "FolderCast Android TV screenshot 2"
+        "alt": "FolderCast screenshot 2"
       },
       {
         "src": "images/screenshots/ss003.jpg",
-        "alt": "FolderCast Android TV screenshot 3"
+        "alt": "FolderCast screenshot 3"
       },
       {
         "src": "images/screenshots/ss004.jpg",
-        "alt": "FolderCast Android TV screenshot 4"
+        "alt": "FolderCast screenshot 4"
       },
       {
         "src": "images/screenshots/ss005.jpg",
-        "alt": "FolderCast Android TV screenshot 5"
+        "alt": "FolderCast screenshot 5"
       },
       {
         "src": "images/screenshots/ss006.jpg",
-        "alt": "FolderCast Android TV screenshot 6"
+        "alt": "FolderCast screenshot 6"
       },
       {
         "src": "images/screenshots/ss007.jpg",
-        "alt": "FolderCast Android TV screenshot 7"
+        "alt": "FolderCast screenshot 7"
       },
       {
         "src": "images/screenshots/ss008.jpg",
-        "alt": "FolderCast Android TV screenshot 8"
+        "alt": "FolderCast screenshot 8"
       },
       {
         "src": "images/screenshots/ss009.jpg",
-        "alt": "FolderCast Android TV screenshot 9"
+        "alt": "FolderCast screenshot 9"
       },
       {
         "src": "images/screenshots/ss010.jpg",
-        "alt": "FolderCast Android TV screenshot 10"
+        "alt": "FolderCast screenshot 10"
       },
       {
         "src": "images/screenshots/ss011.jpg",
-        "alt": "FolderCast Android TV screenshot 11"
+        "alt": "FolderCast screenshot 11"
       },
       {
         "src": "images/screenshots/ss012.jpg",
-        "alt": "FolderCast Android TV screenshot 12"
+        "alt": "FolderCast screenshot 12"
       },
       {
         "src": "images/screenshots/ss013.jpg",
-        "alt": "FolderCast Android TV screenshot 12"
+        "alt": "FolderCast screenshot 13"
       }
     ],
     "video": {
       "sectionId": "demo",
-      "title": "See FolderCast on Android TV",
+      "title": "See FolderCast on Roku TV",
       "youtubeEmbedUrl": "",
-      "iframeTitle": "FolderCast Android TV Demo"
+      "iframeTitle": "FolderCast Roku TV Demo"
     }
   },
   "sections": {
     "howItWorks": {
-      "title": "Start Presenting on TV in Minutes",
+      "title": "Get Started in Three Easy Steps",
       "steps": [
         {
           "number": "1",
-          "title": "Install FolderCast",
-          "text": "Install FolderCast on your Android TV or Fire TV device."
+          "title": "Open FolderCast on Roku",
+          "text": "Launch FolderCast on your Roku device and view the QR code or browser address shown on TV."
         },
         {
           "number": "2",
-          "title": "Import or Scan PPTX Files",
-          "text": "Add files with Web Import, WiFi Upload, FTP Import, or reload/scan PPTX files from available storage."
+          "title": "Connect and Choose Media",
+          "text": "Use a browser on a phone, tablet, or computer on the same Wi-Fi to choose individual files or folders."
         },
         {
           "number": "3",
-          "title": "Open and Control Slides",
-          "text": "Select a PPTX with the OK button, then use the overlay menu for zoom, bookmarks, search, go to slide, night mode, animation mode, and restart."
+          "title": "Browse and Enjoy",
+          "text": "Use your Roku remote to browse folders, view photos, start slideshows, play music, or watch compatible videos."
         }
       ]
     },
     "features": {
-      "title": "Why TV Users Will Like It",
+      "title": "Made for Media Browsing on Roku",
       "cards": [
         {
-          "icon": "📺",
-          "title": "TV-First Experience",
+          "icon": "📱",
+          "title": "Connect in Your Browser",
           "bullets": [
-            "Built for Android TV usage and remote control navigation",
-            "Large-screen friendly PPTX browsing with thumbnails and file names"
+            "Scan the QR code or enter the address shown on Roku",
+            "Choose media from a phone, tablet, or computer",
+            "No separate companion app or cloud library needed"
           ]
         },
         {
-          "icon": "📥",
-          "title": "Flexible Import Options",
+          "icon": "📁",
+          "title": "Browse Real Folders",
           "bullets": [
-            "Web Import with token support for remote uploads",
-            "Fast WiFi Upload and anonymous FTP for same-network transfers"
+            "Keep your familiar folder structure",
+            "Connect multiple devices and share multiple folders",
+            "Browse a remote-friendly grid with previews and breadcrumbs"
           ]
         },
         {
-          "icon": "🎛️",
-          "title": "Presentation Controls",
+          "icon": "🖼️",
+          "title": "Full-Screen Photo Viewer",
           "bullets": [
-            "Zoom, reset zoom, night mode, animation mode, and slide info toggle",
-            "Bookmarks, search, go to slide, and restart options inside the viewer"
+            "Move between photos, zoom, pan, and rotate",
+            "Choose fit modes for different screens",
+            "View image counts and quick previews"
           ]
         },
         {
-          "icon": "⚙️",
-          "title": "Useful App Tools",
+          "icon": "▶️",
+          "title": "Photo Slideshows",
           "bullets": [
-            "Settings show resolution, screen ratio, storage, file counts, bookmarks, and thumbnail usage",
-            "Clear imported files, bookmarks, and thumbnails when needed"
+            "Start a slideshow from the current folder",
+            "Pause or resume with OK",
+            "Adjust each slide from 1 to 15 seconds"
+          ]
+        },
+        {
+          "icon": "🎵",
+          "title": "Music Player",
+          "bullets": [
+            "Browse a folder playlist and select tracks",
+            "See cover art, progress, and available song details",
+            "Shuffle, repeat, and skip 10 seconds"
+          ]
+        },
+        {
+          "icon": "🎬",
+          "title": "Video Player",
+          "bullets": [
+            "Watch compatible videos full screen",
+            "Pause, replay, restart, and seek",
+            "Resume eligible videos from recent positions"
+          ]
+        },
+        {
+          "icon": "💬",
+          "title": "Subtitles & Audio Tracks",
+          "bullets": [
+            "Choose supported subtitle files alongside videos",
+            "Turn subtitles on or off",
+            "Select an alternate audio track when available"
+          ]
+        },
+        {
+          "icon": "🔒",
+          "title": "Local Sharing & Controls",
+          "bullets": [
+            "Choose exactly what you share",
+            "Remove shares without deleting originals",
+            "Clear temporary viewing data from Settings"
+          ]
+        },
+        {
+          "icon": "⭐",
+          "title": "Free & Premium",
+          "bullets": [
+            "Try the first 5 subfolders and 20 playable files per folder",
+            "Subscribe to unlock eligible media browsing",
+            "Manage billing through Roku"
           ]
         }
       ]
     },
     "perfectFor": {
-      "title": "Perfect For",
+      "title": "Made for Everyday Media Moments",
       "items": [
         {
-          "icon": "🎓",
-          "title": "Classrooms & Training",
-          "text": "Show lesson slides, training material, and study presentations on a TV without needing a computer connected all the time."
-        },
-        {
-          "icon": "💼",
-          "title": "Office Presentations",
-          "text": "Open business PPTX files on meeting-room TVs with quick import options and remote-friendly navigation."
-        },
-        {
           "icon": "🏠",
-          "title": "Home & Personal Use",
-          "text": "View school projects, event slides, photo presentations, or saved PPTX files directly on Android TV."
+          "title": "Family Photo Nights",
+          "text": "Show vacation pictures and family albums on the big screen, with zoom and automatic slideshows."
         },
         {
-          "icon": "🪧",
-          "title": "Simple Display Use",
-          "text": "Use PPTX slides for lightweight information display where easy import, viewing, and slide navigation matter."
+          "icon": "🎉",
+          "title": "Parties & Gatherings",
+          "text": "Play a shared folder of music or display a photo slideshow during an event."
+        },
+        {
+          "icon": "🎬",
+          "title": "Personal Video Collections",
+          "text": "Browse and play compatible videos from a computer or phone, with seeking and resume support."
+        },
+        {
+          "icon": "💻",
+          "title": "Media Across Devices",
+          "text": "Connect multiple phones or computers and explore their selected folders in one Roku-friendly library."
         }
       ]
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "FolderCast FAQ",
       "items": [
         {
           "q": "What is FolderCast?",
-          "a": "FolderCast is an Android TV app for opening and viewing PPTX PPTX files on a TV using a remote-friendly interface."
+          "a": "FolderCast is a Roku TV app that lets you browse and enjoy photos, videos, and music selected from a phone, tablet, or computer connected to the same Wi-Fi network."
         },
         {
-          "q": "How can I add PPTX files to the app?",
-          "a": "You can import PPTX files using Web Import, WiFi Upload, FTP Import, or by scanning available PPTX files from connected storage such as USB."
+          "q": "How do I get started?",
+          "a": "Open FolderCast on Roku, scan the QR code shown on your TV or enter its displayed address in a browser, choose files or folders, then browse and play them using your Roku remote."
         },
         {
-          "q": "Does Web Import require the phone or laptop to be on the same WiFi network as the TV?",
-          "a": "No. Web Import uses a token-based flow, so the sending device does not need to be on the same network as the TV."
+          "q": "Do I need to install a companion app on my phone or computer?",
+          "a": "No. Use a compatible web browser on your phone, tablet, or computer. No separate companion app is required."
         },
         {
-          "q": "When should I use WiFi Upload instead of Web Import?",
-          "a": "Use WiFi Upload when your sending device and Android TV are on the same network. It is designed for faster local file transfer."
+          "q": "Do my Roku and phone or computer need to be on the same Wi-Fi?",
+          "a": "Yes. Connect the Roku and the device sharing media to the same local Wi-Fi network. Guest networks or network isolation may prevent them from communicating."
         },
         {
-          "q": "Does FTP Import need the same network?",
-          "a": "Yes. FTP Import uses an anonymous FTP connection and requires the sending device to be on the same network as the TV."
+          "q": "Do I need an internet connection or a FolderCast account?",
+          "a": "FolderCast is designed for local Wi-Fi sharing and does not require a cloud media library or a separate FolderCast account. Internet access may still be needed for Roku installation, purchases, or account services."
         },
         {
-          "q": "Can I bookmark slides?",
-          "a": "Yes. You can bookmark the current slide, view bookmarks for the current PPTX, and also browse bookmarks across all PPTX files."
+          "q": "Can I connect by typing an address instead of scanning the QR code?",
+          "a": "Yes. Enter the address displayed by FolderCast on your TV into a browser on your phone, tablet, or computer."
         },
         {
-          "q": "Does the app remember where I stopped?",
-          "a": "Yes. The viewer can reopen a PPTX with the last viewed slide number and last used view settings such as zoom and night mode."
+          "q": "Can I share a complete folder instead of selecting files one by one?",
+          "a": "Yes. Choose an entire media folder in the browser, or select individual supported media files."
         },
         {
-          "q": "Can I search inside PPTX files?",
-          "a": "Yes. The viewer includes a search option to find text inside supported PPTX files."
+          "q": "Can I share several folders?",
+          "a": "Yes. You can add multiple folders and individual file selections from the same connected device."
         },
         {
-          "q": "Can I delete imported PPTX files?",
-          "a": "Yes. Long-press OK on a focused PPTX file to view file info and options such as open and delete. Settings also include an option to clear all PPTXs in the imports folder. USB files are not deleted."
+          "q": "Can I connect more than one phone or computer?",
+          "a": "Yes. FolderCast supports multiple connected devices and organizes their shared media by source device."
         },
         {
-          "q": "Where can I manage subscription information?",
-          "a": "The app includes a subscribe page and a manage subscription page with information about managing your subscription."
+          "q": "Can I name my connected device?",
+          "a": "Yes. Give a connected browser device a friendly name to help identify it on your TV. The browser remembers that name locally."
+        },
+        {
+          "q": "What is the Selected files collection?",
+          "a": "Files chosen individually from one browser device appear together in its Selected files collection. Additional individual selections are added to that collection."
+        },
+        {
+          "q": "Can I drag and drop files or folders?",
+          "a": "Yes, on desktop browsers that support drag-and-drop selection."
+        },
+        {
+          "q": "Can I remove shared files or folders?",
+          "a": "Yes. Remove an individual file selection or an entire shared folder from the browser sharing page. Your original files are not deleted."
+        },
+        {
+          "q": "Does FolderCast preserve my folder structure?",
+          "a": "Yes. Browse shared folders and their subfolders in a TV-friendly grid, with breadcrumbs showing your current location."
+        },
+        {
+          "q": "How do I navigate the library?",
+          "a": "Use the Roku remote directional buttons to move between items and OK to open them. Use Back to return to the parent folder or previous screen."
+        },
+        {
+          "q": "Can FolderCast browse large folders?",
+          "a": "Yes. FolderCast supports browsing large collections and displays additional items as you navigate. Loading times can vary by device, network, and collection size."
+        },
+        {
+          "q": "Which photo formats are recognized?",
+          "a": "FolderCast recognizes JPG/JPEG, PNG, GIF, WebP, BMP, AVIF, HEIC, and HEIF selections. Whether a photo can be displayed depends on your Roku device and the file."
+        },
+        {
+          "q": "Can I zoom, pan, or rotate photos?",
+          "a": "Yes. The photo viewer includes zoom in/out, panning around enlarged images, 90-degree rotation, and multiple fit modes."
+        },
+        {
+          "q": "Can I move between photos without returning to the folder?",
+          "a": "Yes. Use the Roku remote to move to the previous or next photo in the same folder."
+        },
+        {
+          "q": "Does FolderCast have a photo slideshow?",
+          "a": "Yes. Start a full-screen slideshow from a photo to automatically display photos in that folder with smooth transitions."
+        },
+        {
+          "q": "Can I change slideshow speed or pause it?",
+          "a": "Yes. Adjust the slide duration from 1 to 15 seconds, and press OK to pause or resume."
+        },
+        {
+          "q": "Which audio formats are recognized?",
+          "a": "FolderCast recognizes MP3, M4A, AAC, WAV, FLAC, OGG, and WMA selections. Actual playback depends on the Roku device and audio encoding."
+        },
+        {
+          "q": "Does the music player show album artwork and song information?",
+          "a": "Yes. It shows artwork when available, playback progress, track information, and available metadata such as genre, year, format, and bitrate."
+        },
+        {
+          "q": "Can I shuffle or repeat music?",
+          "a": "Yes. The music player offers Shuffle, Repeat All, and Repeat One, along with previous/next track and 10-second skip controls."
+        },
+        {
+          "q": "Can I choose a song from the current folder playlist?",
+          "a": "Yes. Open a track directly from the folder playlist in the audio player."
+        },
+        {
+          "q": "Which video formats are recognized?",
+          "a": "FolderCast recognizes MP4, M4V, MOV, WebM, MKV, and AVI selections. Playback is not guaranteed for every file: Roku model, Roku OS, codecs, and the source file determine compatibility."
+        },
+        {
+          "q": "Can I pause, replay, or seek through a video?",
+          "a": "Yes. The video player supports play/pause, replay, restart, 10-second forward/backward skips, and press-and-hold seeking."
+        },
+        {
+          "q": "Will FolderCast remember where I stopped watching?",
+          "a": "For eligible videos, FolderCast saves recent playback positions so you can resume later. Videos watched nearly to the end are treated as completed."
+        },
+        {
+          "q": "Does FolderCast support subtitles?",
+          "a": "Yes. When supported SRT, VTT, or TTML subtitle files are available alongside a video in the same shared folder, you can select a subtitle or turn subtitles off."
+        },
+        {
+          "q": "Can I change the audio track in a video?",
+          "a": "Yes, when the video exposes more than one selectable audio track and your Roku supports it."
+        },
+        {
+          "q": "Why does a recognized media file fail to play?",
+          "a": "A recognized extension does not guarantee playback. The video or audio codec, file condition, Roku model, and Roku OS can affect compatibility. Try another compatible file or encoding."
+        },
+        {
+          "q": "Is FolderCast free?",
+          "a": "Yes. The free version lets you explore the first 5 subfolders and first 20 playable media files in each folder, in displayed filename order. A subscription unlocks full eligible browsing."
+        },
+        {
+          "q": "What does a subscription unlock?",
+          "a": "A FolderCast subscription removes the free browsing limits for eligible folders and media in your shared selections."
+        },
+        {
+          "q": "What subscription plans are available?",
+          "a": "Monthly, quarterly, and annual plans may be offered. Available plans and current prices appear in Roku’s purchase experience."
+        },
+        {
+          "q": "How do I subscribe or restore a purchase?",
+          "a": "Choose Subscribe in FolderCast and follow Roku’s purchase steps. Existing entitlements are restored from the Roku account after an app restart or reinstall."
+        },
+        {
+          "q": "How do I manage or cancel my subscription?",
+          "a": "When premium access is active, select Manage Subscription in FolderCast for a QR code and Roku account instructions. Billing and plan changes are handled by Roku."
+        },
+        {
+          "q": "Does FolderCast upload my media to a cloud library?",
+          "a": "No FolderCast cloud media library is required. You explicitly choose which files and folders to share for viewing over your local Wi-Fi."
+        },
+        {
+          "q": "Will removing a share or clearing temporary storage delete my originals?",
+          "a": "No. Removing a share stops showing it in FolderCast, and Clear Temporary Storage removes app-managed previews and temporary viewing data. Neither action deletes your original media."
+        },
+        {
+          "q": "What happens if my phone or computer disconnects?",
+          "a": "FolderCast shows connection or unavailable-media guidance and can reconnect after brief interruptions. Keep the sharing browser available and both devices on the same Wi-Fi."
+        },
+        {
+          "q": "Will my shared folders return after restarting FolderCast?",
+          "a": "FolderCast can restore shared selections after a Roku app restart when the connected browser still has access to those selections. You may need to reconnect or select files again if browser access has been lost."
+        },
+        {
+          "q": "Why is my phone unable to connect to the Roku?",
+          "a": "Check that both devices are on the same Wi-Fi, FolderCast is open on Roku, and the browser is using the current address shown on TV. Avoid isolated guest networks and retry the connection."
+        },
+        {
+          "q": "Why is a folder empty or a file missing?",
+          "a": "FolderCast lists supported media it can access. Check that the folder contains supported files, that browser access remains available, and that the share has not been removed."
+        },
+        {
+          "q": "What does Clear Temporary Storage do?",
+          "a": "It removes FolderCast’s temporary previews and viewing data. Needed previews are recreated during later browsing; original files remain untouched."
+        },
+        {
+          "q": "Where can I get help or send feedback?",
+          "a": "Open Support & Feedback in FolderCast and scan the appropriate QR code for support or feedback. The app also includes Help / FAQ and legal information."
         }
       ]
     },
     "cta": {
-      "title": "View PPTX Presentations on Your TV 📺",
-      "text": "Download FolderCast and turn your Android TV into a simple, remote-friendly PPTX presentation viewer.",
-      "buttons": [
-        {
-          "type": "googlePlay",
-          "label": "Get it on Google Play",
-          "url": "https://play.google.com/store/apps/details?id=com.deepakpk.foldercast",
-          "style": "primary"
-        },
-        {
-          "type": "amazon",
-          "label": "Available on Amazon",
-          "url": "https://www.amazon.com/dp/B0GZWMX1PT/",
-          "style": "secondary"
-        },
-        {
-          "type": "roku",
-          "label": "View Roku Version",
-          "url": "roku/",
-          "style": "secondary"
-        }
-      ]
+      "title": "Bring Your Media to Roku TV",
+      "text": "Open FolderCast on Roku, connect your browser over the same Wi-Fi, and enjoy your chosen photos, videos, and music.",
+      "buttons": []
     }
   },
   "footer": {
     "brand": {
       "logo": "images/app_icon.png",
       "name": "FolderCast",
-      "about": "A remote-friendly Android FolderCast for importing, opening, searching, bookmarking, and presenting PPTX files on the big screen."
+      "about": "Browse and enjoy your chosen photos, videos, and music from a phone, tablet, or computer on Roku TV over local Wi-Fi."
     },
     "social": [
       {
@@ -496,12 +639,16 @@
         "title": "Quick Links",
         "links": [
           {
-            "label": "Download on Google Play",
-            "url": "https://play.google.com/store/apps/details?id=com.deepakpk.foldercast"
+            "label": "How It Works",
+            "url": "#how-it-works"
           },
           {
-            "label": "Download on Amazon",
-            "url": "https://www.amazon.com/dp/B0GZWMX1PT/"
+            "label": "Features",
+            "url": "#features"
+          },
+          {
+            "label": "FAQ",
+            "url": "#faq"
           },
           {
             "label": "Terms & Conditions",
@@ -552,14 +699,13 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "FolderCast",
-      "operatingSystem": "Android TV",
-      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Roku OS",
+      "applicationCategory": "MultimediaApplication",
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
       },
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.deepakpk.foldercast",
       "author": {
         "@type": "Person",
         "name": "Deepak PK",
@@ -569,7 +715,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "FolderCast is an Android TV app for opening, importing, searching, bookmarking, and presenting PPTX PPTX files with remote-friendly controls."
+      "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required."
     },
     "organization": {
       "@context": "https://schema.org",

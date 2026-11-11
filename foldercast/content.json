@@ -410,11 +410,11 @@
           },
           {
             "label": "Terms & Conditions",
-            "url": "/roku/terms.html"
+            "url": "roku/terms.html"
           },
           {
             "label": "Privacy Policy",
-            "url": "/roku/privacy.html"
+            "url": "roku/privacy.html"
           }
         ]
       },

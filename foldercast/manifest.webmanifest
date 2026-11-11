@@ -1,7 +1,7 @@
 {
   "name": "FolderCast",
   "short_name": "FolderCast",
-  "description": "Browse photos, music, and compatible videos from your phone or computer on Roku TV over local Wi-Fi. No extra companion app needed.",
+  "description": "Browse photos, videos and music from your phone, tablet or PC on Roku TV. No media server software or companion app—just your browser and local Wi-Fi.",
   "start_url": "/foldercast/",
   "scope": "/foldercast/",
   "display": "standalone",

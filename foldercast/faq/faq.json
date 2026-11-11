@@ -1,102 +1,178 @@
 [
   {
-    "title": "How do I open a PPTX file in the app?",
-    "content": "You can open PPTX files directly from the app, your file manager, downloads folder, email attachments, or any app that supports file sharing."
+    "title": "What is FolderCast?",
+    "content": "FolderCast is a Android TV  app that lets you browse and enjoy photos, videos, and music selected from a phone, tablet, or computer connected to the same Wi-Fi network."
   },
   {
-    "title": "Can I open password-protected PPTX files?",
-    "content": "Yes, the app supports opening password-protected PPTX files. Simply enter the correct password when prompted."
+    "title": "How do I get started?",
+    "content": "Open FolderCast on Android TV , scan the QR code shown on your TV or enter its displayed address in a browser, choose files or folders, then browse and play them using your Android TV  remote."
   },
   {
-    "title": "Does the app remember my last reading position?",
-    "content": "Yes, the app automatically remembers your last page, zoom level, and reading progress so you can continue where you left off."
+    "title": "Do I need to install a companion app on my phone or computer?",
+    "content": "No. Use a compatible web browser on your phone, tablet, or computer. No separate companion app is required."
   },
   {
-    "title": "Can I search text inside a PPTX?",
-    "content": "Yes, you can search for any word or phrase inside a PPTX. The app highlights matches and allows quick navigation between results."
+    "title": "Do my Android TV  and phone or computer need to be on the same Wi-Fi?",
+    "content": "Yes. Connect the Android TV  and the device sharing media to the same local Wi-Fi network. Guest networks or network isolation may prevent them from communicating."
   },
   {
-    "title": "Does the app support scanned PPTXs?",
-    "content": "Yes, scanned or image-based PPTXs are supported. OCR is used to detect text for features like read aloud."
+    "title": "Do I need an internet connection or a FolderCast account?",
+    "content": "FolderCast is designed for local Wi-Fi sharing and does not require a cloud media library or a separate FolderCast account. Internet access may still be needed for Android TV  installation, purchases, or account services."
   },
   {
-    "title": "What is read aloud mode?",
-    "content": "Read aloud mode converts PPTX text into speech, allowing you to listen to documents with playback controls like play, pause, next, and previous."
+    "title": "Can I connect by typing an address instead of scanning the QR code?",
+    "content": "Yes. Enter the address displayed by FolderCast on your TV into a browser on your phone, tablet, or computer."
   },
   {
-    "title": "Can I customize the voice in read aloud mode?",
-    "content": "Yes, you can adjust speech rate, pitch, and choose different voices for a personalized listening experience."
+    "title": "Can I share a complete folder instead of selecting files one by one?",
+    "content": "Yes. Choose an entire media folder in the browser, or select individual supported media files."
   },
   {
-    "title": "How do bookmarks work?",
-    "content": "You can bookmark any page and quickly access it later. Bookmarks also show thumbnails for easy identification."
+    "title": "Can I share several folders?",
+    "content": "Yes. You can add multiple folders and individual file selections from the same connected device."
   },
   {
-    "title": "Does the app support night mode?",
-    "content": "Yes, night mode reduces eye strain by using a dark background for comfortable reading in low-light conditions."
+    "title": "Can I connect more than one phone or computer?",
+    "content": "Yes. FolderCast supports multiple connected devices and organizes their shared media by source device."
   },
   {
-    "title": "Can I zoom into PPTX pages?",
-    "content": "Yes, you can use pinch-to-zoom or double-tap zoom to adjust the zoom level easily."
+    "title": "Can I name my connected device?",
+    "content": "Yes. Give a connected browser device a friendly name to help identify it on your TV. The browser remembers that name locally."
   },
   {
-    "title": "How do I jump to a specific page?",
-    "content": "Use the 'Go to page' option to instantly navigate to any page number within the document."
+    "title": "What is the Selected files collection?",
+    "content": "Files chosen individually from one browser device appear together in its Selected files collection. Additional individual selections are added to that collection."
   },
   {
-    "title": "Does the app show thumbnails of pages?",
-    "content": "Yes, you can browse page thumbnails for quick navigation and better overview of the document."
+    "title": "Can I drag and drop files or folders?",
+    "content": "Yes, on desktop browsers that support drag-and-drop selection."
   },
   {
-    "title": "Can I share PPTX files from the app?",
-    "content": "Yes, you can easily share PPTX files with other apps directly from the viewer."
+    "title": "Can I remove shared files or folders?",
+    "content": "Yes. Remove an individual file selection or an entire shared folder from the browser sharing page. Your original files are not deleted."
   },
   {
-    "title": "Does the app support printing?",
-    "content": "Yes, you can print PPTX files using supported Android printing services."
+    "title": "Does FolderCast preserve my folder structure?",
+    "content": "Yes. Browse shared folders and their subfolders in a TV-friendly grid, with breadcrumbs showing your current location."
   },
   {
-    "title": "What is margin crop?",
-    "content": "Margin crop removes unnecessary white borders around pages to improve readability and maximize screen space."
+    "title": "How do I navigate the library?",
+    "content": "Use the Android TV  remote directional buttons to move between items and OK to open them. Use Back to return to the parent folder or previous screen."
   },
   {
-    "title": "Does the app work offline?",
-    "content": "Yes, once files are available on your device, you can read them without an internet connection."
+    "title": "Can FolderCast browse large folders?",
+    "content": "Yes. FolderCast supports browsing large collections and displays additional items as you navigate. Loading times can vary by device, network, and collection size."
   },
   {
-    "title": "How does recent files work?",
-    "content": "The app automatically saves recently opened files with thumbnails and allows you to quickly access them anytime."
+    "title": "Which photo formats are recognized?",
+    "content": "FolderCast recognizes JPG/JPEG, PNG, GIF, WebP, BMP, AVIF, HEIC, and HEIF selections. Whether a photo can be displayed depends on your Android TV  device and the file."
   },
   {
-    "title": "Can I remove files from recent list?",
-    "content": "Yes, you can remove any file from the recent list with a confirmation option."
+    "title": "Can I zoom, pan, or rotate photos?",
+    "content": "Yes. The photo viewer includes zoom in/out, panning around enlarged images, 90-degree rotation, and multiple fit modes."
   },
   {
-    "title": "Does the app support large PPTX files?",
-    "content": "Yes, the app uses optimized rendering and lazy loading to handle large PPTX files smoothly."
+    "title": "Can I move between photos without returning to the folder?",
+    "content": "Yes. Use the Android TV  remote to move to the previous or next photo in the same folder."
   },
   {
-    "title": "What devices are supported?",
-    "content": "The app supports Android devices running Android 7.0 and above, including phones and tablets."
+    "title": "Does FolderCast have a photo slideshow?",
+    "content": "Yes. Start a full-screen slideshow from a photo to automatically display photos in that folder with smooth transitions."
   },
   {
-    "title": "Is there a free version of the app?",
-    "content": "Yes, the app includes a free version with core features. A subscription unlocks full document access and premium features."
+    "title": "Can I change slideshow speed or pause it?",
+    "content": "Yes. Adjust the slide duration from 1 to 15 seconds, and press OK to pause or resume."
   },
   {
-    "title": "Can I open PPTXs from external apps?",
-    "content": "Yes, the app supports opening PPTXs from file managers, email apps, and other external sources."
+    "title": "Which audio formats are recognized?",
+    "content": "FolderCast recognizes MP3, M4A, AAC, WAV, FLAC, OGG, and WMA selections. Actual playback depends on the Android TV  device and audio encoding."
   },
   {
-    "title": "Does the app support multi-column documents?",
-    "content": "Yes, the app includes basic multi-column reading detection for better read aloud performance."
+    "title": "Does the music player show album artwork and song information?",
+    "content": "Yes. It shows artwork when available, playback progress, track information, and available metadata such as genre, year, format, and bitrate."
   },
   {
-    "title": "Can I control playback from outside the app?",
-    "content": "Yes, media session support allows playback controls from notifications or external devices."
+    "title": "Can I shuffle or repeat music?",
+    "content": "Yes. The music player offers Shuffle, Repeat All, and Repeat One, along with previous/next track and 10-second skip controls."
   },
   {
-    "title": "Is my data secure?",
-    "content": "Yes, your documents are stored locally on your device. The app does not upload your files unless you explicitly share them."
+    "title": "Can I choose a song from the current folder playlist?",
+    "content": "Yes. Open a track directly from the folder playlist in the audio player."
+  },
+  {
+    "title": "Which video formats are recognized?",
+    "content": "FolderCast recognizes MP4, M4V, MOV, WebM, MKV, and AVI selections. Playback is not guaranteed for every file: Android TV  model, Android TV  OS, codecs, and the source file determine compatibility."
+  },
+  {
+    "title": "Can I pause, replay, or seek through a video?",
+    "content": "Yes. The video player supports play/pause, replay, restart, 10-second forward/backward skips, and press-and-hold seeking."
+  },
+  {
+    "title": "Will FolderCast remember where I stopped watching?",
+    "content": "For eligible videos, FolderCast saves recent playback positions so you can resume later. Videos watched nearly to the end are treated as completed."
+  },
+  {
+    "title": "Does FolderCast support subtitles?",
+    "content": "Yes. When supported SRT, VTT, or TTML subtitle files are available alongside a video in the same shared folder, you can select a subtitle or turn subtitles off."
+  },
+  {
+    "title": "Can I change the audio track in a video?",
+    "content": "Yes, when the video exposes more than one selectable audio track and your Android TV  supports it."
+  },
+  {
+    "title": "Why does a recognized media file fail to play?",
+    "content": "A recognized extension does not guarantee playback. The video or audio codec, file condition, Android TV  model, and Android TV  OS can affect compatibility. Try another compatible file or encoding."
+  },
+  {
+    "title": "Is FolderCast free?",
+    "content": "Yes. The free version lets you explore the first 5 subfolders and first 20 playable media files in each folder, in displayed filename order. A subscription unlocks full eligible browsing."
+  },
+  {
+    "title": "What does a subscription unlock?",
+    "content": "A FolderCast subscription removes the free browsing limits for eligible folders and media in your shared selections."
+  },
+  {
+    "title": "What subscription plans are available?",
+    "content": "Monthly, quarterly, and annual plans may be offered. Available plans and current prices appear in Android TV ’s purchase experience."
+  },
+  {
+    "title": "How do I subscribe or restore a purchase?",
+    "content": "Choose Subscribe in FolderCast and follow Android TV ’s purchase steps. Existing entitlements are restored from the Android TV  account after an app restart or reinstall."
+  },
+  {
+    "title": "How do I manage or cancel my subscription?",
+    "content": "When premium access is active, select Manage Subscription in FolderCast for a QR code and Android TV  account instructions. Billing and plan changes are handled by Android TV ."
+  },
+  {
+    "title": "Does FolderCast upload my media to a cloud library?",
+    "content": "No FolderCast cloud media library is required. You explicitly choose which files and folders to share for viewing over your local Wi-Fi."
+  },
+  {
+    "title": "Will removing a share or clearing temporary storage delete my originals?",
+    "content": "No. Removing a share stops showing it in FolderCast, and Clear Temporary Storage removes app-managed previews and temporary viewing data. Neither action deletes your original media."
+  },
+  {
+    "title": "What happens if my phone or computer disconnects?",
+    "content": "FolderCast shows connection or unavailable-media guidance and can reconnect after brief interruptions. Keep the sharing browser available and both devices on the same Wi-Fi."
+  },
+  {
+    "title": "Will my shared folders return after restarting FolderCast?",
+    "content": "FolderCast can restore shared selections after a Android TV  app restart when the connected browser still has access to those selections. You may need to reconnect or select files again if browser access has been lost."
+  },
+  {
+    "title": "Why is my phone unable to connect to the Android TV ?",
+    "content": "Check that both devices are on the same Wi-Fi, FolderCast is open on Android TV , and the browser is using the current address shown on TV. Avoid isolated guest networks and retry the connection."
+  },
+  {
+    "title": "Why is a folder empty or a file missing?",
+    "content": "FolderCast lists supported media it can access. Check that the folder contains supported files, that browser access remains available, and that the share has not been removed."
+  },
+  {
+    "title": "What does Clear Temporary Storage do?",
+    "content": "It removes FolderCast’s temporary previews and viewing data. Needed previews are recreated during later browsing; original files remain untouched."
+  },
+  {
+    "title": "Where can I get help or send feedback?",
+    "content": "Open Support & Feedback in FolderCast and scan the appropriate QR code for support or feedback. The app also includes Help / FAQ and legal information."
   }
 ]

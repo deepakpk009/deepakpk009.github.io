@@ -1,16 +1,16 @@
 {
   "meta": {
     "lang": "en",
-    "title": "FolderCast for Roku TV | Browse Photos, Videos & Music over Wi-Fi",
-    "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required.",
+    "title": "FolderCast for Roku TV | Your Photos, Videos & Music",
+    "description": "Browse photos, music, and compatible videos from your phone or computer on Roku TV over local Wi-Fi. No extra companion app needed.",
     "keywords": "FolderCast, Roku media browser, Roku photo viewer, Roku video player, Roku music player, browse phone files on Roku, stream local media to Roku, Roku WiFi media sharing, photo slideshow Roku, Roku subtitles, Roku folder browser, media from computer to Roku",
     "author": "Deepak PK",
     "canonical": "https://deepakpk.com/foldercast/",
     "og": {
       "type": "website",
       "url": "https://deepakpk.com/foldercast/",
-      "title": "FolderCast for Roku TV | Your Media on the Big Screen",
-      "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required.",
+      "title": "FolderCast | Your Media on Roku TV",
+      "description": "Browse photos, music, and compatible videos from your phone or computer on Roku TV over local Wi-Fi. No extra companion app needed.",
       "image": "images/app_icon.png",
       "siteName": "Deepak PK"
     },
@@ -18,7 +18,7 @@
       "card": "summary_large_image",
       "url": "https://deepakpk.com/foldercast/",
       "title": "FolderCast for Roku TV",
-      "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required.",
+      "description": "Browse photos, music, and compatible videos from your phone or computer on Roku TV over local Wi-Fi. No extra companion app needed.",
       "image": "images/app_icon.png"
     },
     "favicons": {
@@ -30,211 +30,154 @@
     }
   },
   "theme": {
-    "primaryGreen": "#FF704D",
-    "darkGreen": "#E94B45",
-    "lightGreen": "#FFB13B",
-    "darkerGreen": "#071A43",
-    "black": "#030B20",
-    "darkBg": "#061638",
-    "cardBg": "#102858",
-    "textWhite": "#FFFFFF",
-    "textGray": "#DCE6FA",
-    "borderGreen": "#FF875A",
-    "boxShadowColor": "#FF704D4d",
-    "heroWatermarkOpacity": 0.045,
-    "ctaWatermarkOpacity": 0.07,
-    "accentOrange": "#FF9B39",
-    "softRed": "#FF5252",
-    "paperWhite": "#F8FAFF"
+    "primaryGreen": "#FF8758",
+    "darkGreen": "#E76A43",
+    "lightGreen": "#FFC16A",
+    "darkerGreen": "#0B1630",
+    "black": "#060B18",
+    "darkBg": "#080F22",
+    "cardBg": "#14213B",
+    "textWhite": "#F6F8FC",
+    "textGray": "#B8C4D8",
+    "borderGreen": "#33445F",
+    "boxShadowColor": "#FF87581A",
+    "heroWatermarkOpacity": 0.025,
+    "ctaWatermarkOpacity": 0.035,
+    "accentOrange": "#FFAA63",
+    "softRed": "#E97868",
+    "paperWhite": "#F6F8FC"
   },
   "product": {
     "name": "FolderCast",
-    "heroTitle": "Your Photos, Videos & Music. On Roku TV.",
-    "heroDescription": "Browse media from your phone, tablet, or computer on Roku TV over your private Wi-Fi. Scan a QR code, choose files or folders in your browser, and enjoy them with your Roku remote.",
+    "heroTitle": "Your Media. Your Folders. Your Roku.",
+    "heroDescription": "Enjoy photos, videos, and music from your phone or computer on Roku TV. Connect through your browser, choose what to share, and explore it all with your Roku remote.",
     "icon": "images/app_icon.png",
     "storeButtons": [
       {
         "type": "roku",
-        "label": "View Roku Version",
-        "url": "roku/",
-        "style": "secondary"
+        "label": "Get Roku App",
+        "url": "https://my.roku.com/account/add?channel=foldercast",
+        "style": "primary"
       }
     ],
     "stats": [
       {
-        "value": "📱 Browser",
-        "label": "No Companion App"
+        "value": "No extra app",
+        "label": "Connect from your browser"
       },
       {
-        "value": "📁 Multiple Folders",
-        "label": "Keep Your Structure"
+        "value": "Your folders",
+        "label": "Browse media your way"
       },
       {
-        "value": "📺 Roku TV",
-        "label": "Remote-Friendly Playback"
+        "value": "Local Wi-Fi",
+        "label": "Share on your network"
       }
     ],
     "features": {
-      "title": "Everything You Need to Enjoy Local Media on Roku",
+      "title": "Everything in Its Place",
       "cards": [
         {
           "icon": "📱",
-          "title": "Connect in Your Browser",
+          "title": "Connect with a QR Code",
           "bullets": [
-            "Scan the QR code or enter the address shown on Roku",
-            "Choose media from a phone, tablet, or computer",
-            "No separate companion app or cloud library needed"
+            "Open the connection page from your phone or computer",
+            "No companion app or separate FolderCast account"
           ]
         },
         {
           "icon": "📁",
-          "title": "Browse Real Folders",
+          "title": "Folders, Just as You Know Them",
           "bullets": [
-            "Keep your familiar folder structure",
-            "Connect multiple devices and share multiple folders",
-            "Browse a remote-friendly grid with previews and breadcrumbs"
+            "Browse subfolders without losing their structure",
+            "Connect multiple devices and choose multiple folders"
           ]
         },
         {
           "icon": "🖼️",
-          "title": "Full-Screen Photo Viewer",
+          "title": "Photos & Slideshows",
           "bullets": [
-            "Move between photos, zoom, pan, and rotate",
-            "Choose fit modes for different screens",
-            "View image counts and quick previews"
-          ]
-        },
-        {
-          "icon": "▶️",
-          "title": "Photo Slideshows",
-          "bullets": [
-            "Start a slideshow from the current folder",
-            "Pause or resume with OK",
-            "Adjust each slide from 1 to 15 seconds"
+            "View photos full screen, zoom, pan, and rotate",
+            "Enjoy automatic slideshows with adjustable timing"
           ]
         },
         {
           "icon": "🎵",
-          "title": "Music Player",
+          "title": "Your Music, on TV",
           "bullets": [
-            "Browse a folder playlist and select tracks",
-            "See cover art, progress, and available song details",
-            "Shuffle, repeat, and skip 10 seconds"
+            "Play tracks from a folder-based playlist",
+            "See available cover art and use shuffle or repeat"
           ]
         },
         {
           "icon": "🎬",
-          "title": "Video Player",
+          "title": "Watch Your Videos",
           "bullets": [
-            "Watch compatible videos full screen",
-            "Pause, replay, restart, and seek",
-            "Resume eligible videos from recent positions"
-          ]
-        },
-        {
-          "icon": "💬",
-          "title": "Subtitles & Audio Tracks",
-          "bullets": [
-            "Choose supported subtitle files alongside videos",
-            "Turn subtitles on or off",
-            "Select an alternate audio track when available"
+            "Play compatible videos with simple remote controls",
+            "Resume eligible videos and choose available subtitles"
           ]
         },
         {
           "icon": "🔒",
-          "title": "Local Sharing & Controls",
+          "title": "Share Only What You Choose",
           "bullets": [
-            "Choose exactly what you share",
-            "Remove shares without deleting originals",
-            "Clear temporary viewing data from Settings"
-          ]
-        },
-        {
-          "icon": "⭐",
-          "title": "Free & Premium",
-          "bullets": [
-            "Try the first 5 subfolders and 20 playable files per folder",
-            "Subscribe to unlock eligible media browsing",
-            "Manage billing through Roku"
+            "Select or remove shared media whenever you like",
+            "Keep original files untouched when clearing temporary data"
           ]
         }
       ]
     },
     "perfectFor": {
-      "title": "Great Ways to Use FolderCast",
+      "title": "Made for the Moments You Share",
       "items": [
         {
-          "icon": "🏠",
-          "title": "Family Photo Nights",
-          "text": "Show vacation pictures and family albums on the big screen, with zoom and automatic slideshows."
+          "icon": "🏡",
+          "title": "Family Albums",
+          "text": "Bring holiday photos and family memories to the biggest screen in the room."
         },
         {
-          "icon": "🎉",
-          "title": "Parties & Gatherings",
-          "text": "Play a shared folder of music or display a photo slideshow during an event."
+          "icon": "🎶",
+          "title": "Music for the Moment",
+          "text": "Choose a folder of songs and enjoy it from the couch."
         },
         {
-          "icon": "🎬",
-          "title": "Personal Video Collections",
-          "text": "Browse and play compatible videos from a computer or phone, with seeking and resume support."
+          "icon": "🎞️",
+          "title": "Your Video Collection",
+          "text": "Browse compatible home videos and pick up where you left off."
         },
         {
           "icon": "💻",
-          "title": "Media Across Devices",
-          "text": "Connect multiple phones or computers and explore their selected folders in one Roku-friendly library."
+          "title": "More Than One Device",
+          "text": "Explore selected media from multiple phones and computers in one TV library."
         }
       ]
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "Common Questions",
       "items": [
         {
           "q": "What is FolderCast?",
-          "a": "FolderCast is a Roku TV app that lets you browse and enjoy photos, videos, and music selected from a phone, tablet, or computer connected to the same Wi-Fi network."
+          "a": "FolderCast is a Roku app for browsing photos, videos, and music shared from your phone, tablet, or computer over the same local Wi-Fi network."
         },
         {
-          "q": "How do I get started?",
-          "a": "Open FolderCast on Roku, scan the QR code shown on your TV or enter its displayed address in a browser, choose files or folders, then browse and play them using your Roku remote."
+          "q": "How do I connect my phone or computer?",
+          "a": "Open FolderCast on Roku. Scan the QR code shown on your TV or enter the displayed address in your browser, then select the files or folders you want to share."
         },
         {
-          "q": "Do I need to install a companion app on my phone or computer?",
-          "a": "No. Use a compatible web browser on your phone, tablet, or computer. No separate companion app is required."
+          "q": "Do I need to install another app?",
+          "a": "No. Use a compatible browser on your phone, tablet, or computer. No separate companion app or FolderCast account is needed."
         },
         {
-          "q": "Do my Roku and phone or computer need to be on the same Wi-Fi?",
-          "a": "Yes. Connect the Roku and the device sharing media to the same local Wi-Fi network. Guest networks or network isolation may prevent them from communicating."
+          "q": "Can I share multiple folders or devices?",
+          "a": "Yes. Add several folders or individual media files, and connect more than one phone or computer. FolderCast keeps shared media organized by device and folder."
         },
         {
-          "q": "Do I need an internet connection or a FolderCast account?",
-          "a": "FolderCast is designed for local Wi-Fi sharing and does not require a cloud media library or a separate FolderCast account. Internet access may still be needed for Roku installation, purchases, or account services."
+          "q": "Do both devices need the same Wi-Fi?",
+          "a": "Yes. Your Roku and the device sharing media must be on the same local Wi-Fi network. Internet access may still be needed for Roku installation, purchases, and account services."
         },
         {
-          "q": "Can I connect by typing an address instead of scanning the QR code?",
-          "a": "Yes. Enter the address displayed by FolderCast on your TV into a browser on your phone, tablet, or computer."
-        },
-        {
-          "q": "Can I share a complete folder instead of selecting files one by one?",
-          "a": "Yes. Choose an entire media folder in the browser, or select individual supported media files."
-        },
-        {
-          "q": "Can I share several folders?",
-          "a": "Yes. You can add multiple folders and individual file selections from the same connected device."
-        },
-        {
-          "q": "Can I connect more than one phone or computer?",
-          "a": "Yes. FolderCast supports multiple connected devices and organizes their shared media by source device."
-        },
-        {
-          "q": "Can I name my connected device?",
-          "a": "Yes. Give a connected browser device a friendly name to help identify it on your TV. The browser remembers that name locally."
-        },
-        {
-          "q": "What is the Selected files collection?",
-          "a": "Files chosen individually from one browser device appear together in its Selected files collection. Additional individual selections are added to that collection."
-        },
-        {
-          "q": "Can I drag and drop files or folders?",
-          "a": "Yes, on desktop browsers that support drag-and-drop selection."
+          "q": "Is FolderCast free to use?",
+          "a": "Yes. The free version lets you open the first 5 subfolders and first 20 playable media files in each folder, in displayed filename order. A Roku-billed subscription unlocks full eligible browsing."
         }
       ]
     }
@@ -304,320 +247,135 @@
   },
   "sections": {
     "howItWorks": {
-      "title": "Get Started in Three Easy Steps",
+      "title": "From Your Device to Your TV",
       "steps": [
         {
           "number": "1",
-          "title": "Open FolderCast on Roku",
-          "text": "Launch FolderCast on your Roku device and view the QR code or browser address shown on TV."
+          "title": "Open FolderCast",
+          "text": "Launch FolderCast on your Roku to see its QR code and connection address."
         },
         {
           "number": "2",
-          "title": "Connect and Choose Media",
-          "text": "Use a browser on a phone, tablet, or computer on the same Wi-Fi to choose individual files or folders."
+          "title": "Choose What to Share",
+          "text": "Connect in your phone or computer browser on the same Wi-Fi, then select files or folders."
         },
         {
           "number": "3",
-          "title": "Browse and Enjoy",
-          "text": "Use your Roku remote to browse folders, view photos, start slideshows, play music, or watch compatible videos."
+          "title": "Sit Back & Enjoy",
+          "text": "Browse folders, view photos, play music, and watch compatible videos using your Roku remote."
         }
       ]
     },
     "features": {
-      "title": "Made for Media Browsing on Roku",
+      "title": "Built Around Your Media",
       "cards": [
         {
           "icon": "📱",
-          "title": "Connect in Your Browser",
+          "title": "Connect with a QR Code",
           "bullets": [
-            "Scan the QR code or enter the address shown on Roku",
-            "Choose media from a phone, tablet, or computer",
-            "No separate companion app or cloud library needed"
+            "Open the connection page from your phone or computer",
+            "No companion app or separate FolderCast account"
           ]
         },
         {
           "icon": "📁",
-          "title": "Browse Real Folders",
+          "title": "Folders, Just as You Know Them",
           "bullets": [
-            "Keep your familiar folder structure",
-            "Connect multiple devices and share multiple folders",
-            "Browse a remote-friendly grid with previews and breadcrumbs"
+            "Browse subfolders without losing their structure",
+            "Connect multiple devices and choose multiple folders"
           ]
         },
         {
           "icon": "🖼️",
-          "title": "Full-Screen Photo Viewer",
+          "title": "Photos & Slideshows",
           "bullets": [
-            "Move between photos, zoom, pan, and rotate",
-            "Choose fit modes for different screens",
-            "View image counts and quick previews"
-          ]
-        },
-        {
-          "icon": "▶️",
-          "title": "Photo Slideshows",
-          "bullets": [
-            "Start a slideshow from the current folder",
-            "Pause or resume with OK",
-            "Adjust each slide from 1 to 15 seconds"
+            "View photos full screen, zoom, pan, and rotate",
+            "Enjoy automatic slideshows with adjustable timing"
           ]
         },
         {
           "icon": "🎵",
-          "title": "Music Player",
+          "title": "Your Music, on TV",
           "bullets": [
-            "Browse a folder playlist and select tracks",
-            "See cover art, progress, and available song details",
-            "Shuffle, repeat, and skip 10 seconds"
+            "Play tracks from a folder-based playlist",
+            "See available cover art and use shuffle or repeat"
           ]
         },
         {
           "icon": "🎬",
-          "title": "Video Player",
+          "title": "Watch Your Videos",
           "bullets": [
-            "Watch compatible videos full screen",
-            "Pause, replay, restart, and seek",
-            "Resume eligible videos from recent positions"
-          ]
-        },
-        {
-          "icon": "💬",
-          "title": "Subtitles & Audio Tracks",
-          "bullets": [
-            "Choose supported subtitle files alongside videos",
-            "Turn subtitles on or off",
-            "Select an alternate audio track when available"
+            "Play compatible videos with simple remote controls",
+            "Resume eligible videos and choose available subtitles"
           ]
         },
         {
           "icon": "🔒",
-          "title": "Local Sharing & Controls",
+          "title": "Share Only What You Choose",
           "bullets": [
-            "Choose exactly what you share",
-            "Remove shares without deleting originals",
-            "Clear temporary viewing data from Settings"
-          ]
-        },
-        {
-          "icon": "⭐",
-          "title": "Free & Premium",
-          "bullets": [
-            "Try the first 5 subfolders and 20 playable files per folder",
-            "Subscribe to unlock eligible media browsing",
-            "Manage billing through Roku"
+            "Select or remove shared media whenever you like",
+            "Keep original files untouched when clearing temporary data"
           ]
         }
       ]
     },
     "perfectFor": {
-      "title": "Made for Everyday Media Moments",
+      "title": "Made for the Moments You Share",
       "items": [
         {
-          "icon": "🏠",
-          "title": "Family Photo Nights",
-          "text": "Show vacation pictures and family albums on the big screen, with zoom and automatic slideshows."
+          "icon": "🏡",
+          "title": "Family Albums",
+          "text": "Bring holiday photos and family memories to the biggest screen in the room."
         },
         {
-          "icon": "🎉",
-          "title": "Parties & Gatherings",
-          "text": "Play a shared folder of music or display a photo slideshow during an event."
+          "icon": "🎶",
+          "title": "Music for the Moment",
+          "text": "Choose a folder of songs and enjoy it from the couch."
         },
         {
-          "icon": "🎬",
-          "title": "Personal Video Collections",
-          "text": "Browse and play compatible videos from a computer or phone, with seeking and resume support."
+          "icon": "🎞️",
+          "title": "Your Video Collection",
+          "text": "Browse compatible home videos and pick up where you left off."
         },
         {
           "icon": "💻",
-          "title": "Media Across Devices",
-          "text": "Connect multiple phones or computers and explore their selected folders in one Roku-friendly library."
+          "title": "More Than One Device",
+          "text": "Explore selected media from multiple phones and computers in one TV library."
         }
       ]
     },
     "faq": {
-      "title": "FolderCast FAQ",
+      "title": "Frequently Asked Questions",
       "items": [
         {
           "q": "What is FolderCast?",
-          "a": "FolderCast is a Roku TV app that lets you browse and enjoy photos, videos, and music selected from a phone, tablet, or computer connected to the same Wi-Fi network."
+          "a": "FolderCast is a Roku app for browsing photos, videos, and music shared from your phone, tablet, or computer over the same local Wi-Fi network."
         },
         {
-          "q": "How do I get started?",
-          "a": "Open FolderCast on Roku, scan the QR code shown on your TV or enter its displayed address in a browser, choose files or folders, then browse and play them using your Roku remote."
+          "q": "How do I connect my phone or computer?",
+          "a": "Open FolderCast on Roku. Scan the QR code shown on your TV or enter the displayed address in your browser, then select the files or folders you want to share."
         },
         {
-          "q": "Do I need to install a companion app on my phone or computer?",
-          "a": "No. Use a compatible web browser on your phone, tablet, or computer. No separate companion app is required."
+          "q": "Do I need to install another app?",
+          "a": "No. Use a compatible browser on your phone, tablet, or computer. No separate companion app or FolderCast account is needed."
         },
         {
-          "q": "Do my Roku and phone or computer need to be on the same Wi-Fi?",
-          "a": "Yes. Connect the Roku and the device sharing media to the same local Wi-Fi network. Guest networks or network isolation may prevent them from communicating."
+          "q": "Can I share multiple folders or devices?",
+          "a": "Yes. Add several folders or individual media files, and connect more than one phone or computer. FolderCast keeps shared media organized by device and folder."
         },
         {
-          "q": "Do I need an internet connection or a FolderCast account?",
-          "a": "FolderCast is designed for local Wi-Fi sharing and does not require a cloud media library or a separate FolderCast account. Internet access may still be needed for Roku installation, purchases, or account services."
+          "q": "Do both devices need the same Wi-Fi?",
+          "a": "Yes. Your Roku and the device sharing media must be on the same local Wi-Fi network. Internet access may still be needed for Roku installation, purchases, and account services."
         },
         {
-          "q": "Can I connect by typing an address instead of scanning the QR code?",
-          "a": "Yes. Enter the address displayed by FolderCast on your TV into a browser on your phone, tablet, or computer."
-        },
-        {
-          "q": "Can I share a complete folder instead of selecting files one by one?",
-          "a": "Yes. Choose an entire media folder in the browser, or select individual supported media files."
-        },
-        {
-          "q": "Can I share several folders?",
-          "a": "Yes. You can add multiple folders and individual file selections from the same connected device."
-        },
-        {
-          "q": "Can I connect more than one phone or computer?",
-          "a": "Yes. FolderCast supports multiple connected devices and organizes their shared media by source device."
-        },
-        {
-          "q": "Can I name my connected device?",
-          "a": "Yes. Give a connected browser device a friendly name to help identify it on your TV. The browser remembers that name locally."
-        },
-        {
-          "q": "What is the Selected files collection?",
-          "a": "Files chosen individually from one browser device appear together in its Selected files collection. Additional individual selections are added to that collection."
-        },
-        {
-          "q": "Can I drag and drop files or folders?",
-          "a": "Yes, on desktop browsers that support drag-and-drop selection."
-        },
-        {
-          "q": "Can I remove shared files or folders?",
-          "a": "Yes. Remove an individual file selection or an entire shared folder from the browser sharing page. Your original files are not deleted."
-        },
-        {
-          "q": "Does FolderCast preserve my folder structure?",
-          "a": "Yes. Browse shared folders and their subfolders in a TV-friendly grid, with breadcrumbs showing your current location."
-        },
-        {
-          "q": "How do I navigate the library?",
-          "a": "Use the Roku remote directional buttons to move between items and OK to open them. Use Back to return to the parent folder or previous screen."
-        },
-        {
-          "q": "Can FolderCast browse large folders?",
-          "a": "Yes. FolderCast supports browsing large collections and displays additional items as you navigate. Loading times can vary by device, network, and collection size."
-        },
-        {
-          "q": "Which photo formats are recognized?",
-          "a": "FolderCast recognizes JPG/JPEG, PNG, GIF, WebP, BMP, AVIF, HEIC, and HEIF selections. Whether a photo can be displayed depends on your Roku device and the file."
-        },
-        {
-          "q": "Can I zoom, pan, or rotate photos?",
-          "a": "Yes. The photo viewer includes zoom in/out, panning around enlarged images, 90-degree rotation, and multiple fit modes."
-        },
-        {
-          "q": "Can I move between photos without returning to the folder?",
-          "a": "Yes. Use the Roku remote to move to the previous or next photo in the same folder."
-        },
-        {
-          "q": "Does FolderCast have a photo slideshow?",
-          "a": "Yes. Start a full-screen slideshow from a photo to automatically display photos in that folder with smooth transitions."
-        },
-        {
-          "q": "Can I change slideshow speed or pause it?",
-          "a": "Yes. Adjust the slide duration from 1 to 15 seconds, and press OK to pause or resume."
-        },
-        {
-          "q": "Which audio formats are recognized?",
-          "a": "FolderCast recognizes MP3, M4A, AAC, WAV, FLAC, OGG, and WMA selections. Actual playback depends on the Roku device and audio encoding."
-        },
-        {
-          "q": "Does the music player show album artwork and song information?",
-          "a": "Yes. It shows artwork when available, playback progress, track information, and available metadata such as genre, year, format, and bitrate."
-        },
-        {
-          "q": "Can I shuffle or repeat music?",
-          "a": "Yes. The music player offers Shuffle, Repeat All, and Repeat One, along with previous/next track and 10-second skip controls."
-        },
-        {
-          "q": "Can I choose a song from the current folder playlist?",
-          "a": "Yes. Open a track directly from the folder playlist in the audio player."
-        },
-        {
-          "q": "Which video formats are recognized?",
-          "a": "FolderCast recognizes MP4, M4V, MOV, WebM, MKV, and AVI selections. Playback is not guaranteed for every file: Roku model, Roku OS, codecs, and the source file determine compatibility."
-        },
-        {
-          "q": "Can I pause, replay, or seek through a video?",
-          "a": "Yes. The video player supports play/pause, replay, restart, 10-second forward/backward skips, and press-and-hold seeking."
-        },
-        {
-          "q": "Will FolderCast remember where I stopped watching?",
-          "a": "For eligible videos, FolderCast saves recent playback positions so you can resume later. Videos watched nearly to the end are treated as completed."
-        },
-        {
-          "q": "Does FolderCast support subtitles?",
-          "a": "Yes. When supported SRT, VTT, or TTML subtitle files are available alongside a video in the same shared folder, you can select a subtitle or turn subtitles off."
-        },
-        {
-          "q": "Can I change the audio track in a video?",
-          "a": "Yes, when the video exposes more than one selectable audio track and your Roku supports it."
-        },
-        {
-          "q": "Why does a recognized media file fail to play?",
-          "a": "A recognized extension does not guarantee playback. The video or audio codec, file condition, Roku model, and Roku OS can affect compatibility. Try another compatible file or encoding."
-        },
-        {
-          "q": "Is FolderCast free?",
-          "a": "Yes. The free version lets you explore the first 5 subfolders and first 20 playable media files in each folder, in displayed filename order. A subscription unlocks full eligible browsing."
-        },
-        {
-          "q": "What does a subscription unlock?",
-          "a": "A FolderCast subscription removes the free browsing limits for eligible folders and media in your shared selections."
-        },
-        {
-          "q": "What subscription plans are available?",
-          "a": "Monthly, quarterly, and annual plans may be offered. Available plans and current prices appear in Roku’s purchase experience."
-        },
-        {
-          "q": "How do I subscribe or restore a purchase?",
-          "a": "Choose Subscribe in FolderCast and follow Roku’s purchase steps. Existing entitlements are restored from the Roku account after an app restart or reinstall."
-        },
-        {
-          "q": "How do I manage or cancel my subscription?",
-          "a": "When premium access is active, select Manage Subscription in FolderCast for a QR code and Roku account instructions. Billing and plan changes are handled by Roku."
-        },
-        {
-          "q": "Does FolderCast upload my media to a cloud library?",
-          "a": "No FolderCast cloud media library is required. You explicitly choose which files and folders to share for viewing over your local Wi-Fi."
-        },
-        {
-          "q": "Will removing a share or clearing temporary storage delete my originals?",
-          "a": "No. Removing a share stops showing it in FolderCast, and Clear Temporary Storage removes app-managed previews and temporary viewing data. Neither action deletes your original media."
-        },
-        {
-          "q": "What happens if my phone or computer disconnects?",
-          "a": "FolderCast shows connection or unavailable-media guidance and can reconnect after brief interruptions. Keep the sharing browser available and both devices on the same Wi-Fi."
-        },
-        {
-          "q": "Will my shared folders return after restarting FolderCast?",
-          "a": "FolderCast can restore shared selections after a Roku app restart when the connected browser still has access to those selections. You may need to reconnect or select files again if browser access has been lost."
-        },
-        {
-          "q": "Why is my phone unable to connect to the Roku?",
-          "a": "Check that both devices are on the same Wi-Fi, FolderCast is open on Roku, and the browser is using the current address shown on TV. Avoid isolated guest networks and retry the connection."
-        },
-        {
-          "q": "Why is a folder empty or a file missing?",
-          "a": "FolderCast lists supported media it can access. Check that the folder contains supported files, that browser access remains available, and that the share has not been removed."
-        },
-        {
-          "q": "What does Clear Temporary Storage do?",
-          "a": "It removes FolderCast’s temporary previews and viewing data. Needed previews are recreated during later browsing; original files remain untouched."
-        },
-        {
-          "q": "Where can I get help or send feedback?",
-          "a": "Open Support & Feedback in FolderCast and scan the appropriate QR code for support or feedback. The app also includes Help / FAQ and legal information."
+          "q": "Is FolderCast free to use?",
+          "a": "Yes. The free version lets you open the first 5 subfolders and first 20 playable media files in each folder, in displayed filename order. A Roku-billed subscription unlocks full eligible browsing."
         }
       ]
     },
     "cta": {
-      "title": "Bring Your Media to Roku TV",
-      "text": "Open FolderCast on Roku, connect your browser over the same Wi-Fi, and enjoy your chosen photos, videos, and music.",
+      "title": "Your Media Looks Better on the Big Screen",
+      "text": "Bring your own photos, music, and compatible videos to Roku TV. No companion app needed.",
       "buttons": []
     }
   },
@@ -625,7 +383,7 @@
     "brand": {
       "logo": "images/app_icon.png",
       "name": "FolderCast",
-      "about": "Browse and enjoy your chosen photos, videos, and music from a phone, tablet, or computer on Roku TV over local Wi-Fi."
+      "about": "Enjoy your photos, music, and compatible videos from a phone or computer on Roku TV over local Wi-Fi."
     },
     "social": [
       {
@@ -715,7 +473,7 @@
         "@type": "Organization",
         "name": "Deepak PK"
       },
-      "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required."
+      "description": "Browse photos, music, and compatible videos from your phone or computer on Roku TV over local Wi-Fi. No extra companion app needed."
     },
     "organization": {
       "@context": "https://schema.org",

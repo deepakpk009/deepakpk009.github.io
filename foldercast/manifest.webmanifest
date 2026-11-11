@@ -1,12 +1,12 @@
 {
   "name": "FolderCast",
   "short_name": "FolderCast",
-  "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required.",
+  "description": "Browse photos, music, and compatible videos from your phone or computer on Roku TV over local Wi-Fi. No extra companion app needed.",
   "start_url": "/foldercast/",
   "scope": "/foldercast/",
   "display": "standalone",
-  "background_color": "#061638",
-  "theme_color": "#FF704D",
+  "background_color": "#080F22",
+  "theme_color": "#FF8758",
   "icons": [
     {
       "src": "images/app_icon.png",

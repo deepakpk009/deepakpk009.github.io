@@ -107,6 +107,12 @@
             "description": "Browse and read CBZ, CBR, ZIP, RAR, CB7, 7Z, CBT, and TAR comic archives on Android TV",
             "thumbnail": "https://deepakpk.com/tvcomicbookreader/images/app_icon.png",
             "url": "https://deepakpk.com/tvcomicbookreader/"
+        },
+        {
+            "title": "FolderCast",
+            "description": "Open and play your media folder on your mobile, tablet or PC, on your TV",
+            "thumbnail": "https://deepakpk.com/foldercast/images/app_icon.png",
+            "url": "https://deepakpk.com/foldercast/"
         }
     ]
 }

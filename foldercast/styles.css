@@ -1,17 +1,17 @@
 /* Extracted from inline <style> and made themeable via CSS variables. */
 
 :root{
-  --color-primary:#2F80ED;
-  --color-primary-dark:#1554B7;
-  --color-primary-light:#62A8FF;
-  --color-bg-start:#071A33;
-  --color-bg:#081426;
-  --color-bg-dark:#050A12;
-  --color-card:#102640;
+  --color-primary:#FF704D;
+  --color-primary-dark:#E94B45;
+  --color-primary-light:#FFB13B;
+  --color-bg-start:#071A43;
+  --color-bg:#061638;
+  --color-bg-dark:#030B20;
+  --color-card:#102858;
   --color-text:#FFFFFF;
-  --color-text-muted:#D7E5F5;
-  --color-border:#3F95FF;
-  --color-shadow:#2F80ED4d;
+  --color-text-muted:#DCE6FA;
+  --color-border:#FF875A;
+  --color-shadow:#FF704D4d;
 
   --hero-watermark:url("images/app_icon.png");
   --cta-watermark:url("images/app_icon.png");

@@ -1,12 +1,12 @@
 {
   "name": "FolderCast",
-  "short_name": "TV PPTX View",
-  "description": "FolderCast is an Android TV app for opening, importing, viewing, searching, bookmarking, and presenting PPTX files on your TV with remote-friendly controls.",
+  "short_name": "FolderCast",
+  "description": "Browse photos, videos, and music from your phone, tablet, or computer on Roku TV over local Wi-Fi. No companion app required.",
   "start_url": "/foldercast/",
   "scope": "/foldercast/",
   "display": "standalone",
-  "background_color": "#081426",
-  "theme_color": "#2F80ED",
+  "background_color": "#061638",
+  "theme_color": "#FF704D",
   "icons": [
     {
       "src": "images/app_icon.png",

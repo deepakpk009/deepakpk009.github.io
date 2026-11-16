@@ -127,6 +127,7 @@ textarea:focus-visible {
 h1 { margin: 0; font-size: clamp(1.8rem, 7vw, 2.6rem); line-height: 1; letter-spacing: -0.045em; }
 .top-actions { gap: 7px; }
 .icon-button,
+.menu-link,
 .today-button,
 .nav-button,
 .close-button {
@@ -136,8 +137,12 @@ h1 { margin: 0; font-size: clamp(1.8rem, 7vw, 2.6rem); line-height: 1; letter-sp
   cursor: pointer;
 }
 .icon-button,
+.menu-link,
 .today-button { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 15px; }
-.icon-button svg { width: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.icon-button svg,
+.menu-link svg { width: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.menu-link { color: var(--ink); text-decoration: none; background: rgb(255 255 255 / 8%); border: 1px solid var(--border); }
+.menu-link:focus-visible { outline: 3px solid #ffe1b8; outline-offset: 3px; }
 .today-button span {
   min-width: 27px;
   min-height: 28px;

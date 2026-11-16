@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#24352f" />
+    <meta name="description" content="Your private offline home for Calendar and Shopping List." />
+    <meta name="color-scheme" content="light" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/app-menu-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/icons/icon-192.png" />
+    <link rel="stylesheet" href="./src/styles.css?v=1" />
+    <title>My Apps</title>
+  </head>
+  <body>
+    <main class="menu-shell">
+      <section class="menu-panel" aria-labelledby="page-title">
+        <header class="menu-header">
+          <div class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div>
+            <p class="eyebrow">Your private space</p>
+            <h1 id="page-title">What would you like to open?</h1>
+          </div>
+        </header>
+
+        <nav class="app-grid" aria-label="Your apps">
+          <a class="app-card calendar-card" href="./calendar/">
+            <span class="app-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><rect x="8" y="11" width="32" height="29" rx="7"/><path d="M16 7v8M32 7v8M8 20h32"/><path class="dots" d="M16 27h.1M24 27h.1M32 27h.1M16 34h.1M24 34h.1"/></svg>
+            </span>
+            <span class="app-copy">
+              <span class="app-label">Plan your time</span>
+              <strong>Calendar</strong>
+              <small>Events, notes, and your daily schedule</small>
+            </span>
+            <span class="app-arrow" aria-hidden="true">&#8599;</span>
+          </a>
+
+          <a class="app-card shopping-card" href="./shoppinglist/">
+            <span class="app-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M14 12h27l-3 17H17L14 9H8"/><path d="M19 20h16M21 35h.1M35 35h.1"/></svg>
+            </span>
+            <span class="app-copy">
+              <span class="app-label">Remember the little things</span>
+              <strong>Shopping List</strong>
+              <small>A simple list that saves as you type</small>
+            </span>
+            <span class="app-arrow" aria-hidden="true">&#8599;</span>
+          </a>
+        </nav>
+
+        <footer class="menu-footer">
+          <span class="status-dot" id="status-dot" aria-hidden="true"></span>
+          <span id="offline-status" role="status">Preparing offline access…</span>
+          <button id="install-button" type="button" hidden>Install app menu</button>
+        </footer>
+      </section>
+    </main>
+    <script type="module" src="./src/app.js?v=1"></script>
+  </body>
+</html>

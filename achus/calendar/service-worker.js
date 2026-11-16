@@ -1,11 +1,11 @@
 const CACHE_PREFIX = "cozy-calendar-shell";
-const CACHE_NAME = `${CACHE_PREFIX}-v3`;
+const CACHE_NAME = `${CACHE_PREFIX}-v4`;
 const APP_SHELL_URL = new URL("./index.html", self.location).href;
 const PRECACHE_URLS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./src/styles.css?v=3",
+  "./src/styles.css?v=4",
   "./src/app.js?v=4",
   "./src/storage.js?v=2",
   "./assets/favicon.svg",
